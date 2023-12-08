@@ -2,13 +2,13 @@ module CarryLookaheadAdder (
     input signed [31:0] A, 
     input signed [31:0] B, 
     input Cin,    
-    output signed [31:0] Sum, 
+    output reg signed [31:0] Sum, 
     output Cout  
 );
 
-wire [31:0] G;
-wire [31:0] P;
-wire [32:0] Cins;
+reg [31:0] G;
+reg [31:0] P;
+reg [32:0] Cins;
 
 integer i;
 
