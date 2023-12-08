@@ -10,7 +10,6 @@ module CarryLookaheadAdder_tb;
   wire [31:0] Sum;
   wire Cout;
 
-  // Instantiate the CarryBypass_Adder module
    CarryLookaheadAdder DUT (
     .A(A),
     .B(B),

@@ -1,5 +1,4 @@
-
-module CarrySelect_tb;
+module CarryBypass_Adder_tb;
 
   // Inputs
   reg [31:0] A;
@@ -10,7 +9,8 @@ module CarrySelect_tb;
   wire [31:0] Sum;
   wire Cout;
 
-   CarrySelect DUT (
+  // Instantiate the CarryBypass_Adder module
+  CarryBypass_Adder DUT (
     .A(A),
     .B(B),
     .Cin(Cin),

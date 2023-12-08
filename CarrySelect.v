@@ -1,23 +1,40 @@
 module CarrySelect (
-    input [7:0] A, 
-    input [7:0] B, 
-    input Cin,    
-    output [7:0] Sum, 
-    output Cout  
+    input signed [31:0] A,
+    input signed [31:0] B,
+    input Cin,
+    output signed [31:0] Sum,
+    output Cout
 );
 
-wire Cs;
-wire Cout0;
-wire Cout1;
-wire [7:0] Sum0;
-wire [7:0] Sum1;
+wire [31:0] Sum1, Sum2;
+wire [31:0] tempCarry1;
+wire [31:0] tempCarry2;
 
+genvar i;
 
-FullAdder_1Bit F0 (.A(A[3:0]), .B(B[3:0]), .Cin(Cin), .Sum(Sum0[3:0]), .Cout(Cs));
-assign Sum1[3:0]=Sum0[3:0];
-FullAdder_1Bit F1 (.A(A[7:4]), .B(B[7:4]), .Cin(0), .Sum(Sum0[7:4]), .Cout(Cout0));
-FullAdder_1Bit F2 (.A(A[7:4]), .B(B[7:4]), .Cin(1), .Sum(Sum1[7:4]), .Cout(Cout1));
+generate
+    for (i = 0; i < 32; i = i + 1) begin : generate_adders
+        Fulladder_onebit FA1 (
+            A[i],
+            B[i],
+            (i == 0) ? 0 : tempCarry1[i - 1],
+            Sum1[i],
+            tempCarry1[i]
+        );
 
-assign Cout=Cs?Cout1:Cout0;
-assign Sum=Cs?Sum1:Sum0;
+        Fulladder_onebit FA2 (
+            A[i],
+            B[i],
+            (i == 0) ? 1 : tempCarry2[i - 1],
+            Sum2[i],
+            tempCarry2[i]
+        );
+    end
+endgenerate
+
+assign Cout = (Cin) ? tempCarry2[31] : tempCarry1[31];
+
+assign Sum = (Cin) ? Sum2 : Sum1;
+
 endmodule
+

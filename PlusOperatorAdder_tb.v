@@ -1,5 +1,5 @@
 
-module CarrySelect_tb;
+module PlusOperatorAdder_tb;
 
   // Inputs
   reg [31:0] A;
@@ -10,7 +10,7 @@ module CarrySelect_tb;
   wire [31:0] Sum;
   wire Cout;
 
-   CarrySelect DUT (
+   PlusOperatorAdder DUT (
     .A(A),
     .B(B),
     .Cin(Cin),
