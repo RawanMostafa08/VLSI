@@ -1,0 +1,32 @@
+---Area--------online--------oaysis
+CarryBypass-->8.688788-----0.079 x 0.079|       6214|    
+RippleCarry-->10.674796----0.075 x 0.075|       5635| 
+PlusOperato-->943.718384 --0.075 x 0.075|       5635|
+CarryLookah-->1268.121613--0.076 x 0.076|       5831| 
+CarrySelect-->2091.155368--0.084 x 0.084|       6986|
+
+
+
+---Power-------online--------oaysis
+CarryByPass-->1.2457  uW---16.568571 
+CarrySelect-->11.1552 uW---21.836088
+PlusOperato-->33.5670 uW---11.640025
+CarryLookAh-->47.7250 uW---25.776625 
+RippleCarry-->50.9941 uW---11.995069  
+
+
+
+---oaysis only---
+---time--------slack----delay---time on simulation
+CarryByPass-->18165.3---334.7------1650ps
+CarrySelect-->18252.9---247.1------4750ps
+PlusOperato-->18285.2---214.8------3100ps
+CarryLookAh-->18229.2---270.8------2350ps
+RippleCarry-->18257.8---242.2------4600ps
+
+---utilization---
+CarryByPass-->62
+CarrySelect-->63
+PlusOperato-->64
+CarryLookAh-->63
+RippleCarry-->64
