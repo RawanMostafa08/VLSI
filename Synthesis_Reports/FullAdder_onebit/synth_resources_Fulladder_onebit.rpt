@@ -1,0 +1,21 @@
+ 
+****************************************
+Report : resources
+Design : Fulladder_onebit
+Version: U-2022.12-SP7
+Date   : Tue Dec 12 19:38:12 2023
+****************************************
+
+Resource Sharing Report for design Fulladder_onebit in file
+        ./source/Fulladder_onebit.v
+
+===============================================================================
+|          |              |            | Contained     |                      |
+| Resource | Module       | Parameters | Resources     | Contained Operations |
+===============================================================================
+| r57      | DW01_add     | width=2    |               | add_1_root_add_10_2  |
+===============================================================================
+
+
+No implementations to report
+1

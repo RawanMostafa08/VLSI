@@ -1,0 +1,116 @@
+ 
+****************************************
+Report : cell
+Design : CarryLookaheadAdder
+Version: U-2022.12-SP7
+Date   : Tue Dec 12 19:42:27 2023
+****************************************
+
+Attributes:
+    b - black box (unknown)
+    h - hierarchical
+    n - noncombinational
+    r - removable
+    u - contains unmapped logic
+
+Cell                      Reference       Library             Area  Attributes
+--------------------------------------------------------------------------------
+U1                        XOR2X1          saed90nm_typ_ht 13.824000 
+U2                        XOR2X1          saed90nm_typ_ht 13.824000 
+U3                        XOR2X1          saed90nm_typ_ht 13.824000 
+U4                        XOR2X1          saed90nm_typ_ht 13.824000 
+U5                        XOR2X1          saed90nm_typ_ht 13.824000 
+U6                        XOR2X1          saed90nm_typ_ht 13.824000 
+U7                        XOR2X1          saed90nm_typ_ht 13.824000 
+U8                        XOR2X1          saed90nm_typ_ht 13.824000 
+U9                        XOR2X1          saed90nm_typ_ht 13.824000 
+U10                       XOR2X1          saed90nm_typ_ht 13.824000 
+U11                       XOR2X1          saed90nm_typ_ht 13.824000 
+U12                       XOR2X1          saed90nm_typ_ht 13.824000 
+U13                       XOR2X1          saed90nm_typ_ht 13.824000 
+U14                       XOR2X1          saed90nm_typ_ht 13.824000 
+U15                       XOR2X1          saed90nm_typ_ht 13.824000 
+U16                       XOR2X1          saed90nm_typ_ht 13.824000 
+U17                       XOR2X1          saed90nm_typ_ht 13.824000 
+U18                       XOR2X1          saed90nm_typ_ht 13.824000 
+U19                       XOR2X1          saed90nm_typ_ht 13.824000 
+U20                       XOR2X1          saed90nm_typ_ht 13.824000 
+U21                       XOR2X1          saed90nm_typ_ht 13.824000 
+U22                       XOR2X1          saed90nm_typ_ht 13.824000 
+U23                       XOR2X1          saed90nm_typ_ht 13.824000 
+U24                       XOR2X1          saed90nm_typ_ht 13.824000 
+U25                       XOR2X1          saed90nm_typ_ht 13.824000 
+U26                       XOR2X1          saed90nm_typ_ht 13.824000 
+U27                       XOR2X1          saed90nm_typ_ht 13.824000 
+U28                       XOR2X1          saed90nm_typ_ht 13.824000 
+U29                       XOR2X1          saed90nm_typ_ht 13.824000 
+U30                       XOR2X1          saed90nm_typ_ht 13.824000 
+U31                       XOR2X1          saed90nm_typ_ht 13.824000 
+U32                       XOR2X1          saed90nm_typ_ht 13.824000 
+U33                       AO22X1          saed90nm_typ_ht 11.980800 
+U34                       AO22X1          saed90nm_typ_ht 11.980800 
+U35                       AO22X1          saed90nm_typ_ht 11.980800 
+U36                       AO22X1          saed90nm_typ_ht 11.980800 
+U37                       AO22X1          saed90nm_typ_ht 11.980800 
+U38                       AO22X1          saed90nm_typ_ht 11.980800 
+U39                       AO22X1          saed90nm_typ_ht 11.980800 
+U40                       AO22X1          saed90nm_typ_ht 11.980800 
+U41                       AO22X1          saed90nm_typ_ht 11.980800 
+U42                       AO22X1          saed90nm_typ_ht 11.980800 
+U43                       AO22X1          saed90nm_typ_ht 11.980800 
+U44                       AO22X1          saed90nm_typ_ht 11.980800 
+U45                       AO22X1          saed90nm_typ_ht 11.980800 
+U46                       AO22X1          saed90nm_typ_ht 11.980800 
+U47                       AO22X1          saed90nm_typ_ht 11.980800 
+U48                       AO22X1          saed90nm_typ_ht 11.980800 
+U49                       AO22X1          saed90nm_typ_ht 11.980800 
+U50                       AO22X1          saed90nm_typ_ht 11.980800 
+U51                       AO22X1          saed90nm_typ_ht 11.980800 
+U52                       AO22X1          saed90nm_typ_ht 11.980800 
+U53                       AO22X1          saed90nm_typ_ht 11.980800 
+U54                       AO22X1          saed90nm_typ_ht 11.980800 
+U55                       AO22X1          saed90nm_typ_ht 11.980800 
+U56                       AO22X1          saed90nm_typ_ht 11.980800 
+U57                       AO22X1          saed90nm_typ_ht 11.980800 
+U58                       AO22X1          saed90nm_typ_ht 11.980800 
+U59                       AO22X1          saed90nm_typ_ht 11.980800 
+U60                       AO22X1          saed90nm_typ_ht 11.980800 
+U61                       AO22X1          saed90nm_typ_ht 11.980800 
+U62                       AO22X1          saed90nm_typ_ht 11.980800 
+U63                       AO22X1          saed90nm_typ_ht 11.980800 
+U64                       AO22X1          saed90nm_typ_ht 11.980800 
+U65                       XOR2X1          saed90nm_typ_ht 13.824000 
+U66                       XOR2X1          saed90nm_typ_ht 13.824000 
+U67                       XOR2X1          saed90nm_typ_ht 13.824000 
+U68                       XOR2X1          saed90nm_typ_ht 13.824000 
+U69                       XOR2X1          saed90nm_typ_ht 13.824000 
+U70                       XOR2X1          saed90nm_typ_ht 13.824000 
+U71                       XOR2X1          saed90nm_typ_ht 13.824000 
+U72                       XOR2X1          saed90nm_typ_ht 13.824000 
+U73                       XOR2X1          saed90nm_typ_ht 13.824000 
+U74                       XOR2X1          saed90nm_typ_ht 13.824000 
+U75                       XOR2X1          saed90nm_typ_ht 13.824000 
+U76                       XOR2X1          saed90nm_typ_ht 13.824000 
+U77                       XOR2X1          saed90nm_typ_ht 13.824000 
+U78                       XOR2X1          saed90nm_typ_ht 13.824000 
+U79                       XOR2X1          saed90nm_typ_ht 13.824000 
+U80                       XOR2X1          saed90nm_typ_ht 13.824000 
+U81                       XOR2X1          saed90nm_typ_ht 13.824000 
+U82                       XOR2X1          saed90nm_typ_ht 13.824000 
+U83                       XOR2X1          saed90nm_typ_ht 13.824000 
+U84                       XOR2X1          saed90nm_typ_ht 13.824000 
+U85                       XOR2X1          saed90nm_typ_ht 13.824000 
+U86                       XOR2X1          saed90nm_typ_ht 13.824000 
+U87                       XOR2X1          saed90nm_typ_ht 13.824000 
+U88                       XOR2X1          saed90nm_typ_ht 13.824000 
+U89                       XOR2X1          saed90nm_typ_ht 13.824000 
+U90                       XOR2X1          saed90nm_typ_ht 13.824000 
+U91                       XOR2X1          saed90nm_typ_ht 13.824000 
+U92                       XOR2X1          saed90nm_typ_ht 13.824000 
+U93                       XOR2X1          saed90nm_typ_ht 13.824000 
+U94                       XOR2X1          saed90nm_typ_ht 13.824000 
+U95                       XOR2X1          saed90nm_typ_ht 13.824000 
+U96                       XOR2X1          saed90nm_typ_ht 13.824000 
+--------------------------------------------------------------------------------
+Total 96 cells                                            1268.121613
+1

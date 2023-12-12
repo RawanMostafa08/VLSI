@@ -1,0 +1,18 @@
+read_file -format verilog  ./source/FloatingPointAdder.v
+analyze  -format verilog {./source/FloatingPointAdder.v}
+elaborate FloatingPointAdder
+link
+check_design
+source ./source/Adder.sdc		
+compile -exact_map > ./results/compile_FloatingPointAdder.log
+report_power > ./results/synth_power_FloatingPointAdder.rpt
+report_area > ./results/synth_area_FloatingPointAdder.rpt
+report_cell > ./results/synth_cells_FloatingPointAdder.rpt
+report_qor  > ./results/synth_qor_FloatingPointAdder.rpt
+report_resources > ./results/synth_resources_FloatingPointAdder.rpt
+report_timing -max_paths 10 -delay_type min > ./results/synth_timingmin_FloatingPointAdder.rpt
+report_timing -max_paths 10 -delay_type max > ./results/synth_timingmax_FloatingPointAdder.rpt  
+write -format verilog -output ./results/Synth_FloatingPointAdder.v
+# Generate SDF file
+set sdf_file_path "./results/FloatingPointAdder.sdf"
+report_timing -delay_type max -max_paths 10 -from [all_inputs] -to [all_outputs] > $sdf_file_path

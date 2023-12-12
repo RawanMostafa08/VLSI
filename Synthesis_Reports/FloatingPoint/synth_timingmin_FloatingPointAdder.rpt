@@ -1,0 +1,369 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay min
+        -max_paths 10
+Design : FloatingPointAdder
+Version: U-2022.12-SP7
+Date   : Tue Dec 12 21:35:38 2023
+****************************************
+
+Operating Conditions: TYPICAL   Library: saed90nm_typ_ht
+Wire Load Model Mode: enclosed
+
+  Startpoint: A[31] (input port clocked by vsysclk)
+  Endpoint: result[22] (output port clocked by vsysclk)
+  Path Group: vsysclk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  FloatingPointAdder 16000                 saed90nm_typ_ht
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock vsysclk (rise edge)                0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     1.00       1.00 r
+  A[31] (in)                               0.00       1.00 r
+  U231/Q (XNOR2X1)                         0.33       1.33 f
+  U96/Q (AO222X1)                          0.35       1.68 f
+  result[22] (out)                         0.19       1.87 f
+  data arrival time                                   1.87
+
+  clock vsysclk (rise edge)                0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  output external delay                   -0.50      -0.50
+  data required time                                 -0.50
+  -----------------------------------------------------------
+  data required time                                 -0.50
+  data arrival time                                  -1.87
+  -----------------------------------------------------------
+  slack (MET)                                         2.37
+
+
+  Startpoint: B[0] (input port clocked by vsysclk)
+  Endpoint: result[0] (output port clocked by vsysclk)
+  Path Group: vsysclk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  FloatingPointAdder 16000                 saed90nm_typ_ht
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock vsysclk (rise edge)                               0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    1.00       1.00 r
+  B[0] (in)                                               0.00       1.00 r
+  U254/Q (AO22X1)                                         0.17       1.17 r
+  add_37/B[0] (FloatingPointAdder_DW01_add_0)             0.00       1.17 r
+  add_37/U2/Q (XOR2X1)                                    0.25       1.42 f
+  add_37/SUM[0] (FloatingPointAdder_DW01_add_0)           0.00       1.42 f
+  U119/Q (AO222X1)                                        0.16       1.58 f
+  U108/Q (AND2X1)                                         0.17       1.75 f
+  result[0] (out)                                         0.19       1.94 f
+  data arrival time                                                  1.94
+
+  clock vsysclk (rise edge)                               0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  output external delay                                  -0.50      -0.50
+  data required time                                                -0.50
+  --------------------------------------------------------------------------
+  data required time                                                -0.50
+  data arrival time                                                 -1.94
+  --------------------------------------------------------------------------
+  slack (MET)                                                        2.44
+
+
+  Startpoint: A[1] (input port clocked by vsysclk)
+  Endpoint: result[1] (output port clocked by vsysclk)
+  Path Group: vsysclk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  FloatingPointAdder 16000                 saed90nm_typ_ht
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock vsysclk (rise edge)                               0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    1.00       1.00 r
+  A[1] (in)                                               0.00       1.00 r
+  U338/Q (AO22X1)                                         0.16       1.16 r
+  sub_41/A[1] (FloatingPointAdder_DW01_sub_1)             0.00       1.16 r
+  sub_41/U12/Q (XOR3X1)                                   0.21       1.36 f
+  sub_41/DIFF[1] (FloatingPointAdder_DW01_sub_1)          0.00       1.36 f
+  U129/Q (AO222X1)                                        0.25       1.61 f
+  U97/Q (AO22X1)                                          0.19       1.79 f
+  result[1] (out)                                         0.19       1.99 f
+  data arrival time                                                  1.99
+
+  clock vsysclk (rise edge)                               0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  output external delay                                  -0.50      -0.50
+  data required time                                                -0.50
+  --------------------------------------------------------------------------
+  data required time                                                -0.50
+  data arrival time                                                 -1.99
+  --------------------------------------------------------------------------
+  slack (MET)                                                        2.49
+
+
+  Startpoint: A[31] (input port clocked by vsysclk)
+  Endpoint: result[31] (output port clocked by vsysclk)
+  Path Group: vsysclk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  FloatingPointAdder 16000                 saed90nm_typ_ht
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock vsysclk (rise edge)                0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     1.00       1.00 r
+  A[31] (in)                               0.00       1.00 r
+  U231/Q (XNOR2X1)                         0.33       1.33 f
+  U94/Q (OR2X1)                            0.32       1.65 f
+  U93/Q (AO22X1)                           0.18       1.83 f
+  result[31] (out)                         0.19       2.03 f
+  data arrival time                                   2.03
+
+  clock vsysclk (rise edge)                0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  output external delay                   -0.50      -0.50
+  data required time                                 -0.50
+  -----------------------------------------------------------
+  data required time                                 -0.50
+  data arrival time                                  -2.03
+  -----------------------------------------------------------
+  slack (MET)                                         2.53
+
+
+  Startpoint: A[30] (input port clocked by vsysclk)
+  Endpoint: result[30] (output port clocked by vsysclk)
+  Path Group: vsysclk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  FloatingPointAdder 16000                 saed90nm_typ_ht
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock vsysclk (rise edge)                               0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    1.00       1.00 r
+  A[30] (in)                                              0.00       1.00 r
+  U278/Q (AO22X1)                                         0.13       1.13 r
+  U354/Q (XNOR2X1)                                        0.20       1.33 f
+  U352/Q (XNOR2X1)                                        0.21       1.54 f
+  sub_0_root_sub_8_root_sub_52_I22_aco/A[7] (FloatingPointAdder_DW01_sub_4)
+                                                          0.00       1.54 f
+  sub_0_root_sub_8_root_sub_52_I22_aco/U1/Q (XNOR3X1)     0.35       1.89 f
+  sub_0_root_sub_8_root_sub_52_I22_aco/DIFF[7] (FloatingPointAdder_DW01_sub_4)
+                                                          0.00       1.89 f
+  result[30] (out)                                        0.19       2.08 f
+  data arrival time                                                  2.08
+
+  clock vsysclk (rise edge)                               0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  output external delay                                  -0.50      -0.50
+  data required time                                                -0.50
+  --------------------------------------------------------------------------
+  data required time                                                -0.50
+  data arrival time                                                 -2.08
+  --------------------------------------------------------------------------
+  slack (MET)                                                        2.58
+
+
+  Startpoint: A[1] (input port clocked by vsysclk)
+  Endpoint: result[2] (output port clocked by vsysclk)
+  Path Group: vsysclk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  FloatingPointAdder 16000                 saed90nm_typ_ht
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock vsysclk (rise edge)                               0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    1.00       1.00 r
+  A[1] (in)                                               0.00       1.00 r
+  U338/Q (AO22X1)                                         0.16       1.16 r
+  sub_41/A[1] (FloatingPointAdder_DW01_sub_1)             0.00       1.16 r
+  sub_41/U12/Q (XOR3X1)                                   0.21       1.36 f
+  sub_41/DIFF[1] (FloatingPointAdder_DW01_sub_1)          0.00       1.36 f
+  U129/Q (AO222X1)                                        0.25       1.61 f
+  U118/Q (AO222X1)                                        0.18       1.79 f
+  U95/Q (AND2X1)                                          0.17       1.96 f
+  result[2] (out)                                         0.19       2.15 f
+  data arrival time                                                  2.15
+
+  clock vsysclk (rise edge)                               0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  output external delay                                  -0.50      -0.50
+  data required time                                                -0.50
+  --------------------------------------------------------------------------
+  data required time                                                -0.50
+  data arrival time                                                 -2.15
+  --------------------------------------------------------------------------
+  slack (MET)                                                        2.65
+
+
+  Startpoint: A[2] (input port clocked by vsysclk)
+  Endpoint: result[3] (output port clocked by vsysclk)
+  Path Group: vsysclk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  FloatingPointAdder 16000                 saed90nm_typ_ht
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock vsysclk (rise edge)                               0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    1.00       1.00 r
+  A[2] (in)                                               0.00       1.00 r
+  U262/Q (AO22X1)                                         0.18       1.18 r
+  add_37/A[2] (FloatingPointAdder_DW01_add_0)             0.00       1.18 r
+  add_37/U22/Q (XOR3X1)                                   0.26       1.44 f
+  add_37/SUM[2] (FloatingPointAdder_DW01_add_0)           0.00       1.44 f
+  U139/Q (AO222X1)                                        0.17       1.61 f
+  U128/Q (AO222X1)                                        0.18       1.79 f
+  U92/Q (AO22X1)                                          0.19       1.98 f
+  result[3] (out)                                         0.19       2.17 f
+  data arrival time                                                  2.17
+
+  clock vsysclk (rise edge)                               0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  output external delay                                  -0.50      -0.50
+  data required time                                                -0.50
+  --------------------------------------------------------------------------
+  data required time                                                -0.50
+  data arrival time                                                 -2.17
+  --------------------------------------------------------------------------
+  slack (MET)                                                        2.67
+
+
+  Startpoint: A[24] (input port clocked by vsysclk)
+  Endpoint: result[24] (output port clocked by vsysclk)
+  Path Group: vsysclk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  FloatingPointAdder 16000                 saed90nm_typ_ht
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock vsysclk (rise edge)                               0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    1.00       1.00 r
+  A[24] (in)                                              0.00       1.00 r
+  U448/QN (AOI22X1)                                       0.19       1.19 f
+  U429/Q (XNOR2X1)                                        0.22       1.42 f
+  U454/Q (XOR2X1)                                         0.20       1.62 r
+  sub_0_root_sub_8_root_sub_52_I22_aco/A[1] (FloatingPointAdder_DW01_sub_4)
+                                                          0.00       1.62 r
+  sub_0_root_sub_8_root_sub_52_I22_aco/U6/Q (XOR3X1)      0.42       2.04 f
+  sub_0_root_sub_8_root_sub_52_I22_aco/DIFF[1] (FloatingPointAdder_DW01_sub_4)
+                                                          0.00       2.04 f
+  result[24] (out)                                        0.19       2.23 f
+  data arrival time                                                  2.23
+
+  clock vsysclk (rise edge)                               0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  output external delay                                  -0.50      -0.50
+  data required time                                                -0.50
+  --------------------------------------------------------------------------
+  data required time                                                -0.50
+  data arrival time                                                 -2.23
+  --------------------------------------------------------------------------
+  slack (MET)                                                        2.73
+
+
+  Startpoint: A[28] (input port clocked by vsysclk)
+  Endpoint: result[28] (output port clocked by vsysclk)
+  Path Group: vsysclk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  FloatingPointAdder 16000                 saed90nm_typ_ht
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock vsysclk (rise edge)                               0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    1.00       1.00 r
+  A[28] (in)                                              0.00       1.00 r
+  U452/QN (AOI22X1)                                       0.19       1.19 f
+  U439/Q (XNOR2X1)                                        0.22       1.41 f
+  U458/Q (XOR2X1)                                         0.21       1.62 r
+  sub_0_root_sub_8_root_sub_52_I22_aco/A[5] (FloatingPointAdder_DW01_sub_4)
+                                                          0.00       1.62 r
+  sub_0_root_sub_8_root_sub_52_I22_aco/U2_5/S (FADDX1)
+                                                          0.42       2.04 f
+  sub_0_root_sub_8_root_sub_52_I22_aco/DIFF[5] (FloatingPointAdder_DW01_sub_4)
+                                                          0.00       2.04 f
+  result[28] (out)                                        0.19       2.24 f
+  data arrival time                                                  2.24
+
+  clock vsysclk (rise edge)                               0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  output external delay                                  -0.50      -0.50
+  data required time                                                -0.50
+  --------------------------------------------------------------------------
+  data required time                                                -0.50
+  data arrival time                                                 -2.24
+  --------------------------------------------------------------------------
+  slack (MET)                                                        2.74
+
+
+  Startpoint: A[26] (input port clocked by vsysclk)
+  Endpoint: result[26] (output port clocked by vsysclk)
+  Path Group: vsysclk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  FloatingPointAdder 16000                 saed90nm_typ_ht
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock vsysclk (rise edge)                               0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    1.00       1.00 r
+  A[26] (in)                                              0.00       1.00 r
+  U450/QN (AOI22X1)                                       0.19       1.19 f
+  U433/Q (XNOR2X1)                                        0.22       1.41 f
+  U456/Q (XOR2X1)                                         0.20       1.61 r
+  sub_0_root_sub_8_root_sub_52_I22_aco/A[3] (FloatingPointAdder_DW01_sub_4)
+                                                          0.00       1.61 r
+  sub_0_root_sub_8_root_sub_52_I22_aco/U17/Q (XOR3X2)     0.44       2.04 f
+  sub_0_root_sub_8_root_sub_52_I22_aco/DIFF[3] (FloatingPointAdder_DW01_sub_4)
+                                                          0.00       2.04 f
+  result[26] (out)                                        0.19       2.24 f
+  data arrival time                                                  2.24
+
+  clock vsysclk (rise edge)                               0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  output external delay                                  -0.50      -0.50
+  data required time                                                -0.50
+  --------------------------------------------------------------------------
+  data required time                                                -0.50
+  data arrival time                                                 -2.24
+  --------------------------------------------------------------------------
+  slack (MET)                                                        2.74
+
+
+1

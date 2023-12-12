@@ -1,0 +1,30 @@
+ 
+****************************************
+Report : area
+Design : PlusOperatorAdder
+Version: U-2022.12-SP7
+Date   : Tue Dec 12 19:21:09 2023
+****************************************
+
+Library(s) Used:
+
+    saed90nm_typ_ht (File: /home/user26/Downloads/Lab4/ref/models/saed90nm_typ_ht.db)
+
+Number of ports:                          199
+Number of nets:                           228
+Number of cells:                           34
+Number of combinational cells:             32
+Number of sequential cells:                 0
+Number of macros/black boxes:               0
+Number of buf/inv:                          0
+Number of references:                       1
+
+Combinational area:                943.718384
+Buf/Inv area:                        0.000000
+Noncombinational area:               0.000000
+Macro/Black Box area:                0.000000
+Net Interconnect area:              17.983064
+
+Total cell area:                   943.718384
+Total area:                        961.701448
+1

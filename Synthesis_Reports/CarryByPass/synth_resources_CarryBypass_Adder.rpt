@@ -1,0 +1,14 @@
+Warning: Design 'CarryBypass_Adder' has '1' unresolved references. For more detailed information, use the "link" command. (UID-341)
+ 
+****************************************
+Report : resources
+Design : CarryBypass_Adder
+Version: U-2022.12-SP7
+Date   : Tue Dec 12 19:49:20 2023
+****************************************
+
+
+No resource sharing information to report.
+
+No implementations to report
+1

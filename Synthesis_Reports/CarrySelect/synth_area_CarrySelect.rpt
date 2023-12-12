@@ -1,0 +1,33 @@
+Warning: Design 'CarrySelect' has '1' unresolved references. For more detailed information, use the "link" command. (UID-341)
+ 
+****************************************
+Report : area
+Design : CarrySelect
+Version: U-2022.12-SP7
+Date   : Tue Dec 12 19:31:21 2023
+****************************************
+
+Library(s) Used:
+
+    saed90nm_typ_ht (File: /home/user26/Downloads/Lab4/ref/models/saed90nm_typ_ht.db)
+
+Number of ports:                           98
+Number of nets:                           251
+Number of cells:                          122
+Number of combinational cells:             37
+Number of sequential cells:                64
+Number of macros/black boxes:               0
+Number of buf/inv:                          4
+Number of references:                       3
+
+Combinational area:                417.484790
+Buf/Inv area:                       22.118401
+Noncombinational area:               0.000000
+Macro/Black Box area:                0.000000
+Net Interconnect area:            1673.670578
+
+Total cell area:                   417.484790
+Total area:                       2091.155368
+
+Information: This design contains black box (unknown) components. (RPT-8)
+1

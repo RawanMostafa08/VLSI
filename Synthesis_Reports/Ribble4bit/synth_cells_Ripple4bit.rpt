@@ -1,0 +1,39 @@
+ 
+****************************************
+Report : cell
+Design : Ripple4bit
+Version: U-2022.12-SP7
+Date   : Tue Dec 12 19:55:49 2023
+****************************************
+
+Attributes:
+    b - black box (unknown)
+    h - hierarchical
+    n - noncombinational
+    r - removable
+    u - contains unmapped logic
+
+Cell                      Reference       Library             Area  Attributes
+--------------------------------------------------------------------------------
+U2                        AO22X1          saed90nm_typ_ht 11.980800 
+U3                        NAND4X0         saed90nm_typ_ht 8.294400  
+U4                        XOR2X1          saed90nm_typ_ht 13.824000 
+U5                        XOR2X1          saed90nm_typ_ht 13.824000 
+U6                        XOR2X1          saed90nm_typ_ht 13.824000 
+U7                        XOR2X1          saed90nm_typ_ht 13.824000 
+U8                        INVX0           saed90nm_typ_ht 5.529600  
+U9                        AO22X1          saed90nm_typ_ht 11.980800 
+U10                       XOR2X1          saed90nm_typ_ht 13.824000 
+U11                       XOR2X1          saed90nm_typ_ht 13.824000 
+U12                       AO22X1          saed90nm_typ_ht 11.980800 
+U13                       XOR2X1          saed90nm_typ_ht 13.824000 
+U14                       XOR2X1          saed90nm_typ_ht 13.824000 
+U15                       AO22X1          saed90nm_typ_ht 11.980800 
+U16                       XOR2X1          saed90nm_typ_ht 13.824000 
+U17                       XOR2X1          saed90nm_typ_ht 13.824000 
+U18                       AO22X1          saed90nm_typ_ht 11.980800 
+U19                       XOR2X1          saed90nm_typ_ht 13.824000 
+U20                       XOR2X1          saed90nm_typ_ht 13.824000 
+--------------------------------------------------------------------------------
+Total 19 cells                                            239.616003
+1
