@@ -1,0 +1,57 @@
+ 
+****************************************
+Report : resources
+Design : FloatingPointAdder
+Version: U-2022.12-SP7
+Date   : Wed Dec 13 20:08:24 2023
+****************************************
+
+Resource Sharing Report for design FloatingPointAdder in file
+        ./source/FloatingPointAdder.v
+
+===============================================================================
+|          |              |            | Contained     |                      |
+| Resource | Module       | Parameters | Resources     | Contained Operations |
+===============================================================================
+| r208     | DW01_sub     | width=8    |               | sub_49               |
+| r210     | DW01_cmp2    | width=8    |               | lt_50                |
+| r212     | DW01_sub     | width=8    |               | sub_51               |
+| r214     | DW_rash      | A_width=23 |               | sra_52               |
+|          |              | SH_width=8 |               |                      |
+| r216     | DW_rash      | A_width=23 |               | sra_56               |
+|          |              | SH_width=8 |               |                      |
+| r218     | DW01_cmp2    | width=23   |               | gt_66                |
+| r220     | DW01_sub     | width=24   |               | sub_67               |
+| r222     | DW01_sub     | width=24   |               | sub_71               |
+| r430     | DW01_add     | width=8    |               | add_5_root_sub_8_root_sub_84_I22_aco |
+| r432     | DW01_add     | width=8    |               | add_4_root_sub_8_root_sub_84_I22_aco |
+| r434     | DW01_add     | width=8    |               | add_9_root_sub_8_root_sub_84_I22_aco |
+| r436     | DW01_add     | width=8    |               | add_10_root_sub_8_root_sub_84_I22_aco |
+| r438     | DW01_add     | width=8    |               | add_8_root_sub_8_root_sub_84_I22_aco |
+| r440     | DW01_add     | width=8    |               | add_12_root_sub_8_root_sub_84_I22_aco |
+| r442     | DW01_sub     | width=8    |               | sub_13_root_sub_8_root_sub_84_I22_aco |
+| r444     | DW01_add     | width=8    |               | add_11_root_sub_8_root_sub_84_I22_aco |
+| r446     | DW01_add     | width=8    |               | add_7_root_sub_8_root_sub_84_I22_aco |
+| r448     | DW01_sub     | width=8    |               | sub_6_root_sub_8_root_sub_84_I22_aco |
+| r450     | DW01_add     | width=8    |               | add_3_root_sub_8_root_sub_84_I22_aco |
+| r452     | DW01_add     | width=8    |               | add_2_root_sub_8_root_sub_84_I22_aco |
+| r454     | DW01_add     | width=8    |               | add_1_root_sub_8_root_sub_84_I22_aco |
+| r456     | DW01_sub     | width=8    |               | sub_0_root_sub_8_root_sub_84_I22_aco |
+===============================================================================
+
+
+Implementation Report
+===============================================================================
+|                    |                  | Current            | Set            |
+| Cell               | Module           | Implementation     | Implementation |
+===============================================================================
+| sub_0_root_sub_8_root_sub_84_I22_aco  |                    |                |
+|                    | DW01_sub         | rpl                |                |
+| sub_49             | DW01_sub         | rpl                |                |
+| sra_52             | DW_rash          | mx2                |                |
+| sra_56             | DW_rash          | mx2                |                |
+| sub_67             | DW01_sub         | rpl                |                |
+| sub_71             | DW01_sub         | rpl                |                |
+===============================================================================
+
+1

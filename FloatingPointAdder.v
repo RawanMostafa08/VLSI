@@ -6,14 +6,39 @@ module FloatingPointAdder (
   reg sign1, sign2;
   reg [7:0] exponent1, exponent2;
   reg signed [22:0] fraction1, fraction2;
+  reg signed [31:0] fraction1_32, fraction2_32,fraction1_32neg,fraction2_32neg;
+  wire signed [31:0] result_fraction_add, result_fraction_sub12,result_fraction_sub21;
   reg signed [22:0] result_fraction;
   reg signed [7:0] result_exponent;
   reg result_sign;
- reg [21:0] temp_fraction;
+  reg [21:0] temp_fraction;
   integer i;
-
-    // Align exponents
+  wire cout,cin;
+  assign cin=0;
   reg signed [7:0] exponent_diff;
+   //module instantiation
+   CarryBypass_Adder fraction_add(
+        .A(fraction1_32),
+        .B(fraction2_32),
+        .Cin(cin),
+        .Sum(result_fraction_add),
+        .Cout(cout)
+      );
+  CarryBypass_Adder fraction_sub12(
+       .A(fraction1_32),
+       .B(fraction2_32neg),
+       .Cin(cin),
+       .Sum(result_fraction_sub12),
+       .Cout(cout)
+     );
+  CarryBypass_Adder fraction_sub21(
+       .A(fraction1_32neg),
+       .B(fraction2_32),
+       .Cin(cin),
+       .Sum(result_fraction_sub21),
+       .Cout(cout)
+     );
+
   always @* begin
      sign1 = A[31];
      sign2 = B[31];
@@ -33,29 +58,38 @@ module FloatingPointAdder (
       result_sign = sign1;
     end
 	 
+   fraction1_32 = { {9{fraction1[22]}}, fraction1 };
+   fraction2_32 = { {9{fraction2[22]}}, fraction2 };
 	 if (sign1 == sign2) begin
-      result_fraction = fraction1 + fraction2;
-
+      result_fraction=result_fraction_add[22:0];
     end else begin
       if (fraction1 > fraction2) begin
-        result_fraction = fraction1 - fraction2;
+        fraction2_32neg= -fraction2_32;
+        result_fraction=result_fraction_sub12[22:0];
         result_sign = sign1;
       end else begin
-        result_fraction = fraction2 - fraction1;
+        fraction1_32neg= -fraction1_32;
+        result_fraction=result_fraction_sub21[22:0];
         result_sign = sign2;
       end
     end
 	 temp_fraction=result_fraction[21:0];
-    for(i=0;i<22;i=i+1) begin
+      if (result_fraction==23'b0) begin
+        temp_fraction=22'b0;
+      end
+      else begin
+    for(i = 0; i < 22; i = i + 1) begin
     if(temp_fraction[21]==0) begin
         temp_fraction = temp_fraction <<1;
         result_exponent =result_exponent-1;
     end
     end
+      end
+    result_fraction[21:0]=temp_fraction;
 	 
   end
 
   // Construct the result
-  assign result = {result_sign, result_exponent, result_fraction[22],temp_fraction};
+  assign result = {result_sign, result_exponent, result_fraction};
 
 endmodule
