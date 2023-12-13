@@ -1,0 +1,122 @@
+Warning: Design 'CarrySelect' has '1' unresolved references. For more detailed information, use the "link" command. (UID-341)
+ 
+****************************************
+Report : cell
+Design : CarrySelect
+Version: U-2022.12-SP7
+Date   : Tue Dec 12 19:31:21 2023
+****************************************
+
+Attributes:
+    b - black box (unknown)
+    h - hierarchical
+    n - noncombinational
+    r - removable
+    u - contains unmapped logic
+
+Cell                      Reference       Library             Area  Attributes
+--------------------------------------------------------------------------------
+U4                        AO22X1          saed90nm_typ_ht 11.980800 
+U5                        AO22X1          saed90nm_typ_ht 11.980800 
+U6                        AO22X1          saed90nm_typ_ht 11.980800 
+U7                        AO22X1          saed90nm_typ_ht 11.980800 
+U8                        AO22X1          saed90nm_typ_ht 11.980800 
+U9                        AO22X1          saed90nm_typ_ht 11.980800 
+U10                       AO22X1          saed90nm_typ_ht 11.980800 
+U11                       AO22X1          saed90nm_typ_ht 11.980800 
+U12                       AO22X1          saed90nm_typ_ht 11.980800 
+U13                       AO22X1          saed90nm_typ_ht 11.980800 
+U14                       AO22X1          saed90nm_typ_ht 11.980800 
+U15                       AO22X1          saed90nm_typ_ht 11.980800 
+U16                       AO22X1          saed90nm_typ_ht 11.980800 
+U17                       AO22X1          saed90nm_typ_ht 11.980800 
+U18                       AO22X1          saed90nm_typ_ht 11.980800 
+U19                       AO22X1          saed90nm_typ_ht 11.980800 
+U20                       AO22X1          saed90nm_typ_ht 11.980800 
+U21                       AO22X1          saed90nm_typ_ht 11.980800 
+U22                       AO22X1          saed90nm_typ_ht 11.980800 
+U23                       AO22X1          saed90nm_typ_ht 11.980800 
+U24                       AO22X1          saed90nm_typ_ht 11.980800 
+U25                       AO22X1          saed90nm_typ_ht 11.980800 
+U26                       AO22X1          saed90nm_typ_ht 11.980800 
+U27                       AO22X1          saed90nm_typ_ht 11.980800 
+U28                       AO22X1          saed90nm_typ_ht 11.980800 
+U29                       AO22X1          saed90nm_typ_ht 11.980800 
+U30                       AO22X1          saed90nm_typ_ht 11.980800 
+U31                       AO22X1          saed90nm_typ_ht 11.980800 
+U32                       AO22X1          saed90nm_typ_ht 11.980800 
+U33                       AO22X1          saed90nm_typ_ht 11.980800 
+U34                       AO22X1          saed90nm_typ_ht 11.980800 
+U35                       AO22X1          saed90nm_typ_ht 11.980800 
+U36                       AO22X1          saed90nm_typ_ht 11.980800 
+U37                       INVX0           saed90nm_typ_ht 5.529600  
+U38                       INVX0           saed90nm_typ_ht 5.529600  
+U39                       INVX0           saed90nm_typ_ht 5.529600  
+U40                       INVX0           saed90nm_typ_ht 5.529600  
+generate_adders[0].FA1    Fulladder_onebit                0.000000  b
+generate_adders[0].FA2    Fulladder_onebit                0.000000  b
+generate_adders[1].FA1    Fulladder_onebit                0.000000  b
+generate_adders[1].FA2    Fulladder_onebit                0.000000  b
+generate_adders[2].FA1    Fulladder_onebit                0.000000  b
+generate_adders[2].FA2    Fulladder_onebit                0.000000  b
+generate_adders[3].FA1    Fulladder_onebit                0.000000  b
+generate_adders[3].FA2    Fulladder_onebit                0.000000  b
+generate_adders[4].FA1    Fulladder_onebit                0.000000  b
+generate_adders[4].FA2    Fulladder_onebit                0.000000  b
+generate_adders[5].FA1    Fulladder_onebit                0.000000  b
+generate_adders[5].FA2    Fulladder_onebit                0.000000  b
+generate_adders[6].FA1    Fulladder_onebit                0.000000  b
+generate_adders[6].FA2    Fulladder_onebit                0.000000  b
+generate_adders[7].FA1    Fulladder_onebit                0.000000  b
+generate_adders[7].FA2    Fulladder_onebit                0.000000  b
+generate_adders[8].FA1    Fulladder_onebit                0.000000  b
+generate_adders[8].FA2    Fulladder_onebit                0.000000  b
+generate_adders[9].FA1    Fulladder_onebit                0.000000  b
+generate_adders[9].FA2    Fulladder_onebit                0.000000  b
+generate_adders[10].FA1   Fulladder_onebit                0.000000  b
+generate_adders[10].FA2   Fulladder_onebit                0.000000  b
+generate_adders[11].FA1   Fulladder_onebit                0.000000  b
+generate_adders[11].FA2   Fulladder_onebit                0.000000  b
+generate_adders[12].FA1   Fulladder_onebit                0.000000  b
+generate_adders[12].FA2   Fulladder_onebit                0.000000  b
+generate_adders[13].FA1   Fulladder_onebit                0.000000  b
+generate_adders[13].FA2   Fulladder_onebit                0.000000  b
+generate_adders[14].FA1   Fulladder_onebit                0.000000  b
+generate_adders[14].FA2   Fulladder_onebit                0.000000  b
+generate_adders[15].FA1   Fulladder_onebit                0.000000  b
+generate_adders[15].FA2   Fulladder_onebit                0.000000  b
+generate_adders[16].FA1   Fulladder_onebit                0.000000  b
+generate_adders[16].FA2   Fulladder_onebit                0.000000  b
+generate_adders[17].FA1   Fulladder_onebit                0.000000  b
+generate_adders[17].FA2   Fulladder_onebit                0.000000  b
+generate_adders[18].FA1   Fulladder_onebit                0.000000  b
+generate_adders[18].FA2   Fulladder_onebit                0.000000  b
+generate_adders[19].FA1   Fulladder_onebit                0.000000  b
+generate_adders[19].FA2   Fulladder_onebit                0.000000  b
+generate_adders[20].FA1   Fulladder_onebit                0.000000  b
+generate_adders[20].FA2   Fulladder_onebit                0.000000  b
+generate_adders[21].FA1   Fulladder_onebit                0.000000  b
+generate_adders[21].FA2   Fulladder_onebit                0.000000  b
+generate_adders[22].FA1   Fulladder_onebit                0.000000  b
+generate_adders[22].FA2   Fulladder_onebit                0.000000  b
+generate_adders[23].FA1   Fulladder_onebit                0.000000  b
+generate_adders[23].FA2   Fulladder_onebit                0.000000  b
+generate_adders[24].FA1   Fulladder_onebit                0.000000  b
+generate_adders[24].FA2   Fulladder_onebit                0.000000  b
+generate_adders[25].FA1   Fulladder_onebit                0.000000  b
+generate_adders[25].FA2   Fulladder_onebit                0.000000  b
+generate_adders[26].FA1   Fulladder_onebit                0.000000  b
+generate_adders[26].FA2   Fulladder_onebit                0.000000  b
+generate_adders[27].FA1   Fulladder_onebit                0.000000  b
+generate_adders[27].FA2   Fulladder_onebit                0.000000  b
+generate_adders[28].FA1   Fulladder_onebit                0.000000  b
+generate_adders[28].FA2   Fulladder_onebit                0.000000  b
+generate_adders[29].FA1   Fulladder_onebit                0.000000  b
+generate_adders[29].FA2   Fulladder_onebit                0.000000  b
+generate_adders[30].FA1   Fulladder_onebit                0.000000  b
+generate_adders[30].FA2   Fulladder_onebit                0.000000  b
+generate_adders[31].FA1   Fulladder_onebit                0.000000  b
+generate_adders[31].FA2   Fulladder_onebit                0.000000  b
+--------------------------------------------------------------------------------
+Total 101 cells                                           417.484790
+1

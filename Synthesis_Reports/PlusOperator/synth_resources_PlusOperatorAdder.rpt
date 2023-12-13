@@ -1,0 +1,28 @@
+ 
+****************************************
+Report : resources
+Design : PlusOperatorAdder
+Version: U-2022.12-SP7
+Date   : Tue Dec 12 19:21:09 2023
+****************************************
+
+Resource Sharing Report for design PlusOperatorAdder in file
+        ./source/PlusOperatorAdder.v
+
+===============================================================================
+|          |              |            | Contained     |                      |
+| Resource | Module       | Parameters | Resources     | Contained Operations |
+===============================================================================
+| r57      | DW01_add     | width=33   |               | add_1_root_add_9_2   |
+===============================================================================
+
+
+Implementation Report
+===============================================================================
+|                    |                  | Current            | Set            |
+| Cell               | Module           | Implementation     | Implementation |
+===============================================================================
+| add_1_root_add_9_2 | DW01_add         | rpl                |                |
+===============================================================================
+
+1

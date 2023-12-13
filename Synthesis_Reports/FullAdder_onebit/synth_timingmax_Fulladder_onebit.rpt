@@ -1,0 +1,77 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 10
+Design : Fulladder_onebit
+Version: U-2022.12-SP7
+Date   : Tue Dec 12 19:38:12 2023
+****************************************
+
+Operating Conditions: TYPICAL   Library: saed90nm_typ_ht
+Wire Load Model Mode: enclosed
+
+  Startpoint: cin[0] (input port clocked by vsysclk)
+  Endpoint: s[0] (output port clocked by vsysclk)
+  Path Group: vsysclk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  Fulladder_onebit   ForQA                 saed90nm_typ_ht
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock vsysclk (rise edge)                0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     1.00       1.00 r
+  cin[0] (in)                              0.00       1.00 r
+  U3/Q (XOR2X1)                            0.21       1.21 f
+  U1/Q (XOR2X1)                            0.23       1.43 f
+  s[0] (out)                               0.17       1.61 f
+  data arrival time                                   1.61
+
+  clock vsysclk (rise edge)               20.00      20.00
+  clock network delay (ideal)              0.00      20.00
+  output external delay                   -0.50      19.50
+  data required time                                 19.50
+  -----------------------------------------------------------
+  data required time                                 19.50
+  data arrival time                                  -1.61
+  -----------------------------------------------------------
+  slack (MET)                                        17.89
+
+
+  Startpoint: cin[0] (input port clocked by vsysclk)
+  Endpoint: cout[0] (output port clocked by vsysclk)
+  Path Group: vsysclk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  Fulladder_onebit   ForQA                 saed90nm_typ_ht
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock vsysclk (rise edge)                0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     1.00       1.00 r
+  cin[0] (in)                              0.00       1.00 r
+  U3/Q (XOR2X1)                            0.21       1.21 f
+  U2/Q (AO22X1)                            0.19       1.40 f
+  cout[0] (out)                            0.17       1.57 f
+  data arrival time                                   1.57
+
+  clock vsysclk (rise edge)               20.00      20.00
+  clock network delay (ideal)              0.00      20.00
+  output external delay                   -0.50      19.50
+  data required time                                 19.50
+  -----------------------------------------------------------
+  data required time                                 19.50
+  data arrival time                                  -1.57
+  -----------------------------------------------------------
+  slack (MET)                                        17.93
+
+
+1

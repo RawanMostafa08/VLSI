@@ -1,0 +1,2504 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 10
+Design : RippleCarryAdder
+Version: U-2022.12-SP7
+Date   : Tue Dec 12 19:46:29 2023
+****************************************
+
+Operating Conditions: TYPICAL   Library: saed90nm_typ_ht
+Wire Load Model Mode: enclosed
+
+  Startpoint: Cin (input port clocked by vsysclk)
+  Endpoint: Sum[31] (output port clocked by vsysclk)
+  Path Group: vsysclk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  RippleCarryAdder   8000                  saed90nm_typ_ht
+  Fulladder_onebit_0 ForQA                 saed90nm_typ_ht
+  Fulladder_onebit_31
+                     ForQA                 saed90nm_typ_ht
+  Fulladder_onebit_30
+                     ForQA                 saed90nm_typ_ht
+  Fulladder_onebit_29
+                     ForQA                 saed90nm_typ_ht
+  Fulladder_onebit_28
+                     ForQA                 saed90nm_typ_ht
+  Fulladder_onebit_27
+                     ForQA                 saed90nm_typ_ht
+  Fulladder_onebit_26
+                     ForQA                 saed90nm_typ_ht
+  Fulladder_onebit_25
+                     ForQA                 saed90nm_typ_ht
+  Fulladder_onebit_24
+                     ForQA                 saed90nm_typ_ht
+  Fulladder_onebit_23
+                     ForQA                 saed90nm_typ_ht
+  Fulladder_onebit_22
+                     ForQA                 saed90nm_typ_ht
+  Fulladder_onebit_21
+                     ForQA                 saed90nm_typ_ht
+  Fulladder_onebit_20
+                     ForQA                 saed90nm_typ_ht
+  Fulladder_onebit_19
+                     ForQA                 saed90nm_typ_ht
+  Fulladder_onebit_18
+                     ForQA                 saed90nm_typ_ht
+  Fulladder_onebit_17
+                     ForQA                 saed90nm_typ_ht
+  Fulladder_onebit_16
+                     ForQA                 saed90nm_typ_ht
+  Fulladder_onebit_15
+                     ForQA                 saed90nm_typ_ht
+  Fulladder_onebit_14
+                     ForQA                 saed90nm_typ_ht
+  Fulladder_onebit_13
+                     ForQA                 saed90nm_typ_ht
+  Fulladder_onebit_12
+                     ForQA                 saed90nm_typ_ht
+  Fulladder_onebit_11
+                     ForQA                 saed90nm_typ_ht
+  Fulladder_onebit_10
+                     ForQA                 saed90nm_typ_ht
+  Fulladder_onebit_9 ForQA                 saed90nm_typ_ht
+  Fulladder_onebit_8 ForQA                 saed90nm_typ_ht
+  Fulladder_onebit_7 ForQA                 saed90nm_typ_ht
+  Fulladder_onebit_6 ForQA                 saed90nm_typ_ht
+  Fulladder_onebit_5 ForQA                 saed90nm_typ_ht
+  Fulladder_onebit_4 ForQA                 saed90nm_typ_ht
+  Fulladder_onebit_3 ForQA                 saed90nm_typ_ht
+  Fulladder_onebit_2 ForQA                 saed90nm_typ_ht
+  Fulladder_onebit_1 ForQA                 saed90nm_typ_ht
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock vsysclk (rise edge)                               0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    1.00       1.00 r
+  Cin (in)                                                0.00       1.00 r
+  generate_adders[0].Adder/cin[0] (Fulladder_onebit_0)
+                                                          0.00       1.00 r
+  generate_adders[0].Adder/U3/Q (XOR2X1)                  0.22       1.22 f
+  generate_adders[0].Adder/U2/Q (AO22X1)                  0.18       1.40 f
+  generate_adders[0].Adder/cout[0] (Fulladder_onebit_0)
+                                                          0.00       1.40 f
+  generate_adders[1].Adder/cin[0] (Fulladder_onebit_31)
+                                                          0.00       1.40 f
+  generate_adders[1].Adder/U3/Q (XOR2X1)                  0.23       1.62 f
+  generate_adders[1].Adder/U2/Q (AO22X1)                  0.18       1.80 f
+  generate_adders[1].Adder/cout[0] (Fulladder_onebit_31)
+                                                          0.00       1.80 f
+  generate_adders[2].Adder/cin[0] (Fulladder_onebit_30)
+                                                          0.00       1.80 f
+  generate_adders[2].Adder/U3/Q (XOR2X1)                  0.23       2.03 f
+  generate_adders[2].Adder/U2/Q (AO22X1)                  0.18       2.20 f
+  generate_adders[2].Adder/cout[0] (Fulladder_onebit_30)
+                                                          0.00       2.20 f
+  generate_adders[3].Adder/cin[0] (Fulladder_onebit_29)
+                                                          0.00       2.20 f
+  generate_adders[3].Adder/U3/Q (XOR2X1)                  0.23       2.43 f
+  generate_adders[3].Adder/U2/Q (AO22X1)                  0.18       2.61 f
+  generate_adders[3].Adder/cout[0] (Fulladder_onebit_29)
+                                                          0.00       2.61 f
+  generate_adders[4].Adder/cin[0] (Fulladder_onebit_28)
+                                                          0.00       2.61 f
+  generate_adders[4].Adder/U3/Q (XOR2X1)                  0.23       2.83 f
+  generate_adders[4].Adder/U2/Q (AO22X1)                  0.18       3.01 f
+  generate_adders[4].Adder/cout[0] (Fulladder_onebit_28)
+                                                          0.00       3.01 f
+  generate_adders[5].Adder/cin[0] (Fulladder_onebit_27)
+                                                          0.00       3.01 f
+  generate_adders[5].Adder/U3/Q (XOR2X1)                  0.23       3.24 f
+  generate_adders[5].Adder/U2/Q (AO22X1)                  0.18       3.41 f
+  generate_adders[5].Adder/cout[0] (Fulladder_onebit_27)
+                                                          0.00       3.41 f
+  generate_adders[6].Adder/cin[0] (Fulladder_onebit_26)
+                                                          0.00       3.41 f
+  generate_adders[6].Adder/U3/Q (XOR2X1)                  0.23       3.64 f
+  generate_adders[6].Adder/U2/Q (AO22X1)                  0.18       3.81 f
+  generate_adders[6].Adder/cout[0] (Fulladder_onebit_26)
+                                                          0.00       3.81 f
+  generate_adders[7].Adder/cin[0] (Fulladder_onebit_25)
+                                                          0.00       3.81 f
+  generate_adders[7].Adder/U3/Q (XOR2X1)                  0.23       4.04 f
+  generate_adders[7].Adder/U2/Q (AO22X1)                  0.18       4.22 f
+  generate_adders[7].Adder/cout[0] (Fulladder_onebit_25)
+                                                          0.00       4.22 f
+  generate_adders[8].Adder/cin[0] (Fulladder_onebit_24)
+                                                          0.00       4.22 f
+  generate_adders[8].Adder/U3/Q (XOR2X1)                  0.23       4.44 f
+  generate_adders[8].Adder/U2/Q (AO22X1)                  0.18       4.62 f
+  generate_adders[8].Adder/cout[0] (Fulladder_onebit_24)
+                                                          0.00       4.62 f
+  generate_adders[9].Adder/cin[0] (Fulladder_onebit_23)
+                                                          0.00       4.62 f
+  generate_adders[9].Adder/U3/Q (XOR2X1)                  0.23       4.85 f
+  generate_adders[9].Adder/U2/Q (AO22X1)                  0.18       5.02 f
+  generate_adders[9].Adder/cout[0] (Fulladder_onebit_23)
+                                                          0.00       5.02 f
+  generate_adders[10].Adder/cin[0] (Fulladder_onebit_22)
+                                                          0.00       5.02 f
+  generate_adders[10].Adder/U3/Q (XOR2X1)                 0.23       5.25 f
+  generate_adders[10].Adder/U2/Q (AO22X1)                 0.18       5.43 f
+  generate_adders[10].Adder/cout[0] (Fulladder_onebit_22)
+                                                          0.00       5.43 f
+  generate_adders[11].Adder/cin[0] (Fulladder_onebit_21)
+                                                          0.00       5.43 f
+  generate_adders[11].Adder/U3/Q (XOR2X1)                 0.23       5.65 f
+  generate_adders[11].Adder/U2/Q (AO22X1)                 0.18       5.83 f
+  generate_adders[11].Adder/cout[0] (Fulladder_onebit_21)
+                                                          0.00       5.83 f
+  generate_adders[12].Adder/cin[0] (Fulladder_onebit_20)
+                                                          0.00       5.83 f
+  generate_adders[12].Adder/U3/Q (XOR2X1)                 0.23       6.06 f
+  generate_adders[12].Adder/U2/Q (AO22X1)                 0.18       6.23 f
+  generate_adders[12].Adder/cout[0] (Fulladder_onebit_20)
+                                                          0.00       6.23 f
+  generate_adders[13].Adder/cin[0] (Fulladder_onebit_19)
+                                                          0.00       6.23 f
+  generate_adders[13].Adder/U3/Q (XOR2X1)                 0.23       6.46 f
+  generate_adders[13].Adder/U2/Q (AO22X1)                 0.18       6.63 f
+  generate_adders[13].Adder/cout[0] (Fulladder_onebit_19)
+                                                          0.00       6.63 f
+  generate_adders[14].Adder/cin[0] (Fulladder_onebit_18)
+                                                          0.00       6.63 f
+  generate_adders[14].Adder/U3/Q (XOR2X1)                 0.23       6.86 f
+  generate_adders[14].Adder/U2/Q (AO22X1)                 0.18       7.04 f
+  generate_adders[14].Adder/cout[0] (Fulladder_onebit_18)
+                                                          0.00       7.04 f
+  generate_adders[15].Adder/cin[0] (Fulladder_onebit_17)
+                                                          0.00       7.04 f
+  generate_adders[15].Adder/U3/Q (XOR2X1)                 0.23       7.26 f
+  generate_adders[15].Adder/U2/Q (AO22X1)                 0.18       7.44 f
+  generate_adders[15].Adder/cout[0] (Fulladder_onebit_17)
+                                                          0.00       7.44 f
+  generate_adders[16].Adder/cin[0] (Fulladder_onebit_16)
+                                                          0.00       7.44 f
+  generate_adders[16].Adder/U3/Q (XOR2X1)                 0.23       7.67 f
+  generate_adders[16].Adder/U2/Q (AO22X1)                 0.18       7.84 f
+  generate_adders[16].Adder/cout[0] (Fulladder_onebit_16)
+                                                          0.00       7.84 f
+  generate_adders[17].Adder/cin[0] (Fulladder_onebit_15)
+                                                          0.00       7.84 f
+  generate_adders[17].Adder/U3/Q (XOR2X1)                 0.23       8.07 f
+  generate_adders[17].Adder/U2/Q (AO22X1)                 0.18       8.25 f
+  generate_adders[17].Adder/cout[0] (Fulladder_onebit_15)
+                                                          0.00       8.25 f
+  generate_adders[18].Adder/cin[0] (Fulladder_onebit_14)
+                                                          0.00       8.25 f
+  generate_adders[18].Adder/U3/Q (XOR2X1)                 0.23       8.47 f
+  generate_adders[18].Adder/U2/Q (AO22X1)                 0.18       8.65 f
+  generate_adders[18].Adder/cout[0] (Fulladder_onebit_14)
+                                                          0.00       8.65 f
+  generate_adders[19].Adder/cin[0] (Fulladder_onebit_13)
+                                                          0.00       8.65 f
+  generate_adders[19].Adder/U3/Q (XOR2X1)                 0.23       8.88 f
+  generate_adders[19].Adder/U2/Q (AO22X1)                 0.18       9.05 f
+  generate_adders[19].Adder/cout[0] (Fulladder_onebit_13)
+                                                          0.00       9.05 f
+  generate_adders[20].Adder/cin[0] (Fulladder_onebit_12)
+                                                          0.00       9.05 f
+  generate_adders[20].Adder/U3/Q (XOR2X1)                 0.23       9.28 f
+  generate_adders[20].Adder/U2/Q (AO22X1)                 0.18       9.45 f
+  generate_adders[20].Adder/cout[0] (Fulladder_onebit_12)
+                                                          0.00       9.45 f
+  generate_adders[21].Adder/cin[0] (Fulladder_onebit_11)
+                                                          0.00       9.45 f
+  generate_adders[21].Adder/U3/Q (XOR2X1)                 0.23       9.68 f
+  generate_adders[21].Adder/U2/Q (AO22X1)                 0.18       9.86 f
+  generate_adders[21].Adder/cout[0] (Fulladder_onebit_11)
+                                                          0.00       9.86 f
+  generate_adders[22].Adder/cin[0] (Fulladder_onebit_10)
+                                                          0.00       9.86 f
+  generate_adders[22].Adder/U3/Q (XOR2X1)                 0.23      10.08 f
+  generate_adders[22].Adder/U2/Q (AO22X1)                 0.18      10.26 f
+  generate_adders[22].Adder/cout[0] (Fulladder_onebit_10)
+                                                          0.00      10.26 f
+  generate_adders[23].Adder/cin[0] (Fulladder_onebit_9)
+                                                          0.00      10.26 f
+  generate_adders[23].Adder/U3/Q (XOR2X1)                 0.23      10.49 f
+  generate_adders[23].Adder/U2/Q (AO22X1)                 0.18      10.66 f
+  generate_adders[23].Adder/cout[0] (Fulladder_onebit_9)
+                                                          0.00      10.66 f
+  generate_adders[24].Adder/cin[0] (Fulladder_onebit_8)
+                                                          0.00      10.66 f
+  generate_adders[24].Adder/U3/Q (XOR2X1)                 0.23      10.89 f
+  generate_adders[24].Adder/U2/Q (AO22X1)                 0.18      11.07 f
+  generate_adders[24].Adder/cout[0] (Fulladder_onebit_8)
+                                                          0.00      11.07 f
+  generate_adders[25].Adder/cin[0] (Fulladder_onebit_7)
+                                                          0.00      11.07 f
+  generate_adders[25].Adder/U3/Q (XOR2X1)                 0.23      11.29 f
+  generate_adders[25].Adder/U2/Q (AO22X1)                 0.18      11.47 f
+  generate_adders[25].Adder/cout[0] (Fulladder_onebit_7)
+                                                          0.00      11.47 f
+  generate_adders[26].Adder/cin[0] (Fulladder_onebit_6)
+                                                          0.00      11.47 f
+  generate_adders[26].Adder/U3/Q (XOR2X1)                 0.23      11.70 f
+  generate_adders[26].Adder/U2/Q (AO22X1)                 0.18      11.87 f
+  generate_adders[26].Adder/cout[0] (Fulladder_onebit_6)
+                                                          0.00      11.87 f
+  generate_adders[27].Adder/cin[0] (Fulladder_onebit_5)
+                                                          0.00      11.87 f
+  generate_adders[27].Adder/U3/Q (XOR2X1)                 0.23      12.10 f
+  generate_adders[27].Adder/U2/Q (AO22X1)                 0.18      12.27 f
+  generate_adders[27].Adder/cout[0] (Fulladder_onebit_5)
+                                                          0.00      12.27 f
+  generate_adders[28].Adder/cin[0] (Fulladder_onebit_4)
+                                                          0.00      12.27 f
+  generate_adders[28].Adder/U3/Q (XOR2X1)                 0.23      12.50 f
+  generate_adders[28].Adder/U2/Q (AO22X1)                 0.18      12.68 f
+  generate_adders[28].Adder/cout[0] (Fulladder_onebit_4)
+                                                          0.00      12.68 f
+  generate_adders[29].Adder/cin[0] (Fulladder_onebit_3)
+                                                          0.00      12.68 f
+  generate_adders[29].Adder/U3/Q (XOR2X1)                 0.23      12.90 f
+  generate_adders[29].Adder/U2/Q (AO22X1)                 0.18      13.08 f
+  generate_adders[29].Adder/cout[0] (Fulladder_onebit_3)
+                                                          0.00      13.08 f
+  generate_adders[30].Adder/cin[0] (Fulladder_onebit_2)
+                                                          0.00      13.08 f
+  generate_adders[30].Adder/U3/Q (XOR2X1)                 0.23      13.31 f
+  generate_adders[30].Adder/U2/Q (AO22X1)                 0.18      13.48 f
+  generate_adders[30].Adder/cout[0] (Fulladder_onebit_2)
+                                                          0.00      13.48 f
+  generate_adders[31].Adder/cin[0] (Fulladder_onebit_1)
+                                                          0.00      13.48 f
+  generate_adders[31].Adder/U3/Q (XOR2X1)                 0.23      13.71 f
+  generate_adders[31].Adder/U1/Q (XOR2X1)                 0.23      13.94 f
+  generate_adders[31].Adder/s[0] (Fulladder_onebit_1)     0.00      13.94 f
+  Sum[31] (out)                                           0.22      14.16 f
+  data arrival time                                                 14.16
+
+  clock vsysclk (rise edge)                              20.00      20.00
+  clock network delay (ideal)                             0.00      20.00
+  output external delay                                  -0.50      19.50
+  data required time                                                19.50
+  --------------------------------------------------------------------------
+  data required time                                                19.50
+  data arrival time                                                -14.16
+  --------------------------------------------------------------------------
+  slack (MET)                                                        5.34
+
+
+  Startpoint: Cin (input port clocked by vsysclk)
+  Endpoint: Cout (output port clocked by vsysclk)
+  Path Group: vsysclk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  RippleCarryAdder   8000                  saed90nm_typ_ht
+  Fulladder_onebit_0 ForQA                 saed90nm_typ_ht
+  Fulladder_onebit_31
+                     ForQA                 saed90nm_typ_ht
+  Fulladder_onebit_30
+                     ForQA                 saed90nm_typ_ht
+  Fulladder_onebit_29
+                     ForQA                 saed90nm_typ_ht
+  Fulladder_onebit_28
+                     ForQA                 saed90nm_typ_ht
+  Fulladder_onebit_27
+                     ForQA                 saed90nm_typ_ht
+  Fulladder_onebit_26
+                     ForQA                 saed90nm_typ_ht
+  Fulladder_onebit_25
+                     ForQA                 saed90nm_typ_ht
+  Fulladder_onebit_24
+                     ForQA                 saed90nm_typ_ht
+  Fulladder_onebit_23
+                     ForQA                 saed90nm_typ_ht
+  Fulladder_onebit_22
+                     ForQA                 saed90nm_typ_ht
+  Fulladder_onebit_21
+                     ForQA                 saed90nm_typ_ht
+  Fulladder_onebit_20
+                     ForQA                 saed90nm_typ_ht
+  Fulladder_onebit_19
+                     ForQA                 saed90nm_typ_ht
+  Fulladder_onebit_18
+                     ForQA                 saed90nm_typ_ht
+  Fulladder_onebit_17
+                     ForQA                 saed90nm_typ_ht
+  Fulladder_onebit_16
+                     ForQA                 saed90nm_typ_ht
+  Fulladder_onebit_15
+                     ForQA                 saed90nm_typ_ht
+  Fulladder_onebit_14
+                     ForQA                 saed90nm_typ_ht
+  Fulladder_onebit_13
+                     ForQA                 saed90nm_typ_ht
+  Fulladder_onebit_12
+                     ForQA                 saed90nm_typ_ht
+  Fulladder_onebit_11
+                     ForQA                 saed90nm_typ_ht
+  Fulladder_onebit_10
+                     ForQA                 saed90nm_typ_ht
+  Fulladder_onebit_9 ForQA                 saed90nm_typ_ht
+  Fulladder_onebit_8 ForQA                 saed90nm_typ_ht
+  Fulladder_onebit_7 ForQA                 saed90nm_typ_ht
+  Fulladder_onebit_6 ForQA                 saed90nm_typ_ht
+  Fulladder_onebit_5 ForQA                 saed90nm_typ_ht
+  Fulladder_onebit_4 ForQA                 saed90nm_typ_ht
+  Fulladder_onebit_3 ForQA                 saed90nm_typ_ht
+  Fulladder_onebit_2 ForQA                 saed90nm_typ_ht
+  Fulladder_onebit_1 ForQA                 saed90nm_typ_ht
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock vsysclk (rise edge)                               0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    1.00       1.00 r
+  Cin (in)                                                0.00       1.00 r
+  generate_adders[0].Adder/cin[0] (Fulladder_onebit_0)
+                                                          0.00       1.00 r
+  generate_adders[0].Adder/U3/Q (XOR2X1)                  0.22       1.22 f
+  generate_adders[0].Adder/U2/Q (AO22X1)                  0.18       1.40 f
+  generate_adders[0].Adder/cout[0] (Fulladder_onebit_0)
+                                                          0.00       1.40 f
+  generate_adders[1].Adder/cin[0] (Fulladder_onebit_31)
+                                                          0.00       1.40 f
+  generate_adders[1].Adder/U3/Q (XOR2X1)                  0.23       1.62 f
+  generate_adders[1].Adder/U2/Q (AO22X1)                  0.18       1.80 f
+  generate_adders[1].Adder/cout[0] (Fulladder_onebit_31)
+                                                          0.00       1.80 f
+  generate_adders[2].Adder/cin[0] (Fulladder_onebit_30)
+                                                          0.00       1.80 f
+  generate_adders[2].Adder/U3/Q (XOR2X1)                  0.23       2.03 f
+  generate_adders[2].Adder/U2/Q (AO22X1)                  0.18       2.20 f
+  generate_adders[2].Adder/cout[0] (Fulladder_onebit_30)
+                                                          0.00       2.20 f
+  generate_adders[3].Adder/cin[0] (Fulladder_onebit_29)
+                                                          0.00       2.20 f
+  generate_adders[3].Adder/U3/Q (XOR2X1)                  0.23       2.43 f
+  generate_adders[3].Adder/U2/Q (AO22X1)                  0.18       2.61 f
+  generate_adders[3].Adder/cout[0] (Fulladder_onebit_29)
+                                                          0.00       2.61 f
+  generate_adders[4].Adder/cin[0] (Fulladder_onebit_28)
+                                                          0.00       2.61 f
+  generate_adders[4].Adder/U3/Q (XOR2X1)                  0.23       2.83 f
+  generate_adders[4].Adder/U2/Q (AO22X1)                  0.18       3.01 f
+  generate_adders[4].Adder/cout[0] (Fulladder_onebit_28)
+                                                          0.00       3.01 f
+  generate_adders[5].Adder/cin[0] (Fulladder_onebit_27)
+                                                          0.00       3.01 f
+  generate_adders[5].Adder/U3/Q (XOR2X1)                  0.23       3.24 f
+  generate_adders[5].Adder/U2/Q (AO22X1)                  0.18       3.41 f
+  generate_adders[5].Adder/cout[0] (Fulladder_onebit_27)
+                                                          0.00       3.41 f
+  generate_adders[6].Adder/cin[0] (Fulladder_onebit_26)
+                                                          0.00       3.41 f
+  generate_adders[6].Adder/U3/Q (XOR2X1)                  0.23       3.64 f
+  generate_adders[6].Adder/U2/Q (AO22X1)                  0.18       3.81 f
+  generate_adders[6].Adder/cout[0] (Fulladder_onebit_26)
+                                                          0.00       3.81 f
+  generate_adders[7].Adder/cin[0] (Fulladder_onebit_25)
+                                                          0.00       3.81 f
+  generate_adders[7].Adder/U3/Q (XOR2X1)                  0.23       4.04 f
+  generate_adders[7].Adder/U2/Q (AO22X1)                  0.18       4.22 f
+  generate_adders[7].Adder/cout[0] (Fulladder_onebit_25)
+                                                          0.00       4.22 f
+  generate_adders[8].Adder/cin[0] (Fulladder_onebit_24)
+                                                          0.00       4.22 f
+  generate_adders[8].Adder/U3/Q (XOR2X1)                  0.23       4.44 f
+  generate_adders[8].Adder/U2/Q (AO22X1)                  0.18       4.62 f
+  generate_adders[8].Adder/cout[0] (Fulladder_onebit_24)
+                                                          0.00       4.62 f
+  generate_adders[9].Adder/cin[0] (Fulladder_onebit_23)
+                                                          0.00       4.62 f
+  generate_adders[9].Adder/U3/Q (XOR2X1)                  0.23       4.85 f
+  generate_adders[9].Adder/U2/Q (AO22X1)                  0.18       5.02 f
+  generate_adders[9].Adder/cout[0] (Fulladder_onebit_23)
+                                                          0.00       5.02 f
+  generate_adders[10].Adder/cin[0] (Fulladder_onebit_22)
+                                                          0.00       5.02 f
+  generate_adders[10].Adder/U3/Q (XOR2X1)                 0.23       5.25 f
+  generate_adders[10].Adder/U2/Q (AO22X1)                 0.18       5.43 f
+  generate_adders[10].Adder/cout[0] (Fulladder_onebit_22)
+                                                          0.00       5.43 f
+  generate_adders[11].Adder/cin[0] (Fulladder_onebit_21)
+                                                          0.00       5.43 f
+  generate_adders[11].Adder/U3/Q (XOR2X1)                 0.23       5.65 f
+  generate_adders[11].Adder/U2/Q (AO22X1)                 0.18       5.83 f
+  generate_adders[11].Adder/cout[0] (Fulladder_onebit_21)
+                                                          0.00       5.83 f
+  generate_adders[12].Adder/cin[0] (Fulladder_onebit_20)
+                                                          0.00       5.83 f
+  generate_adders[12].Adder/U3/Q (XOR2X1)                 0.23       6.06 f
+  generate_adders[12].Adder/U2/Q (AO22X1)                 0.18       6.23 f
+  generate_adders[12].Adder/cout[0] (Fulladder_onebit_20)
+                                                          0.00       6.23 f
+  generate_adders[13].Adder/cin[0] (Fulladder_onebit_19)
+                                                          0.00       6.23 f
+  generate_adders[13].Adder/U3/Q (XOR2X1)                 0.23       6.46 f
+  generate_adders[13].Adder/U2/Q (AO22X1)                 0.18       6.63 f
+  generate_adders[13].Adder/cout[0] (Fulladder_onebit_19)
+                                                          0.00       6.63 f
+  generate_adders[14].Adder/cin[0] (Fulladder_onebit_18)
+                                                          0.00       6.63 f
+  generate_adders[14].Adder/U3/Q (XOR2X1)                 0.23       6.86 f
+  generate_adders[14].Adder/U2/Q (AO22X1)                 0.18       7.04 f
+  generate_adders[14].Adder/cout[0] (Fulladder_onebit_18)
+                                                          0.00       7.04 f
+  generate_adders[15].Adder/cin[0] (Fulladder_onebit_17)
+                                                          0.00       7.04 f
+  generate_adders[15].Adder/U3/Q (XOR2X1)                 0.23       7.26 f
+  generate_adders[15].Adder/U2/Q (AO22X1)                 0.18       7.44 f
+  generate_adders[15].Adder/cout[0] (Fulladder_onebit_17)
+                                                          0.00       7.44 f
+  generate_adders[16].Adder/cin[0] (Fulladder_onebit_16)
+                                                          0.00       7.44 f
+  generate_adders[16].Adder/U3/Q (XOR2X1)                 0.23       7.67 f
+  generate_adders[16].Adder/U2/Q (AO22X1)                 0.18       7.84 f
+  generate_adders[16].Adder/cout[0] (Fulladder_onebit_16)
+                                                          0.00       7.84 f
+  generate_adders[17].Adder/cin[0] (Fulladder_onebit_15)
+                                                          0.00       7.84 f
+  generate_adders[17].Adder/U3/Q (XOR2X1)                 0.23       8.07 f
+  generate_adders[17].Adder/U2/Q (AO22X1)                 0.18       8.25 f
+  generate_adders[17].Adder/cout[0] (Fulladder_onebit_15)
+                                                          0.00       8.25 f
+  generate_adders[18].Adder/cin[0] (Fulladder_onebit_14)
+                                                          0.00       8.25 f
+  generate_adders[18].Adder/U3/Q (XOR2X1)                 0.23       8.47 f
+  generate_adders[18].Adder/U2/Q (AO22X1)                 0.18       8.65 f
+  generate_adders[18].Adder/cout[0] (Fulladder_onebit_14)
+                                                          0.00       8.65 f
+  generate_adders[19].Adder/cin[0] (Fulladder_onebit_13)
+                                                          0.00       8.65 f
+  generate_adders[19].Adder/U3/Q (XOR2X1)                 0.23       8.88 f
+  generate_adders[19].Adder/U2/Q (AO22X1)                 0.18       9.05 f
+  generate_adders[19].Adder/cout[0] (Fulladder_onebit_13)
+                                                          0.00       9.05 f
+  generate_adders[20].Adder/cin[0] (Fulladder_onebit_12)
+                                                          0.00       9.05 f
+  generate_adders[20].Adder/U3/Q (XOR2X1)                 0.23       9.28 f
+  generate_adders[20].Adder/U2/Q (AO22X1)                 0.18       9.45 f
+  generate_adders[20].Adder/cout[0] (Fulladder_onebit_12)
+                                                          0.00       9.45 f
+  generate_adders[21].Adder/cin[0] (Fulladder_onebit_11)
+                                                          0.00       9.45 f
+  generate_adders[21].Adder/U3/Q (XOR2X1)                 0.23       9.68 f
+  generate_adders[21].Adder/U2/Q (AO22X1)                 0.18       9.86 f
+  generate_adders[21].Adder/cout[0] (Fulladder_onebit_11)
+                                                          0.00       9.86 f
+  generate_adders[22].Adder/cin[0] (Fulladder_onebit_10)
+                                                          0.00       9.86 f
+  generate_adders[22].Adder/U3/Q (XOR2X1)                 0.23      10.08 f
+  generate_adders[22].Adder/U2/Q (AO22X1)                 0.18      10.26 f
+  generate_adders[22].Adder/cout[0] (Fulladder_onebit_10)
+                                                          0.00      10.26 f
+  generate_adders[23].Adder/cin[0] (Fulladder_onebit_9)
+                                                          0.00      10.26 f
+  generate_adders[23].Adder/U3/Q (XOR2X1)                 0.23      10.49 f
+  generate_adders[23].Adder/U2/Q (AO22X1)                 0.18      10.66 f
+  generate_adders[23].Adder/cout[0] (Fulladder_onebit_9)
+                                                          0.00      10.66 f
+  generate_adders[24].Adder/cin[0] (Fulladder_onebit_8)
+                                                          0.00      10.66 f
+  generate_adders[24].Adder/U3/Q (XOR2X1)                 0.23      10.89 f
+  generate_adders[24].Adder/U2/Q (AO22X1)                 0.18      11.07 f
+  generate_adders[24].Adder/cout[0] (Fulladder_onebit_8)
+                                                          0.00      11.07 f
+  generate_adders[25].Adder/cin[0] (Fulladder_onebit_7)
+                                                          0.00      11.07 f
+  generate_adders[25].Adder/U3/Q (XOR2X1)                 0.23      11.29 f
+  generate_adders[25].Adder/U2/Q (AO22X1)                 0.18      11.47 f
+  generate_adders[25].Adder/cout[0] (Fulladder_onebit_7)
+                                                          0.00      11.47 f
+  generate_adders[26].Adder/cin[0] (Fulladder_onebit_6)
+                                                          0.00      11.47 f
+  generate_adders[26].Adder/U3/Q (XOR2X1)                 0.23      11.70 f
+  generate_adders[26].Adder/U2/Q (AO22X1)                 0.18      11.87 f
+  generate_adders[26].Adder/cout[0] (Fulladder_onebit_6)
+                                                          0.00      11.87 f
+  generate_adders[27].Adder/cin[0] (Fulladder_onebit_5)
+                                                          0.00      11.87 f
+  generate_adders[27].Adder/U3/Q (XOR2X1)                 0.23      12.10 f
+  generate_adders[27].Adder/U2/Q (AO22X1)                 0.18      12.27 f
+  generate_adders[27].Adder/cout[0] (Fulladder_onebit_5)
+                                                          0.00      12.27 f
+  generate_adders[28].Adder/cin[0] (Fulladder_onebit_4)
+                                                          0.00      12.27 f
+  generate_adders[28].Adder/U3/Q (XOR2X1)                 0.23      12.50 f
+  generate_adders[28].Adder/U2/Q (AO22X1)                 0.18      12.68 f
+  generate_adders[28].Adder/cout[0] (Fulladder_onebit_4)
+                                                          0.00      12.68 f
+  generate_adders[29].Adder/cin[0] (Fulladder_onebit_3)
+                                                          0.00      12.68 f
+  generate_adders[29].Adder/U3/Q (XOR2X1)                 0.23      12.90 f
+  generate_adders[29].Adder/U2/Q (AO22X1)                 0.18      13.08 f
+  generate_adders[29].Adder/cout[0] (Fulladder_onebit_3)
+                                                          0.00      13.08 f
+  generate_adders[30].Adder/cin[0] (Fulladder_onebit_2)
+                                                          0.00      13.08 f
+  generate_adders[30].Adder/U3/Q (XOR2X1)                 0.23      13.31 f
+  generate_adders[30].Adder/U2/Q (AO22X1)                 0.18      13.48 f
+  generate_adders[30].Adder/cout[0] (Fulladder_onebit_2)
+                                                          0.00      13.48 f
+  generate_adders[31].Adder/cin[0] (Fulladder_onebit_1)
+                                                          0.00      13.48 f
+  generate_adders[31].Adder/U3/Q (XOR2X1)                 0.23      13.71 f
+  generate_adders[31].Adder/U2/Q (AO22X1)                 0.19      13.90 f
+  generate_adders[31].Adder/cout[0] (Fulladder_onebit_1)
+                                                          0.00      13.90 f
+  Cout (out)                                              0.22      14.12 f
+  data arrival time                                                 14.12
+
+  clock vsysclk (rise edge)                              20.00      20.00
+  clock network delay (ideal)                             0.00      20.00
+  output external delay                                  -0.50      19.50
+  data required time                                                19.50
+  --------------------------------------------------------------------------
+  data required time                                                19.50
+  data arrival time                                                -14.12
+  --------------------------------------------------------------------------
+  slack (MET)                                                        5.38
+
+
+  Startpoint: Cin (input port clocked by vsysclk)
+  Endpoint: Sum[30] (output port clocked by vsysclk)
+  Path Group: vsysclk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  RippleCarryAdder   8000                  saed90nm_typ_ht
+  Fulladder_onebit_0 ForQA                 saed90nm_typ_ht
+  Fulladder_onebit_31
+                     ForQA                 saed90nm_typ_ht
+  Fulladder_onebit_30
+                     ForQA                 saed90nm_typ_ht
+  Fulladder_onebit_29
+                     ForQA                 saed90nm_typ_ht
+  Fulladder_onebit_28
+                     ForQA                 saed90nm_typ_ht
+  Fulladder_onebit_27
+                     ForQA                 saed90nm_typ_ht
+  Fulladder_onebit_26
+                     ForQA                 saed90nm_typ_ht
+  Fulladder_onebit_25
+                     ForQA                 saed90nm_typ_ht
+  Fulladder_onebit_24
+                     ForQA                 saed90nm_typ_ht
+  Fulladder_onebit_23
+                     ForQA                 saed90nm_typ_ht
+  Fulladder_onebit_22
+                     ForQA                 saed90nm_typ_ht
+  Fulladder_onebit_21
+                     ForQA                 saed90nm_typ_ht
+  Fulladder_onebit_20
+                     ForQA                 saed90nm_typ_ht
+  Fulladder_onebit_19
+                     ForQA                 saed90nm_typ_ht
+  Fulladder_onebit_18
+                     ForQA                 saed90nm_typ_ht
+  Fulladder_onebit_17
+                     ForQA                 saed90nm_typ_ht
+  Fulladder_onebit_16
+                     ForQA                 saed90nm_typ_ht
+  Fulladder_onebit_15
+                     ForQA                 saed90nm_typ_ht
+  Fulladder_onebit_14
+                     ForQA                 saed90nm_typ_ht
+  Fulladder_onebit_13
+                     ForQA                 saed90nm_typ_ht
+  Fulladder_onebit_12
+                     ForQA                 saed90nm_typ_ht
+  Fulladder_onebit_11
+                     ForQA                 saed90nm_typ_ht
+  Fulladder_onebit_10
+                     ForQA                 saed90nm_typ_ht
+  Fulladder_onebit_9 ForQA                 saed90nm_typ_ht
+  Fulladder_onebit_8 ForQA                 saed90nm_typ_ht
+  Fulladder_onebit_7 ForQA                 saed90nm_typ_ht
+  Fulladder_onebit_6 ForQA                 saed90nm_typ_ht
+  Fulladder_onebit_5 ForQA                 saed90nm_typ_ht
+  Fulladder_onebit_4 ForQA                 saed90nm_typ_ht
+  Fulladder_onebit_3 ForQA                 saed90nm_typ_ht
+  Fulladder_onebit_2 ForQA                 saed90nm_typ_ht
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock vsysclk (rise edge)                               0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    1.00       1.00 r
+  Cin (in)                                                0.00       1.00 r
+  generate_adders[0].Adder/cin[0] (Fulladder_onebit_0)
+                                                          0.00       1.00 r
+  generate_adders[0].Adder/U3/Q (XOR2X1)                  0.22       1.22 f
+  generate_adders[0].Adder/U2/Q (AO22X1)                  0.18       1.40 f
+  generate_adders[0].Adder/cout[0] (Fulladder_onebit_0)
+                                                          0.00       1.40 f
+  generate_adders[1].Adder/cin[0] (Fulladder_onebit_31)
+                                                          0.00       1.40 f
+  generate_adders[1].Adder/U3/Q (XOR2X1)                  0.23       1.62 f
+  generate_adders[1].Adder/U2/Q (AO22X1)                  0.18       1.80 f
+  generate_adders[1].Adder/cout[0] (Fulladder_onebit_31)
+                                                          0.00       1.80 f
+  generate_adders[2].Adder/cin[0] (Fulladder_onebit_30)
+                                                          0.00       1.80 f
+  generate_adders[2].Adder/U3/Q (XOR2X1)                  0.23       2.03 f
+  generate_adders[2].Adder/U2/Q (AO22X1)                  0.18       2.20 f
+  generate_adders[2].Adder/cout[0] (Fulladder_onebit_30)
+                                                          0.00       2.20 f
+  generate_adders[3].Adder/cin[0] (Fulladder_onebit_29)
+                                                          0.00       2.20 f
+  generate_adders[3].Adder/U3/Q (XOR2X1)                  0.23       2.43 f
+  generate_adders[3].Adder/U2/Q (AO22X1)                  0.18       2.61 f
+  generate_adders[3].Adder/cout[0] (Fulladder_onebit_29)
+                                                          0.00       2.61 f
+  generate_adders[4].Adder/cin[0] (Fulladder_onebit_28)
+                                                          0.00       2.61 f
+  generate_adders[4].Adder/U3/Q (XOR2X1)                  0.23       2.83 f
+  generate_adders[4].Adder/U2/Q (AO22X1)                  0.18       3.01 f
+  generate_adders[4].Adder/cout[0] (Fulladder_onebit_28)
+                                                          0.00       3.01 f
+  generate_adders[5].Adder/cin[0] (Fulladder_onebit_27)
+                                                          0.00       3.01 f
+  generate_adders[5].Adder/U3/Q (XOR2X1)                  0.23       3.24 f
+  generate_adders[5].Adder/U2/Q (AO22X1)                  0.18       3.41 f
+  generate_adders[5].Adder/cout[0] (Fulladder_onebit_27)
+                                                          0.00       3.41 f
+  generate_adders[6].Adder/cin[0] (Fulladder_onebit_26)
+                                                          0.00       3.41 f
+  generate_adders[6].Adder/U3/Q (XOR2X1)                  0.23       3.64 f
+  generate_adders[6].Adder/U2/Q (AO22X1)                  0.18       3.81 f
+  generate_adders[6].Adder/cout[0] (Fulladder_onebit_26)
+                                                          0.00       3.81 f
+  generate_adders[7].Adder/cin[0] (Fulladder_onebit_25)
+                                                          0.00       3.81 f
+  generate_adders[7].Adder/U3/Q (XOR2X1)                  0.23       4.04 f
+  generate_adders[7].Adder/U2/Q (AO22X1)                  0.18       4.22 f
+  generate_adders[7].Adder/cout[0] (Fulladder_onebit_25)
+                                                          0.00       4.22 f
+  generate_adders[8].Adder/cin[0] (Fulladder_onebit_24)
+                                                          0.00       4.22 f
+  generate_adders[8].Adder/U3/Q (XOR2X1)                  0.23       4.44 f
+  generate_adders[8].Adder/U2/Q (AO22X1)                  0.18       4.62 f
+  generate_adders[8].Adder/cout[0] (Fulladder_onebit_24)
+                                                          0.00       4.62 f
+  generate_adders[9].Adder/cin[0] (Fulladder_onebit_23)
+                                                          0.00       4.62 f
+  generate_adders[9].Adder/U3/Q (XOR2X1)                  0.23       4.85 f
+  generate_adders[9].Adder/U2/Q (AO22X1)                  0.18       5.02 f
+  generate_adders[9].Adder/cout[0] (Fulladder_onebit_23)
+                                                          0.00       5.02 f
+  generate_adders[10].Adder/cin[0] (Fulladder_onebit_22)
+                                                          0.00       5.02 f
+  generate_adders[10].Adder/U3/Q (XOR2X1)                 0.23       5.25 f
+  generate_adders[10].Adder/U2/Q (AO22X1)                 0.18       5.43 f
+  generate_adders[10].Adder/cout[0] (Fulladder_onebit_22)
+                                                          0.00       5.43 f
+  generate_adders[11].Adder/cin[0] (Fulladder_onebit_21)
+                                                          0.00       5.43 f
+  generate_adders[11].Adder/U3/Q (XOR2X1)                 0.23       5.65 f
+  generate_adders[11].Adder/U2/Q (AO22X1)                 0.18       5.83 f
+  generate_adders[11].Adder/cout[0] (Fulladder_onebit_21)
+                                                          0.00       5.83 f
+  generate_adders[12].Adder/cin[0] (Fulladder_onebit_20)
+                                                          0.00       5.83 f
+  generate_adders[12].Adder/U3/Q (XOR2X1)                 0.23       6.06 f
+  generate_adders[12].Adder/U2/Q (AO22X1)                 0.18       6.23 f
+  generate_adders[12].Adder/cout[0] (Fulladder_onebit_20)
+                                                          0.00       6.23 f
+  generate_adders[13].Adder/cin[0] (Fulladder_onebit_19)
+                                                          0.00       6.23 f
+  generate_adders[13].Adder/U3/Q (XOR2X1)                 0.23       6.46 f
+  generate_adders[13].Adder/U2/Q (AO22X1)                 0.18       6.63 f
+  generate_adders[13].Adder/cout[0] (Fulladder_onebit_19)
+                                                          0.00       6.63 f
+  generate_adders[14].Adder/cin[0] (Fulladder_onebit_18)
+                                                          0.00       6.63 f
+  generate_adders[14].Adder/U3/Q (XOR2X1)                 0.23       6.86 f
+  generate_adders[14].Adder/U2/Q (AO22X1)                 0.18       7.04 f
+  generate_adders[14].Adder/cout[0] (Fulladder_onebit_18)
+                                                          0.00       7.04 f
+  generate_adders[15].Adder/cin[0] (Fulladder_onebit_17)
+                                                          0.00       7.04 f
+  generate_adders[15].Adder/U3/Q (XOR2X1)                 0.23       7.26 f
+  generate_adders[15].Adder/U2/Q (AO22X1)                 0.18       7.44 f
+  generate_adders[15].Adder/cout[0] (Fulladder_onebit_17)
+                                                          0.00       7.44 f
+  generate_adders[16].Adder/cin[0] (Fulladder_onebit_16)
+                                                          0.00       7.44 f
+  generate_adders[16].Adder/U3/Q (XOR2X1)                 0.23       7.67 f
+  generate_adders[16].Adder/U2/Q (AO22X1)                 0.18       7.84 f
+  generate_adders[16].Adder/cout[0] (Fulladder_onebit_16)
+                                                          0.00       7.84 f
+  generate_adders[17].Adder/cin[0] (Fulladder_onebit_15)
+                                                          0.00       7.84 f
+  generate_adders[17].Adder/U3/Q (XOR2X1)                 0.23       8.07 f
+  generate_adders[17].Adder/U2/Q (AO22X1)                 0.18       8.25 f
+  generate_adders[17].Adder/cout[0] (Fulladder_onebit_15)
+                                                          0.00       8.25 f
+  generate_adders[18].Adder/cin[0] (Fulladder_onebit_14)
+                                                          0.00       8.25 f
+  generate_adders[18].Adder/U3/Q (XOR2X1)                 0.23       8.47 f
+  generate_adders[18].Adder/U2/Q (AO22X1)                 0.18       8.65 f
+  generate_adders[18].Adder/cout[0] (Fulladder_onebit_14)
+                                                          0.00       8.65 f
+  generate_adders[19].Adder/cin[0] (Fulladder_onebit_13)
+                                                          0.00       8.65 f
+  generate_adders[19].Adder/U3/Q (XOR2X1)                 0.23       8.88 f
+  generate_adders[19].Adder/U2/Q (AO22X1)                 0.18       9.05 f
+  generate_adders[19].Adder/cout[0] (Fulladder_onebit_13)
+                                                          0.00       9.05 f
+  generate_adders[20].Adder/cin[0] (Fulladder_onebit_12)
+                                                          0.00       9.05 f
+  generate_adders[20].Adder/U3/Q (XOR2X1)                 0.23       9.28 f
+  generate_adders[20].Adder/U2/Q (AO22X1)                 0.18       9.45 f
+  generate_adders[20].Adder/cout[0] (Fulladder_onebit_12)
+                                                          0.00       9.45 f
+  generate_adders[21].Adder/cin[0] (Fulladder_onebit_11)
+                                                          0.00       9.45 f
+  generate_adders[21].Adder/U3/Q (XOR2X1)                 0.23       9.68 f
+  generate_adders[21].Adder/U2/Q (AO22X1)                 0.18       9.86 f
+  generate_adders[21].Adder/cout[0] (Fulladder_onebit_11)
+                                                          0.00       9.86 f
+  generate_adders[22].Adder/cin[0] (Fulladder_onebit_10)
+                                                          0.00       9.86 f
+  generate_adders[22].Adder/U3/Q (XOR2X1)                 0.23      10.08 f
+  generate_adders[22].Adder/U2/Q (AO22X1)                 0.18      10.26 f
+  generate_adders[22].Adder/cout[0] (Fulladder_onebit_10)
+                                                          0.00      10.26 f
+  generate_adders[23].Adder/cin[0] (Fulladder_onebit_9)
+                                                          0.00      10.26 f
+  generate_adders[23].Adder/U3/Q (XOR2X1)                 0.23      10.49 f
+  generate_adders[23].Adder/U2/Q (AO22X1)                 0.18      10.66 f
+  generate_adders[23].Adder/cout[0] (Fulladder_onebit_9)
+                                                          0.00      10.66 f
+  generate_adders[24].Adder/cin[0] (Fulladder_onebit_8)
+                                                          0.00      10.66 f
+  generate_adders[24].Adder/U3/Q (XOR2X1)                 0.23      10.89 f
+  generate_adders[24].Adder/U2/Q (AO22X1)                 0.18      11.07 f
+  generate_adders[24].Adder/cout[0] (Fulladder_onebit_8)
+                                                          0.00      11.07 f
+  generate_adders[25].Adder/cin[0] (Fulladder_onebit_7)
+                                                          0.00      11.07 f
+  generate_adders[25].Adder/U3/Q (XOR2X1)                 0.23      11.29 f
+  generate_adders[25].Adder/U2/Q (AO22X1)                 0.18      11.47 f
+  generate_adders[25].Adder/cout[0] (Fulladder_onebit_7)
+                                                          0.00      11.47 f
+  generate_adders[26].Adder/cin[0] (Fulladder_onebit_6)
+                                                          0.00      11.47 f
+  generate_adders[26].Adder/U3/Q (XOR2X1)                 0.23      11.70 f
+  generate_adders[26].Adder/U2/Q (AO22X1)                 0.18      11.87 f
+  generate_adders[26].Adder/cout[0] (Fulladder_onebit_6)
+                                                          0.00      11.87 f
+  generate_adders[27].Adder/cin[0] (Fulladder_onebit_5)
+                                                          0.00      11.87 f
+  generate_adders[27].Adder/U3/Q (XOR2X1)                 0.23      12.10 f
+  generate_adders[27].Adder/U2/Q (AO22X1)                 0.18      12.27 f
+  generate_adders[27].Adder/cout[0] (Fulladder_onebit_5)
+                                                          0.00      12.27 f
+  generate_adders[28].Adder/cin[0] (Fulladder_onebit_4)
+                                                          0.00      12.27 f
+  generate_adders[28].Adder/U3/Q (XOR2X1)                 0.23      12.50 f
+  generate_adders[28].Adder/U2/Q (AO22X1)                 0.18      12.68 f
+  generate_adders[28].Adder/cout[0] (Fulladder_onebit_4)
+                                                          0.00      12.68 f
+  generate_adders[29].Adder/cin[0] (Fulladder_onebit_3)
+                                                          0.00      12.68 f
+  generate_adders[29].Adder/U3/Q (XOR2X1)                 0.23      12.90 f
+  generate_adders[29].Adder/U2/Q (AO22X1)                 0.18      13.08 f
+  generate_adders[29].Adder/cout[0] (Fulladder_onebit_3)
+                                                          0.00      13.08 f
+  generate_adders[30].Adder/cin[0] (Fulladder_onebit_2)
+                                                          0.00      13.08 f
+  generate_adders[30].Adder/U3/Q (XOR2X1)                 0.23      13.31 f
+  generate_adders[30].Adder/U1/Q (XOR2X1)                 0.23      13.53 f
+  generate_adders[30].Adder/s[0] (Fulladder_onebit_2)     0.00      13.53 f
+  Sum[30] (out)                                           0.22      13.75 f
+  data arrival time                                                 13.75
+
+  clock vsysclk (rise edge)                              20.00      20.00
+  clock network delay (ideal)                             0.00      20.00
+  output external delay                                  -0.50      19.50
+  data required time                                                19.50
+  --------------------------------------------------------------------------
+  data required time                                                19.50
+  data arrival time                                                -13.75
+  --------------------------------------------------------------------------
+  slack (MET)                                                        5.75
+
+
+  Startpoint: Cin (input port clocked by vsysclk)
+  Endpoint: Sum[29] (output port clocked by vsysclk)
+  Path Group: vsysclk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  RippleCarryAdder   8000                  saed90nm_typ_ht
+  Fulladder_onebit_0 ForQA                 saed90nm_typ_ht
+  Fulladder_onebit_31
+                     ForQA                 saed90nm_typ_ht
+  Fulladder_onebit_30
+                     ForQA                 saed90nm_typ_ht
+  Fulladder_onebit_29
+                     ForQA                 saed90nm_typ_ht
+  Fulladder_onebit_28
+                     ForQA                 saed90nm_typ_ht
+  Fulladder_onebit_27
+                     ForQA                 saed90nm_typ_ht
+  Fulladder_onebit_26
+                     ForQA                 saed90nm_typ_ht
+  Fulladder_onebit_25
+                     ForQA                 saed90nm_typ_ht
+  Fulladder_onebit_24
+                     ForQA                 saed90nm_typ_ht
+  Fulladder_onebit_23
+                     ForQA                 saed90nm_typ_ht
+  Fulladder_onebit_22
+                     ForQA                 saed90nm_typ_ht
+  Fulladder_onebit_21
+                     ForQA                 saed90nm_typ_ht
+  Fulladder_onebit_20
+                     ForQA                 saed90nm_typ_ht
+  Fulladder_onebit_19
+                     ForQA                 saed90nm_typ_ht
+  Fulladder_onebit_18
+                     ForQA                 saed90nm_typ_ht
+  Fulladder_onebit_17
+                     ForQA                 saed90nm_typ_ht
+  Fulladder_onebit_16
+                     ForQA                 saed90nm_typ_ht
+  Fulladder_onebit_15
+                     ForQA                 saed90nm_typ_ht
+  Fulladder_onebit_14
+                     ForQA                 saed90nm_typ_ht
+  Fulladder_onebit_13
+                     ForQA                 saed90nm_typ_ht
+  Fulladder_onebit_12
+                     ForQA                 saed90nm_typ_ht
+  Fulladder_onebit_11
+                     ForQA                 saed90nm_typ_ht
+  Fulladder_onebit_10
+                     ForQA                 saed90nm_typ_ht
+  Fulladder_onebit_9 ForQA                 saed90nm_typ_ht
+  Fulladder_onebit_8 ForQA                 saed90nm_typ_ht
+  Fulladder_onebit_7 ForQA                 saed90nm_typ_ht
+  Fulladder_onebit_6 ForQA                 saed90nm_typ_ht
+  Fulladder_onebit_5 ForQA                 saed90nm_typ_ht
+  Fulladder_onebit_4 ForQA                 saed90nm_typ_ht
+  Fulladder_onebit_3 ForQA                 saed90nm_typ_ht
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock vsysclk (rise edge)                               0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    1.00       1.00 r
+  Cin (in)                                                0.00       1.00 r
+  generate_adders[0].Adder/cin[0] (Fulladder_onebit_0)
+                                                          0.00       1.00 r
+  generate_adders[0].Adder/U3/Q (XOR2X1)                  0.22       1.22 f
+  generate_adders[0].Adder/U2/Q (AO22X1)                  0.18       1.40 f
+  generate_adders[0].Adder/cout[0] (Fulladder_onebit_0)
+                                                          0.00       1.40 f
+  generate_adders[1].Adder/cin[0] (Fulladder_onebit_31)
+                                                          0.00       1.40 f
+  generate_adders[1].Adder/U3/Q (XOR2X1)                  0.23       1.62 f
+  generate_adders[1].Adder/U2/Q (AO22X1)                  0.18       1.80 f
+  generate_adders[1].Adder/cout[0] (Fulladder_onebit_31)
+                                                          0.00       1.80 f
+  generate_adders[2].Adder/cin[0] (Fulladder_onebit_30)
+                                                          0.00       1.80 f
+  generate_adders[2].Adder/U3/Q (XOR2X1)                  0.23       2.03 f
+  generate_adders[2].Adder/U2/Q (AO22X1)                  0.18       2.20 f
+  generate_adders[2].Adder/cout[0] (Fulladder_onebit_30)
+                                                          0.00       2.20 f
+  generate_adders[3].Adder/cin[0] (Fulladder_onebit_29)
+                                                          0.00       2.20 f
+  generate_adders[3].Adder/U3/Q (XOR2X1)                  0.23       2.43 f
+  generate_adders[3].Adder/U2/Q (AO22X1)                  0.18       2.61 f
+  generate_adders[3].Adder/cout[0] (Fulladder_onebit_29)
+                                                          0.00       2.61 f
+  generate_adders[4].Adder/cin[0] (Fulladder_onebit_28)
+                                                          0.00       2.61 f
+  generate_adders[4].Adder/U3/Q (XOR2X1)                  0.23       2.83 f
+  generate_adders[4].Adder/U2/Q (AO22X1)                  0.18       3.01 f
+  generate_adders[4].Adder/cout[0] (Fulladder_onebit_28)
+                                                          0.00       3.01 f
+  generate_adders[5].Adder/cin[0] (Fulladder_onebit_27)
+                                                          0.00       3.01 f
+  generate_adders[5].Adder/U3/Q (XOR2X1)                  0.23       3.24 f
+  generate_adders[5].Adder/U2/Q (AO22X1)                  0.18       3.41 f
+  generate_adders[5].Adder/cout[0] (Fulladder_onebit_27)
+                                                          0.00       3.41 f
+  generate_adders[6].Adder/cin[0] (Fulladder_onebit_26)
+                                                          0.00       3.41 f
+  generate_adders[6].Adder/U3/Q (XOR2X1)                  0.23       3.64 f
+  generate_adders[6].Adder/U2/Q (AO22X1)                  0.18       3.81 f
+  generate_adders[6].Adder/cout[0] (Fulladder_onebit_26)
+                                                          0.00       3.81 f
+  generate_adders[7].Adder/cin[0] (Fulladder_onebit_25)
+                                                          0.00       3.81 f
+  generate_adders[7].Adder/U3/Q (XOR2X1)                  0.23       4.04 f
+  generate_adders[7].Adder/U2/Q (AO22X1)                  0.18       4.22 f
+  generate_adders[7].Adder/cout[0] (Fulladder_onebit_25)
+                                                          0.00       4.22 f
+  generate_adders[8].Adder/cin[0] (Fulladder_onebit_24)
+                                                          0.00       4.22 f
+  generate_adders[8].Adder/U3/Q (XOR2X1)                  0.23       4.44 f
+  generate_adders[8].Adder/U2/Q (AO22X1)                  0.18       4.62 f
+  generate_adders[8].Adder/cout[0] (Fulladder_onebit_24)
+                                                          0.00       4.62 f
+  generate_adders[9].Adder/cin[0] (Fulladder_onebit_23)
+                                                          0.00       4.62 f
+  generate_adders[9].Adder/U3/Q (XOR2X1)                  0.23       4.85 f
+  generate_adders[9].Adder/U2/Q (AO22X1)                  0.18       5.02 f
+  generate_adders[9].Adder/cout[0] (Fulladder_onebit_23)
+                                                          0.00       5.02 f
+  generate_adders[10].Adder/cin[0] (Fulladder_onebit_22)
+                                                          0.00       5.02 f
+  generate_adders[10].Adder/U3/Q (XOR2X1)                 0.23       5.25 f
+  generate_adders[10].Adder/U2/Q (AO22X1)                 0.18       5.43 f
+  generate_adders[10].Adder/cout[0] (Fulladder_onebit_22)
+                                                          0.00       5.43 f
+  generate_adders[11].Adder/cin[0] (Fulladder_onebit_21)
+                                                          0.00       5.43 f
+  generate_adders[11].Adder/U3/Q (XOR2X1)                 0.23       5.65 f
+  generate_adders[11].Adder/U2/Q (AO22X1)                 0.18       5.83 f
+  generate_adders[11].Adder/cout[0] (Fulladder_onebit_21)
+                                                          0.00       5.83 f
+  generate_adders[12].Adder/cin[0] (Fulladder_onebit_20)
+                                                          0.00       5.83 f
+  generate_adders[12].Adder/U3/Q (XOR2X1)                 0.23       6.06 f
+  generate_adders[12].Adder/U2/Q (AO22X1)                 0.18       6.23 f
+  generate_adders[12].Adder/cout[0] (Fulladder_onebit_20)
+                                                          0.00       6.23 f
+  generate_adders[13].Adder/cin[0] (Fulladder_onebit_19)
+                                                          0.00       6.23 f
+  generate_adders[13].Adder/U3/Q (XOR2X1)                 0.23       6.46 f
+  generate_adders[13].Adder/U2/Q (AO22X1)                 0.18       6.63 f
+  generate_adders[13].Adder/cout[0] (Fulladder_onebit_19)
+                                                          0.00       6.63 f
+  generate_adders[14].Adder/cin[0] (Fulladder_onebit_18)
+                                                          0.00       6.63 f
+  generate_adders[14].Adder/U3/Q (XOR2X1)                 0.23       6.86 f
+  generate_adders[14].Adder/U2/Q (AO22X1)                 0.18       7.04 f
+  generate_adders[14].Adder/cout[0] (Fulladder_onebit_18)
+                                                          0.00       7.04 f
+  generate_adders[15].Adder/cin[0] (Fulladder_onebit_17)
+                                                          0.00       7.04 f
+  generate_adders[15].Adder/U3/Q (XOR2X1)                 0.23       7.26 f
+  generate_adders[15].Adder/U2/Q (AO22X1)                 0.18       7.44 f
+  generate_adders[15].Adder/cout[0] (Fulladder_onebit_17)
+                                                          0.00       7.44 f
+  generate_adders[16].Adder/cin[0] (Fulladder_onebit_16)
+                                                          0.00       7.44 f
+  generate_adders[16].Adder/U3/Q (XOR2X1)                 0.23       7.67 f
+  generate_adders[16].Adder/U2/Q (AO22X1)                 0.18       7.84 f
+  generate_adders[16].Adder/cout[0] (Fulladder_onebit_16)
+                                                          0.00       7.84 f
+  generate_adders[17].Adder/cin[0] (Fulladder_onebit_15)
+                                                          0.00       7.84 f
+  generate_adders[17].Adder/U3/Q (XOR2X1)                 0.23       8.07 f
+  generate_adders[17].Adder/U2/Q (AO22X1)                 0.18       8.25 f
+  generate_adders[17].Adder/cout[0] (Fulladder_onebit_15)
+                                                          0.00       8.25 f
+  generate_adders[18].Adder/cin[0] (Fulladder_onebit_14)
+                                                          0.00       8.25 f
+  generate_adders[18].Adder/U3/Q (XOR2X1)                 0.23       8.47 f
+  generate_adders[18].Adder/U2/Q (AO22X1)                 0.18       8.65 f
+  generate_adders[18].Adder/cout[0] (Fulladder_onebit_14)
+                                                          0.00       8.65 f
+  generate_adders[19].Adder/cin[0] (Fulladder_onebit_13)
+                                                          0.00       8.65 f
+  generate_adders[19].Adder/U3/Q (XOR2X1)                 0.23       8.88 f
+  generate_adders[19].Adder/U2/Q (AO22X1)                 0.18       9.05 f
+  generate_adders[19].Adder/cout[0] (Fulladder_onebit_13)
+                                                          0.00       9.05 f
+  generate_adders[20].Adder/cin[0] (Fulladder_onebit_12)
+                                                          0.00       9.05 f
+  generate_adders[20].Adder/U3/Q (XOR2X1)                 0.23       9.28 f
+  generate_adders[20].Adder/U2/Q (AO22X1)                 0.18       9.45 f
+  generate_adders[20].Adder/cout[0] (Fulladder_onebit_12)
+                                                          0.00       9.45 f
+  generate_adders[21].Adder/cin[0] (Fulladder_onebit_11)
+                                                          0.00       9.45 f
+  generate_adders[21].Adder/U3/Q (XOR2X1)                 0.23       9.68 f
+  generate_adders[21].Adder/U2/Q (AO22X1)                 0.18       9.86 f
+  generate_adders[21].Adder/cout[0] (Fulladder_onebit_11)
+                                                          0.00       9.86 f
+  generate_adders[22].Adder/cin[0] (Fulladder_onebit_10)
+                                                          0.00       9.86 f
+  generate_adders[22].Adder/U3/Q (XOR2X1)                 0.23      10.08 f
+  generate_adders[22].Adder/U2/Q (AO22X1)                 0.18      10.26 f
+  generate_adders[22].Adder/cout[0] (Fulladder_onebit_10)
+                                                          0.00      10.26 f
+  generate_adders[23].Adder/cin[0] (Fulladder_onebit_9)
+                                                          0.00      10.26 f
+  generate_adders[23].Adder/U3/Q (XOR2X1)                 0.23      10.49 f
+  generate_adders[23].Adder/U2/Q (AO22X1)                 0.18      10.66 f
+  generate_adders[23].Adder/cout[0] (Fulladder_onebit_9)
+                                                          0.00      10.66 f
+  generate_adders[24].Adder/cin[0] (Fulladder_onebit_8)
+                                                          0.00      10.66 f
+  generate_adders[24].Adder/U3/Q (XOR2X1)                 0.23      10.89 f
+  generate_adders[24].Adder/U2/Q (AO22X1)                 0.18      11.07 f
+  generate_adders[24].Adder/cout[0] (Fulladder_onebit_8)
+                                                          0.00      11.07 f
+  generate_adders[25].Adder/cin[0] (Fulladder_onebit_7)
+                                                          0.00      11.07 f
+  generate_adders[25].Adder/U3/Q (XOR2X1)                 0.23      11.29 f
+  generate_adders[25].Adder/U2/Q (AO22X1)                 0.18      11.47 f
+  generate_adders[25].Adder/cout[0] (Fulladder_onebit_7)
+                                                          0.00      11.47 f
+  generate_adders[26].Adder/cin[0] (Fulladder_onebit_6)
+                                                          0.00      11.47 f
+  generate_adders[26].Adder/U3/Q (XOR2X1)                 0.23      11.70 f
+  generate_adders[26].Adder/U2/Q (AO22X1)                 0.18      11.87 f
+  generate_adders[26].Adder/cout[0] (Fulladder_onebit_6)
+                                                          0.00      11.87 f
+  generate_adders[27].Adder/cin[0] (Fulladder_onebit_5)
+                                                          0.00      11.87 f
+  generate_adders[27].Adder/U3/Q (XOR2X1)                 0.23      12.10 f
+  generate_adders[27].Adder/U2/Q (AO22X1)                 0.18      12.27 f
+  generate_adders[27].Adder/cout[0] (Fulladder_onebit_5)
+                                                          0.00      12.27 f
+  generate_adders[28].Adder/cin[0] (Fulladder_onebit_4)
+                                                          0.00      12.27 f
+  generate_adders[28].Adder/U3/Q (XOR2X1)                 0.23      12.50 f
+  generate_adders[28].Adder/U2/Q (AO22X1)                 0.18      12.68 f
+  generate_adders[28].Adder/cout[0] (Fulladder_onebit_4)
+                                                          0.00      12.68 f
+  generate_adders[29].Adder/cin[0] (Fulladder_onebit_3)
+                                                          0.00      12.68 f
+  generate_adders[29].Adder/U3/Q (XOR2X1)                 0.23      12.90 f
+  generate_adders[29].Adder/U1/Q (XOR2X1)                 0.23      13.13 f
+  generate_adders[29].Adder/s[0] (Fulladder_onebit_3)     0.00      13.13 f
+  Sum[29] (out)                                           0.22      13.35 f
+  data arrival time                                                 13.35
+
+  clock vsysclk (rise edge)                              20.00      20.00
+  clock network delay (ideal)                             0.00      20.00
+  output external delay                                  -0.50      19.50
+  data required time                                                19.50
+  --------------------------------------------------------------------------
+  data required time                                                19.50
+  data arrival time                                                -13.35
+  --------------------------------------------------------------------------
+  slack (MET)                                                        6.15
+
+
+  Startpoint: Cin (input port clocked by vsysclk)
+  Endpoint: Sum[28] (output port clocked by vsysclk)
+  Path Group: vsysclk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  RippleCarryAdder   8000                  saed90nm_typ_ht
+  Fulladder_onebit_0 ForQA                 saed90nm_typ_ht
+  Fulladder_onebit_31
+                     ForQA                 saed90nm_typ_ht
+  Fulladder_onebit_30
+                     ForQA                 saed90nm_typ_ht
+  Fulladder_onebit_29
+                     ForQA                 saed90nm_typ_ht
+  Fulladder_onebit_28
+                     ForQA                 saed90nm_typ_ht
+  Fulladder_onebit_27
+                     ForQA                 saed90nm_typ_ht
+  Fulladder_onebit_26
+                     ForQA                 saed90nm_typ_ht
+  Fulladder_onebit_25
+                     ForQA                 saed90nm_typ_ht
+  Fulladder_onebit_24
+                     ForQA                 saed90nm_typ_ht
+  Fulladder_onebit_23
+                     ForQA                 saed90nm_typ_ht
+  Fulladder_onebit_22
+                     ForQA                 saed90nm_typ_ht
+  Fulladder_onebit_21
+                     ForQA                 saed90nm_typ_ht
+  Fulladder_onebit_20
+                     ForQA                 saed90nm_typ_ht
+  Fulladder_onebit_19
+                     ForQA                 saed90nm_typ_ht
+  Fulladder_onebit_18
+                     ForQA                 saed90nm_typ_ht
+  Fulladder_onebit_17
+                     ForQA                 saed90nm_typ_ht
+  Fulladder_onebit_16
+                     ForQA                 saed90nm_typ_ht
+  Fulladder_onebit_15
+                     ForQA                 saed90nm_typ_ht
+  Fulladder_onebit_14
+                     ForQA                 saed90nm_typ_ht
+  Fulladder_onebit_13
+                     ForQA                 saed90nm_typ_ht
+  Fulladder_onebit_12
+                     ForQA                 saed90nm_typ_ht
+  Fulladder_onebit_11
+                     ForQA                 saed90nm_typ_ht
+  Fulladder_onebit_10
+                     ForQA                 saed90nm_typ_ht
+  Fulladder_onebit_9 ForQA                 saed90nm_typ_ht
+  Fulladder_onebit_8 ForQA                 saed90nm_typ_ht
+  Fulladder_onebit_7 ForQA                 saed90nm_typ_ht
+  Fulladder_onebit_6 ForQA                 saed90nm_typ_ht
+  Fulladder_onebit_5 ForQA                 saed90nm_typ_ht
+  Fulladder_onebit_4 ForQA                 saed90nm_typ_ht
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock vsysclk (rise edge)                               0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    1.00       1.00 r
+  Cin (in)                                                0.00       1.00 r
+  generate_adders[0].Adder/cin[0] (Fulladder_onebit_0)
+                                                          0.00       1.00 r
+  generate_adders[0].Adder/U3/Q (XOR2X1)                  0.22       1.22 f
+  generate_adders[0].Adder/U2/Q (AO22X1)                  0.18       1.40 f
+  generate_adders[0].Adder/cout[0] (Fulladder_onebit_0)
+                                                          0.00       1.40 f
+  generate_adders[1].Adder/cin[0] (Fulladder_onebit_31)
+                                                          0.00       1.40 f
+  generate_adders[1].Adder/U3/Q (XOR2X1)                  0.23       1.62 f
+  generate_adders[1].Adder/U2/Q (AO22X1)                  0.18       1.80 f
+  generate_adders[1].Adder/cout[0] (Fulladder_onebit_31)
+                                                          0.00       1.80 f
+  generate_adders[2].Adder/cin[0] (Fulladder_onebit_30)
+                                                          0.00       1.80 f
+  generate_adders[2].Adder/U3/Q (XOR2X1)                  0.23       2.03 f
+  generate_adders[2].Adder/U2/Q (AO22X1)                  0.18       2.20 f
+  generate_adders[2].Adder/cout[0] (Fulladder_onebit_30)
+                                                          0.00       2.20 f
+  generate_adders[3].Adder/cin[0] (Fulladder_onebit_29)
+                                                          0.00       2.20 f
+  generate_adders[3].Adder/U3/Q (XOR2X1)                  0.23       2.43 f
+  generate_adders[3].Adder/U2/Q (AO22X1)                  0.18       2.61 f
+  generate_adders[3].Adder/cout[0] (Fulladder_onebit_29)
+                                                          0.00       2.61 f
+  generate_adders[4].Adder/cin[0] (Fulladder_onebit_28)
+                                                          0.00       2.61 f
+  generate_adders[4].Adder/U3/Q (XOR2X1)                  0.23       2.83 f
+  generate_adders[4].Adder/U2/Q (AO22X1)                  0.18       3.01 f
+  generate_adders[4].Adder/cout[0] (Fulladder_onebit_28)
+                                                          0.00       3.01 f
+  generate_adders[5].Adder/cin[0] (Fulladder_onebit_27)
+                                                          0.00       3.01 f
+  generate_adders[5].Adder/U3/Q (XOR2X1)                  0.23       3.24 f
+  generate_adders[5].Adder/U2/Q (AO22X1)                  0.18       3.41 f
+  generate_adders[5].Adder/cout[0] (Fulladder_onebit_27)
+                                                          0.00       3.41 f
+  generate_adders[6].Adder/cin[0] (Fulladder_onebit_26)
+                                                          0.00       3.41 f
+  generate_adders[6].Adder/U3/Q (XOR2X1)                  0.23       3.64 f
+  generate_adders[6].Adder/U2/Q (AO22X1)                  0.18       3.81 f
+  generate_adders[6].Adder/cout[0] (Fulladder_onebit_26)
+                                                          0.00       3.81 f
+  generate_adders[7].Adder/cin[0] (Fulladder_onebit_25)
+                                                          0.00       3.81 f
+  generate_adders[7].Adder/U3/Q (XOR2X1)                  0.23       4.04 f
+  generate_adders[7].Adder/U2/Q (AO22X1)                  0.18       4.22 f
+  generate_adders[7].Adder/cout[0] (Fulladder_onebit_25)
+                                                          0.00       4.22 f
+  generate_adders[8].Adder/cin[0] (Fulladder_onebit_24)
+                                                          0.00       4.22 f
+  generate_adders[8].Adder/U3/Q (XOR2X1)                  0.23       4.44 f
+  generate_adders[8].Adder/U2/Q (AO22X1)                  0.18       4.62 f
+  generate_adders[8].Adder/cout[0] (Fulladder_onebit_24)
+                                                          0.00       4.62 f
+  generate_adders[9].Adder/cin[0] (Fulladder_onebit_23)
+                                                          0.00       4.62 f
+  generate_adders[9].Adder/U3/Q (XOR2X1)                  0.23       4.85 f
+  generate_adders[9].Adder/U2/Q (AO22X1)                  0.18       5.02 f
+  generate_adders[9].Adder/cout[0] (Fulladder_onebit_23)
+                                                          0.00       5.02 f
+  generate_adders[10].Adder/cin[0] (Fulladder_onebit_22)
+                                                          0.00       5.02 f
+  generate_adders[10].Adder/U3/Q (XOR2X1)                 0.23       5.25 f
+  generate_adders[10].Adder/U2/Q (AO22X1)                 0.18       5.43 f
+  generate_adders[10].Adder/cout[0] (Fulladder_onebit_22)
+                                                          0.00       5.43 f
+  generate_adders[11].Adder/cin[0] (Fulladder_onebit_21)
+                                                          0.00       5.43 f
+  generate_adders[11].Adder/U3/Q (XOR2X1)                 0.23       5.65 f
+  generate_adders[11].Adder/U2/Q (AO22X1)                 0.18       5.83 f
+  generate_adders[11].Adder/cout[0] (Fulladder_onebit_21)
+                                                          0.00       5.83 f
+  generate_adders[12].Adder/cin[0] (Fulladder_onebit_20)
+                                                          0.00       5.83 f
+  generate_adders[12].Adder/U3/Q (XOR2X1)                 0.23       6.06 f
+  generate_adders[12].Adder/U2/Q (AO22X1)                 0.18       6.23 f
+  generate_adders[12].Adder/cout[0] (Fulladder_onebit_20)
+                                                          0.00       6.23 f
+  generate_adders[13].Adder/cin[0] (Fulladder_onebit_19)
+                                                          0.00       6.23 f
+  generate_adders[13].Adder/U3/Q (XOR2X1)                 0.23       6.46 f
+  generate_adders[13].Adder/U2/Q (AO22X1)                 0.18       6.63 f
+  generate_adders[13].Adder/cout[0] (Fulladder_onebit_19)
+                                                          0.00       6.63 f
+  generate_adders[14].Adder/cin[0] (Fulladder_onebit_18)
+                                                          0.00       6.63 f
+  generate_adders[14].Adder/U3/Q (XOR2X1)                 0.23       6.86 f
+  generate_adders[14].Adder/U2/Q (AO22X1)                 0.18       7.04 f
+  generate_adders[14].Adder/cout[0] (Fulladder_onebit_18)
+                                                          0.00       7.04 f
+  generate_adders[15].Adder/cin[0] (Fulladder_onebit_17)
+                                                          0.00       7.04 f
+  generate_adders[15].Adder/U3/Q (XOR2X1)                 0.23       7.26 f
+  generate_adders[15].Adder/U2/Q (AO22X1)                 0.18       7.44 f
+  generate_adders[15].Adder/cout[0] (Fulladder_onebit_17)
+                                                          0.00       7.44 f
+  generate_adders[16].Adder/cin[0] (Fulladder_onebit_16)
+                                                          0.00       7.44 f
+  generate_adders[16].Adder/U3/Q (XOR2X1)                 0.23       7.67 f
+  generate_adders[16].Adder/U2/Q (AO22X1)                 0.18       7.84 f
+  generate_adders[16].Adder/cout[0] (Fulladder_onebit_16)
+                                                          0.00       7.84 f
+  generate_adders[17].Adder/cin[0] (Fulladder_onebit_15)
+                                                          0.00       7.84 f
+  generate_adders[17].Adder/U3/Q (XOR2X1)                 0.23       8.07 f
+  generate_adders[17].Adder/U2/Q (AO22X1)                 0.18       8.25 f
+  generate_adders[17].Adder/cout[0] (Fulladder_onebit_15)
+                                                          0.00       8.25 f
+  generate_adders[18].Adder/cin[0] (Fulladder_onebit_14)
+                                                          0.00       8.25 f
+  generate_adders[18].Adder/U3/Q (XOR2X1)                 0.23       8.47 f
+  generate_adders[18].Adder/U2/Q (AO22X1)                 0.18       8.65 f
+  generate_adders[18].Adder/cout[0] (Fulladder_onebit_14)
+                                                          0.00       8.65 f
+  generate_adders[19].Adder/cin[0] (Fulladder_onebit_13)
+                                                          0.00       8.65 f
+  generate_adders[19].Adder/U3/Q (XOR2X1)                 0.23       8.88 f
+  generate_adders[19].Adder/U2/Q (AO22X1)                 0.18       9.05 f
+  generate_adders[19].Adder/cout[0] (Fulladder_onebit_13)
+                                                          0.00       9.05 f
+  generate_adders[20].Adder/cin[0] (Fulladder_onebit_12)
+                                                          0.00       9.05 f
+  generate_adders[20].Adder/U3/Q (XOR2X1)                 0.23       9.28 f
+  generate_adders[20].Adder/U2/Q (AO22X1)                 0.18       9.45 f
+  generate_adders[20].Adder/cout[0] (Fulladder_onebit_12)
+                                                          0.00       9.45 f
+  generate_adders[21].Adder/cin[0] (Fulladder_onebit_11)
+                                                          0.00       9.45 f
+  generate_adders[21].Adder/U3/Q (XOR2X1)                 0.23       9.68 f
+  generate_adders[21].Adder/U2/Q (AO22X1)                 0.18       9.86 f
+  generate_adders[21].Adder/cout[0] (Fulladder_onebit_11)
+                                                          0.00       9.86 f
+  generate_adders[22].Adder/cin[0] (Fulladder_onebit_10)
+                                                          0.00       9.86 f
+  generate_adders[22].Adder/U3/Q (XOR2X1)                 0.23      10.08 f
+  generate_adders[22].Adder/U2/Q (AO22X1)                 0.18      10.26 f
+  generate_adders[22].Adder/cout[0] (Fulladder_onebit_10)
+                                                          0.00      10.26 f
+  generate_adders[23].Adder/cin[0] (Fulladder_onebit_9)
+                                                          0.00      10.26 f
+  generate_adders[23].Adder/U3/Q (XOR2X1)                 0.23      10.49 f
+  generate_adders[23].Adder/U2/Q (AO22X1)                 0.18      10.66 f
+  generate_adders[23].Adder/cout[0] (Fulladder_onebit_9)
+                                                          0.00      10.66 f
+  generate_adders[24].Adder/cin[0] (Fulladder_onebit_8)
+                                                          0.00      10.66 f
+  generate_adders[24].Adder/U3/Q (XOR2X1)                 0.23      10.89 f
+  generate_adders[24].Adder/U2/Q (AO22X1)                 0.18      11.07 f
+  generate_adders[24].Adder/cout[0] (Fulladder_onebit_8)
+                                                          0.00      11.07 f
+  generate_adders[25].Adder/cin[0] (Fulladder_onebit_7)
+                                                          0.00      11.07 f
+  generate_adders[25].Adder/U3/Q (XOR2X1)                 0.23      11.29 f
+  generate_adders[25].Adder/U2/Q (AO22X1)                 0.18      11.47 f
+  generate_adders[25].Adder/cout[0] (Fulladder_onebit_7)
+                                                          0.00      11.47 f
+  generate_adders[26].Adder/cin[0] (Fulladder_onebit_6)
+                                                          0.00      11.47 f
+  generate_adders[26].Adder/U3/Q (XOR2X1)                 0.23      11.70 f
+  generate_adders[26].Adder/U2/Q (AO22X1)                 0.18      11.87 f
+  generate_adders[26].Adder/cout[0] (Fulladder_onebit_6)
+                                                          0.00      11.87 f
+  generate_adders[27].Adder/cin[0] (Fulladder_onebit_5)
+                                                          0.00      11.87 f
+  generate_adders[27].Adder/U3/Q (XOR2X1)                 0.23      12.10 f
+  generate_adders[27].Adder/U2/Q (AO22X1)                 0.18      12.27 f
+  generate_adders[27].Adder/cout[0] (Fulladder_onebit_5)
+                                                          0.00      12.27 f
+  generate_adders[28].Adder/cin[0] (Fulladder_onebit_4)
+                                                          0.00      12.27 f
+  generate_adders[28].Adder/U3/Q (XOR2X1)                 0.23      12.50 f
+  generate_adders[28].Adder/U1/Q (XOR2X1)                 0.23      12.73 f
+  generate_adders[28].Adder/s[0] (Fulladder_onebit_4)     0.00      12.73 f
+  Sum[28] (out)                                           0.22      12.95 f
+  data arrival time                                                 12.95
+
+  clock vsysclk (rise edge)                              20.00      20.00
+  clock network delay (ideal)                             0.00      20.00
+  output external delay                                  -0.50      19.50
+  data required time                                                19.50
+  --------------------------------------------------------------------------
+  data required time                                                19.50
+  data arrival time                                                -12.95
+  --------------------------------------------------------------------------
+  slack (MET)                                                        6.55
+
+
+  Startpoint: Cin (input port clocked by vsysclk)
+  Endpoint: Sum[27] (output port clocked by vsysclk)
+  Path Group: vsysclk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  RippleCarryAdder   8000                  saed90nm_typ_ht
+  Fulladder_onebit_0 ForQA                 saed90nm_typ_ht
+  Fulladder_onebit_31
+                     ForQA                 saed90nm_typ_ht
+  Fulladder_onebit_30
+                     ForQA                 saed90nm_typ_ht
+  Fulladder_onebit_29
+                     ForQA                 saed90nm_typ_ht
+  Fulladder_onebit_28
+                     ForQA                 saed90nm_typ_ht
+  Fulladder_onebit_27
+                     ForQA                 saed90nm_typ_ht
+  Fulladder_onebit_26
+                     ForQA                 saed90nm_typ_ht
+  Fulladder_onebit_25
+                     ForQA                 saed90nm_typ_ht
+  Fulladder_onebit_24
+                     ForQA                 saed90nm_typ_ht
+  Fulladder_onebit_23
+                     ForQA                 saed90nm_typ_ht
+  Fulladder_onebit_22
+                     ForQA                 saed90nm_typ_ht
+  Fulladder_onebit_21
+                     ForQA                 saed90nm_typ_ht
+  Fulladder_onebit_20
+                     ForQA                 saed90nm_typ_ht
+  Fulladder_onebit_19
+                     ForQA                 saed90nm_typ_ht
+  Fulladder_onebit_18
+                     ForQA                 saed90nm_typ_ht
+  Fulladder_onebit_17
+                     ForQA                 saed90nm_typ_ht
+  Fulladder_onebit_16
+                     ForQA                 saed90nm_typ_ht
+  Fulladder_onebit_15
+                     ForQA                 saed90nm_typ_ht
+  Fulladder_onebit_14
+                     ForQA                 saed90nm_typ_ht
+  Fulladder_onebit_13
+                     ForQA                 saed90nm_typ_ht
+  Fulladder_onebit_12
+                     ForQA                 saed90nm_typ_ht
+  Fulladder_onebit_11
+                     ForQA                 saed90nm_typ_ht
+  Fulladder_onebit_10
+                     ForQA                 saed90nm_typ_ht
+  Fulladder_onebit_9 ForQA                 saed90nm_typ_ht
+  Fulladder_onebit_8 ForQA                 saed90nm_typ_ht
+  Fulladder_onebit_7 ForQA                 saed90nm_typ_ht
+  Fulladder_onebit_6 ForQA                 saed90nm_typ_ht
+  Fulladder_onebit_5 ForQA                 saed90nm_typ_ht
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock vsysclk (rise edge)                               0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    1.00       1.00 r
+  Cin (in)                                                0.00       1.00 r
+  generate_adders[0].Adder/cin[0] (Fulladder_onebit_0)
+                                                          0.00       1.00 r
+  generate_adders[0].Adder/U3/Q (XOR2X1)                  0.22       1.22 f
+  generate_adders[0].Adder/U2/Q (AO22X1)                  0.18       1.40 f
+  generate_adders[0].Adder/cout[0] (Fulladder_onebit_0)
+                                                          0.00       1.40 f
+  generate_adders[1].Adder/cin[0] (Fulladder_onebit_31)
+                                                          0.00       1.40 f
+  generate_adders[1].Adder/U3/Q (XOR2X1)                  0.23       1.62 f
+  generate_adders[1].Adder/U2/Q (AO22X1)                  0.18       1.80 f
+  generate_adders[1].Adder/cout[0] (Fulladder_onebit_31)
+                                                          0.00       1.80 f
+  generate_adders[2].Adder/cin[0] (Fulladder_onebit_30)
+                                                          0.00       1.80 f
+  generate_adders[2].Adder/U3/Q (XOR2X1)                  0.23       2.03 f
+  generate_adders[2].Adder/U2/Q (AO22X1)                  0.18       2.20 f
+  generate_adders[2].Adder/cout[0] (Fulladder_onebit_30)
+                                                          0.00       2.20 f
+  generate_adders[3].Adder/cin[0] (Fulladder_onebit_29)
+                                                          0.00       2.20 f
+  generate_adders[3].Adder/U3/Q (XOR2X1)                  0.23       2.43 f
+  generate_adders[3].Adder/U2/Q (AO22X1)                  0.18       2.61 f
+  generate_adders[3].Adder/cout[0] (Fulladder_onebit_29)
+                                                          0.00       2.61 f
+  generate_adders[4].Adder/cin[0] (Fulladder_onebit_28)
+                                                          0.00       2.61 f
+  generate_adders[4].Adder/U3/Q (XOR2X1)                  0.23       2.83 f
+  generate_adders[4].Adder/U2/Q (AO22X1)                  0.18       3.01 f
+  generate_adders[4].Adder/cout[0] (Fulladder_onebit_28)
+                                                          0.00       3.01 f
+  generate_adders[5].Adder/cin[0] (Fulladder_onebit_27)
+                                                          0.00       3.01 f
+  generate_adders[5].Adder/U3/Q (XOR2X1)                  0.23       3.24 f
+  generate_adders[5].Adder/U2/Q (AO22X1)                  0.18       3.41 f
+  generate_adders[5].Adder/cout[0] (Fulladder_onebit_27)
+                                                          0.00       3.41 f
+  generate_adders[6].Adder/cin[0] (Fulladder_onebit_26)
+                                                          0.00       3.41 f
+  generate_adders[6].Adder/U3/Q (XOR2X1)                  0.23       3.64 f
+  generate_adders[6].Adder/U2/Q (AO22X1)                  0.18       3.81 f
+  generate_adders[6].Adder/cout[0] (Fulladder_onebit_26)
+                                                          0.00       3.81 f
+  generate_adders[7].Adder/cin[0] (Fulladder_onebit_25)
+                                                          0.00       3.81 f
+  generate_adders[7].Adder/U3/Q (XOR2X1)                  0.23       4.04 f
+  generate_adders[7].Adder/U2/Q (AO22X1)                  0.18       4.22 f
+  generate_adders[7].Adder/cout[0] (Fulladder_onebit_25)
+                                                          0.00       4.22 f
+  generate_adders[8].Adder/cin[0] (Fulladder_onebit_24)
+                                                          0.00       4.22 f
+  generate_adders[8].Adder/U3/Q (XOR2X1)                  0.23       4.44 f
+  generate_adders[8].Adder/U2/Q (AO22X1)                  0.18       4.62 f
+  generate_adders[8].Adder/cout[0] (Fulladder_onebit_24)
+                                                          0.00       4.62 f
+  generate_adders[9].Adder/cin[0] (Fulladder_onebit_23)
+                                                          0.00       4.62 f
+  generate_adders[9].Adder/U3/Q (XOR2X1)                  0.23       4.85 f
+  generate_adders[9].Adder/U2/Q (AO22X1)                  0.18       5.02 f
+  generate_adders[9].Adder/cout[0] (Fulladder_onebit_23)
+                                                          0.00       5.02 f
+  generate_adders[10].Adder/cin[0] (Fulladder_onebit_22)
+                                                          0.00       5.02 f
+  generate_adders[10].Adder/U3/Q (XOR2X1)                 0.23       5.25 f
+  generate_adders[10].Adder/U2/Q (AO22X1)                 0.18       5.43 f
+  generate_adders[10].Adder/cout[0] (Fulladder_onebit_22)
+                                                          0.00       5.43 f
+  generate_adders[11].Adder/cin[0] (Fulladder_onebit_21)
+                                                          0.00       5.43 f
+  generate_adders[11].Adder/U3/Q (XOR2X1)                 0.23       5.65 f
+  generate_adders[11].Adder/U2/Q (AO22X1)                 0.18       5.83 f
+  generate_adders[11].Adder/cout[0] (Fulladder_onebit_21)
+                                                          0.00       5.83 f
+  generate_adders[12].Adder/cin[0] (Fulladder_onebit_20)
+                                                          0.00       5.83 f
+  generate_adders[12].Adder/U3/Q (XOR2X1)                 0.23       6.06 f
+  generate_adders[12].Adder/U2/Q (AO22X1)                 0.18       6.23 f
+  generate_adders[12].Adder/cout[0] (Fulladder_onebit_20)
+                                                          0.00       6.23 f
+  generate_adders[13].Adder/cin[0] (Fulladder_onebit_19)
+                                                          0.00       6.23 f
+  generate_adders[13].Adder/U3/Q (XOR2X1)                 0.23       6.46 f
+  generate_adders[13].Adder/U2/Q (AO22X1)                 0.18       6.63 f
+  generate_adders[13].Adder/cout[0] (Fulladder_onebit_19)
+                                                          0.00       6.63 f
+  generate_adders[14].Adder/cin[0] (Fulladder_onebit_18)
+                                                          0.00       6.63 f
+  generate_adders[14].Adder/U3/Q (XOR2X1)                 0.23       6.86 f
+  generate_adders[14].Adder/U2/Q (AO22X1)                 0.18       7.04 f
+  generate_adders[14].Adder/cout[0] (Fulladder_onebit_18)
+                                                          0.00       7.04 f
+  generate_adders[15].Adder/cin[0] (Fulladder_onebit_17)
+                                                          0.00       7.04 f
+  generate_adders[15].Adder/U3/Q (XOR2X1)                 0.23       7.26 f
+  generate_adders[15].Adder/U2/Q (AO22X1)                 0.18       7.44 f
+  generate_adders[15].Adder/cout[0] (Fulladder_onebit_17)
+                                                          0.00       7.44 f
+  generate_adders[16].Adder/cin[0] (Fulladder_onebit_16)
+                                                          0.00       7.44 f
+  generate_adders[16].Adder/U3/Q (XOR2X1)                 0.23       7.67 f
+  generate_adders[16].Adder/U2/Q (AO22X1)                 0.18       7.84 f
+  generate_adders[16].Adder/cout[0] (Fulladder_onebit_16)
+                                                          0.00       7.84 f
+  generate_adders[17].Adder/cin[0] (Fulladder_onebit_15)
+                                                          0.00       7.84 f
+  generate_adders[17].Adder/U3/Q (XOR2X1)                 0.23       8.07 f
+  generate_adders[17].Adder/U2/Q (AO22X1)                 0.18       8.25 f
+  generate_adders[17].Adder/cout[0] (Fulladder_onebit_15)
+                                                          0.00       8.25 f
+  generate_adders[18].Adder/cin[0] (Fulladder_onebit_14)
+                                                          0.00       8.25 f
+  generate_adders[18].Adder/U3/Q (XOR2X1)                 0.23       8.47 f
+  generate_adders[18].Adder/U2/Q (AO22X1)                 0.18       8.65 f
+  generate_adders[18].Adder/cout[0] (Fulladder_onebit_14)
+                                                          0.00       8.65 f
+  generate_adders[19].Adder/cin[0] (Fulladder_onebit_13)
+                                                          0.00       8.65 f
+  generate_adders[19].Adder/U3/Q (XOR2X1)                 0.23       8.88 f
+  generate_adders[19].Adder/U2/Q (AO22X1)                 0.18       9.05 f
+  generate_adders[19].Adder/cout[0] (Fulladder_onebit_13)
+                                                          0.00       9.05 f
+  generate_adders[20].Adder/cin[0] (Fulladder_onebit_12)
+                                                          0.00       9.05 f
+  generate_adders[20].Adder/U3/Q (XOR2X1)                 0.23       9.28 f
+  generate_adders[20].Adder/U2/Q (AO22X1)                 0.18       9.45 f
+  generate_adders[20].Adder/cout[0] (Fulladder_onebit_12)
+                                                          0.00       9.45 f
+  generate_adders[21].Adder/cin[0] (Fulladder_onebit_11)
+                                                          0.00       9.45 f
+  generate_adders[21].Adder/U3/Q (XOR2X1)                 0.23       9.68 f
+  generate_adders[21].Adder/U2/Q (AO22X1)                 0.18       9.86 f
+  generate_adders[21].Adder/cout[0] (Fulladder_onebit_11)
+                                                          0.00       9.86 f
+  generate_adders[22].Adder/cin[0] (Fulladder_onebit_10)
+                                                          0.00       9.86 f
+  generate_adders[22].Adder/U3/Q (XOR2X1)                 0.23      10.08 f
+  generate_adders[22].Adder/U2/Q (AO22X1)                 0.18      10.26 f
+  generate_adders[22].Adder/cout[0] (Fulladder_onebit_10)
+                                                          0.00      10.26 f
+  generate_adders[23].Adder/cin[0] (Fulladder_onebit_9)
+                                                          0.00      10.26 f
+  generate_adders[23].Adder/U3/Q (XOR2X1)                 0.23      10.49 f
+  generate_adders[23].Adder/U2/Q (AO22X1)                 0.18      10.66 f
+  generate_adders[23].Adder/cout[0] (Fulladder_onebit_9)
+                                                          0.00      10.66 f
+  generate_adders[24].Adder/cin[0] (Fulladder_onebit_8)
+                                                          0.00      10.66 f
+  generate_adders[24].Adder/U3/Q (XOR2X1)                 0.23      10.89 f
+  generate_adders[24].Adder/U2/Q (AO22X1)                 0.18      11.07 f
+  generate_adders[24].Adder/cout[0] (Fulladder_onebit_8)
+                                                          0.00      11.07 f
+  generate_adders[25].Adder/cin[0] (Fulladder_onebit_7)
+                                                          0.00      11.07 f
+  generate_adders[25].Adder/U3/Q (XOR2X1)                 0.23      11.29 f
+  generate_adders[25].Adder/U2/Q (AO22X1)                 0.18      11.47 f
+  generate_adders[25].Adder/cout[0] (Fulladder_onebit_7)
+                                                          0.00      11.47 f
+  generate_adders[26].Adder/cin[0] (Fulladder_onebit_6)
+                                                          0.00      11.47 f
+  generate_adders[26].Adder/U3/Q (XOR2X1)                 0.23      11.70 f
+  generate_adders[26].Adder/U2/Q (AO22X1)                 0.18      11.87 f
+  generate_adders[26].Adder/cout[0] (Fulladder_onebit_6)
+                                                          0.00      11.87 f
+  generate_adders[27].Adder/cin[0] (Fulladder_onebit_5)
+                                                          0.00      11.87 f
+  generate_adders[27].Adder/U3/Q (XOR2X1)                 0.23      12.10 f
+  generate_adders[27].Adder/U1/Q (XOR2X1)                 0.23      12.33 f
+  generate_adders[27].Adder/s[0] (Fulladder_onebit_5)     0.00      12.33 f
+  Sum[27] (out)                                           0.22      12.54 f
+  data arrival time                                                 12.54
+
+  clock vsysclk (rise edge)                              20.00      20.00
+  clock network delay (ideal)                             0.00      20.00
+  output external delay                                  -0.50      19.50
+  data required time                                                19.50
+  --------------------------------------------------------------------------
+  data required time                                                19.50
+  data arrival time                                                -12.54
+  --------------------------------------------------------------------------
+  slack (MET)                                                        6.96
+
+
+  Startpoint: Cin (input port clocked by vsysclk)
+  Endpoint: Sum[26] (output port clocked by vsysclk)
+  Path Group: vsysclk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  RippleCarryAdder   8000                  saed90nm_typ_ht
+  Fulladder_onebit_0 ForQA                 saed90nm_typ_ht
+  Fulladder_onebit_31
+                     ForQA                 saed90nm_typ_ht
+  Fulladder_onebit_30
+                     ForQA                 saed90nm_typ_ht
+  Fulladder_onebit_29
+                     ForQA                 saed90nm_typ_ht
+  Fulladder_onebit_28
+                     ForQA                 saed90nm_typ_ht
+  Fulladder_onebit_27
+                     ForQA                 saed90nm_typ_ht
+  Fulladder_onebit_26
+                     ForQA                 saed90nm_typ_ht
+  Fulladder_onebit_25
+                     ForQA                 saed90nm_typ_ht
+  Fulladder_onebit_24
+                     ForQA                 saed90nm_typ_ht
+  Fulladder_onebit_23
+                     ForQA                 saed90nm_typ_ht
+  Fulladder_onebit_22
+                     ForQA                 saed90nm_typ_ht
+  Fulladder_onebit_21
+                     ForQA                 saed90nm_typ_ht
+  Fulladder_onebit_20
+                     ForQA                 saed90nm_typ_ht
+  Fulladder_onebit_19
+                     ForQA                 saed90nm_typ_ht
+  Fulladder_onebit_18
+                     ForQA                 saed90nm_typ_ht
+  Fulladder_onebit_17
+                     ForQA                 saed90nm_typ_ht
+  Fulladder_onebit_16
+                     ForQA                 saed90nm_typ_ht
+  Fulladder_onebit_15
+                     ForQA                 saed90nm_typ_ht
+  Fulladder_onebit_14
+                     ForQA                 saed90nm_typ_ht
+  Fulladder_onebit_13
+                     ForQA                 saed90nm_typ_ht
+  Fulladder_onebit_12
+                     ForQA                 saed90nm_typ_ht
+  Fulladder_onebit_11
+                     ForQA                 saed90nm_typ_ht
+  Fulladder_onebit_10
+                     ForQA                 saed90nm_typ_ht
+  Fulladder_onebit_9 ForQA                 saed90nm_typ_ht
+  Fulladder_onebit_8 ForQA                 saed90nm_typ_ht
+  Fulladder_onebit_7 ForQA                 saed90nm_typ_ht
+  Fulladder_onebit_6 ForQA                 saed90nm_typ_ht
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock vsysclk (rise edge)                               0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    1.00       1.00 r
+  Cin (in)                                                0.00       1.00 r
+  generate_adders[0].Adder/cin[0] (Fulladder_onebit_0)
+                                                          0.00       1.00 r
+  generate_adders[0].Adder/U3/Q (XOR2X1)                  0.22       1.22 f
+  generate_adders[0].Adder/U2/Q (AO22X1)                  0.18       1.40 f
+  generate_adders[0].Adder/cout[0] (Fulladder_onebit_0)
+                                                          0.00       1.40 f
+  generate_adders[1].Adder/cin[0] (Fulladder_onebit_31)
+                                                          0.00       1.40 f
+  generate_adders[1].Adder/U3/Q (XOR2X1)                  0.23       1.62 f
+  generate_adders[1].Adder/U2/Q (AO22X1)                  0.18       1.80 f
+  generate_adders[1].Adder/cout[0] (Fulladder_onebit_31)
+                                                          0.00       1.80 f
+  generate_adders[2].Adder/cin[0] (Fulladder_onebit_30)
+                                                          0.00       1.80 f
+  generate_adders[2].Adder/U3/Q (XOR2X1)                  0.23       2.03 f
+  generate_adders[2].Adder/U2/Q (AO22X1)                  0.18       2.20 f
+  generate_adders[2].Adder/cout[0] (Fulladder_onebit_30)
+                                                          0.00       2.20 f
+  generate_adders[3].Adder/cin[0] (Fulladder_onebit_29)
+                                                          0.00       2.20 f
+  generate_adders[3].Adder/U3/Q (XOR2X1)                  0.23       2.43 f
+  generate_adders[3].Adder/U2/Q (AO22X1)                  0.18       2.61 f
+  generate_adders[3].Adder/cout[0] (Fulladder_onebit_29)
+                                                          0.00       2.61 f
+  generate_adders[4].Adder/cin[0] (Fulladder_onebit_28)
+                                                          0.00       2.61 f
+  generate_adders[4].Adder/U3/Q (XOR2X1)                  0.23       2.83 f
+  generate_adders[4].Adder/U2/Q (AO22X1)                  0.18       3.01 f
+  generate_adders[4].Adder/cout[0] (Fulladder_onebit_28)
+                                                          0.00       3.01 f
+  generate_adders[5].Adder/cin[0] (Fulladder_onebit_27)
+                                                          0.00       3.01 f
+  generate_adders[5].Adder/U3/Q (XOR2X1)                  0.23       3.24 f
+  generate_adders[5].Adder/U2/Q (AO22X1)                  0.18       3.41 f
+  generate_adders[5].Adder/cout[0] (Fulladder_onebit_27)
+                                                          0.00       3.41 f
+  generate_adders[6].Adder/cin[0] (Fulladder_onebit_26)
+                                                          0.00       3.41 f
+  generate_adders[6].Adder/U3/Q (XOR2X1)                  0.23       3.64 f
+  generate_adders[6].Adder/U2/Q (AO22X1)                  0.18       3.81 f
+  generate_adders[6].Adder/cout[0] (Fulladder_onebit_26)
+                                                          0.00       3.81 f
+  generate_adders[7].Adder/cin[0] (Fulladder_onebit_25)
+                                                          0.00       3.81 f
+  generate_adders[7].Adder/U3/Q (XOR2X1)                  0.23       4.04 f
+  generate_adders[7].Adder/U2/Q (AO22X1)                  0.18       4.22 f
+  generate_adders[7].Adder/cout[0] (Fulladder_onebit_25)
+                                                          0.00       4.22 f
+  generate_adders[8].Adder/cin[0] (Fulladder_onebit_24)
+                                                          0.00       4.22 f
+  generate_adders[8].Adder/U3/Q (XOR2X1)                  0.23       4.44 f
+  generate_adders[8].Adder/U2/Q (AO22X1)                  0.18       4.62 f
+  generate_adders[8].Adder/cout[0] (Fulladder_onebit_24)
+                                                          0.00       4.62 f
+  generate_adders[9].Adder/cin[0] (Fulladder_onebit_23)
+                                                          0.00       4.62 f
+  generate_adders[9].Adder/U3/Q (XOR2X1)                  0.23       4.85 f
+  generate_adders[9].Adder/U2/Q (AO22X1)                  0.18       5.02 f
+  generate_adders[9].Adder/cout[0] (Fulladder_onebit_23)
+                                                          0.00       5.02 f
+  generate_adders[10].Adder/cin[0] (Fulladder_onebit_22)
+                                                          0.00       5.02 f
+  generate_adders[10].Adder/U3/Q (XOR2X1)                 0.23       5.25 f
+  generate_adders[10].Adder/U2/Q (AO22X1)                 0.18       5.43 f
+  generate_adders[10].Adder/cout[0] (Fulladder_onebit_22)
+                                                          0.00       5.43 f
+  generate_adders[11].Adder/cin[0] (Fulladder_onebit_21)
+                                                          0.00       5.43 f
+  generate_adders[11].Adder/U3/Q (XOR2X1)                 0.23       5.65 f
+  generate_adders[11].Adder/U2/Q (AO22X1)                 0.18       5.83 f
+  generate_adders[11].Adder/cout[0] (Fulladder_onebit_21)
+                                                          0.00       5.83 f
+  generate_adders[12].Adder/cin[0] (Fulladder_onebit_20)
+                                                          0.00       5.83 f
+  generate_adders[12].Adder/U3/Q (XOR2X1)                 0.23       6.06 f
+  generate_adders[12].Adder/U2/Q (AO22X1)                 0.18       6.23 f
+  generate_adders[12].Adder/cout[0] (Fulladder_onebit_20)
+                                                          0.00       6.23 f
+  generate_adders[13].Adder/cin[0] (Fulladder_onebit_19)
+                                                          0.00       6.23 f
+  generate_adders[13].Adder/U3/Q (XOR2X1)                 0.23       6.46 f
+  generate_adders[13].Adder/U2/Q (AO22X1)                 0.18       6.63 f
+  generate_adders[13].Adder/cout[0] (Fulladder_onebit_19)
+                                                          0.00       6.63 f
+  generate_adders[14].Adder/cin[0] (Fulladder_onebit_18)
+                                                          0.00       6.63 f
+  generate_adders[14].Adder/U3/Q (XOR2X1)                 0.23       6.86 f
+  generate_adders[14].Adder/U2/Q (AO22X1)                 0.18       7.04 f
+  generate_adders[14].Adder/cout[0] (Fulladder_onebit_18)
+                                                          0.00       7.04 f
+  generate_adders[15].Adder/cin[0] (Fulladder_onebit_17)
+                                                          0.00       7.04 f
+  generate_adders[15].Adder/U3/Q (XOR2X1)                 0.23       7.26 f
+  generate_adders[15].Adder/U2/Q (AO22X1)                 0.18       7.44 f
+  generate_adders[15].Adder/cout[0] (Fulladder_onebit_17)
+                                                          0.00       7.44 f
+  generate_adders[16].Adder/cin[0] (Fulladder_onebit_16)
+                                                          0.00       7.44 f
+  generate_adders[16].Adder/U3/Q (XOR2X1)                 0.23       7.67 f
+  generate_adders[16].Adder/U2/Q (AO22X1)                 0.18       7.84 f
+  generate_adders[16].Adder/cout[0] (Fulladder_onebit_16)
+                                                          0.00       7.84 f
+  generate_adders[17].Adder/cin[0] (Fulladder_onebit_15)
+                                                          0.00       7.84 f
+  generate_adders[17].Adder/U3/Q (XOR2X1)                 0.23       8.07 f
+  generate_adders[17].Adder/U2/Q (AO22X1)                 0.18       8.25 f
+  generate_adders[17].Adder/cout[0] (Fulladder_onebit_15)
+                                                          0.00       8.25 f
+  generate_adders[18].Adder/cin[0] (Fulladder_onebit_14)
+                                                          0.00       8.25 f
+  generate_adders[18].Adder/U3/Q (XOR2X1)                 0.23       8.47 f
+  generate_adders[18].Adder/U2/Q (AO22X1)                 0.18       8.65 f
+  generate_adders[18].Adder/cout[0] (Fulladder_onebit_14)
+                                                          0.00       8.65 f
+  generate_adders[19].Adder/cin[0] (Fulladder_onebit_13)
+                                                          0.00       8.65 f
+  generate_adders[19].Adder/U3/Q (XOR2X1)                 0.23       8.88 f
+  generate_adders[19].Adder/U2/Q (AO22X1)                 0.18       9.05 f
+  generate_adders[19].Adder/cout[0] (Fulladder_onebit_13)
+                                                          0.00       9.05 f
+  generate_adders[20].Adder/cin[0] (Fulladder_onebit_12)
+                                                          0.00       9.05 f
+  generate_adders[20].Adder/U3/Q (XOR2X1)                 0.23       9.28 f
+  generate_adders[20].Adder/U2/Q (AO22X1)                 0.18       9.45 f
+  generate_adders[20].Adder/cout[0] (Fulladder_onebit_12)
+                                                          0.00       9.45 f
+  generate_adders[21].Adder/cin[0] (Fulladder_onebit_11)
+                                                          0.00       9.45 f
+  generate_adders[21].Adder/U3/Q (XOR2X1)                 0.23       9.68 f
+  generate_adders[21].Adder/U2/Q (AO22X1)                 0.18       9.86 f
+  generate_adders[21].Adder/cout[0] (Fulladder_onebit_11)
+                                                          0.00       9.86 f
+  generate_adders[22].Adder/cin[0] (Fulladder_onebit_10)
+                                                          0.00       9.86 f
+  generate_adders[22].Adder/U3/Q (XOR2X1)                 0.23      10.08 f
+  generate_adders[22].Adder/U2/Q (AO22X1)                 0.18      10.26 f
+  generate_adders[22].Adder/cout[0] (Fulladder_onebit_10)
+                                                          0.00      10.26 f
+  generate_adders[23].Adder/cin[0] (Fulladder_onebit_9)
+                                                          0.00      10.26 f
+  generate_adders[23].Adder/U3/Q (XOR2X1)                 0.23      10.49 f
+  generate_adders[23].Adder/U2/Q (AO22X1)                 0.18      10.66 f
+  generate_adders[23].Adder/cout[0] (Fulladder_onebit_9)
+                                                          0.00      10.66 f
+  generate_adders[24].Adder/cin[0] (Fulladder_onebit_8)
+                                                          0.00      10.66 f
+  generate_adders[24].Adder/U3/Q (XOR2X1)                 0.23      10.89 f
+  generate_adders[24].Adder/U2/Q (AO22X1)                 0.18      11.07 f
+  generate_adders[24].Adder/cout[0] (Fulladder_onebit_8)
+                                                          0.00      11.07 f
+  generate_adders[25].Adder/cin[0] (Fulladder_onebit_7)
+                                                          0.00      11.07 f
+  generate_adders[25].Adder/U3/Q (XOR2X1)                 0.23      11.29 f
+  generate_adders[25].Adder/U2/Q (AO22X1)                 0.18      11.47 f
+  generate_adders[25].Adder/cout[0] (Fulladder_onebit_7)
+                                                          0.00      11.47 f
+  generate_adders[26].Adder/cin[0] (Fulladder_onebit_6)
+                                                          0.00      11.47 f
+  generate_adders[26].Adder/U3/Q (XOR2X1)                 0.23      11.70 f
+  generate_adders[26].Adder/U1/Q (XOR2X1)                 0.23      11.92 f
+  generate_adders[26].Adder/s[0] (Fulladder_onebit_6)     0.00      11.92 f
+  Sum[26] (out)                                           0.22      12.14 f
+  data arrival time                                                 12.14
+
+  clock vsysclk (rise edge)                              20.00      20.00
+  clock network delay (ideal)                             0.00      20.00
+  output external delay                                  -0.50      19.50
+  data required time                                                19.50
+  --------------------------------------------------------------------------
+  data required time                                                19.50
+  data arrival time                                                -12.14
+  --------------------------------------------------------------------------
+  slack (MET)                                                        7.36
+
+
+  Startpoint: Cin (input port clocked by vsysclk)
+  Endpoint: Sum[25] (output port clocked by vsysclk)
+  Path Group: vsysclk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  RippleCarryAdder   8000                  saed90nm_typ_ht
+  Fulladder_onebit_0 ForQA                 saed90nm_typ_ht
+  Fulladder_onebit_31
+                     ForQA                 saed90nm_typ_ht
+  Fulladder_onebit_30
+                     ForQA                 saed90nm_typ_ht
+  Fulladder_onebit_29
+                     ForQA                 saed90nm_typ_ht
+  Fulladder_onebit_28
+                     ForQA                 saed90nm_typ_ht
+  Fulladder_onebit_27
+                     ForQA                 saed90nm_typ_ht
+  Fulladder_onebit_26
+                     ForQA                 saed90nm_typ_ht
+  Fulladder_onebit_25
+                     ForQA                 saed90nm_typ_ht
+  Fulladder_onebit_24
+                     ForQA                 saed90nm_typ_ht
+  Fulladder_onebit_23
+                     ForQA                 saed90nm_typ_ht
+  Fulladder_onebit_22
+                     ForQA                 saed90nm_typ_ht
+  Fulladder_onebit_21
+                     ForQA                 saed90nm_typ_ht
+  Fulladder_onebit_20
+                     ForQA                 saed90nm_typ_ht
+  Fulladder_onebit_19
+                     ForQA                 saed90nm_typ_ht
+  Fulladder_onebit_18
+                     ForQA                 saed90nm_typ_ht
+  Fulladder_onebit_17
+                     ForQA                 saed90nm_typ_ht
+  Fulladder_onebit_16
+                     ForQA                 saed90nm_typ_ht
+  Fulladder_onebit_15
+                     ForQA                 saed90nm_typ_ht
+  Fulladder_onebit_14
+                     ForQA                 saed90nm_typ_ht
+  Fulladder_onebit_13
+                     ForQA                 saed90nm_typ_ht
+  Fulladder_onebit_12
+                     ForQA                 saed90nm_typ_ht
+  Fulladder_onebit_11
+                     ForQA                 saed90nm_typ_ht
+  Fulladder_onebit_10
+                     ForQA                 saed90nm_typ_ht
+  Fulladder_onebit_9 ForQA                 saed90nm_typ_ht
+  Fulladder_onebit_8 ForQA                 saed90nm_typ_ht
+  Fulladder_onebit_7 ForQA                 saed90nm_typ_ht
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock vsysclk (rise edge)                               0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    1.00       1.00 r
+  Cin (in)                                                0.00       1.00 r
+  generate_adders[0].Adder/cin[0] (Fulladder_onebit_0)
+                                                          0.00       1.00 r
+  generate_adders[0].Adder/U3/Q (XOR2X1)                  0.22       1.22 f
+  generate_adders[0].Adder/U2/Q (AO22X1)                  0.18       1.40 f
+  generate_adders[0].Adder/cout[0] (Fulladder_onebit_0)
+                                                          0.00       1.40 f
+  generate_adders[1].Adder/cin[0] (Fulladder_onebit_31)
+                                                          0.00       1.40 f
+  generate_adders[1].Adder/U3/Q (XOR2X1)                  0.23       1.62 f
+  generate_adders[1].Adder/U2/Q (AO22X1)                  0.18       1.80 f
+  generate_adders[1].Adder/cout[0] (Fulladder_onebit_31)
+                                                          0.00       1.80 f
+  generate_adders[2].Adder/cin[0] (Fulladder_onebit_30)
+                                                          0.00       1.80 f
+  generate_adders[2].Adder/U3/Q (XOR2X1)                  0.23       2.03 f
+  generate_adders[2].Adder/U2/Q (AO22X1)                  0.18       2.20 f
+  generate_adders[2].Adder/cout[0] (Fulladder_onebit_30)
+                                                          0.00       2.20 f
+  generate_adders[3].Adder/cin[0] (Fulladder_onebit_29)
+                                                          0.00       2.20 f
+  generate_adders[3].Adder/U3/Q (XOR2X1)                  0.23       2.43 f
+  generate_adders[3].Adder/U2/Q (AO22X1)                  0.18       2.61 f
+  generate_adders[3].Adder/cout[0] (Fulladder_onebit_29)
+                                                          0.00       2.61 f
+  generate_adders[4].Adder/cin[0] (Fulladder_onebit_28)
+                                                          0.00       2.61 f
+  generate_adders[4].Adder/U3/Q (XOR2X1)                  0.23       2.83 f
+  generate_adders[4].Adder/U2/Q (AO22X1)                  0.18       3.01 f
+  generate_adders[4].Adder/cout[0] (Fulladder_onebit_28)
+                                                          0.00       3.01 f
+  generate_adders[5].Adder/cin[0] (Fulladder_onebit_27)
+                                                          0.00       3.01 f
+  generate_adders[5].Adder/U3/Q (XOR2X1)                  0.23       3.24 f
+  generate_adders[5].Adder/U2/Q (AO22X1)                  0.18       3.41 f
+  generate_adders[5].Adder/cout[0] (Fulladder_onebit_27)
+                                                          0.00       3.41 f
+  generate_adders[6].Adder/cin[0] (Fulladder_onebit_26)
+                                                          0.00       3.41 f
+  generate_adders[6].Adder/U3/Q (XOR2X1)                  0.23       3.64 f
+  generate_adders[6].Adder/U2/Q (AO22X1)                  0.18       3.81 f
+  generate_adders[6].Adder/cout[0] (Fulladder_onebit_26)
+                                                          0.00       3.81 f
+  generate_adders[7].Adder/cin[0] (Fulladder_onebit_25)
+                                                          0.00       3.81 f
+  generate_adders[7].Adder/U3/Q (XOR2X1)                  0.23       4.04 f
+  generate_adders[7].Adder/U2/Q (AO22X1)                  0.18       4.22 f
+  generate_adders[7].Adder/cout[0] (Fulladder_onebit_25)
+                                                          0.00       4.22 f
+  generate_adders[8].Adder/cin[0] (Fulladder_onebit_24)
+                                                          0.00       4.22 f
+  generate_adders[8].Adder/U3/Q (XOR2X1)                  0.23       4.44 f
+  generate_adders[8].Adder/U2/Q (AO22X1)                  0.18       4.62 f
+  generate_adders[8].Adder/cout[0] (Fulladder_onebit_24)
+                                                          0.00       4.62 f
+  generate_adders[9].Adder/cin[0] (Fulladder_onebit_23)
+                                                          0.00       4.62 f
+  generate_adders[9].Adder/U3/Q (XOR2X1)                  0.23       4.85 f
+  generate_adders[9].Adder/U2/Q (AO22X1)                  0.18       5.02 f
+  generate_adders[9].Adder/cout[0] (Fulladder_onebit_23)
+                                                          0.00       5.02 f
+  generate_adders[10].Adder/cin[0] (Fulladder_onebit_22)
+                                                          0.00       5.02 f
+  generate_adders[10].Adder/U3/Q (XOR2X1)                 0.23       5.25 f
+  generate_adders[10].Adder/U2/Q (AO22X1)                 0.18       5.43 f
+  generate_adders[10].Adder/cout[0] (Fulladder_onebit_22)
+                                                          0.00       5.43 f
+  generate_adders[11].Adder/cin[0] (Fulladder_onebit_21)
+                                                          0.00       5.43 f
+  generate_adders[11].Adder/U3/Q (XOR2X1)                 0.23       5.65 f
+  generate_adders[11].Adder/U2/Q (AO22X1)                 0.18       5.83 f
+  generate_adders[11].Adder/cout[0] (Fulladder_onebit_21)
+                                                          0.00       5.83 f
+  generate_adders[12].Adder/cin[0] (Fulladder_onebit_20)
+                                                          0.00       5.83 f
+  generate_adders[12].Adder/U3/Q (XOR2X1)                 0.23       6.06 f
+  generate_adders[12].Adder/U2/Q (AO22X1)                 0.18       6.23 f
+  generate_adders[12].Adder/cout[0] (Fulladder_onebit_20)
+                                                          0.00       6.23 f
+  generate_adders[13].Adder/cin[0] (Fulladder_onebit_19)
+                                                          0.00       6.23 f
+  generate_adders[13].Adder/U3/Q (XOR2X1)                 0.23       6.46 f
+  generate_adders[13].Adder/U2/Q (AO22X1)                 0.18       6.63 f
+  generate_adders[13].Adder/cout[0] (Fulladder_onebit_19)
+                                                          0.00       6.63 f
+  generate_adders[14].Adder/cin[0] (Fulladder_onebit_18)
+                                                          0.00       6.63 f
+  generate_adders[14].Adder/U3/Q (XOR2X1)                 0.23       6.86 f
+  generate_adders[14].Adder/U2/Q (AO22X1)                 0.18       7.04 f
+  generate_adders[14].Adder/cout[0] (Fulladder_onebit_18)
+                                                          0.00       7.04 f
+  generate_adders[15].Adder/cin[0] (Fulladder_onebit_17)
+                                                          0.00       7.04 f
+  generate_adders[15].Adder/U3/Q (XOR2X1)                 0.23       7.26 f
+  generate_adders[15].Adder/U2/Q (AO22X1)                 0.18       7.44 f
+  generate_adders[15].Adder/cout[0] (Fulladder_onebit_17)
+                                                          0.00       7.44 f
+  generate_adders[16].Adder/cin[0] (Fulladder_onebit_16)
+                                                          0.00       7.44 f
+  generate_adders[16].Adder/U3/Q (XOR2X1)                 0.23       7.67 f
+  generate_adders[16].Adder/U2/Q (AO22X1)                 0.18       7.84 f
+  generate_adders[16].Adder/cout[0] (Fulladder_onebit_16)
+                                                          0.00       7.84 f
+  generate_adders[17].Adder/cin[0] (Fulladder_onebit_15)
+                                                          0.00       7.84 f
+  generate_adders[17].Adder/U3/Q (XOR2X1)                 0.23       8.07 f
+  generate_adders[17].Adder/U2/Q (AO22X1)                 0.18       8.25 f
+  generate_adders[17].Adder/cout[0] (Fulladder_onebit_15)
+                                                          0.00       8.25 f
+  generate_adders[18].Adder/cin[0] (Fulladder_onebit_14)
+                                                          0.00       8.25 f
+  generate_adders[18].Adder/U3/Q (XOR2X1)                 0.23       8.47 f
+  generate_adders[18].Adder/U2/Q (AO22X1)                 0.18       8.65 f
+  generate_adders[18].Adder/cout[0] (Fulladder_onebit_14)
+                                                          0.00       8.65 f
+  generate_adders[19].Adder/cin[0] (Fulladder_onebit_13)
+                                                          0.00       8.65 f
+  generate_adders[19].Adder/U3/Q (XOR2X1)                 0.23       8.88 f
+  generate_adders[19].Adder/U2/Q (AO22X1)                 0.18       9.05 f
+  generate_adders[19].Adder/cout[0] (Fulladder_onebit_13)
+                                                          0.00       9.05 f
+  generate_adders[20].Adder/cin[0] (Fulladder_onebit_12)
+                                                          0.00       9.05 f
+  generate_adders[20].Adder/U3/Q (XOR2X1)                 0.23       9.28 f
+  generate_adders[20].Adder/U2/Q (AO22X1)                 0.18       9.45 f
+  generate_adders[20].Adder/cout[0] (Fulladder_onebit_12)
+                                                          0.00       9.45 f
+  generate_adders[21].Adder/cin[0] (Fulladder_onebit_11)
+                                                          0.00       9.45 f
+  generate_adders[21].Adder/U3/Q (XOR2X1)                 0.23       9.68 f
+  generate_adders[21].Adder/U2/Q (AO22X1)                 0.18       9.86 f
+  generate_adders[21].Adder/cout[0] (Fulladder_onebit_11)
+                                                          0.00       9.86 f
+  generate_adders[22].Adder/cin[0] (Fulladder_onebit_10)
+                                                          0.00       9.86 f
+  generate_adders[22].Adder/U3/Q (XOR2X1)                 0.23      10.08 f
+  generate_adders[22].Adder/U2/Q (AO22X1)                 0.18      10.26 f
+  generate_adders[22].Adder/cout[0] (Fulladder_onebit_10)
+                                                          0.00      10.26 f
+  generate_adders[23].Adder/cin[0] (Fulladder_onebit_9)
+                                                          0.00      10.26 f
+  generate_adders[23].Adder/U3/Q (XOR2X1)                 0.23      10.49 f
+  generate_adders[23].Adder/U2/Q (AO22X1)                 0.18      10.66 f
+  generate_adders[23].Adder/cout[0] (Fulladder_onebit_9)
+                                                          0.00      10.66 f
+  generate_adders[24].Adder/cin[0] (Fulladder_onebit_8)
+                                                          0.00      10.66 f
+  generate_adders[24].Adder/U3/Q (XOR2X1)                 0.23      10.89 f
+  generate_adders[24].Adder/U2/Q (AO22X1)                 0.18      11.07 f
+  generate_adders[24].Adder/cout[0] (Fulladder_onebit_8)
+                                                          0.00      11.07 f
+  generate_adders[25].Adder/cin[0] (Fulladder_onebit_7)
+                                                          0.00      11.07 f
+  generate_adders[25].Adder/U3/Q (XOR2X1)                 0.23      11.29 f
+  generate_adders[25].Adder/U1/Q (XOR2X1)                 0.23      11.52 f
+  generate_adders[25].Adder/s[0] (Fulladder_onebit_7)     0.00      11.52 f
+  Sum[25] (out)                                           0.22      11.74 f
+  data arrival time                                                 11.74
+
+  clock vsysclk (rise edge)                              20.00      20.00
+  clock network delay (ideal)                             0.00      20.00
+  output external delay                                  -0.50      19.50
+  data required time                                                19.50
+  --------------------------------------------------------------------------
+  data required time                                                19.50
+  data arrival time                                                -11.74
+  --------------------------------------------------------------------------
+  slack (MET)                                                        7.76
+
+
+  Startpoint: Cin (input port clocked by vsysclk)
+  Endpoint: Sum[24] (output port clocked by vsysclk)
+  Path Group: vsysclk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  RippleCarryAdder   8000                  saed90nm_typ_ht
+  Fulladder_onebit_0 ForQA                 saed90nm_typ_ht
+  Fulladder_onebit_31
+                     ForQA                 saed90nm_typ_ht
+  Fulladder_onebit_30
+                     ForQA                 saed90nm_typ_ht
+  Fulladder_onebit_29
+                     ForQA                 saed90nm_typ_ht
+  Fulladder_onebit_28
+                     ForQA                 saed90nm_typ_ht
+  Fulladder_onebit_27
+                     ForQA                 saed90nm_typ_ht
+  Fulladder_onebit_26
+                     ForQA                 saed90nm_typ_ht
+  Fulladder_onebit_25
+                     ForQA                 saed90nm_typ_ht
+  Fulladder_onebit_24
+                     ForQA                 saed90nm_typ_ht
+  Fulladder_onebit_23
+                     ForQA                 saed90nm_typ_ht
+  Fulladder_onebit_22
+                     ForQA                 saed90nm_typ_ht
+  Fulladder_onebit_21
+                     ForQA                 saed90nm_typ_ht
+  Fulladder_onebit_20
+                     ForQA                 saed90nm_typ_ht
+  Fulladder_onebit_19
+                     ForQA                 saed90nm_typ_ht
+  Fulladder_onebit_18
+                     ForQA                 saed90nm_typ_ht
+  Fulladder_onebit_17
+                     ForQA                 saed90nm_typ_ht
+  Fulladder_onebit_16
+                     ForQA                 saed90nm_typ_ht
+  Fulladder_onebit_15
+                     ForQA                 saed90nm_typ_ht
+  Fulladder_onebit_14
+                     ForQA                 saed90nm_typ_ht
+  Fulladder_onebit_13
+                     ForQA                 saed90nm_typ_ht
+  Fulladder_onebit_12
+                     ForQA                 saed90nm_typ_ht
+  Fulladder_onebit_11
+                     ForQA                 saed90nm_typ_ht
+  Fulladder_onebit_10
+                     ForQA                 saed90nm_typ_ht
+  Fulladder_onebit_9 ForQA                 saed90nm_typ_ht
+  Fulladder_onebit_8 ForQA                 saed90nm_typ_ht
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock vsysclk (rise edge)                               0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    1.00       1.00 r
+  Cin (in)                                                0.00       1.00 r
+  generate_adders[0].Adder/cin[0] (Fulladder_onebit_0)
+                                                          0.00       1.00 r
+  generate_adders[0].Adder/U3/Q (XOR2X1)                  0.22       1.22 f
+  generate_adders[0].Adder/U2/Q (AO22X1)                  0.18       1.40 f
+  generate_adders[0].Adder/cout[0] (Fulladder_onebit_0)
+                                                          0.00       1.40 f
+  generate_adders[1].Adder/cin[0] (Fulladder_onebit_31)
+                                                          0.00       1.40 f
+  generate_adders[1].Adder/U3/Q (XOR2X1)                  0.23       1.62 f
+  generate_adders[1].Adder/U2/Q (AO22X1)                  0.18       1.80 f
+  generate_adders[1].Adder/cout[0] (Fulladder_onebit_31)
+                                                          0.00       1.80 f
+  generate_adders[2].Adder/cin[0] (Fulladder_onebit_30)
+                                                          0.00       1.80 f
+  generate_adders[2].Adder/U3/Q (XOR2X1)                  0.23       2.03 f
+  generate_adders[2].Adder/U2/Q (AO22X1)                  0.18       2.20 f
+  generate_adders[2].Adder/cout[0] (Fulladder_onebit_30)
+                                                          0.00       2.20 f
+  generate_adders[3].Adder/cin[0] (Fulladder_onebit_29)
+                                                          0.00       2.20 f
+  generate_adders[3].Adder/U3/Q (XOR2X1)                  0.23       2.43 f
+  generate_adders[3].Adder/U2/Q (AO22X1)                  0.18       2.61 f
+  generate_adders[3].Adder/cout[0] (Fulladder_onebit_29)
+                                                          0.00       2.61 f
+  generate_adders[4].Adder/cin[0] (Fulladder_onebit_28)
+                                                          0.00       2.61 f
+  generate_adders[4].Adder/U3/Q (XOR2X1)                  0.23       2.83 f
+  generate_adders[4].Adder/U2/Q (AO22X1)                  0.18       3.01 f
+  generate_adders[4].Adder/cout[0] (Fulladder_onebit_28)
+                                                          0.00       3.01 f
+  generate_adders[5].Adder/cin[0] (Fulladder_onebit_27)
+                                                          0.00       3.01 f
+  generate_adders[5].Adder/U3/Q (XOR2X1)                  0.23       3.24 f
+  generate_adders[5].Adder/U2/Q (AO22X1)                  0.18       3.41 f
+  generate_adders[5].Adder/cout[0] (Fulladder_onebit_27)
+                                                          0.00       3.41 f
+  generate_adders[6].Adder/cin[0] (Fulladder_onebit_26)
+                                                          0.00       3.41 f
+  generate_adders[6].Adder/U3/Q (XOR2X1)                  0.23       3.64 f
+  generate_adders[6].Adder/U2/Q (AO22X1)                  0.18       3.81 f
+  generate_adders[6].Adder/cout[0] (Fulladder_onebit_26)
+                                                          0.00       3.81 f
+  generate_adders[7].Adder/cin[0] (Fulladder_onebit_25)
+                                                          0.00       3.81 f
+  generate_adders[7].Adder/U3/Q (XOR2X1)                  0.23       4.04 f
+  generate_adders[7].Adder/U2/Q (AO22X1)                  0.18       4.22 f
+  generate_adders[7].Adder/cout[0] (Fulladder_onebit_25)
+                                                          0.00       4.22 f
+  generate_adders[8].Adder/cin[0] (Fulladder_onebit_24)
+                                                          0.00       4.22 f
+  generate_adders[8].Adder/U3/Q (XOR2X1)                  0.23       4.44 f
+  generate_adders[8].Adder/U2/Q (AO22X1)                  0.18       4.62 f
+  generate_adders[8].Adder/cout[0] (Fulladder_onebit_24)
+                                                          0.00       4.62 f
+  generate_adders[9].Adder/cin[0] (Fulladder_onebit_23)
+                                                          0.00       4.62 f
+  generate_adders[9].Adder/U3/Q (XOR2X1)                  0.23       4.85 f
+  generate_adders[9].Adder/U2/Q (AO22X1)                  0.18       5.02 f
+  generate_adders[9].Adder/cout[0] (Fulladder_onebit_23)
+                                                          0.00       5.02 f
+  generate_adders[10].Adder/cin[0] (Fulladder_onebit_22)
+                                                          0.00       5.02 f
+  generate_adders[10].Adder/U3/Q (XOR2X1)                 0.23       5.25 f
+  generate_adders[10].Adder/U2/Q (AO22X1)                 0.18       5.43 f
+  generate_adders[10].Adder/cout[0] (Fulladder_onebit_22)
+                                                          0.00       5.43 f
+  generate_adders[11].Adder/cin[0] (Fulladder_onebit_21)
+                                                          0.00       5.43 f
+  generate_adders[11].Adder/U3/Q (XOR2X1)                 0.23       5.65 f
+  generate_adders[11].Adder/U2/Q (AO22X1)                 0.18       5.83 f
+  generate_adders[11].Adder/cout[0] (Fulladder_onebit_21)
+                                                          0.00       5.83 f
+  generate_adders[12].Adder/cin[0] (Fulladder_onebit_20)
+                                                          0.00       5.83 f
+  generate_adders[12].Adder/U3/Q (XOR2X1)                 0.23       6.06 f
+  generate_adders[12].Adder/U2/Q (AO22X1)                 0.18       6.23 f
+  generate_adders[12].Adder/cout[0] (Fulladder_onebit_20)
+                                                          0.00       6.23 f
+  generate_adders[13].Adder/cin[0] (Fulladder_onebit_19)
+                                                          0.00       6.23 f
+  generate_adders[13].Adder/U3/Q (XOR2X1)                 0.23       6.46 f
+  generate_adders[13].Adder/U2/Q (AO22X1)                 0.18       6.63 f
+  generate_adders[13].Adder/cout[0] (Fulladder_onebit_19)
+                                                          0.00       6.63 f
+  generate_adders[14].Adder/cin[0] (Fulladder_onebit_18)
+                                                          0.00       6.63 f
+  generate_adders[14].Adder/U3/Q (XOR2X1)                 0.23       6.86 f
+  generate_adders[14].Adder/U2/Q (AO22X1)                 0.18       7.04 f
+  generate_adders[14].Adder/cout[0] (Fulladder_onebit_18)
+                                                          0.00       7.04 f
+  generate_adders[15].Adder/cin[0] (Fulladder_onebit_17)
+                                                          0.00       7.04 f
+  generate_adders[15].Adder/U3/Q (XOR2X1)                 0.23       7.26 f
+  generate_adders[15].Adder/U2/Q (AO22X1)                 0.18       7.44 f
+  generate_adders[15].Adder/cout[0] (Fulladder_onebit_17)
+                                                          0.00       7.44 f
+  generate_adders[16].Adder/cin[0] (Fulladder_onebit_16)
+                                                          0.00       7.44 f
+  generate_adders[16].Adder/U3/Q (XOR2X1)                 0.23       7.67 f
+  generate_adders[16].Adder/U2/Q (AO22X1)                 0.18       7.84 f
+  generate_adders[16].Adder/cout[0] (Fulladder_onebit_16)
+                                                          0.00       7.84 f
+  generate_adders[17].Adder/cin[0] (Fulladder_onebit_15)
+                                                          0.00       7.84 f
+  generate_adders[17].Adder/U3/Q (XOR2X1)                 0.23       8.07 f
+  generate_adders[17].Adder/U2/Q (AO22X1)                 0.18       8.25 f
+  generate_adders[17].Adder/cout[0] (Fulladder_onebit_15)
+                                                          0.00       8.25 f
+  generate_adders[18].Adder/cin[0] (Fulladder_onebit_14)
+                                                          0.00       8.25 f
+  generate_adders[18].Adder/U3/Q (XOR2X1)                 0.23       8.47 f
+  generate_adders[18].Adder/U2/Q (AO22X1)                 0.18       8.65 f
+  generate_adders[18].Adder/cout[0] (Fulladder_onebit_14)
+                                                          0.00       8.65 f
+  generate_adders[19].Adder/cin[0] (Fulladder_onebit_13)
+                                                          0.00       8.65 f
+  generate_adders[19].Adder/U3/Q (XOR2X1)                 0.23       8.88 f
+  generate_adders[19].Adder/U2/Q (AO22X1)                 0.18       9.05 f
+  generate_adders[19].Adder/cout[0] (Fulladder_onebit_13)
+                                                          0.00       9.05 f
+  generate_adders[20].Adder/cin[0] (Fulladder_onebit_12)
+                                                          0.00       9.05 f
+  generate_adders[20].Adder/U3/Q (XOR2X1)                 0.23       9.28 f
+  generate_adders[20].Adder/U2/Q (AO22X1)                 0.18       9.45 f
+  generate_adders[20].Adder/cout[0] (Fulladder_onebit_12)
+                                                          0.00       9.45 f
+  generate_adders[21].Adder/cin[0] (Fulladder_onebit_11)
+                                                          0.00       9.45 f
+  generate_adders[21].Adder/U3/Q (XOR2X1)                 0.23       9.68 f
+  generate_adders[21].Adder/U2/Q (AO22X1)                 0.18       9.86 f
+  generate_adders[21].Adder/cout[0] (Fulladder_onebit_11)
+                                                          0.00       9.86 f
+  generate_adders[22].Adder/cin[0] (Fulladder_onebit_10)
+                                                          0.00       9.86 f
+  generate_adders[22].Adder/U3/Q (XOR2X1)                 0.23      10.08 f
+  generate_adders[22].Adder/U2/Q (AO22X1)                 0.18      10.26 f
+  generate_adders[22].Adder/cout[0] (Fulladder_onebit_10)
+                                                          0.00      10.26 f
+  generate_adders[23].Adder/cin[0] (Fulladder_onebit_9)
+                                                          0.00      10.26 f
+  generate_adders[23].Adder/U3/Q (XOR2X1)                 0.23      10.49 f
+  generate_adders[23].Adder/U2/Q (AO22X1)                 0.18      10.66 f
+  generate_adders[23].Adder/cout[0] (Fulladder_onebit_9)
+                                                          0.00      10.66 f
+  generate_adders[24].Adder/cin[0] (Fulladder_onebit_8)
+                                                          0.00      10.66 f
+  generate_adders[24].Adder/U3/Q (XOR2X1)                 0.23      10.89 f
+  generate_adders[24].Adder/U1/Q (XOR2X1)                 0.23      11.12 f
+  generate_adders[24].Adder/s[0] (Fulladder_onebit_8)     0.00      11.12 f
+  Sum[24] (out)                                           0.22      11.34 f
+  data arrival time                                                 11.34
+
+  clock vsysclk (rise edge)                              20.00      20.00
+  clock network delay (ideal)                             0.00      20.00
+  output external delay                                  -0.50      19.50
+  data required time                                                19.50
+  --------------------------------------------------------------------------
+  data required time                                                19.50
+  data arrival time                                                -11.34
+  --------------------------------------------------------------------------
+  slack (MET)                                                        8.16
+
+
+  Startpoint: Cin (input port clocked by vsysclk)
+  Endpoint: Sum[23] (output port clocked by vsysclk)
+  Path Group: vsysclk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  RippleCarryAdder   8000                  saed90nm_typ_ht
+  Fulladder_onebit_0 ForQA                 saed90nm_typ_ht
+  Fulladder_onebit_31
+                     ForQA                 saed90nm_typ_ht
+  Fulladder_onebit_30
+                     ForQA                 saed90nm_typ_ht
+  Fulladder_onebit_29
+                     ForQA                 saed90nm_typ_ht
+  Fulladder_onebit_28
+                     ForQA                 saed90nm_typ_ht
+  Fulladder_onebit_27
+                     ForQA                 saed90nm_typ_ht
+  Fulladder_onebit_26
+                     ForQA                 saed90nm_typ_ht
+  Fulladder_onebit_25
+                     ForQA                 saed90nm_typ_ht
+  Fulladder_onebit_24
+                     ForQA                 saed90nm_typ_ht
+  Fulladder_onebit_23
+                     ForQA                 saed90nm_typ_ht
+  Fulladder_onebit_22
+                     ForQA                 saed90nm_typ_ht
+  Fulladder_onebit_21
+                     ForQA                 saed90nm_typ_ht
+  Fulladder_onebit_20
+                     ForQA                 saed90nm_typ_ht
+  Fulladder_onebit_19
+                     ForQA                 saed90nm_typ_ht
+  Fulladder_onebit_18
+                     ForQA                 saed90nm_typ_ht
+  Fulladder_onebit_17
+                     ForQA                 saed90nm_typ_ht
+  Fulladder_onebit_16
+                     ForQA                 saed90nm_typ_ht
+  Fulladder_onebit_15
+                     ForQA                 saed90nm_typ_ht
+  Fulladder_onebit_14
+                     ForQA                 saed90nm_typ_ht
+  Fulladder_onebit_13
+                     ForQA                 saed90nm_typ_ht
+  Fulladder_onebit_12
+                     ForQA                 saed90nm_typ_ht
+  Fulladder_onebit_11
+                     ForQA                 saed90nm_typ_ht
+  Fulladder_onebit_10
+                     ForQA                 saed90nm_typ_ht
+  Fulladder_onebit_9 ForQA                 saed90nm_typ_ht
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock vsysclk (rise edge)                               0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    1.00       1.00 r
+  Cin (in)                                                0.00       1.00 r
+  generate_adders[0].Adder/cin[0] (Fulladder_onebit_0)
+                                                          0.00       1.00 r
+  generate_adders[0].Adder/U3/Q (XOR2X1)                  0.22       1.22 f
+  generate_adders[0].Adder/U2/Q (AO22X1)                  0.18       1.40 f
+  generate_adders[0].Adder/cout[0] (Fulladder_onebit_0)
+                                                          0.00       1.40 f
+  generate_adders[1].Adder/cin[0] (Fulladder_onebit_31)
+                                                          0.00       1.40 f
+  generate_adders[1].Adder/U3/Q (XOR2X1)                  0.23       1.62 f
+  generate_adders[1].Adder/U2/Q (AO22X1)                  0.18       1.80 f
+  generate_adders[1].Adder/cout[0] (Fulladder_onebit_31)
+                                                          0.00       1.80 f
+  generate_adders[2].Adder/cin[0] (Fulladder_onebit_30)
+                                                          0.00       1.80 f
+  generate_adders[2].Adder/U3/Q (XOR2X1)                  0.23       2.03 f
+  generate_adders[2].Adder/U2/Q (AO22X1)                  0.18       2.20 f
+  generate_adders[2].Adder/cout[0] (Fulladder_onebit_30)
+                                                          0.00       2.20 f
+  generate_adders[3].Adder/cin[0] (Fulladder_onebit_29)
+                                                          0.00       2.20 f
+  generate_adders[3].Adder/U3/Q (XOR2X1)                  0.23       2.43 f
+  generate_adders[3].Adder/U2/Q (AO22X1)                  0.18       2.61 f
+  generate_adders[3].Adder/cout[0] (Fulladder_onebit_29)
+                                                          0.00       2.61 f
+  generate_adders[4].Adder/cin[0] (Fulladder_onebit_28)
+                                                          0.00       2.61 f
+  generate_adders[4].Adder/U3/Q (XOR2X1)                  0.23       2.83 f
+  generate_adders[4].Adder/U2/Q (AO22X1)                  0.18       3.01 f
+  generate_adders[4].Adder/cout[0] (Fulladder_onebit_28)
+                                                          0.00       3.01 f
+  generate_adders[5].Adder/cin[0] (Fulladder_onebit_27)
+                                                          0.00       3.01 f
+  generate_adders[5].Adder/U3/Q (XOR2X1)                  0.23       3.24 f
+  generate_adders[5].Adder/U2/Q (AO22X1)                  0.18       3.41 f
+  generate_adders[5].Adder/cout[0] (Fulladder_onebit_27)
+                                                          0.00       3.41 f
+  generate_adders[6].Adder/cin[0] (Fulladder_onebit_26)
+                                                          0.00       3.41 f
+  generate_adders[6].Adder/U3/Q (XOR2X1)                  0.23       3.64 f
+  generate_adders[6].Adder/U2/Q (AO22X1)                  0.18       3.81 f
+  generate_adders[6].Adder/cout[0] (Fulladder_onebit_26)
+                                                          0.00       3.81 f
+  generate_adders[7].Adder/cin[0] (Fulladder_onebit_25)
+                                                          0.00       3.81 f
+  generate_adders[7].Adder/U3/Q (XOR2X1)                  0.23       4.04 f
+  generate_adders[7].Adder/U2/Q (AO22X1)                  0.18       4.22 f
+  generate_adders[7].Adder/cout[0] (Fulladder_onebit_25)
+                                                          0.00       4.22 f
+  generate_adders[8].Adder/cin[0] (Fulladder_onebit_24)
+                                                          0.00       4.22 f
+  generate_adders[8].Adder/U3/Q (XOR2X1)                  0.23       4.44 f
+  generate_adders[8].Adder/U2/Q (AO22X1)                  0.18       4.62 f
+  generate_adders[8].Adder/cout[0] (Fulladder_onebit_24)
+                                                          0.00       4.62 f
+  generate_adders[9].Adder/cin[0] (Fulladder_onebit_23)
+                                                          0.00       4.62 f
+  generate_adders[9].Adder/U3/Q (XOR2X1)                  0.23       4.85 f
+  generate_adders[9].Adder/U2/Q (AO22X1)                  0.18       5.02 f
+  generate_adders[9].Adder/cout[0] (Fulladder_onebit_23)
+                                                          0.00       5.02 f
+  generate_adders[10].Adder/cin[0] (Fulladder_onebit_22)
+                                                          0.00       5.02 f
+  generate_adders[10].Adder/U3/Q (XOR2X1)                 0.23       5.25 f
+  generate_adders[10].Adder/U2/Q (AO22X1)                 0.18       5.43 f
+  generate_adders[10].Adder/cout[0] (Fulladder_onebit_22)
+                                                          0.00       5.43 f
+  generate_adders[11].Adder/cin[0] (Fulladder_onebit_21)
+                                                          0.00       5.43 f
+  generate_adders[11].Adder/U3/Q (XOR2X1)                 0.23       5.65 f
+  generate_adders[11].Adder/U2/Q (AO22X1)                 0.18       5.83 f
+  generate_adders[11].Adder/cout[0] (Fulladder_onebit_21)
+                                                          0.00       5.83 f
+  generate_adders[12].Adder/cin[0] (Fulladder_onebit_20)
+                                                          0.00       5.83 f
+  generate_adders[12].Adder/U3/Q (XOR2X1)                 0.23       6.06 f
+  generate_adders[12].Adder/U2/Q (AO22X1)                 0.18       6.23 f
+  generate_adders[12].Adder/cout[0] (Fulladder_onebit_20)
+                                                          0.00       6.23 f
+  generate_adders[13].Adder/cin[0] (Fulladder_onebit_19)
+                                                          0.00       6.23 f
+  generate_adders[13].Adder/U3/Q (XOR2X1)                 0.23       6.46 f
+  generate_adders[13].Adder/U2/Q (AO22X1)                 0.18       6.63 f
+  generate_adders[13].Adder/cout[0] (Fulladder_onebit_19)
+                                                          0.00       6.63 f
+  generate_adders[14].Adder/cin[0] (Fulladder_onebit_18)
+                                                          0.00       6.63 f
+  generate_adders[14].Adder/U3/Q (XOR2X1)                 0.23       6.86 f
+  generate_adders[14].Adder/U2/Q (AO22X1)                 0.18       7.04 f
+  generate_adders[14].Adder/cout[0] (Fulladder_onebit_18)
+                                                          0.00       7.04 f
+  generate_adders[15].Adder/cin[0] (Fulladder_onebit_17)
+                                                          0.00       7.04 f
+  generate_adders[15].Adder/U3/Q (XOR2X1)                 0.23       7.26 f
+  generate_adders[15].Adder/U2/Q (AO22X1)                 0.18       7.44 f
+  generate_adders[15].Adder/cout[0] (Fulladder_onebit_17)
+                                                          0.00       7.44 f
+  generate_adders[16].Adder/cin[0] (Fulladder_onebit_16)
+                                                          0.00       7.44 f
+  generate_adders[16].Adder/U3/Q (XOR2X1)                 0.23       7.67 f
+  generate_adders[16].Adder/U2/Q (AO22X1)                 0.18       7.84 f
+  generate_adders[16].Adder/cout[0] (Fulladder_onebit_16)
+                                                          0.00       7.84 f
+  generate_adders[17].Adder/cin[0] (Fulladder_onebit_15)
+                                                          0.00       7.84 f
+  generate_adders[17].Adder/U3/Q (XOR2X1)                 0.23       8.07 f
+  generate_adders[17].Adder/U2/Q (AO22X1)                 0.18       8.25 f
+  generate_adders[17].Adder/cout[0] (Fulladder_onebit_15)
+                                                          0.00       8.25 f
+  generate_adders[18].Adder/cin[0] (Fulladder_onebit_14)
+                                                          0.00       8.25 f
+  generate_adders[18].Adder/U3/Q (XOR2X1)                 0.23       8.47 f
+  generate_adders[18].Adder/U2/Q (AO22X1)                 0.18       8.65 f
+  generate_adders[18].Adder/cout[0] (Fulladder_onebit_14)
+                                                          0.00       8.65 f
+  generate_adders[19].Adder/cin[0] (Fulladder_onebit_13)
+                                                          0.00       8.65 f
+  generate_adders[19].Adder/U3/Q (XOR2X1)                 0.23       8.88 f
+  generate_adders[19].Adder/U2/Q (AO22X1)                 0.18       9.05 f
+  generate_adders[19].Adder/cout[0] (Fulladder_onebit_13)
+                                                          0.00       9.05 f
+  generate_adders[20].Adder/cin[0] (Fulladder_onebit_12)
+                                                          0.00       9.05 f
+  generate_adders[20].Adder/U3/Q (XOR2X1)                 0.23       9.28 f
+  generate_adders[20].Adder/U2/Q (AO22X1)                 0.18       9.45 f
+  generate_adders[20].Adder/cout[0] (Fulladder_onebit_12)
+                                                          0.00       9.45 f
+  generate_adders[21].Adder/cin[0] (Fulladder_onebit_11)
+                                                          0.00       9.45 f
+  generate_adders[21].Adder/U3/Q (XOR2X1)                 0.23       9.68 f
+  generate_adders[21].Adder/U2/Q (AO22X1)                 0.18       9.86 f
+  generate_adders[21].Adder/cout[0] (Fulladder_onebit_11)
+                                                          0.00       9.86 f
+  generate_adders[22].Adder/cin[0] (Fulladder_onebit_10)
+                                                          0.00       9.86 f
+  generate_adders[22].Adder/U3/Q (XOR2X1)                 0.23      10.08 f
+  generate_adders[22].Adder/U2/Q (AO22X1)                 0.18      10.26 f
+  generate_adders[22].Adder/cout[0] (Fulladder_onebit_10)
+                                                          0.00      10.26 f
+  generate_adders[23].Adder/cin[0] (Fulladder_onebit_9)
+                                                          0.00      10.26 f
+  generate_adders[23].Adder/U3/Q (XOR2X1)                 0.23      10.49 f
+  generate_adders[23].Adder/U1/Q (XOR2X1)                 0.23      10.71 f
+  generate_adders[23].Adder/s[0] (Fulladder_onebit_9)     0.00      10.71 f
+  Sum[23] (out)                                           0.22      10.93 f
+  data arrival time                                                 10.93
+
+  clock vsysclk (rise edge)                              20.00      20.00
+  clock network delay (ideal)                             0.00      20.00
+  output external delay                                  -0.50      19.50
+  data required time                                                19.50
+  --------------------------------------------------------------------------
+  data required time                                                19.50
+  data arrival time                                                -10.93
+  --------------------------------------------------------------------------
+  slack (MET)                                                        8.57
+
+
+1

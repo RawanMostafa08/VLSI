@@ -1,0 +1,30 @@
+ 
+****************************************
+Report : area
+Design : CarryLookaheadAdder
+Version: U-2022.12-SP7
+Date   : Tue Dec 12 19:42:27 2023
+****************************************
+
+Library(s) Used:
+
+    saed90nm_typ_ht (File: /home/user26/Downloads/Lab4/ref/models/saed90nm_typ_ht.db)
+
+Number of ports:                           98
+Number of nets:                           161
+Number of cells:                           96
+Number of combinational cells:             96
+Number of sequential cells:                 0
+Number of macros/black boxes:               0
+Number of buf/inv:                          0
+Number of references:                       2
+
+Combinational area:               1268.121613
+Buf/Inv area:                        0.000000
+Noncombinational area:               0.000000
+Macro/Black Box area:                0.000000
+Net Interconnect area:              45.309540
+
+Total cell area:                  1268.121613
+Total area:                       1313.431152
+1

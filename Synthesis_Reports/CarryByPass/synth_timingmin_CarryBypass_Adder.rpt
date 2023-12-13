@@ -1,0 +1,196 @@
+Warning: Design 'CarryBypass_Adder' has '1' unresolved references. For more detailed information, use the "link" command. (UID-341)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay min
+        -max_paths 10
+Design : CarryBypass_Adder
+Version: U-2022.12-SP7
+Date   : Tue Dec 12 19:49:20 2023
+****************************************
+
+Operating Conditions: TYPICAL   Library: saed90nm_typ_ht
+Wire Load Model Mode: enclosed
+
+  Startpoint: ripple_loop[7].R/Sum[3] (internal pin)
+  Endpoint: Sum[31] (output port clocked by vsysclk)
+  Path Group: (none)
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  CarryBypass_Adder  ForQA                 saed90nm_typ_ht
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  ripple_loop[7].R/Sum[3] (Ripple4bit)                    0.00       0.00 r
+  Sum[31] (out)                                           0.09       0.09 r
+  data arrival time                                                  0.09
+  --------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: ripple_loop[7].R/Sum[2] (internal pin)
+  Endpoint: Sum[30] (output port clocked by vsysclk)
+  Path Group: (none)
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  CarryBypass_Adder  ForQA                 saed90nm_typ_ht
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  ripple_loop[7].R/Sum[2] (Ripple4bit)                    0.00       0.00 r
+  Sum[30] (out)                                           0.09       0.09 r
+  data arrival time                                                  0.09
+  --------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: ripple_loop[7].R/Sum[1] (internal pin)
+  Endpoint: Sum[29] (output port clocked by vsysclk)
+  Path Group: (none)
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  CarryBypass_Adder  ForQA                 saed90nm_typ_ht
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  ripple_loop[7].R/Sum[1] (Ripple4bit)                    0.00       0.00 r
+  Sum[29] (out)                                           0.09       0.09 r
+  data arrival time                                                  0.09
+  --------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: ripple_loop[7].R/Sum[0] (internal pin)
+  Endpoint: Sum[28] (output port clocked by vsysclk)
+  Path Group: (none)
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  CarryBypass_Adder  ForQA                 saed90nm_typ_ht
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  ripple_loop[7].R/Sum[0] (Ripple4bit)                    0.00       0.00 r
+  Sum[28] (out)                                           0.09       0.09 r
+  data arrival time                                                  0.09
+  --------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: ripple_loop[6].R/Sum[3] (internal pin)
+  Endpoint: Sum[27] (output port clocked by vsysclk)
+  Path Group: (none)
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  CarryBypass_Adder  ForQA                 saed90nm_typ_ht
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  ripple_loop[6].R/Sum[3] (Ripple4bit)                    0.00       0.00 r
+  Sum[27] (out)                                           0.09       0.09 r
+  data arrival time                                                  0.09
+  --------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: ripple_loop[6].R/Sum[2] (internal pin)
+  Endpoint: Sum[26] (output port clocked by vsysclk)
+  Path Group: (none)
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  CarryBypass_Adder  ForQA                 saed90nm_typ_ht
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  ripple_loop[6].R/Sum[2] (Ripple4bit)                    0.00       0.00 r
+  Sum[26] (out)                                           0.09       0.09 r
+  data arrival time                                                  0.09
+  --------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: ripple_loop[6].R/Sum[1] (internal pin)
+  Endpoint: Sum[25] (output port clocked by vsysclk)
+  Path Group: (none)
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  CarryBypass_Adder  ForQA                 saed90nm_typ_ht
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  ripple_loop[6].R/Sum[1] (Ripple4bit)                    0.00       0.00 r
+  Sum[25] (out)                                           0.09       0.09 r
+  data arrival time                                                  0.09
+  --------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: ripple_loop[6].R/Sum[0] (internal pin)
+  Endpoint: Sum[24] (output port clocked by vsysclk)
+  Path Group: (none)
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  CarryBypass_Adder  ForQA                 saed90nm_typ_ht
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  ripple_loop[6].R/Sum[0] (Ripple4bit)                    0.00       0.00 r
+  Sum[24] (out)                                           0.09       0.09 r
+  data arrival time                                                  0.09
+  --------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: ripple_loop[5].R/Sum[3] (internal pin)
+  Endpoint: Sum[23] (output port clocked by vsysclk)
+  Path Group: (none)
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  CarryBypass_Adder  ForQA                 saed90nm_typ_ht
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  ripple_loop[5].R/Sum[3] (Ripple4bit)                    0.00       0.00 r
+  Sum[23] (out)                                           0.09       0.09 r
+  data arrival time                                                  0.09
+  --------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: ripple_loop[5].R/Sum[2] (internal pin)
+  Endpoint: Sum[22] (output port clocked by vsysclk)
+  Path Group: (none)
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  CarryBypass_Adder  ForQA                 saed90nm_typ_ht
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  ripple_loop[5].R/Sum[2] (Ripple4bit)                    0.00       0.00 r
+  Sum[22] (out)                                           0.09       0.09 r
+  data arrival time                                                  0.09
+  --------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+1

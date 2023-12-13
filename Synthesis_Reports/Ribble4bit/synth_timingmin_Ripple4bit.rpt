@@ -1,0 +1,167 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay min
+        -max_paths 10
+Design : Ripple4bit
+Version: U-2022.12-SP7
+Date   : Tue Dec 12 19:55:49 2023
+****************************************
+
+Operating Conditions: TYPICAL   Library: saed90nm_typ_ht
+Wire Load Model Mode: enclosed
+
+  Startpoint: A[3] (input port clocked by vsysclk)
+  Endpoint: Sum[3] (output port clocked by vsysclk)
+  Path Group: vsysclk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  Ripple4bit         8000                  saed90nm_typ_ht
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock vsysclk (rise edge)                0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     1.00       1.00 r
+  A[3] (in)                                0.00       1.00 r
+  U10/Q (XOR2X1)                           0.24       1.24 f
+  Sum[3] (out)                             0.22       1.46 f
+  data arrival time                                   1.46
+
+  clock vsysclk (rise edge)                0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  output external delay                   -0.50      -0.50
+  data required time                                 -0.50
+  -----------------------------------------------------------
+  data required time                                 -0.50
+  data arrival time                                  -1.46
+  -----------------------------------------------------------
+  slack (MET)                                         1.96
+
+
+  Startpoint: A[2] (input port clocked by vsysclk)
+  Endpoint: Sum[2] (output port clocked by vsysclk)
+  Path Group: vsysclk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  Ripple4bit         8000                  saed90nm_typ_ht
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock vsysclk (rise edge)                0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     1.00       1.00 r
+  A[2] (in)                                0.00       1.00 r
+  U13/Q (XOR2X1)                           0.24       1.24 f
+  Sum[2] (out)                             0.22       1.46 f
+  data arrival time                                   1.46
+
+  clock vsysclk (rise edge)                0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  output external delay                   -0.50      -0.50
+  data required time                                 -0.50
+  -----------------------------------------------------------
+  data required time                                 -0.50
+  data arrival time                                  -1.46
+  -----------------------------------------------------------
+  slack (MET)                                         1.96
+
+
+  Startpoint: A[1] (input port clocked by vsysclk)
+  Endpoint: Sum[1] (output port clocked by vsysclk)
+  Path Group: vsysclk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  Ripple4bit         8000                  saed90nm_typ_ht
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock vsysclk (rise edge)                0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     1.00       1.00 r
+  A[1] (in)                                0.00       1.00 r
+  U16/Q (XOR2X1)                           0.24       1.24 f
+  Sum[1] (out)                             0.22       1.46 f
+  data arrival time                                   1.46
+
+  clock vsysclk (rise edge)                0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  output external delay                   -0.50      -0.50
+  data required time                                 -0.50
+  -----------------------------------------------------------
+  data required time                                 -0.50
+  data arrival time                                  -1.46
+  -----------------------------------------------------------
+  slack (MET)                                         1.96
+
+
+  Startpoint: A[0] (input port clocked by vsysclk)
+  Endpoint: Sum[0] (output port clocked by vsysclk)
+  Path Group: vsysclk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  Ripple4bit         8000                  saed90nm_typ_ht
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock vsysclk (rise edge)                0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     1.00       1.00 r
+  A[0] (in)                                0.00       1.00 r
+  U19/Q (XOR2X1)                           0.24       1.24 f
+  Sum[0] (out)                             0.22       1.46 f
+  data arrival time                                   1.46
+
+  clock vsysclk (rise edge)                0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  output external delay                   -0.50      -0.50
+  data required time                                 -0.50
+  -----------------------------------------------------------
+  data required time                                 -0.50
+  data arrival time                                  -1.46
+  -----------------------------------------------------------
+  slack (MET)                                         1.96
+
+
+  Startpoint: B[3] (input port clocked by vsysclk)
+  Endpoint: Cout (output port clocked by vsysclk)
+  Path Group: vsysclk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  Ripple4bit         8000                  saed90nm_typ_ht
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock vsysclk (rise edge)                0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     1.00       1.00 r
+  B[3] (in)                                0.00       1.00 r
+  U7/Q (XOR2X1)                            0.19       1.19 r
+  U3/QN (NAND4X0)                          0.10       1.29 f
+  U2/Q (AO22X1)                            0.22       1.51 f
+  Cout (out)                               0.22       1.73 f
+  data arrival time                                   1.73
+
+  clock vsysclk (rise edge)                0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  output external delay                   -0.50      -0.50
+  data required time                                 -0.50
+  -----------------------------------------------------------
+  data required time                                 -0.50
+  data arrival time                                  -1.73
+  -----------------------------------------------------------
+  slack (MET)                                         2.23
+
+
+1
