@@ -1,0 +1,456 @@
+Information: Evaluating DesignWare library utilization. (UISN-27)
+
+============================================================================
+| DesignWare Building Block Library  |         Version         | Available |
+============================================================================
+| Basic DW Building Blocks           | U-2022.12-DWBB_202212.5 |     *     |
+| Licensed DW Building Blocks        |                         |           |
+============================================================================
+
+====================================================================================================
+| Flow Information                                                                                 |
+----------------------------------------------------------------------------------------------------
+| Flow         | Design Compiler                                                                   |
+====================================================================================================
+| Design Information                                      | Value                                  |
+====================================================================================================
+| Number of Scenarios                                     | 0                                      |
+| Leaf Cell Count                                         | 732                                    |
+| Number of User Hierarchies                              | 27                                     |
+| Sequential Cell Count                                   | 64                                     |
+| Macro Count                                             | 0                                      |
+| Number of Power Domains                                 | 0                                      |
+| Number of Path Groups                                   | 2                                      |
+| Number of VT Class                                      | 1                                      |
+| Number of Clocks                                        | 1                                      |
+| Number of Dont Touch Cells                              | 151                                    |
+| Number of Dont Touch Nets                               | 0                                      |
+| Number of Size Only Cells                               | 0                                      |
+| Design with UPF Data                                    | false                                  |
+====================================================================================================
+
+Information: There are 66 potential problems in your design. Please run 'check_design' for more information. (LINT-99)
+
+
+
+  Beginning Pass 1 Mapping
+  ------------------------
+  Processing 'Ripple4bit_0'
+  Processing 'CarryBypass_Adder_0'
+  Processing 'FloatingPointAdder'
+
+  Updating timing information
+Information: Updating design information... (UID-85)
+
+  Beginning Implementation Selection
+  ----------------------------------
+  Processing 'FloatingPointAdder_DW01_sub_0'
+  Processing 'FloatingPointAdder_DW01_sub_1'
+  Processing 'FloatingPointAdder_DW01_cmp2_0'
+  Allocating blocks in 'DW_rash_A_width23_SH_width8'
+  Processing 'FloatingPointAdder_DW_rash_0'
+  Processing 'FloatingPointAdder_DW_rash_1'
+  Processing 'FloatingPointAdder_DW01_sub_2'
+  Processing 'FloatingPointAdder_DW01_cmp2_1'
+  Processing 'FloatingPointAdder_DW01_sub_3'
+  Building model 'DW01_add_width2' (rpl)
+  Processing 'DW01_add_width2'
+  Building model 'DW01_add_width2' (cla)
+  Processing 'DW01_add_width2'
+  Building model 'DW01_add_width8' (rpl)
+  Processing 'DW01_add_width8'
+  Building model 'DW01_add_width8' (cla)
+  Processing 'DW01_add_width8'
+  Building model 'DW01_sub_width8' (rpl)
+  Processing 'DW01_sub_width8'
+  Building model 'DW01_sub_width8' (cla)
+  Processing 'DW01_sub_width8'
+  Processing 'DW01_add_width2_DW01_add_0'
+  Processing 'DW01_add_width2_DW01_add_1'
+  Processing 'DW01_add_width2_DW01_add_2'
+  Processing 'DW01_add_width2_DW01_add_3'
+  Processing 'DW01_add_width2_DW01_add_4'
+  Processing 'DW01_add_width2_DW01_add_5'
+  Processing 'DW01_add_width2_DW01_add_6'
+  Processing 'DW01_add_width2_DW01_add_7'
+  Processing 'DW01_add_width2_DW01_add_8'
+  Processing 'DW01_add_width2_DW01_add_9'
+  Processing 'DW01_add_width2_DW01_add_10'
+  Processing 'DW01_add_width2_DW01_add_11'
+  Processing 'DW01_add_width2_DW01_add_12'
+  Processing 'DW01_add_width2_DW01_add_13'
+  Processing 'DW01_add_width2_DW01_add_14'
+  Processing 'DW01_add_width2_DW01_add_15'
+  Processing 'DW01_add_width2_DW01_add_16'
+  Processing 'DW01_add_width2_DW01_add_17'
+  Processing 'DW01_add_width2_DW01_add_18'
+  Processing 'DW01_add_width2_DW01_add_19'
+  Processing 'DW01_add_width2_DW01_add_20'
+  Processing 'DW01_add_width2_DW01_add_21'
+  Processing 'DW01_add_width2_DW01_add_22'
+  Processing 'DW01_add_width2_DW01_add_23'
+  Processing 'DW01_add_width2_DW01_add_24'
+  Processing 'DW01_add_width2_DW01_add_25'
+  Processing 'DW01_add_width2_DW01_add_26'
+  Processing 'DW01_add_width2_DW01_add_27'
+  Processing 'DW01_add_width2_DW01_add_28'
+  Processing 'DW01_add_width2_DW01_add_29'
+  Processing 'DW01_add_width2_DW01_add_30'
+  Processing 'DW01_add_width2_DW01_add_31'
+  Processing 'DW01_add_width2_DW01_add_32'
+  Processing 'DW01_add_width2_DW01_add_33'
+  Processing 'DW01_add_width2_DW01_add_34'
+  Processing 'DW01_add_width2_DW01_add_35'
+  Processing 'DW01_add_width2_DW01_add_36'
+  Processing 'DW01_add_width2_DW01_add_37'
+  Processing 'DW01_add_width2_DW01_add_38'
+  Processing 'DW01_add_width2_DW01_add_39'
+  Processing 'DW01_add_width2_DW01_add_40'
+  Processing 'DW01_add_width2_DW01_add_41'
+  Processing 'DW01_add_width2_DW01_add_42'
+  Processing 'DW01_add_width2_DW01_add_43'
+  Processing 'DW01_add_width2_DW01_add_44'
+  Processing 'DW01_add_width2_DW01_add_45'
+  Processing 'DW01_add_width2_DW01_add_46'
+  Processing 'DW01_add_width2_DW01_add_47'
+  Processing 'DW01_add_width2_DW01_add_48'
+  Processing 'DW01_add_width2_DW01_add_49'
+  Processing 'DW01_add_width2_DW01_add_50'
+  Processing 'DW01_add_width2_DW01_add_51'
+  Processing 'DW01_add_width2_DW01_add_52'
+  Processing 'DW01_add_width2_DW01_add_53'
+  Processing 'DW01_add_width2_DW01_add_54'
+  Processing 'DW01_add_width2_DW01_add_55'
+  Processing 'DW01_add_width2_DW01_add_56'
+  Processing 'DW01_add_width2_DW01_add_57'
+  Processing 'DW01_add_width2_DW01_add_58'
+  Processing 'DW01_add_width2_DW01_add_59'
+  Processing 'DW01_add_width2_DW01_add_60'
+  Processing 'DW01_add_width2_DW01_add_61'
+  Processing 'DW01_add_width2_DW01_add_62'
+  Processing 'DW01_add_width2_DW01_add_63'
+  Processing 'DW01_add_width2_DW01_add_64'
+  Processing 'DW01_add_width2_DW01_add_65'
+  Processing 'DW01_add_width2_DW01_add_66'
+  Processing 'DW01_add_width2_DW01_add_67'
+  Processing 'DW01_add_width2_DW01_add_68'
+  Processing 'DW01_add_width2_DW01_add_69'
+  Processing 'DW01_add_width2_DW01_add_70'
+  Processing 'DW01_add_width2_DW01_add_71'
+  Processing 'DW01_add_width2_DW01_add_72'
+  Processing 'DW01_add_width2_DW01_add_73'
+  Processing 'DW01_add_width2_DW01_add_74'
+  Processing 'DW01_add_width2_DW01_add_75'
+  Processing 'DW01_add_width2_DW01_add_76'
+  Processing 'DW01_add_width2_DW01_add_77'
+  Processing 'DW01_add_width2_DW01_add_78'
+  Processing 'DW01_add_width2_DW01_add_79'
+  Processing 'DW01_add_width2_DW01_add_80'
+  Processing 'DW01_add_width2_DW01_add_81'
+  Processing 'DW01_add_width2_DW01_add_82'
+  Processing 'DW01_add_width2_DW01_add_83'
+  Processing 'DW01_add_width2_DW01_add_84'
+  Processing 'DW01_add_width2_DW01_add_85'
+  Processing 'DW01_add_width2_DW01_add_86'
+  Processing 'DW01_add_width2_DW01_add_87'
+  Processing 'DW01_add_width2_DW01_add_88'
+  Processing 'DW01_add_width2_DW01_add_89'
+  Processing 'DW01_add_width2_DW01_add_90'
+  Processing 'DW01_add_width2_DW01_add_91'
+  Processing 'DW01_add_width2_DW01_add_92'
+  Processing 'DW01_add_width2_DW01_add_93'
+  Processing 'DW01_add_width2_DW01_add_94'
+  Processing 'DW01_add_width2_DW01_add_95'
+  Processing 'FloatingPointAdder_DW01_sub_4'
+  Processing 'FloatingPointAdder_DW01_add_0_DW01_add_96'
+  Processing 'FloatingPointAdder_DW01_add_1_DW01_add_97'
+  Processing 'FloatingPointAdder_DW01_add_2_DW01_add_98'
+  Processing 'FloatingPointAdder_DW01_add_3_DW01_add_99'
+  Processing 'FloatingPointAdder_DW01_add_4_DW01_add_100'
+  Processing 'FloatingPointAdder_DW01_add_5_DW01_add_101'
+  Processing 'FloatingPointAdder_DW01_add_6_DW01_add_102'
+  Processing 'FloatingPointAdder_DW01_add_7_DW01_add_103'
+  Processing 'FloatingPointAdder_DW01_add_8_DW01_add_104'
+  Processing 'FloatingPointAdder_DW01_add_9_DW01_add_105'
+  Processing 'FloatingPointAdder_DW01_add_10_DW01_add_106'
+  Processing 'FloatingPointAdder_DW01_sub_5'
+  Processing 'FloatingPointAdder_DW01_sub_6'
+Information: Command 'do_operand_isolation' is obsolete and is being ignored.  Please refer to the replacement command 'set power_enable_datapath_gating true' instead. (INFO-118)
+
+  Beginning Mapping Optimizations  (Medium effort)
+  -------------------------------
+Information: Command 'do_operand_isolation' is obsolete and is being ignored.  Please refer to the replacement command 'set power_enable_datapath_gating true' instead. (INFO-118)
+
+                                  TOTAL                                      
+   ELAPSED            WORST NEG   SETUP    DESIGN                            
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT         
+  --------- --------- --------- --------- --------- -------------------------
+    0:00:05   19168.4      5.67      50.6      49.6                          
+    0:00:05   19168.4      5.67      50.6      49.6                          
+    0:00:05   19168.4      5.67      50.6      49.6                          
+    0:00:05   19168.4      5.67      50.6      49.6                          
+    0:00:05   19168.4      5.67      50.6      49.6                          
+    0:00:05   17482.8      5.39      46.7      49.2                          
+    0:00:05   17473.5      5.40      46.8      49.2                          
+    0:00:05   17474.5      5.40      46.8      49.2                          
+    0:00:05   17474.5      5.40      46.8      49.2                          
+    0:00:05   17474.5      5.40      46.8      49.2                          
+    0:00:05   17474.5      5.40      46.8      49.2                          
+    0:00:05   17474.5      5.40      46.8      49.2                          
+    0:00:05   17483.7      5.39      46.8       0.0                          
+    0:00:05   17483.7      5.39      46.8       0.0                          
+    0:00:05   17483.7      5.39      46.8       0.0                          
+    0:00:05   17483.7      5.39      46.8       0.0                          
+
+
+
+  Beginning Delay Optimization Phase
+  ----------------------------------
+
+                                  TOTAL                                      
+   ELAPSED            WORST NEG   SETUP    DESIGN                            
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT         
+  --------- --------- --------- --------- --------- -------------------------
+    0:00:05   17483.7      5.39      46.8       0.0                          
+    0:00:05   17600.7      4.88      40.5       0.0 result[30]               
+    0:00:06   17650.5      4.86      40.1       0.0 result[30]               
+    0:00:06   17651.4      4.76      38.6       0.0 result[30]               
+    0:00:06   17772.1      4.74      38.1       0.0 result[30]               
+    0:00:06   17833.9      4.56      36.4       0.0 result[30]               
+    0:00:06   17881.8      4.47      35.0       0.0 result[30]               
+    0:00:06   17904.8      4.42      34.2       0.0 result[30]               
+    0:00:06   17901.2      4.37      33.5       0.0 result[30]               
+    0:00:06   17961.1      4.29      32.4       0.0 result[30]               
+    0:00:06   18053.2      3.91      28.9       0.0 result[30]               
+    0:00:06   18080.9      3.83      28.3       0.0 result[30]               
+    0:00:07   18168.4      3.56      24.9       0.0 result[30]               
+    0:00:07   18196.1      3.43      24.1       0.0 result[30]               
+    0:00:07   18212.7      3.40      23.8       0.0 result[30]               
+    0:00:07   18238.5      3.39      23.7       0.0 result[30]               
+    0:00:07   18251.4      3.30      22.8       0.0 result[30]               
+    0:00:07   18263.3      3.25      22.0       0.0 result[30]               
+    0:00:07   18266.1      3.19      21.3       0.0 result[30]               
+    0:00:08   18279.0      3.17      22.0       0.0 result[30]               
+    0:00:08   18343.5      2.90      19.0       0.0 result[30]               
+    0:00:08   18348.1      2.81      17.9       0.0 result[30]               
+    0:00:08   18348.1      2.71      16.9       0.0 result[30]               
+    0:00:08   18382.2      2.64      15.9       0.0 result[30]               
+    0:00:08   18405.3      2.58      15.7       0.0 result[30]               
+    0:00:08   18418.2      2.57      15.8       0.0 result[30]               
+    0:00:08   18432.9      2.55      15.6       0.0 result[30]               
+    0:00:08   18479.9      2.54      15.5       0.0 result[30]               
+    0:00:08   18478.1      2.47      14.9       0.0 result[30]               
+    0:00:09   18540.7      2.46      14.8       0.0 result[30]               
+    0:00:09   18561.0      2.44      14.6       0.0 result[30]               
+    0:00:09   18608.0      2.40      14.2       0.0 result[30]               
+    0:00:09   18726.0      2.38      14.1      49.3 result[30]               
+    0:00:09   18777.6      2.35      13.8      49.3 result[30]               
+    0:00:09   18820.0      2.34      13.7      49.3 result[30]               
+    0:00:09   18820.0      2.34      13.7      49.3 result[30]               
+    0:00:09   18827.4      2.34      13.6      49.3 result[30]               
+    0:00:09   18844.0      2.30      13.4      49.3 result[30]               
+    0:00:10   18891.0      2.29      13.3      49.3 result[30]               
+    0:00:10   18896.5      2.28      13.2      49.3 result[30]               
+    0:00:10   18896.5      2.27      13.2      49.3 result[30]               
+    0:00:10   18895.6      2.27      13.2      49.3 result[30]               
+    0:00:10   18942.6      2.26      13.0      49.3 result[30]               
+    0:00:10   18939.8      2.26      13.0      49.3 result[30]               
+    0:00:10   18939.8      2.26      13.0      49.3 result[30]               
+    0:00:11   18935.2      2.26      13.0      49.3 result[30]               
+    0:00:11   18950.9      2.25      12.9      49.3 result[30]               
+    0:00:11   18950.9      2.25      12.9      49.3 result[30]               
+    0:00:11   18947.2      2.24      12.9      49.3 result[30]               
+    0:00:11   18962.8      2.23      12.7      49.3 result[30]               
+    0:00:11   18967.4      2.22      12.7      49.3 result[30]               
+    0:00:11   18973.0      2.21      12.6      49.3 result[30]               
+    0:00:12   18982.2      2.20      12.5      49.3 result[30]               
+    0:00:12   19063.3      2.19      12.5      49.3 result[30]               
+    0:00:12   19094.6      2.17      12.3      49.3 result[30]               
+    0:00:12   19115.8      2.14      12.1      49.3 result[30]               
+    0:00:12   19115.8      2.14      12.0      49.3 result[30]               
+    0:00:13   19147.2      2.12      11.9      49.3 result[30]               
+    0:00:13   19160.1      2.11      11.8      49.3 result[30]               
+    0:00:13   19165.6      2.10      11.7      49.3 result[30]               
+    0:00:13   19227.3      2.01      11.0      49.3 result[30]               
+    0:00:13   19307.5      1.85      11.1      51.2 result[30]               
+    0:00:13   19341.6      1.77      10.7      51.2 result[30]               
+    0:00:14   19387.7      1.71      10.6      51.2 result[30]               
+    0:00:14   19457.7      1.66      10.2      51.2 result[30]               
+    0:00:14   19499.2      1.63      10.5      51.2 result[30]               
+    0:00:14   19543.4      1.48       9.3      51.2 result[30]               
+    0:00:14   19574.8      1.45       9.1      51.2 result[30]               
+    0:00:14   19587.7      1.44       9.0      51.2 result[30]               
+    0:00:14   19611.6      1.41       8.8      51.2 result[30]               
+    0:00:14   19623.6      1.38       8.6      53.0 result[30]               
+    0:00:14   19647.6      1.35       8.4      53.0 result[30]               
+    0:00:14   19672.5      1.32       8.2      53.0 result[30]               
+    0:00:15   19677.1      1.27       7.9      53.0 result[30]               
+    0:00:15   19723.2      1.26       7.8      53.0 result[30]               
+    0:00:15   19805.2      1.25       7.7      53.0 result[30]               
+    0:00:15   19927.8      1.21       7.5      53.0 result[30]               
+    0:00:15   20059.5      1.17       7.2      53.0 result[30]               
+    0:00:15   20139.7      1.15       7.1      53.0 result[30]               
+    0:00:15   20246.6      1.11       6.8      53.0 result[30]               
+    0:00:15   20324.0      1.09       6.6      53.0 result[30]               
+    0:00:15   20382.1      1.07       6.5      53.0 result[30]               
+    0:00:15   20419.9      1.06       6.4      53.0 result[30]               
+    0:00:15   20442.0      1.03       6.2      53.0 result[30]               
+    0:00:15   20463.2      0.97       5.8      53.0 result[30]               
+    0:00:15   20476.1      0.92       5.4      53.0 result[30]               
+    0:00:16   20489.0      0.88       5.1      53.0 result[30]               
+    0:00:16   20493.6      0.86       5.0      53.0 result[30]               
+    0:00:16   20493.6      0.86       5.0      53.0 result[30]               
+    0:00:16   20499.1      0.86       5.0      53.0 result[30]               
+    0:00:16   20520.3      0.85       4.9      53.0 result[30]               
+    0:00:16   20604.2      0.83       4.8      53.0 result[30]               
+    0:00:16   20714.8      0.82       4.7      53.0 result[30]               
+    0:00:16   20753.5      0.80       4.6      53.0 result[30]               
+    0:00:16   20821.7      0.79       4.5      53.0 result[30]               
+    0:00:16   20895.4      0.77       4.4      53.0 result[30]               
+    0:00:16   20906.5      0.77       4.3      53.0 result[30]               
+    0:00:16   20905.6      0.77       4.3      53.0 result[30]               
+    0:00:17   20916.6      0.76       4.3      53.0 result[30]               
+    0:00:17   20916.6      0.76       4.2      53.0 result[30]               
+    0:00:17   20936.9      0.75       4.2      53.0 result[30]               
+    0:00:17   20958.1      0.73       4.1      53.0 result[30]               
+    0:00:17   20958.1      0.73       4.1      53.0 result[30]               
+    0:00:17   20953.5      0.72       4.0      53.0 result[30]               
+    0:00:17   20953.5      0.71       3.9      53.0 result[30]               
+    0:00:17   20953.5      0.71       3.9      53.0 result[30]               
+    0:00:17   20979.3      0.70       3.9      53.0 result[30]               
+    0:00:17   21007.0      0.70       3.8      53.0 result[30]               
+    0:00:17   21007.0      0.69       3.8      53.0 result[30]               
+    0:00:17   21051.2      0.69       3.8      53.0 result[30]               
+    0:00:17   21074.2      0.68       3.7      53.0 result[30]               
+    0:00:18   21070.5      0.67       3.7      53.0 result[30]               
+    0:00:18   21095.4      0.66       3.6      53.0 result[30]               
+    0:00:18   21117.5      0.65       3.5      53.0 result[30]               
+    0:00:18   21126.8      0.65       3.5      53.0 result[30]               
+    0:00:18   21156.2      0.64       3.5      53.0 result[30]               
+    0:00:18   21171.9      0.63       3.4      53.0 result[30]               
+    0:00:18   21167.3      0.62       3.3      53.0 result[30]               
+    0:00:18   21177.4      0.62       3.3      53.0 result[30]               
+    0:00:18   21174.7      0.61       3.3      53.0 result[30]               
+    0:00:18   21174.7      0.61       3.2      53.0 result[30]               
+    0:00:19   21179.3      0.61       3.2      53.0 result[30]               
+    0:00:19   21179.3      0.60       3.2      53.0 result[30]               
+    0:00:19   21183.0      0.60       3.2      53.0 result[30]               
+    0:00:20   21197.7      0.56       2.9      51.1 result[30]               
+    0:00:20   21202.3      0.55       2.9      51.1 result[30]               
+    0:00:20   21202.3      0.55       2.9      51.1                          
+    0:00:20   21202.3      0.55       2.9      51.1                          
+
+
+  Beginning Design Rule Fixing  (max_capacitance)
+  ----------------------------
+
+                                  TOTAL                                      
+   ELAPSED            WORST NEG   SETUP    DESIGN                            
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT         
+  --------- --------- --------- --------- --------- -------------------------
+    0:00:20   21202.3      0.55       2.9      51.1                          
+    0:00:21   21215.2      0.55       2.9       0.0 result[30]               
+    0:00:21   21217.1      0.54       2.8       0.0 result[30]               
+    0:00:21   21262.2      0.54       2.8       0.0 result[30]               
+    0:00:21   21263.2      0.54       2.8       0.0 result[30]               
+    0:00:21   21265.9      0.48       2.4       0.0 result[30]               
+    0:00:21   21317.5      0.45       2.2       0.0 result[30]               
+    0:00:21   21320.3      0.45       2.2       0.0 result[30]               
+    0:00:21   21320.3      0.45       2.2       0.0 result[30]               
+    0:00:22   21367.3      0.43       2.0      32.7 result[30]               
+    0:00:22   21369.1      0.42       2.0      32.7 result[30]               
+    0:00:22   21368.2      0.42       2.0      32.7 result[30]               
+    0:00:22   21369.1      0.41       1.9      32.7 result[30]               
+    0:00:23   21338.7      0.41       1.9       0.0 result[30]               
+    0:00:23   21338.7      0.40       1.8       0.0 result[30]               
+    0:00:23   21338.7      0.36       1.6       0.0 result[30]               
+    0:00:23   21374.7      0.31       1.2       0.0 result[30]               
+    0:00:23   21421.7      0.31       1.2       0.0 result[30]               
+    0:00:23   21437.3      0.30       1.1       0.0 result[30]               
+    0:00:23   21430.0      0.28       1.0       0.0 result[30]               
+    0:00:23   21445.6      0.28       1.0       0.0 result[30]               
+    0:00:23   21443.8      0.28       1.0       0.0 result[30]               
+    0:00:24   21459.5      0.28       1.0       0.0 result[30]               
+    0:00:24   21459.5      0.27       1.0       0.0 result[30]               
+    0:00:24   21459.5      0.27       1.0       0.0 result[30]               
+    0:00:24   21459.5      0.27       1.0       0.0 result[30]               
+    0:00:24   21482.5      0.27       0.9       0.0                          
+    0:00:24   21482.5      0.27       0.9       0.0                          
+    0:00:24   21501.8      0.26       0.9       0.0                          
+    0:00:25   21534.1      0.24       0.8       0.0                          
+    0:00:25   21534.1      0.24       0.8       0.0                          
+    0:00:25   21528.6      0.24       0.7       0.0                          
+
+
+  Beginning Area-Recovery Phase  (cleanup)
+  -----------------------------
+
+                                  TOTAL                                      
+   ELAPSED            WORST NEG   SETUP    DESIGN                            
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT         
+  --------- --------- --------- --------- --------- -------------------------
+    0:00:25   21528.6      0.24       0.7       0.0                          
+    0:00:25   21528.6      0.24       0.7       0.0                          
+    0:00:25   21218.0      0.25       0.8       0.0                          
+    0:00:25   21124.9      0.25       0.8       0.0                          
+    0:00:25   21102.8      0.25       0.8       0.0                          
+    0:00:25   21091.7      0.25       0.8       0.0                          
+    0:00:25   21082.5      0.25       0.8       0.0                          
+    0:00:25   21082.5      0.25       0.8       0.0                          
+    0:00:25   21082.5      0.25       0.8       0.0 result[30]               
+    0:00:25   21091.7      0.25       0.8       0.0 result[30]               
+    0:00:26   21097.3      0.24       0.7       0.0 result[30]               
+    0:00:26   21097.3      0.24       0.7       0.0 result[30]               
+    0:00:26   21097.3      0.24       0.7       0.0 result[30]               
+    0:00:26   21097.3      0.24       0.7       0.0                          
+    0:00:26   20838.3      0.23       0.7       0.0                          
+    0:00:26   20832.8      0.24       0.7       0.0                          
+    0:00:26   20832.8      0.24       0.7       0.0                          
+    0:00:26   20832.8      0.24       0.7       0.0                          
+    0:00:26   20832.8      0.24       0.7       0.0                          
+    0:00:26   20832.8      0.24       0.7       0.0                          
+    0:00:26   20832.8      0.24       0.7       0.0                          
+    0:00:27   20834.6      0.24       0.7       0.0 result[30]               
+    0:00:27   20831.8      0.24       0.7       0.0                          
+    0:00:27   20734.2      0.23       0.7       0.0                          
+    0:00:27   20671.5      0.23       0.7       0.0                          
+    0:00:27   20627.3      0.23       0.7       0.0                          
+    0:00:28   20585.8      0.23       0.7       0.0                          
+    0:00:28   20595.9      0.22       0.6       0.0                          
+    0:00:28   20601.4      0.22       0.6       0.0                          
+    0:00:28   20627.3      0.20       0.5       0.0                          
+    0:00:28   20627.3      0.20       0.5       0.0 result[30]               
+    0:00:28   20636.5      0.20       0.5       0.0 result[30]               
+    0:00:29   20636.5      0.20       0.5       0.0 result[30]               
+    0:00:29   20677.0      0.19       0.4       0.0 result[30]               
+    0:00:29   20677.9      0.18       0.4       0.0 result[30]               
+    0:00:29   20689.0      0.18       0.4       0.0 result[30]               
+    0:00:29   20701.9      0.17       0.4       0.0 result[30]               
+Loading db file '/home/user26/Downloads/Lab4/ref/models/saed90nm_typ_ht.db'
+
+
+Note: Symbol # after min delay cost means estimated hold TNS across all active scenarios 
+
+
+  Optimization Complete
+  ---------------------
+Information: Total number of MV cells in the design.
+----------------------------------------------------------------------------------------------------
+ MV Cells                                           Total Number                                   
+----------------------------------------------------------------------------------------------------
+ Level Shifter:                                     0                                             
+ Enable Level Shifter:                              0                                             
+ Isolation Cell:                                    0                                             
+ Retention Cell:                                    0                                             
+ Retention Clamp Cell:                              0                                             
+ Switch Cell:                                       0                                             
+ Always-On Cell:                                    0                                             
+ Repeater Cell:                                     0                                             
+
+----------------------------------------------------------------------------------------------------
+Unmapped MV Cells 
+----------------------------------------------------------------------------------------------------
+0 Isolation Cells are unmapped 
+0 Retention Clamp Cells are unmapped 
+----------------------------------------------------------------------------------------------------
+1
