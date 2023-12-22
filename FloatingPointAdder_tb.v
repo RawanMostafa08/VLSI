@@ -1,5 +1,5 @@
 
-module testbench;
+module FloatingPointadder_tb;
     reg signed [31:0] A, B;
     wire signed [31:0] result;
     integer success_cases = 0;
