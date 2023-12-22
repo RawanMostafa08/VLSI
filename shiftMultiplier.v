@@ -1,4 +1,4 @@
-module Multiplier2(
+module shiftMultiplier(
   input [31:0] A, // 4-bit input A
   input [31:0] B, // 4-bit input B
   output reg [63:0] P // 8-bit output P

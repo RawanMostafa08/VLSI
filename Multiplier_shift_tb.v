@@ -10,7 +10,7 @@ module ShiftMultiplier_TB;
   wire [63:0] P;
 
   // Instantiate the Booth module
-  Multiplier2 uut (
+  shiftMultiplier uut (
     .A(A),
     .B(B),
     .P(P)

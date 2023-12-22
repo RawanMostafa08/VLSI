@@ -10,7 +10,7 @@ module FloatingPointMultiplier (
   reg [22:0]  resFrac;
   reg signed [7:0] result_exponent;
   reg result_sign;
- reg [21:0] temp_fraction;
+  reg [21:0] temp_fraction;
   integer i;
 
     // Align exponents
