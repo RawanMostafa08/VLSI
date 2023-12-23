@@ -1,6 +1,6 @@
 `timescale 1 ns / 100 ps
 
-module ShiftMultiplier_TB;
+module WallanceMultiplier_TB;
 
   // Inputs
   reg [31:0] A;
@@ -10,10 +10,10 @@ module ShiftMultiplier_TB;
   wire [63:0] P;
 
   // Instantiate the Booth module
-  shiftMultiplier uut (
-    .A(A),
-    .B(B),
-    .P(P)
+  WM32bit uut (
+    .in1(A),
+    .in2(B),
+    .result(P)
   );
    integer success = 0;
     integer failure = 0;
