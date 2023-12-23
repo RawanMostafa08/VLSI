@@ -4,6 +4,25 @@ module ShiftAdder (
     output [63:0]out
 );
 
-assign out = in1+in2;
+wire Cout,dirty;
+
+  // Instantiate the CarryBypass_Adder module
+  CarryBypass_Adder DUT (
+    .A(in1[63:32]),
+    .B(in2[63:32]),
+    .Cin(0),
+    .Sum(out[63:32]),
+    .Cout(Cout)
+  );
+    // Instantiate the CarryBypass_Adder module
+  CarryBypass_Adder DUT2 (
+    .A(in1[31:0]),
+    .B(in2[31:0]),
+    .Cin(Cout),
+    .Sum(out[31:0]),
+    .Cout(dirty)
+  );
+
+
 
 endmodule //ShiftAdder
