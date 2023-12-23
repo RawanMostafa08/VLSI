@@ -1,100 +1,126 @@
-
 `timescale 1 ns / 100 ps
 
 module BoothMultiplier_TB;
 
   // Inputs
-  reg [3:0] A;
-  reg [3:0] B;
+  reg [31:0] A;
+  reg [31:0] B;
 
   // Outputs
-  wire [7:0] P;
+  wire [63:0] P;
 
-  // Instantiate the SerialMultiplier module
+  // Instantiate the Booth module
   Booth uut (
     .A(A),
     .B(B),
     .P(P)
   );
-
-  // Clock generation
-  reg clk = 0;
-  always #5 clk = ~clk;
+   integer success = 0;
+    integer failure = 0;
 
   // Test case stimuli
   initial begin
-    // Test case 1: 0 * -3 = 0
-    A = 4'b0000;
-    B = 4'b1101;
+   
+
+    // Test case 1: Multiplication of positive and negative number
+    A = 32'b00000000000000000000000000000101; // 5
+    B = 32'b11111111111111111111111111111011; // -5
     #10; // Wait for the result
-    if (P === 8'b00000000)
-      $display("Test Case 1 Passed");
-    else
-      $display("Test Case 1 Failed");
+    if (P === 64'b1111111111111111111111111111111111111111111111111111111111100111) begin // -25
+      $display("TestCase#1: success");
+      success = success + 1;
+    end else begin
+      $display("TestCase#1: failed with input %d and %d and Output %d", A, B, P);
+      failure = failure + 1;
+    end
 
-    // Test case 2: 1 * -3 = -3
-    A = 4'b0001;
-    B = 4'b1101;
+    // Test case 2: Multiplication of positive and positive number
+    A = 32'b00000000000000000000000000000101; // 5
+    B = 32'b00000000000000000000000000000101; // 5
     #10; // Wait for the result
-    if (P === 8'b11111101)
-      $display("Test Case 2 Passed");
-    else
-      $display("Test Case 2 Failed");
+    if (P === 64'b0000000000000000000000000000000000000000000000000000000000011001) begin // 25
+      $display("TestCase#2: success");
+      success = success + 1;
+    end else begin
+      $display("TestCase#2: failed with input %d and %d and Output %d", A, B, P);
+      failure = failure + 1;
+    end
 
-    // Test case 3: -7 * -7 = 49
-    A = 4'b1001;
-    B = 4'b1001;
-    #10; // Wait for the result 0b110001      
-    if (P === 8'b00110001)
-      $display("Test Case 3 Passed");
-    else
-      $display("Test Case 3 Failed");
-
-    // Test case 4: -7 * -1 = 7
-    A = 4'b1001;
-    B = 4'b1111;
+    // Test case 3: Multiplication of negative and negative number
+    A = 32'b11111111111111111111111111111011; // -5
+    B = 32'b11111111111111111111111111111011; // -5
     #10; // Wait for the result
-    if (P === 8'b00000111)
-      $display("Test Case 4 Passed");
-    else
-      $display("Test Case 4 Failed");
+    if (P === 64'b0000000000000000000000000000000000000000000000000000000000011001) begin // 25
+      $display("TestCase#3: success");
+      success = success + 1;
+    end else begin
+      $display("TestCase#3: failed with input %d and %d and Output %d", A, B, P);
+      failure = failure + 1;
+    end
 
-    // Test case 5: -7 * 7 = -49
-    A = 4'b1001;
-    B = 4'b0111;
+    // Test case 4: Multiplication of negative and positive number
+    A = 32'b11111111111111111111111111111011; // -5
+    B = 32'b00000000000000000000000000000101; // 5
     #10; // Wait for the result
-    if (P === 8'b11001111)
-      $display("Test Case 5 Passed");
-    else
-      $display("Test Case 5 Failed");
+    if (P === 64'b1111111111111111111111111111111111111111111111111111111111100111) begin // -25
+      $display("TestCase#4: success");
+      success = success + 1;
+    end else begin
+      $display("TestCase#4: failed with input %d and %d and Output %d", A, B, P);
+      failure = failure + 1;
+    end
 
-    // Test case 6: 0 * 3 = 0
-    A = 4'b0000;
-    B = 4'b1101;
+    // Test case 5: Multiplication by zero
+    A = 32'b00000000000000000000000000000000; // 0
+    B = 32'b11111111111111111111111111111011; // -5
     #10; // Wait for the result
-    if (P === 8'b00000000)
-      $display("Test Case 6 Passed");
-    else
-      $display("Test Case 6 Failed");
+    if (P === 64'b0000000000000000000000000000000000000000000000000000000000000000) begin // 0
+      $display("TestCase#5: success");
+      success = success + 1;
+    end else begin
+      $display("TestCase#5: failed with input %d and %d and Output %d", A, B, P);
+      failure = failure + 1;
+    end
 
-    // Test case 7: -0 * 0 = 0
-    A = 4'b1000;
-    B = 4'b0000;
+    // Test case 6: Multiplication by 1
+    A = 32'b00000000000000000000000000000001; // 1
+    B = 32'b11111111111111111111111111111011; // -5
     #10; // Wait for the result
-    if (P === 8'b00000000)
-      $display("Test Case 7 Passed");
-    else
-      $display("Test Case 7 Failed");
+    if (P === 64'b1111111111111111111111111111111111111111111111111111111111111011) begin // -5
+      $display("TestCase#6: success");
+      success = success + 1;
+    end else begin
+      $display("TestCase#6: failed with input %d and %d and Output %d", A, B, P);
+      failure = failure + 1;
+    end
 
-    // Test case 8: 2 * 7 = 14
-    A = 4'b0010;
-    B = 4'b0111;
+    // Test case 7: Random test case 1
+    A = 32'b00000000000000000000000000001000; // 8
+    B = 32'b00000000000000000000000000000110; // 6
     #10; // Wait for the result
-    if (P === 8'b00001110)
-      $display("Test Case 8 Passed");
-    else
-      $display("Test Case 8 Failed");
+    if (P === 64'b0000000000000000000000000000000000000000000000000000000000110000) begin // 48
+      $display("TestCase#7: success");
+      success = success + 1;
+    end else begin
+      $display("TestCase#7: failed with input %d and %d and Output %d", A, B, P);
+      failure = failure + 1;
+    end
 
+    // Test case 8: Random test case 2
+    A = 32'b11111111111111111111111111110100; // -12
+    B = 32'b00000000000000000000000000000110; // 6
+    #10; // Wait for the result
+    if (P === 64'b1111111111111111111111111111111111111111111111111111111110111000) begin // -72
+      $display("TestCase#8: success");
+      success = success + 1;
+    end else begin
+      $display("TestCase#8: failed with input %d and %d and Output %d", A, B, P);
+      failure = failure + 1;
+    end
+
+    // Final report
+    $display("Total number of success test cases: %d", success);
+    $display("Total number of failure test cases: %d", failure);
   end
 
 endmodule

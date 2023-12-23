@@ -1,8 +1,8 @@
 module PlusOperatorAdder (
-    input [3:0] A,
-    input [3:0] B,
+    input [31:0] A,
+    input [31:0] B,
     input Cin,    
-    output [3:0] Sum,
+    output [31:0] Sum,
     output Cout
 );
 
