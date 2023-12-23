@@ -1,68 +1,152 @@
+
 module Booth (
-    input[31:0] A,
-    input[31:0] B,
-    output reg [63:0] P
+    input[3:0] A,
+    input[3:0] B,
+    output reg [7:0] P
 );
 
-reg [31:0] Q;
+reg [3:0] Q;
 reg Q_1;
-wire [31:0]compA;
-reg [31:0] Acc;
+reg [2:0]count;
+wire [3:0]compA;
+reg [3:0] Acc;
+assign compA = ~ (A[3:0]) +1;
 
-assign compA = ~ (A[31:0]) +1;
- integer  count;
- reg signed [31:0] AccA, compA_B;
-  wire signed [31:0] Acc_result;
-  wire cout,cin;
-  assign cin=0;
+reg signed [3:0] A1,A2, A3,A4,compA1,compA2,compA3,compA4,B1,B2,B3,B4;
+wire signed [3:0] Acc1_result,Acc1_comp_result,Acc2_result,Acc2_comp_result,Acc3_result,Acc3_comp_result,Acc4_result,Acc4_comp_result;
+wire cout,cin;
+assign cin=0;
 
-CarryBypass_Adder add_compA(
-        .A(AccA),
-        .B(compA_B),
+PlusOperatorAdder add_compA1(
+        .A(A1),
+        .B(compA1),
         .Cin(cin),
-        .Sum(Acc_result),
+        .Sum(Acc1_comp_result),
         .Cout(cout)
       );
 
-CarryBypass_Adder add_A(
-        .A(AccA),
-        .B(compA_B),
+      PlusOperatorAdder add_compA2(
+        .A(A2),
+        .B(compA2),
         .Cin(cin),
-        .Sum(Acc_result),
+        .Sum(Acc2_comp_result),
+        .Cout(cout)
+      );
+      PlusOperatorAdder add_compA3(
+        .A(A3),
+        .B(compA3),
+        .Cin(cin),
+        .Sum(Acc3_comp_result),
+        .Cout(cout)
+      );
+      PlusOperatorAdder add_compA4(
+        .A(A4),
+        .B(compA4),
+        .Cin(cin),
+        .Sum(Acc4_comp_result),
+        .Cout(cout)
+      );
+
+PlusOperatorAdder add_A1(
+        .A(B1),
+        .B(A[3:0]),
+        .Cin(cin),
+        .Sum(Acc1_result),
+        .Cout(cout)
+      );
+      PlusOperatorAdder add_A2(
+        .A(B2),
+        .B(A[3:0]),
+        .Cin(cin),
+        .Sum(Acc2_result),
+        .Cout(cout)
+      );
+      PlusOperatorAdder add_A3(
+        .A(B3),
+        .B(A[3:0]),
+        .Cin(cin),
+        .Sum(Acc3_result),
+        .Cout(cout)
+      );
+      PlusOperatorAdder add_A4(
+        .A(B4),
+        .B(A[3:0]),
+        .Cin(cin),
+        .Sum(Acc4_result),
         .Cout(cout)
       );
 
 always @(A or B) begin
 
- Q[31:0]=B[31:0];
+ Q[3:0]=B[3:0];
 
  //001
  Q_1=0;
- Acc=32'b00000000000000000000000000000000;
- for ( count = 6'b100000; count != 6'b000000; count = count - 1) 
- begin
+ count=3'b100;
+ Acc=4'b0000;
+ 
+A1=Acc;
+compA1=compA;
+B1=Acc;
 
    if (Q_1==0 && Q[0]==1) begin
-        AccA=Acc;
-        compA_B=compA;
-       Acc=Acc_result;
-   end else begin
+        Acc=Acc1_comp_result
+   end 
+else begin
     if (Q_1==1 && Q[0]==0) begin
-        AccA=Acc;
-        compA_B=A[31:0];
-        Ac=Acc_result;
+        Acc=Acc1_result;
     end
    end
-    //$display("The value before  of  is %b", {Acc,Q,Q_1});
-    //$display("The value before  of Acc is %b and Q is %b and Q_1 is %b", Acc,Q,Q_1);
-   {Acc,Q,Q_1}={Acc[31],Acc,Q};
-    //$display("The value after of  is %b", {Acc,Q,Q_1});
- //$display("The value after  of Acc is %b and Q is %b and Q_1 is %b", Acc,Q,Q_1);
+   {Acc,Q,Q_1}={Acc[3],Acc,Q};
+    
+A2=Acc;
+compA2=compA;
+B2=Acc;
 
- end
- P[63:0]={ {32{Acc[31]}}, Acc, Q};
+   if (Q_1==0 && Q[0]==1) begin
+        Acc=Acc2_comp_result
+   end else begin
+    if (Q_1==1 && Q[0]==0) begin
+        Acc=Acc2_result;
+    end
+   end
+   {Acc,Q,Q_1}={Acc[3],Acc,Q};
+
+   A3=Acc;
+compA3=compA;
+B3=Acc;
+
+   if (Q_1==0 && Q[0]==1) begin
+        Acc=Acc3_comp_result
+   end else begin
+    if (Q_1==1 && Q[0]==0) begin
+        Acc=Acc3_result;
+    end
+   end
+   {Acc,Q,Q_1}={Acc[3],Acc,Q};
+
+   A4=Acc;
+compA4=compA;
+B4=Acc;
+
+   if (Q_1==0 && Q[0]==1) begin
+        Acc=Acc4_comp_result
+   end else begin
+    if (Q_1==1 && Q[0]==0) begin
+        Acc=Acc4_result;
+    end
+   end
+   {Acc,Q,Q_1}={Acc[3],Acc,Q};
+   
+
+
+
+ P[7:0]={ {2{Acc[1]}}, Acc, Q};
 
 end
 
-endmodule
 
+
+    
+
+endmodule
