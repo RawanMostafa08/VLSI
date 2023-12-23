@@ -22,7 +22,7 @@ wire signed [31:0] Acc1_result,Acc1_comp_result,Acc2_result,Acc2_comp_result,Acc
 wire cout,cin;
 assign cin=0;
 
-PlusOperatorAdder add_compA1(
+CarryBypass_Adder add_compA1(
         .A(A1),
         .B(compA1),
         .Cin(cin),
@@ -30,21 +30,21 @@ PlusOperatorAdder add_compA1(
         .Cout(cout)
       );
 
-      PlusOperatorAdder add_compA2(
+      CarryBypass_Adder add_compA2(
         .A(A2),
         .B(compA2),
         .Cin(cin),
         .Sum(Acc2_comp_result),
         .Cout(cout)
       );
-      PlusOperatorAdder add_compA3(
+      CarryBypass_Adder add_compA3(
         .A(A3),
         .B(compA3),
         .Cin(cin),
         .Sum(Acc3_comp_result),
         .Cout(cout)
       );
-      PlusOperatorAdder add_compA4(
+      CarryBypass_Adder add_compA4(
         .A(A4),
         .B(compA4),
         .Cin(cin),
@@ -52,42 +52,42 @@ PlusOperatorAdder add_compA1(
         .Cout(cout)
       );
 
-PlusOperatorAdder add_A1(
+CarryBypass_Adder add_A1(
         .A(B1),
         .B(A[31:0]),
         .Cin(cin),
         .Sum(Acc1_result),
         .Cout(cout)
       );
-      PlusOperatorAdder add_A2(
+      CarryBypass_Adder add_A2(
         .A(B2),
         .B(A[31:0]),
         .Cin(cin),
         .Sum(Acc2_result),
         .Cout(cout)
       );
-      PlusOperatorAdder add_A3(
+      CarryBypass_Adder add_A3(
         .A(B3),
         .B(A[31:0]),
         .Cin(cin),
         .Sum(Acc3_result),
         .Cout(cout)
       );
-      PlusOperatorAdder add_A4(
+      CarryBypass_Adder add_A4(
         .A(B4),
         .B(A[31:0]),
         .Cin(cin),
         .Sum(Acc4_result),
         .Cout(cout)
       );
-PlusOperatorAdder add_compA5(
+CarryBypass_Adder add_compA5(
         .A(A5),
         .B(compA5),
         .Cin(cin),
         .Sum(Acc5_comp_result),
         .Cout(cout)
       );
-PlusOperatorAdder add_A5(
+CarryBypass_Adder add_A5(
         .A(B5),
         .B(A[31:0]),
         .Cin(cin),
@@ -95,8 +95,8 @@ PlusOperatorAdder add_A5(
         .Cout(cout)
       );
 
-      //TODO:add instances from PlusOperatorAdder add_A5 .... add_A32 and add_compA5 ... add_compA32
-PlusOperatorAdder add_compA6(
+      //TODO:add instances from CarryBypass_Adder add_A5 .... add_A32 and add_compA5 ... add_compA32
+CarryBypass_Adder add_compA6(
         .A(A6),
         .B(compA6),
         .Cin(cin),
@@ -104,15 +104,15 @@ PlusOperatorAdder add_compA6(
         .Cout(cout)
       );
 
-// Add instances from PlusOperatorAdder add_A6
-PlusOperatorAdder add_A6(
+// Add instances from CarryBypass_Adder add_A6
+CarryBypass_Adder add_A6(
         .A(B6),
         .B(A[31:0]),
         .Cin(cin),
         .Sum(Acc6_result),
         .Cout(cout)
       );
-      PlusOperatorAdder add_compA7(
+      CarryBypass_Adder add_compA7(
         .A(A7),
         .B(compA7),
         .Cin(cin),
@@ -120,15 +120,15 @@ PlusOperatorAdder add_A6(
         .Cout(cout)
       );
 
-// Add instances from PlusOperatorAdder add_A7
-PlusOperatorAdder add_A7(
+// Add instances from CarryBypass_Adder add_A7
+CarryBypass_Adder add_A7(
         .A(B7),
         .B(A[31:0]),
         .Cin(cin),
         .Sum(Acc7_result),
         .Cout(cout)
       );
-      PlusOperatorAdder add_compA8(
+      CarryBypass_Adder add_compA8(
         .A(A8),
         .B(compA8),
         .Cin(cin),
@@ -136,7 +136,7 @@ PlusOperatorAdder add_A7(
         .Cout(cout)
 );
 
-PlusOperatorAdder add_A8(
+CarryBypass_Adder add_A8(
         .A(B8),
         .B(A[31:0]),
         .Cin(cin),
@@ -145,7 +145,7 @@ PlusOperatorAdder add_A8(
 );
 
 // Add instances for A9 to A32, compA9 to compA32, B9 to B32
-PlusOperatorAdder add_compA9(
+CarryBypass_Adder add_compA9(
         .A(A9),
         .B(compA9),
         .Cin(cin),
@@ -153,7 +153,7 @@ PlusOperatorAdder add_compA9(
         .Cout(cout)
 );
 
-PlusOperatorAdder add_A9(
+CarryBypass_Adder add_A9(
         .A(B9),
         .B(A[31:0]),
         .Cin(cin),
@@ -162,7 +162,7 @@ PlusOperatorAdder add_A9(
 );
 
 // Add instances for A10 to A32, compA10 to compA32, B10 to B32
-PlusOperatorAdder add_compA10(
+CarryBypass_Adder add_compA10(
         .A(A10),
         .B(compA10),
         .Cin(cin),
@@ -170,7 +170,7 @@ PlusOperatorAdder add_compA10(
         .Cout(cout)
 );
 
-PlusOperatorAdder add_A10(
+CarryBypass_Adder add_A10(
         .A(B10),
         .B(A[31:0]),
         .Cin(cin),
@@ -179,7 +179,7 @@ PlusOperatorAdder add_A10(
 );
 
 // Add instances for A10 to A32, compA10 to compA32, B10 to B32
-PlusOperatorAdder add_compA11(
+CarryBypass_Adder add_compA11(
         .A(A11),
         .B(compA11),
         .Cin(cin),
@@ -187,7 +187,7 @@ PlusOperatorAdder add_compA11(
         .Cout(cout)
 );
 
-PlusOperatorAdder add_A11(
+CarryBypass_Adder add_A11(
         .A(B11),
         .B(A[31:0]),
         .Cin(cin),
@@ -195,7 +195,7 @@ PlusOperatorAdder add_A11(
         .Cout(cout)
 );
 // Add instances for A10 to A32, compA10 to compA32, B10 to B32
-PlusOperatorAdder add_compA12(
+CarryBypass_Adder add_compA12(
         .A(A12),
         .B(compA12),
         .Cin(cin),
@@ -203,7 +203,7 @@ PlusOperatorAdder add_compA12(
         .Cout(cout)
 );
 
-PlusOperatorAdder add_A12(
+CarryBypass_Adder add_A12(
         .A(B12),
         .B(A[31:0]),
         .Cin(cin),
@@ -211,7 +211,7 @@ PlusOperatorAdder add_A12(
         .Cout(cout)
 );
 // Add instances for A10 to A32, compA10 to compA32, B10 to B32
-PlusOperatorAdder add_compA13(
+CarryBypass_Adder add_compA13(
         .A(A13),
         .B(compA13),
         .Cin(cin),
@@ -219,7 +219,7 @@ PlusOperatorAdder add_compA13(
         .Cout(cout)
 );
 
-PlusOperatorAdder add_A13(
+CarryBypass_Adder add_A13(
         .A(B13),
         .B(A[31:0]),
         .Cin(cin),
@@ -228,7 +228,7 @@ PlusOperatorAdder add_A13(
 );
 
 // Add instances for A10 to A32, compA10 to compA32, B10 to B32
-PlusOperatorAdder add_compA14(
+CarryBypass_Adder add_compA14(
         .A(A14),
         .B(compA14),
         .Cin(cin),
@@ -236,7 +236,7 @@ PlusOperatorAdder add_compA14(
         .Cout(cout)
 );
 
-PlusOperatorAdder add_A14(
+CarryBypass_Adder add_A14(
         .A(B14),
         .B(A[31:0]),
         .Cin(cin),
@@ -244,7 +244,7 @@ PlusOperatorAdder add_A14(
         .Cout(cout)
 );
 // Add instances for A10 to A32, compA10 to compA32, B10 to B32
-PlusOperatorAdder add_compA15(
+CarryBypass_Adder add_compA15(
         .A(A15),
         .B(compA15),
         .Cin(cin),
@@ -252,14 +252,14 @@ PlusOperatorAdder add_compA15(
         .Cout(cout)
 );
 
-PlusOperatorAdder add_A15(
+CarryBypass_Adder add_A15(
         .A(B15),
         .B(A[31:0]),
         .Cin(cin),
         .Sum(Acc15_result),
         .Cout(cout)
 );
-PlusOperatorAdder add_compA16(
+CarryBypass_Adder add_compA16(
         .A(A16),
         .B(compA16),
         .Cin(cin),
@@ -267,14 +267,14 @@ PlusOperatorAdder add_compA16(
         .Cout(cout)
 );
 
-PlusOperatorAdder add_A16(
+CarryBypass_Adder add_A16(
         .A(B16),
         .B(A[31:0]),
         .Cin(cin),
         .Sum(Acc16_result),
         .Cout(cout)
 );
-PlusOperatorAdder add_compA17(
+CarryBypass_Adder add_compA17(
         .A(A17),
         .B(compA17),
         .Cin(cin),
@@ -282,7 +282,7 @@ PlusOperatorAdder add_compA17(
         .Cout(cout)
 );
 
-PlusOperatorAdder add_A17(
+CarryBypass_Adder add_A17(
         .A(B17),
         .B(A[31:0]),
         .Cin(cin),
@@ -290,7 +290,7 @@ PlusOperatorAdder add_A17(
         .Cout(cout)
 );
 
-PlusOperatorAdder add_compA18(
+CarryBypass_Adder add_compA18(
         .A(A18),
         .B(compA18),
         .Cin(cin),
@@ -298,14 +298,14 @@ PlusOperatorAdder add_compA18(
         .Cout(cout)
 );
 
-PlusOperatorAdder add_A18(
+CarryBypass_Adder add_A18(
         .A(B18),
         .B(A[31:0]),
         .Cin(cin),
         .Sum(Acc18_result),
         .Cout(cout)
 );
-PlusOperatorAdder add_compA19(
+CarryBypass_Adder add_compA19(
         .A(A19),
         .B(compA19),
         .Cin(cin),
@@ -313,14 +313,14 @@ PlusOperatorAdder add_compA19(
         .Cout(cout)
 );
 
-PlusOperatorAdder add_A19(
+CarryBypass_Adder add_A19(
         .A(B19),
         .B(A[31:0]),
         .Cin(cin),
         .Sum(Acc19_result),
         .Cout(cout)
 );
-PlusOperatorAdder add_compA20(
+CarryBypass_Adder add_compA20(
         .A(A20),
         .B(compA20),
         .Cin(cin),
@@ -328,7 +328,7 @@ PlusOperatorAdder add_compA20(
         .Cout(cout)
 );
 
-PlusOperatorAdder add_A20(
+CarryBypass_Adder add_A20(
         .A(B20),
         .B(A[31:0]),
         .Cin(cin),
@@ -336,7 +336,7 @@ PlusOperatorAdder add_A20(
         .Cout(cout)
 );
 
-PlusOperatorAdder add_compA21(
+CarryBypass_Adder add_compA21(
         .A(A21),
         .B(compA21),
         .Cin(cin),
@@ -344,14 +344,14 @@ PlusOperatorAdder add_compA21(
         .Cout(cout)
 );
 
-PlusOperatorAdder add_A21(
+CarryBypass_Adder add_A21(
         .A(B21),
         .B(A[31:0]),
         .Cin(cin),
         .Sum(Acc21_result),
         .Cout(cout)
 );
-PlusOperatorAdder add_compA22(
+CarryBypass_Adder add_compA22(
         .A(A22),
         .B(compA22),
         .Cin(cin),
@@ -359,7 +359,7 @@ PlusOperatorAdder add_compA22(
         .Cout(cout)
 );
 
-PlusOperatorAdder add_A22(
+CarryBypass_Adder add_A22(
         .A(B22),
         .B(A[31:0]),
         .Cin(cin),
@@ -367,7 +367,7 @@ PlusOperatorAdder add_A22(
         .Cout(cout)
 );
 
-PlusOperatorAdder add_compA23(
+CarryBypass_Adder add_compA23(
         .A(A23),
         .B(compA23),
         .Cin(cin),
@@ -375,14 +375,14 @@ PlusOperatorAdder add_compA23(
         .Cout(cout)
 );
 
-PlusOperatorAdder add_A23(
+CarryBypass_Adder add_A23(
         .A(B23),
         .B(A[31:0]),
         .Cin(cin),
         .Sum(Acc23_result),
         .Cout(cout)
 );
-PlusOperatorAdder add_compA24(
+CarryBypass_Adder add_compA24(
         .A(A24),
         .B(compA24),
         .Cin(cin),
@@ -390,7 +390,7 @@ PlusOperatorAdder add_compA24(
         .Cout(cout)
 );
 
-PlusOperatorAdder add_A24(
+CarryBypass_Adder add_A24(
         .A(B24),
         .B(A[31:0]),
         .Cin(cin),
@@ -398,7 +398,7 @@ PlusOperatorAdder add_A24(
         .Cout(cout)
 );
 
-PlusOperatorAdder add_compA25(
+CarryBypass_Adder add_compA25(
         .A(A25),
         .B(compA25),
         .Cin(cin),
@@ -406,7 +406,7 @@ PlusOperatorAdder add_compA25(
         .Cout(cout)
 );
 
-PlusOperatorAdder add_A25(
+CarryBypass_Adder add_A25(
         .A(B25),
         .B(A[31:0]),
         .Cin(cin),
@@ -414,7 +414,7 @@ PlusOperatorAdder add_A25(
         .Cout(cout)
 );
 
-PlusOperatorAdder add_compA26(
+CarryBypass_Adder add_compA26(
         .A(A26),
         .B(compA26),
         .Cin(cin),
@@ -422,7 +422,7 @@ PlusOperatorAdder add_compA26(
         .Cout(cout)
 );
 
-PlusOperatorAdder add_A26(
+CarryBypass_Adder add_A26(
         .A(B26),
         .B(A[31:0]),
         .Cin(cin),
@@ -430,7 +430,7 @@ PlusOperatorAdder add_A26(
         .Cout(cout)
 );
 
-PlusOperatorAdder add_compA27(
+CarryBypass_Adder add_compA27(
         .A(A27),
         .B(compA27),
         .Cin(cin),
@@ -438,7 +438,7 @@ PlusOperatorAdder add_compA27(
         .Cout(cout)
 );
 
-PlusOperatorAdder add_A27(
+CarryBypass_Adder add_A27(
         .A(B27),
         .B(A[31:0]),
         .Cin(cin),
@@ -446,7 +446,7 @@ PlusOperatorAdder add_A27(
         .Cout(cout)
 );
 
-PlusOperatorAdder add_compA28(
+CarryBypass_Adder add_compA28(
         .A(A28),
         .B(compA28),
         .Cin(cin),
@@ -454,14 +454,14 @@ PlusOperatorAdder add_compA28(
         .Cout(cout)
 );
 
-PlusOperatorAdder add_A28(
+CarryBypass_Adder add_A28(
         .A(B28),
         .B(A[31:0]),
         .Cin(cin),
         .Sum(Acc28_result),
         .Cout(cout)
 );
-PlusOperatorAdder add_compA29(
+CarryBypass_Adder add_compA29(
         .A(A29),
         .B(compA29),
         .Cin(cin),
@@ -469,7 +469,7 @@ PlusOperatorAdder add_compA29(
         .Cout(cout)
 );
 
-PlusOperatorAdder add_A29(
+CarryBypass_Adder add_A29(
         .A(B29),
         .B(A[31:0]),
         .Cin(cin),
@@ -477,7 +477,7 @@ PlusOperatorAdder add_A29(
         .Cout(cout)
 );
 
-PlusOperatorAdder add_compA30(
+CarryBypass_Adder add_compA30(
         .A(A30),
         .B(compA30),
         .Cin(cin),
@@ -485,7 +485,7 @@ PlusOperatorAdder add_compA30(
         .Cout(cout)
 );
 
-PlusOperatorAdder add_A30(
+CarryBypass_Adder add_A30(
         .A(B30),
         .B(A[31:0]),
         .Cin(cin),
@@ -493,7 +493,7 @@ PlusOperatorAdder add_A30(
         .Cout(cout)
 );
 
-PlusOperatorAdder add_compA31(
+CarryBypass_Adder add_compA31(
         .A(A31),
         .B(compA31),
         .Cin(cin),
@@ -501,14 +501,14 @@ PlusOperatorAdder add_compA31(
         .Cout(cout)
 );
 
-PlusOperatorAdder add_A31(
+CarryBypass_Adder add_A31(
         .A(B31),
         .B(A[31:0]),
         .Cin(cin),
         .Sum(Acc31_result),
         .Cout(cout)
 );
-PlusOperatorAdder add_compA32(
+CarryBypass_Adder add_compA32(
         .A(A32),
         .B(compA32),
         .Cin(cin),
@@ -516,7 +516,7 @@ PlusOperatorAdder add_compA32(
         .Cout(cout)
 );
 
-PlusOperatorAdder add_A32(
+CarryBypass_Adder add_A32(
         .A(B32),
         .B(A[31:0]),
         .Cin(cin),
@@ -589,7 +589,7 @@ B4=Acc;
    end
    {Acc,Q,Q_1}={Acc[31],Acc,Q};
 
-   //TODO: add the lines of putting inputs of instances of PlusOperatorAdder module and if conditions
+   //TODO: add the lines of putting inputs of instances of CarryBypass_Adder module and if conditions
  A5=Acc;
 compA5=compA;
 B5=Acc;
