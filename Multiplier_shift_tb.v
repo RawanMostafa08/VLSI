@@ -1,4 +1,4 @@
-module BoothMultiplier_TB;
+module ShiftMultiplier_TB;
 
   // Inputs
   reg [31:0] A;

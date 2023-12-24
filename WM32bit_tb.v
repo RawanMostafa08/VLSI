@@ -1,4 +1,4 @@
-module BoothMultiplier_TB;
+module WallanceMultiplier_TB;
 
   // Inputs
   reg [31:0] A;
