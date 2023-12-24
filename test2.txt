@@ -17,21 +17,21 @@ module FloatingPointAdder (
   assign cin=0;
   reg signed [7:0] exponent_diff;
    //module instantiation
-   CarryBypass_Adder fraction_add(
+   PlusOperatorAdder fraction_add(
         .A(fraction1_32),
         .B(fraction2_32),
         .Cin(cin),
         .Sum(result_fraction_add),
         .Cout(cout)
       );
-  CarryBypass_Adder fraction_sub12(
+  PlusOperatorAdder fraction_sub12(
        .A(fraction1_32),
        .B(fraction2_32neg),
        .Cin(cin),
        .Sum(result_fraction_sub12),
        .Cout(cout)
      );
-  CarryBypass_Adder fraction_sub21(
+  PlusOperatorAdder fraction_sub21(
        .A(fraction1_32neg),
        .B(fraction2_32),
        .Cin(cin),

@@ -5,6 +5,12 @@ module shiftMultiplier(
 );
 reg [31:0] A_signed;
 reg [31:0] B_signed;
+
+reg [63:0] operand1[31:0];
+reg [63:0] operand2[31:0];
+wire [63:0] res[32:0];
+assign res[0] =64'b0;
+
 integer i;
   always @* begin
 
@@ -17,58 +23,30 @@ integer i;
     end
     else B_signed[31:0]=B[31:0];
     P = 64'b0; // Initialize P to zero
-    
-    for (i = 0; i < 31; i = i + 1) begin
-      P=P<<1;
-      P = P+B_signed[30-i]*A_signed[30:0];
+  
+    for (i = 1; i < 32; i = i + 1) begin
+      // p = p<<1;
+      // P = P+B_signed[30-i]*A_signed[30:0];
+      P=res[i-1]<<1;
+      operand1[i-1]=P;   //0
+      operand2[i-1]=B_signed[31-i]*A_signed[31:0];
     end
+       
+
+    P = res[31];
 
     if ((A[31]==1'b1 && B[31]!=1'b1)||(A[31]!=1'b1 && B[31]==1'b1))
     P[63:0]=~(P[63:0])+1;
     if(A[31:0]==32'b0 || B[31:0]==32'b0)
     P=64'b0;
   end
+  
+    genvar j;
+    generate
+      for (j =0;j<31;j=j+1) begin : Adderrrr2
+          ShiftAdder tc(.in1(operand1[j]),.in2(operand2[j]),.out(res[j+1]));
+      end
+    endgenerate
 
 endmodule
-
-
-// module Multiplier2 (
-//     input [3:0] A, 
-//     input [3:0] B,   
-//     output reg [6:0] Result
-// );
-
-// initial begin
-// Result=0;
-// end
-// always@*
-// begin 
-// Result=0;
-// Result[2:0]=B[2]*A[2:0];
-// Result=Result<<1;
-// Result=Result+B[1]*A[2:0];
-// Result=Result<<1;
-// Result=Result+B[0]*A[2:0];
-
-// if((A[3]==0 && B[3]==0)||(A[3]==1 && B[3]==1))
-// begin
-// Result[6]=0;
-// end
-// else if((A[3]==1 && B[3]==0)||(A[3]==0 && B[3]==1))
-// begin
-// if(A[2:0]==0 || B[2:0]==0)
-// begin 
-// Result[6]=0;
-// Result=0;
-// end
-// else 
-// begin 
-// Result[6]=1;
-// end
-// end
-// end
-// endmodule
-
-
-
 
