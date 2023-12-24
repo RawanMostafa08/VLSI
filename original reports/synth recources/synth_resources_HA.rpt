@@ -1,0 +1,20 @@
+ 
+****************************************
+Report : resources
+Design : HA
+Version: U-2022.12-SP7
+Date   : Sun Dec 24 15:31:10 2023
+****************************************
+
+Resource Sharing Report for design HA in file ./source/HA.v
+
+===============================================================================
+|          |              |            | Contained     |                      |
+| Resource | Module       | Parameters | Resources     | Contained Operations |
+===============================================================================
+| r53      | DW01_add     | width=2    |               | add_8                |
+===============================================================================
+
+
+No implementations to report
+1

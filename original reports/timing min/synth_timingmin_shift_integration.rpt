@@ -1,0 +1,219 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay min
+        -max_paths 10
+Design : shift_integration
+Version: U-2022.12-SP7
+Date   : Sun Dec 24 17:18:37 2023
+****************************************
+
+ # A fanout number of 1000 was used for high fanout net computations.
+
+Operating Conditions: TYPICAL   Library: saed90nm_typ_ht
+Wire Load Model Mode: enclosed
+
+  Startpoint: output1_reg[7]
+              (rising edge-triggered flip-flop)
+  Endpoint: output1[7] (output port clocked by vsysclk)
+  Path Group: (none)
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  shift_integration  140000                saed90nm_typ_ht
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  output1_reg[7]/CLK (DFFX1)               0.00       0.00 r
+  output1_reg[7]/Q (DFFX1)                 0.31       0.31 r
+  output1[7] (out)                         2.02       2.33 r
+  data arrival time                                   2.33
+  -----------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: output1_reg[6]
+              (rising edge-triggered flip-flop)
+  Endpoint: output1[6] (output port clocked by vsysclk)
+  Path Group: (none)
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  shift_integration  140000                saed90nm_typ_ht
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  output1_reg[6]/CLK (DFFX1)               0.00       0.00 r
+  output1_reg[6]/Q (DFFX1)                 0.31       0.31 r
+  output1[6] (out)                         2.02       2.33 r
+  data arrival time                                   2.33
+  -----------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: output1_reg[5]
+              (rising edge-triggered flip-flop)
+  Endpoint: output1[5] (output port clocked by vsysclk)
+  Path Group: (none)
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  shift_integration  140000                saed90nm_typ_ht
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  output1_reg[5]/CLK (DFFX1)               0.00       0.00 r
+  output1_reg[5]/Q (DFFX1)                 0.31       0.31 r
+  output1[5] (out)                         2.02       2.33 r
+  data arrival time                                   2.33
+  -----------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: output1_reg[4]
+              (rising edge-triggered flip-flop)
+  Endpoint: output1[4] (output port clocked by vsysclk)
+  Path Group: (none)
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  shift_integration  140000                saed90nm_typ_ht
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  output1_reg[4]/CLK (DFFX1)               0.00       0.00 r
+  output1_reg[4]/Q (DFFX1)                 0.31       0.31 r
+  output1[4] (out)                         2.02       2.33 r
+  data arrival time                                   2.33
+  -----------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: output1_reg[3]
+              (rising edge-triggered flip-flop)
+  Endpoint: output1[3] (output port clocked by vsysclk)
+  Path Group: (none)
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  shift_integration  140000                saed90nm_typ_ht
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  output1_reg[3]/CLK (DFFX1)               0.00       0.00 r
+  output1_reg[3]/Q (DFFX1)                 0.31       0.31 r
+  output1[3] (out)                         2.02       2.33 r
+  data arrival time                                   2.33
+  -----------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: output1_reg[2]
+              (rising edge-triggered flip-flop)
+  Endpoint: output1[2] (output port clocked by vsysclk)
+  Path Group: (none)
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  shift_integration  140000                saed90nm_typ_ht
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  output1_reg[2]/CLK (DFFX1)               0.00       0.00 r
+  output1_reg[2]/Q (DFFX1)                 0.31       0.31 r
+  output1[2] (out)                         2.02       2.33 r
+  data arrival time                                   2.33
+  -----------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: output1_reg[1]
+              (rising edge-triggered flip-flop)
+  Endpoint: output1[1] (output port clocked by vsysclk)
+  Path Group: (none)
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  shift_integration  140000                saed90nm_typ_ht
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  output1_reg[1]/CLK (DFFX1)               0.00       0.00 r
+  output1_reg[1]/Q (DFFX1)                 0.31       0.31 r
+  output1[1] (out)                         2.02       2.33 r
+  data arrival time                                   2.33
+  -----------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: output1_reg[0]
+              (rising edge-triggered flip-flop)
+  Endpoint: output1[0] (output port clocked by vsysclk)
+  Path Group: (none)
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  shift_integration  140000                saed90nm_typ_ht
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  output1_reg[0]/CLK (DFFX1)               0.00       0.00 r
+  output1_reg[0]/Q (DFFX1)                 0.31       0.31 r
+  output1[0] (out)                         2.02       2.33 r
+  data arrival time                                   2.33
+  -----------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: output1_reg[63]
+              (rising edge-triggered flip-flop)
+  Endpoint: output1[63]
+            (output port clocked by vsysclk)
+  Path Group: (none)
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  shift_integration  140000                saed90nm_typ_ht
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  output1_reg[63]/CLK (DFFX1)              0.00       0.00 r
+  output1_reg[63]/Q (DFFX1)                0.31       0.31 r
+  output1[63] (out)                        2.02       2.33 r
+  data arrival time                                   2.33
+  -----------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: output1_reg[62]
+              (rising edge-triggered flip-flop)
+  Endpoint: output1[62]
+            (output port clocked by vsysclk)
+  Path Group: (none)
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  shift_integration  140000                saed90nm_typ_ht
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  output1_reg[62]/CLK (DFFX1)              0.00       0.00 r
+  output1_reg[62]/Q (DFFX1)                0.31       0.31 r
+  output1[62] (out)                        2.02       2.33 r
+  data arrival time                                   2.33
+  -----------------------------------------------------------
+  (Path is unconstrained)
+
+
+1

@@ -1,0 +1,1511 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 10
+        -sort_by slack
+Design : ShiftAdder
+Version: U-2022.12-SP7
+Date   : Sun Dec 24 14:14:15 2023
+****************************************
+
+Operating Conditions: TYPICAL   Library: saed90nm_typ_ht
+Wire Load Model Mode: enclosed
+
+  Startpoint: in1[33] (input port clocked by vsysclk)
+  Endpoint: out[31] (output port clocked by vsysclk)
+  Path Group: vsysclk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  ShiftAdder         16000                 saed90nm_typ_ht
+  Ripple4bit_496     8000                  saed90nm_typ_ht
+  CarryBypass_Adder_62
+                     8000                  saed90nm_typ_ht
+  Ripple4bit_511     8000                  saed90nm_typ_ht
+  Ripple4bit_510     8000                  saed90nm_typ_ht
+  Ripple4bit_509     8000                  saed90nm_typ_ht
+  Ripple4bit_508     8000                  saed90nm_typ_ht
+  Ripple4bit_507     8000                  saed90nm_typ_ht
+  Ripple4bit_506     8000                  saed90nm_typ_ht
+  Ripple4bit_505     8000                  saed90nm_typ_ht
+  Ripple4bit_504     8000                  saed90nm_typ_ht
+  CarryBypass_Adder_63
+                     8000                  saed90nm_typ_ht
+  Ripple4bit_503     8000                  saed90nm_typ_ht
+  Ripple4bit_502     8000                  saed90nm_typ_ht
+  Ripple4bit_501     8000                  saed90nm_typ_ht
+  Ripple4bit_500     8000                  saed90nm_typ_ht
+  Ripple4bit_499     8000                  saed90nm_typ_ht
+  Ripple4bit_498     8000                  saed90nm_typ_ht
+  Ripple4bit_497     8000                  saed90nm_typ_ht
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock vsysclk (rise edge)                               0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    0.20       0.20 r
+  in1[33] (in)                                            0.00       0.20 r
+  DUT/A[1] (CarryBypass_Adder_62)                         0.00       0.20 r
+  DUT/ripple_loop[0].R/A[1] (Ripple4bit_496)              0.00       0.20 r
+  DUT/ripple_loop[0].R/U28/ZN (INVX0)                     0.09       0.29 f
+  DUT/ripple_loop[0].R/U37/Q (AND3X1)                     0.18       0.47 f
+  DUT/ripple_loop[0].R/U11/Q (AO22X1)                     0.15       0.62 f
+  DUT/ripple_loop[0].R/U20/QN (NOR2X0)                    0.10       0.72 r
+  DUT/ripple_loop[0].R/U16/Q (AO22X1)                     0.20       0.92 r
+  DUT/ripple_loop[0].R/Cout (Ripple4bit_496)              0.00       0.92 r
+  DUT/ripple_loop[1].R/Cin (Ripple4bit_511)               0.00       0.92 r
+  DUT/ripple_loop[1].R/U63/Q (AO21X1)                     0.19       1.11 r
+  DUT/ripple_loop[1].R/U16/Q (AND2X1)                     0.13       1.24 r
+  DUT/ripple_loop[1].R/U58/QN (NAND2X0)                   0.09       1.33 f
+  DUT/ripple_loop[1].R/U68/QN (NAND4X0)                   0.18       1.51 r
+  DUT/ripple_loop[1].R/Cout (Ripple4bit_511)              0.00       1.51 r
+  DUT/ripple_loop[2].R/Cin (Ripple4bit_510)               0.00       1.51 r
+  DUT/ripple_loop[2].R/U46/ZN (INVX0)                     0.12       1.63 f
+  DUT/ripple_loop[2].R/U58/QN (NAND3X0)                   0.13       1.76 r
+  DUT/ripple_loop[2].R/U60/QN (NAND3X0)                   0.11       1.87 f
+  DUT/ripple_loop[2].R/U8/QN (NAND3X0)                    0.11       1.98 r
+  DUT/ripple_loop[2].R/U61/QN (NAND4X0)                   0.15       2.13 f
+  DUT/ripple_loop[2].R/Cout (Ripple4bit_510)              0.00       2.13 f
+  DUT/ripple_loop[3].R/Cin (Ripple4bit_509)               0.00       2.13 f
+  DUT/ripple_loop[3].R/U48/ZN (INVX0)                     0.12       2.25 r
+  DUT/ripple_loop[3].R/U15/QN (NAND2X0)                   0.10       2.35 f
+  DUT/ripple_loop[3].R/U63/QN (NAND3X0)                   0.11       2.46 r
+  DUT/ripple_loop[3].R/U7/QN (NAND3X0)                    0.11       2.56 f
+  DUT/ripple_loop[3].R/U64/QN (NAND4X0)                   0.17       2.73 r
+  DUT/ripple_loop[3].R/Cout (Ripple4bit_509)              0.00       2.73 r
+  DUT/ripple_loop[4].R/Cin (Ripple4bit_508)               0.00       2.73 r
+  DUT/ripple_loop[4].R/U59/Q (AO21X1)                     0.21       2.94 r
+  DUT/ripple_loop[4].R/U15/Q (AND2X1)                     0.13       3.07 r
+  DUT/ripple_loop[4].R/U14/QN (NAND2X0)                   0.08       3.16 f
+  DUT/ripple_loop[4].R/U48/QN (NAND4X0)                   0.20       3.36 r
+  DUT/ripple_loop[4].R/Cout (Ripple4bit_508)              0.00       3.36 r
+  DUT/ripple_loop[5].R/Cin (Ripple4bit_507)               0.00       3.36 r
+  DUT/ripple_loop[5].R/U51/QN (NAND2X0)                   0.16       3.51 f
+  DUT/ripple_loop[5].R/U65/QN (NAND3X0)                   0.15       3.67 r
+  DUT/ripple_loop[5].R/U22/QN (NAND3X0)                   0.11       3.77 f
+  DUT/ripple_loop[5].R/U66/QN (NAND4X0)                   0.19       3.96 r
+  DUT/ripple_loop[5].R/Cout (Ripple4bit_507)              0.00       3.96 r
+  DUT/ripple_loop[6].R/Cin (Ripple4bit_506)               0.00       3.96 r
+  DUT/ripple_loop[6].R/U55/Q (AO21X1)                     0.21       4.17 r
+  DUT/ripple_loop[6].R/U41/Q (AND2X1)                     0.13       4.30 r
+  DUT/ripple_loop[6].R/U43/QN (NAND2X0)                   0.09       4.39 f
+  DUT/ripple_loop[6].R/U60/QN (NAND4X0)                   0.18       4.57 r
+  DUT/ripple_loop[6].R/Cout (Ripple4bit_506)              0.00       4.57 r
+  DUT/ripple_loop[7].R/Cin (Ripple4bit_505)               0.00       4.57 r
+  DUT/ripple_loop[7].R/U58/Q (AO21X1)                     0.20       4.77 r
+  DUT/ripple_loop[7].R/U13/Q (AND2X1)                     0.13       4.91 r
+  DUT/ripple_loop[7].R/U12/QN (NAND2X0)                   0.09       4.99 f
+  DUT/ripple_loop[7].R/U63/QN (NAND4X0)                   0.19       5.18 r
+  DUT/ripple_loop[7].R/Cout (Ripple4bit_505)              0.00       5.18 r
+  DUT/Cout (CarryBypass_Adder_62)                         0.00       5.18 r
+  DUT2/Cin (CarryBypass_Adder_63)                         0.00       5.18 r
+  DUT2/ripple_loop[0].R/Cin (Ripple4bit_504)              0.00       5.18 r
+  DUT2/ripple_loop[0].R/U58/Q (AO21X1)                    0.20       5.38 r
+  DUT2/ripple_loop[0].R/U22/Q (AND2X1)                    0.13       5.51 r
+  DUT2/ripple_loop[0].R/U49/QN (NAND2X0)                  0.08       5.60 f
+  DUT2/ripple_loop[0].R/U64/QN (NAND4X0)                  0.18       5.77 r
+  DUT2/ripple_loop[0].R/Cout (Ripple4bit_504)             0.00       5.77 r
+  DUT2/ripple_loop[1].R/Cin (Ripple4bit_503)              0.00       5.77 r
+  DUT2/ripple_loop[1].R/U50/ZN (INVX0)                    0.10       5.88 f
+  DUT2/ripple_loop[1].R/U22/QN (NAND2X0)                  0.11       5.99 r
+  DUT2/ripple_loop[1].R/U64/QN (NAND3X0)                  0.12       6.11 f
+  DUT2/ripple_loop[1].R/U19/QN (NAND3X0)                  0.11       6.22 r
+  DUT2/ripple_loop[1].R/U65/QN (NAND4X0)                  0.15       6.36 f
+  DUT2/ripple_loop[1].R/Cout (Ripple4bit_503)             0.00       6.36 f
+  DUT2/ripple_loop[2].R/Cin (Ripple4bit_502)              0.00       6.36 f
+  DUT2/ripple_loop[2].R/U52/ZN (INVX0)                    0.12       6.48 r
+  DUT2/ripple_loop[2].R/U20/QN (NAND2X0)                  0.10       6.58 f
+  DUT2/ripple_loop[2].R/U64/QN (NAND3X0)                  0.11       6.69 r
+  DUT2/ripple_loop[2].R/U19/QN (NAND3X0)                  0.11       6.80 f
+  DUT2/ripple_loop[2].R/U49/QN (NAND4X0)                  0.18       6.98 r
+  DUT2/ripple_loop[2].R/Cout (Ripple4bit_502)             0.00       6.98 r
+  DUT2/ripple_loop[3].R/Cin (Ripple4bit_501)              0.00       6.98 r
+  DUT2/ripple_loop[3].R/U55/Q (AO21X1)                    0.21       7.19 r
+  DUT2/ripple_loop[3].R/U14/Q (AND2X1)                    0.13       7.32 r
+  DUT2/ripple_loop[3].R/U47/QN (NAND2X0)                  0.09       7.40 f
+  DUT2/ripple_loop[3].R/U61/QN (NAND4X0)                  0.19       7.59 r
+  DUT2/ripple_loop[3].R/Cout (Ripple4bit_501)             0.00       7.59 r
+  DUT2/ripple_loop[4].R/Cin (Ripple4bit_500)              0.00       7.59 r
+  DUT2/ripple_loop[4].R/U63/Q (AO21X1)                    0.21       7.80 r
+  DUT2/ripple_loop[4].R/U20/Q (AND2X1)                    0.13       7.93 r
+  DUT2/ripple_loop[4].R/U19/QN (NAND2X0)                  0.09       8.01 f
+  DUT2/ripple_loop[4].R/U66/QN (NAND4X0)                  0.19       8.20 r
+  DUT2/ripple_loop[4].R/Cout (Ripple4bit_500)             0.00       8.20 r
+  DUT2/ripple_loop[5].R/Cin (Ripple4bit_499)              0.00       8.20 r
+  DUT2/ripple_loop[5].R/U53/ZN (INVX0)                    0.13       8.33 f
+  DUT2/ripple_loop[5].R/U67/QN (NAND3X0)                  0.15       8.48 r
+  DUT2/ripple_loop[5].R/U69/QN (NAND3X0)                  0.12       8.59 f
+  DUT2/ripple_loop[5].R/U11/QN (NAND3X0)                  0.11       8.71 r
+  DUT2/ripple_loop[5].R/U70/QN (NAND4X0)                  0.17       8.87 f
+  DUT2/ripple_loop[5].R/Cout (Ripple4bit_499)             0.00       8.87 f
+  DUT2/ripple_loop[6].R/Cin (Ripple4bit_498)              0.00       8.87 f
+  DUT2/ripple_loop[6].R/U59/Q (AO21X1)                    0.22       9.09 f
+  DUT2/ripple_loop[6].R/U11/Q (AND2X1)                    0.13       9.22 f
+  DUT2/ripple_loop[6].R/U10/QN (NAND2X0)                  0.09       9.31 r
+  DUT2/ripple_loop[6].R/U65/QN (NAND4X0)                  0.14       9.45 f
+  DUT2/ripple_loop[6].R/Cout (Ripple4bit_498)             0.00       9.45 f
+  DUT2/ripple_loop[7].R/Cin (Ripple4bit_497)              0.00       9.45 f
+  DUT2/ripple_loop[7].R/U22/Q (XOR2X1)                    0.24       9.69 f
+  DUT2/ripple_loop[7].R/U21/Q (AO221X1)                   0.22       9.91 f
+  DUT2/ripple_loop[7].R/U35/QN (NAND2X0)                  0.11      10.02 r
+  DUT2/ripple_loop[7].R/U26/Q (XOR2X1)                    0.22      10.24 r
+  DUT2/ripple_loop[7].R/U18/Q (OR2X1)                     0.16      10.41 r
+  DUT2/ripple_loop[7].R/U47/QN (NAND3X0)                  0.13      10.54 f
+  DUT2/ripple_loop[7].R/Sum[3] (Ripple4bit_497)           0.00      10.54 f
+  DUT2/Sum[31] (CarryBypass_Adder_63)                     0.00      10.54 f
+  out[31] (out)                                           0.19      10.73 f
+  data arrival time                                                 10.73
+
+  clock vsysclk (rise edge)                               2.00       2.00
+  clock network delay (ideal)                             0.00       2.00
+  output external delay                                  -0.50       1.50
+  data required time                                                 1.50
+  --------------------------------------------------------------------------
+  data required time                                                 1.50
+  data arrival time                                                -10.73
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -9.23
+
+
+  Startpoint: in1[33] (input port clocked by vsysclk)
+  Endpoint: out[30] (output port clocked by vsysclk)
+  Path Group: vsysclk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  ShiftAdder         16000                 saed90nm_typ_ht
+  Ripple4bit_496     8000                  saed90nm_typ_ht
+  CarryBypass_Adder_62
+                     8000                  saed90nm_typ_ht
+  Ripple4bit_511     8000                  saed90nm_typ_ht
+  Ripple4bit_510     8000                  saed90nm_typ_ht
+  Ripple4bit_509     8000                  saed90nm_typ_ht
+  Ripple4bit_508     8000                  saed90nm_typ_ht
+  Ripple4bit_507     8000                  saed90nm_typ_ht
+  Ripple4bit_506     8000                  saed90nm_typ_ht
+  Ripple4bit_505     8000                  saed90nm_typ_ht
+  Ripple4bit_504     8000                  saed90nm_typ_ht
+  CarryBypass_Adder_63
+                     8000                  saed90nm_typ_ht
+  Ripple4bit_503     8000                  saed90nm_typ_ht
+  Ripple4bit_502     8000                  saed90nm_typ_ht
+  Ripple4bit_501     8000                  saed90nm_typ_ht
+  Ripple4bit_500     8000                  saed90nm_typ_ht
+  Ripple4bit_499     8000                  saed90nm_typ_ht
+  Ripple4bit_498     8000                  saed90nm_typ_ht
+  Ripple4bit_497     8000                  saed90nm_typ_ht
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock vsysclk (rise edge)                               0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    0.20       0.20 r
+  in1[33] (in)                                            0.00       0.20 r
+  DUT/A[1] (CarryBypass_Adder_62)                         0.00       0.20 r
+  DUT/ripple_loop[0].R/A[1] (Ripple4bit_496)              0.00       0.20 r
+  DUT/ripple_loop[0].R/U28/ZN (INVX0)                     0.09       0.29 f
+  DUT/ripple_loop[0].R/U37/Q (AND3X1)                     0.18       0.47 f
+  DUT/ripple_loop[0].R/U11/Q (AO22X1)                     0.15       0.62 f
+  DUT/ripple_loop[0].R/U20/QN (NOR2X0)                    0.10       0.72 r
+  DUT/ripple_loop[0].R/U16/Q (AO22X1)                     0.20       0.92 r
+  DUT/ripple_loop[0].R/Cout (Ripple4bit_496)              0.00       0.92 r
+  DUT/ripple_loop[1].R/Cin (Ripple4bit_511)               0.00       0.92 r
+  DUT/ripple_loop[1].R/U63/Q (AO21X1)                     0.19       1.11 r
+  DUT/ripple_loop[1].R/U16/Q (AND2X1)                     0.13       1.24 r
+  DUT/ripple_loop[1].R/U58/QN (NAND2X0)                   0.09       1.33 f
+  DUT/ripple_loop[1].R/U68/QN (NAND4X0)                   0.18       1.51 r
+  DUT/ripple_loop[1].R/Cout (Ripple4bit_511)              0.00       1.51 r
+  DUT/ripple_loop[2].R/Cin (Ripple4bit_510)               0.00       1.51 r
+  DUT/ripple_loop[2].R/U46/ZN (INVX0)                     0.12       1.63 f
+  DUT/ripple_loop[2].R/U58/QN (NAND3X0)                   0.13       1.76 r
+  DUT/ripple_loop[2].R/U60/QN (NAND3X0)                   0.11       1.87 f
+  DUT/ripple_loop[2].R/U8/QN (NAND3X0)                    0.11       1.98 r
+  DUT/ripple_loop[2].R/U61/QN (NAND4X0)                   0.15       2.13 f
+  DUT/ripple_loop[2].R/Cout (Ripple4bit_510)              0.00       2.13 f
+  DUT/ripple_loop[3].R/Cin (Ripple4bit_509)               0.00       2.13 f
+  DUT/ripple_loop[3].R/U48/ZN (INVX0)                     0.12       2.25 r
+  DUT/ripple_loop[3].R/U15/QN (NAND2X0)                   0.10       2.35 f
+  DUT/ripple_loop[3].R/U63/QN (NAND3X0)                   0.11       2.46 r
+  DUT/ripple_loop[3].R/U7/QN (NAND3X0)                    0.11       2.56 f
+  DUT/ripple_loop[3].R/U64/QN (NAND4X0)                   0.17       2.73 r
+  DUT/ripple_loop[3].R/Cout (Ripple4bit_509)              0.00       2.73 r
+  DUT/ripple_loop[4].R/Cin (Ripple4bit_508)               0.00       2.73 r
+  DUT/ripple_loop[4].R/U59/Q (AO21X1)                     0.21       2.94 r
+  DUT/ripple_loop[4].R/U15/Q (AND2X1)                     0.13       3.07 r
+  DUT/ripple_loop[4].R/U14/QN (NAND2X0)                   0.08       3.16 f
+  DUT/ripple_loop[4].R/U48/QN (NAND4X0)                   0.20       3.36 r
+  DUT/ripple_loop[4].R/Cout (Ripple4bit_508)              0.00       3.36 r
+  DUT/ripple_loop[5].R/Cin (Ripple4bit_507)               0.00       3.36 r
+  DUT/ripple_loop[5].R/U51/QN (NAND2X0)                   0.16       3.51 f
+  DUT/ripple_loop[5].R/U65/QN (NAND3X0)                   0.15       3.67 r
+  DUT/ripple_loop[5].R/U22/QN (NAND3X0)                   0.11       3.77 f
+  DUT/ripple_loop[5].R/U66/QN (NAND4X0)                   0.19       3.96 r
+  DUT/ripple_loop[5].R/Cout (Ripple4bit_507)              0.00       3.96 r
+  DUT/ripple_loop[6].R/Cin (Ripple4bit_506)               0.00       3.96 r
+  DUT/ripple_loop[6].R/U55/Q (AO21X1)                     0.21       4.17 r
+  DUT/ripple_loop[6].R/U41/Q (AND2X1)                     0.13       4.30 r
+  DUT/ripple_loop[6].R/U43/QN (NAND2X0)                   0.09       4.39 f
+  DUT/ripple_loop[6].R/U60/QN (NAND4X0)                   0.18       4.57 r
+  DUT/ripple_loop[6].R/Cout (Ripple4bit_506)              0.00       4.57 r
+  DUT/ripple_loop[7].R/Cin (Ripple4bit_505)               0.00       4.57 r
+  DUT/ripple_loop[7].R/U58/Q (AO21X1)                     0.20       4.77 r
+  DUT/ripple_loop[7].R/U13/Q (AND2X1)                     0.13       4.91 r
+  DUT/ripple_loop[7].R/U12/QN (NAND2X0)                   0.09       4.99 f
+  DUT/ripple_loop[7].R/U63/QN (NAND4X0)                   0.19       5.18 r
+  DUT/ripple_loop[7].R/Cout (Ripple4bit_505)              0.00       5.18 r
+  DUT/Cout (CarryBypass_Adder_62)                         0.00       5.18 r
+  DUT2/Cin (CarryBypass_Adder_63)                         0.00       5.18 r
+  DUT2/ripple_loop[0].R/Cin (Ripple4bit_504)              0.00       5.18 r
+  DUT2/ripple_loop[0].R/U58/Q (AO21X1)                    0.20       5.38 r
+  DUT2/ripple_loop[0].R/U22/Q (AND2X1)                    0.13       5.51 r
+  DUT2/ripple_loop[0].R/U49/QN (NAND2X0)                  0.08       5.60 f
+  DUT2/ripple_loop[0].R/U64/QN (NAND4X0)                  0.18       5.77 r
+  DUT2/ripple_loop[0].R/Cout (Ripple4bit_504)             0.00       5.77 r
+  DUT2/ripple_loop[1].R/Cin (Ripple4bit_503)              0.00       5.77 r
+  DUT2/ripple_loop[1].R/U50/ZN (INVX0)                    0.10       5.88 f
+  DUT2/ripple_loop[1].R/U22/QN (NAND2X0)                  0.11       5.99 r
+  DUT2/ripple_loop[1].R/U64/QN (NAND3X0)                  0.12       6.11 f
+  DUT2/ripple_loop[1].R/U19/QN (NAND3X0)                  0.11       6.22 r
+  DUT2/ripple_loop[1].R/U65/QN (NAND4X0)                  0.15       6.36 f
+  DUT2/ripple_loop[1].R/Cout (Ripple4bit_503)             0.00       6.36 f
+  DUT2/ripple_loop[2].R/Cin (Ripple4bit_502)              0.00       6.36 f
+  DUT2/ripple_loop[2].R/U52/ZN (INVX0)                    0.12       6.48 r
+  DUT2/ripple_loop[2].R/U20/QN (NAND2X0)                  0.10       6.58 f
+  DUT2/ripple_loop[2].R/U64/QN (NAND3X0)                  0.11       6.69 r
+  DUT2/ripple_loop[2].R/U19/QN (NAND3X0)                  0.11       6.80 f
+  DUT2/ripple_loop[2].R/U49/QN (NAND4X0)                  0.18       6.98 r
+  DUT2/ripple_loop[2].R/Cout (Ripple4bit_502)             0.00       6.98 r
+  DUT2/ripple_loop[3].R/Cin (Ripple4bit_501)              0.00       6.98 r
+  DUT2/ripple_loop[3].R/U55/Q (AO21X1)                    0.21       7.19 r
+  DUT2/ripple_loop[3].R/U14/Q (AND2X1)                    0.13       7.32 r
+  DUT2/ripple_loop[3].R/U47/QN (NAND2X0)                  0.09       7.40 f
+  DUT2/ripple_loop[3].R/U61/QN (NAND4X0)                  0.19       7.59 r
+  DUT2/ripple_loop[3].R/Cout (Ripple4bit_501)             0.00       7.59 r
+  DUT2/ripple_loop[4].R/Cin (Ripple4bit_500)              0.00       7.59 r
+  DUT2/ripple_loop[4].R/U63/Q (AO21X1)                    0.21       7.80 r
+  DUT2/ripple_loop[4].R/U20/Q (AND2X1)                    0.13       7.93 r
+  DUT2/ripple_loop[4].R/U19/QN (NAND2X0)                  0.09       8.01 f
+  DUT2/ripple_loop[4].R/U66/QN (NAND4X0)                  0.19       8.20 r
+  DUT2/ripple_loop[4].R/Cout (Ripple4bit_500)             0.00       8.20 r
+  DUT2/ripple_loop[5].R/Cin (Ripple4bit_499)              0.00       8.20 r
+  DUT2/ripple_loop[5].R/U53/ZN (INVX0)                    0.13       8.33 f
+  DUT2/ripple_loop[5].R/U67/QN (NAND3X0)                  0.15       8.48 r
+  DUT2/ripple_loop[5].R/U69/QN (NAND3X0)                  0.12       8.59 f
+  DUT2/ripple_loop[5].R/U11/QN (NAND3X0)                  0.11       8.71 r
+  DUT2/ripple_loop[5].R/U70/QN (NAND4X0)                  0.17       8.87 f
+  DUT2/ripple_loop[5].R/Cout (Ripple4bit_499)             0.00       8.87 f
+  DUT2/ripple_loop[6].R/Cin (Ripple4bit_498)              0.00       8.87 f
+  DUT2/ripple_loop[6].R/U59/Q (AO21X1)                    0.22       9.09 f
+  DUT2/ripple_loop[6].R/U11/Q (AND2X1)                    0.13       9.22 f
+  DUT2/ripple_loop[6].R/U10/QN (NAND2X0)                  0.09       9.31 r
+  DUT2/ripple_loop[6].R/U65/QN (NAND4X0)                  0.14       9.45 f
+  DUT2/ripple_loop[6].R/Cout (Ripple4bit_498)             0.00       9.45 f
+  DUT2/ripple_loop[7].R/Cin (Ripple4bit_497)              0.00       9.45 f
+  DUT2/ripple_loop[7].R/U22/Q (XOR2X1)                    0.24       9.69 f
+  DUT2/ripple_loop[7].R/U21/Q (AO221X1)                   0.22       9.91 f
+  DUT2/ripple_loop[7].R/U35/QN (NAND2X0)                  0.11      10.02 r
+  DUT2/ripple_loop[7].R/U26/Q (XOR2X1)                    0.23      10.26 f
+  DUT2/ripple_loop[7].R/U11/Q (XNOR2X2)                   0.26      10.52 f
+  DUT2/ripple_loop[7].R/Sum[2] (Ripple4bit_497)           0.00      10.52 f
+  DUT2/Sum[30] (CarryBypass_Adder_63)                     0.00      10.52 f
+  out[30] (out)                                           0.19      10.71 f
+  data arrival time                                                 10.71
+
+  clock vsysclk (rise edge)                               2.00       2.00
+  clock network delay (ideal)                             0.00       2.00
+  output external delay                                  -0.50       1.50
+  data required time                                                 1.50
+  --------------------------------------------------------------------------
+  data required time                                                 1.50
+  data arrival time                                                -10.71
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -9.21
+
+
+  Startpoint: in1[33] (input port clocked by vsysclk)
+  Endpoint: out[29] (output port clocked by vsysclk)
+  Path Group: vsysclk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  ShiftAdder         16000                 saed90nm_typ_ht
+  Ripple4bit_496     8000                  saed90nm_typ_ht
+  CarryBypass_Adder_62
+                     8000                  saed90nm_typ_ht
+  Ripple4bit_511     8000                  saed90nm_typ_ht
+  Ripple4bit_510     8000                  saed90nm_typ_ht
+  Ripple4bit_509     8000                  saed90nm_typ_ht
+  Ripple4bit_508     8000                  saed90nm_typ_ht
+  Ripple4bit_507     8000                  saed90nm_typ_ht
+  Ripple4bit_506     8000                  saed90nm_typ_ht
+  Ripple4bit_505     8000                  saed90nm_typ_ht
+  Ripple4bit_504     8000                  saed90nm_typ_ht
+  CarryBypass_Adder_63
+                     8000                  saed90nm_typ_ht
+  Ripple4bit_503     8000                  saed90nm_typ_ht
+  Ripple4bit_502     8000                  saed90nm_typ_ht
+  Ripple4bit_501     8000                  saed90nm_typ_ht
+  Ripple4bit_500     8000                  saed90nm_typ_ht
+  Ripple4bit_499     8000                  saed90nm_typ_ht
+  Ripple4bit_498     8000                  saed90nm_typ_ht
+  Ripple4bit_497     8000                  saed90nm_typ_ht
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock vsysclk (rise edge)                               0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    0.20       0.20 r
+  in1[33] (in)                                            0.00       0.20 r
+  DUT/A[1] (CarryBypass_Adder_62)                         0.00       0.20 r
+  DUT/ripple_loop[0].R/A[1] (Ripple4bit_496)              0.00       0.20 r
+  DUT/ripple_loop[0].R/U28/ZN (INVX0)                     0.09       0.29 f
+  DUT/ripple_loop[0].R/U37/Q (AND3X1)                     0.18       0.47 f
+  DUT/ripple_loop[0].R/U11/Q (AO22X1)                     0.15       0.62 f
+  DUT/ripple_loop[0].R/U20/QN (NOR2X0)                    0.10       0.72 r
+  DUT/ripple_loop[0].R/U16/Q (AO22X1)                     0.20       0.92 r
+  DUT/ripple_loop[0].R/Cout (Ripple4bit_496)              0.00       0.92 r
+  DUT/ripple_loop[1].R/Cin (Ripple4bit_511)               0.00       0.92 r
+  DUT/ripple_loop[1].R/U63/Q (AO21X1)                     0.19       1.11 r
+  DUT/ripple_loop[1].R/U16/Q (AND2X1)                     0.13       1.24 r
+  DUT/ripple_loop[1].R/U58/QN (NAND2X0)                   0.09       1.33 f
+  DUT/ripple_loop[1].R/U68/QN (NAND4X0)                   0.18       1.51 r
+  DUT/ripple_loop[1].R/Cout (Ripple4bit_511)              0.00       1.51 r
+  DUT/ripple_loop[2].R/Cin (Ripple4bit_510)               0.00       1.51 r
+  DUT/ripple_loop[2].R/U46/ZN (INVX0)                     0.12       1.63 f
+  DUT/ripple_loop[2].R/U58/QN (NAND3X0)                   0.13       1.76 r
+  DUT/ripple_loop[2].R/U60/QN (NAND3X0)                   0.11       1.87 f
+  DUT/ripple_loop[2].R/U8/QN (NAND3X0)                    0.11       1.98 r
+  DUT/ripple_loop[2].R/U61/QN (NAND4X0)                   0.15       2.13 f
+  DUT/ripple_loop[2].R/Cout (Ripple4bit_510)              0.00       2.13 f
+  DUT/ripple_loop[3].R/Cin (Ripple4bit_509)               0.00       2.13 f
+  DUT/ripple_loop[3].R/U48/ZN (INVX0)                     0.12       2.25 r
+  DUT/ripple_loop[3].R/U15/QN (NAND2X0)                   0.10       2.35 f
+  DUT/ripple_loop[3].R/U63/QN (NAND3X0)                   0.11       2.46 r
+  DUT/ripple_loop[3].R/U7/QN (NAND3X0)                    0.11       2.56 f
+  DUT/ripple_loop[3].R/U64/QN (NAND4X0)                   0.17       2.73 r
+  DUT/ripple_loop[3].R/Cout (Ripple4bit_509)              0.00       2.73 r
+  DUT/ripple_loop[4].R/Cin (Ripple4bit_508)               0.00       2.73 r
+  DUT/ripple_loop[4].R/U59/Q (AO21X1)                     0.21       2.94 r
+  DUT/ripple_loop[4].R/U15/Q (AND2X1)                     0.13       3.07 r
+  DUT/ripple_loop[4].R/U14/QN (NAND2X0)                   0.08       3.16 f
+  DUT/ripple_loop[4].R/U48/QN (NAND4X0)                   0.20       3.36 r
+  DUT/ripple_loop[4].R/Cout (Ripple4bit_508)              0.00       3.36 r
+  DUT/ripple_loop[5].R/Cin (Ripple4bit_507)               0.00       3.36 r
+  DUT/ripple_loop[5].R/U51/QN (NAND2X0)                   0.16       3.51 f
+  DUT/ripple_loop[5].R/U65/QN (NAND3X0)                   0.15       3.67 r
+  DUT/ripple_loop[5].R/U22/QN (NAND3X0)                   0.11       3.77 f
+  DUT/ripple_loop[5].R/U66/QN (NAND4X0)                   0.19       3.96 r
+  DUT/ripple_loop[5].R/Cout (Ripple4bit_507)              0.00       3.96 r
+  DUT/ripple_loop[6].R/Cin (Ripple4bit_506)               0.00       3.96 r
+  DUT/ripple_loop[6].R/U55/Q (AO21X1)                     0.21       4.17 r
+  DUT/ripple_loop[6].R/U41/Q (AND2X1)                     0.13       4.30 r
+  DUT/ripple_loop[6].R/U43/QN (NAND2X0)                   0.09       4.39 f
+  DUT/ripple_loop[6].R/U60/QN (NAND4X0)                   0.18       4.57 r
+  DUT/ripple_loop[6].R/Cout (Ripple4bit_506)              0.00       4.57 r
+  DUT/ripple_loop[7].R/Cin (Ripple4bit_505)               0.00       4.57 r
+  DUT/ripple_loop[7].R/U58/Q (AO21X1)                     0.20       4.77 r
+  DUT/ripple_loop[7].R/U13/Q (AND2X1)                     0.13       4.91 r
+  DUT/ripple_loop[7].R/U12/QN (NAND2X0)                   0.09       4.99 f
+  DUT/ripple_loop[7].R/U63/QN (NAND4X0)                   0.19       5.18 r
+  DUT/ripple_loop[7].R/Cout (Ripple4bit_505)              0.00       5.18 r
+  DUT/Cout (CarryBypass_Adder_62)                         0.00       5.18 r
+  DUT2/Cin (CarryBypass_Adder_63)                         0.00       5.18 r
+  DUT2/ripple_loop[0].R/Cin (Ripple4bit_504)              0.00       5.18 r
+  DUT2/ripple_loop[0].R/U58/Q (AO21X1)                    0.20       5.38 r
+  DUT2/ripple_loop[0].R/U22/Q (AND2X1)                    0.13       5.51 r
+  DUT2/ripple_loop[0].R/U49/QN (NAND2X0)                  0.08       5.60 f
+  DUT2/ripple_loop[0].R/U64/QN (NAND4X0)                  0.18       5.77 r
+  DUT2/ripple_loop[0].R/Cout (Ripple4bit_504)             0.00       5.77 r
+  DUT2/ripple_loop[1].R/Cin (Ripple4bit_503)              0.00       5.77 r
+  DUT2/ripple_loop[1].R/U50/ZN (INVX0)                    0.10       5.88 f
+  DUT2/ripple_loop[1].R/U22/QN (NAND2X0)                  0.11       5.99 r
+  DUT2/ripple_loop[1].R/U64/QN (NAND3X0)                  0.12       6.11 f
+  DUT2/ripple_loop[1].R/U19/QN (NAND3X0)                  0.11       6.22 r
+  DUT2/ripple_loop[1].R/U65/QN (NAND4X0)                  0.15       6.36 f
+  DUT2/ripple_loop[1].R/Cout (Ripple4bit_503)             0.00       6.36 f
+  DUT2/ripple_loop[2].R/Cin (Ripple4bit_502)              0.00       6.36 f
+  DUT2/ripple_loop[2].R/U52/ZN (INVX0)                    0.12       6.48 r
+  DUT2/ripple_loop[2].R/U20/QN (NAND2X0)                  0.10       6.58 f
+  DUT2/ripple_loop[2].R/U64/QN (NAND3X0)                  0.11       6.69 r
+  DUT2/ripple_loop[2].R/U19/QN (NAND3X0)                  0.11       6.80 f
+  DUT2/ripple_loop[2].R/U49/QN (NAND4X0)                  0.18       6.98 r
+  DUT2/ripple_loop[2].R/Cout (Ripple4bit_502)             0.00       6.98 r
+  DUT2/ripple_loop[3].R/Cin (Ripple4bit_501)              0.00       6.98 r
+  DUT2/ripple_loop[3].R/U55/Q (AO21X1)                    0.21       7.19 r
+  DUT2/ripple_loop[3].R/U14/Q (AND2X1)                    0.13       7.32 r
+  DUT2/ripple_loop[3].R/U47/QN (NAND2X0)                  0.09       7.40 f
+  DUT2/ripple_loop[3].R/U61/QN (NAND4X0)                  0.19       7.59 r
+  DUT2/ripple_loop[3].R/Cout (Ripple4bit_501)             0.00       7.59 r
+  DUT2/ripple_loop[4].R/Cin (Ripple4bit_500)              0.00       7.59 r
+  DUT2/ripple_loop[4].R/U63/Q (AO21X1)                    0.21       7.80 r
+  DUT2/ripple_loop[4].R/U20/Q (AND2X1)                    0.13       7.93 r
+  DUT2/ripple_loop[4].R/U19/QN (NAND2X0)                  0.09       8.01 f
+  DUT2/ripple_loop[4].R/U66/QN (NAND4X0)                  0.19       8.20 r
+  DUT2/ripple_loop[4].R/Cout (Ripple4bit_500)             0.00       8.20 r
+  DUT2/ripple_loop[5].R/Cin (Ripple4bit_499)              0.00       8.20 r
+  DUT2/ripple_loop[5].R/U53/ZN (INVX0)                    0.13       8.33 f
+  DUT2/ripple_loop[5].R/U67/QN (NAND3X0)                  0.15       8.48 r
+  DUT2/ripple_loop[5].R/U69/QN (NAND3X0)                  0.12       8.59 f
+  DUT2/ripple_loop[5].R/U11/QN (NAND3X0)                  0.11       8.71 r
+  DUT2/ripple_loop[5].R/U70/QN (NAND4X0)                  0.17       8.87 f
+  DUT2/ripple_loop[5].R/Cout (Ripple4bit_499)             0.00       8.87 f
+  DUT2/ripple_loop[6].R/Cin (Ripple4bit_498)              0.00       8.87 f
+  DUT2/ripple_loop[6].R/U59/Q (AO21X1)                    0.22       9.09 f
+  DUT2/ripple_loop[6].R/U11/Q (AND2X1)                    0.13       9.22 f
+  DUT2/ripple_loop[6].R/U10/QN (NAND2X0)                  0.09       9.31 r
+  DUT2/ripple_loop[6].R/U65/QN (NAND4X0)                  0.14       9.45 f
+  DUT2/ripple_loop[6].R/Cout (Ripple4bit_498)             0.00       9.45 f
+  DUT2/ripple_loop[7].R/Cin (Ripple4bit_497)              0.00       9.45 f
+  DUT2/ripple_loop[7].R/U22/Q (XOR2X1)                    0.24       9.69 f
+  DUT2/ripple_loop[7].R/U34/ZN (INVX0)                    0.11       9.80 r
+  DUT2/ripple_loop[7].R/U15/ZN (INVX0)                    0.08       9.88 f
+  DUT2/ripple_loop[7].R/U42/Q (OA21X1)                    0.16      10.05 f
+  DUT2/ripple_loop[7].R/U1/Q (XNOR3X1)                    0.22      10.26 f
+  DUT2/ripple_loop[7].R/Sum[1] (Ripple4bit_497)           0.00      10.26 f
+  DUT2/Sum[29] (CarryBypass_Adder_63)                     0.00      10.26 f
+  out[29] (out)                                           0.19      10.46 f
+  data arrival time                                                 10.46
+
+  clock vsysclk (rise edge)                               2.00       2.00
+  clock network delay (ideal)                             0.00       2.00
+  output external delay                                  -0.50       1.50
+  data required time                                                 1.50
+  --------------------------------------------------------------------------
+  data required time                                                 1.50
+  data arrival time                                                -10.46
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -8.96
+
+
+  Startpoint: in1[33] (input port clocked by vsysclk)
+  Endpoint: out[27] (output port clocked by vsysclk)
+  Path Group: vsysclk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  ShiftAdder         16000                 saed90nm_typ_ht
+  Ripple4bit_496     8000                  saed90nm_typ_ht
+  CarryBypass_Adder_62
+                     8000                  saed90nm_typ_ht
+  Ripple4bit_511     8000                  saed90nm_typ_ht
+  Ripple4bit_510     8000                  saed90nm_typ_ht
+  Ripple4bit_509     8000                  saed90nm_typ_ht
+  Ripple4bit_508     8000                  saed90nm_typ_ht
+  Ripple4bit_507     8000                  saed90nm_typ_ht
+  Ripple4bit_506     8000                  saed90nm_typ_ht
+  Ripple4bit_505     8000                  saed90nm_typ_ht
+  Ripple4bit_504     8000                  saed90nm_typ_ht
+  CarryBypass_Adder_63
+                     8000                  saed90nm_typ_ht
+  Ripple4bit_503     8000                  saed90nm_typ_ht
+  Ripple4bit_502     8000                  saed90nm_typ_ht
+  Ripple4bit_501     8000                  saed90nm_typ_ht
+  Ripple4bit_500     8000                  saed90nm_typ_ht
+  Ripple4bit_499     8000                  saed90nm_typ_ht
+  Ripple4bit_498     8000                  saed90nm_typ_ht
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock vsysclk (rise edge)                               0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    0.20       0.20 r
+  in1[33] (in)                                            0.00       0.20 r
+  DUT/A[1] (CarryBypass_Adder_62)                         0.00       0.20 r
+  DUT/ripple_loop[0].R/A[1] (Ripple4bit_496)              0.00       0.20 r
+  DUT/ripple_loop[0].R/U28/ZN (INVX0)                     0.09       0.29 f
+  DUT/ripple_loop[0].R/U37/Q (AND3X1)                     0.18       0.47 f
+  DUT/ripple_loop[0].R/U11/Q (AO22X1)                     0.15       0.62 f
+  DUT/ripple_loop[0].R/U20/QN (NOR2X0)                    0.10       0.72 r
+  DUT/ripple_loop[0].R/U16/Q (AO22X1)                     0.20       0.92 r
+  DUT/ripple_loop[0].R/Cout (Ripple4bit_496)              0.00       0.92 r
+  DUT/ripple_loop[1].R/Cin (Ripple4bit_511)               0.00       0.92 r
+  DUT/ripple_loop[1].R/U63/Q (AO21X1)                     0.19       1.11 r
+  DUT/ripple_loop[1].R/U16/Q (AND2X1)                     0.13       1.24 r
+  DUT/ripple_loop[1].R/U58/QN (NAND2X0)                   0.09       1.33 f
+  DUT/ripple_loop[1].R/U68/QN (NAND4X0)                   0.18       1.51 r
+  DUT/ripple_loop[1].R/Cout (Ripple4bit_511)              0.00       1.51 r
+  DUT/ripple_loop[2].R/Cin (Ripple4bit_510)               0.00       1.51 r
+  DUT/ripple_loop[2].R/U46/ZN (INVX0)                     0.12       1.63 f
+  DUT/ripple_loop[2].R/U58/QN (NAND3X0)                   0.13       1.76 r
+  DUT/ripple_loop[2].R/U60/QN (NAND3X0)                   0.11       1.87 f
+  DUT/ripple_loop[2].R/U8/QN (NAND3X0)                    0.11       1.98 r
+  DUT/ripple_loop[2].R/U61/QN (NAND4X0)                   0.15       2.13 f
+  DUT/ripple_loop[2].R/Cout (Ripple4bit_510)              0.00       2.13 f
+  DUT/ripple_loop[3].R/Cin (Ripple4bit_509)               0.00       2.13 f
+  DUT/ripple_loop[3].R/U48/ZN (INVX0)                     0.12       2.25 r
+  DUT/ripple_loop[3].R/U15/QN (NAND2X0)                   0.10       2.35 f
+  DUT/ripple_loop[3].R/U63/QN (NAND3X0)                   0.11       2.46 r
+  DUT/ripple_loop[3].R/U7/QN (NAND3X0)                    0.11       2.56 f
+  DUT/ripple_loop[3].R/U64/QN (NAND4X0)                   0.17       2.73 r
+  DUT/ripple_loop[3].R/Cout (Ripple4bit_509)              0.00       2.73 r
+  DUT/ripple_loop[4].R/Cin (Ripple4bit_508)               0.00       2.73 r
+  DUT/ripple_loop[4].R/U59/Q (AO21X1)                     0.21       2.94 r
+  DUT/ripple_loop[4].R/U15/Q (AND2X1)                     0.13       3.07 r
+  DUT/ripple_loop[4].R/U14/QN (NAND2X0)                   0.08       3.16 f
+  DUT/ripple_loop[4].R/U48/QN (NAND4X0)                   0.20       3.36 r
+  DUT/ripple_loop[4].R/Cout (Ripple4bit_508)              0.00       3.36 r
+  DUT/ripple_loop[5].R/Cin (Ripple4bit_507)               0.00       3.36 r
+  DUT/ripple_loop[5].R/U51/QN (NAND2X0)                   0.16       3.51 f
+  DUT/ripple_loop[5].R/U65/QN (NAND3X0)                   0.15       3.67 r
+  DUT/ripple_loop[5].R/U22/QN (NAND3X0)                   0.11       3.77 f
+  DUT/ripple_loop[5].R/U66/QN (NAND4X0)                   0.19       3.96 r
+  DUT/ripple_loop[5].R/Cout (Ripple4bit_507)              0.00       3.96 r
+  DUT/ripple_loop[6].R/Cin (Ripple4bit_506)               0.00       3.96 r
+  DUT/ripple_loop[6].R/U55/Q (AO21X1)                     0.21       4.17 r
+  DUT/ripple_loop[6].R/U41/Q (AND2X1)                     0.13       4.30 r
+  DUT/ripple_loop[6].R/U43/QN (NAND2X0)                   0.09       4.39 f
+  DUT/ripple_loop[6].R/U60/QN (NAND4X0)                   0.18       4.57 r
+  DUT/ripple_loop[6].R/Cout (Ripple4bit_506)              0.00       4.57 r
+  DUT/ripple_loop[7].R/Cin (Ripple4bit_505)               0.00       4.57 r
+  DUT/ripple_loop[7].R/U58/Q (AO21X1)                     0.20       4.77 r
+  DUT/ripple_loop[7].R/U13/Q (AND2X1)                     0.13       4.91 r
+  DUT/ripple_loop[7].R/U12/QN (NAND2X0)                   0.09       4.99 f
+  DUT/ripple_loop[7].R/U63/QN (NAND4X0)                   0.19       5.18 r
+  DUT/ripple_loop[7].R/Cout (Ripple4bit_505)              0.00       5.18 r
+  DUT/Cout (CarryBypass_Adder_62)                         0.00       5.18 r
+  DUT2/Cin (CarryBypass_Adder_63)                         0.00       5.18 r
+  DUT2/ripple_loop[0].R/Cin (Ripple4bit_504)              0.00       5.18 r
+  DUT2/ripple_loop[0].R/U58/Q (AO21X1)                    0.20       5.38 r
+  DUT2/ripple_loop[0].R/U22/Q (AND2X1)                    0.13       5.51 r
+  DUT2/ripple_loop[0].R/U49/QN (NAND2X0)                  0.08       5.60 f
+  DUT2/ripple_loop[0].R/U64/QN (NAND4X0)                  0.18       5.77 r
+  DUT2/ripple_loop[0].R/Cout (Ripple4bit_504)             0.00       5.77 r
+  DUT2/ripple_loop[1].R/Cin (Ripple4bit_503)              0.00       5.77 r
+  DUT2/ripple_loop[1].R/U50/ZN (INVX0)                    0.10       5.88 f
+  DUT2/ripple_loop[1].R/U22/QN (NAND2X0)                  0.11       5.99 r
+  DUT2/ripple_loop[1].R/U64/QN (NAND3X0)                  0.12       6.11 f
+  DUT2/ripple_loop[1].R/U19/QN (NAND3X0)                  0.11       6.22 r
+  DUT2/ripple_loop[1].R/U65/QN (NAND4X0)                  0.15       6.36 f
+  DUT2/ripple_loop[1].R/Cout (Ripple4bit_503)             0.00       6.36 f
+  DUT2/ripple_loop[2].R/Cin (Ripple4bit_502)              0.00       6.36 f
+  DUT2/ripple_loop[2].R/U52/ZN (INVX0)                    0.12       6.48 r
+  DUT2/ripple_loop[2].R/U20/QN (NAND2X0)                  0.10       6.58 f
+  DUT2/ripple_loop[2].R/U64/QN (NAND3X0)                  0.11       6.69 r
+  DUT2/ripple_loop[2].R/U19/QN (NAND3X0)                  0.11       6.80 f
+  DUT2/ripple_loop[2].R/U49/QN (NAND4X0)                  0.18       6.98 r
+  DUT2/ripple_loop[2].R/Cout (Ripple4bit_502)             0.00       6.98 r
+  DUT2/ripple_loop[3].R/Cin (Ripple4bit_501)              0.00       6.98 r
+  DUT2/ripple_loop[3].R/U55/Q (AO21X1)                    0.21       7.19 r
+  DUT2/ripple_loop[3].R/U14/Q (AND2X1)                    0.13       7.32 r
+  DUT2/ripple_loop[3].R/U47/QN (NAND2X0)                  0.09       7.40 f
+  DUT2/ripple_loop[3].R/U61/QN (NAND4X0)                  0.19       7.59 r
+  DUT2/ripple_loop[3].R/Cout (Ripple4bit_501)             0.00       7.59 r
+  DUT2/ripple_loop[4].R/Cin (Ripple4bit_500)              0.00       7.59 r
+  DUT2/ripple_loop[4].R/U63/Q (AO21X1)                    0.21       7.80 r
+  DUT2/ripple_loop[4].R/U20/Q (AND2X1)                    0.13       7.93 r
+  DUT2/ripple_loop[4].R/U19/QN (NAND2X0)                  0.09       8.01 f
+  DUT2/ripple_loop[4].R/U66/QN (NAND4X0)                  0.19       8.20 r
+  DUT2/ripple_loop[4].R/Cout (Ripple4bit_500)             0.00       8.20 r
+  DUT2/ripple_loop[5].R/Cin (Ripple4bit_499)              0.00       8.20 r
+  DUT2/ripple_loop[5].R/U53/ZN (INVX0)                    0.13       8.33 f
+  DUT2/ripple_loop[5].R/U67/QN (NAND3X0)                  0.15       8.48 r
+  DUT2/ripple_loop[5].R/U69/QN (NAND3X0)                  0.12       8.59 f
+  DUT2/ripple_loop[5].R/U11/QN (NAND3X0)                  0.11       8.71 r
+  DUT2/ripple_loop[5].R/U70/QN (NAND4X0)                  0.17       8.87 f
+  DUT2/ripple_loop[5].R/Cout (Ripple4bit_499)             0.00       8.87 f
+  DUT2/ripple_loop[6].R/Cin (Ripple4bit_498)              0.00       8.87 f
+  DUT2/ripple_loop[6].R/U60/Q (XOR2X1)                    0.26       9.13 f
+  DUT2/ripple_loop[6].R/U13/Z (DELLN1X2)                  0.44       9.57 f
+  DUT2/ripple_loop[6].R/U7/ZN (INVX0)                     0.09       9.66 r
+  DUT2/ripple_loop[6].R/U32/QN (AOI222X1)                 0.19       9.85 f
+  DUT2/ripple_loop[6].R/U69/Q (OA21X1)                    0.17      10.03 f
+  DUT2/ripple_loop[6].R/U70/Q (XOR2X1)                    0.23      10.26 f
+  DUT2/ripple_loop[6].R/Sum[3] (Ripple4bit_498)           0.00      10.26 f
+  DUT2/Sum[27] (CarryBypass_Adder_63)                     0.00      10.26 f
+  out[27] (out)                                           0.19      10.45 f
+  data arrival time                                                 10.45
+
+  clock vsysclk (rise edge)                               2.00       2.00
+  clock network delay (ideal)                             0.00       2.00
+  output external delay                                  -0.50       1.50
+  data required time                                                 1.50
+  --------------------------------------------------------------------------
+  data required time                                                 1.50
+  data arrival time                                                -10.45
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -8.95
+
+
+  Startpoint: in1[33] (input port clocked by vsysclk)
+  Endpoint: out[23] (output port clocked by vsysclk)
+  Path Group: vsysclk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  ShiftAdder         16000                 saed90nm_typ_ht
+  Ripple4bit_496     8000                  saed90nm_typ_ht
+  CarryBypass_Adder_62
+                     8000                  saed90nm_typ_ht
+  Ripple4bit_511     8000                  saed90nm_typ_ht
+  Ripple4bit_510     8000                  saed90nm_typ_ht
+  Ripple4bit_509     8000                  saed90nm_typ_ht
+  Ripple4bit_508     8000                  saed90nm_typ_ht
+  Ripple4bit_507     8000                  saed90nm_typ_ht
+  Ripple4bit_506     8000                  saed90nm_typ_ht
+  Ripple4bit_505     8000                  saed90nm_typ_ht
+  Ripple4bit_504     8000                  saed90nm_typ_ht
+  CarryBypass_Adder_63
+                     8000                  saed90nm_typ_ht
+  Ripple4bit_503     8000                  saed90nm_typ_ht
+  Ripple4bit_502     8000                  saed90nm_typ_ht
+  Ripple4bit_501     8000                  saed90nm_typ_ht
+  Ripple4bit_500     8000                  saed90nm_typ_ht
+  Ripple4bit_499     8000                  saed90nm_typ_ht
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock vsysclk (rise edge)                               0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    0.20       0.20 r
+  in1[33] (in)                                            0.00       0.20 r
+  DUT/A[1] (CarryBypass_Adder_62)                         0.00       0.20 r
+  DUT/ripple_loop[0].R/A[1] (Ripple4bit_496)              0.00       0.20 r
+  DUT/ripple_loop[0].R/U28/ZN (INVX0)                     0.09       0.29 f
+  DUT/ripple_loop[0].R/U37/Q (AND3X1)                     0.18       0.47 f
+  DUT/ripple_loop[0].R/U11/Q (AO22X1)                     0.15       0.62 f
+  DUT/ripple_loop[0].R/U20/QN (NOR2X0)                    0.10       0.72 r
+  DUT/ripple_loop[0].R/U16/Q (AO22X1)                     0.20       0.92 r
+  DUT/ripple_loop[0].R/Cout (Ripple4bit_496)              0.00       0.92 r
+  DUT/ripple_loop[1].R/Cin (Ripple4bit_511)               0.00       0.92 r
+  DUT/ripple_loop[1].R/U63/Q (AO21X1)                     0.19       1.11 r
+  DUT/ripple_loop[1].R/U16/Q (AND2X1)                     0.13       1.24 r
+  DUT/ripple_loop[1].R/U58/QN (NAND2X0)                   0.09       1.33 f
+  DUT/ripple_loop[1].R/U68/QN (NAND4X0)                   0.18       1.51 r
+  DUT/ripple_loop[1].R/Cout (Ripple4bit_511)              0.00       1.51 r
+  DUT/ripple_loop[2].R/Cin (Ripple4bit_510)               0.00       1.51 r
+  DUT/ripple_loop[2].R/U46/ZN (INVX0)                     0.12       1.63 f
+  DUT/ripple_loop[2].R/U58/QN (NAND3X0)                   0.13       1.76 r
+  DUT/ripple_loop[2].R/U60/QN (NAND3X0)                   0.11       1.87 f
+  DUT/ripple_loop[2].R/U8/QN (NAND3X0)                    0.11       1.98 r
+  DUT/ripple_loop[2].R/U61/QN (NAND4X0)                   0.15       2.13 f
+  DUT/ripple_loop[2].R/Cout (Ripple4bit_510)              0.00       2.13 f
+  DUT/ripple_loop[3].R/Cin (Ripple4bit_509)               0.00       2.13 f
+  DUT/ripple_loop[3].R/U48/ZN (INVX0)                     0.12       2.25 r
+  DUT/ripple_loop[3].R/U15/QN (NAND2X0)                   0.10       2.35 f
+  DUT/ripple_loop[3].R/U63/QN (NAND3X0)                   0.11       2.46 r
+  DUT/ripple_loop[3].R/U7/QN (NAND3X0)                    0.11       2.56 f
+  DUT/ripple_loop[3].R/U64/QN (NAND4X0)                   0.17       2.73 r
+  DUT/ripple_loop[3].R/Cout (Ripple4bit_509)              0.00       2.73 r
+  DUT/ripple_loop[4].R/Cin (Ripple4bit_508)               0.00       2.73 r
+  DUT/ripple_loop[4].R/U59/Q (AO21X1)                     0.21       2.94 r
+  DUT/ripple_loop[4].R/U15/Q (AND2X1)                     0.13       3.07 r
+  DUT/ripple_loop[4].R/U14/QN (NAND2X0)                   0.08       3.16 f
+  DUT/ripple_loop[4].R/U48/QN (NAND4X0)                   0.20       3.36 r
+  DUT/ripple_loop[4].R/Cout (Ripple4bit_508)              0.00       3.36 r
+  DUT/ripple_loop[5].R/Cin (Ripple4bit_507)               0.00       3.36 r
+  DUT/ripple_loop[5].R/U51/QN (NAND2X0)                   0.16       3.51 f
+  DUT/ripple_loop[5].R/U65/QN (NAND3X0)                   0.15       3.67 r
+  DUT/ripple_loop[5].R/U22/QN (NAND3X0)                   0.11       3.77 f
+  DUT/ripple_loop[5].R/U66/QN (NAND4X0)                   0.19       3.96 r
+  DUT/ripple_loop[5].R/Cout (Ripple4bit_507)              0.00       3.96 r
+  DUT/ripple_loop[6].R/Cin (Ripple4bit_506)               0.00       3.96 r
+  DUT/ripple_loop[6].R/U55/Q (AO21X1)                     0.21       4.17 r
+  DUT/ripple_loop[6].R/U41/Q (AND2X1)                     0.13       4.30 r
+  DUT/ripple_loop[6].R/U43/QN (NAND2X0)                   0.09       4.39 f
+  DUT/ripple_loop[6].R/U60/QN (NAND4X0)                   0.18       4.57 r
+  DUT/ripple_loop[6].R/Cout (Ripple4bit_506)              0.00       4.57 r
+  DUT/ripple_loop[7].R/Cin (Ripple4bit_505)               0.00       4.57 r
+  DUT/ripple_loop[7].R/U58/Q (AO21X1)                     0.20       4.77 r
+  DUT/ripple_loop[7].R/U13/Q (AND2X1)                     0.13       4.91 r
+  DUT/ripple_loop[7].R/U12/QN (NAND2X0)                   0.09       4.99 f
+  DUT/ripple_loop[7].R/U63/QN (NAND4X0)                   0.19       5.18 r
+  DUT/ripple_loop[7].R/Cout (Ripple4bit_505)              0.00       5.18 r
+  DUT/Cout (CarryBypass_Adder_62)                         0.00       5.18 r
+  DUT2/Cin (CarryBypass_Adder_63)                         0.00       5.18 r
+  DUT2/ripple_loop[0].R/Cin (Ripple4bit_504)              0.00       5.18 r
+  DUT2/ripple_loop[0].R/U58/Q (AO21X1)                    0.20       5.38 r
+  DUT2/ripple_loop[0].R/U22/Q (AND2X1)                    0.13       5.51 r
+  DUT2/ripple_loop[0].R/U49/QN (NAND2X0)                  0.08       5.60 f
+  DUT2/ripple_loop[0].R/U64/QN (NAND4X0)                  0.18       5.77 r
+  DUT2/ripple_loop[0].R/Cout (Ripple4bit_504)             0.00       5.77 r
+  DUT2/ripple_loop[1].R/Cin (Ripple4bit_503)              0.00       5.77 r
+  DUT2/ripple_loop[1].R/U50/ZN (INVX0)                    0.10       5.88 f
+  DUT2/ripple_loop[1].R/U22/QN (NAND2X0)                  0.11       5.99 r
+  DUT2/ripple_loop[1].R/U64/QN (NAND3X0)                  0.12       6.11 f
+  DUT2/ripple_loop[1].R/U19/QN (NAND3X0)                  0.11       6.22 r
+  DUT2/ripple_loop[1].R/U65/QN (NAND4X0)                  0.15       6.36 f
+  DUT2/ripple_loop[1].R/Cout (Ripple4bit_503)             0.00       6.36 f
+  DUT2/ripple_loop[2].R/Cin (Ripple4bit_502)              0.00       6.36 f
+  DUT2/ripple_loop[2].R/U52/ZN (INVX0)                    0.12       6.48 r
+  DUT2/ripple_loop[2].R/U20/QN (NAND2X0)                  0.10       6.58 f
+  DUT2/ripple_loop[2].R/U64/QN (NAND3X0)                  0.11       6.69 r
+  DUT2/ripple_loop[2].R/U19/QN (NAND3X0)                  0.11       6.80 f
+  DUT2/ripple_loop[2].R/U49/QN (NAND4X0)                  0.18       6.98 r
+  DUT2/ripple_loop[2].R/Cout (Ripple4bit_502)             0.00       6.98 r
+  DUT2/ripple_loop[3].R/Cin (Ripple4bit_501)              0.00       6.98 r
+  DUT2/ripple_loop[3].R/U11/Q (OR2X1)                     0.22       7.20 r
+  DUT2/ripple_loop[3].R/U59/QN (NAND3X0)                  0.11       7.31 f
+  DUT2/ripple_loop[3].R/U60/QN (NAND4X0)                  0.12       7.42 r
+  DUT2/ripple_loop[3].R/U61/QN (NAND4X0)                  0.16       7.58 f
+  DUT2/ripple_loop[3].R/Cout (Ripple4bit_501)             0.00       7.58 f
+  DUT2/ripple_loop[4].R/Cin (Ripple4bit_500)              0.00       7.58 f
+  DUT2/ripple_loop[4].R/U63/Q (AO21X1)                    0.21       7.80 f
+  DUT2/ripple_loop[4].R/U20/Q (AND2X1)                    0.13       7.93 f
+  DUT2/ripple_loop[4].R/U19/QN (NAND2X0)                  0.09       8.02 r
+  DUT2/ripple_loop[4].R/U66/QN (NAND4X0)                  0.16       8.19 f
+  DUT2/ripple_loop[4].R/Cout (Ripple4bit_500)             0.00       8.19 f
+  DUT2/ripple_loop[5].R/Cin (Ripple4bit_499)              0.00       8.19 f
+  DUT2/ripple_loop[5].R/U53/ZN (INVX0)                    0.13       8.32 r
+  DUT2/ripple_loop[5].R/U67/QN (NAND3X0)                  0.12       8.44 f
+  DUT2/ripple_loop[5].R/U8/Z (DELLN2X2)                   0.98       9.42 f
+  DUT2/ripple_loop[5].R/U5/QN (NAND3X0)                   0.16       9.58 r
+  DUT2/ripple_loop[5].R/U33/QN (AOI222X1)                 0.25       9.83 f
+  DUT2/ripple_loop[5].R/U75/Q (OA21X1)                    0.17      10.00 f
+  DUT2/ripple_loop[5].R/U76/Q (XOR2X1)                    0.23      10.23 f
+  DUT2/ripple_loop[5].R/Sum[3] (Ripple4bit_499)           0.00      10.23 f
+  DUT2/Sum[23] (CarryBypass_Adder_63)                     0.00      10.23 f
+  out[23] (out)                                           0.19      10.42 f
+  data arrival time                                                 10.42
+
+  clock vsysclk (rise edge)                               2.00       2.00
+  clock network delay (ideal)                             0.00       2.00
+  output external delay                                  -0.50       1.50
+  data required time                                                 1.50
+  --------------------------------------------------------------------------
+  data required time                                                 1.50
+  data arrival time                                                -10.42
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -8.92
+
+
+  Startpoint: in1[33] (input port clocked by vsysclk)
+  Endpoint: out[26] (output port clocked by vsysclk)
+  Path Group: vsysclk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  ShiftAdder         16000                 saed90nm_typ_ht
+  Ripple4bit_496     8000                  saed90nm_typ_ht
+  CarryBypass_Adder_62
+                     8000                  saed90nm_typ_ht
+  Ripple4bit_511     8000                  saed90nm_typ_ht
+  Ripple4bit_510     8000                  saed90nm_typ_ht
+  Ripple4bit_509     8000                  saed90nm_typ_ht
+  Ripple4bit_508     8000                  saed90nm_typ_ht
+  Ripple4bit_507     8000                  saed90nm_typ_ht
+  Ripple4bit_506     8000                  saed90nm_typ_ht
+  Ripple4bit_505     8000                  saed90nm_typ_ht
+  Ripple4bit_504     8000                  saed90nm_typ_ht
+  CarryBypass_Adder_63
+                     8000                  saed90nm_typ_ht
+  Ripple4bit_503     8000                  saed90nm_typ_ht
+  Ripple4bit_502     8000                  saed90nm_typ_ht
+  Ripple4bit_501     8000                  saed90nm_typ_ht
+  Ripple4bit_500     8000                  saed90nm_typ_ht
+  Ripple4bit_499     8000                  saed90nm_typ_ht
+  Ripple4bit_498     8000                  saed90nm_typ_ht
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock vsysclk (rise edge)                               0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    0.20       0.20 r
+  in1[33] (in)                                            0.00       0.20 r
+  DUT/A[1] (CarryBypass_Adder_62)                         0.00       0.20 r
+  DUT/ripple_loop[0].R/A[1] (Ripple4bit_496)              0.00       0.20 r
+  DUT/ripple_loop[0].R/U28/ZN (INVX0)                     0.09       0.29 f
+  DUT/ripple_loop[0].R/U37/Q (AND3X1)                     0.18       0.47 f
+  DUT/ripple_loop[0].R/U11/Q (AO22X1)                     0.15       0.62 f
+  DUT/ripple_loop[0].R/U20/QN (NOR2X0)                    0.10       0.72 r
+  DUT/ripple_loop[0].R/U16/Q (AO22X1)                     0.20       0.92 r
+  DUT/ripple_loop[0].R/Cout (Ripple4bit_496)              0.00       0.92 r
+  DUT/ripple_loop[1].R/Cin (Ripple4bit_511)               0.00       0.92 r
+  DUT/ripple_loop[1].R/U63/Q (AO21X1)                     0.19       1.11 r
+  DUT/ripple_loop[1].R/U16/Q (AND2X1)                     0.13       1.24 r
+  DUT/ripple_loop[1].R/U58/QN (NAND2X0)                   0.09       1.33 f
+  DUT/ripple_loop[1].R/U68/QN (NAND4X0)                   0.18       1.51 r
+  DUT/ripple_loop[1].R/Cout (Ripple4bit_511)              0.00       1.51 r
+  DUT/ripple_loop[2].R/Cin (Ripple4bit_510)               0.00       1.51 r
+  DUT/ripple_loop[2].R/U46/ZN (INVX0)                     0.12       1.63 f
+  DUT/ripple_loop[2].R/U58/QN (NAND3X0)                   0.13       1.76 r
+  DUT/ripple_loop[2].R/U60/QN (NAND3X0)                   0.11       1.87 f
+  DUT/ripple_loop[2].R/U8/QN (NAND3X0)                    0.11       1.98 r
+  DUT/ripple_loop[2].R/U61/QN (NAND4X0)                   0.15       2.13 f
+  DUT/ripple_loop[2].R/Cout (Ripple4bit_510)              0.00       2.13 f
+  DUT/ripple_loop[3].R/Cin (Ripple4bit_509)               0.00       2.13 f
+  DUT/ripple_loop[3].R/U48/ZN (INVX0)                     0.12       2.25 r
+  DUT/ripple_loop[3].R/U15/QN (NAND2X0)                   0.10       2.35 f
+  DUT/ripple_loop[3].R/U63/QN (NAND3X0)                   0.11       2.46 r
+  DUT/ripple_loop[3].R/U7/QN (NAND3X0)                    0.11       2.56 f
+  DUT/ripple_loop[3].R/U64/QN (NAND4X0)                   0.17       2.73 r
+  DUT/ripple_loop[3].R/Cout (Ripple4bit_509)              0.00       2.73 r
+  DUT/ripple_loop[4].R/Cin (Ripple4bit_508)               0.00       2.73 r
+  DUT/ripple_loop[4].R/U59/Q (AO21X1)                     0.21       2.94 r
+  DUT/ripple_loop[4].R/U15/Q (AND2X1)                     0.13       3.07 r
+  DUT/ripple_loop[4].R/U14/QN (NAND2X0)                   0.08       3.16 f
+  DUT/ripple_loop[4].R/U48/QN (NAND4X0)                   0.20       3.36 r
+  DUT/ripple_loop[4].R/Cout (Ripple4bit_508)              0.00       3.36 r
+  DUT/ripple_loop[5].R/Cin (Ripple4bit_507)               0.00       3.36 r
+  DUT/ripple_loop[5].R/U51/QN (NAND2X0)                   0.16       3.51 f
+  DUT/ripple_loop[5].R/U65/QN (NAND3X0)                   0.15       3.67 r
+  DUT/ripple_loop[5].R/U22/QN (NAND3X0)                   0.11       3.77 f
+  DUT/ripple_loop[5].R/U66/QN (NAND4X0)                   0.19       3.96 r
+  DUT/ripple_loop[5].R/Cout (Ripple4bit_507)              0.00       3.96 r
+  DUT/ripple_loop[6].R/Cin (Ripple4bit_506)               0.00       3.96 r
+  DUT/ripple_loop[6].R/U55/Q (AO21X1)                     0.21       4.17 r
+  DUT/ripple_loop[6].R/U41/Q (AND2X1)                     0.13       4.30 r
+  DUT/ripple_loop[6].R/U43/QN (NAND2X0)                   0.09       4.39 f
+  DUT/ripple_loop[6].R/U60/QN (NAND4X0)                   0.18       4.57 r
+  DUT/ripple_loop[6].R/Cout (Ripple4bit_506)              0.00       4.57 r
+  DUT/ripple_loop[7].R/Cin (Ripple4bit_505)               0.00       4.57 r
+  DUT/ripple_loop[7].R/U58/Q (AO21X1)                     0.20       4.77 r
+  DUT/ripple_loop[7].R/U13/Q (AND2X1)                     0.13       4.91 r
+  DUT/ripple_loop[7].R/U12/QN (NAND2X0)                   0.09       4.99 f
+  DUT/ripple_loop[7].R/U63/QN (NAND4X0)                   0.19       5.18 r
+  DUT/ripple_loop[7].R/Cout (Ripple4bit_505)              0.00       5.18 r
+  DUT/Cout (CarryBypass_Adder_62)                         0.00       5.18 r
+  DUT2/Cin (CarryBypass_Adder_63)                         0.00       5.18 r
+  DUT2/ripple_loop[0].R/Cin (Ripple4bit_504)              0.00       5.18 r
+  DUT2/ripple_loop[0].R/U58/Q (AO21X1)                    0.20       5.38 r
+  DUT2/ripple_loop[0].R/U22/Q (AND2X1)                    0.13       5.51 r
+  DUT2/ripple_loop[0].R/U49/QN (NAND2X0)                  0.08       5.60 f
+  DUT2/ripple_loop[0].R/U64/QN (NAND4X0)                  0.18       5.77 r
+  DUT2/ripple_loop[0].R/Cout (Ripple4bit_504)             0.00       5.77 r
+  DUT2/ripple_loop[1].R/Cin (Ripple4bit_503)              0.00       5.77 r
+  DUT2/ripple_loop[1].R/U50/ZN (INVX0)                    0.10       5.88 f
+  DUT2/ripple_loop[1].R/U22/QN (NAND2X0)                  0.11       5.99 r
+  DUT2/ripple_loop[1].R/U64/QN (NAND3X0)                  0.12       6.11 f
+  DUT2/ripple_loop[1].R/U19/QN (NAND3X0)                  0.11       6.22 r
+  DUT2/ripple_loop[1].R/U65/QN (NAND4X0)                  0.15       6.36 f
+  DUT2/ripple_loop[1].R/Cout (Ripple4bit_503)             0.00       6.36 f
+  DUT2/ripple_loop[2].R/Cin (Ripple4bit_502)              0.00       6.36 f
+  DUT2/ripple_loop[2].R/U52/ZN (INVX0)                    0.12       6.48 r
+  DUT2/ripple_loop[2].R/U20/QN (NAND2X0)                  0.10       6.58 f
+  DUT2/ripple_loop[2].R/U64/QN (NAND3X0)                  0.11       6.69 r
+  DUT2/ripple_loop[2].R/U19/QN (NAND3X0)                  0.11       6.80 f
+  DUT2/ripple_loop[2].R/U49/QN (NAND4X0)                  0.18       6.98 r
+  DUT2/ripple_loop[2].R/Cout (Ripple4bit_502)             0.00       6.98 r
+  DUT2/ripple_loop[3].R/Cin (Ripple4bit_501)              0.00       6.98 r
+  DUT2/ripple_loop[3].R/U55/Q (AO21X1)                    0.21       7.19 r
+  DUT2/ripple_loop[3].R/U14/Q (AND2X1)                    0.13       7.32 r
+  DUT2/ripple_loop[3].R/U47/QN (NAND2X0)                  0.09       7.40 f
+  DUT2/ripple_loop[3].R/U61/QN (NAND4X0)                  0.19       7.59 r
+  DUT2/ripple_loop[3].R/Cout (Ripple4bit_501)             0.00       7.59 r
+  DUT2/ripple_loop[4].R/Cin (Ripple4bit_500)              0.00       7.59 r
+  DUT2/ripple_loop[4].R/U63/Q (AO21X1)                    0.21       7.80 r
+  DUT2/ripple_loop[4].R/U20/Q (AND2X1)                    0.13       7.93 r
+  DUT2/ripple_loop[4].R/U19/QN (NAND2X0)                  0.09       8.01 f
+  DUT2/ripple_loop[4].R/U66/QN (NAND4X0)                  0.19       8.20 r
+  DUT2/ripple_loop[4].R/Cout (Ripple4bit_500)             0.00       8.20 r
+  DUT2/ripple_loop[5].R/Cin (Ripple4bit_499)              0.00       8.20 r
+  DUT2/ripple_loop[5].R/U53/ZN (INVX0)                    0.13       8.33 f
+  DUT2/ripple_loop[5].R/U67/QN (NAND3X0)                  0.15       8.48 r
+  DUT2/ripple_loop[5].R/U69/QN (NAND3X0)                  0.12       8.59 f
+  DUT2/ripple_loop[5].R/U11/QN (NAND3X0)                  0.11       8.71 r
+  DUT2/ripple_loop[5].R/U70/QN (NAND4X0)                  0.17       8.87 f
+  DUT2/ripple_loop[5].R/Cout (Ripple4bit_499)             0.00       8.87 f
+  DUT2/ripple_loop[6].R/Cin (Ripple4bit_498)              0.00       8.87 f
+  DUT2/ripple_loop[6].R/U60/Q (XOR2X1)                    0.26       9.13 f
+  DUT2/ripple_loop[6].R/U13/Z (DELLN1X2)                  0.44       9.57 f
+  DUT2/ripple_loop[6].R/U7/ZN (INVX0)                     0.09       9.66 r
+  DUT2/ripple_loop[6].R/U32/QN (AOI222X1)                 0.19       9.85 f
+  DUT2/ripple_loop[6].R/U66/Q (XOR2X1)                    0.24      10.09 f
+  DUT2/ripple_loop[6].R/Sum[2] (Ripple4bit_498)           0.00      10.09 f
+  DUT2/Sum[26] (CarryBypass_Adder_63)                     0.00      10.09 f
+  out[26] (out)                                           0.19      10.29 f
+  data arrival time                                                 10.29
+
+  clock vsysclk (rise edge)                               2.00       2.00
+  clock network delay (ideal)                             0.00       2.00
+  output external delay                                  -0.50       1.50
+  data required time                                                 1.50
+  --------------------------------------------------------------------------
+  data required time                                                 1.50
+  data arrival time                                                -10.29
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -8.79
+
+
+  Startpoint: in1[33] (input port clocked by vsysclk)
+  Endpoint: out[22] (output port clocked by vsysclk)
+  Path Group: vsysclk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  ShiftAdder         16000                 saed90nm_typ_ht
+  Ripple4bit_496     8000                  saed90nm_typ_ht
+  CarryBypass_Adder_62
+                     8000                  saed90nm_typ_ht
+  Ripple4bit_511     8000                  saed90nm_typ_ht
+  Ripple4bit_510     8000                  saed90nm_typ_ht
+  Ripple4bit_509     8000                  saed90nm_typ_ht
+  Ripple4bit_508     8000                  saed90nm_typ_ht
+  Ripple4bit_507     8000                  saed90nm_typ_ht
+  Ripple4bit_506     8000                  saed90nm_typ_ht
+  Ripple4bit_505     8000                  saed90nm_typ_ht
+  Ripple4bit_504     8000                  saed90nm_typ_ht
+  CarryBypass_Adder_63
+                     8000                  saed90nm_typ_ht
+  Ripple4bit_503     8000                  saed90nm_typ_ht
+  Ripple4bit_502     8000                  saed90nm_typ_ht
+  Ripple4bit_501     8000                  saed90nm_typ_ht
+  Ripple4bit_500     8000                  saed90nm_typ_ht
+  Ripple4bit_499     8000                  saed90nm_typ_ht
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock vsysclk (rise edge)                               0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    0.20       0.20 r
+  in1[33] (in)                                            0.00       0.20 r
+  DUT/A[1] (CarryBypass_Adder_62)                         0.00       0.20 r
+  DUT/ripple_loop[0].R/A[1] (Ripple4bit_496)              0.00       0.20 r
+  DUT/ripple_loop[0].R/U28/ZN (INVX0)                     0.09       0.29 f
+  DUT/ripple_loop[0].R/U37/Q (AND3X1)                     0.18       0.47 f
+  DUT/ripple_loop[0].R/U11/Q (AO22X1)                     0.15       0.62 f
+  DUT/ripple_loop[0].R/U20/QN (NOR2X0)                    0.10       0.72 r
+  DUT/ripple_loop[0].R/U16/Q (AO22X1)                     0.20       0.92 r
+  DUT/ripple_loop[0].R/Cout (Ripple4bit_496)              0.00       0.92 r
+  DUT/ripple_loop[1].R/Cin (Ripple4bit_511)               0.00       0.92 r
+  DUT/ripple_loop[1].R/U63/Q (AO21X1)                     0.19       1.11 r
+  DUT/ripple_loop[1].R/U16/Q (AND2X1)                     0.13       1.24 r
+  DUT/ripple_loop[1].R/U58/QN (NAND2X0)                   0.09       1.33 f
+  DUT/ripple_loop[1].R/U68/QN (NAND4X0)                   0.18       1.51 r
+  DUT/ripple_loop[1].R/Cout (Ripple4bit_511)              0.00       1.51 r
+  DUT/ripple_loop[2].R/Cin (Ripple4bit_510)               0.00       1.51 r
+  DUT/ripple_loop[2].R/U46/ZN (INVX0)                     0.12       1.63 f
+  DUT/ripple_loop[2].R/U58/QN (NAND3X0)                   0.13       1.76 r
+  DUT/ripple_loop[2].R/U60/QN (NAND3X0)                   0.11       1.87 f
+  DUT/ripple_loop[2].R/U8/QN (NAND3X0)                    0.11       1.98 r
+  DUT/ripple_loop[2].R/U61/QN (NAND4X0)                   0.15       2.13 f
+  DUT/ripple_loop[2].R/Cout (Ripple4bit_510)              0.00       2.13 f
+  DUT/ripple_loop[3].R/Cin (Ripple4bit_509)               0.00       2.13 f
+  DUT/ripple_loop[3].R/U48/ZN (INVX0)                     0.12       2.25 r
+  DUT/ripple_loop[3].R/U15/QN (NAND2X0)                   0.10       2.35 f
+  DUT/ripple_loop[3].R/U63/QN (NAND3X0)                   0.11       2.46 r
+  DUT/ripple_loop[3].R/U7/QN (NAND3X0)                    0.11       2.56 f
+  DUT/ripple_loop[3].R/U64/QN (NAND4X0)                   0.17       2.73 r
+  DUT/ripple_loop[3].R/Cout (Ripple4bit_509)              0.00       2.73 r
+  DUT/ripple_loop[4].R/Cin (Ripple4bit_508)               0.00       2.73 r
+  DUT/ripple_loop[4].R/U59/Q (AO21X1)                     0.21       2.94 r
+  DUT/ripple_loop[4].R/U15/Q (AND2X1)                     0.13       3.07 r
+  DUT/ripple_loop[4].R/U14/QN (NAND2X0)                   0.08       3.16 f
+  DUT/ripple_loop[4].R/U48/QN (NAND4X0)                   0.20       3.36 r
+  DUT/ripple_loop[4].R/Cout (Ripple4bit_508)              0.00       3.36 r
+  DUT/ripple_loop[5].R/Cin (Ripple4bit_507)               0.00       3.36 r
+  DUT/ripple_loop[5].R/U51/QN (NAND2X0)                   0.16       3.51 f
+  DUT/ripple_loop[5].R/U65/QN (NAND3X0)                   0.15       3.67 r
+  DUT/ripple_loop[5].R/U22/QN (NAND3X0)                   0.11       3.77 f
+  DUT/ripple_loop[5].R/U66/QN (NAND4X0)                   0.19       3.96 r
+  DUT/ripple_loop[5].R/Cout (Ripple4bit_507)              0.00       3.96 r
+  DUT/ripple_loop[6].R/Cin (Ripple4bit_506)               0.00       3.96 r
+  DUT/ripple_loop[6].R/U55/Q (AO21X1)                     0.21       4.17 r
+  DUT/ripple_loop[6].R/U41/Q (AND2X1)                     0.13       4.30 r
+  DUT/ripple_loop[6].R/U43/QN (NAND2X0)                   0.09       4.39 f
+  DUT/ripple_loop[6].R/U60/QN (NAND4X0)                   0.18       4.57 r
+  DUT/ripple_loop[6].R/Cout (Ripple4bit_506)              0.00       4.57 r
+  DUT/ripple_loop[7].R/Cin (Ripple4bit_505)               0.00       4.57 r
+  DUT/ripple_loop[7].R/U58/Q (AO21X1)                     0.20       4.77 r
+  DUT/ripple_loop[7].R/U13/Q (AND2X1)                     0.13       4.91 r
+  DUT/ripple_loop[7].R/U12/QN (NAND2X0)                   0.09       4.99 f
+  DUT/ripple_loop[7].R/U63/QN (NAND4X0)                   0.19       5.18 r
+  DUT/ripple_loop[7].R/Cout (Ripple4bit_505)              0.00       5.18 r
+  DUT/Cout (CarryBypass_Adder_62)                         0.00       5.18 r
+  DUT2/Cin (CarryBypass_Adder_63)                         0.00       5.18 r
+  DUT2/ripple_loop[0].R/Cin (Ripple4bit_504)              0.00       5.18 r
+  DUT2/ripple_loop[0].R/U58/Q (AO21X1)                    0.20       5.38 r
+  DUT2/ripple_loop[0].R/U22/Q (AND2X1)                    0.13       5.51 r
+  DUT2/ripple_loop[0].R/U49/QN (NAND2X0)                  0.08       5.60 f
+  DUT2/ripple_loop[0].R/U64/QN (NAND4X0)                  0.18       5.77 r
+  DUT2/ripple_loop[0].R/Cout (Ripple4bit_504)             0.00       5.77 r
+  DUT2/ripple_loop[1].R/Cin (Ripple4bit_503)              0.00       5.77 r
+  DUT2/ripple_loop[1].R/U50/ZN (INVX0)                    0.10       5.88 f
+  DUT2/ripple_loop[1].R/U22/QN (NAND2X0)                  0.11       5.99 r
+  DUT2/ripple_loop[1].R/U64/QN (NAND3X0)                  0.12       6.11 f
+  DUT2/ripple_loop[1].R/U19/QN (NAND3X0)                  0.11       6.22 r
+  DUT2/ripple_loop[1].R/U65/QN (NAND4X0)                  0.15       6.36 f
+  DUT2/ripple_loop[1].R/Cout (Ripple4bit_503)             0.00       6.36 f
+  DUT2/ripple_loop[2].R/Cin (Ripple4bit_502)              0.00       6.36 f
+  DUT2/ripple_loop[2].R/U52/ZN (INVX0)                    0.12       6.48 r
+  DUT2/ripple_loop[2].R/U20/QN (NAND2X0)                  0.10       6.58 f
+  DUT2/ripple_loop[2].R/U64/QN (NAND3X0)                  0.11       6.69 r
+  DUT2/ripple_loop[2].R/U19/QN (NAND3X0)                  0.11       6.80 f
+  DUT2/ripple_loop[2].R/U49/QN (NAND4X0)                  0.18       6.98 r
+  DUT2/ripple_loop[2].R/Cout (Ripple4bit_502)             0.00       6.98 r
+  DUT2/ripple_loop[3].R/Cin (Ripple4bit_501)              0.00       6.98 r
+  DUT2/ripple_loop[3].R/U11/Q (OR2X1)                     0.22       7.20 r
+  DUT2/ripple_loop[3].R/U59/QN (NAND3X0)                  0.11       7.31 f
+  DUT2/ripple_loop[3].R/U60/QN (NAND4X0)                  0.12       7.42 r
+  DUT2/ripple_loop[3].R/U61/QN (NAND4X0)                  0.16       7.58 f
+  DUT2/ripple_loop[3].R/Cout (Ripple4bit_501)             0.00       7.58 f
+  DUT2/ripple_loop[4].R/Cin (Ripple4bit_500)              0.00       7.58 f
+  DUT2/ripple_loop[4].R/U63/Q (AO21X1)                    0.21       7.80 f
+  DUT2/ripple_loop[4].R/U20/Q (AND2X1)                    0.13       7.93 f
+  DUT2/ripple_loop[4].R/U19/QN (NAND2X0)                  0.09       8.02 r
+  DUT2/ripple_loop[4].R/U66/QN (NAND4X0)                  0.16       8.19 f
+  DUT2/ripple_loop[4].R/Cout (Ripple4bit_500)             0.00       8.19 f
+  DUT2/ripple_loop[5].R/Cin (Ripple4bit_499)              0.00       8.19 f
+  DUT2/ripple_loop[5].R/U53/ZN (INVX0)                    0.13       8.32 r
+  DUT2/ripple_loop[5].R/U67/QN (NAND3X0)                  0.12       8.44 f
+  DUT2/ripple_loop[5].R/U8/Z (DELLN2X2)                   0.98       9.42 f
+  DUT2/ripple_loop[5].R/U5/QN (NAND3X0)                   0.16       9.58 r
+  DUT2/ripple_loop[5].R/U33/QN (AOI222X1)                 0.25       9.83 f
+  DUT2/ripple_loop[5].R/U73/Q (XOR2X1)                    0.24      10.07 f
+  DUT2/ripple_loop[5].R/Sum[2] (Ripple4bit_499)           0.00      10.07 f
+  DUT2/Sum[22] (CarryBypass_Adder_63)                     0.00      10.07 f
+  out[22] (out)                                           0.19      10.26 f
+  data arrival time                                                 10.26
+
+  clock vsysclk (rise edge)                               2.00       2.00
+  clock network delay (ideal)                             0.00       2.00
+  output external delay                                  -0.50       1.50
+  data required time                                                 1.50
+  --------------------------------------------------------------------------
+  data required time                                                 1.50
+  data arrival time                                                -10.26
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -8.76
+
+
+  Startpoint: in1[33] (input port clocked by vsysclk)
+  Endpoint: out[28] (output port clocked by vsysclk)
+  Path Group: vsysclk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  ShiftAdder         16000                 saed90nm_typ_ht
+  Ripple4bit_496     8000                  saed90nm_typ_ht
+  CarryBypass_Adder_62
+                     8000                  saed90nm_typ_ht
+  Ripple4bit_511     8000                  saed90nm_typ_ht
+  Ripple4bit_510     8000                  saed90nm_typ_ht
+  Ripple4bit_509     8000                  saed90nm_typ_ht
+  Ripple4bit_508     8000                  saed90nm_typ_ht
+  Ripple4bit_507     8000                  saed90nm_typ_ht
+  Ripple4bit_506     8000                  saed90nm_typ_ht
+  Ripple4bit_505     8000                  saed90nm_typ_ht
+  Ripple4bit_504     8000                  saed90nm_typ_ht
+  CarryBypass_Adder_63
+                     8000                  saed90nm_typ_ht
+  Ripple4bit_503     8000                  saed90nm_typ_ht
+  Ripple4bit_502     8000                  saed90nm_typ_ht
+  Ripple4bit_501     8000                  saed90nm_typ_ht
+  Ripple4bit_500     8000                  saed90nm_typ_ht
+  Ripple4bit_499     8000                  saed90nm_typ_ht
+  Ripple4bit_498     8000                  saed90nm_typ_ht
+  Ripple4bit_497     8000                  saed90nm_typ_ht
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock vsysclk (rise edge)                               0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    0.20       0.20 r
+  in1[33] (in)                                            0.00       0.20 r
+  DUT/A[1] (CarryBypass_Adder_62)                         0.00       0.20 r
+  DUT/ripple_loop[0].R/A[1] (Ripple4bit_496)              0.00       0.20 r
+  DUT/ripple_loop[0].R/U28/ZN (INVX0)                     0.09       0.29 f
+  DUT/ripple_loop[0].R/U37/Q (AND3X1)                     0.18       0.47 f
+  DUT/ripple_loop[0].R/U11/Q (AO22X1)                     0.15       0.62 f
+  DUT/ripple_loop[0].R/U20/QN (NOR2X0)                    0.10       0.72 r
+  DUT/ripple_loop[0].R/U16/Q (AO22X1)                     0.20       0.92 r
+  DUT/ripple_loop[0].R/Cout (Ripple4bit_496)              0.00       0.92 r
+  DUT/ripple_loop[1].R/Cin (Ripple4bit_511)               0.00       0.92 r
+  DUT/ripple_loop[1].R/U63/Q (AO21X1)                     0.19       1.11 r
+  DUT/ripple_loop[1].R/U16/Q (AND2X1)                     0.13       1.24 r
+  DUT/ripple_loop[1].R/U58/QN (NAND2X0)                   0.09       1.33 f
+  DUT/ripple_loop[1].R/U68/QN (NAND4X0)                   0.18       1.51 r
+  DUT/ripple_loop[1].R/Cout (Ripple4bit_511)              0.00       1.51 r
+  DUT/ripple_loop[2].R/Cin (Ripple4bit_510)               0.00       1.51 r
+  DUT/ripple_loop[2].R/U46/ZN (INVX0)                     0.12       1.63 f
+  DUT/ripple_loop[2].R/U58/QN (NAND3X0)                   0.13       1.76 r
+  DUT/ripple_loop[2].R/U60/QN (NAND3X0)                   0.11       1.87 f
+  DUT/ripple_loop[2].R/U8/QN (NAND3X0)                    0.11       1.98 r
+  DUT/ripple_loop[2].R/U61/QN (NAND4X0)                   0.15       2.13 f
+  DUT/ripple_loop[2].R/Cout (Ripple4bit_510)              0.00       2.13 f
+  DUT/ripple_loop[3].R/Cin (Ripple4bit_509)               0.00       2.13 f
+  DUT/ripple_loop[3].R/U48/ZN (INVX0)                     0.12       2.25 r
+  DUT/ripple_loop[3].R/U15/QN (NAND2X0)                   0.10       2.35 f
+  DUT/ripple_loop[3].R/U63/QN (NAND3X0)                   0.11       2.46 r
+  DUT/ripple_loop[3].R/U7/QN (NAND3X0)                    0.11       2.56 f
+  DUT/ripple_loop[3].R/U64/QN (NAND4X0)                   0.17       2.73 r
+  DUT/ripple_loop[3].R/Cout (Ripple4bit_509)              0.00       2.73 r
+  DUT/ripple_loop[4].R/Cin (Ripple4bit_508)               0.00       2.73 r
+  DUT/ripple_loop[4].R/U59/Q (AO21X1)                     0.21       2.94 r
+  DUT/ripple_loop[4].R/U15/Q (AND2X1)                     0.13       3.07 r
+  DUT/ripple_loop[4].R/U14/QN (NAND2X0)                   0.08       3.16 f
+  DUT/ripple_loop[4].R/U48/QN (NAND4X0)                   0.20       3.36 r
+  DUT/ripple_loop[4].R/Cout (Ripple4bit_508)              0.00       3.36 r
+  DUT/ripple_loop[5].R/Cin (Ripple4bit_507)               0.00       3.36 r
+  DUT/ripple_loop[5].R/U51/QN (NAND2X0)                   0.16       3.51 f
+  DUT/ripple_loop[5].R/U65/QN (NAND3X0)                   0.15       3.67 r
+  DUT/ripple_loop[5].R/U22/QN (NAND3X0)                   0.11       3.77 f
+  DUT/ripple_loop[5].R/U66/QN (NAND4X0)                   0.19       3.96 r
+  DUT/ripple_loop[5].R/Cout (Ripple4bit_507)              0.00       3.96 r
+  DUT/ripple_loop[6].R/Cin (Ripple4bit_506)               0.00       3.96 r
+  DUT/ripple_loop[6].R/U55/Q (AO21X1)                     0.21       4.17 r
+  DUT/ripple_loop[6].R/U41/Q (AND2X1)                     0.13       4.30 r
+  DUT/ripple_loop[6].R/U43/QN (NAND2X0)                   0.09       4.39 f
+  DUT/ripple_loop[6].R/U60/QN (NAND4X0)                   0.18       4.57 r
+  DUT/ripple_loop[6].R/Cout (Ripple4bit_506)              0.00       4.57 r
+  DUT/ripple_loop[7].R/Cin (Ripple4bit_505)               0.00       4.57 r
+  DUT/ripple_loop[7].R/U58/Q (AO21X1)                     0.20       4.77 r
+  DUT/ripple_loop[7].R/U13/Q (AND2X1)                     0.13       4.91 r
+  DUT/ripple_loop[7].R/U12/QN (NAND2X0)                   0.09       4.99 f
+  DUT/ripple_loop[7].R/U63/QN (NAND4X0)                   0.19       5.18 r
+  DUT/ripple_loop[7].R/Cout (Ripple4bit_505)              0.00       5.18 r
+  DUT/Cout (CarryBypass_Adder_62)                         0.00       5.18 r
+  DUT2/Cin (CarryBypass_Adder_63)                         0.00       5.18 r
+  DUT2/ripple_loop[0].R/Cin (Ripple4bit_504)              0.00       5.18 r
+  DUT2/ripple_loop[0].R/U58/Q (AO21X1)                    0.20       5.38 r
+  DUT2/ripple_loop[0].R/U22/Q (AND2X1)                    0.13       5.51 r
+  DUT2/ripple_loop[0].R/U49/QN (NAND2X0)                  0.08       5.60 f
+  DUT2/ripple_loop[0].R/U64/QN (NAND4X0)                  0.18       5.77 r
+  DUT2/ripple_loop[0].R/Cout (Ripple4bit_504)             0.00       5.77 r
+  DUT2/ripple_loop[1].R/Cin (Ripple4bit_503)              0.00       5.77 r
+  DUT2/ripple_loop[1].R/U50/ZN (INVX0)                    0.10       5.88 f
+  DUT2/ripple_loop[1].R/U22/QN (NAND2X0)                  0.11       5.99 r
+  DUT2/ripple_loop[1].R/U64/QN (NAND3X0)                  0.12       6.11 f
+  DUT2/ripple_loop[1].R/U19/QN (NAND3X0)                  0.11       6.22 r
+  DUT2/ripple_loop[1].R/U65/QN (NAND4X0)                  0.15       6.36 f
+  DUT2/ripple_loop[1].R/Cout (Ripple4bit_503)             0.00       6.36 f
+  DUT2/ripple_loop[2].R/Cin (Ripple4bit_502)              0.00       6.36 f
+  DUT2/ripple_loop[2].R/U52/ZN (INVX0)                    0.12       6.48 r
+  DUT2/ripple_loop[2].R/U20/QN (NAND2X0)                  0.10       6.58 f
+  DUT2/ripple_loop[2].R/U64/QN (NAND3X0)                  0.11       6.69 r
+  DUT2/ripple_loop[2].R/U19/QN (NAND3X0)                  0.11       6.80 f
+  DUT2/ripple_loop[2].R/U49/QN (NAND4X0)                  0.18       6.98 r
+  DUT2/ripple_loop[2].R/Cout (Ripple4bit_502)             0.00       6.98 r
+  DUT2/ripple_loop[3].R/Cin (Ripple4bit_501)              0.00       6.98 r
+  DUT2/ripple_loop[3].R/U55/Q (AO21X1)                    0.21       7.19 r
+  DUT2/ripple_loop[3].R/U14/Q (AND2X1)                    0.13       7.32 r
+  DUT2/ripple_loop[3].R/U47/QN (NAND2X0)                  0.09       7.40 f
+  DUT2/ripple_loop[3].R/U61/QN (NAND4X0)                  0.19       7.59 r
+  DUT2/ripple_loop[3].R/Cout (Ripple4bit_501)             0.00       7.59 r
+  DUT2/ripple_loop[4].R/Cin (Ripple4bit_500)              0.00       7.59 r
+  DUT2/ripple_loop[4].R/U63/Q (AO21X1)                    0.21       7.80 r
+  DUT2/ripple_loop[4].R/U20/Q (AND2X1)                    0.13       7.93 r
+  DUT2/ripple_loop[4].R/U19/QN (NAND2X0)                  0.09       8.01 f
+  DUT2/ripple_loop[4].R/U66/QN (NAND4X0)                  0.19       8.20 r
+  DUT2/ripple_loop[4].R/Cout (Ripple4bit_500)             0.00       8.20 r
+  DUT2/ripple_loop[5].R/Cin (Ripple4bit_499)              0.00       8.20 r
+  DUT2/ripple_loop[5].R/U53/ZN (INVX0)                    0.13       8.33 f
+  DUT2/ripple_loop[5].R/U67/QN (NAND3X0)                  0.15       8.48 r
+  DUT2/ripple_loop[5].R/U69/QN (NAND3X0)                  0.12       8.59 f
+  DUT2/ripple_loop[5].R/U11/QN (NAND3X0)                  0.11       8.71 r
+  DUT2/ripple_loop[5].R/U70/QN (NAND4X0)                  0.17       8.87 f
+  DUT2/ripple_loop[5].R/Cout (Ripple4bit_499)             0.00       8.87 f
+  DUT2/ripple_loop[6].R/Cin (Ripple4bit_498)              0.00       8.87 f
+  DUT2/ripple_loop[6].R/U59/Q (AO21X1)                    0.22       9.09 f
+  DUT2/ripple_loop[6].R/U11/Q (AND2X1)                    0.13       9.22 f
+  DUT2/ripple_loop[6].R/U10/QN (NAND2X0)                  0.09       9.31 r
+  DUT2/ripple_loop[6].R/U65/QN (NAND4X0)                  0.14       9.45 f
+  DUT2/ripple_loop[6].R/Cout (Ripple4bit_498)             0.00       9.45 f
+  DUT2/ripple_loop[7].R/Cin (Ripple4bit_497)              0.00       9.45 f
+  DUT2/ripple_loop[7].R/U22/Q (XOR2X1)                    0.24       9.69 f
+  DUT2/ripple_loop[7].R/U34/ZN (INVX0)                    0.11       9.80 r
+  DUT2/ripple_loop[7].R/U41/Q (XOR2X1)                    0.25      10.05 f
+  DUT2/ripple_loop[7].R/Sum[0] (Ripple4bit_497)           0.00      10.05 f
+  DUT2/Sum[28] (CarryBypass_Adder_63)                     0.00      10.05 f
+  out[28] (out)                                           0.19      10.24 f
+  data arrival time                                                 10.24
+
+  clock vsysclk (rise edge)                               2.00       2.00
+  clock network delay (ideal)                             0.00       2.00
+  output external delay                                  -0.50       1.50
+  data required time                                                 1.50
+  --------------------------------------------------------------------------
+  data required time                                                 1.50
+  data arrival time                                                -10.24
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -8.74
+
+
+  Startpoint: in1[33] (input port clocked by vsysclk)
+  Endpoint: out[21] (output port clocked by vsysclk)
+  Path Group: vsysclk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  ShiftAdder         16000                 saed90nm_typ_ht
+  Ripple4bit_496     8000                  saed90nm_typ_ht
+  CarryBypass_Adder_62
+                     8000                  saed90nm_typ_ht
+  Ripple4bit_511     8000                  saed90nm_typ_ht
+  Ripple4bit_510     8000                  saed90nm_typ_ht
+  Ripple4bit_509     8000                  saed90nm_typ_ht
+  Ripple4bit_508     8000                  saed90nm_typ_ht
+  Ripple4bit_507     8000                  saed90nm_typ_ht
+  Ripple4bit_506     8000                  saed90nm_typ_ht
+  Ripple4bit_505     8000                  saed90nm_typ_ht
+  Ripple4bit_504     8000                  saed90nm_typ_ht
+  CarryBypass_Adder_63
+                     8000                  saed90nm_typ_ht
+  Ripple4bit_503     8000                  saed90nm_typ_ht
+  Ripple4bit_502     8000                  saed90nm_typ_ht
+  Ripple4bit_501     8000                  saed90nm_typ_ht
+  Ripple4bit_500     8000                  saed90nm_typ_ht
+  Ripple4bit_499     8000                  saed90nm_typ_ht
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock vsysclk (rise edge)                               0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    0.20       0.20 r
+  in1[33] (in)                                            0.00       0.20 r
+  DUT/A[1] (CarryBypass_Adder_62)                         0.00       0.20 r
+  DUT/ripple_loop[0].R/A[1] (Ripple4bit_496)              0.00       0.20 r
+  DUT/ripple_loop[0].R/U28/ZN (INVX0)                     0.09       0.29 f
+  DUT/ripple_loop[0].R/U37/Q (AND3X1)                     0.18       0.47 f
+  DUT/ripple_loop[0].R/U11/Q (AO22X1)                     0.15       0.62 f
+  DUT/ripple_loop[0].R/U20/QN (NOR2X0)                    0.10       0.72 r
+  DUT/ripple_loop[0].R/U16/Q (AO22X1)                     0.20       0.92 r
+  DUT/ripple_loop[0].R/Cout (Ripple4bit_496)              0.00       0.92 r
+  DUT/ripple_loop[1].R/Cin (Ripple4bit_511)               0.00       0.92 r
+  DUT/ripple_loop[1].R/U63/Q (AO21X1)                     0.19       1.11 r
+  DUT/ripple_loop[1].R/U16/Q (AND2X1)                     0.13       1.24 r
+  DUT/ripple_loop[1].R/U58/QN (NAND2X0)                   0.09       1.33 f
+  DUT/ripple_loop[1].R/U68/QN (NAND4X0)                   0.18       1.51 r
+  DUT/ripple_loop[1].R/Cout (Ripple4bit_511)              0.00       1.51 r
+  DUT/ripple_loop[2].R/Cin (Ripple4bit_510)               0.00       1.51 r
+  DUT/ripple_loop[2].R/U46/ZN (INVX0)                     0.12       1.63 f
+  DUT/ripple_loop[2].R/U58/QN (NAND3X0)                   0.13       1.76 r
+  DUT/ripple_loop[2].R/U60/QN (NAND3X0)                   0.11       1.87 f
+  DUT/ripple_loop[2].R/U8/QN (NAND3X0)                    0.11       1.98 r
+  DUT/ripple_loop[2].R/U61/QN (NAND4X0)                   0.15       2.13 f
+  DUT/ripple_loop[2].R/Cout (Ripple4bit_510)              0.00       2.13 f
+  DUT/ripple_loop[3].R/Cin (Ripple4bit_509)               0.00       2.13 f
+  DUT/ripple_loop[3].R/U48/ZN (INVX0)                     0.12       2.25 r
+  DUT/ripple_loop[3].R/U15/QN (NAND2X0)                   0.10       2.35 f
+  DUT/ripple_loop[3].R/U63/QN (NAND3X0)                   0.11       2.46 r
+  DUT/ripple_loop[3].R/U7/QN (NAND3X0)                    0.11       2.56 f
+  DUT/ripple_loop[3].R/U64/QN (NAND4X0)                   0.17       2.73 r
+  DUT/ripple_loop[3].R/Cout (Ripple4bit_509)              0.00       2.73 r
+  DUT/ripple_loop[4].R/Cin (Ripple4bit_508)               0.00       2.73 r
+  DUT/ripple_loop[4].R/U59/Q (AO21X1)                     0.21       2.94 r
+  DUT/ripple_loop[4].R/U15/Q (AND2X1)                     0.13       3.07 r
+  DUT/ripple_loop[4].R/U14/QN (NAND2X0)                   0.08       3.16 f
+  DUT/ripple_loop[4].R/U48/QN (NAND4X0)                   0.20       3.36 r
+  DUT/ripple_loop[4].R/Cout (Ripple4bit_508)              0.00       3.36 r
+  DUT/ripple_loop[5].R/Cin (Ripple4bit_507)               0.00       3.36 r
+  DUT/ripple_loop[5].R/U51/QN (NAND2X0)                   0.16       3.51 f
+  DUT/ripple_loop[5].R/U65/QN (NAND3X0)                   0.15       3.67 r
+  DUT/ripple_loop[5].R/U22/QN (NAND3X0)                   0.11       3.77 f
+  DUT/ripple_loop[5].R/U66/QN (NAND4X0)                   0.19       3.96 r
+  DUT/ripple_loop[5].R/Cout (Ripple4bit_507)              0.00       3.96 r
+  DUT/ripple_loop[6].R/Cin (Ripple4bit_506)               0.00       3.96 r
+  DUT/ripple_loop[6].R/U55/Q (AO21X1)                     0.21       4.17 r
+  DUT/ripple_loop[6].R/U41/Q (AND2X1)                     0.13       4.30 r
+  DUT/ripple_loop[6].R/U43/QN (NAND2X0)                   0.09       4.39 f
+  DUT/ripple_loop[6].R/U60/QN (NAND4X0)                   0.18       4.57 r
+  DUT/ripple_loop[6].R/Cout (Ripple4bit_506)              0.00       4.57 r
+  DUT/ripple_loop[7].R/Cin (Ripple4bit_505)               0.00       4.57 r
+  DUT/ripple_loop[7].R/U58/Q (AO21X1)                     0.20       4.77 r
+  DUT/ripple_loop[7].R/U13/Q (AND2X1)                     0.13       4.91 r
+  DUT/ripple_loop[7].R/U12/QN (NAND2X0)                   0.09       4.99 f
+  DUT/ripple_loop[7].R/U63/QN (NAND4X0)                   0.19       5.18 r
+  DUT/ripple_loop[7].R/Cout (Ripple4bit_505)              0.00       5.18 r
+  DUT/Cout (CarryBypass_Adder_62)                         0.00       5.18 r
+  DUT2/Cin (CarryBypass_Adder_63)                         0.00       5.18 r
+  DUT2/ripple_loop[0].R/Cin (Ripple4bit_504)              0.00       5.18 r
+  DUT2/ripple_loop[0].R/U58/Q (AO21X1)                    0.20       5.38 r
+  DUT2/ripple_loop[0].R/U22/Q (AND2X1)                    0.13       5.51 r
+  DUT2/ripple_loop[0].R/U49/QN (NAND2X0)                  0.08       5.60 f
+  DUT2/ripple_loop[0].R/U64/QN (NAND4X0)                  0.18       5.77 r
+  DUT2/ripple_loop[0].R/Cout (Ripple4bit_504)             0.00       5.77 r
+  DUT2/ripple_loop[1].R/Cin (Ripple4bit_503)              0.00       5.77 r
+  DUT2/ripple_loop[1].R/U50/ZN (INVX0)                    0.10       5.88 f
+  DUT2/ripple_loop[1].R/U22/QN (NAND2X0)                  0.11       5.99 r
+  DUT2/ripple_loop[1].R/U64/QN (NAND3X0)                  0.12       6.11 f
+  DUT2/ripple_loop[1].R/U19/QN (NAND3X0)                  0.11       6.22 r
+  DUT2/ripple_loop[1].R/U65/QN (NAND4X0)                  0.15       6.36 f
+  DUT2/ripple_loop[1].R/Cout (Ripple4bit_503)             0.00       6.36 f
+  DUT2/ripple_loop[2].R/Cin (Ripple4bit_502)              0.00       6.36 f
+  DUT2/ripple_loop[2].R/U52/ZN (INVX0)                    0.12       6.48 r
+  DUT2/ripple_loop[2].R/U20/QN (NAND2X0)                  0.10       6.58 f
+  DUT2/ripple_loop[2].R/U64/QN (NAND3X0)                  0.11       6.69 r
+  DUT2/ripple_loop[2].R/U19/QN (NAND3X0)                  0.11       6.80 f
+  DUT2/ripple_loop[2].R/U49/QN (NAND4X0)                  0.18       6.98 r
+  DUT2/ripple_loop[2].R/Cout (Ripple4bit_502)             0.00       6.98 r
+  DUT2/ripple_loop[3].R/Cin (Ripple4bit_501)              0.00       6.98 r
+  DUT2/ripple_loop[3].R/U11/Q (OR2X1)                     0.22       7.20 r
+  DUT2/ripple_loop[3].R/U59/QN (NAND3X0)                  0.11       7.31 f
+  DUT2/ripple_loop[3].R/U60/QN (NAND4X0)                  0.12       7.42 r
+  DUT2/ripple_loop[3].R/U61/QN (NAND4X0)                  0.16       7.58 f
+  DUT2/ripple_loop[3].R/Cout (Ripple4bit_501)             0.00       7.58 f
+  DUT2/ripple_loop[4].R/Cin (Ripple4bit_500)              0.00       7.58 f
+  DUT2/ripple_loop[4].R/U63/Q (AO21X1)                    0.21       7.80 f
+  DUT2/ripple_loop[4].R/U20/Q (AND2X1)                    0.13       7.93 f
+  DUT2/ripple_loop[4].R/U19/QN (NAND2X0)                  0.09       8.02 r
+  DUT2/ripple_loop[4].R/U66/QN (NAND4X0)                  0.16       8.19 f
+  DUT2/ripple_loop[4].R/Cout (Ripple4bit_500)             0.00       8.19 f
+  DUT2/ripple_loop[5].R/Cin (Ripple4bit_499)              0.00       8.19 f
+  DUT2/ripple_loop[5].R/U53/ZN (INVX0)                    0.13       8.32 r
+  DUT2/ripple_loop[5].R/U67/QN (NAND3X0)                  0.12       8.44 f
+  DUT2/ripple_loop[5].R/U8/Z (DELLN2X2)                   0.98       9.42 f
+  DUT2/ripple_loop[5].R/U5/QN (NAND3X0)                   0.16       9.58 r
+  DUT2/ripple_loop[5].R/U1/Q (XNOR2X1)                    0.25       9.83 f
+  DUT2/ripple_loop[5].R/Sum[1] (Ripple4bit_499)           0.00       9.83 f
+  DUT2/Sum[21] (CarryBypass_Adder_63)                     0.00       9.83 f
+  out[21] (out)                                           0.19      10.03 f
+  data arrival time                                                 10.03
+
+  clock vsysclk (rise edge)                               2.00       2.00
+  clock network delay (ideal)                             0.00       2.00
+  output external delay                                  -0.50       1.50
+  data required time                                                 1.50
+  --------------------------------------------------------------------------
+  data required time                                                 1.50
+  data arrival time                                                -10.03
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -8.53
+
+
+  Startpoint: in1[33] (input port clocked by vsysclk)
+  Endpoint: out[24] (output port clocked by vsysclk)
+  Path Group: vsysclk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  ShiftAdder         16000                 saed90nm_typ_ht
+  Ripple4bit_496     8000                  saed90nm_typ_ht
+  CarryBypass_Adder_62
+                     8000                  saed90nm_typ_ht
+  Ripple4bit_511     8000                  saed90nm_typ_ht
+  Ripple4bit_510     8000                  saed90nm_typ_ht
+  Ripple4bit_509     8000                  saed90nm_typ_ht
+  Ripple4bit_508     8000                  saed90nm_typ_ht
+  Ripple4bit_507     8000                  saed90nm_typ_ht
+  Ripple4bit_506     8000                  saed90nm_typ_ht
+  Ripple4bit_505     8000                  saed90nm_typ_ht
+  Ripple4bit_504     8000                  saed90nm_typ_ht
+  CarryBypass_Adder_63
+                     8000                  saed90nm_typ_ht
+  Ripple4bit_503     8000                  saed90nm_typ_ht
+  Ripple4bit_502     8000                  saed90nm_typ_ht
+  Ripple4bit_501     8000                  saed90nm_typ_ht
+  Ripple4bit_500     8000                  saed90nm_typ_ht
+  Ripple4bit_499     8000                  saed90nm_typ_ht
+  Ripple4bit_498     8000                  saed90nm_typ_ht
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock vsysclk (rise edge)                               0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    0.20       0.20 r
+  in1[33] (in)                                            0.00       0.20 r
+  DUT/A[1] (CarryBypass_Adder_62)                         0.00       0.20 r
+  DUT/ripple_loop[0].R/A[1] (Ripple4bit_496)              0.00       0.20 r
+  DUT/ripple_loop[0].R/U28/ZN (INVX0)                     0.09       0.29 f
+  DUT/ripple_loop[0].R/U37/Q (AND3X1)                     0.18       0.47 f
+  DUT/ripple_loop[0].R/U11/Q (AO22X1)                     0.15       0.62 f
+  DUT/ripple_loop[0].R/U20/QN (NOR2X0)                    0.10       0.72 r
+  DUT/ripple_loop[0].R/U16/Q (AO22X1)                     0.20       0.92 r
+  DUT/ripple_loop[0].R/Cout (Ripple4bit_496)              0.00       0.92 r
+  DUT/ripple_loop[1].R/Cin (Ripple4bit_511)               0.00       0.92 r
+  DUT/ripple_loop[1].R/U63/Q (AO21X1)                     0.19       1.11 r
+  DUT/ripple_loop[1].R/U16/Q (AND2X1)                     0.13       1.24 r
+  DUT/ripple_loop[1].R/U58/QN (NAND2X0)                   0.09       1.33 f
+  DUT/ripple_loop[1].R/U68/QN (NAND4X0)                   0.18       1.51 r
+  DUT/ripple_loop[1].R/Cout (Ripple4bit_511)              0.00       1.51 r
+  DUT/ripple_loop[2].R/Cin (Ripple4bit_510)               0.00       1.51 r
+  DUT/ripple_loop[2].R/U46/ZN (INVX0)                     0.12       1.63 f
+  DUT/ripple_loop[2].R/U58/QN (NAND3X0)                   0.13       1.76 r
+  DUT/ripple_loop[2].R/U60/QN (NAND3X0)                   0.11       1.87 f
+  DUT/ripple_loop[2].R/U8/QN (NAND3X0)                    0.11       1.98 r
+  DUT/ripple_loop[2].R/U61/QN (NAND4X0)                   0.15       2.13 f
+  DUT/ripple_loop[2].R/Cout (Ripple4bit_510)              0.00       2.13 f
+  DUT/ripple_loop[3].R/Cin (Ripple4bit_509)               0.00       2.13 f
+  DUT/ripple_loop[3].R/U48/ZN (INVX0)                     0.12       2.25 r
+  DUT/ripple_loop[3].R/U15/QN (NAND2X0)                   0.10       2.35 f
+  DUT/ripple_loop[3].R/U63/QN (NAND3X0)                   0.11       2.46 r
+  DUT/ripple_loop[3].R/U7/QN (NAND3X0)                    0.11       2.56 f
+  DUT/ripple_loop[3].R/U64/QN (NAND4X0)                   0.17       2.73 r
+  DUT/ripple_loop[3].R/Cout (Ripple4bit_509)              0.00       2.73 r
+  DUT/ripple_loop[4].R/Cin (Ripple4bit_508)               0.00       2.73 r
+  DUT/ripple_loop[4].R/U59/Q (AO21X1)                     0.21       2.94 r
+  DUT/ripple_loop[4].R/U15/Q (AND2X1)                     0.13       3.07 r
+  DUT/ripple_loop[4].R/U14/QN (NAND2X0)                   0.08       3.16 f
+  DUT/ripple_loop[4].R/U48/QN (NAND4X0)                   0.20       3.36 r
+  DUT/ripple_loop[4].R/Cout (Ripple4bit_508)              0.00       3.36 r
+  DUT/ripple_loop[5].R/Cin (Ripple4bit_507)               0.00       3.36 r
+  DUT/ripple_loop[5].R/U51/QN (NAND2X0)                   0.16       3.51 f
+  DUT/ripple_loop[5].R/U65/QN (NAND3X0)                   0.15       3.67 r
+  DUT/ripple_loop[5].R/U22/QN (NAND3X0)                   0.11       3.77 f
+  DUT/ripple_loop[5].R/U66/QN (NAND4X0)                   0.19       3.96 r
+  DUT/ripple_loop[5].R/Cout (Ripple4bit_507)              0.00       3.96 r
+  DUT/ripple_loop[6].R/Cin (Ripple4bit_506)               0.00       3.96 r
+  DUT/ripple_loop[6].R/U55/Q (AO21X1)                     0.21       4.17 r
+  DUT/ripple_loop[6].R/U41/Q (AND2X1)                     0.13       4.30 r
+  DUT/ripple_loop[6].R/U43/QN (NAND2X0)                   0.09       4.39 f
+  DUT/ripple_loop[6].R/U60/QN (NAND4X0)                   0.18       4.57 r
+  DUT/ripple_loop[6].R/Cout (Ripple4bit_506)              0.00       4.57 r
+  DUT/ripple_loop[7].R/Cin (Ripple4bit_505)               0.00       4.57 r
+  DUT/ripple_loop[7].R/U58/Q (AO21X1)                     0.20       4.77 r
+  DUT/ripple_loop[7].R/U13/Q (AND2X1)                     0.13       4.91 r
+  DUT/ripple_loop[7].R/U12/QN (NAND2X0)                   0.09       4.99 f
+  DUT/ripple_loop[7].R/U63/QN (NAND4X0)                   0.19       5.18 r
+  DUT/ripple_loop[7].R/Cout (Ripple4bit_505)              0.00       5.18 r
+  DUT/Cout (CarryBypass_Adder_62)                         0.00       5.18 r
+  DUT2/Cin (CarryBypass_Adder_63)                         0.00       5.18 r
+  DUT2/ripple_loop[0].R/Cin (Ripple4bit_504)              0.00       5.18 r
+  DUT2/ripple_loop[0].R/U58/Q (AO21X1)                    0.20       5.38 r
+  DUT2/ripple_loop[0].R/U22/Q (AND2X1)                    0.13       5.51 r
+  DUT2/ripple_loop[0].R/U49/QN (NAND2X0)                  0.08       5.60 f
+  DUT2/ripple_loop[0].R/U64/QN (NAND4X0)                  0.18       5.77 r
+  DUT2/ripple_loop[0].R/Cout (Ripple4bit_504)             0.00       5.77 r
+  DUT2/ripple_loop[1].R/Cin (Ripple4bit_503)              0.00       5.77 r
+  DUT2/ripple_loop[1].R/U50/ZN (INVX0)                    0.10       5.88 f
+  DUT2/ripple_loop[1].R/U22/QN (NAND2X0)                  0.11       5.99 r
+  DUT2/ripple_loop[1].R/U64/QN (NAND3X0)                  0.12       6.11 f
+  DUT2/ripple_loop[1].R/U19/QN (NAND3X0)                  0.11       6.22 r
+  DUT2/ripple_loop[1].R/U65/QN (NAND4X0)                  0.15       6.36 f
+  DUT2/ripple_loop[1].R/Cout (Ripple4bit_503)             0.00       6.36 f
+  DUT2/ripple_loop[2].R/Cin (Ripple4bit_502)              0.00       6.36 f
+  DUT2/ripple_loop[2].R/U52/ZN (INVX0)                    0.12       6.48 r
+  DUT2/ripple_loop[2].R/U20/QN (NAND2X0)                  0.10       6.58 f
+  DUT2/ripple_loop[2].R/U64/QN (NAND3X0)                  0.11       6.69 r
+  DUT2/ripple_loop[2].R/U19/QN (NAND3X0)                  0.11       6.80 f
+  DUT2/ripple_loop[2].R/U49/QN (NAND4X0)                  0.18       6.98 r
+  DUT2/ripple_loop[2].R/Cout (Ripple4bit_502)             0.00       6.98 r
+  DUT2/ripple_loop[3].R/Cin (Ripple4bit_501)              0.00       6.98 r
+  DUT2/ripple_loop[3].R/U55/Q (AO21X1)                    0.21       7.19 r
+  DUT2/ripple_loop[3].R/U14/Q (AND2X1)                    0.13       7.32 r
+  DUT2/ripple_loop[3].R/U47/QN (NAND2X0)                  0.09       7.40 f
+  DUT2/ripple_loop[3].R/U61/QN (NAND4X0)                  0.19       7.59 r
+  DUT2/ripple_loop[3].R/Cout (Ripple4bit_501)             0.00       7.59 r
+  DUT2/ripple_loop[4].R/Cin (Ripple4bit_500)              0.00       7.59 r
+  DUT2/ripple_loop[4].R/U63/Q (AO21X1)                    0.21       7.80 r
+  DUT2/ripple_loop[4].R/U20/Q (AND2X1)                    0.13       7.93 r
+  DUT2/ripple_loop[4].R/U19/QN (NAND2X0)                  0.09       8.01 f
+  DUT2/ripple_loop[4].R/U66/QN (NAND4X0)                  0.19       8.20 r
+  DUT2/ripple_loop[4].R/Cout (Ripple4bit_500)             0.00       8.20 r
+  DUT2/ripple_loop[5].R/Cin (Ripple4bit_499)              0.00       8.20 r
+  DUT2/ripple_loop[5].R/U53/ZN (INVX0)                    0.13       8.33 f
+  DUT2/ripple_loop[5].R/U67/QN (NAND3X0)                  0.15       8.48 r
+  DUT2/ripple_loop[5].R/U69/QN (NAND3X0)                  0.12       8.59 f
+  DUT2/ripple_loop[5].R/U11/QN (NAND3X0)                  0.11       8.71 r
+  DUT2/ripple_loop[5].R/U70/QN (NAND4X0)                  0.17       8.87 f
+  DUT2/ripple_loop[5].R/Cout (Ripple4bit_499)             0.00       8.87 f
+  DUT2/ripple_loop[6].R/Cin (Ripple4bit_498)              0.00       8.87 f
+  DUT2/ripple_loop[6].R/U60/Q (XOR2X1)                    0.26       9.13 f
+  DUT2/ripple_loop[6].R/U13/Z (DELLN1X2)                  0.44       9.57 f
+  DUT2/ripple_loop[6].R/U5/Q (XOR2X1)                     0.25       9.82 f
+  DUT2/ripple_loop[6].R/Sum[0] (Ripple4bit_498)           0.00       9.82 f
+  DUT2/Sum[24] (CarryBypass_Adder_63)                     0.00       9.82 f
+  out[24] (out)                                           0.19      10.02 f
+  data arrival time                                                 10.02
+
+  clock vsysclk (rise edge)                               2.00       2.00
+  clock network delay (ideal)                             0.00       2.00
+  output external delay                                  -0.50       1.50
+  data required time                                                 1.50
+  --------------------------------------------------------------------------
+  data required time                                                 1.50
+  data arrival time                                                -10.02
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -8.52
+
+
+1

@@ -1,0 +1,315 @@
+====================================================================================================
+| Flow Information                                                                                 |
+----------------------------------------------------------------------------------------------------
+| Flow         | Design Compiler                                                                   |
+====================================================================================================
+| Design Information                                      | Value                                  |
+====================================================================================================
+| Number of Scenarios                                     | 0                                      |
+| Leaf Cell Count                                         | 304                                    |
+| Number of User Hierarchies                              | 18                                     |
+| Sequential Cell Count                                   | 0                                      |
+| Macro Count                                             | 0                                      |
+| Number of Power Domains                                 | 0                                      |
+| Number of Path Groups                                   | 2                                      |
+| Number of VT Class                                      | 1                                      |
+| Number of Clocks                                        | 1                                      |
+| Number of Dont Touch Cells                              | 32                                     |
+| Number of Dont Touch Nets                               | 0                                      |
+| Number of Size Only Cells                               | 0                                      |
+| Design with UPF Data                                    | false                                  |
+====================================================================================================
+
+Information: There are 2 potential problems in your design. Please run 'check_design' for more information. (LINT-99)
+
+
+
+  Beginning Pass 1 Mapping
+  ------------------------
+  Processing 'Ripple4bit_496'
+  Processing 'CarryBypass_Adder_62'
+  Processing 'ShiftAdder'
+
+  Updating timing information
+Information: Updating design information... (UID-85)
+
+  Beginning Implementation Selection
+  ----------------------------------
+  Building model 'DW01_NAND2'
+  Processing 'DW01_NAND2'
+  Building model 'DW01_add_width2' (rpl)
+  Processing 'DW01_add_width2'
+  Building model 'DW01_add_width2' (cla)
+  Processing 'DW01_add_width2'
+  Processing 'DW01_add_width2_DW01_add_0'
+  Processing 'DW01_add_width2_DW01_add_1'
+  Processing 'DW01_add_width2_DW01_add_2'
+  Processing 'DW01_add_width2_DW01_add_3'
+  Processing 'DW01_add_width2_DW01_add_4'
+  Processing 'DW01_add_width2_DW01_add_5'
+  Processing 'DW01_add_width2_DW01_add_6'
+  Processing 'DW01_add_width2_DW01_add_7'
+  Processing 'DW01_add_width2_DW01_add_8'
+  Processing 'DW01_add_width2_DW01_add_9'
+  Processing 'DW01_add_width2_DW01_add_10'
+  Processing 'DW01_add_width2_DW01_add_11'
+  Processing 'DW01_add_width2_DW01_add_12'
+  Processing 'DW01_add_width2_DW01_add_13'
+  Processing 'DW01_add_width2_DW01_add_14'
+  Processing 'DW01_add_width2_DW01_add_15'
+  Processing 'DW01_add_width2_DW01_add_16'
+  Processing 'DW01_add_width2_DW01_add_17'
+  Processing 'DW01_add_width2_DW01_add_18'
+  Processing 'DW01_add_width2_DW01_add_19'
+  Processing 'DW01_add_width2_DW01_add_20'
+  Processing 'DW01_add_width2_DW01_add_21'
+  Processing 'DW01_add_width2_DW01_add_22'
+  Processing 'DW01_add_width2_DW01_add_23'
+  Processing 'DW01_add_width2_DW01_add_24'
+  Processing 'DW01_add_width2_DW01_add_25'
+  Processing 'DW01_add_width2_DW01_add_26'
+  Processing 'DW01_add_width2_DW01_add_27'
+  Processing 'DW01_add_width2_DW01_add_28'
+  Processing 'DW01_add_width2_DW01_add_29'
+  Processing 'DW01_add_width2_DW01_add_30'
+  Processing 'DW01_add_width2_DW01_add_31'
+  Processing 'DW01_add_width2_DW01_add_32'
+  Processing 'DW01_add_width2_DW01_add_33'
+  Processing 'DW01_add_width2_DW01_add_34'
+  Processing 'DW01_add_width2_DW01_add_35'
+  Processing 'DW01_add_width2_DW01_add_36'
+  Processing 'DW01_add_width2_DW01_add_37'
+  Processing 'DW01_add_width2_DW01_add_38'
+  Processing 'DW01_add_width2_DW01_add_39'
+  Processing 'DW01_add_width2_DW01_add_40'
+  Processing 'DW01_add_width2_DW01_add_41'
+  Processing 'DW01_add_width2_DW01_add_42'
+  Processing 'DW01_add_width2_DW01_add_43'
+  Processing 'DW01_add_width2_DW01_add_44'
+  Processing 'DW01_add_width2_DW01_add_45'
+  Processing 'DW01_add_width2_DW01_add_46'
+  Processing 'DW01_add_width2_DW01_add_47'
+  Processing 'DW01_add_width2_DW01_add_48'
+  Processing 'DW01_add_width2_DW01_add_49'
+  Processing 'DW01_add_width2_DW01_add_50'
+  Processing 'DW01_add_width2_DW01_add_51'
+  Processing 'DW01_add_width2_DW01_add_52'
+  Processing 'DW01_add_width2_DW01_add_53'
+  Processing 'DW01_add_width2_DW01_add_54'
+  Processing 'DW01_add_width2_DW01_add_55'
+  Processing 'DW01_add_width2_DW01_add_56'
+  Processing 'DW01_add_width2_DW01_add_57'
+  Processing 'DW01_add_width2_DW01_add_58'
+  Processing 'DW01_add_width2_DW01_add_59'
+  Processing 'DW01_add_width2_DW01_add_60'
+  Processing 'DW01_add_width2_DW01_add_61'
+  Processing 'DW01_add_width2_DW01_add_62'
+  Processing 'DW01_add_width2_DW01_add_63'
+Information: Command 'do_operand_isolation' is obsolete and is being ignored.  Please refer to the replacement command 'set power_enable_datapath_gating true' instead. (INFO-118)
+
+  Beginning Mapping Optimizations  (Medium effort)
+  -------------------------------
+  Mapping Optimization (Phase 23)
+  Mapping Optimization (Phase 24)
+  Mapping Optimization (Phase 25)
+  Mapping Optimization (Phase 26)
+  Mapping Optimization (Phase 27)
+  Mapping Optimization (Phase 28)
+  Mapping Optimization (Phase 29)
+Information: Command 'do_operand_isolation' is obsolete and is being ignored.  Please refer to the replacement command 'set power_enable_datapath_gating true' instead. (INFO-118)
+
+                                  TOTAL                                      
+   ELAPSED            WORST NEG   SETUP    DESIGN                            
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT         
+  --------- --------- --------- --------- --------- -------------------------
+    0:00:06    8972.7     11.93     375.9      11.9                          
+    0:00:06    8972.7     11.93     375.9      11.9                          
+    0:00:06    8972.7     11.93     375.9      11.9                          
+    0:00:06    8972.7     11.93     375.9      11.9                          
+    0:00:06    8972.7     11.93     375.9      11.9                          
+    0:00:06    7792.1     11.98     367.8       0.0                          
+    0:00:06    7792.1     11.98     367.8       0.0                          
+    0:00:06    7792.1     11.98     367.8       0.0                          
+    0:00:06    7792.1     11.98     367.8       0.0                          
+    0:00:06    7792.1     11.98     367.8       0.0                          
+    0:00:06    7792.1     11.98     367.8       0.0                          
+    0:00:06    7792.1     11.98     367.8       0.0                          
+    0:00:06    7792.1     11.98     367.8       0.0                          
+
+
+
+  Beginning Delay Optimization Phase
+  ----------------------------------
+
+                                  TOTAL                                      
+   ELAPSED            WORST NEG   SETUP    DESIGN                            
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT         
+  --------- --------- --------- --------- --------- -------------------------
+    0:00:06    7792.1     12.01     369.8       0.0                          
+    0:00:06    7829.0     11.99     368.9       0.0 out[31]                  
+    0:00:06    7873.2     11.74     362.5       0.0 out[31]                  
+    0:00:06    7919.3     11.59     358.2       0.0 out[31]                  
+    0:00:07    8013.3     11.42     354.9       0.0 out[31]                  
+    0:00:07    8043.7     11.37     354.7       0.0 out[31]                  
+    0:00:07    8054.8     11.29     353.1       0.0 out[31]                  
+    0:00:07    8105.5     11.19     349.8       0.0 out[31]                  
+    0:00:07    8214.2     11.06     347.0       0.0 out[31]                  
+    0:00:07    8221.6     10.95     344.3       0.0 out[31]                  
+    0:00:07    8341.4     10.79     337.9       0.0 out[31]                  
+    0:00:07    8371.8     10.76     336.3       0.0 out[31]                  
+    0:00:07    8361.7     10.71     335.2       0.0 out[31]                  
+    0:00:07    8401.3     10.62     332.1       0.0 out[31]                  
+    0:00:07    8415.1     10.54     327.5       0.0 out[31]                  
+    0:00:07    8436.3     10.50     326.1       0.0 out[31]                  
+    0:00:07    8436.3     10.50     325.9       0.0 out[31]                  
+    0:00:07    8458.4     10.47     324.8       0.0 out[31]                  
+    0:00:07    8490.7     10.40     323.4       0.0 out[31]                  
+    0:00:07    8550.6     10.34     322.1       0.0 out[31]                  
+    0:00:08    8546.0     10.30     320.0       0.0 out[31]                  
+    0:00:08    8562.6     10.26     319.1       0.0 out[31]                  
+    0:00:08    8621.6     10.23     320.6       0.0 out[31]                  
+    0:00:08    8676.9     10.19     320.4       0.0 out[31]                  
+    0:00:08    8706.4     10.18     319.8       0.0 out[31]                  
+    0:00:08    8772.7     10.15     321.3      12.3 out[31]                  
+    0:00:08    8807.7     10.14     322.5      12.3 out[31]                  
+    0:00:08    8803.1     10.11     321.9      12.3 out[31]                  
+    0:00:08    8805.9     10.09     321.3      12.3 out[31]                  
+    0:00:08    8831.7     10.08     320.7      12.3 out[31]                  
+    0:00:08    8826.2     10.05     319.5      12.3 out[31]                  
+    0:00:09    8851.0     10.03     318.6      12.3 out[31]                  
+    0:00:09    8847.4     10.02     318.5      12.3 out[31]                  
+    0:00:09    8839.1      9.98     317.8      12.3 out[31]                  
+    0:00:09    8843.7      9.94     317.3      12.3 out[31]                  
+    0:00:09    8850.1      9.93     317.2      12.3 out[31]                  
+    0:00:09    8855.7      9.92     316.8      12.3 out[31]                  
+    0:00:09    8863.0      9.92     317.4      12.3 out[31]                  
+    0:00:09    8870.4      9.89     316.8      12.3 out[31]                  
+    0:00:09    8865.8      9.87     316.3      12.3 out[31]                  
+    0:00:09    8880.5      9.87     316.2      12.3 out[31]                  
+    0:00:09    8876.9      9.85     314.9      12.3 out[31]                  
+    0:00:09    8894.4      9.82     314.3      12.3 out[31]                  
+    0:00:10    8893.4      9.82     314.2      12.3 out[31]                  
+    0:00:10    8893.4      9.81     313.9      12.3 out[31]                  
+    0:00:10    8889.8      9.81     313.9      12.3 out[31]                  
+    0:00:10    8892.5      9.78     313.5      12.3 out[31]                  
+    0:00:10    8883.3      9.77     313.3      12.3 out[31]                  
+    0:00:10    8888.8      9.77     313.3      12.3 out[31]                  
+    0:00:10    8886.1      9.77     313.2      12.3 out[31]                  
+    0:00:10    8890.7      9.75     312.3      12.3 out[31]                  
+    0:00:10    8890.7      9.74     312.3      12.3 out[31]                  
+    0:00:10    8885.1      9.74     312.0      12.3 out[31]                  
+    0:00:10    8892.5      9.74     312.0      12.3 out[31]                  
+    0:00:11    8918.3      9.72     311.8      12.3 out[31]                  
+    0:00:11    8919.2      9.72     311.8      12.3 out[31]                  
+    0:00:11    8919.2      9.72     311.8      12.3 out[31]                  
+    0:00:11    8923.9      9.71     308.9      12.3 out[31]                  
+    0:00:11    8911.0      9.69     308.0      12.3 out[31]                  
+    0:00:11    8936.8      9.66     307.6      12.3 out[31]                  
+    0:00:11    8952.4      9.66     308.3      12.3 out[31]                  
+    0:00:11    8968.1      9.66     308.3      12.3 out[31]                  
+    0:00:11    8968.1      9.66     308.3      12.3 out[31]                  
+    0:00:11    8983.8      9.65     309.8      12.3 out[31]                  
+    0:00:12    9009.6      9.62     312.6      12.3 out[31]                  
+    0:00:12    9040.0      9.57     313.7      12.3 out[31]                  
+    0:00:12    9054.7      9.56     315.3      12.3 out[31]                  
+    0:00:12    9109.1      9.55     319.0      12.3 out[31]                  
+    0:00:12    9108.2      9.53     318.8      12.3 out[31]                  
+    0:00:12    9176.4      9.52     319.7      34.5 out[31]                  
+    0:00:12    9215.1      9.49     320.5      34.5 out[31]                  
+    0:00:12    9215.1      9.49     320.4      34.5 out[31]                  
+    0:00:12    9220.6      9.49     320.3      34.5 out[31]                  
+    0:00:12    9202.2      9.45     319.4      34.5 out[31]                  
+    0:00:12    9206.8      9.45     319.5      34.5 out[31]                  
+    0:00:12    9222.5      9.44     320.3      34.5 out[31]                  
+    0:00:12    9239.0      9.43     321.2      34.5 out[31]                  
+    0:00:12    9244.6      9.41     321.8      34.5 out[31]                  
+    0:00:12    9245.5      9.41     322.1      34.5 out[31]                  
+    0:00:13    9240.9      9.40     321.5      34.5 out[31]                  
+    0:00:13    9281.4      9.33     317.1      34.5                          
+    0:00:13    9281.4      9.33     317.1      34.5                          
+
+
+  Beginning Design Rule Fixing  (max_transition)  (max_capacitance)
+  ----------------------------
+
+                                  TOTAL                                      
+   ELAPSED            WORST NEG   SETUP    DESIGN                            
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT         
+  --------- --------- --------- --------- --------- -------------------------
+    0:00:13    9281.4      9.29     315.0      34.5                          
+    0:00:13    9198.5      9.29     315.0       0.0 out[31]                  
+    0:00:13    9198.5      9.28     314.9       0.0 out[31]                  
+    0:00:13    9218.8      9.28     314.6       0.0 out[31]                  
+    0:00:13    9234.4      9.28     315.7       0.0 out[31]                  
+    0:00:13    9234.4      9.28     315.5       0.0 out[31]                  
+    0:00:14    9228.9      9.26     315.2       0.0 out[31]                  
+    0:00:14    9242.7      9.26     315.1       0.0 out[31]                  
+    0:00:14    9248.3      9.25     314.9       0.0 out[31]                  
+    0:00:14    9248.3      9.25     314.8       0.0 out[31]                  
+    0:00:14    9248.3      9.25     314.7       0.0 out[31]                  
+    0:00:15    9248.3      9.24     314.7       0.0 out[31]                  
+    0:00:15    9248.3      9.24     314.4       0.0 out[31]                  
+    0:00:15    9253.8      9.24     314.3       0.0 out[31]                  
+    0:00:15    9251.9      9.24     314.2       0.0                          
+    0:00:15    9258.4      9.23     314.2       0.0                          
+    0:00:15    9258.4      9.23     314.2       0.0                          
+    0:00:15    9305.4      9.23     314.1       0.0                          
+    0:00:15    9300.8      9.23     313.7       0.0                          
+    0:00:15    9341.3      9.23     313.4       0.0                          
+    0:00:15    9340.4      9.23     313.3       0.0                          
+
+
+  Beginning Area-Recovery Phase  (cleanup)
+  -----------------------------
+
+                                  TOTAL                                      
+   ELAPSED            WORST NEG   SETUP    DESIGN                            
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT         
+  --------- --------- --------- --------- --------- -------------------------
+    0:00:15    9340.4      9.23     313.3       0.0                          
+    0:00:15    9340.4      9.23     313.3       0.0                          
+    0:00:15    8879.6      9.23     309.8       0.0                          
+    0:00:16    8832.6      9.23     309.8       0.0                          
+    0:00:16    8832.6      9.23     309.8       0.0                          
+    0:00:16    8832.6      9.23     309.8       0.0                          
+    0:00:16    8832.6      9.23     309.8       0.0                          
+    0:00:16    8730.3      9.23     309.7       0.0                          
+    0:00:16    8684.2      9.23     309.7       0.0                          
+    0:00:16    8684.2      9.23     309.7       0.0                          
+    0:00:16    8684.2      9.23     309.7       0.0                          
+    0:00:16    8684.2      9.23     309.7       0.0                          
+    0:00:16    8684.2      9.23     309.7       0.0                          
+    0:00:16    8684.2      9.23     309.7       0.0                          
+    0:00:16    8686.1      9.23     309.7       0.0 out[31]                  
+    0:00:16    8691.6      9.23     309.7       0.0 out[31]                  
+    0:00:16    8686.1      9.23     309.7       0.0                          
+    0:00:16    8686.1      9.23     309.7       0.0                          
+    0:00:17    8731.2      9.23     309.6       0.0                          
+Loading db file '/home/user24/Downloads/Lab4/ref/models/saed90nm_typ_ht.db'
+
+
+Note: Symbol # after min delay cost means estimated hold TNS across all active scenarios 
+
+
+  Optimization Complete
+  ---------------------
+Information: Total number of MV cells in the design.
+----------------------------------------------------------------------------------------------------
+ MV Cells                                           Total Number                                   
+----------------------------------------------------------------------------------------------------
+ Level Shifter:                                     0                                             
+ Enable Level Shifter:                              0                                             
+ Isolation Cell:                                    0                                             
+ Retention Cell:                                    0                                             
+ Retention Clamp Cell:                              0                                             
+ Switch Cell:                                       0                                             
+ Always-On Cell:                                    0                                             
+ Repeater Cell:                                     0                                             
+
+----------------------------------------------------------------------------------------------------
+Unmapped MV Cells 
+----------------------------------------------------------------------------------------------------
+0 Isolation Cells are unmapped 
+0 Retention Clamp Cells are unmapped 
+----------------------------------------------------------------------------------------------------
+1

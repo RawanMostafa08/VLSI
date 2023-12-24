@@ -1,0 +1,576 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay min
+        -max_paths 10
+        -sort_by slack
+Design : shiftMultiplier
+Version: U-2022.12-SP7
+Date   : Sat Dec 23 19:07:37 2023
+****************************************
+
+ # A fanout number of 1000 was used for high fanout net computations.
+
+Operating Conditions: TYPICAL   Library: saed90nm_typ_ht
+Wire Load Model Mode: enclosed
+
+  Startpoint: B[0] (input port clocked by vsysclk)
+  Endpoint: P[6] (output port clocked by vsysclk)
+  Path Group: vsysclk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  shiftMultiplier    280000                saed90nm_typ_ht
+  shiftMultiplier_DW02_mult_30
+                     8000                  saed90nm_typ_ht
+  Ripple4bit_7       ForQA                 saed90nm_typ_ht
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock vsysclk (rise edge)                               0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    0.20       0.20 r
+  B[0] (in)                                               0.00       0.20 r
+  U602/Q (MUX21X1)                                        0.76       0.96 r
+  mult_32_I31/A[0] (shiftMultiplier_DW02_mult_30)         0.00       0.96 r
+  mult_32_I31/U3/ZN (INVX0)                               0.47       1.42 f
+  mult_32_I31/U8/ZN (INVX0)                               0.19       1.61 r
+  mult_32_I31/U13/Q (AND2X1)                              0.20       1.81 r
+  mult_32_I31/PRODUCT[5] (shiftMultiplier_DW02_mult_30)
+                                                          0.00       1.81 r
+  Adderrrr2[30].tc/in2[5] (ShiftAdder_1)                  0.00       1.81 r
+  Adderrrr2[30].tc/DUT2/B[5] (CarryBypass_Adder_1)        0.00       1.81 r
+  Adderrrr2[30].tc/DUT2/ripple_loop[1].R/B[1] (Ripple4bit_7)
+                                                          0.00       1.81 r
+  Adderrrr2[30].tc/DUT2/ripple_loop[1].R/U4/Q (AO22X1)
+                                                          0.58       2.39 r
+  Adderrrr2[30].tc/DUT2/ripple_loop[1].R/U5/Q (XOR2X1)
+                                                          0.20       2.59 r
+  Adderrrr2[30].tc/DUT2/ripple_loop[1].R/U11/Q (XOR2X1)
+                                                          0.21       2.80 f
+  Adderrrr2[30].tc/DUT2/ripple_loop[1].R/Sum[2] (Ripple4bit_7)
+                                                          0.00       2.80 f
+  Adderrrr2[30].tc/DUT2/Sum[6] (CarryBypass_Adder_1)      0.00       2.80 f
+  Adderrrr2[30].tc/out[6] (ShiftAdder_1)                  0.00       2.80 f
+  U609/Q (AO22X1)                                         0.61       3.40 f
+  P[6] (out)                                              2.23       5.64 f
+  data arrival time                                                  5.64
+
+  clock vsysclk (rise edge)                               0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  output external delay                                  -0.50      -0.50
+  data required time                                                -0.50
+  --------------------------------------------------------------------------
+  data required time                                                -0.50
+  data arrival time                                                 -5.64
+  --------------------------------------------------------------------------
+  slack (MET)                                                        6.14
+
+
+  Startpoint: B[0] (input port clocked by vsysclk)
+  Endpoint: P[10] (output port clocked by vsysclk)
+  Path Group: vsysclk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  shiftMultiplier    280000                saed90nm_typ_ht
+  shiftMultiplier_DW02_mult_30
+                     8000                  saed90nm_typ_ht
+  Ripple4bit_6       ForQA                 saed90nm_typ_ht
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock vsysclk (rise edge)                               0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    0.20       0.20 r
+  B[0] (in)                                               0.00       0.20 r
+  U602/Q (MUX21X1)                                        0.76       0.96 r
+  mult_32_I31/A[0] (shiftMultiplier_DW02_mult_30)         0.00       0.96 r
+  mult_32_I31/U3/ZN (INVX0)                               0.47       1.42 f
+  mult_32_I31/U8/ZN (INVX0)                               0.19       1.61 r
+  mult_32_I31/U7/Q (AND2X1)                               0.20       1.81 r
+  mult_32_I31/PRODUCT[9] (shiftMultiplier_DW02_mult_30)
+                                                          0.00       1.81 r
+  Adderrrr2[30].tc/in2[9] (ShiftAdder_1)                  0.00       1.81 r
+  Adderrrr2[30].tc/DUT2/B[9] (CarryBypass_Adder_1)        0.00       1.81 r
+  Adderrrr2[30].tc/DUT2/ripple_loop[2].R/B[1] (Ripple4bit_6)
+                                                          0.00       1.81 r
+  Adderrrr2[30].tc/DUT2/ripple_loop[2].R/U4/Q (AO22X1)
+                                                          0.58       2.39 r
+  Adderrrr2[30].tc/DUT2/ripple_loop[2].R/U5/Q (XOR2X1)
+                                                          0.20       2.59 r
+  Adderrrr2[30].tc/DUT2/ripple_loop[2].R/U11/Q (XOR2X1)
+                                                          0.21       2.80 f
+  Adderrrr2[30].tc/DUT2/ripple_loop[2].R/Sum[2] (Ripple4bit_6)
+                                                          0.00       2.80 f
+  Adderrrr2[30].tc/DUT2/Sum[10] (CarryBypass_Adder_1)     0.00       2.80 f
+  Adderrrr2[30].tc/out[10] (ShiftAdder_1)                 0.00       2.80 f
+  U613/Q (AO22X1)                                         0.61       3.41 f
+  P[10] (out)                                             2.23       5.64 f
+  data arrival time                                                  5.64
+
+  clock vsysclk (rise edge)                               0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  output external delay                                  -0.50      -0.50
+  data required time                                                -0.50
+  --------------------------------------------------------------------------
+  data required time                                                -0.50
+  data arrival time                                                 -5.64
+  --------------------------------------------------------------------------
+  slack (MET)                                                        6.14
+
+
+  Startpoint: B[0] (input port clocked by vsysclk)
+  Endpoint: P[11] (output port clocked by vsysclk)
+  Path Group: vsysclk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  shiftMultiplier    280000                saed90nm_typ_ht
+  shiftMultiplier_DW02_mult_30
+                     8000                  saed90nm_typ_ht
+  Ripple4bit_6       ForQA                 saed90nm_typ_ht
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock vsysclk (rise edge)                               0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    0.20       0.20 r
+  B[0] (in)                                               0.00       0.20 r
+  U602/Q (MUX21X1)                                        0.76       0.96 r
+  mult_32_I31/A[0] (shiftMultiplier_DW02_mult_30)         0.00       0.96 r
+  mult_32_I31/U3/ZN (INVX0)                               0.47       1.42 f
+  mult_32_I31/U8/ZN (INVX0)                               0.19       1.61 r
+  mult_32_I31/U17/Q (AND2X1)                              0.20       1.81 r
+  mult_32_I31/PRODUCT[10] (shiftMultiplier_DW02_mult_30)
+                                                          0.00       1.81 r
+  Adderrrr2[30].tc/in2[10] (ShiftAdder_1)                 0.00       1.81 r
+  Adderrrr2[30].tc/DUT2/B[10] (CarryBypass_Adder_1)       0.00       1.81 r
+  Adderrrr2[30].tc/DUT2/ripple_loop[2].R/B[2] (Ripple4bit_6)
+                                                          0.00       1.81 r
+  Adderrrr2[30].tc/DUT2/ripple_loop[2].R/U6/Q (AO22X1)
+                                                          0.58       2.39 r
+  Adderrrr2[30].tc/DUT2/ripple_loop[2].R/U7/Q (XOR2X1)
+                                                          0.20       2.59 r
+  Adderrrr2[30].tc/DUT2/ripple_loop[2].R/U12/Q (XOR2X1)
+                                                          0.21       2.80 f
+  Adderrrr2[30].tc/DUT2/ripple_loop[2].R/Sum[3] (Ripple4bit_6)
+                                                          0.00       2.80 f
+  Adderrrr2[30].tc/DUT2/Sum[11] (CarryBypass_Adder_1)     0.00       2.80 f
+  Adderrrr2[30].tc/out[11] (ShiftAdder_1)                 0.00       2.80 f
+  U614/Q (AO22X1)                                         0.61       3.41 f
+  P[11] (out)                                             2.23       5.64 f
+  data arrival time                                                  5.64
+
+  clock vsysclk (rise edge)                               0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  output external delay                                  -0.50      -0.50
+  data required time                                                -0.50
+  --------------------------------------------------------------------------
+  data required time                                                -0.50
+  data arrival time                                                 -5.64
+  --------------------------------------------------------------------------
+  slack (MET)                                                        6.14
+
+
+  Startpoint: B[0] (input port clocked by vsysclk)
+  Endpoint: P[7] (output port clocked by vsysclk)
+  Path Group: vsysclk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  shiftMultiplier    280000                saed90nm_typ_ht
+  shiftMultiplier_DW02_mult_30
+                     8000                  saed90nm_typ_ht
+  Ripple4bit_7       ForQA                 saed90nm_typ_ht
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock vsysclk (rise edge)                               0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    0.20       0.20 r
+  B[0] (in)                                               0.00       0.20 r
+  U602/Q (MUX21X1)                                        0.76       0.96 r
+  mult_32_I31/A[0] (shiftMultiplier_DW02_mult_30)         0.00       0.96 r
+  mult_32_I31/U3/ZN (INVX0)                               0.47       1.42 f
+  mult_32_I31/U8/ZN (INVX0)                               0.19       1.61 r
+  mult_32_I31/U14/Q (AND2X1)                              0.20       1.81 r
+  mult_32_I31/PRODUCT[6] (shiftMultiplier_DW02_mult_30)
+                                                          0.00       1.81 r
+  Adderrrr2[30].tc/in2[6] (ShiftAdder_1)                  0.00       1.81 r
+  Adderrrr2[30].tc/DUT2/B[6] (CarryBypass_Adder_1)        0.00       1.81 r
+  Adderrrr2[30].tc/DUT2/ripple_loop[1].R/B[2] (Ripple4bit_7)
+                                                          0.00       1.81 r
+  Adderrrr2[30].tc/DUT2/ripple_loop[1].R/U6/Q (AO22X1)
+                                                          0.58       2.39 r
+  Adderrrr2[30].tc/DUT2/ripple_loop[1].R/U7/Q (XOR2X1)
+                                                          0.20       2.59 r
+  Adderrrr2[30].tc/DUT2/ripple_loop[1].R/U12/Q (XOR2X1)
+                                                          0.21       2.80 f
+  Adderrrr2[30].tc/DUT2/ripple_loop[1].R/Sum[3] (Ripple4bit_7)
+                                                          0.00       2.80 f
+  Adderrrr2[30].tc/DUT2/Sum[7] (CarryBypass_Adder_1)      0.00       2.80 f
+  Adderrrr2[30].tc/out[7] (ShiftAdder_1)                  0.00       2.80 f
+  U610/Q (AO22X1)                                         0.61       3.41 f
+  P[7] (out)                                              2.23       5.64 f
+  data arrival time                                                  5.64
+
+  clock vsysclk (rise edge)                               0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  output external delay                                  -0.50      -0.50
+  data required time                                                -0.50
+  --------------------------------------------------------------------------
+  data required time                                                -0.50
+  data arrival time                                                 -5.64
+  --------------------------------------------------------------------------
+  slack (MET)                                                        6.14
+
+
+  Startpoint: B[0] (input port clocked by vsysclk)
+  Endpoint: P[9] (output port clocked by vsysclk)
+  Path Group: vsysclk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  shiftMultiplier    280000                saed90nm_typ_ht
+  shiftMultiplier_DW02_mult_30
+                     8000                  saed90nm_typ_ht
+  Ripple4bit_6       ForQA                 saed90nm_typ_ht
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock vsysclk (rise edge)                               0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    0.20       0.20 r
+  B[0] (in)                                               0.00       0.20 r
+  U602/Q (MUX21X1)                                        0.76       0.96 r
+  mult_32_I31/A[0] (shiftMultiplier_DW02_mult_30)         0.00       0.96 r
+  mult_32_I31/U3/ZN (INVX0)                               0.47       1.42 f
+  mult_32_I31/U8/ZN (INVX0)                               0.19       1.61 r
+  mult_32_I31/U16/Q (AND2X1)                              0.20       1.82 r
+  mult_32_I31/PRODUCT[8] (shiftMultiplier_DW02_mult_30)
+                                                          0.00       1.82 r
+  Adderrrr2[30].tc/in2[8] (ShiftAdder_1)                  0.00       1.82 r
+  Adderrrr2[30].tc/DUT2/B[8] (CarryBypass_Adder_1)        0.00       1.82 r
+  Adderrrr2[30].tc/DUT2/ripple_loop[2].R/B[0] (Ripple4bit_6)
+                                                          0.00       1.82 r
+  Adderrrr2[30].tc/DUT2/ripple_loop[2].R/U2/Q (AO22X1)
+                                                          0.59       2.40 r
+  Adderrrr2[30].tc/DUT2/ripple_loop[2].R/U3/Q (XOR2X1)
+                                                          0.20       2.60 r
+  Adderrrr2[30].tc/DUT2/ripple_loop[2].R/U10/Q (XOR2X1)
+                                                          0.21       2.81 f
+  Adderrrr2[30].tc/DUT2/ripple_loop[2].R/Sum[1] (Ripple4bit_6)
+                                                          0.00       2.81 f
+  Adderrrr2[30].tc/DUT2/Sum[9] (CarryBypass_Adder_1)      0.00       2.81 f
+  Adderrrr2[30].tc/out[9] (ShiftAdder_1)                  0.00       2.81 f
+  U612/Q (AO22X1)                                         0.61       3.41 f
+  P[9] (out)                                              2.23       5.65 f
+  data arrival time                                                  5.65
+
+  clock vsysclk (rise edge)                               0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  output external delay                                  -0.50      -0.50
+  data required time                                                -0.50
+  --------------------------------------------------------------------------
+  data required time                                                -0.50
+  data arrival time                                                 -5.65
+  --------------------------------------------------------------------------
+  slack (MET)                                                        6.15
+
+
+  Startpoint: B[0] (input port clocked by vsysclk)
+  Endpoint: P[5] (output port clocked by vsysclk)
+  Path Group: vsysclk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  shiftMultiplier    280000                saed90nm_typ_ht
+  shiftMultiplier_DW02_mult_30
+                     8000                  saed90nm_typ_ht
+  Ripple4bit_7       ForQA                 saed90nm_typ_ht
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock vsysclk (rise edge)                               0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    0.20       0.20 r
+  B[0] (in)                                               0.00       0.20 r
+  U602/Q (MUX21X1)                                        0.76       0.96 r
+  mult_32_I31/A[0] (shiftMultiplier_DW02_mult_30)         0.00       0.96 r
+  mult_32_I31/U3/ZN (INVX0)                               0.47       1.42 f
+  mult_32_I31/U8/ZN (INVX0)                               0.19       1.61 r
+  mult_32_I31/U12/Q (AND2X1)                              0.20       1.82 r
+  mult_32_I31/PRODUCT[4] (shiftMultiplier_DW02_mult_30)
+                                                          0.00       1.82 r
+  Adderrrr2[30].tc/in2[4] (ShiftAdder_1)                  0.00       1.82 r
+  Adderrrr2[30].tc/DUT2/B[4] (CarryBypass_Adder_1)        0.00       1.82 r
+  Adderrrr2[30].tc/DUT2/ripple_loop[1].R/B[0] (Ripple4bit_7)
+                                                          0.00       1.82 r
+  Adderrrr2[30].tc/DUT2/ripple_loop[1].R/U2/Q (AO22X1)
+                                                          0.59       2.40 r
+  Adderrrr2[30].tc/DUT2/ripple_loop[1].R/U3/Q (XOR2X1)
+                                                          0.20       2.60 r
+  Adderrrr2[30].tc/DUT2/ripple_loop[1].R/U10/Q (XOR2X1)
+                                                          0.21       2.81 f
+  Adderrrr2[30].tc/DUT2/ripple_loop[1].R/Sum[1] (Ripple4bit_7)
+                                                          0.00       2.81 f
+  Adderrrr2[30].tc/DUT2/Sum[5] (CarryBypass_Adder_1)      0.00       2.81 f
+  Adderrrr2[30].tc/out[5] (ShiftAdder_1)                  0.00       2.81 f
+  U608/Q (AO22X1)                                         0.61       3.41 f
+  P[5] (out)                                              2.23       5.65 f
+  data arrival time                                                  5.65
+
+  clock vsysclk (rise edge)                               0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  output external delay                                  -0.50      -0.50
+  data required time                                                -0.50
+  --------------------------------------------------------------------------
+  data required time                                                -0.50
+  data arrival time                                                 -5.65
+  --------------------------------------------------------------------------
+  slack (MET)                                                        6.15
+
+
+  Startpoint: B[0] (input port clocked by vsysclk)
+  Endpoint: P[12] (output port clocked by vsysclk)
+  Path Group: vsysclk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  shiftMultiplier    280000                saed90nm_typ_ht
+  shiftMultiplier_DW02_mult_30
+                     8000                  saed90nm_typ_ht
+  CarryBypass_Adder_1
+                     8000                  saed90nm_typ_ht
+  Ripple4bit_5       ForQA                 saed90nm_typ_ht
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock vsysclk (rise edge)                               0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    0.20       0.20 r
+  B[0] (in)                                               0.00       0.20 r
+  U602/Q (MUX21X1)                                        0.76       0.96 r
+  mult_32_I31/A[0] (shiftMultiplier_DW02_mult_30)         0.00       0.96 r
+  mult_32_I31/U3/ZN (INVX0)                               0.47       1.42 f
+  mult_32_I31/U8/ZN (INVX0)                               0.19       1.61 r
+  mult_32_I31/U18/Q (AND2X1)                              0.20       1.81 r
+  mult_32_I31/PRODUCT[11] (shiftMultiplier_DW02_mult_30)
+                                                          0.00       1.81 r
+  Adderrrr2[30].tc/in2[11] (ShiftAdder_1)                 0.00       1.81 r
+  Adderrrr2[30].tc/DUT2/B[11] (CarryBypass_Adder_1)       0.00       1.81 r
+  Adderrrr2[30].tc/DUT2/ripple_loop[2].R/B[3] (Ripple4bit_6)
+                                                          0.00       1.81 r
+  Adderrrr2[30].tc/DUT2/ripple_loop[2].R/U8/Q (AO22X1)
+                                                          0.57       2.39 r
+  Adderrrr2[30].tc/DUT2/ripple_loop[2].R/Cout (Ripple4bit_6)
+                                                          0.00       2.39 r
+  Adderrrr2[30].tc/DUT2/ripple_loop[3].R/Cin (Ripple4bit_5)
+                                                          0.00       2.39 r
+  Adderrrr2[30].tc/DUT2/ripple_loop[3].R/U1/Q (XOR2X1)
+                                                          0.21       2.60 r
+  Adderrrr2[30].tc/DUT2/ripple_loop[3].R/U9/Q (XOR2X1)
+                                                          0.21       2.81 f
+  Adderrrr2[30].tc/DUT2/ripple_loop[3].R/Sum[0] (Ripple4bit_5)
+                                                          0.00       2.81 f
+  Adderrrr2[30].tc/DUT2/Sum[12] (CarryBypass_Adder_1)     0.00       2.81 f
+  Adderrrr2[30].tc/out[12] (ShiftAdder_1)                 0.00       2.81 f
+  U615/Q (AO22X1)                                         0.61       3.42 f
+  P[12] (out)                                             2.23       5.65 f
+  data arrival time                                                  5.65
+
+  clock vsysclk (rise edge)                               0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  output external delay                                  -0.50      -0.50
+  data required time                                                -0.50
+  --------------------------------------------------------------------------
+  data required time                                                -0.50
+  data arrival time                                                 -5.65
+  --------------------------------------------------------------------------
+  slack (MET)                                                        6.15
+
+
+  Startpoint: B[0] (input port clocked by vsysclk)
+  Endpoint: P[4] (output port clocked by vsysclk)
+  Path Group: vsysclk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  shiftMultiplier    280000                saed90nm_typ_ht
+  shiftMultiplier_DW02_mult_30
+                     8000                  saed90nm_typ_ht
+  CarryBypass_Adder_1
+                     8000                  saed90nm_typ_ht
+  Ripple4bit_7       ForQA                 saed90nm_typ_ht
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock vsysclk (rise edge)                               0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    0.20       0.20 r
+  B[0] (in)                                               0.00       0.20 r
+  U602/Q (MUX21X1)                                        0.76       0.96 r
+  mult_32_I31/A[0] (shiftMultiplier_DW02_mult_30)         0.00       0.96 r
+  mult_32_I31/U3/ZN (INVX0)                               0.47       1.42 f
+  mult_32_I31/U8/ZN (INVX0)                               0.19       1.61 r
+  mult_32_I31/U11/Q (AND2X1)                              0.20       1.81 r
+  mult_32_I31/PRODUCT[3] (shiftMultiplier_DW02_mult_30)
+                                                          0.00       1.81 r
+  Adderrrr2[30].tc/in2[3] (ShiftAdder_1)                  0.00       1.81 r
+  Adderrrr2[30].tc/DUT2/B[3] (CarryBypass_Adder_1)        0.00       1.81 r
+  Adderrrr2[30].tc/DUT2/ripple_loop[0].R/B[3] (Ripple4bit_8)
+                                                          0.00       1.81 r
+  Adderrrr2[30].tc/DUT2/ripple_loop[0].R/U8/Q (AO22X1)
+                                                          0.57       2.39 r
+  Adderrrr2[30].tc/DUT2/ripple_loop[0].R/Cout (Ripple4bit_8)
+                                                          0.00       2.39 r
+  Adderrrr2[30].tc/DUT2/ripple_loop[1].R/Cin (Ripple4bit_7)
+                                                          0.00       2.39 r
+  Adderrrr2[30].tc/DUT2/ripple_loop[1].R/U1/Q (XOR2X1)
+                                                          0.21       2.60 r
+  Adderrrr2[30].tc/DUT2/ripple_loop[1].R/U9/Q (XOR2X1)
+                                                          0.21       2.81 f
+  Adderrrr2[30].tc/DUT2/ripple_loop[1].R/Sum[0] (Ripple4bit_7)
+                                                          0.00       2.81 f
+  Adderrrr2[30].tc/DUT2/Sum[4] (CarryBypass_Adder_1)      0.00       2.81 f
+  Adderrrr2[30].tc/out[4] (ShiftAdder_1)                  0.00       2.81 f
+  U607/Q (AO22X1)                                         0.61       3.42 f
+  P[4] (out)                                              2.23       5.65 f
+  data arrival time                                                  5.65
+
+  clock vsysclk (rise edge)                               0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  output external delay                                  -0.50      -0.50
+  data required time                                                -0.50
+  --------------------------------------------------------------------------
+  data required time                                                -0.50
+  data arrival time                                                 -5.65
+  --------------------------------------------------------------------------
+  slack (MET)                                                        6.15
+
+
+  Startpoint: B[0] (input port clocked by vsysclk)
+  Endpoint: P[8] (output port clocked by vsysclk)
+  Path Group: vsysclk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  shiftMultiplier    280000                saed90nm_typ_ht
+  shiftMultiplier_DW02_mult_30
+                     8000                  saed90nm_typ_ht
+  CarryBypass_Adder_1
+                     8000                  saed90nm_typ_ht
+  Ripple4bit_6       ForQA                 saed90nm_typ_ht
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock vsysclk (rise edge)                               0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    0.20       0.20 r
+  B[0] (in)                                               0.00       0.20 r
+  U602/Q (MUX21X1)                                        0.76       0.96 r
+  mult_32_I31/A[0] (shiftMultiplier_DW02_mult_30)         0.00       0.96 r
+  mult_32_I31/U3/ZN (INVX0)                               0.47       1.42 f
+  mult_32_I31/U8/ZN (INVX0)                               0.19       1.61 r
+  mult_32_I31/U15/Q (AND2X1)                              0.20       1.81 r
+  mult_32_I31/PRODUCT[7] (shiftMultiplier_DW02_mult_30)
+                                                          0.00       1.81 r
+  Adderrrr2[30].tc/in2[7] (ShiftAdder_1)                  0.00       1.81 r
+  Adderrrr2[30].tc/DUT2/B[7] (CarryBypass_Adder_1)        0.00       1.81 r
+  Adderrrr2[30].tc/DUT2/ripple_loop[1].R/B[3] (Ripple4bit_7)
+                                                          0.00       1.81 r
+  Adderrrr2[30].tc/DUT2/ripple_loop[1].R/U8/Q (AO22X1)
+                                                          0.58       2.39 r
+  Adderrrr2[30].tc/DUT2/ripple_loop[1].R/Cout (Ripple4bit_7)
+                                                          0.00       2.39 r
+  Adderrrr2[30].tc/DUT2/ripple_loop[2].R/Cin (Ripple4bit_6)
+                                                          0.00       2.39 r
+  Adderrrr2[30].tc/DUT2/ripple_loop[2].R/U1/Q (XOR2X1)
+                                                          0.21       2.60 r
+  Adderrrr2[30].tc/DUT2/ripple_loop[2].R/U9/Q (XOR2X1)
+                                                          0.21       2.81 f
+  Adderrrr2[30].tc/DUT2/ripple_loop[2].R/Sum[0] (Ripple4bit_6)
+                                                          0.00       2.81 f
+  Adderrrr2[30].tc/DUT2/Sum[8] (CarryBypass_Adder_1)      0.00       2.81 f
+  Adderrrr2[30].tc/out[8] (ShiftAdder_1)                  0.00       2.81 f
+  U611/Q (AO22X1)                                         0.61       3.42 f
+  P[8] (out)                                              2.23       5.65 f
+  data arrival time                                                  5.65
+
+  clock vsysclk (rise edge)                               0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  output external delay                                  -0.50      -0.50
+  data required time                                                -0.50
+  --------------------------------------------------------------------------
+  data required time                                                -0.50
+  data arrival time                                                 -5.65
+  --------------------------------------------------------------------------
+  slack (MET)                                                        6.15
+
+
+  Startpoint: B[0] (input port clocked by vsysclk)
+  Endpoint: P[3] (output port clocked by vsysclk)
+  Path Group: vsysclk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  shiftMultiplier    280000                saed90nm_typ_ht
+  shiftMultiplier_DW02_mult_30
+                     8000                  saed90nm_typ_ht
+  Ripple4bit_8       ForQA                 saed90nm_typ_ht
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock vsysclk (rise edge)                               0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    0.20       0.20 r
+  B[0] (in)                                               0.00       0.20 r
+  U602/Q (MUX21X1)                                        0.76       0.96 r
+  mult_32_I31/A[0] (shiftMultiplier_DW02_mult_30)         0.00       0.96 r
+  mult_32_I31/U3/ZN (INVX0)                               0.47       1.42 f
+  mult_32_I31/U8/ZN (INVX0)                               0.19       1.61 r
+  mult_32_I31/U2/Q (AND2X4)                               0.26       1.87 r
+  mult_32_I31/PRODUCT[2] (shiftMultiplier_DW02_mult_30)
+                                                          0.00       1.87 r
+  Adderrrr2[30].tc/in2[2] (ShiftAdder_1)                  0.00       1.87 r
+  Adderrrr2[30].tc/DUT2/B[2] (CarryBypass_Adder_1)        0.00       1.87 r
+  Adderrrr2[30].tc/DUT2/ripple_loop[0].R/B[2] (Ripple4bit_8)
+                                                          0.00       1.87 r
+  Adderrrr2[30].tc/DUT2/ripple_loop[0].R/U6/Q (AO22X1)
+                                                          0.58       2.45 r
+  Adderrrr2[30].tc/DUT2/ripple_loop[0].R/U7/Q (XOR2X1)
+                                                          0.20       2.65 r
+  Adderrrr2[30].tc/DUT2/ripple_loop[0].R/U12/Q (XOR2X1)
+                                                          0.21       2.85 f
+  Adderrrr2[30].tc/DUT2/ripple_loop[0].R/Sum[3] (Ripple4bit_8)
+                                                          0.00       2.85 f
+  Adderrrr2[30].tc/DUT2/Sum[3] (CarryBypass_Adder_1)      0.00       2.85 f
+  Adderrrr2[30].tc/out[3] (ShiftAdder_1)                  0.00       2.85 f
+  U606/Q (AO22X1)                                         0.61       3.46 f
+  P[3] (out)                                              2.23       5.69 f
+  data arrival time                                                  5.69
+
+  clock vsysclk (rise edge)                               0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  output external delay                                  -0.50      -0.50
+  data required time                                                -0.50
+  --------------------------------------------------------------------------
+  data required time                                                -0.50
+  data arrival time                                                 -5.69
+  --------------------------------------------------------------------------
+  slack (MET)                                                        6.19
+
+
+1

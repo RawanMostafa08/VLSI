@@ -1,0 +1,30 @@
+ 
+****************************************
+Report : area
+Design : MultiplierOperator
+Version: U-2022.12-SP7
+Date   : Sun Dec 24 14:16:30 2023
+****************************************
+
+Library(s) Used:
+
+    saed90nm_typ_ht (File: /home/user24/Downloads/Lab4/ref/models/saed90nm_typ_ht.db)
+
+Number of ports:                          445
+Number of nets:                          5499
+Number of cells:                         4583
+Number of combinational cells:           4578
+Number of sequential cells:                 0
+Number of macros/black boxes:               0
+Number of buf/inv:                        413
+Number of references:                       1
+
+Combinational area:              50012.467566
+Buf/Inv area:                     2515.968050
+Noncombinational area:               0.000000
+Macro/Black Box area:                0.000000
+Net Interconnect area:            2518.016546
+
+Total cell area:                 50012.467566
+Total area:                      52530.484111
+1

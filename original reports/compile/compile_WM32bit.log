@@ -1,0 +1,157 @@
+Warning: Design 'WM32bit' has '3' unresolved references. For more detailed information, use the "link" command. (UID-341)
+====================================================================================================
+| Flow Information                                                                                 |
+----------------------------------------------------------------------------------------------------
+| Flow         | Design Compiler                                                                   |
+====================================================================================================
+| Design Information                                      | Value                                  |
+====================================================================================================
+| Number of Scenarios                                     | 0                                      |
+| Leaf Cell Count                                         | 1637                                   |
+| Number of User Hierarchies                              | 417                                    |
+| Sequential Cell Count                                   | 0                                      |
+| Macro Count                                             | 0                                      |
+| Number of Power Domains                                 | 0                                      |
+| Number of Path Groups                                   | 2                                      |
+| Number of VT Class                                      | 1                                      |
+| Number of Clocks                                        | 1                                      |
+| Number of Dont Touch Cells                              | 265                                    |
+| Number of Dont Touch Nets                               | 0                                      |
+| Number of Size Only Cells                               | 97                                     |
+| Design with UPF Data                                    | false                                  |
+====================================================================================================
+
+Information: There are 1206 potential problems in your design. Please run 'check_design' for more information. (LINT-99)
+
+
+
+  Beginning Pass 1 Mapping
+  ------------------------
+  Processing 'HA_0'
+  Processing 'WM8bit_0'
+Information: Cell 'U5/U1' (*GEN*166) cannot be exactly translated 1 for 1 into target library. (TRANS-9)
+Information: Cell 'U6/U1' (*GEN*165) cannot be exactly translated 1 for 1 into target library. (TRANS-9)
+Information: Cell 'U7/U1' (*GEN*164) cannot be exactly translated 1 for 1 into target library. (TRANS-9)
+Information: Cell 'U8/U1' (*GEN*163) cannot be exactly translated 1 for 1 into target library. (TRANS-9)
+Information: Cell 'U9/U1' (*GEN*162) cannot be exactly translated 1 for 1 into target library. (TRANS-9)
+Information: Cell 'U10/U1' (*GEN*161) cannot be exactly translated 1 for 1 into target library. (TRANS-9)
+  Processing 'WM32bit'
+Information: Building the design 'Add64'. (HDL-193)
+Warning: Cannot find the design 'Add64' in the library 'WORK'. (LBR-1)
+Information: Building the design 'FA'. (HDL-193)
+Warning:  File /home/user24/Downloads/Lab4/FA-verilog.pvl not found, or does not contain a usable description of FA. (ELAB-320)
+Presto compilation completed successfully.
+Warning: Unable to resolve reference 'Add64' in 'WM32bit'. (LINK-5)
+Warning: Unable to resolve reference 'FA' in 'WM32bit'. (LINK-5)
+Warning: Unable to resolve reference 'FA' in 'WM8bit_0'. (LINK-5)
+
+  Updating timing information
+Information: Updating design information... (UID-85)
+
+  Beginning Implementation Selection
+  ----------------------------------
+  Processing 'WM32bit_DW01_sub_0'
+  Processing 'WM32bit_DW01_inc_0'
+  Building model 'DW01_NAND2'
+  Processing 'DW01_NAND2'
+  Building model 'DW01_sub_width32' (rpl)
+  Processing 'DW01_sub_width32'
+  Building model 'DW01_sub_width32' (cla)
+  Processing 'DW01_sub_width32'
+  Building model 'DW01_inc_width32' (rpl)
+  Processing 'DW01_inc_width32'
+  Processing 'WM32bit_DW01_inc_1'
+  Processing 'WM32bit_DW01_sub_1'
+  Processing 'WM32bit_DW01_inc_2'
+  Processing 'WM32bit_DW01_sub_2'
+Information: Command 'do_operand_isolation' is obsolete and is being ignored.  Please refer to the replacement command 'set power_enable_datapath_gating true' instead. (INFO-118)
+
+  Beginning Mapping Optimizations  (Medium effort)
+  -------------------------------
+Information: Command 'do_operand_isolation' is obsolete and is being ignored.  Please refer to the replacement command 'set power_enable_datapath_gating true' instead. (INFO-118)
+
+                                  TOTAL                                      
+   ELAPSED            WORST NEG   SETUP    DESIGN                            
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT         
+  --------- --------- --------- --------- --------- -------------------------
+    0:00:03   43685.7      5.13     327.5       0.0                          
+    0:00:03   43685.7      5.13     327.5       0.0                          
+    0:00:03   43685.7      5.13     327.5       0.0                          
+    0:00:03   43685.7      5.13     327.5       0.0                          
+    0:00:03   43685.7      5.13     327.5       0.0                          
+    0:00:03   27759.5      5.13     327.5       0.0                          
+    0:00:03   27577.0      0.00       0.0       0.0                          
+    0:00:03   27119.9      0.00       0.0       0.0                          
+    0:00:04   27119.9      0.00       0.0       0.0                          
+    0:00:04   27119.9      0.00       0.0       0.0                          
+    0:00:04   27119.9      0.00       0.0       0.0                          
+    0:00:04   27119.9      0.00       0.0       0.0                          
+    0:00:04   27119.9      0.00       0.0       0.0                          
+    0:00:04   27119.9      0.00       0.0       0.0                          
+    0:00:04   27119.9      0.00       0.0       0.0                          
+
+
+
+  Beginning Delay Optimization Phase
+  ----------------------------------
+
+                                  TOTAL                                      
+   ELAPSED            WORST NEG   SETUP    DESIGN                            
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT         
+  --------- --------- --------- --------- --------- -------------------------
+    0:00:04   27119.9      0.00       0.0       0.0                          
+    0:00:04   27119.9      0.00       0.0       0.0                          
+    0:00:04   27119.9      0.00       0.0       0.0                          
+
+
+  Beginning Area-Recovery Phase  (cleanup)
+  -----------------------------
+
+                                  TOTAL                                      
+   ELAPSED            WORST NEG   SETUP    DESIGN                            
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT         
+  --------- --------- --------- --------- --------- -------------------------
+    0:00:04   27119.9      0.00       0.0       0.0                          
+    0:00:04   27119.9      0.00       0.0       0.0                          
+    0:00:04   26837.9      0.00       0.0       0.0                          
+    0:00:04   26572.5      0.00       0.0       0.0                          
+    0:00:04   26307.1      0.00       0.0       0.0                          
+    0:00:04   26041.7      0.00       0.0       0.0                          
+    0:00:04   25776.2      0.00       0.0       0.0                          
+    0:00:04   25770.7      0.00       0.0       0.0                          
+    0:00:04   25770.7      0.00       0.0       0.0                          
+    0:00:04   25770.7      0.00       0.0       0.0                          
+    0:00:04   25770.7      0.00       0.0       0.0                          
+    0:00:04   25770.7      0.00       0.0       0.0                          
+    0:00:04   25770.7      0.00       0.0       0.0                          
+    0:00:04   25770.7      0.00       0.0       0.0                          
+    0:00:04   25770.7      0.00       0.0       0.0                          
+    0:00:04   25770.7      0.00       0.0       0.0                          
+Loading db file '/home/user24/Downloads/Lab4/ref/models/saed90nm_typ_ht.db'
+
+
+Note: Symbol # after min delay cost means estimated hold TNS across all active scenarios 
+
+
+  Optimization Complete
+  ---------------------
+Information: Total number of MV cells in the design.
+----------------------------------------------------------------------------------------------------
+ MV Cells                                           Total Number                                   
+----------------------------------------------------------------------------------------------------
+ Level Shifter:                                     0                                             
+ Enable Level Shifter:                              0                                             
+ Isolation Cell:                                    0                                             
+ Retention Cell:                                    0                                             
+ Retention Clamp Cell:                              0                                             
+ Switch Cell:                                       0                                             
+ Always-On Cell:                                    0                                             
+ Repeater Cell:                                     0                                             
+
+----------------------------------------------------------------------------------------------------
+Unmapped MV Cells 
+----------------------------------------------------------------------------------------------------
+0 Isolation Cells are unmapped 
+0 Retention Clamp Cells are unmapped 
+----------------------------------------------------------------------------------------------------
+1

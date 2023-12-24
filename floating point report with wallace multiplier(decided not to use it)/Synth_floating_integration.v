@@ -1,0 +1,125 @@
+/////////////////////////////////////////////////////////////
+// Created by: Synopsys DC Expert(TM) in wire load mode
+// Version   : U-2022.12-SP7
+// Date      : Sun Dec 24 21:24:42 2023
+/////////////////////////////////////////////////////////////
+
+
+module floating_integration ( clk, input1, input2, output1 );
+  input [31:0] input1;
+  input [31:0] input2;
+  output [31:0] output1;
+  input clk;
+  wire   n1, n2, n3, n4, n5, n6, n7, n8;
+  wire   [31:0] input_reg1;
+  wire   [31:0] input_reg2;
+  wire   [31:0] output_reg;
+
+  DFFX1 \input_reg1_reg[31]  ( .D(input1[31]), .CLK(n1), .Q(input_reg1[31]) );
+  DFFX1 \input_reg1_reg[30]  ( .D(input1[30]), .CLK(n1), .Q(input_reg1[30]) );
+  DFFX1 \input_reg1_reg[29]  ( .D(input1[29]), .CLK(n1), .Q(input_reg1[29]) );
+  DFFX1 \input_reg1_reg[28]  ( .D(input1[28]), .CLK(n1), .Q(input_reg1[28]) );
+  DFFX1 \input_reg1_reg[27]  ( .D(input1[27]), .CLK(n1), .Q(input_reg1[27]) );
+  DFFX1 \input_reg1_reg[26]  ( .D(input1[26]), .CLK(n1), .Q(input_reg1[26]) );
+  DFFX1 \input_reg1_reg[25]  ( .D(input1[25]), .CLK(n1), .Q(input_reg1[25]) );
+  DFFX1 \input_reg1_reg[24]  ( .D(input1[24]), .CLK(n1), .Q(input_reg1[24]) );
+  DFFX1 \input_reg1_reg[23]  ( .D(input1[23]), .CLK(n1), .Q(input_reg1[23]) );
+  DFFX1 \input_reg1_reg[22]  ( .D(input1[22]), .CLK(n1), .Q(input_reg1[22]) );
+  DFFX1 \input_reg1_reg[21]  ( .D(input1[21]), .CLK(n1), .Q(input_reg1[21]) );
+  DFFX1 \input_reg1_reg[20]  ( .D(input1[20]), .CLK(n1), .Q(input_reg1[20]) );
+  DFFX1 \input_reg1_reg[19]  ( .D(input1[19]), .CLK(n2), .Q(input_reg1[19]) );
+  DFFX1 \input_reg1_reg[18]  ( .D(input1[18]), .CLK(n2), .Q(input_reg1[18]) );
+  DFFX1 \input_reg1_reg[17]  ( .D(input1[17]), .CLK(n2), .Q(input_reg1[17]) );
+  DFFX1 \input_reg1_reg[16]  ( .D(input1[16]), .CLK(n2), .Q(input_reg1[16]) );
+  DFFX1 \input_reg1_reg[15]  ( .D(input1[15]), .CLK(n2), .Q(input_reg1[15]) );
+  DFFX1 \input_reg1_reg[14]  ( .D(input1[14]), .CLK(n2), .Q(input_reg1[14]) );
+  DFFX1 \input_reg1_reg[13]  ( .D(input1[13]), .CLK(n2), .Q(input_reg1[13]) );
+  DFFX1 \input_reg1_reg[12]  ( .D(input1[12]), .CLK(n2), .Q(input_reg1[12]) );
+  DFFX1 \input_reg1_reg[11]  ( .D(input1[11]), .CLK(n2), .Q(input_reg1[11]) );
+  DFFX1 \input_reg1_reg[10]  ( .D(input1[10]), .CLK(n2), .Q(input_reg1[10]) );
+  DFFX1 \input_reg1_reg[9]  ( .D(input1[9]), .CLK(n2), .Q(input_reg1[9]) );
+  DFFX1 \input_reg1_reg[8]  ( .D(input1[8]), .CLK(n2), .Q(input_reg1[8]) );
+  DFFX1 \input_reg1_reg[7]  ( .D(input1[7]), .CLK(n3), .Q(input_reg1[7]) );
+  DFFX1 \input_reg1_reg[6]  ( .D(input1[6]), .CLK(n3), .Q(input_reg1[6]) );
+  DFFX1 \input_reg1_reg[5]  ( .D(input1[5]), .CLK(n3), .Q(input_reg1[5]) );
+  DFFX1 \input_reg1_reg[4]  ( .D(input1[4]), .CLK(n3), .Q(input_reg1[4]) );
+  DFFX1 \input_reg1_reg[3]  ( .D(input1[3]), .CLK(n3), .Q(input_reg1[3]) );
+  DFFX1 \input_reg1_reg[2]  ( .D(input1[2]), .CLK(n3), .Q(input_reg1[2]) );
+  DFFX1 \input_reg1_reg[1]  ( .D(input1[1]), .CLK(n3), .Q(input_reg1[1]) );
+  DFFX1 \input_reg1_reg[0]  ( .D(input1[0]), .CLK(n3), .Q(input_reg1[0]) );
+  DFFX1 \input_reg2_reg[31]  ( .D(input2[31]), .CLK(n3), .Q(input_reg2[31]) );
+  DFFX1 \input_reg2_reg[30]  ( .D(input2[30]), .CLK(n3), .Q(input_reg2[30]) );
+  DFFX1 \input_reg2_reg[29]  ( .D(input2[29]), .CLK(n3), .Q(input_reg2[29]) );
+  DFFX1 \input_reg2_reg[28]  ( .D(input2[28]), .CLK(n3), .Q(input_reg2[28]) );
+  DFFX1 \input_reg2_reg[27]  ( .D(input2[27]), .CLK(n4), .Q(input_reg2[27]) );
+  DFFX1 \input_reg2_reg[26]  ( .D(input2[26]), .CLK(n4), .Q(input_reg2[26]) );
+  DFFX1 \input_reg2_reg[25]  ( .D(input2[25]), .CLK(n4), .Q(input_reg2[25]) );
+  DFFX1 \input_reg2_reg[24]  ( .D(input2[24]), .CLK(n4), .Q(input_reg2[24]) );
+  DFFX1 \input_reg2_reg[23]  ( .D(input2[23]), .CLK(n4), .Q(input_reg2[23]) );
+  DFFX1 \input_reg2_reg[22]  ( .D(input2[22]), .CLK(n4), .Q(input_reg2[22]) );
+  DFFX1 \input_reg2_reg[21]  ( .D(input2[21]), .CLK(n4), .Q(input_reg2[21]) );
+  DFFX1 \input_reg2_reg[20]  ( .D(input2[20]), .CLK(n4), .Q(input_reg2[20]) );
+  DFFX1 \input_reg2_reg[19]  ( .D(input2[19]), .CLK(n4), .Q(input_reg2[19]) );
+  DFFX1 \input_reg2_reg[18]  ( .D(input2[18]), .CLK(n4), .Q(input_reg2[18]) );
+  DFFX1 \input_reg2_reg[17]  ( .D(input2[17]), .CLK(n4), .Q(input_reg2[17]) );
+  DFFX1 \input_reg2_reg[16]  ( .D(input2[16]), .CLK(n4), .Q(input_reg2[16]) );
+  DFFX1 \input_reg2_reg[15]  ( .D(input2[15]), .CLK(n5), .Q(input_reg2[15]) );
+  DFFX1 \input_reg2_reg[14]  ( .D(input2[14]), .CLK(n5), .Q(input_reg2[14]) );
+  DFFX1 \input_reg2_reg[13]  ( .D(input2[13]), .CLK(n5), .Q(input_reg2[13]) );
+  DFFX1 \input_reg2_reg[12]  ( .D(input2[12]), .CLK(n5), .Q(input_reg2[12]) );
+  DFFX1 \input_reg2_reg[11]  ( .D(input2[11]), .CLK(n5), .Q(input_reg2[11]) );
+  DFFX1 \input_reg2_reg[10]  ( .D(input2[10]), .CLK(n5), .Q(input_reg2[10]) );
+  DFFX1 \input_reg2_reg[9]  ( .D(input2[9]), .CLK(n5), .Q(input_reg2[9]) );
+  DFFX1 \input_reg2_reg[8]  ( .D(input2[8]), .CLK(n5), .Q(input_reg2[8]) );
+  DFFX1 \input_reg2_reg[7]  ( .D(input2[7]), .CLK(n5), .Q(input_reg2[7]) );
+  DFFX1 \input_reg2_reg[6]  ( .D(input2[6]), .CLK(n5), .Q(input_reg2[6]) );
+  DFFX1 \input_reg2_reg[5]  ( .D(input2[5]), .CLK(n5), .Q(input_reg2[5]) );
+  DFFX1 \input_reg2_reg[4]  ( .D(input2[4]), .CLK(n5), .Q(input_reg2[4]) );
+  DFFX1 \input_reg2_reg[3]  ( .D(input2[3]), .CLK(n6), .Q(input_reg2[3]) );
+  DFFX1 \input_reg2_reg[2]  ( .D(input2[2]), .CLK(n6), .Q(input_reg2[2]) );
+  DFFX1 \input_reg2_reg[1]  ( .D(input2[1]), .CLK(n6), .Q(input_reg2[1]) );
+  DFFX1 \input_reg2_reg[0]  ( .D(input2[0]), .CLK(n6), .Q(input_reg2[0]) );
+  DFFX1 \output1_reg[31]  ( .D(output_reg[31]), .CLK(n6), .Q(output1[31]) );
+  DFFX1 \output1_reg[30]  ( .D(output_reg[30]), .CLK(n6), .Q(output1[30]) );
+  DFFX1 \output1_reg[29]  ( .D(output_reg[29]), .CLK(n6), .Q(output1[29]) );
+  DFFX1 \output1_reg[28]  ( .D(output_reg[28]), .CLK(n6), .Q(output1[28]) );
+  DFFX1 \output1_reg[27]  ( .D(output_reg[27]), .CLK(n6), .Q(output1[27]) );
+  DFFX1 \output1_reg[26]  ( .D(output_reg[26]), .CLK(n6), .Q(output1[26]) );
+  DFFX1 \output1_reg[25]  ( .D(output_reg[25]), .CLK(n6), .Q(output1[25]) );
+  DFFX1 \output1_reg[24]  ( .D(output_reg[24]), .CLK(n6), .Q(output1[24]) );
+  DFFX1 \output1_reg[23]  ( .D(output_reg[23]), .CLK(n7), .Q(output1[23]) );
+  DFFX1 \output1_reg[22]  ( .D(output_reg[22]), .CLK(n7), .Q(output1[22]) );
+  DFFX1 \output1_reg[21]  ( .D(output_reg[21]), .CLK(n7), .Q(output1[21]) );
+  DFFX1 \output1_reg[20]  ( .D(output_reg[20]), .CLK(n7), .Q(output1[20]) );
+  DFFX1 \output1_reg[19]  ( .D(output_reg[19]), .CLK(n7), .Q(output1[19]) );
+  DFFX1 \output1_reg[18]  ( .D(output_reg[18]), .CLK(n7), .Q(output1[18]) );
+  DFFX1 \output1_reg[17]  ( .D(output_reg[17]), .CLK(n7), .Q(output1[17]) );
+  DFFX1 \output1_reg[16]  ( .D(output_reg[16]), .CLK(n7), .Q(output1[16]) );
+  DFFX1 \output1_reg[15]  ( .D(output_reg[15]), .CLK(n7), .Q(output1[15]) );
+  DFFX1 \output1_reg[14]  ( .D(output_reg[14]), .CLK(n7), .Q(output1[14]) );
+  DFFX1 \output1_reg[13]  ( .D(output_reg[13]), .CLK(n7), .Q(output1[13]) );
+  DFFX1 \output1_reg[12]  ( .D(output_reg[12]), .CLK(n7), .Q(output1[12]) );
+  DFFX1 \output1_reg[11]  ( .D(output_reg[11]), .CLK(n8), .Q(output1[11]) );
+  DFFX1 \output1_reg[10]  ( .D(output_reg[10]), .CLK(n8), .Q(output1[10]) );
+  DFFX1 \output1_reg[9]  ( .D(output_reg[9]), .CLK(n8), .Q(output1[9]) );
+  DFFX1 \output1_reg[8]  ( .D(output_reg[8]), .CLK(n8), .Q(output1[8]) );
+  DFFX1 \output1_reg[7]  ( .D(output_reg[7]), .CLK(n8), .Q(output1[7]) );
+  DFFX1 \output1_reg[6]  ( .D(output_reg[6]), .CLK(n8), .Q(output1[6]) );
+  DFFX1 \output1_reg[5]  ( .D(output_reg[5]), .CLK(n8), .Q(output1[5]) );
+  DFFX1 \output1_reg[4]  ( .D(output_reg[4]), .CLK(n8), .Q(output1[4]) );
+  DFFX1 \output1_reg[3]  ( .D(output_reg[3]), .CLK(n8), .Q(output1[3]) );
+  DFFX1 \output1_reg[2]  ( .D(output_reg[2]), .CLK(n8), .Q(output1[2]) );
+  DFFX1 \output1_reg[1]  ( .D(output_reg[1]), .CLK(n8), .Q(output1[1]) );
+  DFFX1 \output1_reg[0]  ( .D(output_reg[0]), .CLK(n8), .Q(output1[0]) );
+  FloatingPointMultiplier FloatingPointMultiplier1 ( .A(input_reg1), .B(
+        input_reg2), .result(output_reg) );
+  NBUFFX2 U3 ( .INP(clk), .Z(n8) );
+  NBUFFX2 U4 ( .INP(clk), .Z(n7) );
+  NBUFFX2 U5 ( .INP(clk), .Z(n6) );
+  NBUFFX2 U6 ( .INP(clk), .Z(n5) );
+  NBUFFX2 U7 ( .INP(clk), .Z(n4) );
+  NBUFFX2 U8 ( .INP(clk), .Z(n3) );
+  NBUFFX2 U9 ( .INP(clk), .Z(n2) );
+  NBUFFX2 U10 ( .INP(clk), .Z(n1) );
+endmodule
+

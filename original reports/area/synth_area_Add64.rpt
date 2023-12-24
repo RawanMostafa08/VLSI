@@ -1,0 +1,30 @@
+ 
+****************************************
+Report : area
+Design : Add64
+Version: U-2022.12-SP7
+Date   : Sun Dec 24 15:22:50 2023
+****************************************
+
+Library(s) Used:
+
+    saed90nm_typ_ht (File: /home/user24/Downloads/Lab4/ref/models/saed90nm_typ_ht.db)
+
+Number of ports:                          640
+Number of nets:                           704
+Number of cells:                          257
+Number of combinational cells:            192
+Number of sequential cells:                 0
+Number of macros/black boxes:               0
+Number of buf/inv:                          0
+Number of references:                      64
+
+Combinational area:               2536.243225
+Buf/Inv area:                        0.000000
+Noncombinational area:               0.000000
+Macro/Black Box area:                0.000000
+Net Interconnect area:              90.602640
+
+Total cell area:                  2536.243225
+Total area:                       2626.845865
+1

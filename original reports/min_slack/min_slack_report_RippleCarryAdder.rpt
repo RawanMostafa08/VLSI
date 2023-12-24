@@ -1,0 +1,344 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay min
+        -max_paths 10
+        -sort_by slack
+Design : RippleCarryAdder
+Version: U-2022.12-SP7
+Date   : Sat Dec 23 15:41:52 2023
+****************************************
+
+Operating Conditions: TYPICAL   Library: saed90nm_typ_ht
+Wire Load Model Mode: enclosed
+
+  Startpoint: A[29] (input port clocked by vsysclk)
+  Endpoint: Sum[29] (output port clocked by vsysclk)
+  Path Group: vsysclk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  RippleCarryAdder   8000                  saed90nm_typ_ht
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock vsysclk (rise edge)                               0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    0.20       0.20 r
+  A[29] (in)                                              0.00       0.20 r
+  generate_adders[29].Adder/a[0] (Fulladder_onebit_3)     0.00       0.20 r
+  generate_adders[29].Adder/U4/Q (XOR2X1)                 0.23       0.43 f
+  generate_adders[29].Adder/s[0] (Fulladder_onebit_3)     0.00       0.43 f
+  Sum[29] (out)                                           0.22       0.65 f
+  data arrival time                                                  0.65
+
+  clock vsysclk (rise edge)                               0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  output external delay                                  -0.50      -0.50
+  data required time                                                -0.50
+  --------------------------------------------------------------------------
+  data required time                                                -0.50
+  data arrival time                                                 -0.65
+  --------------------------------------------------------------------------
+  slack (MET)                                                        1.15
+
+
+  Startpoint: A[28] (input port clocked by vsysclk)
+  Endpoint: Sum[28] (output port clocked by vsysclk)
+  Path Group: vsysclk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  RippleCarryAdder   8000                  saed90nm_typ_ht
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock vsysclk (rise edge)                               0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    0.20       0.20 r
+  A[28] (in)                                              0.00       0.20 r
+  generate_adders[28].Adder/a[0] (Fulladder_onebit_4)     0.00       0.20 r
+  generate_adders[28].Adder/U4/Q (XOR2X1)                 0.23       0.43 f
+  generate_adders[28].Adder/s[0] (Fulladder_onebit_4)     0.00       0.43 f
+  Sum[28] (out)                                           0.22       0.65 f
+  data arrival time                                                  0.65
+
+  clock vsysclk (rise edge)                               0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  output external delay                                  -0.50      -0.50
+  data required time                                                -0.50
+  --------------------------------------------------------------------------
+  data required time                                                -0.50
+  data arrival time                                                 -0.65
+  --------------------------------------------------------------------------
+  slack (MET)                                                        1.15
+
+
+  Startpoint: A[26] (input port clocked by vsysclk)
+  Endpoint: Sum[26] (output port clocked by vsysclk)
+  Path Group: vsysclk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  RippleCarryAdder   8000                  saed90nm_typ_ht
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock vsysclk (rise edge)                               0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    0.20       0.20 r
+  A[26] (in)                                              0.00       0.20 r
+  generate_adders[26].Adder/a[0] (Fulladder_onebit_6)     0.00       0.20 r
+  generate_adders[26].Adder/U1/Q (XOR2X1)                 0.23       0.43 f
+  generate_adders[26].Adder/s[0] (Fulladder_onebit_6)     0.00       0.43 f
+  Sum[26] (out)                                           0.22       0.65 f
+  data arrival time                                                  0.65
+
+  clock vsysclk (rise edge)                               0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  output external delay                                  -0.50      -0.50
+  data required time                                                -0.50
+  --------------------------------------------------------------------------
+  data required time                                                -0.50
+  data arrival time                                                 -0.65
+  --------------------------------------------------------------------------
+  slack (MET)                                                        1.15
+
+
+  Startpoint: A[25] (input port clocked by vsysclk)
+  Endpoint: Sum[25] (output port clocked by vsysclk)
+  Path Group: vsysclk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  RippleCarryAdder   8000                  saed90nm_typ_ht
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock vsysclk (rise edge)                               0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    0.20       0.20 r
+  A[25] (in)                                              0.00       0.20 r
+  generate_adders[25].Adder/a[0] (Fulladder_onebit_7)     0.00       0.20 r
+  generate_adders[25].Adder/U4/Q (XOR2X1)                 0.23       0.43 f
+  generate_adders[25].Adder/s[0] (Fulladder_onebit_7)     0.00       0.43 f
+  Sum[25] (out)                                           0.22       0.65 f
+  data arrival time                                                  0.65
+
+  clock vsysclk (rise edge)                               0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  output external delay                                  -0.50      -0.50
+  data required time                                                -0.50
+  --------------------------------------------------------------------------
+  data required time                                                -0.50
+  data arrival time                                                 -0.65
+  --------------------------------------------------------------------------
+  slack (MET)                                                        1.15
+
+
+  Startpoint: A[24] (input port clocked by vsysclk)
+  Endpoint: Sum[24] (output port clocked by vsysclk)
+  Path Group: vsysclk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  RippleCarryAdder   8000                  saed90nm_typ_ht
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock vsysclk (rise edge)                               0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    0.20       0.20 r
+  A[24] (in)                                              0.00       0.20 r
+  generate_adders[24].Adder/a[0] (Fulladder_onebit_8)     0.00       0.20 r
+  generate_adders[24].Adder/U4/Q (XOR2X1)                 0.23       0.43 f
+  generate_adders[24].Adder/s[0] (Fulladder_onebit_8)     0.00       0.43 f
+  Sum[24] (out)                                           0.22       0.65 f
+  data arrival time                                                  0.65
+
+  clock vsysclk (rise edge)                               0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  output external delay                                  -0.50      -0.50
+  data required time                                                -0.50
+  --------------------------------------------------------------------------
+  data required time                                                -0.50
+  data arrival time                                                 -0.65
+  --------------------------------------------------------------------------
+  slack (MET)                                                        1.15
+
+
+  Startpoint: A[23] (input port clocked by vsysclk)
+  Endpoint: Sum[23] (output port clocked by vsysclk)
+  Path Group: vsysclk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  RippleCarryAdder   8000                  saed90nm_typ_ht
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock vsysclk (rise edge)                               0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    0.20       0.20 r
+  A[23] (in)                                              0.00       0.20 r
+  generate_adders[23].Adder/a[0] (Fulladder_onebit_9)     0.00       0.20 r
+  generate_adders[23].Adder/U4/Q (XOR2X1)                 0.23       0.43 f
+  generate_adders[23].Adder/s[0] (Fulladder_onebit_9)     0.00       0.43 f
+  Sum[23] (out)                                           0.22       0.65 f
+  data arrival time                                                  0.65
+
+  clock vsysclk (rise edge)                               0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  output external delay                                  -0.50      -0.50
+  data required time                                                -0.50
+  --------------------------------------------------------------------------
+  data required time                                                -0.50
+  data arrival time                                                 -0.65
+  --------------------------------------------------------------------------
+  slack (MET)                                                        1.15
+
+
+  Startpoint: A[22] (input port clocked by vsysclk)
+  Endpoint: Sum[22] (output port clocked by vsysclk)
+  Path Group: vsysclk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  RippleCarryAdder   8000                  saed90nm_typ_ht
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock vsysclk (rise edge)                               0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    0.20       0.20 r
+  A[22] (in)                                              0.00       0.20 r
+  generate_adders[22].Adder/a[0] (Fulladder_onebit_10)
+                                                          0.00       0.20 r
+  generate_adders[22].Adder/U2/Q (XOR2X1)                 0.23       0.43 f
+  generate_adders[22].Adder/s[0] (Fulladder_onebit_10)
+                                                          0.00       0.43 f
+  Sum[22] (out)                                           0.22       0.65 f
+  data arrival time                                                  0.65
+
+  clock vsysclk (rise edge)                               0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  output external delay                                  -0.50      -0.50
+  data required time                                                -0.50
+  --------------------------------------------------------------------------
+  data required time                                                -0.50
+  data arrival time                                                 -0.65
+  --------------------------------------------------------------------------
+  slack (MET)                                                        1.15
+
+
+  Startpoint: A[21] (input port clocked by vsysclk)
+  Endpoint: Sum[21] (output port clocked by vsysclk)
+  Path Group: vsysclk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  RippleCarryAdder   8000                  saed90nm_typ_ht
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock vsysclk (rise edge)                               0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    0.20       0.20 r
+  A[21] (in)                                              0.00       0.20 r
+  generate_adders[21].Adder/a[0] (Fulladder_onebit_11)
+                                                          0.00       0.20 r
+  generate_adders[21].Adder/U4/Q (XOR2X1)                 0.23       0.43 f
+  generate_adders[21].Adder/s[0] (Fulladder_onebit_11)
+                                                          0.00       0.43 f
+  Sum[21] (out)                                           0.22       0.65 f
+  data arrival time                                                  0.65
+
+  clock vsysclk (rise edge)                               0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  output external delay                                  -0.50      -0.50
+  data required time                                                -0.50
+  --------------------------------------------------------------------------
+  data required time                                                -0.50
+  data arrival time                                                 -0.65
+  --------------------------------------------------------------------------
+  slack (MET)                                                        1.15
+
+
+  Startpoint: A[20] (input port clocked by vsysclk)
+  Endpoint: Sum[20] (output port clocked by vsysclk)
+  Path Group: vsysclk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  RippleCarryAdder   8000                  saed90nm_typ_ht
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock vsysclk (rise edge)                               0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    0.20       0.20 r
+  A[20] (in)                                              0.00       0.20 r
+  generate_adders[20].Adder/a[0] (Fulladder_onebit_12)
+                                                          0.00       0.20 r
+  generate_adders[20].Adder/U2/Q (XOR2X1)                 0.23       0.43 f
+  generate_adders[20].Adder/s[0] (Fulladder_onebit_12)
+                                                          0.00       0.43 f
+  Sum[20] (out)                                           0.22       0.65 f
+  data arrival time                                                  0.65
+
+  clock vsysclk (rise edge)                               0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  output external delay                                  -0.50      -0.50
+  data required time                                                -0.50
+  --------------------------------------------------------------------------
+  data required time                                                -0.50
+  data arrival time                                                 -0.65
+  --------------------------------------------------------------------------
+  slack (MET)                                                        1.15
+
+
+  Startpoint: A[19] (input port clocked by vsysclk)
+  Endpoint: Sum[19] (output port clocked by vsysclk)
+  Path Group: vsysclk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  RippleCarryAdder   8000                  saed90nm_typ_ht
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock vsysclk (rise edge)                               0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    0.20       0.20 r
+  A[19] (in)                                              0.00       0.20 r
+  generate_adders[19].Adder/a[0] (Fulladder_onebit_13)
+                                                          0.00       0.20 r
+  generate_adders[19].Adder/U4/Q (XOR2X1)                 0.23       0.43 f
+  generate_adders[19].Adder/s[0] (Fulladder_onebit_13)
+                                                          0.00       0.43 f
+  Sum[19] (out)                                           0.22       0.65 f
+  data arrival time                                                  0.65
+
+  clock vsysclk (rise edge)                               0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  output external delay                                  -0.50      -0.50
+  data required time                                                -0.50
+  --------------------------------------------------------------------------
+  data required time                                                -0.50
+  data arrival time                                                 -0.65
+  --------------------------------------------------------------------------
+  slack (MET)                                                        1.15
+
+
+1

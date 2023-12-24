@@ -1,0 +1,29 @@
+ 
+****************************************
+Report : resources
+Design : MultiplierOperator
+Version: U-2022.12-SP7
+Date   : Sun Dec 24 14:16:30 2023
+****************************************
+
+Resource Sharing Report for design MultiplierOperator in file
+        ./source/MultiplierOperator.v
+
+===============================================================================
+|          |              |            | Contained     |                      |
+| Resource | Module       | Parameters | Resources     | Contained Operations |
+===============================================================================
+| r155     | DW02_mult    | A_width=32 |               | mult_8               |
+|          |              | B_width=32 |               |                      |
+===============================================================================
+
+
+Implementation Report
+===============================================================================
+|                    |                  | Current            | Set            |
+| Cell               | Module           | Implementation     | Implementation |
+===============================================================================
+| mult_8             | DW02_mult        | csa                |                |
+===============================================================================
+
+1

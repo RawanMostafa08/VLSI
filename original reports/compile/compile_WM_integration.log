@@ -1,0 +1,212 @@
+Warning: Design 'WM_integration' has '81' unresolved references. For more detailed information, use the "link" command. (UID-341)
+====================================================================================================
+| Flow Information                                                                                 |
+----------------------------------------------------------------------------------------------------
+| Flow         | Design Compiler                                                                   |
+====================================================================================================
+| Design Information                                      | Value                                  |
+====================================================================================================
+| Number of Scenarios                                     | 0                                      |
+| Leaf Cell Count                                         | 622                                    |
+| Number of User Hierarchies                              | 4                                      |
+| Sequential Cell Count                                   | 128                                    |
+| Macro Count                                             | 0                                      |
+| Number of Power Domains                                 | 0                                      |
+| Number of Path Groups                                   | 2                                      |
+| Number of VT Class                                      | 1                                      |
+| Number of Clocks                                        | 1                                      |
+| Number of Dont Touch Cells                              | 0                                      |
+| Number of Dont Touch Nets                               | 0                                      |
+| Number of Size Only Cells                               | 8                                      |
+| Design with UPF Data                                    | false                                  |
+====================================================================================================
+
+Information: There are 16 potential problems in your design. Please run 'check_design' for more information. (LINT-99)
+
+
+
+  Beginning Pass 1 Mapping
+  ------------------------
+  Processing 'WM32bit_DW01_inc_2'
+  Processing 'WM32bit_DW01_inc_1'
+  Processing 'WM32bit_DW01_inc_0'
+  Processing 'WM32bit'
+  Processing 'WM_integration'
+Information: Building the design 'Add64'. (HDL-193)
+Warning: Cannot find the design 'Add64' in the library 'WORK'. (LBR-1)
+Warning: Unable to resolve reference 'WM8bit_0' in 'WM32bit'. (LINK-5)
+Warning: Unable to resolve reference 'WM8bit_15' in 'WM32bit'. (LINK-5)
+Warning: Unable to resolve reference 'WM8bit_14' in 'WM32bit'. (LINK-5)
+Warning: Unable to resolve reference 'WM8bit_13' in 'WM32bit'. (LINK-5)
+Warning: Unable to resolve reference 'WM8bit_12' in 'WM32bit'. (LINK-5)
+Warning: Unable to resolve reference 'WM8bit_11' in 'WM32bit'. (LINK-5)
+Warning: Unable to resolve reference 'WM8bit_10' in 'WM32bit'. (LINK-5)
+Warning: Unable to resolve reference 'WM8bit_9' in 'WM32bit'. (LINK-5)
+Warning: Unable to resolve reference 'WM8bit_8' in 'WM32bit'. (LINK-5)
+Warning: Unable to resolve reference 'WM8bit_7' in 'WM32bit'. (LINK-5)
+Warning: Unable to resolve reference 'WM8bit_6' in 'WM32bit'. (LINK-5)
+Warning: Unable to resolve reference 'WM8bit_5' in 'WM32bit'. (LINK-5)
+Warning: Unable to resolve reference 'WM8bit_4' in 'WM32bit'. (LINK-5)
+Warning: Unable to resolve reference 'WM8bit_3' in 'WM32bit'. (LINK-5)
+Warning: Unable to resolve reference 'WM8bit_2' in 'WM32bit'. (LINK-5)
+Warning: Unable to resolve reference 'WM8bit_1' in 'WM32bit'. (LINK-5)
+Warning: Unable to resolve reference 'Add64' in 'WM32bit'. (LINK-5)
+Warning: Unable to resolve reference 'HA_0' in 'WM32bit'. (LINK-5)
+Warning: Unable to resolve reference 'FA_0' in 'WM32bit'. (LINK-5)
+Warning: Unable to resolve reference 'FA_814' in 'WM32bit'. (LINK-5)
+Warning: Unable to resolve reference 'FA_813' in 'WM32bit'. (LINK-5)
+Warning: Unable to resolve reference 'FA_812' in 'WM32bit'. (LINK-5)
+Warning: Unable to resolve reference 'FA_811' in 'WM32bit'. (LINK-5)
+Warning: Unable to resolve reference 'FA_810' in 'WM32bit'. (LINK-5)
+Warning: Unable to resolve reference 'FA_809' in 'WM32bit'. (LINK-5)
+Warning: Unable to resolve reference 'FA_808' in 'WM32bit'. (LINK-5)
+Warning: Unable to resolve reference 'FA_807' in 'WM32bit'. (LINK-5)
+Warning: Unable to resolve reference 'FA_806' in 'WM32bit'. (LINK-5)
+Warning: Unable to resolve reference 'FA_805' in 'WM32bit'. (LINK-5)
+Warning: Unable to resolve reference 'FA_804' in 'WM32bit'. (LINK-5)
+Warning: Unable to resolve reference 'FA_803' in 'WM32bit'. (LINK-5)
+Warning: Unable to resolve reference 'FA_802' in 'WM32bit'. (LINK-5)
+Warning: Unable to resolve reference 'FA_801' in 'WM32bit'. (LINK-5)
+Warning: Unable to resolve reference 'FA_800' in 'WM32bit'. (LINK-5)
+Warning: Unable to resolve reference 'FA_799' in 'WM32bit'. (LINK-5)
+Warning: Unable to resolve reference 'FA_798' in 'WM32bit'. (LINK-5)
+Warning: Unable to resolve reference 'FA_797' in 'WM32bit'. (LINK-5)
+Warning: Unable to resolve reference 'FA_796' in 'WM32bit'. (LINK-5)
+Warning: Unable to resolve reference 'FA_795' in 'WM32bit'. (LINK-5)
+Warning: Unable to resolve reference 'FA_794' in 'WM32bit'. (LINK-5)
+Warning: Unable to resolve reference 'FA_793' in 'WM32bit'. (LINK-5)
+Warning: Unable to resolve reference 'FA_792' in 'WM32bit'. (LINK-5)
+Warning: Unable to resolve reference 'FA_791' in 'WM32bit'. (LINK-5)
+Warning: Unable to resolve reference 'FA_790' in 'WM32bit'. (LINK-5)
+Warning: Unable to resolve reference 'FA_789' in 'WM32bit'. (LINK-5)
+Warning: Unable to resolve reference 'FA_788' in 'WM32bit'. (LINK-5)
+Warning: Unable to resolve reference 'FA_787' in 'WM32bit'. (LINK-5)
+Warning: Unable to resolve reference 'FA_786' in 'WM32bit'. (LINK-5)
+Warning: Unable to resolve reference 'FA_785' in 'WM32bit'. (LINK-5)
+Warning: Unable to resolve reference 'FA_784' in 'WM32bit'. (LINK-5)
+Warning: Unable to resolve reference 'FA_783' in 'WM32bit'. (LINK-5)
+Warning: Unable to resolve reference 'FA_782' in 'WM32bit'. (LINK-5)
+Warning: Unable to resolve reference 'FA_781' in 'WM32bit'. (LINK-5)
+Warning: Unable to resolve reference 'FA_780' in 'WM32bit'. (LINK-5)
+Warning: Unable to resolve reference 'FA_779' in 'WM32bit'. (LINK-5)
+Warning: Unable to resolve reference 'FA_778' in 'WM32bit'. (LINK-5)
+Warning: Unable to resolve reference 'FA_777' in 'WM32bit'. (LINK-5)
+Warning: Unable to resolve reference 'FA_776' in 'WM32bit'. (LINK-5)
+Warning: Unable to resolve reference 'FA_775' in 'WM32bit'. (LINK-5)
+Warning: Unable to resolve reference 'FA_774' in 'WM32bit'. (LINK-5)
+Warning: Unable to resolve reference 'FA_773' in 'WM32bit'. (LINK-5)
+Warning: Unable to resolve reference 'FA_772' in 'WM32bit'. (LINK-5)
+Warning: Unable to resolve reference 'FA_771' in 'WM32bit'. (LINK-5)
+Warning: Unable to resolve reference 'FA_770' in 'WM32bit'. (LINK-5)
+Warning: Unable to resolve reference 'FA_769' in 'WM32bit'. (LINK-5)
+Warning: Unable to resolve reference 'FA_768' in 'WM32bit'. (LINK-5)
+Warning: Unable to resolve reference 'FA_767' in 'WM32bit'. (LINK-5)
+Warning: Unable to resolve reference 'FA_766' in 'WM32bit'. (LINK-5)
+Warning: Unable to resolve reference 'FA_765' in 'WM32bit'. (LINK-5)
+Warning: Unable to resolve reference 'FA_764' in 'WM32bit'. (LINK-5)
+Warning: Unable to resolve reference 'FA_763' in 'WM32bit'. (LINK-5)
+Warning: Unable to resolve reference 'FA_762' in 'WM32bit'. (LINK-5)
+Warning: Unable to resolve reference 'FA_761' in 'WM32bit'. (LINK-5)
+Warning: Unable to resolve reference 'FA_760' in 'WM32bit'. (LINK-5)
+Warning: Unable to resolve reference 'FA_759' in 'WM32bit'. (LINK-5)
+Warning: Unable to resolve reference 'FA_758' in 'WM32bit'. (LINK-5)
+Warning: Unable to resolve reference 'FA_757' in 'WM32bit'. (LINK-5)
+Warning: Unable to resolve reference 'FA_756' in 'WM32bit'. (LINK-5)
+Warning: Unable to resolve reference 'FA_755' in 'WM32bit'. (LINK-5)
+Warning: Unable to resolve reference 'FA_754' in 'WM32bit'. (LINK-5)
+Warning: Unable to resolve reference 'FA_753' in 'WM32bit'. (LINK-5)
+
+  Updating timing information
+Information: Updating design information... (UID-85)
+
+  Beginning Implementation Selection
+  ----------------------------------
+Information: Command 'do_operand_isolation' is obsolete and is being ignored.  Please refer to the replacement command 'set power_enable_datapath_gating true' instead. (INFO-118)
+
+  Beginning Mapping Optimizations  (Medium effort)
+  -------------------------------
+Information: Command 'do_operand_isolation' is obsolete and is being ignored.  Please refer to the replacement command 'set power_enable_datapath_gating true' instead. (INFO-118)
+
+                                  TOTAL                                      
+   ELAPSED            WORST NEG   SETUP    DESIGN                            
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT         
+  --------- --------- --------- --------- --------- -------------------------
+    0:00:01    9191.1      0.00       0.0       0.0                          
+    0:00:01    9191.1      0.00       0.0       0.0                          
+    0:00:01    9191.1      0.00       0.0       0.0                          
+    0:00:01    9191.1      0.00       0.0       0.0                          
+    0:00:01    9191.1      0.00       0.0       0.0                          
+    0:00:01    7650.2      0.00       0.0       0.0                          
+    0:00:01    7632.7      0.00       0.0       0.0                          
+    0:00:01    7632.7      0.00       0.0       0.0                          
+    0:00:01    7632.7      0.00       0.0       0.0                          
+    0:00:01    7632.7      0.00       0.0       0.0                          
+    0:00:01    7632.7      0.00       0.0       0.0                          
+    0:00:01    7632.7      0.00       0.0       0.0                          
+    0:00:01    7632.7      0.00       0.0       0.0                          
+    0:00:01    7632.7      0.00       0.0       0.0                          
+
+
+
+  Beginning Delay Optimization Phase
+  ----------------------------------
+
+                                  TOTAL                                      
+   ELAPSED            WORST NEG   SETUP    DESIGN                            
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT         
+  --------- --------- --------- --------- --------- -------------------------
+    0:00:01    7632.7      0.00       0.0       0.0                          
+    0:00:01    7632.7      0.00       0.0       0.0                          
+    0:00:01    7632.7      0.00       0.0       0.0                          
+
+
+  Beginning Area-Recovery Phase  (cleanup)
+  -----------------------------
+
+                                  TOTAL                                      
+   ELAPSED            WORST NEG   SETUP    DESIGN                            
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT         
+  --------- --------- --------- --------- --------- -------------------------
+    0:00:01    7632.7      0.00       0.0       0.0                          
+    0:00:01    7632.7      0.00       0.0       0.0                          
+    0:00:01    7605.0      0.00       0.0       0.0                          
+    0:00:01    7582.9      0.00       0.0       0.0                          
+    0:00:01    7560.8      0.00       0.0       0.0                          
+    0:00:01    7549.7      0.00       0.0       0.0                          
+    0:00:01    7538.7      0.00       0.0       0.0                          
+    0:00:01    7538.7      0.00       0.0       0.0                          
+    0:00:01    7538.7      0.00       0.0       0.0                          
+    0:00:01    7538.7      0.00       0.0       0.0                          
+    0:00:01    7538.7      0.00       0.0       0.0                          
+    0:00:01    7538.7      0.00       0.0       0.0                          
+    0:00:01    7538.7      0.00       0.0       0.0                          
+    0:00:01    7538.7      0.00       0.0       0.0                          
+    0:00:01    7538.7      0.00       0.0       0.0                          
+Loading db file '/home/user24/Downloads/Lab4/ref/models/saed90nm_typ_ht.db'
+
+
+Note: Symbol # after min delay cost means estimated hold TNS across all active scenarios 
+
+
+  Optimization Complete
+  ---------------------
+Information: Total number of MV cells in the design.
+----------------------------------------------------------------------------------------------------
+ MV Cells                                           Total Number                                   
+----------------------------------------------------------------------------------------------------
+ Level Shifter:                                     0                                             
+ Enable Level Shifter:                              0                                             
+ Isolation Cell:                                    0                                             
+ Retention Cell:                                    0                                             
+ Retention Clamp Cell:                              0                                             
+ Switch Cell:                                       0                                             
+ Always-On Cell:                                    0                                             
+ Repeater Cell:                                     0                                             
+
+----------------------------------------------------------------------------------------------------
+Unmapped MV Cells 
+----------------------------------------------------------------------------------------------------
+0 Isolation Cells are unmapped 
+0 Retention Clamp Cells are unmapped 
+----------------------------------------------------------------------------------------------------
+1

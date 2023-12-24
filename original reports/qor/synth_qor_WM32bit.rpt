@@ -1,0 +1,84 @@
+Warning: Design 'WM32bit' has '18' unresolved references. For more detailed information, use the "link" command. (UID-341)
+ 
+****************************************
+Report : qor
+Design : WM32bit
+Version: U-2022.12-SP7
+Date   : Sun Dec 24 14:43:14 2023
+****************************************
+
+
+  Timing Path Group 'vsysclk'
+  -----------------------------------
+  Levels of Logic:               4.00
+  Critical Path Length:          1.27
+  Critical Path Slack:           0.03
+  Critical Path Clk Period:      2.00
+  Total Negative Slack:          0.00
+  No. of Violating Paths:        0.00
+  Worst Hold Violation:          0.00
+  Total Hold Violation:          0.00
+  No. of Hold Violations:        0.00
+  -----------------------------------
+
+
+  Cell Count
+  -----------------------------------
+  Hierarchical Cell Count:        421
+  Hierarchical Port Count:       2566
+  Leaf Cell Count:               3374
+  Buf/Inv Cell Count:             400
+  Buf Cell Count:                   0
+  Inv Cell Count:                 400
+  CT Buf/Inv Cell Count:            0
+  Combinational Cell Count:      3374
+  Sequential Cell Count:            0
+  Macro Count:                      0
+  -----------------------------------
+
+
+  Area
+  -----------------------------------
+  Combinational Area:    25770.701028
+  Noncombinational Area:     0.000000
+  Buf/Inv Area:           2211.840057
+  Total Buffer Area:             0.00
+  Total Inverter Area:        2211.84
+  Macro/Black Box Area:      0.000000
+  Net Area:               3766.764112
+  -----------------------------------
+  Cell Area:             25770.701028
+  Design Area:           29537.465140
+
+
+  Design Rules
+  -----------------------------------
+  Total Number of Nets:          6227
+  Nets With Violations:             0
+  Max Trans Violations:             0
+  Max Cap Violations:               0
+  -----------------------------------
+
+
+  Hostname: ip-172-31-17-209.ec2.internal
+
+  Compile CPU Statistics
+  -----------------------------------------
+  Resource Sharing:                    1.06
+  Logic Optimization:                  1.00
+  Mapping Optimization:                1.08
+  -----------------------------------------
+  Overall Compile Time:                4.09
+  Overall Compile Wall Clock Time:     4.33
+
+  --------------------------------------------------------------------
+
+  Design  WNS: 0.00  TNS: 0.00  Number of Violating Paths: 0
+
+
+  Design (Hold)  WNS: 0.00  TNS: 0.00  Number of Violating Paths: 0
+
+  --------------------------------------------------------------------
+
+
+1

@@ -1,0 +1,30 @@
+ 
+****************************************
+Report : area
+Design : shift_integration
+Version: U-2022.12-SP7
+Date   : Sun Dec 24 17:18:37 2023
+****************************************
+
+Library(s) Used:
+
+    saed90nm_typ_ht (File: /home/user24/Downloads/Lab4/ref/models/saed90nm_typ_ht.db)
+
+Number of ports:                        21560
+Number of nets:                         29286
+Number of cells:                         8416
+Number of combinational cells:           7570
+Number of sequential cells:               128
+Number of macros/black boxes:               0
+Number of buf/inv:                        351
+Number of references:                       3
+
+Combinational area:              93394.022819
+Buf/Inv area:                     1940.889650
+Noncombinational area:            3185.049561
+Macro/Black Box area:                0.000000
+Net Interconnect area:            8865.879051
+
+Total cell area:                 96579.072379
+Total area:                     105444.951431
+1

@@ -1,0 +1,507 @@
+Information: Building the design 'Add64'. (HDL-193)
+Warning: Cannot find the design 'Add64' in the library 'WORK'. (LBR-1)
+Information: Building the design 'FA'. (HDL-193)
+Warning:  File /home/user24/Downloads/Lab4/FA-verilog.pvl not found, or does not contain a usable description of FA. (ELAB-320)
+Presto compilation completed successfully.
+Warning: Unable to resolve reference 'Add64' in 'WM32bit'. (LINK-5)
+Warning: Unable to resolve reference 'FA' in 'WM32bit'. (LINK-5)
+Warning: Unable to resolve reference 'FA' in 'WM8bit_0'. (LINK-5)
+Warning: Unable to resolve reference 'FA' in 'WM8bit_15'. (LINK-5)
+Warning: Unable to resolve reference 'FA' in 'WM8bit_14'. (LINK-5)
+Warning: Unable to resolve reference 'FA' in 'WM8bit_13'. (LINK-5)
+Warning: Unable to resolve reference 'FA' in 'WM8bit_12'. (LINK-5)
+Warning: Unable to resolve reference 'FA' in 'WM8bit_11'. (LINK-5)
+Warning: Unable to resolve reference 'FA' in 'WM8bit_10'. (LINK-5)
+Warning: Unable to resolve reference 'FA' in 'WM8bit_9'. (LINK-5)
+Warning: Unable to resolve reference 'FA' in 'WM8bit_8'. (LINK-5)
+Warning: Unable to resolve reference 'FA' in 'WM8bit_7'. (LINK-5)
+Warning: Unable to resolve reference 'FA' in 'WM8bit_6'. (LINK-5)
+Warning: Unable to resolve reference 'FA' in 'WM8bit_5'. (LINK-5)
+Warning: Unable to resolve reference 'FA' in 'WM8bit_4'. (LINK-5)
+Warning: Unable to resolve reference 'FA' in 'WM8bit_3'. (LINK-5)
+Warning: Unable to resolve reference 'FA' in 'WM8bit_2'. (LINK-5)
+Warning: Unable to resolve reference 'FA' in 'WM8bit_1'. (LINK-5)
+Information: Updating design information... (UID-85)
+Information: Propagating switching activity (low effort zero delay simulation). (PWR-6)
+Warning: Design has unannotated primary inputs. (PWR-414)
+Warning: Design has unannotated black box outputs. (PWR-428)
+ 
+****************************************
+Report : power
+        -analysis_effort low
+Design : WM32bit
+Version: U-2022.12-SP7
+Date   : Sun Dec 24 14:43:14 2023
+****************************************
+
+
+Library(s) Used:
+
+    saed90nm_typ_ht (File: /home/user24/Downloads/Lab4/ref/models/saed90nm_typ_ht.db)
+
+
+Operating Conditions: TYPICAL   Library: saed90nm_typ_ht
+Wire Load Model Mode: enclosed
+
+Design        Wire Load Model            Library
+------------------------------------------------
+WM32bit                35000             saed90nm_typ_ht
+WM8bit_0               8000              saed90nm_typ_ht
+HA_0                   ForQA             saed90nm_typ_ht
+WM8bit_1               8000              saed90nm_typ_ht
+WM8bit_2               8000              saed90nm_typ_ht
+WM8bit_3               8000              saed90nm_typ_ht
+WM8bit_4               8000              saed90nm_typ_ht
+WM8bit_5               8000              saed90nm_typ_ht
+WM8bit_6               8000              saed90nm_typ_ht
+WM8bit_7               8000              saed90nm_typ_ht
+WM8bit_8               8000              saed90nm_typ_ht
+WM8bit_9               8000              saed90nm_typ_ht
+WM8bit_10              8000              saed90nm_typ_ht
+WM8bit_11              8000              saed90nm_typ_ht
+WM8bit_12              8000              saed90nm_typ_ht
+WM8bit_13              8000              saed90nm_typ_ht
+WM8bit_14              8000              saed90nm_typ_ht
+WM8bit_15              8000              saed90nm_typ_ht
+HA_1                   ForQA             saed90nm_typ_ht
+HA_2                   ForQA             saed90nm_typ_ht
+HA_3                   ForQA             saed90nm_typ_ht
+HA_4                   ForQA             saed90nm_typ_ht
+HA_5                   ForQA             saed90nm_typ_ht
+HA_6                   ForQA             saed90nm_typ_ht
+HA_7                   ForQA             saed90nm_typ_ht
+HA_8                   ForQA             saed90nm_typ_ht
+HA_9                   ForQA             saed90nm_typ_ht
+HA_10                  ForQA             saed90nm_typ_ht
+HA_11                  ForQA             saed90nm_typ_ht
+HA_12                  ForQA             saed90nm_typ_ht
+HA_13                  ForQA             saed90nm_typ_ht
+HA_14                  ForQA             saed90nm_typ_ht
+HA_15                  ForQA             saed90nm_typ_ht
+HA_16                  ForQA             saed90nm_typ_ht
+HA_17                  ForQA             saed90nm_typ_ht
+HA_18                  ForQA             saed90nm_typ_ht
+HA_19                  ForQA             saed90nm_typ_ht
+HA_20                  ForQA             saed90nm_typ_ht
+HA_21                  ForQA             saed90nm_typ_ht
+HA_22                  ForQA             saed90nm_typ_ht
+HA_23                  ForQA             saed90nm_typ_ht
+HA_24                  ForQA             saed90nm_typ_ht
+HA_25                  ForQA             saed90nm_typ_ht
+HA_26                  ForQA             saed90nm_typ_ht
+HA_27                  ForQA             saed90nm_typ_ht
+HA_28                  ForQA             saed90nm_typ_ht
+HA_29                  ForQA             saed90nm_typ_ht
+HA_30                  ForQA             saed90nm_typ_ht
+HA_31                  ForQA             saed90nm_typ_ht
+HA_32                  ForQA             saed90nm_typ_ht
+HA_33                  ForQA             saed90nm_typ_ht
+HA_34                  ForQA             saed90nm_typ_ht
+HA_35                  ForQA             saed90nm_typ_ht
+HA_36                  ForQA             saed90nm_typ_ht
+HA_37                  ForQA             saed90nm_typ_ht
+HA_38                  ForQA             saed90nm_typ_ht
+HA_39                  ForQA             saed90nm_typ_ht
+HA_40                  ForQA             saed90nm_typ_ht
+HA_41                  ForQA             saed90nm_typ_ht
+HA_42                  ForQA             saed90nm_typ_ht
+HA_43                  ForQA             saed90nm_typ_ht
+HA_44                  ForQA             saed90nm_typ_ht
+HA_45                  ForQA             saed90nm_typ_ht
+HA_46                  ForQA             saed90nm_typ_ht
+HA_47                  ForQA             saed90nm_typ_ht
+HA_48                  ForQA             saed90nm_typ_ht
+HA_49                  ForQA             saed90nm_typ_ht
+HA_50                  ForQA             saed90nm_typ_ht
+HA_51                  ForQA             saed90nm_typ_ht
+HA_52                  ForQA             saed90nm_typ_ht
+HA_53                  ForQA             saed90nm_typ_ht
+HA_54                  ForQA             saed90nm_typ_ht
+HA_55                  ForQA             saed90nm_typ_ht
+HA_56                  ForQA             saed90nm_typ_ht
+HA_57                  ForQA             saed90nm_typ_ht
+HA_58                  ForQA             saed90nm_typ_ht
+HA_59                  ForQA             saed90nm_typ_ht
+HA_60                  ForQA             saed90nm_typ_ht
+HA_61                  ForQA             saed90nm_typ_ht
+HA_62                  ForQA             saed90nm_typ_ht
+HA_63                  ForQA             saed90nm_typ_ht
+HA_64                  ForQA             saed90nm_typ_ht
+HA_65                  ForQA             saed90nm_typ_ht
+HA_66                  ForQA             saed90nm_typ_ht
+HA_67                  ForQA             saed90nm_typ_ht
+HA_68                  ForQA             saed90nm_typ_ht
+HA_69                  ForQA             saed90nm_typ_ht
+HA_70                  ForQA             saed90nm_typ_ht
+HA_71                  ForQA             saed90nm_typ_ht
+HA_72                  ForQA             saed90nm_typ_ht
+HA_73                  ForQA             saed90nm_typ_ht
+HA_74                  ForQA             saed90nm_typ_ht
+HA_75                  ForQA             saed90nm_typ_ht
+HA_76                  ForQA             saed90nm_typ_ht
+HA_77                  ForQA             saed90nm_typ_ht
+HA_78                  ForQA             saed90nm_typ_ht
+HA_79                  ForQA             saed90nm_typ_ht
+HA_80                  ForQA             saed90nm_typ_ht
+HA_81                  ForQA             saed90nm_typ_ht
+HA_82                  ForQA             saed90nm_typ_ht
+HA_83                  ForQA             saed90nm_typ_ht
+HA_84                  ForQA             saed90nm_typ_ht
+HA_85                  ForQA             saed90nm_typ_ht
+HA_86                  ForQA             saed90nm_typ_ht
+HA_87                  ForQA             saed90nm_typ_ht
+HA_88                  ForQA             saed90nm_typ_ht
+HA_89                  ForQA             saed90nm_typ_ht
+HA_90                  ForQA             saed90nm_typ_ht
+HA_91                  ForQA             saed90nm_typ_ht
+HA_92                  ForQA             saed90nm_typ_ht
+HA_93                  ForQA             saed90nm_typ_ht
+HA_94                  ForQA             saed90nm_typ_ht
+HA_95                  ForQA             saed90nm_typ_ht
+HA_96                  ForQA             saed90nm_typ_ht
+HA_97                  ForQA             saed90nm_typ_ht
+HA_98                  ForQA             saed90nm_typ_ht
+HA_99                  ForQA             saed90nm_typ_ht
+HA_100                 ForQA             saed90nm_typ_ht
+HA_101                 ForQA             saed90nm_typ_ht
+HA_102                 ForQA             saed90nm_typ_ht
+HA_103                 ForQA             saed90nm_typ_ht
+HA_104                 ForQA             saed90nm_typ_ht
+HA_105                 ForQA             saed90nm_typ_ht
+HA_106                 ForQA             saed90nm_typ_ht
+HA_107                 ForQA             saed90nm_typ_ht
+HA_108                 ForQA             saed90nm_typ_ht
+HA_109                 ForQA             saed90nm_typ_ht
+HA_110                 ForQA             saed90nm_typ_ht
+HA_111                 ForQA             saed90nm_typ_ht
+HA_112                 ForQA             saed90nm_typ_ht
+HA_113                 ForQA             saed90nm_typ_ht
+HA_114                 ForQA             saed90nm_typ_ht
+HA_115                 ForQA             saed90nm_typ_ht
+HA_116                 ForQA             saed90nm_typ_ht
+HA_117                 ForQA             saed90nm_typ_ht
+HA_118                 ForQA             saed90nm_typ_ht
+HA_119                 ForQA             saed90nm_typ_ht
+HA_120                 ForQA             saed90nm_typ_ht
+HA_121                 ForQA             saed90nm_typ_ht
+HA_122                 ForQA             saed90nm_typ_ht
+HA_123                 ForQA             saed90nm_typ_ht
+HA_124                 ForQA             saed90nm_typ_ht
+HA_125                 ForQA             saed90nm_typ_ht
+HA_126                 ForQA             saed90nm_typ_ht
+HA_127                 ForQA             saed90nm_typ_ht
+HA_128                 ForQA             saed90nm_typ_ht
+HA_129                 ForQA             saed90nm_typ_ht
+HA_130                 ForQA             saed90nm_typ_ht
+HA_131                 ForQA             saed90nm_typ_ht
+HA_132                 ForQA             saed90nm_typ_ht
+HA_133                 ForQA             saed90nm_typ_ht
+HA_134                 ForQA             saed90nm_typ_ht
+HA_135                 ForQA             saed90nm_typ_ht
+HA_136                 ForQA             saed90nm_typ_ht
+HA_137                 ForQA             saed90nm_typ_ht
+HA_138                 ForQA             saed90nm_typ_ht
+HA_139                 ForQA             saed90nm_typ_ht
+HA_140                 ForQA             saed90nm_typ_ht
+HA_141                 ForQA             saed90nm_typ_ht
+HA_142                 ForQA             saed90nm_typ_ht
+HA_143                 ForQA             saed90nm_typ_ht
+HA_144                 ForQA             saed90nm_typ_ht
+HA_145                 ForQA             saed90nm_typ_ht
+HA_146                 ForQA             saed90nm_typ_ht
+HA_147                 ForQA             saed90nm_typ_ht
+HA_148                 ForQA             saed90nm_typ_ht
+HA_149                 ForQA             saed90nm_typ_ht
+HA_150                 ForQA             saed90nm_typ_ht
+HA_151                 ForQA             saed90nm_typ_ht
+HA_152                 ForQA             saed90nm_typ_ht
+HA_153                 ForQA             saed90nm_typ_ht
+HA_154                 ForQA             saed90nm_typ_ht
+HA_155                 ForQA             saed90nm_typ_ht
+HA_156                 ForQA             saed90nm_typ_ht
+HA_157                 ForQA             saed90nm_typ_ht
+HA_158                 ForQA             saed90nm_typ_ht
+HA_159                 ForQA             saed90nm_typ_ht
+HA_160                 ForQA             saed90nm_typ_ht
+HA_161                 ForQA             saed90nm_typ_ht
+HA_162                 ForQA             saed90nm_typ_ht
+HA_163                 ForQA             saed90nm_typ_ht
+HA_164                 ForQA             saed90nm_typ_ht
+HA_165                 ForQA             saed90nm_typ_ht
+HA_166                 ForQA             saed90nm_typ_ht
+HA_167                 ForQA             saed90nm_typ_ht
+HA_168                 ForQA             saed90nm_typ_ht
+HA_169                 ForQA             saed90nm_typ_ht
+HA_170                 ForQA             saed90nm_typ_ht
+HA_171                 ForQA             saed90nm_typ_ht
+HA_172                 ForQA             saed90nm_typ_ht
+HA_173                 ForQA             saed90nm_typ_ht
+HA_174                 ForQA             saed90nm_typ_ht
+HA_175                 ForQA             saed90nm_typ_ht
+HA_176                 ForQA             saed90nm_typ_ht
+HA_177                 ForQA             saed90nm_typ_ht
+HA_178                 ForQA             saed90nm_typ_ht
+HA_179                 ForQA             saed90nm_typ_ht
+HA_180                 ForQA             saed90nm_typ_ht
+HA_181                 ForQA             saed90nm_typ_ht
+HA_182                 ForQA             saed90nm_typ_ht
+HA_183                 ForQA             saed90nm_typ_ht
+HA_184                 ForQA             saed90nm_typ_ht
+HA_185                 ForQA             saed90nm_typ_ht
+HA_186                 ForQA             saed90nm_typ_ht
+HA_187                 ForQA             saed90nm_typ_ht
+HA_188                 ForQA             saed90nm_typ_ht
+HA_189                 ForQA             saed90nm_typ_ht
+HA_190                 ForQA             saed90nm_typ_ht
+HA_191                 ForQA             saed90nm_typ_ht
+HA_192                 ForQA             saed90nm_typ_ht
+HA_193                 ForQA             saed90nm_typ_ht
+HA_194                 ForQA             saed90nm_typ_ht
+HA_195                 ForQA             saed90nm_typ_ht
+HA_196                 ForQA             saed90nm_typ_ht
+HA_197                 ForQA             saed90nm_typ_ht
+HA_198                 ForQA             saed90nm_typ_ht
+HA_199                 ForQA             saed90nm_typ_ht
+HA_200                 ForQA             saed90nm_typ_ht
+HA_201                 ForQA             saed90nm_typ_ht
+HA_202                 ForQA             saed90nm_typ_ht
+HA_203                 ForQA             saed90nm_typ_ht
+HA_204                 ForQA             saed90nm_typ_ht
+HA_205                 ForQA             saed90nm_typ_ht
+HA_206                 ForQA             saed90nm_typ_ht
+HA_207                 ForQA             saed90nm_typ_ht
+HA_208                 ForQA             saed90nm_typ_ht
+HA_209                 ForQA             saed90nm_typ_ht
+HA_210                 ForQA             saed90nm_typ_ht
+HA_211                 ForQA             saed90nm_typ_ht
+HA_212                 ForQA             saed90nm_typ_ht
+HA_213                 ForQA             saed90nm_typ_ht
+HA_214                 ForQA             saed90nm_typ_ht
+HA_215                 ForQA             saed90nm_typ_ht
+HA_216                 ForQA             saed90nm_typ_ht
+HA_217                 ForQA             saed90nm_typ_ht
+HA_218                 ForQA             saed90nm_typ_ht
+HA_219                 ForQA             saed90nm_typ_ht
+HA_220                 ForQA             saed90nm_typ_ht
+HA_221                 ForQA             saed90nm_typ_ht
+HA_222                 ForQA             saed90nm_typ_ht
+HA_223                 ForQA             saed90nm_typ_ht
+HA_224                 ForQA             saed90nm_typ_ht
+HA_225                 ForQA             saed90nm_typ_ht
+HA_226                 ForQA             saed90nm_typ_ht
+HA_227                 ForQA             saed90nm_typ_ht
+HA_228                 ForQA             saed90nm_typ_ht
+HA_229                 ForQA             saed90nm_typ_ht
+HA_230                 ForQA             saed90nm_typ_ht
+HA_231                 ForQA             saed90nm_typ_ht
+HA_232                 ForQA             saed90nm_typ_ht
+HA_233                 ForQA             saed90nm_typ_ht
+HA_234                 ForQA             saed90nm_typ_ht
+HA_235                 ForQA             saed90nm_typ_ht
+HA_236                 ForQA             saed90nm_typ_ht
+HA_237                 ForQA             saed90nm_typ_ht
+HA_238                 ForQA             saed90nm_typ_ht
+HA_239                 ForQA             saed90nm_typ_ht
+HA_240                 ForQA             saed90nm_typ_ht
+HA_241                 ForQA             saed90nm_typ_ht
+HA_242                 ForQA             saed90nm_typ_ht
+HA_243                 ForQA             saed90nm_typ_ht
+HA_244                 ForQA             saed90nm_typ_ht
+HA_245                 ForQA             saed90nm_typ_ht
+HA_246                 ForQA             saed90nm_typ_ht
+HA_247                 ForQA             saed90nm_typ_ht
+HA_248                 ForQA             saed90nm_typ_ht
+HA_249                 ForQA             saed90nm_typ_ht
+HA_250                 ForQA             saed90nm_typ_ht
+HA_251                 ForQA             saed90nm_typ_ht
+HA_252                 ForQA             saed90nm_typ_ht
+HA_253                 ForQA             saed90nm_typ_ht
+HA_254                 ForQA             saed90nm_typ_ht
+HA_255                 ForQA             saed90nm_typ_ht
+HA_256                 ForQA             saed90nm_typ_ht
+HA_257                 ForQA             saed90nm_typ_ht
+HA_258                 ForQA             saed90nm_typ_ht
+HA_259                 ForQA             saed90nm_typ_ht
+HA_260                 ForQA             saed90nm_typ_ht
+HA_261                 ForQA             saed90nm_typ_ht
+HA_262                 ForQA             saed90nm_typ_ht
+HA_263                 ForQA             saed90nm_typ_ht
+HA_264                 ForQA             saed90nm_typ_ht
+HA_265                 ForQA             saed90nm_typ_ht
+HA_266                 ForQA             saed90nm_typ_ht
+HA_267                 ForQA             saed90nm_typ_ht
+HA_268                 ForQA             saed90nm_typ_ht
+HA_269                 ForQA             saed90nm_typ_ht
+HA_270                 ForQA             saed90nm_typ_ht
+HA_271                 ForQA             saed90nm_typ_ht
+HA_272                 ForQA             saed90nm_typ_ht
+HA_273                 ForQA             saed90nm_typ_ht
+HA_274                 ForQA             saed90nm_typ_ht
+HA_275                 ForQA             saed90nm_typ_ht
+HA_276                 ForQA             saed90nm_typ_ht
+HA_277                 ForQA             saed90nm_typ_ht
+HA_278                 ForQA             saed90nm_typ_ht
+HA_279                 ForQA             saed90nm_typ_ht
+HA_280                 ForQA             saed90nm_typ_ht
+HA_281                 ForQA             saed90nm_typ_ht
+HA_282                 ForQA             saed90nm_typ_ht
+HA_283                 ForQA             saed90nm_typ_ht
+HA_284                 ForQA             saed90nm_typ_ht
+HA_285                 ForQA             saed90nm_typ_ht
+HA_286                 ForQA             saed90nm_typ_ht
+HA_287                 ForQA             saed90nm_typ_ht
+HA_288                 ForQA             saed90nm_typ_ht
+HA_289                 ForQA             saed90nm_typ_ht
+HA_290                 ForQA             saed90nm_typ_ht
+HA_291                 ForQA             saed90nm_typ_ht
+HA_292                 ForQA             saed90nm_typ_ht
+HA_293                 ForQA             saed90nm_typ_ht
+HA_294                 ForQA             saed90nm_typ_ht
+HA_295                 ForQA             saed90nm_typ_ht
+HA_296                 ForQA             saed90nm_typ_ht
+HA_297                 ForQA             saed90nm_typ_ht
+HA_298                 ForQA             saed90nm_typ_ht
+HA_299                 ForQA             saed90nm_typ_ht
+HA_300                 ForQA             saed90nm_typ_ht
+HA_301                 ForQA             saed90nm_typ_ht
+HA_302                 ForQA             saed90nm_typ_ht
+HA_303                 ForQA             saed90nm_typ_ht
+HA_304                 ForQA             saed90nm_typ_ht
+HA_305                 ForQA             saed90nm_typ_ht
+HA_306                 ForQA             saed90nm_typ_ht
+HA_307                 ForQA             saed90nm_typ_ht
+HA_308                 ForQA             saed90nm_typ_ht
+HA_309                 ForQA             saed90nm_typ_ht
+HA_310                 ForQA             saed90nm_typ_ht
+HA_311                 ForQA             saed90nm_typ_ht
+HA_312                 ForQA             saed90nm_typ_ht
+HA_313                 ForQA             saed90nm_typ_ht
+HA_314                 ForQA             saed90nm_typ_ht
+HA_315                 ForQA             saed90nm_typ_ht
+HA_316                 ForQA             saed90nm_typ_ht
+HA_317                 ForQA             saed90nm_typ_ht
+HA_318                 ForQA             saed90nm_typ_ht
+HA_319                 ForQA             saed90nm_typ_ht
+HA_320                 ForQA             saed90nm_typ_ht
+HA_321                 ForQA             saed90nm_typ_ht
+HA_322                 ForQA             saed90nm_typ_ht
+HA_323                 ForQA             saed90nm_typ_ht
+HA_324                 ForQA             saed90nm_typ_ht
+HA_325                 ForQA             saed90nm_typ_ht
+HA_326                 ForQA             saed90nm_typ_ht
+HA_327                 ForQA             saed90nm_typ_ht
+HA_328                 ForQA             saed90nm_typ_ht
+HA_329                 ForQA             saed90nm_typ_ht
+HA_330                 ForQA             saed90nm_typ_ht
+HA_331                 ForQA             saed90nm_typ_ht
+HA_332                 ForQA             saed90nm_typ_ht
+HA_333                 ForQA             saed90nm_typ_ht
+HA_334                 ForQA             saed90nm_typ_ht
+HA_335                 ForQA             saed90nm_typ_ht
+HA_336                 ForQA             saed90nm_typ_ht
+HA_337                 ForQA             saed90nm_typ_ht
+HA_338                 ForQA             saed90nm_typ_ht
+HA_339                 ForQA             saed90nm_typ_ht
+HA_340                 ForQA             saed90nm_typ_ht
+HA_341                 ForQA             saed90nm_typ_ht
+HA_342                 ForQA             saed90nm_typ_ht
+HA_343                 ForQA             saed90nm_typ_ht
+HA_344                 ForQA             saed90nm_typ_ht
+HA_345                 ForQA             saed90nm_typ_ht
+HA_346                 ForQA             saed90nm_typ_ht
+HA_347                 ForQA             saed90nm_typ_ht
+HA_348                 ForQA             saed90nm_typ_ht
+HA_349                 ForQA             saed90nm_typ_ht
+HA_350                 ForQA             saed90nm_typ_ht
+HA_351                 ForQA             saed90nm_typ_ht
+HA_352                 ForQA             saed90nm_typ_ht
+HA_353                 ForQA             saed90nm_typ_ht
+HA_354                 ForQA             saed90nm_typ_ht
+HA_355                 ForQA             saed90nm_typ_ht
+HA_356                 ForQA             saed90nm_typ_ht
+HA_357                 ForQA             saed90nm_typ_ht
+HA_358                 ForQA             saed90nm_typ_ht
+HA_359                 ForQA             saed90nm_typ_ht
+HA_360                 ForQA             saed90nm_typ_ht
+HA_361                 ForQA             saed90nm_typ_ht
+HA_362                 ForQA             saed90nm_typ_ht
+HA_363                 ForQA             saed90nm_typ_ht
+HA_364                 ForQA             saed90nm_typ_ht
+HA_365                 ForQA             saed90nm_typ_ht
+HA_366                 ForQA             saed90nm_typ_ht
+HA_367                 ForQA             saed90nm_typ_ht
+HA_368                 ForQA             saed90nm_typ_ht
+HA_369                 ForQA             saed90nm_typ_ht
+HA_370                 ForQA             saed90nm_typ_ht
+HA_371                 ForQA             saed90nm_typ_ht
+HA_372                 ForQA             saed90nm_typ_ht
+HA_373                 ForQA             saed90nm_typ_ht
+HA_374                 ForQA             saed90nm_typ_ht
+HA_375                 ForQA             saed90nm_typ_ht
+HA_376                 ForQA             saed90nm_typ_ht
+HA_377                 ForQA             saed90nm_typ_ht
+HA_378                 ForQA             saed90nm_typ_ht
+HA_379                 ForQA             saed90nm_typ_ht
+HA_380                 ForQA             saed90nm_typ_ht
+HA_381                 ForQA             saed90nm_typ_ht
+HA_382                 ForQA             saed90nm_typ_ht
+HA_383                 ForQA             saed90nm_typ_ht
+HA_384                 ForQA             saed90nm_typ_ht
+HA_385                 ForQA             saed90nm_typ_ht
+HA_386                 ForQA             saed90nm_typ_ht
+HA_387                 ForQA             saed90nm_typ_ht
+HA_388                 ForQA             saed90nm_typ_ht
+HA_389                 ForQA             saed90nm_typ_ht
+HA_390                 ForQA             saed90nm_typ_ht
+HA_391                 ForQA             saed90nm_typ_ht
+HA_392                 ForQA             saed90nm_typ_ht
+HA_393                 ForQA             saed90nm_typ_ht
+HA_394                 ForQA             saed90nm_typ_ht
+HA_395                 ForQA             saed90nm_typ_ht
+HA_396                 ForQA             saed90nm_typ_ht
+HA_397                 ForQA             saed90nm_typ_ht
+HA_398                 ForQA             saed90nm_typ_ht
+HA_399                 ForQA             saed90nm_typ_ht
+HA_400                 ForQA             saed90nm_typ_ht
+WM32bit_DW01_sub_0     8000              saed90nm_typ_ht
+WM32bit_DW01_inc_0     8000              saed90nm_typ_ht
+WM32bit_DW01_inc_1     8000              saed90nm_typ_ht
+WM32bit_DW01_inc_2     8000              saed90nm_typ_ht
+
+
+Global Operating Voltage = 1.2  
+Power-specific unit information :
+    Voltage Units = 1V
+    Capacitance Units = 1.000000ff
+    Time Units = 1ns
+    Dynamic Power Units = 1uW    (derived from V,C,T units)
+    Leakage Power Units = 1pW
+
+
+Attributes
+----------
+i - Including register clock pin internal power
+
+
+  Cell Internal Power  =   2.1582 mW   (76%)
+  Net Switching Power  = 698.7407 uW   (24%)
+                         ---------
+Total Dynamic Power    =   2.8569 mW  (100%)
+
+Cell Leakage Power     = 436.8543 uW
+
+Information: report_power power group summary does not include estimated clock tree power. (PWR-789)
+
+                 Internal         Switching           Leakage            Total
+Power Group      Power            Power               Power              Power   (   %    )  Attrs
+--------------------------------------------------------------------------------------------------
+io_pad             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+memory             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+black_box          0.0000            0.0000            0.0000            0.0000  (   0.00%)
+clock_network      0.0000            0.0000            0.0000            0.0000  (   0.00%)  i
+register           0.0000            0.0000            0.0000            0.0000  (   0.00%)
+sequential         0.0000            0.0000            0.0000            0.0000  (   0.00%)
+combinational  2.1582e+03          698.7282        4.3685e+08        3.2938e+03  ( 100.00%)
+--------------------------------------------------------------------------------------------------
+Total          2.1582e+03 uW       698.7282 uW     4.3685e+08 pW     3.2938e+03 uW
+1

@@ -1,0 +1,19 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 10
+        -sort_by slack
+Design : shift_integration
+Version: U-2022.12-SP7
+Date   : Sun Dec 24 17:18:37 2023
+****************************************
+
+ # A fanout number of 1000 was used for high fanout net computations.
+
+Operating Conditions: TYPICAL   Library: saed90nm_typ_ht
+Wire Load Model Mode: enclosed
+No paths.
+
+1

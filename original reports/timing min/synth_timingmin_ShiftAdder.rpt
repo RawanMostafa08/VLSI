@@ -1,0 +1,355 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay min
+        -max_paths 10
+Design : ShiftAdder
+Version: U-2022.12-SP7
+Date   : Sun Dec 24 14:14:15 2023
+****************************************
+
+Operating Conditions: TYPICAL   Library: saed90nm_typ_ht
+Wire Load Model Mode: enclosed
+
+  Startpoint: in1[32] (input port clocked by vsysclk)
+  Endpoint: out[32] (output port clocked by vsysclk)
+  Path Group: vsysclk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  ShiftAdder         16000                 saed90nm_typ_ht
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock vsysclk (rise edge)                               0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    0.20       0.20 r
+  in1[32] (in)                                            0.00       0.20 r
+  DUT/A[0] (CarryBypass_Adder_62)                         0.00       0.20 r
+  DUT/ripple_loop[0].R/A[0] (Ripple4bit_496)              0.00       0.20 r
+  DUT/ripple_loop[0].R/U32/Q (XNOR2X1)                    0.23       0.43 f
+  DUT/ripple_loop[0].R/Sum[0] (Ripple4bit_496)            0.00       0.43 f
+  DUT/Sum[0] (CarryBypass_Adder_62)                       0.00       0.43 f
+  out[32] (out)                                           0.19       0.62 f
+  data arrival time                                                  0.62
+
+  clock vsysclk (rise edge)                               0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  output external delay                                  -0.50      -0.50
+  data required time                                                -0.50
+  --------------------------------------------------------------------------
+  data required time                                                -0.50
+  data arrival time                                                 -0.62
+  --------------------------------------------------------------------------
+  slack (MET)                                                        1.12
+
+
+  Startpoint: in1[28] (input port clocked by vsysclk)
+  Endpoint: out[28] (output port clocked by vsysclk)
+  Path Group: vsysclk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  ShiftAdder         16000                 saed90nm_typ_ht
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock vsysclk (rise edge)                               0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    0.20       0.20 r
+  in1[28] (in)                                            0.00       0.20 r
+  DUT2/A[28] (CarryBypass_Adder_63)                       0.00       0.20 r
+  DUT2/ripple_loop[7].R/A[0] (Ripple4bit_497)             0.00       0.20 r
+  DUT2/ripple_loop[7].R/U41/Q (XOR2X1)                    0.23       0.43 f
+  DUT2/ripple_loop[7].R/Sum[0] (Ripple4bit_497)           0.00       0.43 f
+  DUT2/Sum[28] (CarryBypass_Adder_63)                     0.00       0.43 f
+  out[28] (out)                                           0.19       0.62 f
+  data arrival time                                                  0.62
+
+  clock vsysclk (rise edge)                               0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  output external delay                                  -0.50      -0.50
+  data required time                                                -0.50
+  --------------------------------------------------------------------------
+  data required time                                                -0.50
+  data arrival time                                                 -0.62
+  --------------------------------------------------------------------------
+  slack (MET)                                                        1.12
+
+
+  Startpoint: in1[41] (input port clocked by vsysclk)
+  Endpoint: out[41] (output port clocked by vsysclk)
+  Path Group: vsysclk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  ShiftAdder         16000                 saed90nm_typ_ht
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock vsysclk (rise edge)                               0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    0.20       0.20 r
+  in1[41] (in)                                            0.00       0.20 r
+  DUT/A[9] (CarryBypass_Adder_62)                         0.00       0.20 r
+  DUT/ripple_loop[2].R/A[1] (Ripple4bit_510)              0.00       0.20 r
+  DUT/ripple_loop[2].R/U63/Q (XOR2X1)                     0.24       0.44 f
+  DUT/ripple_loop[2].R/Sum[1] (Ripple4bit_510)            0.00       0.44 f
+  DUT/Sum[9] (CarryBypass_Adder_62)                       0.00       0.44 f
+  out[41] (out)                                           0.19       0.63 f
+  data arrival time                                                  0.63
+
+  clock vsysclk (rise edge)                               0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  output external delay                                  -0.50      -0.50
+  data required time                                                -0.50
+  --------------------------------------------------------------------------
+  data required time                                                -0.50
+  data arrival time                                                 -0.63
+  --------------------------------------------------------------------------
+  slack (MET)                                                        1.13
+
+
+  Startpoint: in1[37] (input port clocked by vsysclk)
+  Endpoint: out[37] (output port clocked by vsysclk)
+  Path Group: vsysclk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  ShiftAdder         16000                 saed90nm_typ_ht
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock vsysclk (rise edge)                               0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    0.20       0.20 r
+  in1[37] (in)                                            0.00       0.20 r
+  DUT/A[5] (CarryBypass_Adder_62)                         0.00       0.20 r
+  DUT/ripple_loop[1].R/A[1] (Ripple4bit_511)              0.00       0.20 r
+  DUT/ripple_loop[1].R/U70/Q (XOR2X1)                     0.24       0.44 f
+  DUT/ripple_loop[1].R/Sum[1] (Ripple4bit_511)            0.00       0.44 f
+  DUT/Sum[5] (CarryBypass_Adder_62)                       0.00       0.44 f
+  out[37] (out)                                           0.19       0.63 f
+  data arrival time                                                  0.63
+
+  clock vsysclk (rise edge)                               0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  output external delay                                  -0.50      -0.50
+  data required time                                                -0.50
+  --------------------------------------------------------------------------
+  data required time                                                -0.50
+  data arrival time                                                 -0.63
+  --------------------------------------------------------------------------
+  slack (MET)                                                        1.13
+
+
+  Startpoint: in1[25] (input port clocked by vsysclk)
+  Endpoint: out[25] (output port clocked by vsysclk)
+  Path Group: vsysclk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  ShiftAdder         16000                 saed90nm_typ_ht
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock vsysclk (rise edge)                               0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    0.20       0.20 r
+  in1[25] (in)                                            0.00       0.20 r
+  DUT2/A[25] (CarryBypass_Adder_63)                       0.00       0.20 r
+  DUT2/ripple_loop[6].R/A[1] (Ripple4bit_498)             0.00       0.20 r
+  DUT2/ripple_loop[6].R/U1/Q (XOR2X1)                     0.24       0.44 f
+  DUT2/ripple_loop[6].R/Sum[1] (Ripple4bit_498)           0.00       0.44 f
+  DUT2/Sum[25] (CarryBypass_Adder_63)                     0.00       0.44 f
+  out[25] (out)                                           0.19       0.63 f
+  data arrival time                                                  0.63
+
+  clock vsysclk (rise edge)                               0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  output external delay                                  -0.50      -0.50
+  data required time                                                -0.50
+  --------------------------------------------------------------------------
+  data required time                                                -0.50
+  data arrival time                                                 -0.63
+  --------------------------------------------------------------------------
+  slack (MET)                                                        1.13
+
+
+  Startpoint: in1[17] (input port clocked by vsysclk)
+  Endpoint: out[17] (output port clocked by vsysclk)
+  Path Group: vsysclk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  ShiftAdder         16000                 saed90nm_typ_ht
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock vsysclk (rise edge)                               0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    0.20       0.20 r
+  in1[17] (in)                                            0.00       0.20 r
+  DUT2/A[17] (CarryBypass_Adder_63)                       0.00       0.20 r
+  DUT2/ripple_loop[4].R/A[1] (Ripple4bit_500)             0.00       0.20 r
+  DUT2/ripple_loop[4].R/U68/Q (XOR2X1)                    0.24       0.44 f
+  DUT2/ripple_loop[4].R/Sum[1] (Ripple4bit_500)           0.00       0.44 f
+  DUT2/Sum[17] (CarryBypass_Adder_63)                     0.00       0.44 f
+  out[17] (out)                                           0.19       0.63 f
+  data arrival time                                                  0.63
+
+  clock vsysclk (rise edge)                               0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  output external delay                                  -0.50      -0.50
+  data required time                                                -0.50
+  --------------------------------------------------------------------------
+  data required time                                                -0.50
+  data arrival time                                                 -0.63
+  --------------------------------------------------------------------------
+  slack (MET)                                                        1.13
+
+
+  Startpoint: in1[13] (input port clocked by vsysclk)
+  Endpoint: out[13] (output port clocked by vsysclk)
+  Path Group: vsysclk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  ShiftAdder         16000                 saed90nm_typ_ht
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock vsysclk (rise edge)                               0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    0.20       0.20 r
+  in1[13] (in)                                            0.00       0.20 r
+  DUT2/A[13] (CarryBypass_Adder_63)                       0.00       0.20 r
+  DUT2/ripple_loop[3].R/A[1] (Ripple4bit_501)             0.00       0.20 r
+  DUT2/ripple_loop[3].R/U63/Q (XOR2X1)                    0.24       0.44 f
+  DUT2/ripple_loop[3].R/Sum[1] (Ripple4bit_501)           0.00       0.44 f
+  DUT2/Sum[13] (CarryBypass_Adder_63)                     0.00       0.44 f
+  out[13] (out)                                           0.19       0.63 f
+  data arrival time                                                  0.63
+
+  clock vsysclk (rise edge)                               0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  output external delay                                  -0.50      -0.50
+  data required time                                                -0.50
+  --------------------------------------------------------------------------
+  data required time                                                -0.50
+  data arrival time                                                 -0.63
+  --------------------------------------------------------------------------
+  slack (MET)                                                        1.13
+
+
+  Startpoint: in1[9] (input port clocked by vsysclk)
+  Endpoint: out[9] (output port clocked by vsysclk)
+  Path Group: vsysclk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  ShiftAdder         16000                 saed90nm_typ_ht
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock vsysclk (rise edge)                               0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    0.20       0.20 r
+  in1[9] (in)                                             0.00       0.20 r
+  DUT2/A[9] (CarryBypass_Adder_63)                        0.00       0.20 r
+  DUT2/ripple_loop[2].R/A[1] (Ripple4bit_502)             0.00       0.20 r
+  DUT2/ripple_loop[2].R/U66/Q (XOR2X1)                    0.24       0.44 f
+  DUT2/ripple_loop[2].R/Sum[1] (Ripple4bit_502)           0.00       0.44 f
+  DUT2/Sum[9] (CarryBypass_Adder_63)                      0.00       0.44 f
+  out[9] (out)                                            0.19       0.63 f
+  data arrival time                                                  0.63
+
+  clock vsysclk (rise edge)                               0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  output external delay                                  -0.50      -0.50
+  data required time                                                -0.50
+  --------------------------------------------------------------------------
+  data required time                                                -0.50
+  data arrival time                                                 -0.63
+  --------------------------------------------------------------------------
+  slack (MET)                                                        1.13
+
+
+  Startpoint: in1[5] (input port clocked by vsysclk)
+  Endpoint: out[5] (output port clocked by vsysclk)
+  Path Group: vsysclk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  ShiftAdder         16000                 saed90nm_typ_ht
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock vsysclk (rise edge)                               0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    0.20       0.20 r
+  in1[5] (in)                                             0.00       0.20 r
+  DUT2/A[5] (CarryBypass_Adder_63)                        0.00       0.20 r
+  DUT2/ripple_loop[1].R/A[1] (Ripple4bit_503)             0.00       0.20 r
+  DUT2/ripple_loop[1].R/U67/Q (XOR2X1)                    0.24       0.44 f
+  DUT2/ripple_loop[1].R/Sum[1] (Ripple4bit_503)           0.00       0.44 f
+  DUT2/Sum[5] (CarryBypass_Adder_63)                      0.00       0.44 f
+  out[5] (out)                                            0.19       0.63 f
+  data arrival time                                                  0.63
+
+  clock vsysclk (rise edge)                               0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  output external delay                                  -0.50      -0.50
+  data required time                                                -0.50
+  --------------------------------------------------------------------------
+  data required time                                                -0.50
+  data arrival time                                                 -0.63
+  --------------------------------------------------------------------------
+  slack (MET)                                                        1.13
+
+
+  Startpoint: in1[1] (input port clocked by vsysclk)
+  Endpoint: out[1] (output port clocked by vsysclk)
+  Path Group: vsysclk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  ShiftAdder         16000                 saed90nm_typ_ht
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock vsysclk (rise edge)                               0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    0.20       0.20 r
+  in1[1] (in)                                             0.00       0.20 r
+  DUT2/A[1] (CarryBypass_Adder_63)                        0.00       0.20 r
+  DUT2/ripple_loop[0].R/A[1] (Ripple4bit_504)             0.00       0.20 r
+  DUT2/ripple_loop[0].R/U66/Q (XOR2X1)                    0.24       0.44 f
+  DUT2/ripple_loop[0].R/Sum[1] (Ripple4bit_504)           0.00       0.44 f
+  DUT2/Sum[1] (CarryBypass_Adder_63)                      0.00       0.44 f
+  out[1] (out)                                            0.19       0.63 f
+  data arrival time                                                  0.63
+
+  clock vsysclk (rise edge)                               0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  output external delay                                  -0.50      -0.50
+  data required time                                                -0.50
+  --------------------------------------------------------------------------
+  data required time                                                -0.50
+  data arrival time                                                 -0.63
+  --------------------------------------------------------------------------
+  slack (MET)                                                        1.13
+
+
+1

@@ -1,0 +1,52 @@
+ 
+****************************************
+Report : cell
+Design : RippleCarryAdder
+Version: U-2022.12-SP7
+Date   : Sat Dec 23 15:41:52 2023
+****************************************
+
+Attributes:
+    b - black box (unknown)
+    h - hierarchical
+    n - noncombinational
+    r - removable
+    u - contains unmapped logic
+
+Cell                      Reference       Library             Area  Attributes
+--------------------------------------------------------------------------------
+generate_adders[0].Adder  Fulladder_onebit_0              74.649602 h
+generate_adders[1].Adder  Fulladder_onebit_31             55.296000 h
+generate_adders[2].Adder  Fulladder_onebit_30             55.296000 h
+generate_adders[3].Adder  Fulladder_onebit_29             55.296000 h
+generate_adders[4].Adder  Fulladder_onebit_28             55.296000 h
+generate_adders[5].Adder  Fulladder_onebit_27             55.296000 h
+generate_adders[6].Adder  Fulladder_onebit_26             55.296000 h
+generate_adders[7].Adder  Fulladder_onebit_25             55.296000 h
+generate_adders[8].Adder  Fulladder_onebit_24             55.296000 h
+generate_adders[9].Adder  Fulladder_onebit_23             55.296000 h
+generate_adders[10].Adder Fulladder_onebit_22             55.296000 h
+generate_adders[11].Adder Fulladder_onebit_21             55.296000 h
+generate_adders[12].Adder Fulladder_onebit_20             55.296000 h
+generate_adders[13].Adder Fulladder_onebit_19             55.296000 h
+generate_adders[14].Adder Fulladder_onebit_18             55.296000 h
+generate_adders[15].Adder Fulladder_onebit_17             55.296000 h
+generate_adders[16].Adder Fulladder_onebit_16             55.296000 h
+generate_adders[17].Adder Fulladder_onebit_15             55.296000 h
+generate_adders[18].Adder Fulladder_onebit_14             55.296000 h
+generate_adders[19].Adder Fulladder_onebit_13             55.296000 h
+generate_adders[20].Adder Fulladder_onebit_12             55.296000 h
+generate_adders[21].Adder Fulladder_onebit_11             55.296000 h
+generate_adders[22].Adder Fulladder_onebit_10             55.296000 h
+generate_adders[23].Adder Fulladder_onebit_9              55.296000 h
+generate_adders[24].Adder Fulladder_onebit_8              55.296000 h
+generate_adders[25].Adder Fulladder_onebit_7              55.296000 h
+generate_adders[26].Adder Fulladder_onebit_6              55.296000 h
+generate_adders[27].Adder Fulladder_onebit_5              60.825601 h
+generate_adders[28].Adder Fulladder_onebit_4              55.296000 h
+generate_adders[29].Adder Fulladder_onebit_3              54.374400 h
+generate_adders[30].Adder Fulladder_onebit_2              50.688001 h
+generate_adders[31].Adder Fulladder_onebit_1              48.844799 h
+--------------------------------------------------------------------------------
+Total 32 cells                                            1782.374415
+1

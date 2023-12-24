@@ -1,0 +1,46 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 10
+        -sort_by slack
+Design : HA
+Version: U-2022.12-SP7
+Date   : Sun Dec 24 15:31:10 2023
+****************************************
+
+Operating Conditions: TYPICAL   Library: saed90nm_typ_ht
+Wire Load Model Mode: enclosed
+
+  Startpoint: in1 (input port clocked by vsysclk)
+  Endpoint: s (output port clocked by vsysclk)
+  Path Group: vsysclk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  HA                 ForQA                 saed90nm_typ_ht
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock vsysclk (rise edge)                0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     0.20       0.20 r
+  in1 (in)                                 0.00       0.20 r
+  U1/Q (XOR2X1)                            0.22       0.42 f
+  s (out)                                  0.17       0.60 f
+  data arrival time                                   0.60
+
+  clock vsysclk (rise edge)                2.00       2.00
+  clock network delay (ideal)              0.00       2.00
+  output external delay                   -0.50       1.50
+  data required time                                  1.50
+  -----------------------------------------------------------
+  data required time                                  1.50
+  data arrival time                                  -0.60
+  -----------------------------------------------------------
+  slack (MET)                                         0.90
+
+
+1

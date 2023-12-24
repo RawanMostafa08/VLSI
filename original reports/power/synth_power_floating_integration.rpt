@@ -1,0 +1,76 @@
+Loading db file '/home/user24/Downloads/Lab4/ref/models/saed90nm_typ_ht.db'
+Information: Updating design information... (UID-85)
+Information: Propagating switching activity (low effort zero delay simulation). (PWR-6)
+Warning: Design has unannotated primary inputs. (PWR-414)
+Warning: Design has unannotated sequential cell outputs. (PWR-415)
+ 
+****************************************
+Report : power
+        -analysis_effort low
+Design : floating_integration
+Version: U-2022.12-SP7
+Date   : Sun Dec 24 19:14:32 2023
+****************************************
+
+
+Library(s) Used:
+
+    saed90nm_typ_ht (File: /home/user24/Downloads/Lab4/ref/models/saed90nm_typ_ht.db)
+
+
+Operating Conditions: TYPICAL   Library: saed90nm_typ_ht
+Wire Load Model Mode: enclosed
+
+Design        Wire Load Model            Library
+------------------------------------------------
+floating_integration   70000             saed90nm_typ_ht
+FloatingPointMultiplier
+                       70000             saed90nm_typ_ht
+MultiplierOperator     70000             saed90nm_typ_ht
+PlusOperatorAdder      8000              saed90nm_typ_ht
+PlusOperatorAdder_DW01_add_0
+                       8000              saed90nm_typ_ht
+MultiplierOperator_DW02_mult_0
+                       70000             saed90nm_typ_ht
+MultiplierOperator_DW01_add_0_DW01_add_1
+                       8000              saed90nm_typ_ht
+FloatingPointMultiplier_DW01_sub_0
+                       8000              saed90nm_typ_ht
+
+
+Global Operating Voltage = 1.2  
+Power-specific unit information :
+    Voltage Units = 1V
+    Capacitance Units = 1.000000ff
+    Time Units = 1ns
+    Dynamic Power Units = 1uW    (derived from V,C,T units)
+    Leakage Power Units = 1pW
+
+
+Attributes
+----------
+i - Including register clock pin internal power
+
+
+  Cell Internal Power  = 447.3242 uW   (73%)
+  Net Switching Power  = 164.3902 uW   (27%)
+                         ---------
+Total Dynamic Power    = 611.7144 uW  (100%)
+
+Cell Leakage Power     = 612.8235 uW
+
+Information: report_power power group summary does not include estimated clock tree power. (PWR-789)
+
+                 Internal         Switching           Leakage            Total
+Power Group      Power            Power               Power              Power   (   %    )  Attrs
+--------------------------------------------------------------------------------------------------
+io_pad             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+memory             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+black_box          0.0000            0.0000            0.0000            0.0000  (   0.00%)
+clock_network      0.0000            0.0000            0.0000            0.0000  (   0.00%)  i
+register           0.0000            0.0000            0.0000            0.0000  (   0.00%)
+sequential        23.1416            6.9015        4.0401e+07           70.4441  (   5.75%)
+combinational    424.1825          157.4887        5.7242e+08        1.1541e+03  (  94.25%)
+--------------------------------------------------------------------------------------------------
+Total            447.3241 uW       164.3902 uW     6.1282e+08 pW     1.2245e+03 uW
+1

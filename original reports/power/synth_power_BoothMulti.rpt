@@ -1,0 +1,256 @@
+Loading db file '/home/user24/Downloads/Lab4/ref/models/saed90nm_typ_ht.db'
+Information: Updating design information... (UID-85)
+Information: Propagating switching activity (low effort zero delay simulation). (PWR-6)
+Warning: Design has unannotated primary inputs. (PWR-414)
+ 
+****************************************
+Report : power
+        -analysis_effort low
+Design : Booth
+Version: U-2022.12-SP7
+Date   : Sun Dec 24 13:52:00 2023
+****************************************
+
+
+Library(s) Used:
+
+    saed90nm_typ_ht (File: /home/user24/Downloads/Lab4/ref/models/saed90nm_typ_ht.db)
+
+
+Operating Conditions: TYPICAL   Library: saed90nm_typ_ht
+Wire Load Model Mode: enclosed
+
+Design        Wire Load Model            Library
+------------------------------------------------
+Booth                  280000            saed90nm_typ_ht
+PlusOperatorAdder_0    8000              saed90nm_typ_ht
+PlusOperatorAdder_1    8000              saed90nm_typ_ht
+PlusOperatorAdder_2    8000              saed90nm_typ_ht
+PlusOperatorAdder_3    8000              saed90nm_typ_ht
+PlusOperatorAdder_4    8000              saed90nm_typ_ht
+PlusOperatorAdder_5    8000              saed90nm_typ_ht
+PlusOperatorAdder_6    8000              saed90nm_typ_ht
+PlusOperatorAdder_7    8000              saed90nm_typ_ht
+PlusOperatorAdder_8    8000              saed90nm_typ_ht
+PlusOperatorAdder_9    8000              saed90nm_typ_ht
+PlusOperatorAdder_10   8000              saed90nm_typ_ht
+PlusOperatorAdder_11   8000              saed90nm_typ_ht
+PlusOperatorAdder_12   8000              saed90nm_typ_ht
+PlusOperatorAdder_13   8000              saed90nm_typ_ht
+PlusOperatorAdder_14   8000              saed90nm_typ_ht
+PlusOperatorAdder_15   8000              saed90nm_typ_ht
+PlusOperatorAdder_16   8000              saed90nm_typ_ht
+PlusOperatorAdder_17   8000              saed90nm_typ_ht
+PlusOperatorAdder_18   8000              saed90nm_typ_ht
+PlusOperatorAdder_19   8000              saed90nm_typ_ht
+PlusOperatorAdder_20   8000              saed90nm_typ_ht
+PlusOperatorAdder_21   8000              saed90nm_typ_ht
+PlusOperatorAdder_22   8000              saed90nm_typ_ht
+PlusOperatorAdder_23   8000              saed90nm_typ_ht
+PlusOperatorAdder_24   8000              saed90nm_typ_ht
+PlusOperatorAdder_25   8000              saed90nm_typ_ht
+PlusOperatorAdder_26   8000              saed90nm_typ_ht
+PlusOperatorAdder_27   8000              saed90nm_typ_ht
+PlusOperatorAdder_28   8000              saed90nm_typ_ht
+PlusOperatorAdder_29   8000              saed90nm_typ_ht
+PlusOperatorAdder_30   8000              saed90nm_typ_ht
+PlusOperatorAdder_31   8000              saed90nm_typ_ht
+PlusOperatorAdder_32   8000              saed90nm_typ_ht
+PlusOperatorAdder_33   8000              saed90nm_typ_ht
+PlusOperatorAdder_34   8000              saed90nm_typ_ht
+PlusOperatorAdder_35   8000              saed90nm_typ_ht
+PlusOperatorAdder_36   8000              saed90nm_typ_ht
+PlusOperatorAdder_37   8000              saed90nm_typ_ht
+PlusOperatorAdder_38   8000              saed90nm_typ_ht
+PlusOperatorAdder_39   8000              saed90nm_typ_ht
+PlusOperatorAdder_40   8000              saed90nm_typ_ht
+PlusOperatorAdder_41   8000              saed90nm_typ_ht
+PlusOperatorAdder_42   8000              saed90nm_typ_ht
+PlusOperatorAdder_43   8000              saed90nm_typ_ht
+PlusOperatorAdder_44   8000              saed90nm_typ_ht
+PlusOperatorAdder_45   8000              saed90nm_typ_ht
+PlusOperatorAdder_46   8000              saed90nm_typ_ht
+PlusOperatorAdder_47   8000              saed90nm_typ_ht
+PlusOperatorAdder_48   8000              saed90nm_typ_ht
+PlusOperatorAdder_49   8000              saed90nm_typ_ht
+PlusOperatorAdder_50   8000              saed90nm_typ_ht
+PlusOperatorAdder_51   8000              saed90nm_typ_ht
+PlusOperatorAdder_52   8000              saed90nm_typ_ht
+PlusOperatorAdder_53   8000              saed90nm_typ_ht
+PlusOperatorAdder_54   8000              saed90nm_typ_ht
+PlusOperatorAdder_55   8000              saed90nm_typ_ht
+PlusOperatorAdder_56   8000              saed90nm_typ_ht
+PlusOperatorAdder_57   8000              saed90nm_typ_ht
+PlusOperatorAdder_58   8000              saed90nm_typ_ht
+PlusOperatorAdder_59   8000              saed90nm_typ_ht
+PlusOperatorAdder_60   8000              saed90nm_typ_ht
+PlusOperatorAdder_61   8000              saed90nm_typ_ht
+PlusOperatorAdder_62   8000              saed90nm_typ_ht
+PlusOperatorAdder_63   8000              saed90nm_typ_ht
+PlusOperatorAdder_25_DW01_add_0_DW01_add_24
+                       8000              saed90nm_typ_ht
+PlusOperatorAdder_27_DW01_add_0_DW01_add_26
+                       8000              saed90nm_typ_ht
+PlusOperatorAdder_29_DW01_add_0_DW01_add_28
+                       8000              saed90nm_typ_ht
+PlusOperatorAdder_31_DW01_add_0_DW01_add_30
+                       8000              saed90nm_typ_ht
+PlusOperatorAdder_60_DW01_add_0_DW01_add_59
+                       8000              saed90nm_typ_ht
+Booth_DW01_inc_1       8000              saed90nm_typ_ht
+PlusOperatorAdder_0_DW01_add_1
+                       8000              saed90nm_typ_ht
+PlusOperatorAdder_62_DW01_add_1
+                       8000              saed90nm_typ_ht
+PlusOperatorAdder_56_DW01_add_1
+                       8000              saed90nm_typ_ht
+PlusOperatorAdder_38_DW01_add_1
+                       8000              saed90nm_typ_ht
+PlusOperatorAdder_34_DW01_add_1
+                       8000              saed90nm_typ_ht
+PlusOperatorAdder_32_DW01_add_1
+                       8000              saed90nm_typ_ht
+PlusOperatorAdder_30_DW01_add_1
+                       8000              saed90nm_typ_ht
+PlusOperatorAdder_28_DW01_add_1
+                       8000              saed90nm_typ_ht
+PlusOperatorAdder_26_DW01_add_1
+                       8000              saed90nm_typ_ht
+PlusOperatorAdder_20_DW01_add_1
+                       8000              saed90nm_typ_ht
+PlusOperatorAdder_2_DW01_add_1
+                       8000              saed90nm_typ_ht
+PlusOperatorAdder_1_DW01_add_1
+                       8000              saed90nm_typ_ht
+PlusOperatorAdder_63_DW01_add_1
+                       8000              saed90nm_typ_ht
+PlusOperatorAdder_57_DW01_add_4
+                       8000              saed90nm_typ_ht
+PlusOperatorAdder_55_DW01_add_4
+                       8000              saed90nm_typ_ht
+PlusOperatorAdder_21_DW01_add_7
+                       8000              saed90nm_typ_ht
+PlusOperatorAdder_43_DW01_add_7
+                       8000              saed90nm_typ_ht
+PlusOperatorAdder_52_DW01_add_3
+                       8000              saed90nm_typ_ht
+PlusOperatorAdder_53_DW01_add_7
+                       8000              saed90nm_typ_ht
+PlusOperatorAdder_58_DW01_add_6
+                       8000              saed90nm_typ_ht
+PlusOperatorAdder_13_DW01_add_7
+                       8000              saed90nm_typ_ht
+PlusOperatorAdder_11_DW01_add_7
+                       8000              saed90nm_typ_ht
+PlusOperatorAdder_10_DW01_add_3
+                       8000              saed90nm_typ_ht
+PlusOperatorAdder_9_DW01_add_6
+                       8000              saed90nm_typ_ht
+PlusOperatorAdder_7_DW01_add_6
+                       8000              saed90nm_typ_ht
+PlusOperatorAdder_8_DW01_add_4
+                       8000              saed90nm_typ_ht
+PlusOperatorAdder_42_DW01_add_4
+                       8000              saed90nm_typ_ht
+PlusOperatorAdder_37_DW01_add_11
+                       8000              saed90nm_typ_ht
+PlusOperatorAdder_18_DW01_add_4
+                       8000              saed90nm_typ_ht
+PlusOperatorAdder_24_DW01_add_5
+                       8000              saed90nm_typ_ht
+PlusOperatorAdder_59_DW01_add_8
+                       8000              saed90nm_typ_ht
+PlusOperatorAdder_41_DW01_add_13
+                       8000              saed90nm_typ_ht
+PlusOperatorAdder_39_DW01_add_13
+                       8000              saed90nm_typ_ht
+PlusOperatorAdder_36_DW01_add_8
+                       8000              saed90nm_typ_ht
+PlusOperatorAdder_49_DW01_add_11
+                       8000              saed90nm_typ_ht
+PlusOperatorAdder_54_DW01_add_10
+                       8000              saed90nm_typ_ht
+PlusOperatorAdder_51_DW01_add_11
+                       8000              saed90nm_typ_ht
+PlusOperatorAdder_48_DW01_add_8
+                       8000              saed90nm_typ_ht
+PlusOperatorAdder_46_DW01_add_8
+                       8000              saed90nm_typ_ht
+PlusOperatorAdder_35_DW01_add_16
+                       8000              saed90nm_typ_ht
+PlusOperatorAdder_33_DW01_add_16
+                       8000              saed90nm_typ_ht
+PlusOperatorAdder_23_DW01_add_15
+                       8000              saed90nm_typ_ht
+PlusOperatorAdder_19_DW01_add_15
+                       8000              saed90nm_typ_ht
+PlusOperatorAdder_17_DW01_add_10
+                       8000              saed90nm_typ_ht
+PlusOperatorAdder_15_DW01_add_10
+                       8000              saed90nm_typ_ht
+PlusOperatorAdder_14_DW01_add_9
+                       8000              saed90nm_typ_ht
+PlusOperatorAdder_12_DW01_add_7
+                       8000              saed90nm_typ_ht
+PlusOperatorAdder_6_DW01_add_7
+                       8000              saed90nm_typ_ht
+PlusOperatorAdder_4_DW01_add_9
+                       8000              saed90nm_typ_ht
+PlusOperatorAdder_3_DW01_add_8
+                       8000              saed90nm_typ_ht
+PlusOperatorAdder_16_DW01_add_5
+                       8000              saed90nm_typ_ht
+PlusOperatorAdder_44_DW01_add_8
+                       8000              saed90nm_typ_ht
+PlusOperatorAdder_50_DW01_add_9
+                       8000              saed90nm_typ_ht
+PlusOperatorAdder_5_DW01_add_9
+                       8000              saed90nm_typ_ht
+PlusOperatorAdder_40_DW01_add_9
+                       8000              saed90nm_typ_ht
+PlusOperatorAdder_22_DW01_add_10
+                       8000              saed90nm_typ_ht
+PlusOperatorAdder_61_DW01_add_8
+                       8000              saed90nm_typ_ht
+PlusOperatorAdder_47_DW01_add_15
+                       8000              saed90nm_typ_ht
+PlusOperatorAdder_45_DW01_add_15
+                       8000              saed90nm_typ_ht
+
+
+Global Operating Voltage = 1.2  
+Power-specific unit information :
+    Voltage Units = 1V
+    Capacitance Units = 1.000000ff
+    Time Units = 1ns
+    Dynamic Power Units = 1uW    (derived from V,C,T units)
+    Leakage Power Units = 1pW
+
+
+Attributes
+----------
+i - Including register clock pin internal power
+
+
+  Cell Internal Power  =  41.8713 mW   (75%)
+  Net Switching Power  =  13.6122 mW   (25%)
+                         ---------
+Total Dynamic Power    =  55.4835 mW  (100%)
+
+Cell Leakage Power     =   2.6079 mW
+
+Information: report_power power group summary does not include estimated clock tree power. (PWR-789)
+
+                 Internal         Switching           Leakage            Total
+Power Group      Power            Power               Power              Power   (   %    )  Attrs
+--------------------------------------------------------------------------------------------------
+io_pad             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+memory             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+black_box          0.0000            0.0000            0.0000            0.0000  (   0.00%)
+clock_network      0.0000            0.0000            0.0000            0.0000  (   0.00%)  i
+register           0.0000            0.0000            0.0000            0.0000  (   0.00%)
+sequential         0.0000            0.0000            0.0000            0.0000  (   0.00%)
+combinational  4.1871e+04        1.3612e+04        2.6079e+09        5.8091e+04  ( 100.00%)
+--------------------------------------------------------------------------------------------------
+Total          4.1871e+04 uW     1.3612e+04 uW     2.6079e+09 pW     5.8091e+04 uW
+1

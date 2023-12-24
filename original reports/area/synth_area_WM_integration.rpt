@@ -1,0 +1,33 @@
+Warning: Design 'WM_integration' has '81' unresolved references. For more detailed information, use the "link" command. (UID-341)
+ 
+****************************************
+Report : area
+Design : WM_integration
+Version: U-2022.12-SP7
+Date   : Sat Dec 23 20:05:21 2023
+****************************************
+
+Library(s) Used:
+
+    saed90nm_typ_ht (File: /home/user24/Downloads/Lab4/ref/models/saed90nm_typ_ht.db)
+
+Number of ports:                          513
+Number of nets:                          3292
+Number of cells:                          644
+Number of combinational cells:            410
+Number of sequential cells:               222
+Number of macros/black boxes:               0
+Number of buf/inv:                        156
+Number of references:                       3
+
+Combinational area:               4353.638393
+Buf/Inv area:                      862.617622
+Noncombinational area:            3185.049561
+Macro/Black Box area:                0.000000
+Net Interconnect area:            1225.254784
+
+Total cell area:                  7538.687954
+Total area:                       8763.942738
+
+Information: This design contains black box (unknown) components. (RPT-8)
+1

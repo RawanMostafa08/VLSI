@@ -1,0 +1,30 @@
+ 
+****************************************
+Report : resources
+Design : Booth
+Version: U-2022.12-SP7
+Date   : Sun Dec 24 13:52:01 2023
+****************************************
+
+Resource Sharing Report for design Booth in file
+        /home/user24/Downloads/Lab4/source/BoothMulti.v
+
+===============================================================================
+|          |              |            | Contained     |                      |
+| Resource | Module       | Parameters | Resources     | Contained Operations |
+===============================================================================
+| r198     | DW01_sub     | width=32   |               | sub_1_root_add_13_ni |
+| r200     | DW01_inc     | width=32   |               | add_0_root_add_13_ni |
+===============================================================================
+
+
+Implementation Report
+===============================================================================
+|                    |                  | Current            | Set            |
+| Cell               | Module           | Implementation     | Implementation |
+===============================================================================
+| add_0_root_add_13_ni                  |                    |                |
+|                    | DW01_inc         | cla                |                |
+===============================================================================
+
+1

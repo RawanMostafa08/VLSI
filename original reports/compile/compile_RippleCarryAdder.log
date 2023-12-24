@@ -1,0 +1,141 @@
+====================================================================================================
+| Flow Information                                                                                 |
+----------------------------------------------------------------------------------------------------
+| Flow         | Design Compiler                                                                   |
+====================================================================================================
+| Design Information                                      | Value                                  |
+====================================================================================================
+| Number of Scenarios                                     | 0                                      |
+| Leaf Cell Count                                         | 64                                     |
+| Number of User Hierarchies                              | 32                                     |
+| Sequential Cell Count                                   | 0                                      |
+| Macro Count                                             | 0                                      |
+| Number of Power Domains                                 | 0                                      |
+| Number of Path Groups                                   | 2                                      |
+| Number of VT Class                                      | 1                                      |
+| Number of Clocks                                        | 1                                      |
+| Number of Dont Touch Cells                              | 0                                      |
+| Number of Dont Touch Nets                               | 0                                      |
+| Number of Size Only Cells                               | 0                                      |
+| Design with UPF Data                                    | false                                  |
+====================================================================================================
+
+
+  Beginning Pass 1 Mapping
+  ------------------------
+  Processing 'Fulladder_onebit_0'
+  Processing 'RippleCarryAdder'
+
+  Updating timing information
+Information: Updating design information... (UID-85)
+
+  Beginning Mapping Optimizations  (Medium effort)
+  -------------------------------
+  Mapping Optimization (Phase 1)
+Information: Command 'do_operand_isolation' is obsolete and is being ignored.  Please refer to the replacement command 'set power_enable_datapath_gating true' instead. (INFO-118)
+
+                                  TOTAL                                      
+   ELAPSED            WORST NEG   SETUP    DESIGN                            
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT         
+  --------- --------- --------- --------- --------- -------------------------
+    0:00:00    1559.3     13.06     222.2       0.0                          
+    0:00:00    1559.3     13.06     222.2       0.0                          
+    0:00:00    1559.3     13.06     222.2       0.0                          
+    0:00:00    1559.3     13.06     222.2       0.0                          
+    0:00:00    1559.3     13.06     222.2       0.0                          
+    0:00:00    1352.0     12.36     203.3       0.0                          
+    0:00:00    1324.3     12.39     203.2       0.0                          
+    0:00:00    1324.3     12.39     203.2       0.0                          
+    0:00:01    1324.3     12.39     203.2       0.0                          
+    0:00:01    1324.3     12.39     203.2       0.0                          
+    0:00:01    1324.3     12.39     203.2       0.0                          
+    0:00:01    1324.3     12.39     203.2       0.0                          
+    0:00:01    1324.3     12.39     203.2       0.0                          
+    0:00:01    1324.3     12.39     203.2       0.0                          
+
+
+
+  Beginning Delay Optimization Phase
+  ----------------------------------
+
+                                  TOTAL                                      
+   ELAPSED            WORST NEG   SETUP    DESIGN                            
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT         
+  --------- --------- --------- --------- --------- -------------------------
+    0:00:01    1324.3     12.39     203.2       0.0                          
+    0:00:01    1324.3     12.38     203.2       0.0 Cout                     
+    0:00:01    1324.3     12.36     202.8       0.0 Cout                     
+    0:00:01    1335.4     12.33     202.6       0.0 Cout                     
+    0:00:01    1335.4     12.29     201.5       0.0 Cout                     
+    0:00:01    1412.8     12.21     204.7       0.0 Cout                     
+    0:00:01    1513.3     12.14     210.6       0.0 Cout                     
+    0:00:01    1537.2     12.13     210.8       0.0 Cout                     
+    0:00:01    1608.2     12.09     211.6       0.0 Cout                     
+    0:00:01    1650.6     12.03     212.9       0.0 Cout                     
+    0:00:01    1650.6     12.02     212.9       0.0 Cout                     
+    0:00:01    1661.6     12.01     212.9       0.0 Cout                     
+    0:00:01    1730.8     11.99     215.7       0.0 Cout                     
+    0:00:01    1746.4     11.98     216.4       0.0 Cout                     
+    0:00:01    1746.4     11.98     216.4       0.0 Cout                     
+    0:00:01    1762.1     11.98     217.4       0.0 Cout                     
+    0:00:01    1788.8     11.97     218.3       0.0 Cout                     
+    0:00:01    1804.5     11.97     219.3       0.0 Cout                     
+    0:00:01    1882.8     11.95     224.0       0.0 Cout                     
+    0:00:02    1893.9     11.94     223.9       0.0 Cout                     
+    0:00:02    1893.9     11.94     223.9       0.0 Cout                     
+    0:00:02    1909.6     11.94     224.8       0.0 Cout                     
+    0:00:02    1920.6     11.90     225.7       0.0 Cout                     
+    0:00:02    1920.6     11.90     225.7       0.0                          
+    0:00:02    1920.6     11.90     225.7       0.0                          
+    0:00:02    1967.6     11.89     225.7       0.0                          
+    0:00:02    2092.0     11.89     225.4       0.0                          
+    0:00:02    2039.5     11.89     225.4       0.0                          
+
+
+  Beginning Area-Recovery Phase  (cleanup)
+  -----------------------------
+
+                                  TOTAL                                      
+   ELAPSED            WORST NEG   SETUP    DESIGN                            
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT         
+  --------- --------- --------- --------- --------- -------------------------
+    0:00:02    2039.5     11.89     225.4       0.0                          
+    0:00:02    2039.5     11.89     225.4       0.0                          
+    0:00:02    1906.8     11.89     223.5       0.0                          
+    0:00:02    1906.8     11.89     223.5       0.0                          
+    0:00:02    1906.8     11.89     223.5       0.0                          
+    0:00:02    1906.8     11.89     223.5       0.0                          
+    0:00:02    1782.4     11.89     223.5       0.0                          
+    0:00:02    1782.4     11.89     223.5       0.0                          
+    0:00:02    1782.4     11.89     223.5       0.0                          
+    0:00:02    1782.4     11.89     223.5       0.0                          
+    0:00:02    1782.4     11.89     223.5       0.0                          
+    0:00:02    1782.4     11.89     223.5       0.0                          
+Loading db file '/home/user24/Downloads/Lab4/ref/models/saed90nm_typ_ht.db'
+
+
+Note: Symbol # after min delay cost means estimated hold TNS across all active scenarios 
+
+
+  Optimization Complete
+  ---------------------
+Information: Total number of MV cells in the design.
+----------------------------------------------------------------------------------------------------
+ MV Cells                                           Total Number                                   
+----------------------------------------------------------------------------------------------------
+ Level Shifter:                                     0                                             
+ Enable Level Shifter:                              0                                             
+ Isolation Cell:                                    0                                             
+ Retention Cell:                                    0                                             
+ Retention Clamp Cell:                              0                                             
+ Switch Cell:                                       0                                             
+ Always-On Cell:                                    0                                             
+ Repeater Cell:                                     0                                             
+
+----------------------------------------------------------------------------------------------------
+Unmapped MV Cells 
+----------------------------------------------------------------------------------------------------
+0 Isolation Cells are unmapped 
+0 Retention Clamp Cells are unmapped 
+----------------------------------------------------------------------------------------------------
+1

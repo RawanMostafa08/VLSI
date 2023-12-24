@@ -1,0 +1,30 @@
+ 
+****************************************
+Report : area
+Design : Booth
+Version: U-2022.12-SP7
+Date   : Sun Dec 24 13:52:00 2023
+****************************************
+
+Library(s) Used:
+
+    saed90nm_typ_ht (File: /home/user24/Downloads/Lab4/ref/models/saed90nm_typ_ht.db)
+
+Number of ports:                        12928
+Number of nets:                         37546
+Number of cells:                        24985
+Number of combinational cells:          24791
+Number of sequential cells:                 0
+Number of macros/black boxes:               0
+Number of buf/inv:                       6548
+Number of references:                      97
+
+Combinational area:             181875.919217
+Buf/Inv area:                    42698.650406
+Noncombinational area:               0.000000
+Macro/Black Box area:                0.000000
+Net Interconnect area:           13382.166651
+
+Total cell area:                181875.919217
+Total area:                     195258.085868
+1

@@ -1,0 +1,18 @@
+Warning: Design 'WM_integration' has '81' unresolved references. For more detailed information, use the "link" command. (UID-341)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 10
+        -sort_by slack
+Design : WM_integration
+Version: U-2022.12-SP7
+Date   : Sat Dec 23 20:05:21 2023
+****************************************
+
+Operating Conditions: TYPICAL   Library: saed90nm_typ_ht
+Wire Load Model Mode: enclosed
+No paths.
+
+1

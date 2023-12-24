@@ -1,0 +1,30 @@
+ 
+****************************************
+Report : area
+Design : HA
+Version: U-2022.12-SP7
+Date   : Sun Dec 24 15:31:10 2023
+****************************************
+
+Library(s) Used:
+
+    saed90nm_typ_ht (File: /home/user24/Downloads/Lab4/ref/models/saed90nm_typ_ht.db)
+
+Number of ports:                            4
+Number of nets:                             4
+Number of cells:                            2
+Number of combinational cells:              2
+Number of sequential cells:                 0
+Number of macros/black boxes:               0
+Number of buf/inv:                          0
+Number of references:                       2
+
+Combinational area:                 21.196800
+Buf/Inv area:                        0.000000
+Noncombinational area:               0.000000
+Macro/Black Box area:                0.000000
+Net Interconnect area:               0.535330
+
+Total cell area:                    21.196800
+Total area:                         21.732131
+1

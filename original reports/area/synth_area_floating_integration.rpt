@@ -1,0 +1,30 @@
+ 
+****************************************
+Report : area
+Design : floating_integration
+Version: U-2022.12-SP7
+Date   : Sun Dec 24 19:14:32 2023
+****************************************
+
+Library(s) Used:
+
+    saed90nm_typ_ht (File: /home/user24/Downloads/Lab4/ref/models/saed90nm_typ_ht.db)
+
+Number of ports:                          863
+Number of nets:                          4588
+Number of cells:                         2885
+Number of combinational cells:           2775
+Number of sequential cells:                96
+Number of macros/black boxes:               0
+Number of buf/inv:                        225
+Number of references:                       3
+
+Combinational area:              41006.591686
+Buf/Inv area:                     1244.160032
+Noncombinational area:            2388.787170
+Macro/Black Box area:                0.000000
+Net Interconnect area:            2455.488180
+
+Total cell area:                 43395.378857
+Total area:                      45850.867037
+1

@@ -1,0 +1,78 @@
+Warning: Design 'FloatingPointMultiplier.db:FloatingPointMultiplier' comes before design 'FloatingPointMultiplier.db:FloatingPointMultiplier' in the link_library; 'FloatingPointMultiplier.db:FloatingPointMultiplier' will be ignored. (UIO-92)
+Information: Design 'FloatingPointMultiplier' is referenced in design 'floating_integration.db:floating_integration'. (UIO-93)
+Warning: Design 'MultiplierOperator.db:MultiplierOperator' comes before design 'MultiplierOperator.db:MultiplierOperator' in the link_library; 'MultiplierOperator.db:MultiplierOperator' will be ignored. (UIO-92)
+Information: Design 'MultiplierOperator' is referenced in design 'FloatingPointMultiplier.db:FloatingPointMultiplier1'. (UIO-93)
+Loading db file '/home/user24/Downloads/Lab4/ref/models/saed90nm_typ_ht.db'
+Information: Updating design information... (UID-85)
+Information: Propagating switching activity (low effort zero delay simulation). (PWR-6)
+Warning: Design has unannotated primary inputs. (PWR-414)
+Warning: Design has unannotated sequential cell outputs. (PWR-415)
+ 
+****************************************
+Report : power
+        -analysis_effort low
+Design : floating_integration
+Version: U-2022.12-SP7
+Date   : Sun Dec 24 21:24:42 2023
+****************************************
+
+
+Library(s) Used:
+
+    saed90nm_typ_ht (File: /home/user24/Downloads/Lab4/ref/models/saed90nm_typ_ht.db)
+
+
+Operating Conditions: TYPICAL   Library: saed90nm_typ_ht
+Wire Load Model Mode: enclosed
+
+Design        Wire Load Model            Library
+------------------------------------------------
+floating_integration   70000             saed90nm_typ_ht
+FloatingPointMultiplier
+                       70000             saed90nm_typ_ht
+MultiplierOperator     70000             saed90nm_typ_ht
+PlusOperatorAdder      8000              saed90nm_typ_ht
+MultiplierOperator_DW02_mult_1_DW02_mult_0
+                       70000             saed90nm_typ_ht
+PlusOperatorAdder_DW01_add_0
+                       8000              saed90nm_typ_ht
+MultiplierOperator_DW01_add_2
+                       8000              saed90nm_typ_ht
+
+
+Global Operating Voltage = 1.2  
+Power-specific unit information :
+    Voltage Units = 1V
+    Capacitance Units = 1.000000ff
+    Time Units = 1ns
+    Dynamic Power Units = 1uW    (derived from V,C,T units)
+    Leakage Power Units = 1pW
+
+
+Attributes
+----------
+i - Including register clock pin internal power
+
+
+  Cell Internal Power  = 482.1457 uW   (74%)
+  Net Switching Power  = 165.8419 uW   (26%)
+                         ---------
+Total Dynamic Power    = 647.9875 uW  (100%)
+
+Cell Leakage Power     = 671.4627 uW
+
+Information: report_power power group summary does not include estimated clock tree power. (PWR-789)
+
+                 Internal         Switching           Leakage            Total
+Power Group      Power            Power               Power              Power   (   %    )  Attrs
+--------------------------------------------------------------------------------------------------
+io_pad             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+memory             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+black_box          0.0000            0.0000            0.0000            0.0000  (   0.00%)
+clock_network      0.0000            0.0000            0.0000            0.0000  (   0.00%)  i
+register           0.0000            0.0000            0.0000            0.0000  (   0.00%)
+sequential        24.8922            8.7200        4.0401e+07           74.0132  (   5.61%)
+combinational    457.2522          157.1221        6.3106e+08        1.2454e+03  (  94.39%)
+--------------------------------------------------------------------------------------------------
+Total            482.1443 uW       165.8421 uW     6.7146e+08 pW     1.3194e+03 uW
+1

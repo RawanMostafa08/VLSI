@@ -1,0 +1,788 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 10
+        -sort_by slack
+Design : WM8bit
+Version: U-2022.12-SP7
+Date   : Sun Dec 24 15:00:48 2023
+****************************************
+
+Operating Conditions: TYPICAL   Library: saed90nm_typ_ht
+Wire Load Model Mode: enclosed
+
+  Startpoint: A[2] (input port clocked by vsysclk)
+  Endpoint: res[15] (output port clocked by vsysclk)
+  Path Group: vsysclk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  WM8bit             8000                  saed90nm_typ_ht
+  FA_46              ForQA                 saed90nm_typ_ht
+  FA_34              ForQA                 saed90nm_typ_ht
+  FA_10              ForQA                 saed90nm_typ_ht
+  FA_9               ForQA                 saed90nm_typ_ht
+  FA_8               ForQA                 saed90nm_typ_ht
+  FA_7               ForQA                 saed90nm_typ_ht
+  FA_6               ForQA                 saed90nm_typ_ht
+  FA_5               ForQA                 saed90nm_typ_ht
+  FA_4               ForQA                 saed90nm_typ_ht
+  FA_3               ForQA                 saed90nm_typ_ht
+  FA_2               ForQA                 saed90nm_typ_ht
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock vsysclk (rise edge)                0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     0.20       0.20 r
+  A[2] (in)                                0.00       0.20 r
+  U92/Q (AND2X1)                           0.14       0.34 r
+  adder3/in3 (FA_46)                       0.00       0.34 r
+  adder3/U3/Q (XOR2X1)                     0.22       0.57 f
+  adder3/U4/Q (AO22X1)                     0.19       0.75 f
+  adder3/c (FA_46)                         0.00       0.75 f
+  adder34/in2 (FA_34)                      0.00       0.75 f
+  adder34/U3/Q (XOR2X1)                    0.22       0.97 f
+  adder34/U4/Q (AO22X1)                    0.20       1.17 f
+  adder34/c (FA_34)                        0.00       1.17 f
+  adder53/in2 (FA_23)                      0.00       1.17 f
+  adder53/U1/Q (XOR3X1)                    0.39       1.56 f
+  adder53/s (FA_23)                        0.00       1.56 f
+  adder72/in1 (HA_405)                     0.00       1.56 f
+  adder72/U2/Q (XOR2X1)                    0.22       1.78 f
+  adder72/s (HA_405)                       0.00       1.78 f
+  adder91/in1 (HA_402)                     0.00       1.78 f
+  adder91/U2/Q (AND2X1)                    0.14       1.92 f
+  adder91/c (HA_402)                       0.00       1.92 f
+  adder92/in3 (FA_10)                      0.00       1.92 f
+  adder92/U2/Q (XOR2X1)                    0.21       2.13 f
+  adder92/U3/Q (AO22X1)                    0.19       2.32 f
+  adder92/c (FA_10)                        0.00       2.32 f
+  adder93/in3 (FA_9)                       0.00       2.32 f
+  adder93/U2/Q (XOR2X1)                    0.22       2.54 f
+  adder93/U3/Q (AO22X1)                    0.19       2.73 f
+  adder93/c (FA_9)                         0.00       2.73 f
+  adder94/in3 (FA_8)                       0.00       2.73 f
+  adder94/U2/Q (XOR2X1)                    0.22       2.94 f
+  adder94/U3/Q (AO22X1)                    0.19       3.13 f
+  adder94/c (FA_8)                         0.00       3.13 f
+  adder95/in3 (FA_7)                       0.00       3.13 f
+  adder95/U2/Q (XOR2X1)                    0.22       3.35 f
+  adder95/U3/Q (AO22X1)                    0.19       3.54 f
+  adder95/c (FA_7)                         0.00       3.54 f
+  adder96/in3 (FA_6)                       0.00       3.54 f
+  adder96/U3/Q (XOR2X1)                    0.22       3.75 f
+  adder96/U4/Q (AO22X1)                    0.19       3.94 f
+  adder96/c (FA_6)                         0.00       3.94 f
+  adder97/in3 (FA_5)                       0.00       3.94 f
+  adder97/U3/Q (XOR2X1)                    0.22       4.16 f
+  adder97/U4/Q (AO22X1)                    0.19       4.35 f
+  adder97/c (FA_5)                         0.00       4.35 f
+  adder98/in3 (FA_4)                       0.00       4.35 f
+  adder98/U3/Q (XOR2X1)                    0.22       4.56 f
+  adder98/U4/Q (AO22X1)                    0.19       4.75 f
+  adder98/c (FA_4)                         0.00       4.75 f
+  adder99/in3 (FA_3)                       0.00       4.75 f
+  adder99/U3/Q (XOR2X1)                    0.22       4.97 f
+  adder99/U4/Q (AO22X1)                    0.19       5.16 f
+  adder99/c (FA_3)                         0.00       5.16 f
+  adder84/in3 (FA_2)                       0.00       5.16 f
+  adder84/U3/Q (XOR2X1)                    0.22       5.38 f
+  adder84/U4/Q (AO22X1)                    0.18       5.56 f
+  adder84/c (FA_2)                         0.00       5.56 f
+  adder82/in3 (FA_1)                       0.00       5.56 f
+  adder82/U2/Q (XNOR3X1)                   0.23       5.79 f
+  adder82/s (FA_1)                         0.00       5.79 f
+  res[15] (out)                            0.22       6.01 f
+  data arrival time                                   6.01
+
+  clock vsysclk (rise edge)                2.00       2.00
+  clock network delay (ideal)              0.00       2.00
+  output external delay                   -0.50       1.50
+  data required time                                  1.50
+  -----------------------------------------------------------
+  data required time                                  1.50
+  data arrival time                                  -6.01
+  -----------------------------------------------------------
+  slack (VIOLATED)                                   -4.51
+
+
+  Startpoint: A[2] (input port clocked by vsysclk)
+  Endpoint: res[12] (output port clocked by vsysclk)
+  Path Group: vsysclk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  WM8bit             8000                  saed90nm_typ_ht
+  FA_46              ForQA                 saed90nm_typ_ht
+  FA_34              ForQA                 saed90nm_typ_ht
+  FA_10              ForQA                 saed90nm_typ_ht
+  FA_9               ForQA                 saed90nm_typ_ht
+  FA_8               ForQA                 saed90nm_typ_ht
+  FA_7               ForQA                 saed90nm_typ_ht
+  FA_6               ForQA                 saed90nm_typ_ht
+  FA_5               ForQA                 saed90nm_typ_ht
+  FA_4               ForQA                 saed90nm_typ_ht
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock vsysclk (rise edge)                0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     0.20       0.20 r
+  A[2] (in)                                0.00       0.20 r
+  U92/Q (AND2X1)                           0.14       0.34 r
+  adder3/in3 (FA_46)                       0.00       0.34 r
+  adder3/U3/Q (XOR2X1)                     0.22       0.57 f
+  adder3/U4/Q (AO22X1)                     0.19       0.75 f
+  adder3/c (FA_46)                         0.00       0.75 f
+  adder34/in2 (FA_34)                      0.00       0.75 f
+  adder34/U3/Q (XOR2X1)                    0.22       0.97 f
+  adder34/U4/Q (AO22X1)                    0.20       1.17 f
+  adder34/c (FA_34)                        0.00       1.17 f
+  adder53/in2 (FA_23)                      0.00       1.17 f
+  adder53/U1/Q (XOR3X1)                    0.39       1.56 f
+  adder53/s (FA_23)                        0.00       1.56 f
+  adder72/in1 (HA_405)                     0.00       1.56 f
+  adder72/U2/Q (XOR2X1)                    0.22       1.78 f
+  adder72/s (HA_405)                       0.00       1.78 f
+  adder91/in1 (HA_402)                     0.00       1.78 f
+  adder91/U2/Q (AND2X1)                    0.14       1.92 f
+  adder91/c (HA_402)                       0.00       1.92 f
+  adder92/in3 (FA_10)                      0.00       1.92 f
+  adder92/U2/Q (XOR2X1)                    0.21       2.13 f
+  adder92/U3/Q (AO22X1)                    0.19       2.32 f
+  adder92/c (FA_10)                        0.00       2.32 f
+  adder93/in3 (FA_9)                       0.00       2.32 f
+  adder93/U2/Q (XOR2X1)                    0.22       2.54 f
+  adder93/U3/Q (AO22X1)                    0.19       2.73 f
+  adder93/c (FA_9)                         0.00       2.73 f
+  adder94/in3 (FA_8)                       0.00       2.73 f
+  adder94/U2/Q (XOR2X1)                    0.22       2.94 f
+  adder94/U3/Q (AO22X1)                    0.19       3.13 f
+  adder94/c (FA_8)                         0.00       3.13 f
+  adder95/in3 (FA_7)                       0.00       3.13 f
+  adder95/U2/Q (XOR2X1)                    0.22       3.35 f
+  adder95/U3/Q (AO22X1)                    0.19       3.54 f
+  adder95/c (FA_7)                         0.00       3.54 f
+  adder96/in3 (FA_6)                       0.00       3.54 f
+  adder96/U3/Q (XOR2X1)                    0.22       3.75 f
+  adder96/U4/Q (AO22X1)                    0.19       3.94 f
+  adder96/c (FA_6)                         0.00       3.94 f
+  adder97/in3 (FA_5)                       0.00       3.94 f
+  adder97/U3/Q (XOR2X1)                    0.22       4.16 f
+  adder97/U4/Q (AO22X1)                    0.19       4.35 f
+  adder97/c (FA_5)                         0.00       4.35 f
+  adder98/in3 (FA_4)                       0.00       4.35 f
+  adder98/U3/Q (XOR2X1)                    0.22       4.56 f
+  adder98/U1/Z (DELLN2X2)                  0.98       5.54 f
+  adder98/U2/Q (XOR2X1)                    0.23       5.78 f
+  adder98/s (FA_4)                         0.00       5.78 f
+  res[12] (out)                            0.22       6.00 f
+  data arrival time                                   6.00
+
+  clock vsysclk (rise edge)                2.00       2.00
+  clock network delay (ideal)              0.00       2.00
+  output external delay                   -0.50       1.50
+  data required time                                  1.50
+  -----------------------------------------------------------
+  data required time                                  1.50
+  data arrival time                                  -6.00
+  -----------------------------------------------------------
+  slack (VIOLATED)                                   -4.50
+
+
+  Startpoint: A[2] (input port clocked by vsysclk)
+  Endpoint: res[14] (output port clocked by vsysclk)
+  Path Group: vsysclk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  WM8bit             8000                  saed90nm_typ_ht
+  FA_46              ForQA                 saed90nm_typ_ht
+  FA_34              ForQA                 saed90nm_typ_ht
+  FA_10              ForQA                 saed90nm_typ_ht
+  FA_9               ForQA                 saed90nm_typ_ht
+  FA_8               ForQA                 saed90nm_typ_ht
+  FA_7               ForQA                 saed90nm_typ_ht
+  FA_6               ForQA                 saed90nm_typ_ht
+  FA_5               ForQA                 saed90nm_typ_ht
+  FA_4               ForQA                 saed90nm_typ_ht
+  FA_3               ForQA                 saed90nm_typ_ht
+  FA_2               ForQA                 saed90nm_typ_ht
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock vsysclk (rise edge)                0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     0.20       0.20 r
+  A[2] (in)                                0.00       0.20 r
+  U92/Q (AND2X1)                           0.14       0.34 r
+  adder3/in3 (FA_46)                       0.00       0.34 r
+  adder3/U3/Q (XOR2X1)                     0.22       0.57 f
+  adder3/U4/Q (AO22X1)                     0.19       0.75 f
+  adder3/c (FA_46)                         0.00       0.75 f
+  adder34/in2 (FA_34)                      0.00       0.75 f
+  adder34/U3/Q (XOR2X1)                    0.22       0.97 f
+  adder34/U4/Q (AO22X1)                    0.20       1.17 f
+  adder34/c (FA_34)                        0.00       1.17 f
+  adder53/in2 (FA_23)                      0.00       1.17 f
+  adder53/U1/Q (XOR3X1)                    0.39       1.56 f
+  adder53/s (FA_23)                        0.00       1.56 f
+  adder72/in1 (HA_405)                     0.00       1.56 f
+  adder72/U2/Q (XOR2X1)                    0.22       1.78 f
+  adder72/s (HA_405)                       0.00       1.78 f
+  adder91/in1 (HA_402)                     0.00       1.78 f
+  adder91/U2/Q (AND2X1)                    0.14       1.92 f
+  adder91/c (HA_402)                       0.00       1.92 f
+  adder92/in3 (FA_10)                      0.00       1.92 f
+  adder92/U2/Q (XOR2X1)                    0.21       2.13 f
+  adder92/U3/Q (AO22X1)                    0.19       2.32 f
+  adder92/c (FA_10)                        0.00       2.32 f
+  adder93/in3 (FA_9)                       0.00       2.32 f
+  adder93/U2/Q (XOR2X1)                    0.22       2.54 f
+  adder93/U3/Q (AO22X1)                    0.19       2.73 f
+  adder93/c (FA_9)                         0.00       2.73 f
+  adder94/in3 (FA_8)                       0.00       2.73 f
+  adder94/U2/Q (XOR2X1)                    0.22       2.94 f
+  adder94/U3/Q (AO22X1)                    0.19       3.13 f
+  adder94/c (FA_8)                         0.00       3.13 f
+  adder95/in3 (FA_7)                       0.00       3.13 f
+  adder95/U2/Q (XOR2X1)                    0.22       3.35 f
+  adder95/U3/Q (AO22X1)                    0.19       3.54 f
+  adder95/c (FA_7)                         0.00       3.54 f
+  adder96/in3 (FA_6)                       0.00       3.54 f
+  adder96/U3/Q (XOR2X1)                    0.22       3.75 f
+  adder96/U4/Q (AO22X1)                    0.19       3.94 f
+  adder96/c (FA_6)                         0.00       3.94 f
+  adder97/in3 (FA_5)                       0.00       3.94 f
+  adder97/U3/Q (XOR2X1)                    0.22       4.16 f
+  adder97/U4/Q (AO22X1)                    0.19       4.35 f
+  adder97/c (FA_5)                         0.00       4.35 f
+  adder98/in3 (FA_4)                       0.00       4.35 f
+  adder98/U3/Q (XOR2X1)                    0.22       4.56 f
+  adder98/U4/Q (AO22X1)                    0.19       4.75 f
+  adder98/c (FA_4)                         0.00       4.75 f
+  adder99/in3 (FA_3)                       0.00       4.75 f
+  adder99/U3/Q (XOR2X1)                    0.22       4.97 f
+  adder99/U4/Q (AO22X1)                    0.19       5.16 f
+  adder99/c (FA_3)                         0.00       5.16 f
+  adder84/in3 (FA_2)                       0.00       5.16 f
+  adder84/U3/Q (XOR2X1)                    0.22       5.38 f
+  adder84/U2/ZN (INVX0)                    0.08       5.46 r
+  adder84/U1/Q (XNOR2X1)                   0.23       5.69 f
+  adder84/s (FA_2)                         0.00       5.69 f
+  res[14] (out)                            0.22       5.91 f
+  data arrival time                                   5.91
+
+  clock vsysclk (rise edge)                2.00       2.00
+  clock network delay (ideal)              0.00       2.00
+  output external delay                   -0.50       1.50
+  data required time                                  1.50
+  -----------------------------------------------------------
+  data required time                                  1.50
+  data arrival time                                  -5.91
+  -----------------------------------------------------------
+  slack (VIOLATED)                                   -4.41
+
+
+  Startpoint: A[2] (input port clocked by vsysclk)
+  Endpoint: res[13] (output port clocked by vsysclk)
+  Path Group: vsysclk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  WM8bit             8000                  saed90nm_typ_ht
+  FA_46              ForQA                 saed90nm_typ_ht
+  FA_34              ForQA                 saed90nm_typ_ht
+  FA_10              ForQA                 saed90nm_typ_ht
+  FA_9               ForQA                 saed90nm_typ_ht
+  FA_8               ForQA                 saed90nm_typ_ht
+  FA_7               ForQA                 saed90nm_typ_ht
+  FA_6               ForQA                 saed90nm_typ_ht
+  FA_5               ForQA                 saed90nm_typ_ht
+  FA_4               ForQA                 saed90nm_typ_ht
+  FA_3               ForQA                 saed90nm_typ_ht
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock vsysclk (rise edge)                0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     0.20       0.20 r
+  A[2] (in)                                0.00       0.20 r
+  U92/Q (AND2X1)                           0.14       0.34 r
+  adder3/in3 (FA_46)                       0.00       0.34 r
+  adder3/U3/Q (XOR2X1)                     0.22       0.57 f
+  adder3/U4/Q (AO22X1)                     0.19       0.75 f
+  adder3/c (FA_46)                         0.00       0.75 f
+  adder34/in2 (FA_34)                      0.00       0.75 f
+  adder34/U3/Q (XOR2X1)                    0.22       0.97 f
+  adder34/U4/Q (AO22X1)                    0.20       1.17 f
+  adder34/c (FA_34)                        0.00       1.17 f
+  adder53/in2 (FA_23)                      0.00       1.17 f
+  adder53/U1/Q (XOR3X1)                    0.39       1.56 f
+  adder53/s (FA_23)                        0.00       1.56 f
+  adder72/in1 (HA_405)                     0.00       1.56 f
+  adder72/U2/Q (XOR2X1)                    0.22       1.78 f
+  adder72/s (HA_405)                       0.00       1.78 f
+  adder91/in1 (HA_402)                     0.00       1.78 f
+  adder91/U2/Q (AND2X1)                    0.14       1.92 f
+  adder91/c (HA_402)                       0.00       1.92 f
+  adder92/in3 (FA_10)                      0.00       1.92 f
+  adder92/U2/Q (XOR2X1)                    0.21       2.13 f
+  adder92/U3/Q (AO22X1)                    0.19       2.32 f
+  adder92/c (FA_10)                        0.00       2.32 f
+  adder93/in3 (FA_9)                       0.00       2.32 f
+  adder93/U2/Q (XOR2X1)                    0.22       2.54 f
+  adder93/U3/Q (AO22X1)                    0.19       2.73 f
+  adder93/c (FA_9)                         0.00       2.73 f
+  adder94/in3 (FA_8)                       0.00       2.73 f
+  adder94/U2/Q (XOR2X1)                    0.22       2.94 f
+  adder94/U3/Q (AO22X1)                    0.19       3.13 f
+  adder94/c (FA_8)                         0.00       3.13 f
+  adder95/in3 (FA_7)                       0.00       3.13 f
+  adder95/U2/Q (XOR2X1)                    0.22       3.35 f
+  adder95/U3/Q (AO22X1)                    0.19       3.54 f
+  adder95/c (FA_7)                         0.00       3.54 f
+  adder96/in3 (FA_6)                       0.00       3.54 f
+  adder96/U3/Q (XOR2X1)                    0.22       3.75 f
+  adder96/U4/Q (AO22X1)                    0.19       3.94 f
+  adder96/c (FA_6)                         0.00       3.94 f
+  adder97/in3 (FA_5)                       0.00       3.94 f
+  adder97/U3/Q (XOR2X1)                    0.22       4.16 f
+  adder97/U4/Q (AO22X1)                    0.19       4.35 f
+  adder97/c (FA_5)                         0.00       4.35 f
+  adder98/in3 (FA_4)                       0.00       4.35 f
+  adder98/U3/Q (XOR2X1)                    0.22       4.56 f
+  adder98/U4/Q (AO22X1)                    0.19       4.75 f
+  adder98/c (FA_4)                         0.00       4.75 f
+  adder99/in3 (FA_3)                       0.00       4.75 f
+  adder99/U3/Q (XOR2X1)                    0.22       4.97 f
+  adder99/U2/Z (DELLN1X2)                  0.43       5.40 f
+  adder99/U1/Q (XOR2X1)                    0.22       5.62 f
+  adder99/s (FA_3)                         0.00       5.62 f
+  res[13] (out)                            0.22       5.84 f
+  data arrival time                                   5.84
+
+  clock vsysclk (rise edge)                2.00       2.00
+  clock network delay (ideal)              0.00       2.00
+  output external delay                   -0.50       1.50
+  data required time                                  1.50
+  -----------------------------------------------------------
+  data required time                                  1.50
+  data arrival time                                  -5.84
+  -----------------------------------------------------------
+  slack (VIOLATED)                                   -4.34
+
+
+  Startpoint: A[2] (input port clocked by vsysclk)
+  Endpoint: res[11] (output port clocked by vsysclk)
+  Path Group: vsysclk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  WM8bit             8000                  saed90nm_typ_ht
+  FA_46              ForQA                 saed90nm_typ_ht
+  FA_34              ForQA                 saed90nm_typ_ht
+  FA_10              ForQA                 saed90nm_typ_ht
+  FA_9               ForQA                 saed90nm_typ_ht
+  FA_8               ForQA                 saed90nm_typ_ht
+  FA_7               ForQA                 saed90nm_typ_ht
+  FA_6               ForQA                 saed90nm_typ_ht
+  FA_5               ForQA                 saed90nm_typ_ht
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock vsysclk (rise edge)                0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     0.20       0.20 r
+  A[2] (in)                                0.00       0.20 r
+  U92/Q (AND2X1)                           0.14       0.34 r
+  adder3/in3 (FA_46)                       0.00       0.34 r
+  adder3/U3/Q (XOR2X1)                     0.22       0.57 f
+  adder3/U4/Q (AO22X1)                     0.19       0.75 f
+  adder3/c (FA_46)                         0.00       0.75 f
+  adder34/in2 (FA_34)                      0.00       0.75 f
+  adder34/U3/Q (XOR2X1)                    0.22       0.97 f
+  adder34/U4/Q (AO22X1)                    0.20       1.17 f
+  adder34/c (FA_34)                        0.00       1.17 f
+  adder53/in2 (FA_23)                      0.00       1.17 f
+  adder53/U1/Q (XOR3X1)                    0.39       1.56 f
+  adder53/s (FA_23)                        0.00       1.56 f
+  adder72/in1 (HA_405)                     0.00       1.56 f
+  adder72/U2/Q (XOR2X1)                    0.22       1.78 f
+  adder72/s (HA_405)                       0.00       1.78 f
+  adder91/in1 (HA_402)                     0.00       1.78 f
+  adder91/U2/Q (AND2X1)                    0.14       1.92 f
+  adder91/c (HA_402)                       0.00       1.92 f
+  adder92/in3 (FA_10)                      0.00       1.92 f
+  adder92/U2/Q (XOR2X1)                    0.21       2.13 f
+  adder92/U3/Q (AO22X1)                    0.19       2.32 f
+  adder92/c (FA_10)                        0.00       2.32 f
+  adder93/in3 (FA_9)                       0.00       2.32 f
+  adder93/U2/Q (XOR2X1)                    0.22       2.54 f
+  adder93/U3/Q (AO22X1)                    0.19       2.73 f
+  adder93/c (FA_9)                         0.00       2.73 f
+  adder94/in3 (FA_8)                       0.00       2.73 f
+  adder94/U2/Q (XOR2X1)                    0.22       2.94 f
+  adder94/U3/Q (AO22X1)                    0.19       3.13 f
+  adder94/c (FA_8)                         0.00       3.13 f
+  adder95/in3 (FA_7)                       0.00       3.13 f
+  adder95/U2/Q (XOR2X1)                    0.22       3.35 f
+  adder95/U3/Q (AO22X1)                    0.19       3.54 f
+  adder95/c (FA_7)                         0.00       3.54 f
+  adder96/in3 (FA_6)                       0.00       3.54 f
+  adder96/U3/Q (XOR2X1)                    0.22       3.75 f
+  adder96/U4/Q (AO22X1)                    0.19       3.94 f
+  adder96/c (FA_6)                         0.00       3.94 f
+  adder97/in3 (FA_5)                       0.00       3.94 f
+  adder97/U3/Q (XOR2X1)                    0.22       4.16 f
+  adder97/U2/Z (DELLN2X2)                  0.98       5.14 f
+  adder97/U1/Q (XOR2X1)                    0.23       5.37 f
+  adder97/s (FA_5)                         0.00       5.37 f
+  res[11] (out)                            0.22       5.59 f
+  data arrival time                                   5.59
+
+  clock vsysclk (rise edge)                2.00       2.00
+  clock network delay (ideal)              0.00       2.00
+  output external delay                   -0.50       1.50
+  data required time                                  1.50
+  -----------------------------------------------------------
+  data required time                                  1.50
+  data arrival time                                  -5.59
+  -----------------------------------------------------------
+  slack (VIOLATED)                                   -4.09
+
+
+  Startpoint: A[2] (input port clocked by vsysclk)
+  Endpoint: res[10] (output port clocked by vsysclk)
+  Path Group: vsysclk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  WM8bit             8000                  saed90nm_typ_ht
+  FA_46              ForQA                 saed90nm_typ_ht
+  FA_34              ForQA                 saed90nm_typ_ht
+  FA_10              ForQA                 saed90nm_typ_ht
+  FA_9               ForQA                 saed90nm_typ_ht
+  FA_8               ForQA                 saed90nm_typ_ht
+  FA_7               ForQA                 saed90nm_typ_ht
+  FA_6               ForQA                 saed90nm_typ_ht
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock vsysclk (rise edge)                0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     0.20       0.20 r
+  A[2] (in)                                0.00       0.20 r
+  U92/Q (AND2X1)                           0.14       0.34 r
+  adder3/in3 (FA_46)                       0.00       0.34 r
+  adder3/U3/Q (XOR2X1)                     0.22       0.57 f
+  adder3/U4/Q (AO22X1)                     0.19       0.75 f
+  adder3/c (FA_46)                         0.00       0.75 f
+  adder34/in2 (FA_34)                      0.00       0.75 f
+  adder34/U3/Q (XOR2X1)                    0.22       0.97 f
+  adder34/U4/Q (AO22X1)                    0.20       1.17 f
+  adder34/c (FA_34)                        0.00       1.17 f
+  adder53/in2 (FA_23)                      0.00       1.17 f
+  adder53/U1/Q (XOR3X1)                    0.39       1.56 f
+  adder53/s (FA_23)                        0.00       1.56 f
+  adder72/in1 (HA_405)                     0.00       1.56 f
+  adder72/U2/Q (XOR2X1)                    0.22       1.78 f
+  adder72/s (HA_405)                       0.00       1.78 f
+  adder91/in1 (HA_402)                     0.00       1.78 f
+  adder91/U2/Q (AND2X1)                    0.14       1.92 f
+  adder91/c (HA_402)                       0.00       1.92 f
+  adder92/in3 (FA_10)                      0.00       1.92 f
+  adder92/U2/Q (XOR2X1)                    0.21       2.13 f
+  adder92/U3/Q (AO22X1)                    0.19       2.32 f
+  adder92/c (FA_10)                        0.00       2.32 f
+  adder93/in3 (FA_9)                       0.00       2.32 f
+  adder93/U2/Q (XOR2X1)                    0.22       2.54 f
+  adder93/U3/Q (AO22X1)                    0.19       2.73 f
+  adder93/c (FA_9)                         0.00       2.73 f
+  adder94/in3 (FA_8)                       0.00       2.73 f
+  adder94/U2/Q (XOR2X1)                    0.22       2.94 f
+  adder94/U3/Q (AO22X1)                    0.19       3.13 f
+  adder94/c (FA_8)                         0.00       3.13 f
+  adder95/in3 (FA_7)                       0.00       3.13 f
+  adder95/U2/Q (XOR2X1)                    0.22       3.35 f
+  adder95/U3/Q (AO22X1)                    0.19       3.54 f
+  adder95/c (FA_7)                         0.00       3.54 f
+  adder96/in3 (FA_6)                       0.00       3.54 f
+  adder96/U3/Q (XOR2X1)                    0.22       3.75 f
+  adder96/U2/Z (DELLN2X2)                  0.98       4.73 f
+  adder96/U1/Q (XOR2X1)                    0.23       4.97 f
+  adder96/s (FA_6)                         0.00       4.97 f
+  res[10] (out)                            0.22       5.19 f
+  data arrival time                                   5.19
+
+  clock vsysclk (rise edge)                2.00       2.00
+  clock network delay (ideal)              0.00       2.00
+  output external delay                   -0.50       1.50
+  data required time                                  1.50
+  -----------------------------------------------------------
+  data required time                                  1.50
+  data arrival time                                  -5.19
+  -----------------------------------------------------------
+  slack (VIOLATED)                                   -3.69
+
+
+  Startpoint: A[2] (input port clocked by vsysclk)
+  Endpoint: res[9] (output port clocked by vsysclk)
+  Path Group: vsysclk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  WM8bit             8000                  saed90nm_typ_ht
+  FA_46              ForQA                 saed90nm_typ_ht
+  FA_34              ForQA                 saed90nm_typ_ht
+  FA_10              ForQA                 saed90nm_typ_ht
+  FA_9               ForQA                 saed90nm_typ_ht
+  FA_8               ForQA                 saed90nm_typ_ht
+  FA_7               ForQA                 saed90nm_typ_ht
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock vsysclk (rise edge)                0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     0.20       0.20 r
+  A[2] (in)                                0.00       0.20 r
+  U92/Q (AND2X1)                           0.14       0.34 r
+  adder3/in3 (FA_46)                       0.00       0.34 r
+  adder3/U3/Q (XOR2X1)                     0.22       0.57 f
+  adder3/U4/Q (AO22X1)                     0.19       0.75 f
+  adder3/c (FA_46)                         0.00       0.75 f
+  adder34/in2 (FA_34)                      0.00       0.75 f
+  adder34/U3/Q (XOR2X1)                    0.22       0.97 f
+  adder34/U4/Q (AO22X1)                    0.20       1.17 f
+  adder34/c (FA_34)                        0.00       1.17 f
+  adder53/in2 (FA_23)                      0.00       1.17 f
+  adder53/U1/Q (XOR3X1)                    0.39       1.56 f
+  adder53/s (FA_23)                        0.00       1.56 f
+  adder72/in1 (HA_405)                     0.00       1.56 f
+  adder72/U2/Q (XOR2X1)                    0.22       1.78 f
+  adder72/s (HA_405)                       0.00       1.78 f
+  adder91/in1 (HA_402)                     0.00       1.78 f
+  adder91/U2/Q (AND2X1)                    0.14       1.92 f
+  adder91/c (HA_402)                       0.00       1.92 f
+  adder92/in3 (FA_10)                      0.00       1.92 f
+  adder92/U2/Q (XOR2X1)                    0.21       2.13 f
+  adder92/U3/Q (AO22X1)                    0.19       2.32 f
+  adder92/c (FA_10)                        0.00       2.32 f
+  adder93/in3 (FA_9)                       0.00       2.32 f
+  adder93/U2/Q (XOR2X1)                    0.22       2.54 f
+  adder93/U3/Q (AO22X1)                    0.19       2.73 f
+  adder93/c (FA_9)                         0.00       2.73 f
+  adder94/in3 (FA_8)                       0.00       2.73 f
+  adder94/U2/Q (XOR2X1)                    0.22       2.94 f
+  adder94/U3/Q (AO22X1)                    0.19       3.13 f
+  adder94/c (FA_8)                         0.00       3.13 f
+  adder95/in3 (FA_7)                       0.00       3.13 f
+  adder95/U2/Q (XOR2X1)                    0.22       3.35 f
+  adder95/U1/Z (DELLN2X2)                  0.98       4.33 f
+  adder95/U4/Q (XOR2X1)                    0.23       4.56 f
+  adder95/s (FA_7)                         0.00       4.56 f
+  res[9] (out)                             0.22       4.78 f
+  data arrival time                                   4.78
+
+  clock vsysclk (rise edge)                2.00       2.00
+  clock network delay (ideal)              0.00       2.00
+  output external delay                   -0.50       1.50
+  data required time                                  1.50
+  -----------------------------------------------------------
+  data required time                                  1.50
+  data arrival time                                  -4.78
+  -----------------------------------------------------------
+  slack (VIOLATED)                                   -3.28
+
+
+  Startpoint: A[2] (input port clocked by vsysclk)
+  Endpoint: res[8] (output port clocked by vsysclk)
+  Path Group: vsysclk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  WM8bit             8000                  saed90nm_typ_ht
+  FA_46              ForQA                 saed90nm_typ_ht
+  FA_34              ForQA                 saed90nm_typ_ht
+  FA_10              ForQA                 saed90nm_typ_ht
+  FA_9               ForQA                 saed90nm_typ_ht
+  FA_8               ForQA                 saed90nm_typ_ht
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock vsysclk (rise edge)                0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     0.20       0.20 r
+  A[2] (in)                                0.00       0.20 r
+  U92/Q (AND2X1)                           0.14       0.34 r
+  adder3/in3 (FA_46)                       0.00       0.34 r
+  adder3/U3/Q (XOR2X1)                     0.22       0.57 f
+  adder3/U4/Q (AO22X1)                     0.19       0.75 f
+  adder3/c (FA_46)                         0.00       0.75 f
+  adder34/in2 (FA_34)                      0.00       0.75 f
+  adder34/U3/Q (XOR2X1)                    0.22       0.97 f
+  adder34/U4/Q (AO22X1)                    0.20       1.17 f
+  adder34/c (FA_34)                        0.00       1.17 f
+  adder53/in2 (FA_23)                      0.00       1.17 f
+  adder53/U1/Q (XOR3X1)                    0.39       1.56 f
+  adder53/s (FA_23)                        0.00       1.56 f
+  adder72/in1 (HA_405)                     0.00       1.56 f
+  adder72/U2/Q (XOR2X1)                    0.22       1.78 f
+  adder72/s (HA_405)                       0.00       1.78 f
+  adder91/in1 (HA_402)                     0.00       1.78 f
+  adder91/U2/Q (AND2X1)                    0.14       1.92 f
+  adder91/c (HA_402)                       0.00       1.92 f
+  adder92/in3 (FA_10)                      0.00       1.92 f
+  adder92/U2/Q (XOR2X1)                    0.21       2.13 f
+  adder92/U3/Q (AO22X1)                    0.19       2.32 f
+  adder92/c (FA_10)                        0.00       2.32 f
+  adder93/in3 (FA_9)                       0.00       2.32 f
+  adder93/U2/Q (XOR2X1)                    0.22       2.54 f
+  adder93/U3/Q (AO22X1)                    0.19       2.73 f
+  adder93/c (FA_9)                         0.00       2.73 f
+  adder94/in3 (FA_8)                       0.00       2.73 f
+  adder94/U2/Q (XOR2X1)                    0.22       2.94 f
+  adder94/U1/Z (DELLN2X2)                  0.98       3.92 f
+  adder94/U4/Q (XOR2X1)                    0.23       4.16 f
+  adder94/s (FA_8)                         0.00       4.16 f
+  res[8] (out)                             0.22       4.38 f
+  data arrival time                                   4.38
+
+  clock vsysclk (rise edge)                2.00       2.00
+  clock network delay (ideal)              0.00       2.00
+  output external delay                   -0.50       1.50
+  data required time                                  1.50
+  -----------------------------------------------------------
+  data required time                                  1.50
+  data arrival time                                  -4.38
+  -----------------------------------------------------------
+  slack (VIOLATED)                                   -2.88
+
+
+  Startpoint: A[2] (input port clocked by vsysclk)
+  Endpoint: res[7] (output port clocked by vsysclk)
+  Path Group: vsysclk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  WM8bit             8000                  saed90nm_typ_ht
+  FA_46              ForQA                 saed90nm_typ_ht
+  FA_34              ForQA                 saed90nm_typ_ht
+  FA_10              ForQA                 saed90nm_typ_ht
+  FA_9               ForQA                 saed90nm_typ_ht
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock vsysclk (rise edge)                0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     0.20       0.20 r
+  A[2] (in)                                0.00       0.20 r
+  U92/Q (AND2X1)                           0.14       0.34 r
+  adder3/in3 (FA_46)                       0.00       0.34 r
+  adder3/U3/Q (XOR2X1)                     0.22       0.57 f
+  adder3/U4/Q (AO22X1)                     0.19       0.75 f
+  adder3/c (FA_46)                         0.00       0.75 f
+  adder34/in2 (FA_34)                      0.00       0.75 f
+  adder34/U3/Q (XOR2X1)                    0.22       0.97 f
+  adder34/U4/Q (AO22X1)                    0.20       1.17 f
+  adder34/c (FA_34)                        0.00       1.17 f
+  adder53/in2 (FA_23)                      0.00       1.17 f
+  adder53/U1/Q (XOR3X1)                    0.39       1.56 f
+  adder53/s (FA_23)                        0.00       1.56 f
+  adder72/in1 (HA_405)                     0.00       1.56 f
+  adder72/U2/Q (XOR2X1)                    0.22       1.78 f
+  adder72/s (HA_405)                       0.00       1.78 f
+  adder91/in1 (HA_402)                     0.00       1.78 f
+  adder91/U2/Q (AND2X1)                    0.14       1.92 f
+  adder91/c (HA_402)                       0.00       1.92 f
+  adder92/in3 (FA_10)                      0.00       1.92 f
+  adder92/U2/Q (XOR2X1)                    0.21       2.13 f
+  adder92/U3/Q (AO22X1)                    0.19       2.32 f
+  adder92/c (FA_10)                        0.00       2.32 f
+  adder93/in3 (FA_9)                       0.00       2.32 f
+  adder93/U2/Q (XOR2X1)                    0.22       2.54 f
+  adder93/U1/Z (DELLN2X2)                  0.98       3.52 f
+  adder93/U4/Q (XOR2X1)                    0.23       3.75 f
+  adder93/s (FA_9)                         0.00       3.75 f
+  res[7] (out)                             0.22       3.97 f
+  data arrival time                                   3.97
+
+  clock vsysclk (rise edge)                2.00       2.00
+  clock network delay (ideal)              0.00       2.00
+  output external delay                   -0.50       1.50
+  data required time                                  1.50
+  -----------------------------------------------------------
+  data required time                                  1.50
+  data arrival time                                  -3.97
+  -----------------------------------------------------------
+  slack (VIOLATED)                                   -2.47
+
+
+  Startpoint: A[2] (input port clocked by vsysclk)
+  Endpoint: res[6] (output port clocked by vsysclk)
+  Path Group: vsysclk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  WM8bit             8000                  saed90nm_typ_ht
+  FA_46              ForQA                 saed90nm_typ_ht
+  FA_34              ForQA                 saed90nm_typ_ht
+  FA_10              ForQA                 saed90nm_typ_ht
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock vsysclk (rise edge)                0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     0.20       0.20 r
+  A[2] (in)                                0.00       0.20 r
+  U92/Q (AND2X1)                           0.14       0.34 r
+  adder3/in3 (FA_46)                       0.00       0.34 r
+  adder3/U3/Q (XOR2X1)                     0.22       0.57 f
+  adder3/U4/Q (AO22X1)                     0.19       0.75 f
+  adder3/c (FA_46)                         0.00       0.75 f
+  adder34/in2 (FA_34)                      0.00       0.75 f
+  adder34/U3/Q (XOR2X1)                    0.22       0.97 f
+  adder34/U4/Q (AO22X1)                    0.20       1.17 f
+  adder34/c (FA_34)                        0.00       1.17 f
+  adder53/in2 (FA_23)                      0.00       1.17 f
+  adder53/U1/Q (XOR3X1)                    0.39       1.56 f
+  adder53/s (FA_23)                        0.00       1.56 f
+  adder72/in1 (HA_405)                     0.00       1.56 f
+  adder72/U2/Q (XOR2X1)                    0.22       1.78 f
+  adder72/s (HA_405)                       0.00       1.78 f
+  adder91/in1 (HA_402)                     0.00       1.78 f
+  adder91/U2/Q (AND2X1)                    0.14       1.92 f
+  adder91/c (HA_402)                       0.00       1.92 f
+  adder92/in3 (FA_10)                      0.00       1.92 f
+  adder92/U2/Q (XOR2X1)                    0.21       2.13 f
+  adder92/U1/Z (DELLN2X2)                  0.98       3.11 f
+  adder92/U4/Q (XOR2X1)                    0.23       3.35 f
+  adder92/s (FA_10)                        0.00       3.35 f
+  res[6] (out)                             0.22       3.57 f
+  data arrival time                                   3.57
+
+  clock vsysclk (rise edge)                2.00       2.00
+  clock network delay (ideal)              0.00       2.00
+  output external delay                   -0.50       1.50
+  data required time                                  1.50
+  -----------------------------------------------------------
+  data required time                                  1.50
+  data arrival time                                  -3.57
+  -----------------------------------------------------------
+  slack (VIOLATED)                                   -2.07
+
+
+1

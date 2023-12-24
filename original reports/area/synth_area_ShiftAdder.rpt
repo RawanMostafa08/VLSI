@@ -1,0 +1,30 @@
+ 
+****************************************
+Report : area
+Design : ShiftAdder
+Version: U-2022.12-SP7
+Date   : Sun Dec 24 14:14:15 2023
+****************************************
+
+Library(s) Used:
+
+    saed90nm_typ_ht (File: /home/user24/Downloads/Lab4/ref/models/saed90nm_typ_ht.db)
+
+Number of ports:                          612
+Number of nets:                          1648
+Number of cells:                         1119
+Number of combinational cells:           1100
+Number of sequential cells:                 0
+Number of macros/black boxes:               0
+Number of buf/inv:                        290
+Number of references:                       2
+
+Combinational area:               8731.238492
+Buf/Inv area:                     1816.473639
+Noncombinational area:               0.000000
+Macro/Black Box area:                0.000000
+Net Interconnect area:             409.012250
+
+Total cell area:                  8731.238492
+Total area:                       9140.250742
+1

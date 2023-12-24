@@ -1,0 +1,721 @@
+Loading db file '/home/user24/Downloads/Lab4/ref/models/saed90nm_typ_ht.db'
+Information: Updating design information... (UID-85)
+Warning: Design 'shiftMultiplier' contains 1 high-fanout nets. A fanout number of 1000 will be used for delay calculations involving these nets. (TIM-134)
+Information: Propagating switching activity (low effort zero delay simulation). (PWR-6)
+Warning: Design has unannotated primary inputs. (PWR-414)
+ 
+****************************************
+Report : power
+        -analysis_effort low
+Design : shiftMultiplier
+Version: U-2022.12-SP7
+Date   : Sat Dec 23 19:07:36 2023
+****************************************
+
+
+Library(s) Used:
+
+    saed90nm_typ_ht (File: /home/user24/Downloads/Lab4/ref/models/saed90nm_typ_ht.db)
+
+
+Operating Conditions: TYPICAL   Library: saed90nm_typ_ht
+Wire Load Model Mode: enclosed
+
+Design        Wire Load Model            Library
+------------------------------------------------
+shiftMultiplier        280000            saed90nm_typ_ht
+ShiftAdder_0           8000              saed90nm_typ_ht
+CarryBypass_Adder_0    8000              saed90nm_typ_ht
+Ripple4bit_0           8000              saed90nm_typ_ht
+ShiftAdder_1           8000              saed90nm_typ_ht
+ShiftAdder_2           8000              saed90nm_typ_ht
+ShiftAdder_3           8000              saed90nm_typ_ht
+ShiftAdder_4           8000              saed90nm_typ_ht
+ShiftAdder_5           8000              saed90nm_typ_ht
+ShiftAdder_6           8000              saed90nm_typ_ht
+ShiftAdder_7           8000              saed90nm_typ_ht
+ShiftAdder_8           8000              saed90nm_typ_ht
+ShiftAdder_9           8000              saed90nm_typ_ht
+ShiftAdder_10          8000              saed90nm_typ_ht
+ShiftAdder_11          8000              saed90nm_typ_ht
+ShiftAdder_12          8000              saed90nm_typ_ht
+ShiftAdder_13          8000              saed90nm_typ_ht
+ShiftAdder_14          8000              saed90nm_typ_ht
+ShiftAdder_15          8000              saed90nm_typ_ht
+ShiftAdder_16          8000              saed90nm_typ_ht
+ShiftAdder_17          8000              saed90nm_typ_ht
+ShiftAdder_18          8000              saed90nm_typ_ht
+ShiftAdder_19          8000              saed90nm_typ_ht
+ShiftAdder_20          8000              saed90nm_typ_ht
+ShiftAdder_21          8000              saed90nm_typ_ht
+ShiftAdder_22          8000              saed90nm_typ_ht
+ShiftAdder_23          8000              saed90nm_typ_ht
+ShiftAdder_24          8000              saed90nm_typ_ht
+ShiftAdder_25          8000              saed90nm_typ_ht
+ShiftAdder_26          8000              saed90nm_typ_ht
+ShiftAdder_27          8000              saed90nm_typ_ht
+ShiftAdder_28          8000              saed90nm_typ_ht
+ShiftAdder_29          8000              saed90nm_typ_ht
+ShiftAdder_30          8000              saed90nm_typ_ht
+CarryBypass_Adder_1    8000              saed90nm_typ_ht
+CarryBypass_Adder_2    8000              saed90nm_typ_ht
+CarryBypass_Adder_3    8000              saed90nm_typ_ht
+CarryBypass_Adder_4    8000              saed90nm_typ_ht
+CarryBypass_Adder_5    8000              saed90nm_typ_ht
+CarryBypass_Adder_6    8000              saed90nm_typ_ht
+CarryBypass_Adder_7    8000              saed90nm_typ_ht
+CarryBypass_Adder_8    8000              saed90nm_typ_ht
+CarryBypass_Adder_9    8000              saed90nm_typ_ht
+CarryBypass_Adder_10   8000              saed90nm_typ_ht
+CarryBypass_Adder_11   8000              saed90nm_typ_ht
+CarryBypass_Adder_12   8000              saed90nm_typ_ht
+CarryBypass_Adder_13   8000              saed90nm_typ_ht
+CarryBypass_Adder_14   8000              saed90nm_typ_ht
+CarryBypass_Adder_15   8000              saed90nm_typ_ht
+CarryBypass_Adder_16   8000              saed90nm_typ_ht
+CarryBypass_Adder_17   8000              saed90nm_typ_ht
+CarryBypass_Adder_18   8000              saed90nm_typ_ht
+CarryBypass_Adder_19   8000              saed90nm_typ_ht
+CarryBypass_Adder_20   8000              saed90nm_typ_ht
+CarryBypass_Adder_21   8000              saed90nm_typ_ht
+CarryBypass_Adder_22   8000              saed90nm_typ_ht
+CarryBypass_Adder_23   8000              saed90nm_typ_ht
+CarryBypass_Adder_24   8000              saed90nm_typ_ht
+CarryBypass_Adder_25   8000              saed90nm_typ_ht
+CarryBypass_Adder_26   8000              saed90nm_typ_ht
+CarryBypass_Adder_27   8000              saed90nm_typ_ht
+CarryBypass_Adder_28   8000              saed90nm_typ_ht
+CarryBypass_Adder_29   8000              saed90nm_typ_ht
+CarryBypass_Adder_30   8000              saed90nm_typ_ht
+CarryBypass_Adder_31   8000              saed90nm_typ_ht
+CarryBypass_Adder_32   8000              saed90nm_typ_ht
+CarryBypass_Adder_33   8000              saed90nm_typ_ht
+CarryBypass_Adder_34   8000              saed90nm_typ_ht
+CarryBypass_Adder_35   8000              saed90nm_typ_ht
+CarryBypass_Adder_36   8000              saed90nm_typ_ht
+CarryBypass_Adder_37   8000              saed90nm_typ_ht
+CarryBypass_Adder_38   8000              saed90nm_typ_ht
+CarryBypass_Adder_39   8000              saed90nm_typ_ht
+CarryBypass_Adder_40   8000              saed90nm_typ_ht
+CarryBypass_Adder_41   8000              saed90nm_typ_ht
+CarryBypass_Adder_42   8000              saed90nm_typ_ht
+CarryBypass_Adder_43   8000              saed90nm_typ_ht
+CarryBypass_Adder_44   8000              saed90nm_typ_ht
+CarryBypass_Adder_45   8000              saed90nm_typ_ht
+CarryBypass_Adder_46   8000              saed90nm_typ_ht
+CarryBypass_Adder_47   8000              saed90nm_typ_ht
+CarryBypass_Adder_48   8000              saed90nm_typ_ht
+CarryBypass_Adder_49   8000              saed90nm_typ_ht
+CarryBypass_Adder_50   8000              saed90nm_typ_ht
+CarryBypass_Adder_51   8000              saed90nm_typ_ht
+CarryBypass_Adder_52   8000              saed90nm_typ_ht
+CarryBypass_Adder_53   8000              saed90nm_typ_ht
+CarryBypass_Adder_54   8000              saed90nm_typ_ht
+CarryBypass_Adder_55   8000              saed90nm_typ_ht
+CarryBypass_Adder_56   8000              saed90nm_typ_ht
+CarryBypass_Adder_57   8000              saed90nm_typ_ht
+CarryBypass_Adder_58   8000              saed90nm_typ_ht
+CarryBypass_Adder_59   8000              saed90nm_typ_ht
+CarryBypass_Adder_60   8000              saed90nm_typ_ht
+CarryBypass_Adder_61   8000              saed90nm_typ_ht
+Ripple4bit_1           8000              saed90nm_typ_ht
+Ripple4bit_2           8000              saed90nm_typ_ht
+Ripple4bit_3           8000              saed90nm_typ_ht
+Ripple4bit_4           8000              saed90nm_typ_ht
+Ripple4bit_5           ForQA             saed90nm_typ_ht
+Ripple4bit_6           ForQA             saed90nm_typ_ht
+Ripple4bit_7           ForQA             saed90nm_typ_ht
+Ripple4bit_8           ForQA             saed90nm_typ_ht
+Ripple4bit_9           8000              saed90nm_typ_ht
+Ripple4bit_10          8000              saed90nm_typ_ht
+Ripple4bit_11          8000              saed90nm_typ_ht
+Ripple4bit_12          8000              saed90nm_typ_ht
+Ripple4bit_13          8000              saed90nm_typ_ht
+Ripple4bit_14          8000              saed90nm_typ_ht
+Ripple4bit_15          8000              saed90nm_typ_ht
+Ripple4bit_16          8000              saed90nm_typ_ht
+Ripple4bit_17          8000              saed90nm_typ_ht
+Ripple4bit_18          8000              saed90nm_typ_ht
+Ripple4bit_19          8000              saed90nm_typ_ht
+Ripple4bit_20          8000              saed90nm_typ_ht
+Ripple4bit_21          8000              saed90nm_typ_ht
+Ripple4bit_22          ForQA             saed90nm_typ_ht
+Ripple4bit_23          ForQA             saed90nm_typ_ht
+Ripple4bit_24          ForQA             saed90nm_typ_ht
+Ripple4bit_25          8000              saed90nm_typ_ht
+Ripple4bit_26          8000              saed90nm_typ_ht
+Ripple4bit_27          8000              saed90nm_typ_ht
+Ripple4bit_28          8000              saed90nm_typ_ht
+Ripple4bit_29          8000              saed90nm_typ_ht
+Ripple4bit_30          8000              saed90nm_typ_ht
+Ripple4bit_31          8000              saed90nm_typ_ht
+Ripple4bit_32          8000              saed90nm_typ_ht
+Ripple4bit_33          8000              saed90nm_typ_ht
+Ripple4bit_34          8000              saed90nm_typ_ht
+Ripple4bit_35          8000              saed90nm_typ_ht
+Ripple4bit_36          8000              saed90nm_typ_ht
+Ripple4bit_37          ForQA             saed90nm_typ_ht
+Ripple4bit_38          8000              saed90nm_typ_ht
+Ripple4bit_39          ForQA             saed90nm_typ_ht
+Ripple4bit_40          ForQA             saed90nm_typ_ht
+Ripple4bit_41          8000              saed90nm_typ_ht
+Ripple4bit_42          8000              saed90nm_typ_ht
+Ripple4bit_43          8000              saed90nm_typ_ht
+Ripple4bit_44          8000              saed90nm_typ_ht
+Ripple4bit_45          8000              saed90nm_typ_ht
+Ripple4bit_46          8000              saed90nm_typ_ht
+Ripple4bit_47          8000              saed90nm_typ_ht
+Ripple4bit_48          8000              saed90nm_typ_ht
+Ripple4bit_49          8000              saed90nm_typ_ht
+Ripple4bit_50          8000              saed90nm_typ_ht
+Ripple4bit_51          8000              saed90nm_typ_ht
+Ripple4bit_52          8000              saed90nm_typ_ht
+Ripple4bit_53          8000              saed90nm_typ_ht
+Ripple4bit_54          8000              saed90nm_typ_ht
+Ripple4bit_55          8000              saed90nm_typ_ht
+Ripple4bit_56          8000              saed90nm_typ_ht
+Ripple4bit_57          8000              saed90nm_typ_ht
+Ripple4bit_58          8000              saed90nm_typ_ht
+Ripple4bit_59          8000              saed90nm_typ_ht
+Ripple4bit_60          8000              saed90nm_typ_ht
+Ripple4bit_61          8000              saed90nm_typ_ht
+Ripple4bit_62          8000              saed90nm_typ_ht
+Ripple4bit_63          8000              saed90nm_typ_ht
+Ripple4bit_64          8000              saed90nm_typ_ht
+Ripple4bit_65          8000              saed90nm_typ_ht
+Ripple4bit_66          8000              saed90nm_typ_ht
+Ripple4bit_67          8000              saed90nm_typ_ht
+Ripple4bit_68          8000              saed90nm_typ_ht
+Ripple4bit_69          8000              saed90nm_typ_ht
+Ripple4bit_70          8000              saed90nm_typ_ht
+Ripple4bit_71          8000              saed90nm_typ_ht
+Ripple4bit_72          8000              saed90nm_typ_ht
+Ripple4bit_73          8000              saed90nm_typ_ht
+Ripple4bit_74          8000              saed90nm_typ_ht
+Ripple4bit_75          8000              saed90nm_typ_ht
+Ripple4bit_76          8000              saed90nm_typ_ht
+Ripple4bit_77          8000              saed90nm_typ_ht
+Ripple4bit_78          8000              saed90nm_typ_ht
+Ripple4bit_79          8000              saed90nm_typ_ht
+Ripple4bit_80          8000              saed90nm_typ_ht
+Ripple4bit_81          8000              saed90nm_typ_ht
+Ripple4bit_82          8000              saed90nm_typ_ht
+Ripple4bit_83          8000              saed90nm_typ_ht
+Ripple4bit_84          8000              saed90nm_typ_ht
+Ripple4bit_85          8000              saed90nm_typ_ht
+Ripple4bit_86          8000              saed90nm_typ_ht
+Ripple4bit_87          8000              saed90nm_typ_ht
+Ripple4bit_88          8000              saed90nm_typ_ht
+Ripple4bit_89          8000              saed90nm_typ_ht
+Ripple4bit_90          8000              saed90nm_typ_ht
+Ripple4bit_91          8000              saed90nm_typ_ht
+Ripple4bit_92          8000              saed90nm_typ_ht
+Ripple4bit_93          8000              saed90nm_typ_ht
+Ripple4bit_94          8000              saed90nm_typ_ht
+Ripple4bit_95          8000              saed90nm_typ_ht
+Ripple4bit_96          8000              saed90nm_typ_ht
+Ripple4bit_97          8000              saed90nm_typ_ht
+Ripple4bit_98          8000              saed90nm_typ_ht
+Ripple4bit_99          8000              saed90nm_typ_ht
+Ripple4bit_100         8000              saed90nm_typ_ht
+Ripple4bit_101         8000              saed90nm_typ_ht
+Ripple4bit_102         8000              saed90nm_typ_ht
+Ripple4bit_103         8000              saed90nm_typ_ht
+Ripple4bit_104         8000              saed90nm_typ_ht
+Ripple4bit_105         8000              saed90nm_typ_ht
+Ripple4bit_106         8000              saed90nm_typ_ht
+Ripple4bit_107         8000              saed90nm_typ_ht
+Ripple4bit_108         8000              saed90nm_typ_ht
+Ripple4bit_109         8000              saed90nm_typ_ht
+Ripple4bit_110         8000              saed90nm_typ_ht
+Ripple4bit_111         8000              saed90nm_typ_ht
+Ripple4bit_112         8000              saed90nm_typ_ht
+Ripple4bit_113         8000              saed90nm_typ_ht
+Ripple4bit_114         8000              saed90nm_typ_ht
+Ripple4bit_115         8000              saed90nm_typ_ht
+Ripple4bit_116         8000              saed90nm_typ_ht
+Ripple4bit_117         8000              saed90nm_typ_ht
+Ripple4bit_118         8000              saed90nm_typ_ht
+Ripple4bit_119         8000              saed90nm_typ_ht
+Ripple4bit_120         8000              saed90nm_typ_ht
+Ripple4bit_121         8000              saed90nm_typ_ht
+Ripple4bit_122         8000              saed90nm_typ_ht
+Ripple4bit_123         8000              saed90nm_typ_ht
+Ripple4bit_124         8000              saed90nm_typ_ht
+Ripple4bit_125         8000              saed90nm_typ_ht
+Ripple4bit_126         8000              saed90nm_typ_ht
+Ripple4bit_127         8000              saed90nm_typ_ht
+Ripple4bit_128         8000              saed90nm_typ_ht
+Ripple4bit_129         8000              saed90nm_typ_ht
+Ripple4bit_130         8000              saed90nm_typ_ht
+Ripple4bit_131         8000              saed90nm_typ_ht
+Ripple4bit_132         8000              saed90nm_typ_ht
+Ripple4bit_133         8000              saed90nm_typ_ht
+Ripple4bit_134         8000              saed90nm_typ_ht
+Ripple4bit_135         8000              saed90nm_typ_ht
+Ripple4bit_136         8000              saed90nm_typ_ht
+Ripple4bit_137         8000              saed90nm_typ_ht
+Ripple4bit_138         8000              saed90nm_typ_ht
+Ripple4bit_139         8000              saed90nm_typ_ht
+Ripple4bit_140         8000              saed90nm_typ_ht
+Ripple4bit_141         8000              saed90nm_typ_ht
+Ripple4bit_142         8000              saed90nm_typ_ht
+Ripple4bit_143         8000              saed90nm_typ_ht
+Ripple4bit_144         8000              saed90nm_typ_ht
+Ripple4bit_145         8000              saed90nm_typ_ht
+Ripple4bit_146         8000              saed90nm_typ_ht
+Ripple4bit_147         8000              saed90nm_typ_ht
+Ripple4bit_148         8000              saed90nm_typ_ht
+Ripple4bit_149         8000              saed90nm_typ_ht
+Ripple4bit_150         8000              saed90nm_typ_ht
+Ripple4bit_151         8000              saed90nm_typ_ht
+Ripple4bit_152         8000              saed90nm_typ_ht
+Ripple4bit_153         8000              saed90nm_typ_ht
+Ripple4bit_154         8000              saed90nm_typ_ht
+Ripple4bit_155         8000              saed90nm_typ_ht
+Ripple4bit_156         8000              saed90nm_typ_ht
+Ripple4bit_157         8000              saed90nm_typ_ht
+Ripple4bit_158         8000              saed90nm_typ_ht
+Ripple4bit_159         8000              saed90nm_typ_ht
+Ripple4bit_160         8000              saed90nm_typ_ht
+Ripple4bit_161         8000              saed90nm_typ_ht
+Ripple4bit_162         8000              saed90nm_typ_ht
+Ripple4bit_163         8000              saed90nm_typ_ht
+Ripple4bit_164         8000              saed90nm_typ_ht
+Ripple4bit_165         8000              saed90nm_typ_ht
+Ripple4bit_166         8000              saed90nm_typ_ht
+Ripple4bit_167         8000              saed90nm_typ_ht
+Ripple4bit_168         8000              saed90nm_typ_ht
+Ripple4bit_169         8000              saed90nm_typ_ht
+Ripple4bit_170         8000              saed90nm_typ_ht
+Ripple4bit_171         8000              saed90nm_typ_ht
+Ripple4bit_172         8000              saed90nm_typ_ht
+Ripple4bit_173         8000              saed90nm_typ_ht
+Ripple4bit_174         8000              saed90nm_typ_ht
+Ripple4bit_175         8000              saed90nm_typ_ht
+Ripple4bit_176         8000              saed90nm_typ_ht
+Ripple4bit_177         8000              saed90nm_typ_ht
+Ripple4bit_178         8000              saed90nm_typ_ht
+Ripple4bit_179         8000              saed90nm_typ_ht
+Ripple4bit_180         8000              saed90nm_typ_ht
+Ripple4bit_181         8000              saed90nm_typ_ht
+Ripple4bit_182         8000              saed90nm_typ_ht
+Ripple4bit_183         8000              saed90nm_typ_ht
+Ripple4bit_184         8000              saed90nm_typ_ht
+Ripple4bit_185         8000              saed90nm_typ_ht
+Ripple4bit_186         8000              saed90nm_typ_ht
+Ripple4bit_187         8000              saed90nm_typ_ht
+Ripple4bit_188         8000              saed90nm_typ_ht
+Ripple4bit_189         8000              saed90nm_typ_ht
+Ripple4bit_190         8000              saed90nm_typ_ht
+Ripple4bit_191         8000              saed90nm_typ_ht
+Ripple4bit_192         8000              saed90nm_typ_ht
+Ripple4bit_193         8000              saed90nm_typ_ht
+Ripple4bit_194         8000              saed90nm_typ_ht
+Ripple4bit_195         8000              saed90nm_typ_ht
+Ripple4bit_196         8000              saed90nm_typ_ht
+Ripple4bit_197         8000              saed90nm_typ_ht
+Ripple4bit_198         8000              saed90nm_typ_ht
+Ripple4bit_199         8000              saed90nm_typ_ht
+Ripple4bit_200         8000              saed90nm_typ_ht
+Ripple4bit_201         8000              saed90nm_typ_ht
+Ripple4bit_202         8000              saed90nm_typ_ht
+Ripple4bit_203         8000              saed90nm_typ_ht
+Ripple4bit_204         8000              saed90nm_typ_ht
+Ripple4bit_205         8000              saed90nm_typ_ht
+Ripple4bit_206         8000              saed90nm_typ_ht
+Ripple4bit_207         8000              saed90nm_typ_ht
+Ripple4bit_208         8000              saed90nm_typ_ht
+Ripple4bit_209         8000              saed90nm_typ_ht
+Ripple4bit_210         8000              saed90nm_typ_ht
+Ripple4bit_211         8000              saed90nm_typ_ht
+Ripple4bit_212         8000              saed90nm_typ_ht
+Ripple4bit_213         8000              saed90nm_typ_ht
+Ripple4bit_214         8000              saed90nm_typ_ht
+Ripple4bit_215         8000              saed90nm_typ_ht
+Ripple4bit_216         8000              saed90nm_typ_ht
+Ripple4bit_217         8000              saed90nm_typ_ht
+Ripple4bit_218         8000              saed90nm_typ_ht
+Ripple4bit_219         8000              saed90nm_typ_ht
+Ripple4bit_220         8000              saed90nm_typ_ht
+Ripple4bit_221         8000              saed90nm_typ_ht
+Ripple4bit_222         8000              saed90nm_typ_ht
+Ripple4bit_223         8000              saed90nm_typ_ht
+Ripple4bit_224         8000              saed90nm_typ_ht
+Ripple4bit_225         8000              saed90nm_typ_ht
+Ripple4bit_226         8000              saed90nm_typ_ht
+Ripple4bit_227         8000              saed90nm_typ_ht
+Ripple4bit_228         8000              saed90nm_typ_ht
+Ripple4bit_229         8000              saed90nm_typ_ht
+Ripple4bit_230         8000              saed90nm_typ_ht
+Ripple4bit_231         8000              saed90nm_typ_ht
+Ripple4bit_232         8000              saed90nm_typ_ht
+Ripple4bit_233         8000              saed90nm_typ_ht
+Ripple4bit_234         8000              saed90nm_typ_ht
+Ripple4bit_235         8000              saed90nm_typ_ht
+Ripple4bit_236         8000              saed90nm_typ_ht
+Ripple4bit_237         8000              saed90nm_typ_ht
+Ripple4bit_238         8000              saed90nm_typ_ht
+Ripple4bit_239         8000              saed90nm_typ_ht
+Ripple4bit_240         8000              saed90nm_typ_ht
+Ripple4bit_241         8000              saed90nm_typ_ht
+Ripple4bit_242         8000              saed90nm_typ_ht
+Ripple4bit_243         8000              saed90nm_typ_ht
+Ripple4bit_244         8000              saed90nm_typ_ht
+Ripple4bit_245         8000              saed90nm_typ_ht
+Ripple4bit_246         8000              saed90nm_typ_ht
+Ripple4bit_247         8000              saed90nm_typ_ht
+Ripple4bit_248         8000              saed90nm_typ_ht
+Ripple4bit_249         8000              saed90nm_typ_ht
+Ripple4bit_250         8000              saed90nm_typ_ht
+Ripple4bit_251         8000              saed90nm_typ_ht
+Ripple4bit_252         8000              saed90nm_typ_ht
+Ripple4bit_253         8000              saed90nm_typ_ht
+Ripple4bit_254         8000              saed90nm_typ_ht
+Ripple4bit_255         8000              saed90nm_typ_ht
+Ripple4bit_256         8000              saed90nm_typ_ht
+Ripple4bit_257         8000              saed90nm_typ_ht
+Ripple4bit_258         8000              saed90nm_typ_ht
+Ripple4bit_259         8000              saed90nm_typ_ht
+Ripple4bit_260         8000              saed90nm_typ_ht
+Ripple4bit_261         8000              saed90nm_typ_ht
+Ripple4bit_262         8000              saed90nm_typ_ht
+Ripple4bit_263         8000              saed90nm_typ_ht
+Ripple4bit_264         8000              saed90nm_typ_ht
+Ripple4bit_265         8000              saed90nm_typ_ht
+Ripple4bit_266         8000              saed90nm_typ_ht
+Ripple4bit_267         8000              saed90nm_typ_ht
+Ripple4bit_268         8000              saed90nm_typ_ht
+Ripple4bit_269         8000              saed90nm_typ_ht
+Ripple4bit_270         8000              saed90nm_typ_ht
+Ripple4bit_271         8000              saed90nm_typ_ht
+Ripple4bit_272         8000              saed90nm_typ_ht
+Ripple4bit_273         8000              saed90nm_typ_ht
+Ripple4bit_274         8000              saed90nm_typ_ht
+Ripple4bit_275         8000              saed90nm_typ_ht
+Ripple4bit_276         8000              saed90nm_typ_ht
+Ripple4bit_277         8000              saed90nm_typ_ht
+Ripple4bit_278         8000              saed90nm_typ_ht
+Ripple4bit_279         8000              saed90nm_typ_ht
+Ripple4bit_280         8000              saed90nm_typ_ht
+Ripple4bit_281         8000              saed90nm_typ_ht
+Ripple4bit_282         8000              saed90nm_typ_ht
+Ripple4bit_283         8000              saed90nm_typ_ht
+Ripple4bit_284         8000              saed90nm_typ_ht
+Ripple4bit_285         8000              saed90nm_typ_ht
+Ripple4bit_286         8000              saed90nm_typ_ht
+Ripple4bit_287         8000              saed90nm_typ_ht
+Ripple4bit_288         8000              saed90nm_typ_ht
+Ripple4bit_289         8000              saed90nm_typ_ht
+Ripple4bit_290         8000              saed90nm_typ_ht
+Ripple4bit_291         8000              saed90nm_typ_ht
+Ripple4bit_292         8000              saed90nm_typ_ht
+Ripple4bit_293         8000              saed90nm_typ_ht
+Ripple4bit_294         8000              saed90nm_typ_ht
+Ripple4bit_295         8000              saed90nm_typ_ht
+Ripple4bit_296         8000              saed90nm_typ_ht
+Ripple4bit_297         8000              saed90nm_typ_ht
+Ripple4bit_298         8000              saed90nm_typ_ht
+Ripple4bit_299         8000              saed90nm_typ_ht
+Ripple4bit_300         8000              saed90nm_typ_ht
+Ripple4bit_301         8000              saed90nm_typ_ht
+Ripple4bit_302         8000              saed90nm_typ_ht
+Ripple4bit_303         8000              saed90nm_typ_ht
+Ripple4bit_304         8000              saed90nm_typ_ht
+Ripple4bit_305         8000              saed90nm_typ_ht
+Ripple4bit_306         8000              saed90nm_typ_ht
+Ripple4bit_307         8000              saed90nm_typ_ht
+Ripple4bit_308         8000              saed90nm_typ_ht
+Ripple4bit_309         8000              saed90nm_typ_ht
+Ripple4bit_310         8000              saed90nm_typ_ht
+Ripple4bit_311         8000              saed90nm_typ_ht
+Ripple4bit_312         8000              saed90nm_typ_ht
+Ripple4bit_313         8000              saed90nm_typ_ht
+Ripple4bit_314         8000              saed90nm_typ_ht
+Ripple4bit_315         8000              saed90nm_typ_ht
+Ripple4bit_316         8000              saed90nm_typ_ht
+Ripple4bit_317         8000              saed90nm_typ_ht
+Ripple4bit_318         8000              saed90nm_typ_ht
+Ripple4bit_319         8000              saed90nm_typ_ht
+Ripple4bit_320         8000              saed90nm_typ_ht
+Ripple4bit_321         8000              saed90nm_typ_ht
+Ripple4bit_322         8000              saed90nm_typ_ht
+Ripple4bit_323         8000              saed90nm_typ_ht
+Ripple4bit_324         8000              saed90nm_typ_ht
+Ripple4bit_325         8000              saed90nm_typ_ht
+Ripple4bit_326         8000              saed90nm_typ_ht
+Ripple4bit_327         8000              saed90nm_typ_ht
+Ripple4bit_328         8000              saed90nm_typ_ht
+Ripple4bit_329         8000              saed90nm_typ_ht
+Ripple4bit_330         8000              saed90nm_typ_ht
+Ripple4bit_331         8000              saed90nm_typ_ht
+Ripple4bit_332         8000              saed90nm_typ_ht
+Ripple4bit_333         8000              saed90nm_typ_ht
+Ripple4bit_334         8000              saed90nm_typ_ht
+Ripple4bit_335         8000              saed90nm_typ_ht
+Ripple4bit_336         8000              saed90nm_typ_ht
+Ripple4bit_337         8000              saed90nm_typ_ht
+Ripple4bit_338         8000              saed90nm_typ_ht
+Ripple4bit_339         8000              saed90nm_typ_ht
+Ripple4bit_340         8000              saed90nm_typ_ht
+Ripple4bit_341         8000              saed90nm_typ_ht
+Ripple4bit_342         8000              saed90nm_typ_ht
+Ripple4bit_343         8000              saed90nm_typ_ht
+Ripple4bit_344         8000              saed90nm_typ_ht
+Ripple4bit_345         8000              saed90nm_typ_ht
+Ripple4bit_346         8000              saed90nm_typ_ht
+Ripple4bit_347         8000              saed90nm_typ_ht
+Ripple4bit_348         8000              saed90nm_typ_ht
+Ripple4bit_349         8000              saed90nm_typ_ht
+Ripple4bit_350         8000              saed90nm_typ_ht
+Ripple4bit_351         8000              saed90nm_typ_ht
+Ripple4bit_352         8000              saed90nm_typ_ht
+Ripple4bit_353         8000              saed90nm_typ_ht
+Ripple4bit_354         8000              saed90nm_typ_ht
+Ripple4bit_355         8000              saed90nm_typ_ht
+Ripple4bit_356         8000              saed90nm_typ_ht
+Ripple4bit_357         8000              saed90nm_typ_ht
+Ripple4bit_358         8000              saed90nm_typ_ht
+Ripple4bit_359         8000              saed90nm_typ_ht
+Ripple4bit_360         8000              saed90nm_typ_ht
+Ripple4bit_361         8000              saed90nm_typ_ht
+Ripple4bit_362         8000              saed90nm_typ_ht
+Ripple4bit_363         8000              saed90nm_typ_ht
+Ripple4bit_364         8000              saed90nm_typ_ht
+Ripple4bit_365         8000              saed90nm_typ_ht
+Ripple4bit_366         8000              saed90nm_typ_ht
+Ripple4bit_367         8000              saed90nm_typ_ht
+Ripple4bit_368         8000              saed90nm_typ_ht
+Ripple4bit_369         8000              saed90nm_typ_ht
+Ripple4bit_370         8000              saed90nm_typ_ht
+Ripple4bit_371         8000              saed90nm_typ_ht
+Ripple4bit_372         8000              saed90nm_typ_ht
+Ripple4bit_373         8000              saed90nm_typ_ht
+Ripple4bit_374         8000              saed90nm_typ_ht
+Ripple4bit_375         8000              saed90nm_typ_ht
+Ripple4bit_376         8000              saed90nm_typ_ht
+Ripple4bit_377         8000              saed90nm_typ_ht
+Ripple4bit_378         8000              saed90nm_typ_ht
+Ripple4bit_379         8000              saed90nm_typ_ht
+Ripple4bit_380         8000              saed90nm_typ_ht
+Ripple4bit_381         8000              saed90nm_typ_ht
+Ripple4bit_382         8000              saed90nm_typ_ht
+Ripple4bit_383         8000              saed90nm_typ_ht
+Ripple4bit_384         8000              saed90nm_typ_ht
+Ripple4bit_385         8000              saed90nm_typ_ht
+Ripple4bit_386         8000              saed90nm_typ_ht
+Ripple4bit_387         8000              saed90nm_typ_ht
+Ripple4bit_388         8000              saed90nm_typ_ht
+Ripple4bit_389         8000              saed90nm_typ_ht
+Ripple4bit_390         8000              saed90nm_typ_ht
+Ripple4bit_391         8000              saed90nm_typ_ht
+Ripple4bit_392         8000              saed90nm_typ_ht
+Ripple4bit_393         8000              saed90nm_typ_ht
+Ripple4bit_394         8000              saed90nm_typ_ht
+Ripple4bit_395         8000              saed90nm_typ_ht
+Ripple4bit_396         8000              saed90nm_typ_ht
+Ripple4bit_397         8000              saed90nm_typ_ht
+Ripple4bit_398         8000              saed90nm_typ_ht
+Ripple4bit_399         8000              saed90nm_typ_ht
+Ripple4bit_400         8000              saed90nm_typ_ht
+Ripple4bit_401         8000              saed90nm_typ_ht
+Ripple4bit_402         8000              saed90nm_typ_ht
+Ripple4bit_403         8000              saed90nm_typ_ht
+Ripple4bit_404         8000              saed90nm_typ_ht
+Ripple4bit_405         8000              saed90nm_typ_ht
+Ripple4bit_406         8000              saed90nm_typ_ht
+Ripple4bit_407         8000              saed90nm_typ_ht
+Ripple4bit_408         8000              saed90nm_typ_ht
+Ripple4bit_409         8000              saed90nm_typ_ht
+Ripple4bit_410         8000              saed90nm_typ_ht
+Ripple4bit_411         8000              saed90nm_typ_ht
+Ripple4bit_412         8000              saed90nm_typ_ht
+Ripple4bit_413         8000              saed90nm_typ_ht
+Ripple4bit_414         8000              saed90nm_typ_ht
+Ripple4bit_415         8000              saed90nm_typ_ht
+Ripple4bit_416         8000              saed90nm_typ_ht
+Ripple4bit_417         8000              saed90nm_typ_ht
+Ripple4bit_418         8000              saed90nm_typ_ht
+Ripple4bit_419         8000              saed90nm_typ_ht
+Ripple4bit_420         8000              saed90nm_typ_ht
+Ripple4bit_421         8000              saed90nm_typ_ht
+Ripple4bit_422         8000              saed90nm_typ_ht
+Ripple4bit_423         8000              saed90nm_typ_ht
+Ripple4bit_424         8000              saed90nm_typ_ht
+Ripple4bit_425         8000              saed90nm_typ_ht
+Ripple4bit_426         8000              saed90nm_typ_ht
+Ripple4bit_427         8000              saed90nm_typ_ht
+Ripple4bit_428         8000              saed90nm_typ_ht
+Ripple4bit_429         8000              saed90nm_typ_ht
+Ripple4bit_430         8000              saed90nm_typ_ht
+Ripple4bit_431         8000              saed90nm_typ_ht
+Ripple4bit_432         8000              saed90nm_typ_ht
+Ripple4bit_433         8000              saed90nm_typ_ht
+Ripple4bit_434         8000              saed90nm_typ_ht
+Ripple4bit_435         8000              saed90nm_typ_ht
+Ripple4bit_436         8000              saed90nm_typ_ht
+Ripple4bit_437         8000              saed90nm_typ_ht
+Ripple4bit_438         8000              saed90nm_typ_ht
+Ripple4bit_439         8000              saed90nm_typ_ht
+Ripple4bit_440         8000              saed90nm_typ_ht
+Ripple4bit_441         8000              saed90nm_typ_ht
+Ripple4bit_442         8000              saed90nm_typ_ht
+Ripple4bit_443         8000              saed90nm_typ_ht
+Ripple4bit_444         8000              saed90nm_typ_ht
+Ripple4bit_445         8000              saed90nm_typ_ht
+Ripple4bit_446         8000              saed90nm_typ_ht
+Ripple4bit_447         8000              saed90nm_typ_ht
+Ripple4bit_448         8000              saed90nm_typ_ht
+Ripple4bit_449         8000              saed90nm_typ_ht
+Ripple4bit_450         8000              saed90nm_typ_ht
+Ripple4bit_451         8000              saed90nm_typ_ht
+Ripple4bit_452         8000              saed90nm_typ_ht
+Ripple4bit_453         8000              saed90nm_typ_ht
+Ripple4bit_454         8000              saed90nm_typ_ht
+Ripple4bit_455         8000              saed90nm_typ_ht
+Ripple4bit_456         8000              saed90nm_typ_ht
+Ripple4bit_457         8000              saed90nm_typ_ht
+Ripple4bit_458         8000              saed90nm_typ_ht
+Ripple4bit_459         8000              saed90nm_typ_ht
+Ripple4bit_460         8000              saed90nm_typ_ht
+Ripple4bit_461         8000              saed90nm_typ_ht
+Ripple4bit_462         8000              saed90nm_typ_ht
+Ripple4bit_463         8000              saed90nm_typ_ht
+Ripple4bit_464         8000              saed90nm_typ_ht
+Ripple4bit_465         8000              saed90nm_typ_ht
+Ripple4bit_466         8000              saed90nm_typ_ht
+Ripple4bit_467         8000              saed90nm_typ_ht
+Ripple4bit_468         8000              saed90nm_typ_ht
+Ripple4bit_469         8000              saed90nm_typ_ht
+Ripple4bit_470         8000              saed90nm_typ_ht
+Ripple4bit_471         8000              saed90nm_typ_ht
+Ripple4bit_472         8000              saed90nm_typ_ht
+Ripple4bit_473         8000              saed90nm_typ_ht
+Ripple4bit_474         8000              saed90nm_typ_ht
+Ripple4bit_475         8000              saed90nm_typ_ht
+Ripple4bit_476         8000              saed90nm_typ_ht
+Ripple4bit_477         8000              saed90nm_typ_ht
+Ripple4bit_478         8000              saed90nm_typ_ht
+Ripple4bit_479         8000              saed90nm_typ_ht
+Ripple4bit_480         8000              saed90nm_typ_ht
+Ripple4bit_481         8000              saed90nm_typ_ht
+Ripple4bit_482         8000              saed90nm_typ_ht
+Ripple4bit_483         8000              saed90nm_typ_ht
+Ripple4bit_484         8000              saed90nm_typ_ht
+Ripple4bit_485         8000              saed90nm_typ_ht
+Ripple4bit_486         8000              saed90nm_typ_ht
+Ripple4bit_487         8000              saed90nm_typ_ht
+Ripple4bit_488         8000              saed90nm_typ_ht
+Ripple4bit_489         8000              saed90nm_typ_ht
+Ripple4bit_490         8000              saed90nm_typ_ht
+Ripple4bit_491         8000              saed90nm_typ_ht
+Ripple4bit_492         8000              saed90nm_typ_ht
+Ripple4bit_493         8000              saed90nm_typ_ht
+Ripple4bit_494         8000              saed90nm_typ_ht
+Ripple4bit_495         8000              saed90nm_typ_ht
+shiftMultiplier_DW02_mult_0
+                       8000              saed90nm_typ_ht
+shiftMultiplier_DW02_mult_1
+                       8000              saed90nm_typ_ht
+shiftMultiplier_DW02_mult_2
+                       8000              saed90nm_typ_ht
+shiftMultiplier_DW02_mult_3
+                       8000              saed90nm_typ_ht
+shiftMultiplier_DW02_mult_4
+                       8000              saed90nm_typ_ht
+shiftMultiplier_DW02_mult_5
+                       8000              saed90nm_typ_ht
+shiftMultiplier_DW02_mult_6
+                       8000              saed90nm_typ_ht
+shiftMultiplier_DW02_mult_7
+                       8000              saed90nm_typ_ht
+shiftMultiplier_DW02_mult_8
+                       8000              saed90nm_typ_ht
+shiftMultiplier_DW02_mult_9
+                       8000              saed90nm_typ_ht
+shiftMultiplier_DW02_mult_10
+                       8000              saed90nm_typ_ht
+shiftMultiplier_DW02_mult_11
+                       8000              saed90nm_typ_ht
+shiftMultiplier_DW02_mult_12
+                       8000              saed90nm_typ_ht
+shiftMultiplier_DW02_mult_13
+                       8000              saed90nm_typ_ht
+shiftMultiplier_DW02_mult_14
+                       8000              saed90nm_typ_ht
+shiftMultiplier_DW02_mult_15
+                       8000              saed90nm_typ_ht
+shiftMultiplier_DW02_mult_16
+                       8000              saed90nm_typ_ht
+shiftMultiplier_DW02_mult_17
+                       8000              saed90nm_typ_ht
+shiftMultiplier_DW02_mult_18
+                       8000              saed90nm_typ_ht
+shiftMultiplier_DW02_mult_19
+                       8000              saed90nm_typ_ht
+shiftMultiplier_DW02_mult_20
+                       8000              saed90nm_typ_ht
+shiftMultiplier_DW02_mult_21
+                       8000              saed90nm_typ_ht
+shiftMultiplier_DW02_mult_22
+                       8000              saed90nm_typ_ht
+shiftMultiplier_DW02_mult_23
+                       8000              saed90nm_typ_ht
+shiftMultiplier_DW02_mult_24
+                       8000              saed90nm_typ_ht
+shiftMultiplier_DW02_mult_25
+                       8000              saed90nm_typ_ht
+shiftMultiplier_DW02_mult_26
+                       8000              saed90nm_typ_ht
+shiftMultiplier_DW02_mult_27
+                       8000              saed90nm_typ_ht
+shiftMultiplier_DW02_mult_28
+                       8000              saed90nm_typ_ht
+shiftMultiplier_DW02_mult_29
+                       8000              saed90nm_typ_ht
+shiftMultiplier_DW02_mult_30
+                       8000              saed90nm_typ_ht
+shiftMultiplier_DW01_inc_7
+                       8000              saed90nm_typ_ht
+shiftMultiplier_DW01_inc_29
+                       8000              saed90nm_typ_ht
+shiftMultiplier_DW01_inc_47
+                       8000              saed90nm_typ_ht
+
+
+Global Operating Voltage = 1.2  
+Power-specific unit information :
+    Voltage Units = 1V
+    Capacitance Units = 1.000000ff
+    Time Units = 1ns
+    Dynamic Power Units = 1uW    (derived from V,C,T units)
+    Leakage Power Units = 1pW
+
+
+Attributes
+----------
+i - Including register clock pin internal power
+
+
+  Cell Internal Power  =  33.3008 mW   (80%)
+  Net Switching Power  =   8.3623 mW   (20%)
+                         ---------
+Total Dynamic Power    =  41.6631 mW  (100%)
+
+Cell Leakage Power     =   2.6531 mW
+
+Information: report_power power group summary does not include estimated clock tree power. (PWR-789)
+
+                 Internal         Switching           Leakage            Total
+Power Group      Power            Power               Power              Power   (   %    )  Attrs
+--------------------------------------------------------------------------------------------------
+io_pad             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+memory             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+black_box          0.0000            0.0000            0.0000            0.0000  (   0.00%)
+clock_network      0.0000            0.0000            0.0000            0.0000  (   0.00%)  i
+register           0.0000            0.0000            0.0000            0.0000  (   0.00%)
+sequential         0.0000            0.0000            0.0000            0.0000  (   0.00%)
+combinational  3.3301e+04        8.3622e+03        2.6531e+09        4.4316e+04  ( 100.00%)
+--------------------------------------------------------------------------------------------------
+Total          3.3301e+04 uW     8.3622e+03 uW     2.6531e+09 pW     4.4316e+04 uW
+1

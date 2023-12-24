@@ -1,3 +1,5 @@
+`timescale 1 ns / 100 ps
+
 module BoothMultiplier_TB;
 
   // Inputs
@@ -8,16 +10,16 @@ module BoothMultiplier_TB;
   wire [63:0] P;
 // Clock generation
   reg clk = 0;
-  always #1 clk = ~clk;
+  always #5 clk = ~clk;
 
 
 
   // Instantiate the Booth module
-  booth_integration uut (
+  Booth uut (
     .clk(clk),
-    .input1(A),
-    .input2(B),
-    .output1(P)
+    .A(A),
+    .B(B),
+    .P(P)
   );
    integer success = 0;
     integer failure = 0;
@@ -31,6 +33,7 @@ module BoothMultiplier_TB;
     B = 32'b11111111111111111111111111111011; // -5
 
     #100; // Wait for the result
+          $display("TestCase#1: success");
 
     if (P === 64'b1111111111111111111111111111111111111111111111111111111111100111) begin // -25
       $display("TestCase#1: success");

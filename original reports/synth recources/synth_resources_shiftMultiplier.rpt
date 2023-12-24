@@ -1,0 +1,131 @@
+ 
+****************************************
+Report : resources
+Design : shiftMultiplier
+Version: U-2022.12-SP7
+Date   : Sat Dec 23 19:07:37 2023
+****************************************
+
+Resource Sharing Report for design shiftMultiplier in file
+        ./source/shiftMultiplier.v
+
+===============================================================================
+|          |              |            | Contained     |                      |
+| Resource | Module       | Parameters | Resources     | Contained Operations |
+===============================================================================
+| r411     | DW01_sub     | width=32   |               | sub_1_root_add_18_ni |
+| r413     | DW01_inc     | width=32   |               | add_0_root_add_18_ni |
+| r519     | DW01_sub     | width=31   |               | sub_1_root_add_22_ni |
+| r521     | DW01_inc     | width=31   |               | add_0_root_add_22_ni |
+| r773     | DW02_mult    | A_width=1  |               | mult_32_I31          |
+|          |              | B_width=32 |               |                      |
+| r775     | DW02_mult    | A_width=1  |               | mult_32_I30          |
+|          |              | B_width=32 |               |                      |
+| r777     | DW02_mult    | A_width=1  |               | mult_32_I29          |
+|          |              | B_width=32 |               |                      |
+| r779     | DW02_mult    | A_width=1  |               | mult_32_I28          |
+|          |              | B_width=32 |               |                      |
+| r781     | DW02_mult    | A_width=1  |               | mult_32_I27          |
+|          |              | B_width=32 |               |                      |
+| r783     | DW02_mult    | A_width=1  |               | mult_32_I26          |
+|          |              | B_width=32 |               |                      |
+| r785     | DW02_mult    | A_width=1  |               | mult_32_I25          |
+|          |              | B_width=32 |               |                      |
+| r787     | DW02_mult    | A_width=1  |               | mult_32_I24          |
+|          |              | B_width=32 |               |                      |
+| r789     | DW02_mult    | A_width=1  |               | mult_32_I23          |
+|          |              | B_width=32 |               |                      |
+| r791     | DW02_mult    | A_width=1  |               | mult_32_I22          |
+|          |              | B_width=32 |               |                      |
+| r793     | DW02_mult    | A_width=1  |               | mult_32_I21          |
+|          |              | B_width=32 |               |                      |
+| r795     | DW02_mult    | A_width=1  |               | mult_32_I20          |
+|          |              | B_width=32 |               |                      |
+| r797     | DW02_mult    | A_width=1  |               | mult_32_I19          |
+|          |              | B_width=32 |               |                      |
+| r799     | DW02_mult    | A_width=1  |               | mult_32_I18          |
+|          |              | B_width=32 |               |                      |
+| r801     | DW02_mult    | A_width=1  |               | mult_32_I17          |
+|          |              | B_width=32 |               |                      |
+| r803     | DW02_mult    | A_width=1  |               | mult_32_I16          |
+|          |              | B_width=32 |               |                      |
+| r805     | DW02_mult    | A_width=1  |               | mult_32_I15          |
+|          |              | B_width=32 |               |                      |
+| r807     | DW02_mult    | A_width=1  |               | mult_32_I14          |
+|          |              | B_width=32 |               |                      |
+| r809     | DW02_mult    | A_width=1  |               | mult_32_I13          |
+|          |              | B_width=32 |               |                      |
+| r811     | DW02_mult    | A_width=1  |               | mult_32_I12          |
+|          |              | B_width=32 |               |                      |
+| r813     | DW02_mult    | A_width=1  |               | mult_32_I11          |
+|          |              | B_width=32 |               |                      |
+| r815     | DW02_mult    | A_width=1  |               | mult_32_I10          |
+|          |              | B_width=32 |               |                      |
+| r817     | DW02_mult    | A_width=1  |               | mult_32_I9           |
+|          |              | B_width=32 |               |                      |
+| r819     | DW02_mult    | A_width=1  |               | mult_32_I8           |
+|          |              | B_width=32 |               |                      |
+| r821     | DW02_mult    | A_width=1  |               | mult_32_I7           |
+|          |              | B_width=32 |               |                      |
+| r823     | DW02_mult    | A_width=1  |               | mult_32_I6           |
+|          |              | B_width=32 |               |                      |
+| r825     | DW02_mult    | A_width=1  |               | mult_32_I5           |
+|          |              | B_width=32 |               |                      |
+| r827     | DW02_mult    | A_width=1  |               | mult_32_I4           |
+|          |              | B_width=32 |               |                      |
+| r829     | DW02_mult    | A_width=1  |               | mult_32_I3           |
+|          |              | B_width=32 |               |                      |
+| r831     | DW02_mult    | A_width=1  |               | mult_32_I2           |
+|          |              | B_width=32 |               |                      |
+| r833     | DW02_mult    | A_width=1  |               | mult_32              |
+|          |              | B_width=32 |               |                      |
+| r939     | DW01_sub     | width=64   |               | sub_1_root_add_39_ni |
+| r941     | DW01_inc     | width=64   |               | add_0_root_add_39_ni |
+===============================================================================
+
+
+Implementation Report
+===============================================================================
+|                    |                  | Current            | Set            |
+| Cell               | Module           | Implementation     | Implementation |
+===============================================================================
+| add_0_root_add_22_ni                  |                    |                |
+|                    | DW01_inc         | cla                |                |
+| add_0_root_add_18_ni                  |                    |                |
+|                    | DW01_inc         | cla                |                |
+| add_0_root_add_39_ni                  |                    |                |
+|                    | DW01_inc         | cla                |                |
+| mult_32            | DW02_mult        | csa                |                |
+| mult_32_I2         | DW02_mult        | csa                |                |
+| mult_32_I3         | DW02_mult        | csa                |                |
+| mult_32_I4         | DW02_mult        | csa                |                |
+| mult_32_I5         | DW02_mult        | csa                |                |
+| mult_32_I6         | DW02_mult        | csa                |                |
+| mult_32_I7         | DW02_mult        | csa                |                |
+| mult_32_I8         | DW02_mult        | csa                |                |
+| mult_32_I9         | DW02_mult        | csa                |                |
+| mult_32_I10        | DW02_mult        | csa                |                |
+| mult_32_I11        | DW02_mult        | csa                |                |
+| mult_32_I12        | DW02_mult        | csa                |                |
+| mult_32_I13        | DW02_mult        | csa                |                |
+| mult_32_I14        | DW02_mult        | csa                |                |
+| mult_32_I15        | DW02_mult        | csa                |                |
+| mult_32_I16        | DW02_mult        | csa                |                |
+| mult_32_I17        | DW02_mult        | csa                |                |
+| mult_32_I18        | DW02_mult        | csa                |                |
+| mult_32_I19        | DW02_mult        | csa                |                |
+| mult_32_I20        | DW02_mult        | csa                |                |
+| mult_32_I21        | DW02_mult        | csa                |                |
+| mult_32_I22        | DW02_mult        | csa                |                |
+| mult_32_I23        | DW02_mult        | csa                |                |
+| mult_32_I24        | DW02_mult        | csa                |                |
+| mult_32_I25        | DW02_mult        | csa                |                |
+| mult_32_I26        | DW02_mult        | csa                |                |
+| mult_32_I27        | DW02_mult        | csa                |                |
+| mult_32_I28        | DW02_mult        | csa                |                |
+| mult_32_I29        | DW02_mult        | csa                |                |
+| mult_32_I30        | DW02_mult        | csa                |                |
+| mult_32_I31        | DW02_mult        | csa                |                |
+===============================================================================
+
+1

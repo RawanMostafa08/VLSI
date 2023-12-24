@@ -1,0 +1,327 @@
+Warning: Design 'WM32bit' has '18' unresolved references. For more detailed information, use the "link" command. (UID-341)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay min
+        -max_paths 10
+        -sort_by slack
+Design : WM32bit
+Version: U-2022.12-SP7
+Date   : Sun Dec 24 14:43:14 2023
+****************************************
+
+Operating Conditions: TYPICAL   Library: saed90nm_typ_ht
+Wire Load Model Mode: enclosed
+
+  Startpoint: in1[31] (input port clocked by vsysclk)
+  Endpoint: result[59] (output port clocked by vsysclk)
+  Path Group: vsysclk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  WM32bit            35000                 saed90nm_typ_ht
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock vsysclk (rise edge)                0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     0.20       0.20 r
+  in1[31] (in)                             0.00       0.20 r
+  U217/Q (XNOR2X2)                         0.30       0.50 f
+  U18/Q (AO22X1)                           0.34       0.84 f
+  result[59] (out)                         0.20       1.04 f
+  data arrival time                                   1.04
+
+  clock vsysclk (rise edge)                0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  output external delay                   -0.50      -0.50
+  data required time                                 -0.50
+  -----------------------------------------------------------
+  data required time                                 -0.50
+  data arrival time                                  -1.04
+  -----------------------------------------------------------
+  slack (MET)                                         1.54
+
+
+  Startpoint: in1[31] (input port clocked by vsysclk)
+  Endpoint: result[58] (output port clocked by vsysclk)
+  Path Group: vsysclk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  WM32bit            35000                 saed90nm_typ_ht
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock vsysclk (rise edge)                0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     0.20       0.20 r
+  in1[31] (in)                             0.00       0.20 r
+  U217/Q (XNOR2X2)                         0.30       0.50 f
+  U19/Q (AO22X1)                           0.34       0.84 f
+  result[58] (out)                         0.20       1.04 f
+  data arrival time                                   1.04
+
+  clock vsysclk (rise edge)                0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  output external delay                   -0.50      -0.50
+  data required time                                 -0.50
+  -----------------------------------------------------------
+  data required time                                 -0.50
+  data arrival time                                  -1.04
+  -----------------------------------------------------------
+  slack (MET)                                         1.54
+
+
+  Startpoint: in1[31] (input port clocked by vsysclk)
+  Endpoint: result[55] (output port clocked by vsysclk)
+  Path Group: vsysclk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  WM32bit            35000                 saed90nm_typ_ht
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock vsysclk (rise edge)                0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     0.20       0.20 r
+  in1[31] (in)                             0.00       0.20 r
+  U217/Q (XNOR2X2)                         0.30       0.50 f
+  U22/Q (AO22X1)                           0.34       0.84 f
+  result[55] (out)                         0.20       1.04 f
+  data arrival time                                   1.04
+
+  clock vsysclk (rise edge)                0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  output external delay                   -0.50      -0.50
+  data required time                                 -0.50
+  -----------------------------------------------------------
+  data required time                                 -0.50
+  data arrival time                                  -1.04
+  -----------------------------------------------------------
+  slack (MET)                                         1.54
+
+
+  Startpoint: in1[31] (input port clocked by vsysclk)
+  Endpoint: result[53] (output port clocked by vsysclk)
+  Path Group: vsysclk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  WM32bit            35000                 saed90nm_typ_ht
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock vsysclk (rise edge)                0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     0.20       0.20 r
+  in1[31] (in)                             0.00       0.20 r
+  U217/Q (XNOR2X2)                         0.30       0.50 f
+  U24/Q (AO22X1)                           0.34       0.84 f
+  result[53] (out)                         0.20       1.04 f
+  data arrival time                                   1.04
+
+  clock vsysclk (rise edge)                0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  output external delay                   -0.50      -0.50
+  data required time                                 -0.50
+  -----------------------------------------------------------
+  data required time                                 -0.50
+  data arrival time                                  -1.04
+  -----------------------------------------------------------
+  slack (MET)                                         1.54
+
+
+  Startpoint: in1[31] (input port clocked by vsysclk)
+  Endpoint: result[50] (output port clocked by vsysclk)
+  Path Group: vsysclk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  WM32bit            35000                 saed90nm_typ_ht
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock vsysclk (rise edge)                0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     0.20       0.20 r
+  in1[31] (in)                             0.00       0.20 r
+  U217/Q (XNOR2X2)                         0.30       0.50 f
+  U27/Q (AO22X1)                           0.34       0.84 f
+  result[50] (out)                         0.20       1.04 f
+  data arrival time                                   1.04
+
+  clock vsysclk (rise edge)                0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  output external delay                   -0.50      -0.50
+  data required time                                 -0.50
+  -----------------------------------------------------------
+  data required time                                 -0.50
+  data arrival time                                  -1.04
+  -----------------------------------------------------------
+  slack (MET)                                         1.54
+
+
+  Startpoint: in1[31] (input port clocked by vsysclk)
+  Endpoint: result[40] (output port clocked by vsysclk)
+  Path Group: vsysclk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  WM32bit            35000                 saed90nm_typ_ht
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock vsysclk (rise edge)                0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     0.20       0.20 r
+  in1[31] (in)                             0.00       0.20 r
+  U217/Q (XNOR2X2)                         0.30       0.50 f
+  U38/Q (AO22X1)                           0.34       0.84 f
+  result[40] (out)                         0.20       1.04 f
+  data arrival time                                   1.04
+
+  clock vsysclk (rise edge)                0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  output external delay                   -0.50      -0.50
+  data required time                                 -0.50
+  -----------------------------------------------------------
+  data required time                                 -0.50
+  data arrival time                                  -1.04
+  -----------------------------------------------------------
+  slack (MET)                                         1.54
+
+
+  Startpoint: in1[31] (input port clocked by vsysclk)
+  Endpoint: result[39] (output port clocked by vsysclk)
+  Path Group: vsysclk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  WM32bit            35000                 saed90nm_typ_ht
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock vsysclk (rise edge)                0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     0.20       0.20 r
+  in1[31] (in)                             0.00       0.20 r
+  U217/Q (XNOR2X2)                         0.30       0.50 f
+  U40/Q (AO22X1)                           0.34       0.84 f
+  result[39] (out)                         0.20       1.04 f
+  data arrival time                                   1.04
+
+  clock vsysclk (rise edge)                0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  output external delay                   -0.50      -0.50
+  data required time                                 -0.50
+  -----------------------------------------------------------
+  data required time                                 -0.50
+  data arrival time                                  -1.04
+  -----------------------------------------------------------
+  slack (MET)                                         1.54
+
+
+  Startpoint: in1[31] (input port clocked by vsysclk)
+  Endpoint: result[37] (output port clocked by vsysclk)
+  Path Group: vsysclk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  WM32bit            35000                 saed90nm_typ_ht
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock vsysclk (rise edge)                0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     0.20       0.20 r
+  in1[31] (in)                             0.00       0.20 r
+  U217/Q (XNOR2X2)                         0.30       0.50 f
+  U42/Q (AO22X1)                           0.34       0.84 f
+  result[37] (out)                         0.20       1.04 f
+  data arrival time                                   1.04
+
+  clock vsysclk (rise edge)                0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  output external delay                   -0.50      -0.50
+  data required time                                 -0.50
+  -----------------------------------------------------------
+  data required time                                 -0.50
+  data arrival time                                  -1.04
+  -----------------------------------------------------------
+  slack (MET)                                         1.54
+
+
+  Startpoint: in1[31] (input port clocked by vsysclk)
+  Endpoint: result[36] (output port clocked by vsysclk)
+  Path Group: vsysclk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  WM32bit            35000                 saed90nm_typ_ht
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock vsysclk (rise edge)                0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     0.20       0.20 r
+  in1[31] (in)                             0.00       0.20 r
+  U217/Q (XNOR2X2)                         0.30       0.50 f
+  U43/Q (AO22X1)                           0.34       0.84 f
+  result[36] (out)                         0.20       1.04 f
+  data arrival time                                   1.04
+
+  clock vsysclk (rise edge)                0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  output external delay                   -0.50      -0.50
+  data required time                                 -0.50
+  -----------------------------------------------------------
+  data required time                                 -0.50
+  data arrival time                                  -1.04
+  -----------------------------------------------------------
+  slack (MET)                                         1.54
+
+
+  Startpoint: in1[31] (input port clocked by vsysclk)
+  Endpoint: result[35] (output port clocked by vsysclk)
+  Path Group: vsysclk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  WM32bit            35000                 saed90nm_typ_ht
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock vsysclk (rise edge)                0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     0.20       0.20 r
+  in1[31] (in)                             0.00       0.20 r
+  U217/Q (XNOR2X2)                         0.30       0.50 f
+  U44/Q (AO22X1)                           0.34       0.84 f
+  result[35] (out)                         0.20       1.04 f
+  data arrival time                                   1.04
+
+  clock vsysclk (rise edge)                0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  output external delay                   -0.50      -0.50
+  data required time                                 -0.50
+  -----------------------------------------------------------
+  data required time                                 -0.50
+  data arrival time                                  -1.04
+  -----------------------------------------------------------
+  slack (MET)                                         1.54
+
+
+1

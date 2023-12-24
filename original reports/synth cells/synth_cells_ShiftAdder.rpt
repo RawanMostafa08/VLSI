@@ -1,0 +1,24 @@
+ 
+****************************************
+Report : cell
+Design : ShiftAdder
+Version: U-2022.12-SP7
+Date   : Sun Dec 24 14:14:15 2023
+****************************************
+
+Attributes:
+    b - black box (unknown)
+    h - hierarchical
+    n - noncombinational
+    r - removable
+    u - contains unmapped logic
+
+Cell                      Reference       Library             Area  Attributes
+--------------------------------------------------------------------------------
+DUT                       CarryBypass_Adder_62            4378.521646
+                                                                    h
+DUT2                      CarryBypass_Adder_63            4352.716846
+                                                                    h
+--------------------------------------------------------------------------------
+Total 2 cells                                             8731.238492
+1

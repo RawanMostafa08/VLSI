@@ -1,0 +1,414 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay min
+        -max_paths 10
+Design : WM8bit
+Version: U-2022.12-SP7
+Date   : Sun Dec 24 15:00:48 2023
+****************************************
+
+Operating Conditions: TYPICAL   Library: saed90nm_typ_ht
+Wire Load Model Mode: enclosed
+
+  Startpoint: B[1] (input port clocked by vsysclk)
+  Endpoint: res[1] (output port clocked by vsysclk)
+  Path Group: vsysclk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  WM8bit             8000                  saed90nm_typ_ht
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock vsysclk (rise edge)                0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     0.20       0.20 r
+  B[1] (in)                                0.00       0.20 r
+  U84/ZN (INVX0)                           0.11       0.31 f
+  U97/QN (NOR2X0)                          0.16       0.47 r
+  adder1/in1 (HA_401)                      0.00       0.47 r
+  adder1/U1/Q (XOR2X1)                     0.25       0.72 f
+  adder1/s (HA_401)                        0.00       0.72 f
+  res[1] (out)                             0.22       0.94 f
+  data arrival time                                   0.94
+
+  clock vsysclk (rise edge)                0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  output external delay                   -0.50      -0.50
+  data required time                                 -0.50
+  -----------------------------------------------------------
+  data required time                                 -0.50
+  data arrival time                                  -0.94
+  -----------------------------------------------------------
+  slack (MET)                                         1.44
+
+
+  Startpoint: B[1] (input port clocked by vsysclk)
+  Endpoint: res[2] (output port clocked by vsysclk)
+  Path Group: vsysclk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  WM8bit             8000                  saed90nm_typ_ht
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock vsysclk (rise edge)                0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     0.20       0.20 r
+  B[1] (in)                                0.00       0.20 r
+  U84/ZN (INVX0)                           0.11       0.31 f
+  U97/QN (NOR2X0)                          0.16       0.47 r
+  adder1/in1 (HA_401)                      0.00       0.47 r
+  adder1/U2/Q (AND2X1)                     0.16       0.63 r
+  adder1/c (HA_401)                        0.00       0.63 r
+  adder31/in2 (HA_415)                     0.00       0.63 r
+  adder31/U1/Q (XOR2X1)                    0.25       0.88 f
+  adder31/s (HA_415)                       0.00       0.88 f
+  res[2] (out)                             0.22       1.10 f
+  data arrival time                                   1.10
+
+  clock vsysclk (rise edge)                0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  output external delay                   -0.50      -0.50
+  data required time                                 -0.50
+  -----------------------------------------------------------
+  data required time                                 -0.50
+  data arrival time                                  -1.10
+  -----------------------------------------------------------
+  slack (MET)                                         1.60
+
+
+  Startpoint: B[1] (input port clocked by vsysclk)
+  Endpoint: res[3] (output port clocked by vsysclk)
+  Path Group: vsysclk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  WM8bit             8000                  saed90nm_typ_ht
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock vsysclk (rise edge)                0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     0.20       0.20 r
+  B[1] (in)                                0.00       0.20 r
+  U84/ZN (INVX0)                           0.11       0.31 f
+  U97/QN (NOR2X0)                          0.16       0.47 r
+  adder1/in1 (HA_401)                      0.00       0.47 r
+  adder1/U2/Q (AND2X1)                     0.16       0.63 r
+  adder1/c (HA_401)                        0.00       0.63 r
+  adder31/in2 (HA_415)                     0.00       0.63 r
+  adder31/U2/Q (AND2X1)                    0.15       0.78 r
+  adder31/c (HA_415)                       0.00       0.78 r
+  adder63/in2 (HA_410)                     0.00       0.78 r
+  adder63/U1/Q (XOR2X1)                    0.25       1.02 f
+  adder63/s (HA_410)                       0.00       1.02 f
+  res[3] (out)                             0.22       1.24 f
+  data arrival time                                   1.24
+
+  clock vsysclk (rise edge)                0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  output external delay                   -0.50      -0.50
+  data required time                                 -0.50
+  -----------------------------------------------------------
+  data required time                                 -0.50
+  data arrival time                                  -1.24
+  -----------------------------------------------------------
+  slack (MET)                                         1.74
+
+
+  Startpoint: A[7] (input port clocked by vsysclk)
+  Endpoint: res[15] (output port clocked by vsysclk)
+  Path Group: vsysclk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  WM8bit             8000                  saed90nm_typ_ht
+  FA_1               ForQA                 saed90nm_typ_ht
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock vsysclk (rise edge)                0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     0.20       0.20 r
+  A[7] (in)                                0.00       0.20 r
+  U157/ZN (INVX1)                          0.12       0.32 f
+  U119/QN (NOR2X0)                         0.15       0.47 r
+  adder40/in1 (HA_411)                     0.00       0.47 r
+  adder40/U2/Q (AND2X1)                    0.15       0.62 r
+  adder40/c (HA_411)                       0.00       0.62 r
+  adder82/in1 (FA_1)                       0.00       0.62 r
+  adder82/U1/ZN (INVX0)                    0.09       0.70 f
+  adder82/U2/Q (XNOR3X1)                   0.34       1.04 f
+  adder82/s (FA_1)                         0.00       1.04 f
+  res[15] (out)                            0.22       1.26 f
+  data arrival time                                   1.26
+
+  clock vsysclk (rise edge)                0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  output external delay                   -0.50      -0.50
+  data required time                                 -0.50
+  -----------------------------------------------------------
+  data required time                                 -0.50
+  data arrival time                                  -1.26
+  -----------------------------------------------------------
+  slack (MET)                                         1.76
+
+
+  Startpoint: B[0] (input port clocked by vsysclk)
+  Endpoint: res[4] (output port clocked by vsysclk)
+  Path Group: vsysclk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  WM8bit             8000                  saed90nm_typ_ht
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock vsysclk (rise edge)                0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     0.20       0.20 r
+  B[0] (in)                                0.00       0.20 r
+  U86/ZN (INVX0)                           0.12       0.32 f
+  U96/QN (NOR2X0)                          0.16       0.48 r
+  adder33/in3 (FA_35)                      0.00       0.48 r
+  adder33/U2/Q (AO22X1)                    0.18       0.65 r
+  adder33/c (FA_35)                        0.00       0.65 r
+  adder52/in2 (HA_409)                     0.00       0.65 r
+  adder52/U2/Q (XOR2X1)                    0.21       0.87 r
+  adder52/s (HA_409)                       0.00       0.87 r
+  adder71/in1 (HA_406)                     0.00       0.87 r
+  adder71/U2/Q (XOR2X1)                    0.25       1.11 f
+  adder71/s (HA_406)                       0.00       1.11 f
+  res[4] (out)                             0.22       1.33 f
+  data arrival time                                   1.33
+
+  clock vsysclk (rise edge)                0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  output external delay                   -0.50      -0.50
+  data required time                                 -0.50
+  -----------------------------------------------------------
+  data required time                                 -0.50
+  data arrival time                                  -1.33
+  -----------------------------------------------------------
+  slack (MET)                                         1.83
+
+
+  Startpoint: B[7] (input port clocked by vsysclk)
+  Endpoint: res[12] (output port clocked by vsysclk)
+  Path Group: vsysclk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  WM8bit             8000                  saed90nm_typ_ht
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock vsysclk (rise edge)                0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     0.20       0.20 r
+  B[7] (in)                                0.00       0.20 r
+  U154/ZN (INVX1)                          0.12       0.32 f
+  U127/QN (NOR2X0)                         0.15       0.47 r
+  adder50/in1 (HA_407)                     0.00       0.47 r
+  adder50/U2/Q (XOR2X1)                    0.22       0.69 r
+  adder50/s (HA_407)                       0.00       0.69 r
+  adder79/in1 (FA_12)                      0.00       0.69 r
+  adder79/U3/Q (XOR2X1)                    0.21       0.90 r
+  adder79/s (FA_12)                        0.00       0.90 r
+  adder98/in1 (FA_4)                       0.00       0.90 r
+  adder98/U2/Q (XOR2X1)                    0.25       1.15 f
+  adder98/s (FA_4)                         0.00       1.15 f
+  res[12] (out)                            0.22       1.37 f
+  data arrival time                                   1.37
+
+  clock vsysclk (rise edge)                0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  output external delay                   -0.50      -0.50
+  data required time                                 -0.50
+  -----------------------------------------------------------
+  data required time                                 -0.50
+  data arrival time                                  -1.37
+  -----------------------------------------------------------
+  slack (MET)                                         1.87
+
+
+  Startpoint: A[7] (input port clocked by vsysclk)
+  Endpoint: res[14] (output port clocked by vsysclk)
+  Path Group: vsysclk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  WM8bit             8000                  saed90nm_typ_ht
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock vsysclk (rise edge)                0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     0.20       0.20 r
+  A[7] (in)                                0.00       0.20 r
+  U157/ZN (INVX1)                          0.12       0.32 f
+  U119/QN (NOR2X0)                         0.15       0.47 r
+  adder40/in1 (HA_411)                     0.00       0.47 r
+  adder40/U1/Q (XOR2X1)                    0.22       0.69 r
+  adder40/s (HA_411)                       0.00       0.69 r
+  adder80/in1 (HA_403)                     0.00       0.69 r
+  adder80/U1/Q (XOR2X1)                    0.21       0.90 r
+  adder80/s (HA_403)                       0.00       0.90 r
+  adder84/in1 (FA_2)                       0.00       0.90 r
+  adder84/U1/Q (XNOR2X1)                   0.27       1.17 f
+  adder84/s (FA_2)                         0.00       1.17 f
+  res[14] (out)                            0.22       1.39 f
+  data arrival time                                   1.39
+
+  clock vsysclk (rise edge)                0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  output external delay                   -0.50      -0.50
+  data required time                                 -0.50
+  -----------------------------------------------------------
+  data required time                                 -0.50
+  data arrival time                                  -1.39
+  -----------------------------------------------------------
+  slack (MET)                                         1.89
+
+
+  Startpoint: B[0] (input port clocked by vsysclk)
+  Endpoint: res[5] (output port clocked by vsysclk)
+  Path Group: vsysclk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  WM8bit             8000                  saed90nm_typ_ht
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock vsysclk (rise edge)                0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     0.20       0.20 r
+  B[0] (in)                                0.00       0.20 r
+  U86/ZN (INVX0)                           0.12       0.32 f
+  U96/QN (NOR2X0)                          0.16       0.48 r
+  adder33/in3 (FA_35)                      0.00       0.48 r
+  adder33/U2/Q (AO22X1)                    0.18       0.65 r
+  adder33/c (FA_35)                        0.00       0.65 r
+  adder52/in2 (HA_409)                     0.00       0.65 r
+  adder52/U2/Q (XOR2X1)                    0.21       0.87 r
+  adder52/s (HA_409)                       0.00       0.87 r
+  adder71/in1 (HA_406)                     0.00       0.87 r
+  adder71/U1/Q (AND2X1)                    0.15       1.01 r
+  adder71/c (HA_406)                       0.00       1.01 r
+  adder91/in2 (HA_402)                     0.00       1.01 r
+  adder91/U3/Q (XOR2X1)                    0.25       1.26 f
+  adder91/s (HA_402)                       0.00       1.26 f
+  res[5] (out)                             0.22       1.48 f
+  data arrival time                                   1.48
+
+  clock vsysclk (rise edge)                0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  output external delay                   -0.50      -0.50
+  data required time                                 -0.50
+  -----------------------------------------------------------
+  data required time                                 -0.50
+  data arrival time                                  -1.48
+  -----------------------------------------------------------
+  slack (MET)                                         1.98
+
+
+  Startpoint: B[7] (input port clocked by vsysclk)
+  Endpoint: res[13] (output port clocked by vsysclk)
+  Path Group: vsysclk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  WM8bit             8000                  saed90nm_typ_ht
+  FA_11              ForQA                 saed90nm_typ_ht
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock vsysclk (rise edge)                0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     0.20       0.20 r
+  B[7] (in)                                0.00       0.20 r
+  U154/ZN (INVX1)                          0.12       0.32 f
+  U127/QN (NOR2X0)                         0.15       0.47 r
+  adder50/in1 (HA_407)                     0.00       0.47 r
+  adder50/U1/Q (AND2X1)                    0.16       0.63 r
+  adder50/c (HA_407)                       0.00       0.63 r
+  adder70/in2 (FA_11)                      0.00       0.63 r
+  adder70/U1/Q (XOR2X1)                    0.21       0.84 r
+  adder70/U3/Q (XOR2X1)                    0.20       1.04 r
+  adder70/s (FA_11)                        0.00       1.04 r
+  adder99/in1 (FA_3)                       0.00       1.04 r
+  adder99/U1/Q (XOR2X1)                    0.25       1.28 f
+  adder99/s (FA_3)                         0.00       1.28 f
+  res[13] (out)                            0.22       1.50 f
+  data arrival time                                   1.50
+
+  clock vsysclk (rise edge)                0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  output external delay                   -0.50      -0.50
+  data required time                                 -0.50
+  -----------------------------------------------------------
+  data required time                                 -0.50
+  data arrival time                                  -1.50
+  -----------------------------------------------------------
+  slack (MET)                                         2.00
+
+
+  Startpoint: B[1] (input port clocked by vsysclk)
+  Endpoint: res[7] (output port clocked by vsysclk)
+  Path Group: vsysclk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  WM8bit             8000                  saed90nm_typ_ht
+  FA_17              ForQA                 saed90nm_typ_ht
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock vsysclk (rise edge)                0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     0.20       0.20 r
+  B[1] (in)                                0.00       0.20 r
+  U134/Q (AND2X1)                          0.13       0.33 r
+  adder12/in2 (FA_41)                      0.00       0.33 r
+  adder12/U5/Q (AO22X1)                    0.16       0.48 r
+  adder12/c (FA_41)                        0.00       0.48 r
+  adder41/in1 (HA_414)                     0.00       0.48 r
+  adder41/U1/Q (AND2X1)                    0.14       0.63 r
+  adder41/c (HA_414)                       0.00       0.63 r
+  adder74/in3 (FA_17)                      0.00       0.63 r
+  adder74/U1/Q (XOR2X1)                    0.21       0.84 r
+  adder74/U3/Q (XOR2X1)                    0.20       1.04 r
+  adder74/s (FA_17)                        0.00       1.04 r
+  adder93/in1 (FA_9)                       0.00       1.04 r
+  adder93/U4/Q (XOR2X1)                    0.25       1.28 f
+  adder93/s (FA_9)                         0.00       1.28 f
+  res[7] (out)                             0.22       1.50 f
+  data arrival time                                   1.50
+
+  clock vsysclk (rise edge)                0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  output external delay                   -0.50      -0.50
+  data required time                                 -0.50
+  -----------------------------------------------------------
+  data required time                                 -0.50
+  data arrival time                                  -1.50
+  -----------------------------------------------------------
+  slack (MET)                                         2.00
+
+
+1

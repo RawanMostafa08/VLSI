@@ -1,0 +1,356 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 10
+        -sort_by slack
+Design : Add64
+Version: U-2022.12-SP7
+Date   : Sun Dec 24 15:22:50 2023
+****************************************
+
+Operating Conditions: TYPICAL   Library: saed90nm_typ_ht
+Wire Load Model Mode: enclosed
+
+  Startpoint: in3[63] (input port clocked by vsysclk)
+  Endpoint: s[63] (output port clocked by vsysclk)
+  Path Group: vsysclk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  Add64              8000                  saed90nm_typ_ht
+  FA_48              ForQA                 saed90nm_typ_ht
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock vsysclk (rise edge)                0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     0.20       0.20 r
+  in3[63] (in)                             0.00       0.20 r
+  add2/in3 (FA_48)                         0.00       0.20 r
+  add2/U3/Q (XOR2X1)                       0.22       0.42 f
+  add2/U1/Q (XOR2X1)                       0.23       0.65 f
+  add2/s (FA_48)                           0.00       0.65 f
+  s[63] (out)                              0.22       0.87 f
+  data arrival time                                   0.87
+
+  clock vsysclk (rise edge)                2.00       2.00
+  clock network delay (ideal)              0.00       2.00
+  output external delay                   -0.50       1.50
+  data required time                                  1.50
+  -----------------------------------------------------------
+  data required time                                  1.50
+  data arrival time                                  -0.87
+  -----------------------------------------------------------
+  slack (MET)                                         0.63
+
+
+  Startpoint: in3[62] (input port clocked by vsysclk)
+  Endpoint: s[62] (output port clocked by vsysclk)
+  Path Group: vsysclk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  Add64              8000                  saed90nm_typ_ht
+  FA_49              ForQA                 saed90nm_typ_ht
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock vsysclk (rise edge)                0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     0.20       0.20 r
+  in3[62] (in)                             0.00       0.20 r
+  Adder3333[62].add/in3 (FA_49)            0.00       0.20 r
+  Adder3333[62].add/U3/Q (XOR2X1)          0.22       0.42 f
+  Adder3333[62].add/U1/Q (XOR2X1)          0.23       0.65 f
+  Adder3333[62].add/s (FA_49)              0.00       0.65 f
+  s[62] (out)                              0.22       0.87 f
+  data arrival time                                   0.87
+
+  clock vsysclk (rise edge)                2.00       2.00
+  clock network delay (ideal)              0.00       2.00
+  output external delay                   -0.50       1.50
+  data required time                                  1.50
+  -----------------------------------------------------------
+  data required time                                  1.50
+  data arrival time                                  -0.87
+  -----------------------------------------------------------
+  slack (MET)                                         0.63
+
+
+  Startpoint: in3[61] (input port clocked by vsysclk)
+  Endpoint: s[61] (output port clocked by vsysclk)
+  Path Group: vsysclk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  Add64              8000                  saed90nm_typ_ht
+  FA_50              ForQA                 saed90nm_typ_ht
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock vsysclk (rise edge)                0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     0.20       0.20 r
+  in3[61] (in)                             0.00       0.20 r
+  Adder3333[61].add/in3 (FA_50)            0.00       0.20 r
+  Adder3333[61].add/U3/Q (XOR2X1)          0.22       0.42 f
+  Adder3333[61].add/U1/Q (XOR2X1)          0.23       0.65 f
+  Adder3333[61].add/s (FA_50)              0.00       0.65 f
+  s[61] (out)                              0.22       0.87 f
+  data arrival time                                   0.87
+
+  clock vsysclk (rise edge)                2.00       2.00
+  clock network delay (ideal)              0.00       2.00
+  output external delay                   -0.50       1.50
+  data required time                                  1.50
+  -----------------------------------------------------------
+  data required time                                  1.50
+  data arrival time                                  -0.87
+  -----------------------------------------------------------
+  slack (MET)                                         0.63
+
+
+  Startpoint: in3[60] (input port clocked by vsysclk)
+  Endpoint: s[60] (output port clocked by vsysclk)
+  Path Group: vsysclk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  Add64              8000                  saed90nm_typ_ht
+  FA_51              ForQA                 saed90nm_typ_ht
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock vsysclk (rise edge)                0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     0.20       0.20 r
+  in3[60] (in)                             0.00       0.20 r
+  Adder3333[60].add/in3 (FA_51)            0.00       0.20 r
+  Adder3333[60].add/U3/Q (XOR2X1)          0.22       0.42 f
+  Adder3333[60].add/U1/Q (XOR2X1)          0.23       0.65 f
+  Adder3333[60].add/s (FA_51)              0.00       0.65 f
+  s[60] (out)                              0.22       0.87 f
+  data arrival time                                   0.87
+
+  clock vsysclk (rise edge)                2.00       2.00
+  clock network delay (ideal)              0.00       2.00
+  output external delay                   -0.50       1.50
+  data required time                                  1.50
+  -----------------------------------------------------------
+  data required time                                  1.50
+  data arrival time                                  -0.87
+  -----------------------------------------------------------
+  slack (MET)                                         0.63
+
+
+  Startpoint: in3[59] (input port clocked by vsysclk)
+  Endpoint: s[59] (output port clocked by vsysclk)
+  Path Group: vsysclk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  Add64              8000                  saed90nm_typ_ht
+  FA_52              ForQA                 saed90nm_typ_ht
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock vsysclk (rise edge)                0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     0.20       0.20 r
+  in3[59] (in)                             0.00       0.20 r
+  Adder3333[59].add/in3 (FA_52)            0.00       0.20 r
+  Adder3333[59].add/U3/Q (XOR2X1)          0.22       0.42 f
+  Adder3333[59].add/U1/Q (XOR2X1)          0.23       0.65 f
+  Adder3333[59].add/s (FA_52)              0.00       0.65 f
+  s[59] (out)                              0.22       0.87 f
+  data arrival time                                   0.87
+
+  clock vsysclk (rise edge)                2.00       2.00
+  clock network delay (ideal)              0.00       2.00
+  output external delay                   -0.50       1.50
+  data required time                                  1.50
+  -----------------------------------------------------------
+  data required time                                  1.50
+  data arrival time                                  -0.87
+  -----------------------------------------------------------
+  slack (MET)                                         0.63
+
+
+  Startpoint: in3[58] (input port clocked by vsysclk)
+  Endpoint: s[58] (output port clocked by vsysclk)
+  Path Group: vsysclk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  Add64              8000                  saed90nm_typ_ht
+  FA_53              ForQA                 saed90nm_typ_ht
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock vsysclk (rise edge)                0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     0.20       0.20 r
+  in3[58] (in)                             0.00       0.20 r
+  Adder3333[58].add/in3 (FA_53)            0.00       0.20 r
+  Adder3333[58].add/U3/Q (XOR2X1)          0.22       0.42 f
+  Adder3333[58].add/U1/Q (XOR2X1)          0.23       0.65 f
+  Adder3333[58].add/s (FA_53)              0.00       0.65 f
+  s[58] (out)                              0.22       0.87 f
+  data arrival time                                   0.87
+
+  clock vsysclk (rise edge)                2.00       2.00
+  clock network delay (ideal)              0.00       2.00
+  output external delay                   -0.50       1.50
+  data required time                                  1.50
+  -----------------------------------------------------------
+  data required time                                  1.50
+  data arrival time                                  -0.87
+  -----------------------------------------------------------
+  slack (MET)                                         0.63
+
+
+  Startpoint: in3[57] (input port clocked by vsysclk)
+  Endpoint: s[57] (output port clocked by vsysclk)
+  Path Group: vsysclk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  Add64              8000                  saed90nm_typ_ht
+  FA_54              ForQA                 saed90nm_typ_ht
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock vsysclk (rise edge)                0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     0.20       0.20 r
+  in3[57] (in)                             0.00       0.20 r
+  Adder3333[57].add/in3 (FA_54)            0.00       0.20 r
+  Adder3333[57].add/U3/Q (XOR2X1)          0.22       0.42 f
+  Adder3333[57].add/U1/Q (XOR2X1)          0.23       0.65 f
+  Adder3333[57].add/s (FA_54)              0.00       0.65 f
+  s[57] (out)                              0.22       0.87 f
+  data arrival time                                   0.87
+
+  clock vsysclk (rise edge)                2.00       2.00
+  clock network delay (ideal)              0.00       2.00
+  output external delay                   -0.50       1.50
+  data required time                                  1.50
+  -----------------------------------------------------------
+  data required time                                  1.50
+  data arrival time                                  -0.87
+  -----------------------------------------------------------
+  slack (MET)                                         0.63
+
+
+  Startpoint: in3[56] (input port clocked by vsysclk)
+  Endpoint: s[56] (output port clocked by vsysclk)
+  Path Group: vsysclk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  Add64              8000                  saed90nm_typ_ht
+  FA_55              ForQA                 saed90nm_typ_ht
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock vsysclk (rise edge)                0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     0.20       0.20 r
+  in3[56] (in)                             0.00       0.20 r
+  Adder3333[56].add/in3 (FA_55)            0.00       0.20 r
+  Adder3333[56].add/U3/Q (XOR2X1)          0.22       0.42 f
+  Adder3333[56].add/U1/Q (XOR2X1)          0.23       0.65 f
+  Adder3333[56].add/s (FA_55)              0.00       0.65 f
+  s[56] (out)                              0.22       0.87 f
+  data arrival time                                   0.87
+
+  clock vsysclk (rise edge)                2.00       2.00
+  clock network delay (ideal)              0.00       2.00
+  output external delay                   -0.50       1.50
+  data required time                                  1.50
+  -----------------------------------------------------------
+  data required time                                  1.50
+  data arrival time                                  -0.87
+  -----------------------------------------------------------
+  slack (MET)                                         0.63
+
+
+  Startpoint: in3[55] (input port clocked by vsysclk)
+  Endpoint: s[55] (output port clocked by vsysclk)
+  Path Group: vsysclk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  Add64              8000                  saed90nm_typ_ht
+  FA_56              ForQA                 saed90nm_typ_ht
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock vsysclk (rise edge)                0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     0.20       0.20 r
+  in3[55] (in)                             0.00       0.20 r
+  Adder3333[55].add/in3 (FA_56)            0.00       0.20 r
+  Adder3333[55].add/U3/Q (XOR2X1)          0.22       0.42 f
+  Adder3333[55].add/U1/Q (XOR2X1)          0.23       0.65 f
+  Adder3333[55].add/s (FA_56)              0.00       0.65 f
+  s[55] (out)                              0.22       0.87 f
+  data arrival time                                   0.87
+
+  clock vsysclk (rise edge)                2.00       2.00
+  clock network delay (ideal)              0.00       2.00
+  output external delay                   -0.50       1.50
+  data required time                                  1.50
+  -----------------------------------------------------------
+  data required time                                  1.50
+  data arrival time                                  -0.87
+  -----------------------------------------------------------
+  slack (MET)                                         0.63
+
+
+  Startpoint: in3[54] (input port clocked by vsysclk)
+  Endpoint: s[54] (output port clocked by vsysclk)
+  Path Group: vsysclk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  Add64              8000                  saed90nm_typ_ht
+  FA_57              ForQA                 saed90nm_typ_ht
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock vsysclk (rise edge)                0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     0.20       0.20 r
+  in3[54] (in)                             0.00       0.20 r
+  Adder3333[54].add/in3 (FA_57)            0.00       0.20 r
+  Adder3333[54].add/U3/Q (XOR2X1)          0.22       0.42 f
+  Adder3333[54].add/U1/Q (XOR2X1)          0.23       0.65 f
+  Adder3333[54].add/s (FA_57)              0.00       0.65 f
+  s[54] (out)                              0.22       0.87 f
+  data arrival time                                   0.87
+
+  clock vsysclk (rise edge)                2.00       2.00
+  clock network delay (ideal)              0.00       2.00
+  output external delay                   -0.50       1.50
+  data required time                                  1.50
+  -----------------------------------------------------------
+  data required time                                  1.50
+  data arrival time                                  -0.87
+  -----------------------------------------------------------
+  slack (MET)                                         0.63
+
+
+1

@@ -1,0 +1,30 @@
+ 
+****************************************
+Report : area
+Design : shiftMultiplier
+Version: U-2022.12-SP7
+Date   : Sat Dec 23 19:07:37 2023
+****************************************
+
+Library(s) Used:
+
+    saed90nm_typ_ht (File: /home/user24/Downloads/Lab4/ref/models/saed90nm_typ_ht.db)
+
+Number of ports:                        21431
+Number of nets:                         40347
+Number of cells:                        19726
+Number of combinational cells:          19009
+Number of sequential cells:                 0
+Number of macros/black boxes:               0
+Number of buf/inv:                       4962
+Number of references:                      83
+
+Combinational area:             173429.454922
+Buf/Inv area:                    28869.120679
+Noncombinational area:               0.000000
+Macro/Black Box area:                0.000000
+Net Interconnect area:           16435.032696
+
+Total cell area:                173429.454922
+Total area:                     189864.487617
+1

@@ -1,0 +1,126 @@
+Information: Updating design information... (UID-85)
+Information: Propagating switching activity (low effort zero delay simulation). (PWR-6)
+Warning: Design has unannotated primary inputs. (PWR-414)
+ 
+****************************************
+Report : power
+        -analysis_effort low
+Design : Add64
+Version: U-2022.12-SP7
+Date   : Sun Dec 24 15:22:50 2023
+****************************************
+
+
+Library(s) Used:
+
+    saed90nm_typ_ht (File: /home/user24/Downloads/Lab4/ref/models/saed90nm_typ_ht.db)
+
+
+Operating Conditions: TYPICAL   Library: saed90nm_typ_ht
+Wire Load Model Mode: enclosed
+
+Design        Wire Load Model            Library
+------------------------------------------------
+Add64                  8000              saed90nm_typ_ht
+FA_47                  ForQA             saed90nm_typ_ht
+FA_48                  ForQA             saed90nm_typ_ht
+FA_49                  ForQA             saed90nm_typ_ht
+FA_50                  ForQA             saed90nm_typ_ht
+FA_51                  ForQA             saed90nm_typ_ht
+FA_52                  ForQA             saed90nm_typ_ht
+FA_53                  ForQA             saed90nm_typ_ht
+FA_54                  ForQA             saed90nm_typ_ht
+FA_55                  ForQA             saed90nm_typ_ht
+FA_56                  ForQA             saed90nm_typ_ht
+FA_57                  ForQA             saed90nm_typ_ht
+FA_58                  ForQA             saed90nm_typ_ht
+FA_59                  ForQA             saed90nm_typ_ht
+FA_60                  ForQA             saed90nm_typ_ht
+FA_61                  ForQA             saed90nm_typ_ht
+FA_62                  ForQA             saed90nm_typ_ht
+FA_63                  ForQA             saed90nm_typ_ht
+FA_64                  ForQA             saed90nm_typ_ht
+FA_65                  ForQA             saed90nm_typ_ht
+FA_66                  ForQA             saed90nm_typ_ht
+FA_67                  ForQA             saed90nm_typ_ht
+FA_68                  ForQA             saed90nm_typ_ht
+FA_69                  ForQA             saed90nm_typ_ht
+FA_70                  ForQA             saed90nm_typ_ht
+FA_71                  ForQA             saed90nm_typ_ht
+FA_72                  ForQA             saed90nm_typ_ht
+FA_73                  ForQA             saed90nm_typ_ht
+FA_74                  ForQA             saed90nm_typ_ht
+FA_75                  ForQA             saed90nm_typ_ht
+FA_76                  ForQA             saed90nm_typ_ht
+FA_77                  ForQA             saed90nm_typ_ht
+FA_78                  ForQA             saed90nm_typ_ht
+FA_79                  ForQA             saed90nm_typ_ht
+FA_80                  ForQA             saed90nm_typ_ht
+FA_81                  ForQA             saed90nm_typ_ht
+FA_82                  ForQA             saed90nm_typ_ht
+FA_83                  ForQA             saed90nm_typ_ht
+FA_84                  ForQA             saed90nm_typ_ht
+FA_85                  ForQA             saed90nm_typ_ht
+FA_86                  ForQA             saed90nm_typ_ht
+FA_87                  ForQA             saed90nm_typ_ht
+FA_88                  ForQA             saed90nm_typ_ht
+FA_89                  ForQA             saed90nm_typ_ht
+FA_90                  ForQA             saed90nm_typ_ht
+FA_91                  ForQA             saed90nm_typ_ht
+FA_92                  ForQA             saed90nm_typ_ht
+FA_93                  ForQA             saed90nm_typ_ht
+FA_94                  ForQA             saed90nm_typ_ht
+FA_95                  ForQA             saed90nm_typ_ht
+FA_96                  ForQA             saed90nm_typ_ht
+FA_97                  ForQA             saed90nm_typ_ht
+FA_98                  ForQA             saed90nm_typ_ht
+FA_99                  ForQA             saed90nm_typ_ht
+FA_100                 ForQA             saed90nm_typ_ht
+FA_101                 ForQA             saed90nm_typ_ht
+FA_102                 ForQA             saed90nm_typ_ht
+FA_103                 ForQA             saed90nm_typ_ht
+FA_104                 ForQA             saed90nm_typ_ht
+FA_105                 ForQA             saed90nm_typ_ht
+FA_106                 ForQA             saed90nm_typ_ht
+FA_107                 ForQA             saed90nm_typ_ht
+FA_108                 ForQA             saed90nm_typ_ht
+FA_109                 ForQA             saed90nm_typ_ht
+FA_110                 ForQA             saed90nm_typ_ht
+
+
+Global Operating Voltage = 1.2  
+Power-specific unit information :
+    Voltage Units = 1V
+    Capacitance Units = 1.000000ff
+    Time Units = 1ns
+    Dynamic Power Units = 1uW    (derived from V,C,T units)
+    Leakage Power Units = 1pW
+
+
+Attributes
+----------
+i - Including register clock pin internal power
+
+
+  Cell Internal Power  = 356.9135 uW   (75%)
+  Net Switching Power  = 120.1977 uW   (25%)
+                         ---------
+Total Dynamic Power    = 477.1111 uW  (100%)
+
+Cell Leakage Power     =  42.2117 uW
+
+Information: report_power power group summary does not include estimated clock tree power. (PWR-789)
+
+                 Internal         Switching           Leakage            Total
+Power Group      Power            Power               Power              Power   (   %    )  Attrs
+--------------------------------------------------------------------------------------------------
+io_pad             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+memory             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+black_box          0.0000            0.0000            0.0000            0.0000  (   0.00%)
+clock_network      0.0000            0.0000            0.0000            0.0000  (   0.00%)  i
+register           0.0000            0.0000            0.0000            0.0000  (   0.00%)
+sequential         0.0000            0.0000            0.0000            0.0000  (   0.00%)
+combinational    356.9134          120.1977        4.2212e+07          519.3229  ( 100.00%)
+--------------------------------------------------------------------------------------------------
+Total            356.9134 uW       120.1977 uW     4.2212e+07 pW       519.3229 uW
+1

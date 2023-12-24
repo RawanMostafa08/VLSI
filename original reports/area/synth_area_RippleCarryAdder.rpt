@@ -1,0 +1,30 @@
+ 
+****************************************
+Report : area
+Design : RippleCarryAdder
+Version: U-2022.12-SP7
+Date   : Sat Dec 23 15:41:52 2023
+****************************************
+
+Library(s) Used:
+
+    saed90nm_typ_ht (File: /home/user24/Downloads/Lab4/ref/models/saed90nm_typ_ht.db)
+
+Number of ports:                          258
+Number of nets:                           360
+Number of cells:                          167
+Number of combinational cells:            135
+Number of sequential cells:                 0
+Number of macros/black boxes:               0
+Number of buf/inv:                         36
+Number of references:                      32
+
+Combinational area:               1782.374415
+Buf/Inv area:                      492.134403
+Noncombinational area:               0.000000
+Macro/Black Box area:                0.000000
+Net Interconnect area:              44.966931
+
+Total cell area:                  1782.374415
+Total area:                       1827.341347
+1
