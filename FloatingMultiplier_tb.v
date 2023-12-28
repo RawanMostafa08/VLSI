@@ -1,4 +1,3 @@
-`timescale 1 ns / 100 ps
 module FloatingPointMultiplier_tb;
     reg signed [31:0] A, B;
     wire signed [31:0] result;
@@ -6,7 +5,7 @@ module FloatingPointMultiplier_tb;
     integer failure= 0;
     integer i;
     reg clk = 0;
-    floating_integration u1 (
+    FloatingMultiplier_Integration u1 (
         .clk(clk),
         .input1(A),
         .input2(B),

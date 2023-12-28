@@ -1,0 +1,68 @@
+ 
+****************************************
+Report : qor
+Design : FloatingAdder_Integration
+Version: G-2012.06-SP2
+Date   : Fri Mar 10 00:39:41 2017
+****************************************
+
+
+  Timing Path Group 'clk'
+  -----------------------------------
+  Levels of Logic:              92.00
+  Critical Path Length:          3.60
+  Critical Path Slack:           0.00
+  Critical Path Clk Period:      4.50
+  Total Negative Slack:          0.00
+  No. of Violating Paths:        0.00
+  Worst Hold Violation:          0.00
+  Total Hold Violation:          0.00
+  No. of Hold Violations:        0.00
+  -----------------------------------
+
+
+  Cell Count
+  -----------------------------------
+  Hierarchical Cell Count:         13
+  Hierarchical Port Count:       1005
+  Leaf Cell Count:               2626
+  Buf/Inv Cell Count:             716
+  CT Buf/Inv Cell Count:            0
+  Combinational Cell Count:      2466
+  Sequential Cell Count:          160
+  Macro Count:                      0
+  -----------------------------------
+
+
+  Area
+  -----------------------------------
+  Combinational Area:     2443.741989
+  Noncombinational Area:   604.351990
+  Buf/Inv Area:            418.152002
+  Net Area:                  0.000000
+  -----------------------------------
+  Cell Area:              3048.093979
+  Design Area:            3048.093979
+
+
+  Design Rules
+  -----------------------------------
+  Total Number of Nets:          2705
+  Nets With Violations:             0
+  Max Trans Violations:             0
+  Max Cap Violations:               0
+  -----------------------------------
+
+
+  Hostname: localhost.localdomain
+
+  Compile CPU Statistics
+  -----------------------------------------
+  Resource Sharing:                    2.14
+  Logic Optimization:                  9.34
+  Mapping Optimization:               28.39
+  -----------------------------------------
+  Overall Compile Time:               41.31
+  Overall Compile Wall Clock Time:    42.03
+
+1

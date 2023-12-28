@@ -1,0 +1,1851 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 10
+Design : FloatingMultiplier_Integration
+Version: G-2012.06-SP2
+Date   : Fri Mar 10 01:08:38 2017
+****************************************
+
+Operating Conditions: worst_low   Library: NangateOpenCellLibrary_ss0p95vn40c
+Wire Load Model Mode: top
+
+  Startpoint: FloatingPointMultiplier1/A[1]
+              (internal path startpoint clocked by clk)
+  Endpoint: FloatingPointMultiplier1/result[30]
+            (internal path endpoint clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  FloatingMultiplier_Integration
+                     5K_hvratio_1_1        NangateOpenCellLibrary_ss0p95vn40c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    0.35       0.35 f
+  FloatingPointMultiplier1/A[1] (FloatingPointMultiplier)
+                                                          0.00       0.35 f
+  FloatingPointMultiplier1/mult/A[1] (MultiplierOperator)
+                                                          0.00       0.35 f
+  FloatingPointMultiplier1/mult/mult_8/A[1] (MultiplierOperator_DW02_mult_0)
+                                                          0.00       0.35 f
+  FloatingPointMultiplier1/mult/mult_8/U3/ZN (INV_X1)     0.04       0.39 r
+  FloatingPointMultiplier1/mult/mult_8/U1077/ZN (NOR2_X1)
+                                                          0.04       0.44 f
+  FloatingPointMultiplier1/mult/mult_8/S0_20/S (FA_X1)
+                                                          0.12       0.55 r
+  FloatingPointMultiplier1/mult/mult_8/S2_2_19/S (FA_X1)
+                                                          0.10       0.66 f
+  FloatingPointMultiplier1/mult/mult_8/S2_3_18/CO (FA_X1)
+                                                          0.08       0.74 f
+  FloatingPointMultiplier1/mult/mult_8/S2_4_18/S (FA_X1)
+                                                          0.13       0.87 r
+  FloatingPointMultiplier1/mult/mult_8/S2_5_17/S (FA_X1)
+                                                          0.10       0.97 f
+  FloatingPointMultiplier1/mult/mult_8/S2_6_16/CO (FA_X1)
+                                                          0.08       1.06 f
+  FloatingPointMultiplier1/mult/mult_8/S2_7_16/S (FA_X1)
+                                                          0.13       1.19 r
+  FloatingPointMultiplier1/mult/mult_8/S2_8_15/S (FA_X1)
+                                                          0.10       1.29 f
+  FloatingPointMultiplier1/mult/mult_8/S2_9_14/CO (FA_X1)
+                                                          0.08       1.37 f
+  FloatingPointMultiplier1/mult/mult_8/S2_10_14/S (FA_X1)
+                                                          0.13       1.50 r
+  FloatingPointMultiplier1/mult/mult_8/S2_11_13/S (FA_X1)
+                                                          0.10       1.61 f
+  FloatingPointMultiplier1/mult/mult_8/S2_12_12/CO (FA_X1)
+                                                          0.08       1.69 f
+  FloatingPointMultiplier1/mult/mult_8/S2_13_12/S (FA_X1)
+                                                          0.13       1.82 r
+  FloatingPointMultiplier1/mult/mult_8/S2_14_11/S (FA_X1)
+                                                          0.10       1.92 f
+  FloatingPointMultiplier1/mult/mult_8/S2_15_10/S (FA_X1)
+                                                          0.12       2.04 r
+  FloatingPointMultiplier1/mult/mult_8/S2_16_9/S (FA_X1)
+                                                          0.10       2.14 f
+  FloatingPointMultiplier1/mult/mult_8/S2_17_8/S (FA_X1)
+                                                          0.12       2.26 r
+  FloatingPointMultiplier1/mult/mult_8/S2_18_7/S (FA_X1)
+                                                          0.10       2.36 f
+  FloatingPointMultiplier1/mult/mult_8/S2_19_6/CO (FA_X1)
+                                                          0.08       2.45 f
+  FloatingPointMultiplier1/mult/mult_8/S2_20_6/S (FA_X1)
+                                                          0.13       2.58 r
+  FloatingPointMultiplier1/mult/mult_8/S2_21_5/S (FA_X1)
+                                                          0.10       2.68 f
+  FloatingPointMultiplier1/mult/mult_8/S2_22_4/CO (FA_X1)
+                                                          0.08       2.76 f
+  FloatingPointMultiplier1/mult/mult_8/S2_23_4/CO (FA_X1)
+                                                          0.10       2.86 f
+  FloatingPointMultiplier1/mult/mult_8/S2_24_4/CO (FA_X1)
+                                                          0.10       2.95 f
+  FloatingPointMultiplier1/mult/mult_8/S2_25_4/CO (FA_X1)
+                                                          0.10       3.05 f
+  FloatingPointMultiplier1/mult/mult_8/S2_26_4/CO (FA_X1)
+                                                          0.10       3.15 f
+  FloatingPointMultiplier1/mult/mult_8/S2_27_4/CO (FA_X1)
+                                                          0.10       3.24 f
+  FloatingPointMultiplier1/mult/mult_8/S2_28_4/CO (FA_X1)
+                                                          0.10       3.34 f
+  FloatingPointMultiplier1/mult/mult_8/S2_29_4/S (FA_X1)
+                                                          0.13       3.46 r
+  FloatingPointMultiplier1/mult/mult_8/S2_30_3/S (FA_X1)
+                                                          0.10       3.56 f
+  FloatingPointMultiplier1/mult/mult_8/S4_2/S (FA_X1)     0.11       3.68 r
+  FloatingPointMultiplier1/mult/mult_8/S14_33/S (FA_X1)
+                                                          0.10       3.78 f
+  FloatingPointMultiplier1/mult/mult_8/FS_1/A[31] (MultiplierOperator_DW01_add_0)
+                                                          0.00       3.78 f
+  FloatingPointMultiplier1/mult/mult_8/FS_1/U217/ZN (NAND2_X1)
+                                                          0.03       3.82 r
+  FloatingPointMultiplier1/mult/mult_8/FS_1/U214/ZN (OAI21_X1)
+                                                          0.03       3.85 f
+  FloatingPointMultiplier1/mult/mult_8/FS_1/U57/ZN (INV_X1)
+                                                          0.03       3.88 r
+  FloatingPointMultiplier1/mult/mult_8/FS_1/U10/ZN (NOR4_X1)
+                                                          0.02       3.90 f
+  FloatingPointMultiplier1/mult/mult_8/FS_1/U188/ZN (NOR2_X1)
+                                                          0.04       3.95 r
+  FloatingPointMultiplier1/mult/mult_8/FS_1/U13/Z (BUF_X1)
+                                                          0.05       3.99 r
+  FloatingPointMultiplier1/mult/mult_8/FS_1/U186/ZN (OAI21_X1)
+                                                          0.03       4.03 f
+  FloatingPointMultiplier1/mult/mult_8/FS_1/U178/ZN (AOI21_X1)
+                                                          0.05       4.08 r
+  FloatingPointMultiplier1/mult/mult_8/FS_1/U176/ZN (OAI21_X1)
+                                                          0.04       4.11 f
+  FloatingPointMultiplier1/mult/mult_8/FS_1/U11/ZN (XNOR2_X1)
+                                                          0.06       4.17 f
+  FloatingPointMultiplier1/mult/mult_8/FS_1/SUM[39] (MultiplierOperator_DW01_add_0)
+                                                          0.00       4.17 f
+  FloatingPointMultiplier1/mult/mult_8/PRODUCT[41] (MultiplierOperator_DW02_mult_0)
+                                                          0.00       4.17 f
+  FloatingPointMultiplier1/mult/P[41] (MultiplierOperator)
+                                                          0.00       4.17 f
+  FloatingPointMultiplier1/U35/Z (BUF_X1)                 0.04       4.22 f
+  FloatingPointMultiplier1/U269/ZN (NOR2_X1)              0.04       4.26 r
+  FloatingPointMultiplier1/U268/ZN (NAND2_X1)             0.03       4.29 f
+  FloatingPointMultiplier1/U281/ZN (NAND2_X1)             0.03       4.32 r
+  FloatingPointMultiplier1/U308/ZN (OAI222_X1)            0.05       4.37 f
+  FloatingPointMultiplier1/U75/ZN (OR2_X2)                0.06       4.44 f
+  FloatingPointMultiplier1/U279/ZN (NAND2_X1)             0.03       4.47 r
+  FloatingPointMultiplier1/U336/ZN (OAI222_X1)            0.05       4.52 f
+  FloatingPointMultiplier1/U318/ZN (INV_X1)               0.03       4.55 r
+  FloatingPointMultiplier1/U80/ZN (NAND2_X1)              0.04       4.59 f
+  FloatingPointMultiplier1/U277/Z (BUF_X2)                0.06       4.65 f
+  FloatingPointMultiplier1/U409/ZN (OAI222_X1)            0.07       4.72 r
+  FloatingPointMultiplier1/U297/ZN (INV_X1)               0.03       4.75 f
+  FloatingPointMultiplier1/U404/ZN (OAI222_X1)            0.05       4.80 r
+  FloatingPointMultiplier1/U316/ZN (INV_X1)               0.03       4.84 f
+  FloatingPointMultiplier1/U273/ZN (NAND2_X1)             0.04       4.87 r
+  FloatingPointMultiplier1/U361/ZN (NAND2_X1)             0.03       4.90 f
+  FloatingPointMultiplier1/U358/ZN (OAI222_X1)            0.05       4.95 r
+  FloatingPointMultiplier1/U317/ZN (INV_X1)               0.03       4.98 f
+  FloatingPointMultiplier1/U276/ZN (NAND2_X1)             0.03       5.01 r
+  FloatingPointMultiplier1/U263/ZN (NAND2_X1)             0.03       5.04 f
+  FloatingPointMultiplier1/U382/ZN (OAI222_X1)            0.06       5.10 r
+  FloatingPointMultiplier1/U319/ZN (INV_X1)               0.03       5.13 f
+  FloatingPointMultiplier1/U265/ZN (NAND2_X1)             0.03       5.16 r
+  FloatingPointMultiplier1/U264/Z (BUF_X1)                0.04       5.20 r
+  FloatingPointMultiplier1/U327/ZN (OAI222_X1)            0.05       5.25 f
+  FloatingPointMultiplier1/U345/ZN (INV_X1)               0.03       5.29 r
+  FloatingPointMultiplier1/U66/ZN (NAND2_X1)              0.04       5.33 f
+  FloatingPointMultiplier1/U340/ZN (INV_X1)               0.04       5.37 r
+  FloatingPointMultiplier1/U301/ZN (NAND2_X1)             0.04       5.41 f
+  FloatingPointMultiplier1/U303/ZN (OR2_X1)               0.06       5.47 f
+  FloatingPointMultiplier1/U311/ZN (NOR2_X1)              0.04       5.51 r
+  FloatingPointMultiplier1/add_9_root_sub_8_root_sub_67_I22_aco/U1_0/S (FA_X1)
+                                                          0.11       5.62 f
+  FloatingPointMultiplier1/U107/ZN (AND2_X1)              0.04       5.66 f
+  FloatingPointMultiplier1/add_2_root_sub_8_root_sub_67_I22_aco/U1_1/S (FA_X1)
+                                                          0.12       5.78 r
+  FloatingPointMultiplier1/U95/ZN (NAND2_X1)              0.04       5.81 f
+  FloatingPointMultiplier1/U97/ZN (NAND3_X1)              0.03       5.84 r
+  FloatingPointMultiplier1/U32/ZN (XNOR2_X1)              0.05       5.90 r
+  FloatingPointMultiplier1/sub_0_root_sub_8_root_sub_67_I22_aco/B[2] (FloatingPointMultiplier_DW01_sub_0)
+                                                          0.00       5.90 r
+  FloatingPointMultiplier1/sub_0_root_sub_8_root_sub_67_I22_aco/U23/ZN (INV_X1)
+                                                          0.03       5.92 f
+  FloatingPointMultiplier1/sub_0_root_sub_8_root_sub_67_I22_aco/U2_2/CO (FA_X1)
+                                                          0.09       6.01 f
+  FloatingPointMultiplier1/sub_0_root_sub_8_root_sub_67_I22_aco/U2_3/CO (FA_X1)
+                                                          0.09       6.10 f
+  FloatingPointMultiplier1/sub_0_root_sub_8_root_sub_67_I22_aco/U11/ZN (NAND2_X1)
+                                                          0.03       6.13 r
+  FloatingPointMultiplier1/sub_0_root_sub_8_root_sub_67_I22_aco/U14/ZN (NAND3_X1)
+                                                          0.04       6.16 f
+  FloatingPointMultiplier1/sub_0_root_sub_8_root_sub_67_I22_aco/U2_5/CO (FA_X1)
+                                                          0.08       6.25 f
+  FloatingPointMultiplier1/sub_0_root_sub_8_root_sub_67_I22_aco/U2_6/CO (FA_X1)
+                                                          0.08       6.32 f
+  FloatingPointMultiplier1/sub_0_root_sub_8_root_sub_67_I22_aco/U15/ZN (XNOR2_X1)
+                                                          0.06       6.38 f
+  FloatingPointMultiplier1/sub_0_root_sub_8_root_sub_67_I22_aco/DIFF[7] (FloatingPointMultiplier_DW01_sub_0)
+                                                          0.00       6.38 f
+  FloatingPointMultiplier1/U306/ZN (AOI22_X1)             0.04       6.42 r
+  FloatingPointMultiplier1/U363/ZN (INV_X1)               0.02       6.45 f
+  FloatingPointMultiplier1/result[30] (FloatingPointMultiplier)
+                                                          0.00       6.45 f
+  data arrival time                                                  6.45
+
+  clock clk (rise edge)                                   7.00       7.00
+  clock network delay (ideal)                             0.00       7.00
+  clock uncertainty                                      -0.20       6.80
+  output external delay                                  -0.35       6.45
+  data required time                                                 6.45
+  --------------------------------------------------------------------------
+  data required time                                                 6.45
+  data arrival time                                                 -6.45
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.00
+
+
+  Startpoint: FloatingPointMultiplier1/A[1]
+              (internal path startpoint clocked by clk)
+  Endpoint: FloatingPointMultiplier1/result[29]
+            (internal path endpoint clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  FloatingMultiplier_Integration
+                     5K_hvratio_1_1        NangateOpenCellLibrary_ss0p95vn40c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    0.35       0.35 f
+  FloatingPointMultiplier1/A[1] (FloatingPointMultiplier)
+                                                          0.00       0.35 f
+  FloatingPointMultiplier1/mult/A[1] (MultiplierOperator)
+                                                          0.00       0.35 f
+  FloatingPointMultiplier1/mult/mult_8/A[1] (MultiplierOperator_DW02_mult_0)
+                                                          0.00       0.35 f
+  FloatingPointMultiplier1/mult/mult_8/U3/ZN (INV_X1)     0.04       0.39 r
+  FloatingPointMultiplier1/mult/mult_8/U1077/ZN (NOR2_X1)
+                                                          0.04       0.44 f
+  FloatingPointMultiplier1/mult/mult_8/S0_20/S (FA_X1)
+                                                          0.12       0.55 r
+  FloatingPointMultiplier1/mult/mult_8/S2_2_19/S (FA_X1)
+                                                          0.10       0.66 f
+  FloatingPointMultiplier1/mult/mult_8/S2_3_18/CO (FA_X1)
+                                                          0.08       0.74 f
+  FloatingPointMultiplier1/mult/mult_8/S2_4_18/S (FA_X1)
+                                                          0.13       0.87 r
+  FloatingPointMultiplier1/mult/mult_8/S2_5_17/S (FA_X1)
+                                                          0.10       0.97 f
+  FloatingPointMultiplier1/mult/mult_8/S2_6_16/CO (FA_X1)
+                                                          0.08       1.06 f
+  FloatingPointMultiplier1/mult/mult_8/S2_7_16/S (FA_X1)
+                                                          0.13       1.19 r
+  FloatingPointMultiplier1/mult/mult_8/S2_8_15/S (FA_X1)
+                                                          0.10       1.29 f
+  FloatingPointMultiplier1/mult/mult_8/S2_9_14/CO (FA_X1)
+                                                          0.08       1.37 f
+  FloatingPointMultiplier1/mult/mult_8/S2_10_14/S (FA_X1)
+                                                          0.13       1.50 r
+  FloatingPointMultiplier1/mult/mult_8/S2_11_13/S (FA_X1)
+                                                          0.10       1.61 f
+  FloatingPointMultiplier1/mult/mult_8/S2_12_12/CO (FA_X1)
+                                                          0.08       1.69 f
+  FloatingPointMultiplier1/mult/mult_8/S2_13_12/S (FA_X1)
+                                                          0.13       1.82 r
+  FloatingPointMultiplier1/mult/mult_8/S2_14_11/S (FA_X1)
+                                                          0.10       1.92 f
+  FloatingPointMultiplier1/mult/mult_8/S2_15_10/S (FA_X1)
+                                                          0.12       2.04 r
+  FloatingPointMultiplier1/mult/mult_8/S2_16_9/S (FA_X1)
+                                                          0.10       2.14 f
+  FloatingPointMultiplier1/mult/mult_8/S2_17_8/S (FA_X1)
+                                                          0.12       2.26 r
+  FloatingPointMultiplier1/mult/mult_8/S2_18_7/S (FA_X1)
+                                                          0.10       2.36 f
+  FloatingPointMultiplier1/mult/mult_8/S2_19_6/CO (FA_X1)
+                                                          0.08       2.45 f
+  FloatingPointMultiplier1/mult/mult_8/S2_20_6/S (FA_X1)
+                                                          0.13       2.58 r
+  FloatingPointMultiplier1/mult/mult_8/S2_21_5/S (FA_X1)
+                                                          0.10       2.68 f
+  FloatingPointMultiplier1/mult/mult_8/S2_22_4/CO (FA_X1)
+                                                          0.08       2.76 f
+  FloatingPointMultiplier1/mult/mult_8/S2_23_4/CO (FA_X1)
+                                                          0.10       2.86 f
+  FloatingPointMultiplier1/mult/mult_8/S2_24_4/CO (FA_X1)
+                                                          0.10       2.95 f
+  FloatingPointMultiplier1/mult/mult_8/S2_25_4/CO (FA_X1)
+                                                          0.10       3.05 f
+  FloatingPointMultiplier1/mult/mult_8/S2_26_4/CO (FA_X1)
+                                                          0.10       3.15 f
+  FloatingPointMultiplier1/mult/mult_8/S2_27_4/CO (FA_X1)
+                                                          0.10       3.24 f
+  FloatingPointMultiplier1/mult/mult_8/S2_28_4/CO (FA_X1)
+                                                          0.10       3.34 f
+  FloatingPointMultiplier1/mult/mult_8/S2_29_4/S (FA_X1)
+                                                          0.13       3.46 r
+  FloatingPointMultiplier1/mult/mult_8/S2_30_3/S (FA_X1)
+                                                          0.10       3.56 f
+  FloatingPointMultiplier1/mult/mult_8/S4_2/S (FA_X1)     0.11       3.68 r
+  FloatingPointMultiplier1/mult/mult_8/S14_33/S (FA_X1)
+                                                          0.10       3.78 f
+  FloatingPointMultiplier1/mult/mult_8/FS_1/A[31] (MultiplierOperator_DW01_add_0)
+                                                          0.00       3.78 f
+  FloatingPointMultiplier1/mult/mult_8/FS_1/U217/ZN (NAND2_X1)
+                                                          0.03       3.82 r
+  FloatingPointMultiplier1/mult/mult_8/FS_1/U214/ZN (OAI21_X1)
+                                                          0.03       3.85 f
+  FloatingPointMultiplier1/mult/mult_8/FS_1/U57/ZN (INV_X1)
+                                                          0.03       3.88 r
+  FloatingPointMultiplier1/mult/mult_8/FS_1/U10/ZN (NOR4_X1)
+                                                          0.02       3.90 f
+  FloatingPointMultiplier1/mult/mult_8/FS_1/U188/ZN (NOR2_X1)
+                                                          0.04       3.95 r
+  FloatingPointMultiplier1/mult/mult_8/FS_1/U13/Z (BUF_X1)
+                                                          0.05       3.99 r
+  FloatingPointMultiplier1/mult/mult_8/FS_1/U186/ZN (OAI21_X1)
+                                                          0.03       4.03 f
+  FloatingPointMultiplier1/mult/mult_8/FS_1/U178/ZN (AOI21_X1)
+                                                          0.05       4.08 r
+  FloatingPointMultiplier1/mult/mult_8/FS_1/U176/ZN (OAI21_X1)
+                                                          0.04       4.11 f
+  FloatingPointMultiplier1/mult/mult_8/FS_1/U11/ZN (XNOR2_X1)
+                                                          0.06       4.17 f
+  FloatingPointMultiplier1/mult/mult_8/FS_1/SUM[39] (MultiplierOperator_DW01_add_0)
+                                                          0.00       4.17 f
+  FloatingPointMultiplier1/mult/mult_8/PRODUCT[41] (MultiplierOperator_DW02_mult_0)
+                                                          0.00       4.17 f
+  FloatingPointMultiplier1/mult/P[41] (MultiplierOperator)
+                                                          0.00       4.17 f
+  FloatingPointMultiplier1/U35/Z (BUF_X1)                 0.04       4.22 f
+  FloatingPointMultiplier1/U269/ZN (NOR2_X1)              0.04       4.26 r
+  FloatingPointMultiplier1/U268/ZN (NAND2_X1)             0.03       4.29 f
+  FloatingPointMultiplier1/U281/ZN (NAND2_X1)             0.03       4.32 r
+  FloatingPointMultiplier1/U308/ZN (OAI222_X1)            0.05       4.37 f
+  FloatingPointMultiplier1/U75/ZN (OR2_X2)                0.06       4.44 f
+  FloatingPointMultiplier1/U279/ZN (NAND2_X1)             0.03       4.47 r
+  FloatingPointMultiplier1/U336/ZN (OAI222_X1)            0.05       4.52 f
+  FloatingPointMultiplier1/U318/ZN (INV_X1)               0.03       4.55 r
+  FloatingPointMultiplier1/U80/ZN (NAND2_X1)              0.04       4.59 f
+  FloatingPointMultiplier1/U277/Z (BUF_X2)                0.06       4.65 f
+  FloatingPointMultiplier1/U409/ZN (OAI222_X1)            0.07       4.72 r
+  FloatingPointMultiplier1/U297/ZN (INV_X1)               0.03       4.75 f
+  FloatingPointMultiplier1/U404/ZN (OAI222_X1)            0.05       4.80 r
+  FloatingPointMultiplier1/U316/ZN (INV_X1)               0.03       4.84 f
+  FloatingPointMultiplier1/U273/ZN (NAND2_X1)             0.04       4.87 r
+  FloatingPointMultiplier1/U361/ZN (NAND2_X1)             0.03       4.90 f
+  FloatingPointMultiplier1/U358/ZN (OAI222_X1)            0.05       4.95 r
+  FloatingPointMultiplier1/U317/ZN (INV_X1)               0.03       4.98 f
+  FloatingPointMultiplier1/U276/ZN (NAND2_X1)             0.03       5.01 r
+  FloatingPointMultiplier1/U263/ZN (NAND2_X1)             0.03       5.04 f
+  FloatingPointMultiplier1/U382/ZN (OAI222_X1)            0.06       5.10 r
+  FloatingPointMultiplier1/U319/ZN (INV_X1)               0.03       5.13 f
+  FloatingPointMultiplier1/U265/ZN (NAND2_X1)             0.03       5.16 r
+  FloatingPointMultiplier1/U264/Z (BUF_X1)                0.04       5.20 r
+  FloatingPointMultiplier1/U327/ZN (OAI222_X1)            0.05       5.25 f
+  FloatingPointMultiplier1/U345/ZN (INV_X1)               0.03       5.29 r
+  FloatingPointMultiplier1/U66/ZN (NAND2_X1)              0.04       5.33 f
+  FloatingPointMultiplier1/U340/ZN (INV_X1)               0.04       5.37 r
+  FloatingPointMultiplier1/U301/ZN (NAND2_X1)             0.04       5.41 f
+  FloatingPointMultiplier1/U303/ZN (OR2_X1)               0.06       5.47 f
+  FloatingPointMultiplier1/U311/ZN (NOR2_X1)              0.04       5.51 r
+  FloatingPointMultiplier1/add_9_root_sub_8_root_sub_67_I22_aco/U1_0/S (FA_X1)
+                                                          0.11       5.62 f
+  FloatingPointMultiplier1/U107/ZN (AND2_X1)              0.04       5.66 f
+  FloatingPointMultiplier1/add_2_root_sub_8_root_sub_67_I22_aco/U1_1/S (FA_X1)
+                                                          0.12       5.78 r
+  FloatingPointMultiplier1/U95/ZN (NAND2_X1)              0.04       5.81 f
+  FloatingPointMultiplier1/U97/ZN (NAND3_X1)              0.03       5.84 r
+  FloatingPointMultiplier1/U32/ZN (XNOR2_X1)              0.05       5.90 r
+  FloatingPointMultiplier1/sub_0_root_sub_8_root_sub_67_I22_aco/B[2] (FloatingPointMultiplier_DW01_sub_0)
+                                                          0.00       5.90 r
+  FloatingPointMultiplier1/sub_0_root_sub_8_root_sub_67_I22_aco/U23/ZN (INV_X1)
+                                                          0.03       5.92 f
+  FloatingPointMultiplier1/sub_0_root_sub_8_root_sub_67_I22_aco/U2_2/CO (FA_X1)
+                                                          0.09       6.01 f
+  FloatingPointMultiplier1/sub_0_root_sub_8_root_sub_67_I22_aco/U2_3/CO (FA_X1)
+                                                          0.09       6.10 f
+  FloatingPointMultiplier1/sub_0_root_sub_8_root_sub_67_I22_aco/U11/ZN (NAND2_X1)
+                                                          0.03       6.13 r
+  FloatingPointMultiplier1/sub_0_root_sub_8_root_sub_67_I22_aco/U14/ZN (NAND3_X1)
+                                                          0.04       6.16 f
+  FloatingPointMultiplier1/sub_0_root_sub_8_root_sub_67_I22_aco/U2_5/CO (FA_X1)
+                                                          0.08       6.25 f
+  FloatingPointMultiplier1/sub_0_root_sub_8_root_sub_67_I22_aco/U2_6/S (FA_X1)
+                                                          0.11       6.36 r
+  FloatingPointMultiplier1/sub_0_root_sub_8_root_sub_67_I22_aco/DIFF[6] (FloatingPointMultiplier_DW01_sub_0)
+                                                          0.00       6.36 r
+  FloatingPointMultiplier1/U214/ZN (AOI22_X1)             0.03       6.39 f
+  FloatingPointMultiplier1/U204/ZN (INV_X1)               0.02       6.41 r
+  FloatingPointMultiplier1/result[29] (FloatingPointMultiplier)
+                                                          0.00       6.41 r
+  data arrival time                                                  6.41
+
+  clock clk (rise edge)                                   7.00       7.00
+  clock network delay (ideal)                             0.00       7.00
+  clock uncertainty                                      -0.20       6.80
+  output external delay                                  -0.35       6.45
+  data required time                                                 6.45
+  --------------------------------------------------------------------------
+  data required time                                                 6.45
+  data arrival time                                                 -6.41
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.04
+
+
+  Startpoint: FloatingPointMultiplier1/A[1]
+              (internal path startpoint clocked by clk)
+  Endpoint: FloatingPointMultiplier1/result[28]
+            (internal path endpoint clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  FloatingMultiplier_Integration
+                     5K_hvratio_1_1        NangateOpenCellLibrary_ss0p95vn40c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    0.35       0.35 f
+  FloatingPointMultiplier1/A[1] (FloatingPointMultiplier)
+                                                          0.00       0.35 f
+  FloatingPointMultiplier1/mult/A[1] (MultiplierOperator)
+                                                          0.00       0.35 f
+  FloatingPointMultiplier1/mult/mult_8/A[1] (MultiplierOperator_DW02_mult_0)
+                                                          0.00       0.35 f
+  FloatingPointMultiplier1/mult/mult_8/U3/ZN (INV_X1)     0.04       0.39 r
+  FloatingPointMultiplier1/mult/mult_8/U1077/ZN (NOR2_X1)
+                                                          0.04       0.44 f
+  FloatingPointMultiplier1/mult/mult_8/S0_20/S (FA_X1)
+                                                          0.12       0.55 r
+  FloatingPointMultiplier1/mult/mult_8/S2_2_19/S (FA_X1)
+                                                          0.10       0.66 f
+  FloatingPointMultiplier1/mult/mult_8/S2_3_18/CO (FA_X1)
+                                                          0.08       0.74 f
+  FloatingPointMultiplier1/mult/mult_8/S2_4_18/S (FA_X1)
+                                                          0.13       0.87 r
+  FloatingPointMultiplier1/mult/mult_8/S2_5_17/S (FA_X1)
+                                                          0.10       0.97 f
+  FloatingPointMultiplier1/mult/mult_8/S2_6_16/CO (FA_X1)
+                                                          0.08       1.06 f
+  FloatingPointMultiplier1/mult/mult_8/S2_7_16/S (FA_X1)
+                                                          0.13       1.19 r
+  FloatingPointMultiplier1/mult/mult_8/S2_8_15/S (FA_X1)
+                                                          0.10       1.29 f
+  FloatingPointMultiplier1/mult/mult_8/S2_9_14/CO (FA_X1)
+                                                          0.08       1.37 f
+  FloatingPointMultiplier1/mult/mult_8/S2_10_14/S (FA_X1)
+                                                          0.13       1.50 r
+  FloatingPointMultiplier1/mult/mult_8/S2_11_13/S (FA_X1)
+                                                          0.10       1.61 f
+  FloatingPointMultiplier1/mult/mult_8/S2_12_12/CO (FA_X1)
+                                                          0.08       1.69 f
+  FloatingPointMultiplier1/mult/mult_8/S2_13_12/S (FA_X1)
+                                                          0.13       1.82 r
+  FloatingPointMultiplier1/mult/mult_8/S2_14_11/S (FA_X1)
+                                                          0.10       1.92 f
+  FloatingPointMultiplier1/mult/mult_8/S2_15_10/S (FA_X1)
+                                                          0.12       2.04 r
+  FloatingPointMultiplier1/mult/mult_8/S2_16_9/S (FA_X1)
+                                                          0.10       2.14 f
+  FloatingPointMultiplier1/mult/mult_8/S2_17_8/S (FA_X1)
+                                                          0.12       2.26 r
+  FloatingPointMultiplier1/mult/mult_8/S2_18_7/S (FA_X1)
+                                                          0.10       2.36 f
+  FloatingPointMultiplier1/mult/mult_8/S2_19_6/CO (FA_X1)
+                                                          0.08       2.45 f
+  FloatingPointMultiplier1/mult/mult_8/S2_20_6/S (FA_X1)
+                                                          0.13       2.58 r
+  FloatingPointMultiplier1/mult/mult_8/S2_21_5/S (FA_X1)
+                                                          0.10       2.68 f
+  FloatingPointMultiplier1/mult/mult_8/S2_22_4/CO (FA_X1)
+                                                          0.08       2.76 f
+  FloatingPointMultiplier1/mult/mult_8/S2_23_4/CO (FA_X1)
+                                                          0.10       2.86 f
+  FloatingPointMultiplier1/mult/mult_8/S2_24_4/CO (FA_X1)
+                                                          0.10       2.95 f
+  FloatingPointMultiplier1/mult/mult_8/S2_25_4/CO (FA_X1)
+                                                          0.10       3.05 f
+  FloatingPointMultiplier1/mult/mult_8/S2_26_4/CO (FA_X1)
+                                                          0.10       3.15 f
+  FloatingPointMultiplier1/mult/mult_8/S2_27_4/CO (FA_X1)
+                                                          0.10       3.24 f
+  FloatingPointMultiplier1/mult/mult_8/S2_28_4/CO (FA_X1)
+                                                          0.10       3.34 f
+  FloatingPointMultiplier1/mult/mult_8/S2_29_4/S (FA_X1)
+                                                          0.13       3.46 r
+  FloatingPointMultiplier1/mult/mult_8/S2_30_3/S (FA_X1)
+                                                          0.10       3.56 f
+  FloatingPointMultiplier1/mult/mult_8/S4_2/S (FA_X1)     0.11       3.68 r
+  FloatingPointMultiplier1/mult/mult_8/S14_33/S (FA_X1)
+                                                          0.10       3.78 f
+  FloatingPointMultiplier1/mult/mult_8/FS_1/A[31] (MultiplierOperator_DW01_add_0)
+                                                          0.00       3.78 f
+  FloatingPointMultiplier1/mult/mult_8/FS_1/U217/ZN (NAND2_X1)
+                                                          0.03       3.82 r
+  FloatingPointMultiplier1/mult/mult_8/FS_1/U214/ZN (OAI21_X1)
+                                                          0.03       3.85 f
+  FloatingPointMultiplier1/mult/mult_8/FS_1/U57/ZN (INV_X1)
+                                                          0.03       3.88 r
+  FloatingPointMultiplier1/mult/mult_8/FS_1/U10/ZN (NOR4_X1)
+                                                          0.02       3.90 f
+  FloatingPointMultiplier1/mult/mult_8/FS_1/U188/ZN (NOR2_X1)
+                                                          0.04       3.95 r
+  FloatingPointMultiplier1/mult/mult_8/FS_1/U13/Z (BUF_X1)
+                                                          0.05       3.99 r
+  FloatingPointMultiplier1/mult/mult_8/FS_1/U186/ZN (OAI21_X1)
+                                                          0.03       4.03 f
+  FloatingPointMultiplier1/mult/mult_8/FS_1/U178/ZN (AOI21_X1)
+                                                          0.05       4.08 r
+  FloatingPointMultiplier1/mult/mult_8/FS_1/U176/ZN (OAI21_X1)
+                                                          0.04       4.11 f
+  FloatingPointMultiplier1/mult/mult_8/FS_1/U11/ZN (XNOR2_X1)
+                                                          0.06       4.17 f
+  FloatingPointMultiplier1/mult/mult_8/FS_1/SUM[39] (MultiplierOperator_DW01_add_0)
+                                                          0.00       4.17 f
+  FloatingPointMultiplier1/mult/mult_8/PRODUCT[41] (MultiplierOperator_DW02_mult_0)
+                                                          0.00       4.17 f
+  FloatingPointMultiplier1/mult/P[41] (MultiplierOperator)
+                                                          0.00       4.17 f
+  FloatingPointMultiplier1/U35/Z (BUF_X1)                 0.04       4.22 f
+  FloatingPointMultiplier1/U269/ZN (NOR2_X1)              0.04       4.26 r
+  FloatingPointMultiplier1/U268/ZN (NAND2_X1)             0.03       4.29 f
+  FloatingPointMultiplier1/U281/ZN (NAND2_X1)             0.03       4.32 r
+  FloatingPointMultiplier1/U308/ZN (OAI222_X1)            0.05       4.37 f
+  FloatingPointMultiplier1/U75/ZN (OR2_X2)                0.06       4.44 f
+  FloatingPointMultiplier1/U279/ZN (NAND2_X1)             0.03       4.47 r
+  FloatingPointMultiplier1/U336/ZN (OAI222_X1)            0.05       4.52 f
+  FloatingPointMultiplier1/U318/ZN (INV_X1)               0.03       4.55 r
+  FloatingPointMultiplier1/U80/ZN (NAND2_X1)              0.04       4.59 f
+  FloatingPointMultiplier1/U277/Z (BUF_X2)                0.06       4.65 f
+  FloatingPointMultiplier1/U409/ZN (OAI222_X1)            0.07       4.72 r
+  FloatingPointMultiplier1/U297/ZN (INV_X1)               0.03       4.75 f
+  FloatingPointMultiplier1/U404/ZN (OAI222_X1)            0.05       4.80 r
+  FloatingPointMultiplier1/U316/ZN (INV_X1)               0.03       4.84 f
+  FloatingPointMultiplier1/U273/ZN (NAND2_X1)             0.04       4.87 r
+  FloatingPointMultiplier1/U361/ZN (NAND2_X1)             0.03       4.90 f
+  FloatingPointMultiplier1/U358/ZN (OAI222_X1)            0.05       4.95 r
+  FloatingPointMultiplier1/U317/ZN (INV_X1)               0.03       4.98 f
+  FloatingPointMultiplier1/U276/ZN (NAND2_X1)             0.03       5.01 r
+  FloatingPointMultiplier1/U263/ZN (NAND2_X1)             0.03       5.04 f
+  FloatingPointMultiplier1/U382/ZN (OAI222_X1)            0.06       5.10 r
+  FloatingPointMultiplier1/U319/ZN (INV_X1)               0.03       5.13 f
+  FloatingPointMultiplier1/U265/ZN (NAND2_X1)             0.03       5.16 r
+  FloatingPointMultiplier1/U264/Z (BUF_X1)                0.04       5.20 r
+  FloatingPointMultiplier1/U327/ZN (OAI222_X1)            0.05       5.25 f
+  FloatingPointMultiplier1/U345/ZN (INV_X1)               0.03       5.29 r
+  FloatingPointMultiplier1/U66/ZN (NAND2_X1)              0.04       5.33 f
+  FloatingPointMultiplier1/U340/ZN (INV_X1)               0.04       5.37 r
+  FloatingPointMultiplier1/U301/ZN (NAND2_X1)             0.04       5.41 f
+  FloatingPointMultiplier1/U303/ZN (OR2_X1)               0.06       5.47 f
+  FloatingPointMultiplier1/U311/ZN (NOR2_X1)              0.04       5.51 r
+  FloatingPointMultiplier1/add_9_root_sub_8_root_sub_67_I22_aco/U1_0/S (FA_X1)
+                                                          0.11       5.62 f
+  FloatingPointMultiplier1/U107/ZN (AND2_X1)              0.04       5.66 f
+  FloatingPointMultiplier1/add_2_root_sub_8_root_sub_67_I22_aco/U1_1/S (FA_X1)
+                                                          0.12       5.78 r
+  FloatingPointMultiplier1/U95/ZN (NAND2_X1)              0.04       5.81 f
+  FloatingPointMultiplier1/U97/ZN (NAND3_X1)              0.03       5.84 r
+  FloatingPointMultiplier1/U32/ZN (XNOR2_X1)              0.05       5.90 r
+  FloatingPointMultiplier1/sub_0_root_sub_8_root_sub_67_I22_aco/B[2] (FloatingPointMultiplier_DW01_sub_0)
+                                                          0.00       5.90 r
+  FloatingPointMultiplier1/sub_0_root_sub_8_root_sub_67_I22_aco/U23/ZN (INV_X1)
+                                                          0.03       5.92 f
+  FloatingPointMultiplier1/sub_0_root_sub_8_root_sub_67_I22_aco/U2_2/CO (FA_X1)
+                                                          0.09       6.01 f
+  FloatingPointMultiplier1/sub_0_root_sub_8_root_sub_67_I22_aco/U2_3/CO (FA_X1)
+                                                          0.09       6.10 f
+  FloatingPointMultiplier1/sub_0_root_sub_8_root_sub_67_I22_aco/U11/ZN (NAND2_X1)
+                                                          0.03       6.13 r
+  FloatingPointMultiplier1/sub_0_root_sub_8_root_sub_67_I22_aco/U14/ZN (NAND3_X1)
+                                                          0.04       6.16 f
+  FloatingPointMultiplier1/sub_0_root_sub_8_root_sub_67_I22_aco/U2_5/S (FA_X1)
+                                                          0.11       6.28 r
+  FloatingPointMultiplier1/sub_0_root_sub_8_root_sub_67_I22_aco/DIFF[5] (FloatingPointMultiplier_DW01_sub_0)
+                                                          0.00       6.28 r
+  FloatingPointMultiplier1/U215/ZN (AOI22_X1)             0.03       6.31 f
+  FloatingPointMultiplier1/U205/ZN (INV_X1)               0.02       6.34 r
+  FloatingPointMultiplier1/result[28] (FloatingPointMultiplier)
+                                                          0.00       6.34 r
+  data arrival time                                                  6.34
+
+  clock clk (rise edge)                                   7.00       7.00
+  clock network delay (ideal)                             0.00       7.00
+  clock uncertainty                                      -0.20       6.80
+  output external delay                                  -0.35       6.45
+  data required time                                                 6.45
+  --------------------------------------------------------------------------
+  data required time                                                 6.45
+  data arrival time                                                 -6.34
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.11
+
+
+  Startpoint: FloatingPointMultiplier1/A[1]
+              (internal path startpoint clocked by clk)
+  Endpoint: FloatingPointMultiplier1/result[27]
+            (internal path endpoint clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  FloatingMultiplier_Integration
+                     5K_hvratio_1_1        NangateOpenCellLibrary_ss0p95vn40c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    0.35       0.35 f
+  FloatingPointMultiplier1/A[1] (FloatingPointMultiplier)
+                                                          0.00       0.35 f
+  FloatingPointMultiplier1/mult/A[1] (MultiplierOperator)
+                                                          0.00       0.35 f
+  FloatingPointMultiplier1/mult/mult_8/A[1] (MultiplierOperator_DW02_mult_0)
+                                                          0.00       0.35 f
+  FloatingPointMultiplier1/mult/mult_8/U3/ZN (INV_X1)     0.04       0.39 r
+  FloatingPointMultiplier1/mult/mult_8/U1077/ZN (NOR2_X1)
+                                                          0.04       0.44 f
+  FloatingPointMultiplier1/mult/mult_8/S0_20/S (FA_X1)
+                                                          0.12       0.55 r
+  FloatingPointMultiplier1/mult/mult_8/S2_2_19/S (FA_X1)
+                                                          0.10       0.66 f
+  FloatingPointMultiplier1/mult/mult_8/S2_3_18/CO (FA_X1)
+                                                          0.08       0.74 f
+  FloatingPointMultiplier1/mult/mult_8/S2_4_18/S (FA_X1)
+                                                          0.13       0.87 r
+  FloatingPointMultiplier1/mult/mult_8/S2_5_17/S (FA_X1)
+                                                          0.10       0.97 f
+  FloatingPointMultiplier1/mult/mult_8/S2_6_16/CO (FA_X1)
+                                                          0.08       1.06 f
+  FloatingPointMultiplier1/mult/mult_8/S2_7_16/S (FA_X1)
+                                                          0.13       1.19 r
+  FloatingPointMultiplier1/mult/mult_8/S2_8_15/S (FA_X1)
+                                                          0.10       1.29 f
+  FloatingPointMultiplier1/mult/mult_8/S2_9_14/CO (FA_X1)
+                                                          0.08       1.37 f
+  FloatingPointMultiplier1/mult/mult_8/S2_10_14/S (FA_X1)
+                                                          0.13       1.50 r
+  FloatingPointMultiplier1/mult/mult_8/S2_11_13/S (FA_X1)
+                                                          0.10       1.61 f
+  FloatingPointMultiplier1/mult/mult_8/S2_12_12/CO (FA_X1)
+                                                          0.08       1.69 f
+  FloatingPointMultiplier1/mult/mult_8/S2_13_12/S (FA_X1)
+                                                          0.13       1.82 r
+  FloatingPointMultiplier1/mult/mult_8/S2_14_11/S (FA_X1)
+                                                          0.10       1.92 f
+  FloatingPointMultiplier1/mult/mult_8/S2_15_10/S (FA_X1)
+                                                          0.12       2.04 r
+  FloatingPointMultiplier1/mult/mult_8/S2_16_9/S (FA_X1)
+                                                          0.10       2.14 f
+  FloatingPointMultiplier1/mult/mult_8/S2_17_8/S (FA_X1)
+                                                          0.12       2.26 r
+  FloatingPointMultiplier1/mult/mult_8/S2_18_7/S (FA_X1)
+                                                          0.10       2.36 f
+  FloatingPointMultiplier1/mult/mult_8/S2_19_6/CO (FA_X1)
+                                                          0.08       2.45 f
+  FloatingPointMultiplier1/mult/mult_8/S2_20_6/S (FA_X1)
+                                                          0.13       2.58 r
+  FloatingPointMultiplier1/mult/mult_8/S2_21_5/S (FA_X1)
+                                                          0.10       2.68 f
+  FloatingPointMultiplier1/mult/mult_8/S2_22_4/CO (FA_X1)
+                                                          0.08       2.76 f
+  FloatingPointMultiplier1/mult/mult_8/S2_23_4/CO (FA_X1)
+                                                          0.10       2.86 f
+  FloatingPointMultiplier1/mult/mult_8/S2_24_4/CO (FA_X1)
+                                                          0.10       2.95 f
+  FloatingPointMultiplier1/mult/mult_8/S2_25_4/CO (FA_X1)
+                                                          0.10       3.05 f
+  FloatingPointMultiplier1/mult/mult_8/S2_26_4/CO (FA_X1)
+                                                          0.10       3.15 f
+  FloatingPointMultiplier1/mult/mult_8/S2_27_4/CO (FA_X1)
+                                                          0.10       3.24 f
+  FloatingPointMultiplier1/mult/mult_8/S2_28_4/CO (FA_X1)
+                                                          0.10       3.34 f
+  FloatingPointMultiplier1/mult/mult_8/S2_29_4/S (FA_X1)
+                                                          0.13       3.46 r
+  FloatingPointMultiplier1/mult/mult_8/S2_30_3/S (FA_X1)
+                                                          0.10       3.56 f
+  FloatingPointMultiplier1/mult/mult_8/S4_2/S (FA_X1)     0.11       3.68 r
+  FloatingPointMultiplier1/mult/mult_8/S14_33/S (FA_X1)
+                                                          0.10       3.78 f
+  FloatingPointMultiplier1/mult/mult_8/FS_1/A[31] (MultiplierOperator_DW01_add_0)
+                                                          0.00       3.78 f
+  FloatingPointMultiplier1/mult/mult_8/FS_1/U217/ZN (NAND2_X1)
+                                                          0.03       3.82 r
+  FloatingPointMultiplier1/mult/mult_8/FS_1/U214/ZN (OAI21_X1)
+                                                          0.03       3.85 f
+  FloatingPointMultiplier1/mult/mult_8/FS_1/U57/ZN (INV_X1)
+                                                          0.03       3.88 r
+  FloatingPointMultiplier1/mult/mult_8/FS_1/U10/ZN (NOR4_X1)
+                                                          0.02       3.90 f
+  FloatingPointMultiplier1/mult/mult_8/FS_1/U188/ZN (NOR2_X1)
+                                                          0.04       3.95 r
+  FloatingPointMultiplier1/mult/mult_8/FS_1/U13/Z (BUF_X1)
+                                                          0.05       3.99 r
+  FloatingPointMultiplier1/mult/mult_8/FS_1/U186/ZN (OAI21_X1)
+                                                          0.03       4.03 f
+  FloatingPointMultiplier1/mult/mult_8/FS_1/U178/ZN (AOI21_X1)
+                                                          0.05       4.08 r
+  FloatingPointMultiplier1/mult/mult_8/FS_1/U176/ZN (OAI21_X1)
+                                                          0.04       4.11 f
+  FloatingPointMultiplier1/mult/mult_8/FS_1/U11/ZN (XNOR2_X1)
+                                                          0.06       4.17 f
+  FloatingPointMultiplier1/mult/mult_8/FS_1/SUM[39] (MultiplierOperator_DW01_add_0)
+                                                          0.00       4.17 f
+  FloatingPointMultiplier1/mult/mult_8/PRODUCT[41] (MultiplierOperator_DW02_mult_0)
+                                                          0.00       4.17 f
+  FloatingPointMultiplier1/mult/P[41] (MultiplierOperator)
+                                                          0.00       4.17 f
+  FloatingPointMultiplier1/U35/Z (BUF_X1)                 0.04       4.22 f
+  FloatingPointMultiplier1/U269/ZN (NOR2_X1)              0.04       4.26 r
+  FloatingPointMultiplier1/U268/ZN (NAND2_X1)             0.03       4.29 f
+  FloatingPointMultiplier1/U281/ZN (NAND2_X1)             0.03       4.32 r
+  FloatingPointMultiplier1/U308/ZN (OAI222_X1)            0.05       4.37 f
+  FloatingPointMultiplier1/U75/ZN (OR2_X2)                0.06       4.44 f
+  FloatingPointMultiplier1/U279/ZN (NAND2_X1)             0.03       4.47 r
+  FloatingPointMultiplier1/U336/ZN (OAI222_X1)            0.05       4.52 f
+  FloatingPointMultiplier1/U318/ZN (INV_X1)               0.03       4.55 r
+  FloatingPointMultiplier1/U80/ZN (NAND2_X1)              0.04       4.59 f
+  FloatingPointMultiplier1/U277/Z (BUF_X2)                0.06       4.65 f
+  FloatingPointMultiplier1/U409/ZN (OAI222_X1)            0.07       4.72 r
+  FloatingPointMultiplier1/U297/ZN (INV_X1)               0.03       4.75 f
+  FloatingPointMultiplier1/U404/ZN (OAI222_X1)            0.05       4.80 r
+  FloatingPointMultiplier1/U316/ZN (INV_X1)               0.03       4.84 f
+  FloatingPointMultiplier1/U273/ZN (NAND2_X1)             0.04       4.87 r
+  FloatingPointMultiplier1/U361/ZN (NAND2_X1)             0.03       4.90 f
+  FloatingPointMultiplier1/U358/ZN (OAI222_X1)            0.05       4.95 r
+  FloatingPointMultiplier1/U317/ZN (INV_X1)               0.03       4.98 f
+  FloatingPointMultiplier1/U276/ZN (NAND2_X1)             0.03       5.01 r
+  FloatingPointMultiplier1/U263/ZN (NAND2_X1)             0.03       5.04 f
+  FloatingPointMultiplier1/U382/ZN (OAI222_X1)            0.06       5.10 r
+  FloatingPointMultiplier1/U319/ZN (INV_X1)               0.03       5.13 f
+  FloatingPointMultiplier1/U265/ZN (NAND2_X1)             0.03       5.16 r
+  FloatingPointMultiplier1/U264/Z (BUF_X1)                0.04       5.20 r
+  FloatingPointMultiplier1/U327/ZN (OAI222_X1)            0.05       5.25 f
+  FloatingPointMultiplier1/U345/ZN (INV_X1)               0.03       5.29 r
+  FloatingPointMultiplier1/U66/ZN (NAND2_X1)              0.04       5.33 f
+  FloatingPointMultiplier1/U340/ZN (INV_X1)               0.04       5.37 r
+  FloatingPointMultiplier1/U301/ZN (NAND2_X1)             0.04       5.41 f
+  FloatingPointMultiplier1/U303/ZN (OR2_X1)               0.06       5.47 f
+  FloatingPointMultiplier1/U311/ZN (NOR2_X1)              0.04       5.51 r
+  FloatingPointMultiplier1/add_9_root_sub_8_root_sub_67_I22_aco/U1_0/S (FA_X1)
+                                                          0.11       5.62 f
+  FloatingPointMultiplier1/U107/ZN (AND2_X1)              0.04       5.66 f
+  FloatingPointMultiplier1/add_2_root_sub_8_root_sub_67_I22_aco/U1_1/S (FA_X1)
+                                                          0.12       5.78 r
+  FloatingPointMultiplier1/U95/ZN (NAND2_X1)              0.04       5.81 f
+  FloatingPointMultiplier1/U97/ZN (NAND3_X1)              0.03       5.84 r
+  FloatingPointMultiplier1/U32/ZN (XNOR2_X1)              0.05       5.90 r
+  FloatingPointMultiplier1/sub_0_root_sub_8_root_sub_67_I22_aco/B[2] (FloatingPointMultiplier_DW01_sub_0)
+                                                          0.00       5.90 r
+  FloatingPointMultiplier1/sub_0_root_sub_8_root_sub_67_I22_aco/U23/ZN (INV_X1)
+                                                          0.03       5.92 f
+  FloatingPointMultiplier1/sub_0_root_sub_8_root_sub_67_I22_aco/U2_2/CO (FA_X1)
+                                                          0.09       6.01 f
+  FloatingPointMultiplier1/sub_0_root_sub_8_root_sub_67_I22_aco/U2_3/CO (FA_X1)
+                                                          0.09       6.10 f
+  FloatingPointMultiplier1/sub_0_root_sub_8_root_sub_67_I22_aco/U8/Z (CLKBUF_X1)
+                                                          0.04       6.14 f
+  FloatingPointMultiplier1/sub_0_root_sub_8_root_sub_67_I22_aco/U10/Z (XOR2_X1)
+                                                          0.06       6.20 f
+  FloatingPointMultiplier1/sub_0_root_sub_8_root_sub_67_I22_aco/DIFF[4] (FloatingPointMultiplier_DW01_sub_0)
+                                                          0.00       6.20 f
+  FloatingPointMultiplier1/U216/ZN (AOI22_X1)             0.04       6.25 r
+  FloatingPointMultiplier1/U206/ZN (INV_X1)               0.02       6.27 f
+  FloatingPointMultiplier1/result[27] (FloatingPointMultiplier)
+                                                          0.00       6.27 f
+  data arrival time                                                  6.27
+
+  clock clk (rise edge)                                   7.00       7.00
+  clock network delay (ideal)                             0.00       7.00
+  clock uncertainty                                      -0.20       6.80
+  output external delay                                  -0.35       6.45
+  data required time                                                 6.45
+  --------------------------------------------------------------------------
+  data required time                                                 6.45
+  data arrival time                                                 -6.27
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.18
+
+
+  Startpoint: FloatingPointMultiplier1/A[1]
+              (internal path startpoint clocked by clk)
+  Endpoint: FloatingPointMultiplier1/result[26]
+            (internal path endpoint clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  FloatingMultiplier_Integration
+                     5K_hvratio_1_1        NangateOpenCellLibrary_ss0p95vn40c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    0.35       0.35 f
+  FloatingPointMultiplier1/A[1] (FloatingPointMultiplier)
+                                                          0.00       0.35 f
+  FloatingPointMultiplier1/mult/A[1] (MultiplierOperator)
+                                                          0.00       0.35 f
+  FloatingPointMultiplier1/mult/mult_8/A[1] (MultiplierOperator_DW02_mult_0)
+                                                          0.00       0.35 f
+  FloatingPointMultiplier1/mult/mult_8/U3/ZN (INV_X1)     0.04       0.39 r
+  FloatingPointMultiplier1/mult/mult_8/U1077/ZN (NOR2_X1)
+                                                          0.04       0.44 f
+  FloatingPointMultiplier1/mult/mult_8/S0_20/S (FA_X1)
+                                                          0.12       0.55 r
+  FloatingPointMultiplier1/mult/mult_8/S2_2_19/S (FA_X1)
+                                                          0.10       0.66 f
+  FloatingPointMultiplier1/mult/mult_8/S2_3_18/CO (FA_X1)
+                                                          0.08       0.74 f
+  FloatingPointMultiplier1/mult/mult_8/S2_4_18/S (FA_X1)
+                                                          0.13       0.87 r
+  FloatingPointMultiplier1/mult/mult_8/S2_5_17/S (FA_X1)
+                                                          0.10       0.97 f
+  FloatingPointMultiplier1/mult/mult_8/S2_6_16/CO (FA_X1)
+                                                          0.08       1.06 f
+  FloatingPointMultiplier1/mult/mult_8/S2_7_16/S (FA_X1)
+                                                          0.13       1.19 r
+  FloatingPointMultiplier1/mult/mult_8/S2_8_15/S (FA_X1)
+                                                          0.10       1.29 f
+  FloatingPointMultiplier1/mult/mult_8/S2_9_14/CO (FA_X1)
+                                                          0.08       1.37 f
+  FloatingPointMultiplier1/mult/mult_8/S2_10_14/S (FA_X1)
+                                                          0.13       1.50 r
+  FloatingPointMultiplier1/mult/mult_8/S2_11_13/S (FA_X1)
+                                                          0.10       1.61 f
+  FloatingPointMultiplier1/mult/mult_8/S2_12_12/CO (FA_X1)
+                                                          0.08       1.69 f
+  FloatingPointMultiplier1/mult/mult_8/S2_13_12/S (FA_X1)
+                                                          0.13       1.82 r
+  FloatingPointMultiplier1/mult/mult_8/S2_14_11/S (FA_X1)
+                                                          0.10       1.92 f
+  FloatingPointMultiplier1/mult/mult_8/S2_15_10/S (FA_X1)
+                                                          0.12       2.04 r
+  FloatingPointMultiplier1/mult/mult_8/S2_16_9/S (FA_X1)
+                                                          0.10       2.14 f
+  FloatingPointMultiplier1/mult/mult_8/S2_17_8/S (FA_X1)
+                                                          0.12       2.26 r
+  FloatingPointMultiplier1/mult/mult_8/S2_18_7/S (FA_X1)
+                                                          0.10       2.36 f
+  FloatingPointMultiplier1/mult/mult_8/S2_19_6/CO (FA_X1)
+                                                          0.08       2.45 f
+  FloatingPointMultiplier1/mult/mult_8/S2_20_6/S (FA_X1)
+                                                          0.13       2.58 r
+  FloatingPointMultiplier1/mult/mult_8/S2_21_5/S (FA_X1)
+                                                          0.10       2.68 f
+  FloatingPointMultiplier1/mult/mult_8/S2_22_4/CO (FA_X1)
+                                                          0.08       2.76 f
+  FloatingPointMultiplier1/mult/mult_8/S2_23_4/CO (FA_X1)
+                                                          0.10       2.86 f
+  FloatingPointMultiplier1/mult/mult_8/S2_24_4/CO (FA_X1)
+                                                          0.10       2.95 f
+  FloatingPointMultiplier1/mult/mult_8/S2_25_4/CO (FA_X1)
+                                                          0.10       3.05 f
+  FloatingPointMultiplier1/mult/mult_8/S2_26_4/CO (FA_X1)
+                                                          0.10       3.15 f
+  FloatingPointMultiplier1/mult/mult_8/S2_27_4/CO (FA_X1)
+                                                          0.10       3.24 f
+  FloatingPointMultiplier1/mult/mult_8/S2_28_4/CO (FA_X1)
+                                                          0.10       3.34 f
+  FloatingPointMultiplier1/mult/mult_8/S2_29_4/S (FA_X1)
+                                                          0.13       3.46 r
+  FloatingPointMultiplier1/mult/mult_8/S2_30_3/S (FA_X1)
+                                                          0.10       3.56 f
+  FloatingPointMultiplier1/mult/mult_8/S4_2/S (FA_X1)     0.11       3.68 r
+  FloatingPointMultiplier1/mult/mult_8/S14_33/S (FA_X1)
+                                                          0.10       3.78 f
+  FloatingPointMultiplier1/mult/mult_8/FS_1/A[31] (MultiplierOperator_DW01_add_0)
+                                                          0.00       3.78 f
+  FloatingPointMultiplier1/mult/mult_8/FS_1/U217/ZN (NAND2_X1)
+                                                          0.03       3.82 r
+  FloatingPointMultiplier1/mult/mult_8/FS_1/U214/ZN (OAI21_X1)
+                                                          0.03       3.85 f
+  FloatingPointMultiplier1/mult/mult_8/FS_1/U57/ZN (INV_X1)
+                                                          0.03       3.88 r
+  FloatingPointMultiplier1/mult/mult_8/FS_1/U10/ZN (NOR4_X1)
+                                                          0.02       3.90 f
+  FloatingPointMultiplier1/mult/mult_8/FS_1/U188/ZN (NOR2_X1)
+                                                          0.04       3.95 r
+  FloatingPointMultiplier1/mult/mult_8/FS_1/U13/Z (BUF_X1)
+                                                          0.05       3.99 r
+  FloatingPointMultiplier1/mult/mult_8/FS_1/U186/ZN (OAI21_X1)
+                                                          0.03       4.03 f
+  FloatingPointMultiplier1/mult/mult_8/FS_1/U178/ZN (AOI21_X1)
+                                                          0.05       4.08 r
+  FloatingPointMultiplier1/mult/mult_8/FS_1/U176/ZN (OAI21_X1)
+                                                          0.04       4.11 f
+  FloatingPointMultiplier1/mult/mult_8/FS_1/U11/ZN (XNOR2_X1)
+                                                          0.06       4.17 f
+  FloatingPointMultiplier1/mult/mult_8/FS_1/SUM[39] (MultiplierOperator_DW01_add_0)
+                                                          0.00       4.17 f
+  FloatingPointMultiplier1/mult/mult_8/PRODUCT[41] (MultiplierOperator_DW02_mult_0)
+                                                          0.00       4.17 f
+  FloatingPointMultiplier1/mult/P[41] (MultiplierOperator)
+                                                          0.00       4.17 f
+  FloatingPointMultiplier1/U35/Z (BUF_X1)                 0.04       4.22 f
+  FloatingPointMultiplier1/U269/ZN (NOR2_X1)              0.04       4.26 r
+  FloatingPointMultiplier1/U268/ZN (NAND2_X1)             0.03       4.29 f
+  FloatingPointMultiplier1/U281/ZN (NAND2_X1)             0.03       4.32 r
+  FloatingPointMultiplier1/U308/ZN (OAI222_X1)            0.05       4.37 f
+  FloatingPointMultiplier1/U75/ZN (OR2_X2)                0.06       4.44 f
+  FloatingPointMultiplier1/U279/ZN (NAND2_X1)             0.03       4.47 r
+  FloatingPointMultiplier1/U336/ZN (OAI222_X1)            0.05       4.52 f
+  FloatingPointMultiplier1/U318/ZN (INV_X1)               0.03       4.55 r
+  FloatingPointMultiplier1/U80/ZN (NAND2_X1)              0.04       4.59 f
+  FloatingPointMultiplier1/U277/Z (BUF_X2)                0.06       4.65 f
+  FloatingPointMultiplier1/U409/ZN (OAI222_X1)            0.07       4.72 r
+  FloatingPointMultiplier1/U297/ZN (INV_X1)               0.03       4.75 f
+  FloatingPointMultiplier1/U404/ZN (OAI222_X1)            0.05       4.80 r
+  FloatingPointMultiplier1/U316/ZN (INV_X1)               0.03       4.84 f
+  FloatingPointMultiplier1/U273/ZN (NAND2_X1)             0.04       4.87 r
+  FloatingPointMultiplier1/U361/ZN (NAND2_X1)             0.03       4.90 f
+  FloatingPointMultiplier1/U358/ZN (OAI222_X1)            0.05       4.95 r
+  FloatingPointMultiplier1/U317/ZN (INV_X1)               0.03       4.98 f
+  FloatingPointMultiplier1/U276/ZN (NAND2_X1)             0.03       5.01 r
+  FloatingPointMultiplier1/U263/ZN (NAND2_X1)             0.03       5.04 f
+  FloatingPointMultiplier1/U382/ZN (OAI222_X1)            0.06       5.10 r
+  FloatingPointMultiplier1/U319/ZN (INV_X1)               0.03       5.13 f
+  FloatingPointMultiplier1/U265/ZN (NAND2_X1)             0.03       5.16 r
+  FloatingPointMultiplier1/U264/Z (BUF_X1)                0.04       5.20 r
+  FloatingPointMultiplier1/U327/ZN (OAI222_X1)            0.05       5.25 f
+  FloatingPointMultiplier1/U345/ZN (INV_X1)               0.03       5.29 r
+  FloatingPointMultiplier1/U66/ZN (NAND2_X1)              0.04       5.33 f
+  FloatingPointMultiplier1/U340/ZN (INV_X1)               0.04       5.37 r
+  FloatingPointMultiplier1/U301/ZN (NAND2_X1)             0.04       5.41 f
+  FloatingPointMultiplier1/U303/ZN (OR2_X1)               0.06       5.47 f
+  FloatingPointMultiplier1/U311/ZN (NOR2_X1)              0.04       5.51 r
+  FloatingPointMultiplier1/add_9_root_sub_8_root_sub_67_I22_aco/U1_0/S (FA_X1)
+                                                          0.11       5.62 f
+  FloatingPointMultiplier1/U107/ZN (AND2_X1)              0.04       5.66 f
+  FloatingPointMultiplier1/add_2_root_sub_8_root_sub_67_I22_aco/U1_1/S (FA_X1)
+                                                          0.12       5.78 r
+  FloatingPointMultiplier1/U95/ZN (NAND2_X1)              0.04       5.81 f
+  FloatingPointMultiplier1/U97/ZN (NAND3_X1)              0.03       5.84 r
+  FloatingPointMultiplier1/U32/ZN (XNOR2_X1)              0.05       5.90 r
+  FloatingPointMultiplier1/sub_0_root_sub_8_root_sub_67_I22_aco/B[2] (FloatingPointMultiplier_DW01_sub_0)
+                                                          0.00       5.90 r
+  FloatingPointMultiplier1/sub_0_root_sub_8_root_sub_67_I22_aco/U23/ZN (INV_X1)
+                                                          0.03       5.92 f
+  FloatingPointMultiplier1/sub_0_root_sub_8_root_sub_67_I22_aco/U2_2/CO (FA_X1)
+                                                          0.09       6.01 f
+  FloatingPointMultiplier1/sub_0_root_sub_8_root_sub_67_I22_aco/U2_3/S (FA_X1)
+                                                          0.11       6.13 r
+  FloatingPointMultiplier1/sub_0_root_sub_8_root_sub_67_I22_aco/DIFF[3] (FloatingPointMultiplier_DW01_sub_0)
+                                                          0.00       6.13 r
+  FloatingPointMultiplier1/U218/ZN (AOI22_X1)             0.03       6.16 f
+  FloatingPointMultiplier1/U207/ZN (INV_X1)               0.02       6.18 r
+  FloatingPointMultiplier1/result[26] (FloatingPointMultiplier)
+                                                          0.00       6.18 r
+  data arrival time                                                  6.18
+
+  clock clk (rise edge)                                   7.00       7.00
+  clock network delay (ideal)                             0.00       7.00
+  clock uncertainty                                      -0.20       6.80
+  output external delay                                  -0.35       6.45
+  data required time                                                 6.45
+  --------------------------------------------------------------------------
+  data required time                                                 6.45
+  data arrival time                                                 -6.18
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.27
+
+
+  Startpoint: FloatingPointMultiplier1/A[1]
+              (internal path startpoint clocked by clk)
+  Endpoint: FloatingPointMultiplier1/result[25]
+            (internal path endpoint clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  FloatingMultiplier_Integration
+                     5K_hvratio_1_1        NangateOpenCellLibrary_ss0p95vn40c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    0.35       0.35 f
+  FloatingPointMultiplier1/A[1] (FloatingPointMultiplier)
+                                                          0.00       0.35 f
+  FloatingPointMultiplier1/mult/A[1] (MultiplierOperator)
+                                                          0.00       0.35 f
+  FloatingPointMultiplier1/mult/mult_8/A[1] (MultiplierOperator_DW02_mult_0)
+                                                          0.00       0.35 f
+  FloatingPointMultiplier1/mult/mult_8/U3/ZN (INV_X1)     0.04       0.39 r
+  FloatingPointMultiplier1/mult/mult_8/U1077/ZN (NOR2_X1)
+                                                          0.04       0.44 f
+  FloatingPointMultiplier1/mult/mult_8/S0_20/S (FA_X1)
+                                                          0.12       0.55 r
+  FloatingPointMultiplier1/mult/mult_8/S2_2_19/S (FA_X1)
+                                                          0.10       0.66 f
+  FloatingPointMultiplier1/mult/mult_8/S2_3_18/CO (FA_X1)
+                                                          0.08       0.74 f
+  FloatingPointMultiplier1/mult/mult_8/S2_4_18/S (FA_X1)
+                                                          0.13       0.87 r
+  FloatingPointMultiplier1/mult/mult_8/S2_5_17/S (FA_X1)
+                                                          0.10       0.97 f
+  FloatingPointMultiplier1/mult/mult_8/S2_6_16/CO (FA_X1)
+                                                          0.08       1.06 f
+  FloatingPointMultiplier1/mult/mult_8/S2_7_16/S (FA_X1)
+                                                          0.13       1.19 r
+  FloatingPointMultiplier1/mult/mult_8/S2_8_15/S (FA_X1)
+                                                          0.10       1.29 f
+  FloatingPointMultiplier1/mult/mult_8/S2_9_14/CO (FA_X1)
+                                                          0.08       1.37 f
+  FloatingPointMultiplier1/mult/mult_8/S2_10_14/S (FA_X1)
+                                                          0.13       1.50 r
+  FloatingPointMultiplier1/mult/mult_8/S2_11_13/S (FA_X1)
+                                                          0.10       1.61 f
+  FloatingPointMultiplier1/mult/mult_8/S2_12_12/CO (FA_X1)
+                                                          0.08       1.69 f
+  FloatingPointMultiplier1/mult/mult_8/S2_13_12/S (FA_X1)
+                                                          0.13       1.82 r
+  FloatingPointMultiplier1/mult/mult_8/S2_14_11/S (FA_X1)
+                                                          0.10       1.92 f
+  FloatingPointMultiplier1/mult/mult_8/S2_15_10/S (FA_X1)
+                                                          0.12       2.04 r
+  FloatingPointMultiplier1/mult/mult_8/S2_16_9/S (FA_X1)
+                                                          0.10       2.14 f
+  FloatingPointMultiplier1/mult/mult_8/S2_17_8/S (FA_X1)
+                                                          0.12       2.26 r
+  FloatingPointMultiplier1/mult/mult_8/S2_18_7/S (FA_X1)
+                                                          0.10       2.36 f
+  FloatingPointMultiplier1/mult/mult_8/S2_19_6/CO (FA_X1)
+                                                          0.08       2.45 f
+  FloatingPointMultiplier1/mult/mult_8/S2_20_6/S (FA_X1)
+                                                          0.13       2.58 r
+  FloatingPointMultiplier1/mult/mult_8/S2_21_5/S (FA_X1)
+                                                          0.10       2.68 f
+  FloatingPointMultiplier1/mult/mult_8/S2_22_4/CO (FA_X1)
+                                                          0.08       2.76 f
+  FloatingPointMultiplier1/mult/mult_8/S2_23_4/CO (FA_X1)
+                                                          0.10       2.86 f
+  FloatingPointMultiplier1/mult/mult_8/S2_24_4/CO (FA_X1)
+                                                          0.10       2.95 f
+  FloatingPointMultiplier1/mult/mult_8/S2_25_4/CO (FA_X1)
+                                                          0.10       3.05 f
+  FloatingPointMultiplier1/mult/mult_8/S2_26_4/CO (FA_X1)
+                                                          0.10       3.15 f
+  FloatingPointMultiplier1/mult/mult_8/S2_27_4/CO (FA_X1)
+                                                          0.10       3.24 f
+  FloatingPointMultiplier1/mult/mult_8/S2_28_4/CO (FA_X1)
+                                                          0.10       3.34 f
+  FloatingPointMultiplier1/mult/mult_8/S2_29_4/S (FA_X1)
+                                                          0.13       3.46 r
+  FloatingPointMultiplier1/mult/mult_8/S2_30_3/S (FA_X1)
+                                                          0.10       3.56 f
+  FloatingPointMultiplier1/mult/mult_8/S4_2/S (FA_X1)     0.11       3.68 r
+  FloatingPointMultiplier1/mult/mult_8/S14_33/S (FA_X1)
+                                                          0.10       3.78 f
+  FloatingPointMultiplier1/mult/mult_8/FS_1/A[31] (MultiplierOperator_DW01_add_0)
+                                                          0.00       3.78 f
+  FloatingPointMultiplier1/mult/mult_8/FS_1/U217/ZN (NAND2_X1)
+                                                          0.03       3.82 r
+  FloatingPointMultiplier1/mult/mult_8/FS_1/U214/ZN (OAI21_X1)
+                                                          0.03       3.85 f
+  FloatingPointMultiplier1/mult/mult_8/FS_1/U57/ZN (INV_X1)
+                                                          0.03       3.88 r
+  FloatingPointMultiplier1/mult/mult_8/FS_1/U10/ZN (NOR4_X1)
+                                                          0.02       3.90 f
+  FloatingPointMultiplier1/mult/mult_8/FS_1/U188/ZN (NOR2_X1)
+                                                          0.04       3.95 r
+  FloatingPointMultiplier1/mult/mult_8/FS_1/U13/Z (BUF_X1)
+                                                          0.05       3.99 r
+  FloatingPointMultiplier1/mult/mult_8/FS_1/U186/ZN (OAI21_X1)
+                                                          0.03       4.03 f
+  FloatingPointMultiplier1/mult/mult_8/FS_1/U178/ZN (AOI21_X1)
+                                                          0.05       4.08 r
+  FloatingPointMultiplier1/mult/mult_8/FS_1/U176/ZN (OAI21_X1)
+                                                          0.04       4.11 f
+  FloatingPointMultiplier1/mult/mult_8/FS_1/U11/ZN (XNOR2_X1)
+                                                          0.06       4.17 f
+  FloatingPointMultiplier1/mult/mult_8/FS_1/SUM[39] (MultiplierOperator_DW01_add_0)
+                                                          0.00       4.17 f
+  FloatingPointMultiplier1/mult/mult_8/PRODUCT[41] (MultiplierOperator_DW02_mult_0)
+                                                          0.00       4.17 f
+  FloatingPointMultiplier1/mult/P[41] (MultiplierOperator)
+                                                          0.00       4.17 f
+  FloatingPointMultiplier1/U35/Z (BUF_X1)                 0.04       4.22 f
+  FloatingPointMultiplier1/U269/ZN (NOR2_X1)              0.04       4.26 r
+  FloatingPointMultiplier1/U268/ZN (NAND2_X1)             0.03       4.29 f
+  FloatingPointMultiplier1/U281/ZN (NAND2_X1)             0.03       4.32 r
+  FloatingPointMultiplier1/U308/ZN (OAI222_X1)            0.05       4.37 f
+  FloatingPointMultiplier1/U75/ZN (OR2_X2)                0.06       4.44 f
+  FloatingPointMultiplier1/U279/ZN (NAND2_X1)             0.03       4.47 r
+  FloatingPointMultiplier1/U336/ZN (OAI222_X1)            0.05       4.52 f
+  FloatingPointMultiplier1/U318/ZN (INV_X1)               0.03       4.55 r
+  FloatingPointMultiplier1/U80/ZN (NAND2_X1)              0.04       4.59 f
+  FloatingPointMultiplier1/U277/Z (BUF_X2)                0.06       4.65 f
+  FloatingPointMultiplier1/U409/ZN (OAI222_X1)            0.07       4.72 r
+  FloatingPointMultiplier1/U297/ZN (INV_X1)               0.03       4.75 f
+  FloatingPointMultiplier1/U404/ZN (OAI222_X1)            0.05       4.80 r
+  FloatingPointMultiplier1/U316/ZN (INV_X1)               0.03       4.84 f
+  FloatingPointMultiplier1/U273/ZN (NAND2_X1)             0.04       4.87 r
+  FloatingPointMultiplier1/U361/ZN (NAND2_X1)             0.03       4.90 f
+  FloatingPointMultiplier1/U358/ZN (OAI222_X1)            0.05       4.95 r
+  FloatingPointMultiplier1/U317/ZN (INV_X1)               0.03       4.98 f
+  FloatingPointMultiplier1/U276/ZN (NAND2_X1)             0.03       5.01 r
+  FloatingPointMultiplier1/U263/ZN (NAND2_X1)             0.03       5.04 f
+  FloatingPointMultiplier1/U382/ZN (OAI222_X1)            0.06       5.10 r
+  FloatingPointMultiplier1/U319/ZN (INV_X1)               0.03       5.13 f
+  FloatingPointMultiplier1/U265/ZN (NAND2_X1)             0.03       5.16 r
+  FloatingPointMultiplier1/U264/Z (BUF_X1)                0.04       5.20 r
+  FloatingPointMultiplier1/U327/ZN (OAI222_X1)            0.05       5.25 f
+  FloatingPointMultiplier1/U345/ZN (INV_X1)               0.03       5.29 r
+  FloatingPointMultiplier1/U66/ZN (NAND2_X1)              0.04       5.33 f
+  FloatingPointMultiplier1/U340/ZN (INV_X1)               0.04       5.37 r
+  FloatingPointMultiplier1/U301/ZN (NAND2_X1)             0.04       5.41 f
+  FloatingPointMultiplier1/U303/ZN (OR2_X1)               0.06       5.47 f
+  FloatingPointMultiplier1/U311/ZN (NOR2_X1)              0.04       5.51 r
+  FloatingPointMultiplier1/add_9_root_sub_8_root_sub_67_I22_aco/U1_0/S (FA_X1)
+                                                          0.11       5.62 f
+  FloatingPointMultiplier1/U107/ZN (AND2_X1)              0.04       5.66 f
+  FloatingPointMultiplier1/add_2_root_sub_8_root_sub_67_I22_aco/U1_1/S (FA_X1)
+                                                          0.12       5.78 r
+  FloatingPointMultiplier1/U95/ZN (NAND2_X1)              0.04       5.81 f
+  FloatingPointMultiplier1/U97/ZN (NAND3_X1)              0.03       5.84 r
+  FloatingPointMultiplier1/U32/ZN (XNOR2_X1)              0.05       5.90 r
+  FloatingPointMultiplier1/sub_0_root_sub_8_root_sub_67_I22_aco/B[2] (FloatingPointMultiplier_DW01_sub_0)
+                                                          0.00       5.90 r
+  FloatingPointMultiplier1/sub_0_root_sub_8_root_sub_67_I22_aco/U23/ZN (INV_X1)
+                                                          0.03       5.92 f
+  FloatingPointMultiplier1/sub_0_root_sub_8_root_sub_67_I22_aco/U2_2/S (FA_X1)
+                                                          0.12       6.05 r
+  FloatingPointMultiplier1/sub_0_root_sub_8_root_sub_67_I22_aco/DIFF[2] (FloatingPointMultiplier_DW01_sub_0)
+                                                          0.00       6.05 r
+  FloatingPointMultiplier1/U219/ZN (AOI22_X1)             0.03       6.08 f
+  FloatingPointMultiplier1/U208/ZN (INV_X1)               0.02       6.10 r
+  FloatingPointMultiplier1/result[25] (FloatingPointMultiplier)
+                                                          0.00       6.10 r
+  data arrival time                                                  6.10
+
+  clock clk (rise edge)                                   7.00       7.00
+  clock network delay (ideal)                             0.00       7.00
+  clock uncertainty                                      -0.20       6.80
+  output external delay                                  -0.35       6.45
+  data required time                                                 6.45
+  --------------------------------------------------------------------------
+  data required time                                                 6.45
+  data arrival time                                                 -6.10
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.35
+
+
+  Startpoint: FloatingPointMultiplier1/A[1]
+              (internal path startpoint clocked by clk)
+  Endpoint: FloatingPointMultiplier1/result[24]
+            (internal path endpoint clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  FloatingMultiplier_Integration
+                     5K_hvratio_1_1        NangateOpenCellLibrary_ss0p95vn40c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    0.35       0.35 f
+  FloatingPointMultiplier1/A[1] (FloatingPointMultiplier)
+                                                          0.00       0.35 f
+  FloatingPointMultiplier1/mult/A[1] (MultiplierOperator)
+                                                          0.00       0.35 f
+  FloatingPointMultiplier1/mult/mult_8/A[1] (MultiplierOperator_DW02_mult_0)
+                                                          0.00       0.35 f
+  FloatingPointMultiplier1/mult/mult_8/U3/ZN (INV_X1)     0.04       0.39 r
+  FloatingPointMultiplier1/mult/mult_8/U1077/ZN (NOR2_X1)
+                                                          0.04       0.44 f
+  FloatingPointMultiplier1/mult/mult_8/S0_20/S (FA_X1)
+                                                          0.12       0.55 r
+  FloatingPointMultiplier1/mult/mult_8/S2_2_19/S (FA_X1)
+                                                          0.10       0.66 f
+  FloatingPointMultiplier1/mult/mult_8/S2_3_18/CO (FA_X1)
+                                                          0.08       0.74 f
+  FloatingPointMultiplier1/mult/mult_8/S2_4_18/S (FA_X1)
+                                                          0.13       0.87 r
+  FloatingPointMultiplier1/mult/mult_8/S2_5_17/S (FA_X1)
+                                                          0.10       0.97 f
+  FloatingPointMultiplier1/mult/mult_8/S2_6_16/CO (FA_X1)
+                                                          0.08       1.06 f
+  FloatingPointMultiplier1/mult/mult_8/S2_7_16/S (FA_X1)
+                                                          0.13       1.19 r
+  FloatingPointMultiplier1/mult/mult_8/S2_8_15/S (FA_X1)
+                                                          0.10       1.29 f
+  FloatingPointMultiplier1/mult/mult_8/S2_9_14/CO (FA_X1)
+                                                          0.08       1.37 f
+  FloatingPointMultiplier1/mult/mult_8/S2_10_14/S (FA_X1)
+                                                          0.13       1.50 r
+  FloatingPointMultiplier1/mult/mult_8/S2_11_13/S (FA_X1)
+                                                          0.10       1.61 f
+  FloatingPointMultiplier1/mult/mult_8/S2_12_12/CO (FA_X1)
+                                                          0.08       1.69 f
+  FloatingPointMultiplier1/mult/mult_8/S2_13_12/S (FA_X1)
+                                                          0.13       1.82 r
+  FloatingPointMultiplier1/mult/mult_8/S2_14_11/S (FA_X1)
+                                                          0.10       1.92 f
+  FloatingPointMultiplier1/mult/mult_8/S2_15_10/S (FA_X1)
+                                                          0.12       2.04 r
+  FloatingPointMultiplier1/mult/mult_8/S2_16_9/S (FA_X1)
+                                                          0.10       2.14 f
+  FloatingPointMultiplier1/mult/mult_8/S2_17_8/S (FA_X1)
+                                                          0.12       2.26 r
+  FloatingPointMultiplier1/mult/mult_8/S2_18_7/S (FA_X1)
+                                                          0.10       2.36 f
+  FloatingPointMultiplier1/mult/mult_8/S2_19_6/CO (FA_X1)
+                                                          0.08       2.45 f
+  FloatingPointMultiplier1/mult/mult_8/S2_20_6/S (FA_X1)
+                                                          0.13       2.58 r
+  FloatingPointMultiplier1/mult/mult_8/S2_21_5/S (FA_X1)
+                                                          0.10       2.68 f
+  FloatingPointMultiplier1/mult/mult_8/S2_22_4/CO (FA_X1)
+                                                          0.08       2.76 f
+  FloatingPointMultiplier1/mult/mult_8/S2_23_4/CO (FA_X1)
+                                                          0.10       2.86 f
+  FloatingPointMultiplier1/mult/mult_8/S2_24_4/CO (FA_X1)
+                                                          0.10       2.95 f
+  FloatingPointMultiplier1/mult/mult_8/S2_25_4/CO (FA_X1)
+                                                          0.10       3.05 f
+  FloatingPointMultiplier1/mult/mult_8/S2_26_4/CO (FA_X1)
+                                                          0.10       3.15 f
+  FloatingPointMultiplier1/mult/mult_8/S2_27_4/CO (FA_X1)
+                                                          0.10       3.24 f
+  FloatingPointMultiplier1/mult/mult_8/S2_28_4/CO (FA_X1)
+                                                          0.10       3.34 f
+  FloatingPointMultiplier1/mult/mult_8/S2_29_4/S (FA_X1)
+                                                          0.13       3.46 r
+  FloatingPointMultiplier1/mult/mult_8/S2_30_3/S (FA_X1)
+                                                          0.10       3.56 f
+  FloatingPointMultiplier1/mult/mult_8/S4_2/S (FA_X1)     0.11       3.68 r
+  FloatingPointMultiplier1/mult/mult_8/S14_33/S (FA_X1)
+                                                          0.10       3.78 f
+  FloatingPointMultiplier1/mult/mult_8/FS_1/A[31] (MultiplierOperator_DW01_add_0)
+                                                          0.00       3.78 f
+  FloatingPointMultiplier1/mult/mult_8/FS_1/U217/ZN (NAND2_X1)
+                                                          0.03       3.82 r
+  FloatingPointMultiplier1/mult/mult_8/FS_1/U214/ZN (OAI21_X1)
+                                                          0.03       3.85 f
+  FloatingPointMultiplier1/mult/mult_8/FS_1/U57/ZN (INV_X1)
+                                                          0.03       3.88 r
+  FloatingPointMultiplier1/mult/mult_8/FS_1/U10/ZN (NOR4_X1)
+                                                          0.02       3.90 f
+  FloatingPointMultiplier1/mult/mult_8/FS_1/U188/ZN (NOR2_X1)
+                                                          0.04       3.95 r
+  FloatingPointMultiplier1/mult/mult_8/FS_1/U13/Z (BUF_X1)
+                                                          0.05       3.99 r
+  FloatingPointMultiplier1/mult/mult_8/FS_1/U186/ZN (OAI21_X1)
+                                                          0.03       4.03 f
+  FloatingPointMultiplier1/mult/mult_8/FS_1/U178/ZN (AOI21_X1)
+                                                          0.05       4.08 r
+  FloatingPointMultiplier1/mult/mult_8/FS_1/U176/ZN (OAI21_X1)
+                                                          0.04       4.11 f
+  FloatingPointMultiplier1/mult/mult_8/FS_1/U11/ZN (XNOR2_X1)
+                                                          0.06       4.17 f
+  FloatingPointMultiplier1/mult/mult_8/FS_1/SUM[39] (MultiplierOperator_DW01_add_0)
+                                                          0.00       4.17 f
+  FloatingPointMultiplier1/mult/mult_8/PRODUCT[41] (MultiplierOperator_DW02_mult_0)
+                                                          0.00       4.17 f
+  FloatingPointMultiplier1/mult/P[41] (MultiplierOperator)
+                                                          0.00       4.17 f
+  FloatingPointMultiplier1/U35/Z (BUF_X1)                 0.04       4.22 f
+  FloatingPointMultiplier1/U269/ZN (NOR2_X1)              0.04       4.26 r
+  FloatingPointMultiplier1/U268/ZN (NAND2_X1)             0.03       4.29 f
+  FloatingPointMultiplier1/U281/ZN (NAND2_X1)             0.03       4.32 r
+  FloatingPointMultiplier1/U308/ZN (OAI222_X1)            0.05       4.37 f
+  FloatingPointMultiplier1/U75/ZN (OR2_X2)                0.06       4.44 f
+  FloatingPointMultiplier1/U279/ZN (NAND2_X1)             0.03       4.47 r
+  FloatingPointMultiplier1/U336/ZN (OAI222_X1)            0.05       4.52 f
+  FloatingPointMultiplier1/U318/ZN (INV_X1)               0.03       4.55 r
+  FloatingPointMultiplier1/U80/ZN (NAND2_X1)              0.04       4.59 f
+  FloatingPointMultiplier1/U277/Z (BUF_X2)                0.06       4.65 f
+  FloatingPointMultiplier1/U409/ZN (OAI222_X1)            0.07       4.72 r
+  FloatingPointMultiplier1/U297/ZN (INV_X1)               0.03       4.75 f
+  FloatingPointMultiplier1/U404/ZN (OAI222_X1)            0.05       4.80 r
+  FloatingPointMultiplier1/U316/ZN (INV_X1)               0.03       4.84 f
+  FloatingPointMultiplier1/U273/ZN (NAND2_X1)             0.04       4.87 r
+  FloatingPointMultiplier1/U361/ZN (NAND2_X1)             0.03       4.90 f
+  FloatingPointMultiplier1/U358/ZN (OAI222_X1)            0.05       4.95 r
+  FloatingPointMultiplier1/U317/ZN (INV_X1)               0.03       4.98 f
+  FloatingPointMultiplier1/U276/ZN (NAND2_X1)             0.03       5.01 r
+  FloatingPointMultiplier1/U263/ZN (NAND2_X1)             0.03       5.04 f
+  FloatingPointMultiplier1/U382/ZN (OAI222_X1)            0.06       5.10 r
+  FloatingPointMultiplier1/U319/ZN (INV_X1)               0.03       5.13 f
+  FloatingPointMultiplier1/U265/ZN (NAND2_X1)             0.03       5.16 r
+  FloatingPointMultiplier1/U264/Z (BUF_X1)                0.04       5.20 r
+  FloatingPointMultiplier1/U327/ZN (OAI222_X1)            0.05       5.25 f
+  FloatingPointMultiplier1/U345/ZN (INV_X1)               0.03       5.29 r
+  FloatingPointMultiplier1/U66/ZN (NAND2_X1)              0.04       5.33 f
+  FloatingPointMultiplier1/U340/ZN (INV_X1)               0.04       5.37 r
+  FloatingPointMultiplier1/U301/ZN (NAND2_X1)             0.04       5.41 f
+  FloatingPointMultiplier1/U303/ZN (OR2_X1)               0.06       5.47 f
+  FloatingPointMultiplier1/U311/ZN (NOR2_X1)              0.04       5.51 r
+  FloatingPointMultiplier1/add_9_root_sub_8_root_sub_67_I22_aco/U1_0/S (FA_X1)
+                                                          0.11       5.62 f
+  FloatingPointMultiplier1/U107/ZN (AND2_X1)              0.04       5.66 f
+  FloatingPointMultiplier1/add_2_root_sub_8_root_sub_67_I22_aco/U1_1/S (FA_X1)
+                                                          0.12       5.78 r
+  FloatingPointMultiplier1/U86/ZN (XNOR2_X1)              0.06       5.84 r
+  FloatingPointMultiplier1/sub_0_root_sub_8_root_sub_67_I22_aco/B[1] (FloatingPointMultiplier_DW01_sub_0)
+                                                          0.00       5.84 r
+  FloatingPointMultiplier1/sub_0_root_sub_8_root_sub_67_I22_aco/U24/ZN (INV_X1)
+                                                          0.03       5.87 f
+  FloatingPointMultiplier1/sub_0_root_sub_8_root_sub_67_I22_aco/U1/Z (CLKBUF_X1)
+                                                          0.04       5.91 f
+  FloatingPointMultiplier1/sub_0_root_sub_8_root_sub_67_I22_aco/U3/Z (XOR2_X1)
+                                                          0.06       5.97 f
+  FloatingPointMultiplier1/sub_0_root_sub_8_root_sub_67_I22_aco/DIFF[1] (FloatingPointMultiplier_DW01_sub_0)
+                                                          0.00       5.97 f
+  FloatingPointMultiplier1/U220/ZN (AOI22_X1)             0.04       6.01 r
+  FloatingPointMultiplier1/U209/ZN (INV_X1)               0.02       6.03 f
+  FloatingPointMultiplier1/result[24] (FloatingPointMultiplier)
+                                                          0.00       6.03 f
+  data arrival time                                                  6.03
+
+  clock clk (rise edge)                                   7.00       7.00
+  clock network delay (ideal)                             0.00       7.00
+  clock uncertainty                                      -0.20       6.80
+  output external delay                                  -0.35       6.45
+  data required time                                                 6.45
+  --------------------------------------------------------------------------
+  data required time                                                 6.45
+  data arrival time                                                 -6.03
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.42
+
+
+  Startpoint: FloatingPointMultiplier1/A[1]
+              (internal path startpoint clocked by clk)
+  Endpoint: FloatingPointMultiplier1/result[23]
+            (internal path endpoint clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  FloatingMultiplier_Integration
+                     5K_hvratio_1_1        NangateOpenCellLibrary_ss0p95vn40c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    0.35       0.35 f
+  FloatingPointMultiplier1/A[1] (FloatingPointMultiplier)
+                                                          0.00       0.35 f
+  FloatingPointMultiplier1/mult/A[1] (MultiplierOperator)
+                                                          0.00       0.35 f
+  FloatingPointMultiplier1/mult/mult_8/A[1] (MultiplierOperator_DW02_mult_0)
+                                                          0.00       0.35 f
+  FloatingPointMultiplier1/mult/mult_8/U3/ZN (INV_X1)     0.04       0.39 r
+  FloatingPointMultiplier1/mult/mult_8/U1077/ZN (NOR2_X1)
+                                                          0.04       0.44 f
+  FloatingPointMultiplier1/mult/mult_8/S0_20/S (FA_X1)
+                                                          0.12       0.55 r
+  FloatingPointMultiplier1/mult/mult_8/S2_2_19/S (FA_X1)
+                                                          0.10       0.66 f
+  FloatingPointMultiplier1/mult/mult_8/S2_3_18/CO (FA_X1)
+                                                          0.08       0.74 f
+  FloatingPointMultiplier1/mult/mult_8/S2_4_18/S (FA_X1)
+                                                          0.13       0.87 r
+  FloatingPointMultiplier1/mult/mult_8/S2_5_17/S (FA_X1)
+                                                          0.10       0.97 f
+  FloatingPointMultiplier1/mult/mult_8/S2_6_16/CO (FA_X1)
+                                                          0.08       1.06 f
+  FloatingPointMultiplier1/mult/mult_8/S2_7_16/S (FA_X1)
+                                                          0.13       1.19 r
+  FloatingPointMultiplier1/mult/mult_8/S2_8_15/S (FA_X1)
+                                                          0.10       1.29 f
+  FloatingPointMultiplier1/mult/mult_8/S2_9_14/CO (FA_X1)
+                                                          0.08       1.37 f
+  FloatingPointMultiplier1/mult/mult_8/S2_10_14/S (FA_X1)
+                                                          0.13       1.50 r
+  FloatingPointMultiplier1/mult/mult_8/S2_11_13/S (FA_X1)
+                                                          0.10       1.61 f
+  FloatingPointMultiplier1/mult/mult_8/S2_12_12/CO (FA_X1)
+                                                          0.08       1.69 f
+  FloatingPointMultiplier1/mult/mult_8/S2_13_12/S (FA_X1)
+                                                          0.13       1.82 r
+  FloatingPointMultiplier1/mult/mult_8/S2_14_11/S (FA_X1)
+                                                          0.10       1.92 f
+  FloatingPointMultiplier1/mult/mult_8/S2_15_10/S (FA_X1)
+                                                          0.12       2.04 r
+  FloatingPointMultiplier1/mult/mult_8/S2_16_9/S (FA_X1)
+                                                          0.10       2.14 f
+  FloatingPointMultiplier1/mult/mult_8/S2_17_8/S (FA_X1)
+                                                          0.12       2.26 r
+  FloatingPointMultiplier1/mult/mult_8/S2_18_7/S (FA_X1)
+                                                          0.10       2.36 f
+  FloatingPointMultiplier1/mult/mult_8/S2_19_6/CO (FA_X1)
+                                                          0.08       2.45 f
+  FloatingPointMultiplier1/mult/mult_8/S2_20_6/S (FA_X1)
+                                                          0.13       2.58 r
+  FloatingPointMultiplier1/mult/mult_8/S2_21_5/S (FA_X1)
+                                                          0.10       2.68 f
+  FloatingPointMultiplier1/mult/mult_8/S2_22_4/CO (FA_X1)
+                                                          0.08       2.76 f
+  FloatingPointMultiplier1/mult/mult_8/S2_23_4/CO (FA_X1)
+                                                          0.10       2.86 f
+  FloatingPointMultiplier1/mult/mult_8/S2_24_4/CO (FA_X1)
+                                                          0.10       2.95 f
+  FloatingPointMultiplier1/mult/mult_8/S2_25_4/CO (FA_X1)
+                                                          0.10       3.05 f
+  FloatingPointMultiplier1/mult/mult_8/S2_26_4/CO (FA_X1)
+                                                          0.10       3.15 f
+  FloatingPointMultiplier1/mult/mult_8/S2_27_4/CO (FA_X1)
+                                                          0.10       3.24 f
+  FloatingPointMultiplier1/mult/mult_8/S2_28_4/CO (FA_X1)
+                                                          0.10       3.34 f
+  FloatingPointMultiplier1/mult/mult_8/S2_29_4/S (FA_X1)
+                                                          0.13       3.46 r
+  FloatingPointMultiplier1/mult/mult_8/S2_30_3/S (FA_X1)
+                                                          0.10       3.56 f
+  FloatingPointMultiplier1/mult/mult_8/S4_2/S (FA_X1)     0.11       3.68 r
+  FloatingPointMultiplier1/mult/mult_8/S14_33/S (FA_X1)
+                                                          0.10       3.78 f
+  FloatingPointMultiplier1/mult/mult_8/FS_1/A[31] (MultiplierOperator_DW01_add_0)
+                                                          0.00       3.78 f
+  FloatingPointMultiplier1/mult/mult_8/FS_1/U217/ZN (NAND2_X1)
+                                                          0.03       3.82 r
+  FloatingPointMultiplier1/mult/mult_8/FS_1/U214/ZN (OAI21_X1)
+                                                          0.03       3.85 f
+  FloatingPointMultiplier1/mult/mult_8/FS_1/U57/ZN (INV_X1)
+                                                          0.03       3.88 r
+  FloatingPointMultiplier1/mult/mult_8/FS_1/U10/ZN (NOR4_X1)
+                                                          0.02       3.90 f
+  FloatingPointMultiplier1/mult/mult_8/FS_1/U188/ZN (NOR2_X1)
+                                                          0.04       3.95 r
+  FloatingPointMultiplier1/mult/mult_8/FS_1/U13/Z (BUF_X1)
+                                                          0.05       3.99 r
+  FloatingPointMultiplier1/mult/mult_8/FS_1/U186/ZN (OAI21_X1)
+                                                          0.03       4.03 f
+  FloatingPointMultiplier1/mult/mult_8/FS_1/U178/ZN (AOI21_X1)
+                                                          0.05       4.08 r
+  FloatingPointMultiplier1/mult/mult_8/FS_1/U176/ZN (OAI21_X1)
+                                                          0.04       4.11 f
+  FloatingPointMultiplier1/mult/mult_8/FS_1/U11/ZN (XNOR2_X1)
+                                                          0.06       4.17 f
+  FloatingPointMultiplier1/mult/mult_8/FS_1/SUM[39] (MultiplierOperator_DW01_add_0)
+                                                          0.00       4.17 f
+  FloatingPointMultiplier1/mult/mult_8/PRODUCT[41] (MultiplierOperator_DW02_mult_0)
+                                                          0.00       4.17 f
+  FloatingPointMultiplier1/mult/P[41] (MultiplierOperator)
+                                                          0.00       4.17 f
+  FloatingPointMultiplier1/U35/Z (BUF_X1)                 0.04       4.22 f
+  FloatingPointMultiplier1/U269/ZN (NOR2_X1)              0.04       4.26 r
+  FloatingPointMultiplier1/U268/ZN (NAND2_X1)             0.03       4.29 f
+  FloatingPointMultiplier1/U281/ZN (NAND2_X1)             0.03       4.32 r
+  FloatingPointMultiplier1/U308/ZN (OAI222_X1)            0.05       4.37 f
+  FloatingPointMultiplier1/U75/ZN (OR2_X2)                0.06       4.44 f
+  FloatingPointMultiplier1/U279/ZN (NAND2_X1)             0.03       4.47 r
+  FloatingPointMultiplier1/U336/ZN (OAI222_X1)            0.05       4.52 f
+  FloatingPointMultiplier1/U318/ZN (INV_X1)               0.03       4.55 r
+  FloatingPointMultiplier1/U80/ZN (NAND2_X1)              0.04       4.59 f
+  FloatingPointMultiplier1/U277/Z (BUF_X2)                0.06       4.65 f
+  FloatingPointMultiplier1/U409/ZN (OAI222_X1)            0.07       4.72 r
+  FloatingPointMultiplier1/U297/ZN (INV_X1)               0.03       4.75 f
+  FloatingPointMultiplier1/U404/ZN (OAI222_X1)            0.05       4.80 r
+  FloatingPointMultiplier1/U316/ZN (INV_X1)               0.03       4.84 f
+  FloatingPointMultiplier1/U273/ZN (NAND2_X1)             0.04       4.87 r
+  FloatingPointMultiplier1/U361/ZN (NAND2_X1)             0.03       4.90 f
+  FloatingPointMultiplier1/U358/ZN (OAI222_X1)            0.05       4.95 r
+  FloatingPointMultiplier1/U317/ZN (INV_X1)               0.03       4.98 f
+  FloatingPointMultiplier1/U276/ZN (NAND2_X1)             0.03       5.01 r
+  FloatingPointMultiplier1/U263/ZN (NAND2_X1)             0.03       5.04 f
+  FloatingPointMultiplier1/U382/ZN (OAI222_X1)            0.06       5.10 r
+  FloatingPointMultiplier1/U319/ZN (INV_X1)               0.03       5.13 f
+  FloatingPointMultiplier1/U265/ZN (NAND2_X1)             0.03       5.16 r
+  FloatingPointMultiplier1/U264/Z (BUF_X1)                0.04       5.20 r
+  FloatingPointMultiplier1/U327/ZN (OAI222_X1)            0.05       5.25 f
+  FloatingPointMultiplier1/U345/ZN (INV_X1)               0.03       5.29 r
+  FloatingPointMultiplier1/U66/ZN (NAND2_X1)              0.04       5.33 f
+  FloatingPointMultiplier1/U340/ZN (INV_X1)               0.04       5.37 r
+  FloatingPointMultiplier1/U301/ZN (NAND2_X1)             0.04       5.41 f
+  FloatingPointMultiplier1/U303/ZN (OR2_X1)               0.06       5.47 f
+  FloatingPointMultiplier1/U311/ZN (NOR2_X1)              0.04       5.51 r
+  FloatingPointMultiplier1/add_9_root_sub_8_root_sub_67_I22_aco/U1_0/S (FA_X1)
+                                                          0.11       5.62 f
+  FloatingPointMultiplier1/U108/Z (XOR2_X1)               0.07       5.68 f
+  FloatingPointMultiplier1/U105/Z (XOR2_X1)               0.07       5.75 f
+  FloatingPointMultiplier1/sub_0_root_sub_8_root_sub_67_I22_aco/B[0] (FloatingPointMultiplier_DW01_sub_0)
+                                                          0.00       5.75 f
+  FloatingPointMultiplier1/sub_0_root_sub_8_root_sub_67_I22_aco/U20/ZN (INV_X1)
+                                                          0.03       5.78 r
+  FloatingPointMultiplier1/sub_0_root_sub_8_root_sub_67_I22_aco/U16/ZN (XNOR2_X1)
+                                                          0.05       5.83 r
+  FloatingPointMultiplier1/sub_0_root_sub_8_root_sub_67_I22_aco/DIFF[0] (FloatingPointMultiplier_DW01_sub_0)
+                                                          0.00       5.83 r
+  FloatingPointMultiplier1/U217/ZN (AOI22_X1)             0.03       5.86 f
+  FloatingPointMultiplier1/U210/ZN (INV_X1)               0.02       5.89 r
+  FloatingPointMultiplier1/result[23] (FloatingPointMultiplier)
+                                                          0.00       5.89 r
+  data arrival time                                                  5.89
+
+  clock clk (rise edge)                                   7.00       7.00
+  clock network delay (ideal)                             0.00       7.00
+  clock uncertainty                                      -0.20       6.80
+  output external delay                                  -0.35       6.45
+  data required time                                                 6.45
+  --------------------------------------------------------------------------
+  data required time                                                 6.45
+  data arrival time                                                 -5.89
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.56
+
+
+  Startpoint: FloatingPointMultiplier1/A[1]
+              (internal path startpoint clocked by clk)
+  Endpoint: FloatingPointMultiplier1/result[20]
+            (internal path endpoint clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  FloatingMultiplier_Integration
+                     5K_hvratio_1_1        NangateOpenCellLibrary_ss0p95vn40c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    0.35       0.35 f
+  FloatingPointMultiplier1/A[1] (FloatingPointMultiplier)
+                                                          0.00       0.35 f
+  FloatingPointMultiplier1/mult/A[1] (MultiplierOperator)
+                                                          0.00       0.35 f
+  FloatingPointMultiplier1/mult/mult_8/A[1] (MultiplierOperator_DW02_mult_0)
+                                                          0.00       0.35 f
+  FloatingPointMultiplier1/mult/mult_8/U3/ZN (INV_X1)     0.04       0.39 r
+  FloatingPointMultiplier1/mult/mult_8/U1077/ZN (NOR2_X1)
+                                                          0.04       0.44 f
+  FloatingPointMultiplier1/mult/mult_8/S0_20/S (FA_X1)
+                                                          0.12       0.55 r
+  FloatingPointMultiplier1/mult/mult_8/S2_2_19/S (FA_X1)
+                                                          0.10       0.66 f
+  FloatingPointMultiplier1/mult/mult_8/S2_3_18/CO (FA_X1)
+                                                          0.08       0.74 f
+  FloatingPointMultiplier1/mult/mult_8/S2_4_18/S (FA_X1)
+                                                          0.13       0.87 r
+  FloatingPointMultiplier1/mult/mult_8/S2_5_17/S (FA_X1)
+                                                          0.10       0.97 f
+  FloatingPointMultiplier1/mult/mult_8/S2_6_16/CO (FA_X1)
+                                                          0.08       1.06 f
+  FloatingPointMultiplier1/mult/mult_8/S2_7_16/S (FA_X1)
+                                                          0.13       1.19 r
+  FloatingPointMultiplier1/mult/mult_8/S2_8_15/S (FA_X1)
+                                                          0.10       1.29 f
+  FloatingPointMultiplier1/mult/mult_8/S2_9_14/CO (FA_X1)
+                                                          0.08       1.37 f
+  FloatingPointMultiplier1/mult/mult_8/S2_10_14/S (FA_X1)
+                                                          0.13       1.50 r
+  FloatingPointMultiplier1/mult/mult_8/S2_11_13/S (FA_X1)
+                                                          0.10       1.61 f
+  FloatingPointMultiplier1/mult/mult_8/S2_12_12/CO (FA_X1)
+                                                          0.08       1.69 f
+  FloatingPointMultiplier1/mult/mult_8/S2_13_12/S (FA_X1)
+                                                          0.13       1.82 r
+  FloatingPointMultiplier1/mult/mult_8/S2_14_11/S (FA_X1)
+                                                          0.10       1.92 f
+  FloatingPointMultiplier1/mult/mult_8/S2_15_10/S (FA_X1)
+                                                          0.12       2.04 r
+  FloatingPointMultiplier1/mult/mult_8/S2_16_9/S (FA_X1)
+                                                          0.10       2.14 f
+  FloatingPointMultiplier1/mult/mult_8/S2_17_8/S (FA_X1)
+                                                          0.12       2.26 r
+  FloatingPointMultiplier1/mult/mult_8/S2_18_7/S (FA_X1)
+                                                          0.10       2.36 f
+  FloatingPointMultiplier1/mult/mult_8/S2_19_6/CO (FA_X1)
+                                                          0.08       2.45 f
+  FloatingPointMultiplier1/mult/mult_8/S2_20_6/S (FA_X1)
+                                                          0.13       2.58 r
+  FloatingPointMultiplier1/mult/mult_8/S2_21_5/S (FA_X1)
+                                                          0.10       2.68 f
+  FloatingPointMultiplier1/mult/mult_8/S2_22_4/CO (FA_X1)
+                                                          0.08       2.76 f
+  FloatingPointMultiplier1/mult/mult_8/S2_23_4/CO (FA_X1)
+                                                          0.10       2.86 f
+  FloatingPointMultiplier1/mult/mult_8/S2_24_4/CO (FA_X1)
+                                                          0.10       2.95 f
+  FloatingPointMultiplier1/mult/mult_8/S2_25_4/CO (FA_X1)
+                                                          0.10       3.05 f
+  FloatingPointMultiplier1/mult/mult_8/S2_26_4/CO (FA_X1)
+                                                          0.10       3.15 f
+  FloatingPointMultiplier1/mult/mult_8/S2_27_4/CO (FA_X1)
+                                                          0.10       3.24 f
+  FloatingPointMultiplier1/mult/mult_8/S2_28_4/CO (FA_X1)
+                                                          0.10       3.34 f
+  FloatingPointMultiplier1/mult/mult_8/S2_29_4/S (FA_X1)
+                                                          0.13       3.46 r
+  FloatingPointMultiplier1/mult/mult_8/S2_30_3/S (FA_X1)
+                                                          0.10       3.56 f
+  FloatingPointMultiplier1/mult/mult_8/S4_2/S (FA_X1)     0.11       3.68 r
+  FloatingPointMultiplier1/mult/mult_8/S14_33/S (FA_X1)
+                                                          0.10       3.78 f
+  FloatingPointMultiplier1/mult/mult_8/FS_1/A[31] (MultiplierOperator_DW01_add_0)
+                                                          0.00       3.78 f
+  FloatingPointMultiplier1/mult/mult_8/FS_1/U217/ZN (NAND2_X1)
+                                                          0.03       3.82 r
+  FloatingPointMultiplier1/mult/mult_8/FS_1/U214/ZN (OAI21_X1)
+                                                          0.03       3.85 f
+  FloatingPointMultiplier1/mult/mult_8/FS_1/U57/ZN (INV_X1)
+                                                          0.03       3.88 r
+  FloatingPointMultiplier1/mult/mult_8/FS_1/U10/ZN (NOR4_X1)
+                                                          0.02       3.90 f
+  FloatingPointMultiplier1/mult/mult_8/FS_1/U188/ZN (NOR2_X1)
+                                                          0.04       3.95 r
+  FloatingPointMultiplier1/mult/mult_8/FS_1/U13/Z (BUF_X1)
+                                                          0.05       3.99 r
+  FloatingPointMultiplier1/mult/mult_8/FS_1/U186/ZN (OAI21_X1)
+                                                          0.03       4.03 f
+  FloatingPointMultiplier1/mult/mult_8/FS_1/U178/ZN (AOI21_X1)
+                                                          0.05       4.08 r
+  FloatingPointMultiplier1/mult/mult_8/FS_1/U176/ZN (OAI21_X1)
+                                                          0.04       4.11 f
+  FloatingPointMultiplier1/mult/mult_8/FS_1/U11/ZN (XNOR2_X1)
+                                                          0.06       4.17 f
+  FloatingPointMultiplier1/mult/mult_8/FS_1/SUM[39] (MultiplierOperator_DW01_add_0)
+                                                          0.00       4.17 f
+  FloatingPointMultiplier1/mult/mult_8/PRODUCT[41] (MultiplierOperator_DW02_mult_0)
+                                                          0.00       4.17 f
+  FloatingPointMultiplier1/mult/P[41] (MultiplierOperator)
+                                                          0.00       4.17 f
+  FloatingPointMultiplier1/U35/Z (BUF_X1)                 0.04       4.22 f
+  FloatingPointMultiplier1/U269/ZN (NOR2_X1)              0.04       4.26 r
+  FloatingPointMultiplier1/U268/ZN (NAND2_X1)             0.03       4.29 f
+  FloatingPointMultiplier1/U281/ZN (NAND2_X1)             0.03       4.32 r
+  FloatingPointMultiplier1/U308/ZN (OAI222_X1)            0.05       4.37 f
+  FloatingPointMultiplier1/U75/ZN (OR2_X2)                0.06       4.44 f
+  FloatingPointMultiplier1/U279/ZN (NAND2_X1)             0.03       4.47 r
+  FloatingPointMultiplier1/U336/ZN (OAI222_X1)            0.05       4.52 f
+  FloatingPointMultiplier1/U318/ZN (INV_X1)               0.03       4.55 r
+  FloatingPointMultiplier1/U80/ZN (NAND2_X1)              0.04       4.59 f
+  FloatingPointMultiplier1/U277/Z (BUF_X2)                0.06       4.65 f
+  FloatingPointMultiplier1/U409/ZN (OAI222_X1)            0.07       4.72 r
+  FloatingPointMultiplier1/U297/ZN (INV_X1)               0.03       4.75 f
+  FloatingPointMultiplier1/U404/ZN (OAI222_X1)            0.05       4.80 r
+  FloatingPointMultiplier1/U316/ZN (INV_X1)               0.03       4.84 f
+  FloatingPointMultiplier1/U273/ZN (NAND2_X1)             0.04       4.87 r
+  FloatingPointMultiplier1/U361/ZN (NAND2_X1)             0.03       4.90 f
+  FloatingPointMultiplier1/U358/ZN (OAI222_X1)            0.05       4.95 r
+  FloatingPointMultiplier1/U317/ZN (INV_X1)               0.03       4.98 f
+  FloatingPointMultiplier1/U276/ZN (NAND2_X1)             0.03       5.01 r
+  FloatingPointMultiplier1/U263/ZN (NAND2_X1)             0.03       5.04 f
+  FloatingPointMultiplier1/U382/ZN (OAI222_X1)            0.06       5.10 r
+  FloatingPointMultiplier1/U319/ZN (INV_X1)               0.03       5.13 f
+  FloatingPointMultiplier1/U265/ZN (NAND2_X1)             0.03       5.16 r
+  FloatingPointMultiplier1/U328/ZN (NAND2_X1)             0.04       5.20 f
+  FloatingPointMultiplier1/U327/ZN (OAI222_X1)            0.06       5.26 r
+  FloatingPointMultiplier1/U345/ZN (INV_X1)               0.03       5.29 f
+  FloatingPointMultiplier1/U77/ZN (NAND2_X1)              0.03       5.32 r
+  FloatingPointMultiplier1/U343/ZN (NAND2_X1)             0.03       5.35 f
+  FloatingPointMultiplier1/U342/ZN (OAI222_X1)            0.06       5.41 r
+  FloatingPointMultiplier1/U371/ZN (INV_X1)               0.04       5.44 f
+  FloatingPointMultiplier1/U304/ZN (NAND2_X1)             0.03       5.48 r
+  FloatingPointMultiplier1/U310/ZN (NAND2_X1)             0.03       5.51 f
+  FloatingPointMultiplier1/U111/ZN (OAI222_X1)            0.06       5.56 r
+  FloatingPointMultiplier1/U110/ZN (INV_X1)               0.03       5.60 f
+  FloatingPointMultiplier1/U364/ZN (NOR2_X1)              0.04       5.63 r
+  FloatingPointMultiplier1/result[20] (FloatingPointMultiplier)
+                                                          0.00       5.63 r
+  data arrival time                                                  5.63
+
+  clock clk (rise edge)                                   7.00       7.00
+  clock network delay (ideal)                             0.00       7.00
+  clock uncertainty                                      -0.20       6.80
+  output external delay                                  -0.35       6.45
+  data required time                                                 6.45
+  --------------------------------------------------------------------------
+  data required time                                                 6.45
+  data arrival time                                                 -5.63
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.82
+
+
+  Startpoint: FloatingPointMultiplier1/A[1]
+              (internal path startpoint clocked by clk)
+  Endpoint: FloatingPointMultiplier1/result[21]
+            (internal path endpoint clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  FloatingMultiplier_Integration
+                     5K_hvratio_1_1        NangateOpenCellLibrary_ss0p95vn40c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    0.35       0.35 f
+  FloatingPointMultiplier1/A[1] (FloatingPointMultiplier)
+                                                          0.00       0.35 f
+  FloatingPointMultiplier1/mult/A[1] (MultiplierOperator)
+                                                          0.00       0.35 f
+  FloatingPointMultiplier1/mult/mult_8/A[1] (MultiplierOperator_DW02_mult_0)
+                                                          0.00       0.35 f
+  FloatingPointMultiplier1/mult/mult_8/U3/ZN (INV_X1)     0.04       0.39 r
+  FloatingPointMultiplier1/mult/mult_8/U1077/ZN (NOR2_X1)
+                                                          0.04       0.44 f
+  FloatingPointMultiplier1/mult/mult_8/S0_20/S (FA_X1)
+                                                          0.12       0.55 r
+  FloatingPointMultiplier1/mult/mult_8/S2_2_19/S (FA_X1)
+                                                          0.10       0.66 f
+  FloatingPointMultiplier1/mult/mult_8/S2_3_18/CO (FA_X1)
+                                                          0.08       0.74 f
+  FloatingPointMultiplier1/mult/mult_8/S2_4_18/S (FA_X1)
+                                                          0.13       0.87 r
+  FloatingPointMultiplier1/mult/mult_8/S2_5_17/S (FA_X1)
+                                                          0.10       0.97 f
+  FloatingPointMultiplier1/mult/mult_8/S2_6_16/CO (FA_X1)
+                                                          0.08       1.06 f
+  FloatingPointMultiplier1/mult/mult_8/S2_7_16/S (FA_X1)
+                                                          0.13       1.19 r
+  FloatingPointMultiplier1/mult/mult_8/S2_8_15/S (FA_X1)
+                                                          0.10       1.29 f
+  FloatingPointMultiplier1/mult/mult_8/S2_9_14/CO (FA_X1)
+                                                          0.08       1.37 f
+  FloatingPointMultiplier1/mult/mult_8/S2_10_14/S (FA_X1)
+                                                          0.13       1.50 r
+  FloatingPointMultiplier1/mult/mult_8/S2_11_13/S (FA_X1)
+                                                          0.10       1.61 f
+  FloatingPointMultiplier1/mult/mult_8/S2_12_12/CO (FA_X1)
+                                                          0.08       1.69 f
+  FloatingPointMultiplier1/mult/mult_8/S2_13_12/S (FA_X1)
+                                                          0.13       1.82 r
+  FloatingPointMultiplier1/mult/mult_8/S2_14_11/S (FA_X1)
+                                                          0.10       1.92 f
+  FloatingPointMultiplier1/mult/mult_8/S2_15_10/S (FA_X1)
+                                                          0.12       2.04 r
+  FloatingPointMultiplier1/mult/mult_8/S2_16_9/S (FA_X1)
+                                                          0.10       2.14 f
+  FloatingPointMultiplier1/mult/mult_8/S2_17_8/S (FA_X1)
+                                                          0.12       2.26 r
+  FloatingPointMultiplier1/mult/mult_8/S2_18_7/S (FA_X1)
+                                                          0.10       2.36 f
+  FloatingPointMultiplier1/mult/mult_8/S2_19_6/CO (FA_X1)
+                                                          0.08       2.45 f
+  FloatingPointMultiplier1/mult/mult_8/S2_20_6/S (FA_X1)
+                                                          0.13       2.58 r
+  FloatingPointMultiplier1/mult/mult_8/S2_21_5/S (FA_X1)
+                                                          0.10       2.68 f
+  FloatingPointMultiplier1/mult/mult_8/S2_22_4/CO (FA_X1)
+                                                          0.08       2.76 f
+  FloatingPointMultiplier1/mult/mult_8/S2_23_4/CO (FA_X1)
+                                                          0.10       2.86 f
+  FloatingPointMultiplier1/mult/mult_8/S2_24_4/CO (FA_X1)
+                                                          0.10       2.95 f
+  FloatingPointMultiplier1/mult/mult_8/S2_25_4/CO (FA_X1)
+                                                          0.10       3.05 f
+  FloatingPointMultiplier1/mult/mult_8/S2_26_4/CO (FA_X1)
+                                                          0.10       3.15 f
+  FloatingPointMultiplier1/mult/mult_8/S2_27_4/CO (FA_X1)
+                                                          0.10       3.24 f
+  FloatingPointMultiplier1/mult/mult_8/S2_28_4/CO (FA_X1)
+                                                          0.10       3.34 f
+  FloatingPointMultiplier1/mult/mult_8/S2_29_4/S (FA_X1)
+                                                          0.13       3.46 r
+  FloatingPointMultiplier1/mult/mult_8/S2_30_3/S (FA_X1)
+                                                          0.10       3.56 f
+  FloatingPointMultiplier1/mult/mult_8/S4_2/S (FA_X1)     0.11       3.68 r
+  FloatingPointMultiplier1/mult/mult_8/S14_33/S (FA_X1)
+                                                          0.10       3.78 f
+  FloatingPointMultiplier1/mult/mult_8/FS_1/A[31] (MultiplierOperator_DW01_add_0)
+                                                          0.00       3.78 f
+  FloatingPointMultiplier1/mult/mult_8/FS_1/U217/ZN (NAND2_X1)
+                                                          0.03       3.82 r
+  FloatingPointMultiplier1/mult/mult_8/FS_1/U214/ZN (OAI21_X1)
+                                                          0.03       3.85 f
+  FloatingPointMultiplier1/mult/mult_8/FS_1/U57/ZN (INV_X1)
+                                                          0.03       3.88 r
+  FloatingPointMultiplier1/mult/mult_8/FS_1/U10/ZN (NOR4_X1)
+                                                          0.02       3.90 f
+  FloatingPointMultiplier1/mult/mult_8/FS_1/U188/ZN (NOR2_X1)
+                                                          0.04       3.95 r
+  FloatingPointMultiplier1/mult/mult_8/FS_1/U13/Z (BUF_X1)
+                                                          0.05       3.99 r
+  FloatingPointMultiplier1/mult/mult_8/FS_1/U186/ZN (OAI21_X1)
+                                                          0.03       4.03 f
+  FloatingPointMultiplier1/mult/mult_8/FS_1/U178/ZN (AOI21_X1)
+                                                          0.05       4.08 r
+  FloatingPointMultiplier1/mult/mult_8/FS_1/U176/ZN (OAI21_X1)
+                                                          0.04       4.11 f
+  FloatingPointMultiplier1/mult/mult_8/FS_1/U11/ZN (XNOR2_X1)
+                                                          0.06       4.17 f
+  FloatingPointMultiplier1/mult/mult_8/FS_1/SUM[39] (MultiplierOperator_DW01_add_0)
+                                                          0.00       4.17 f
+  FloatingPointMultiplier1/mult/mult_8/PRODUCT[41] (MultiplierOperator_DW02_mult_0)
+                                                          0.00       4.17 f
+  FloatingPointMultiplier1/mult/P[41] (MultiplierOperator)
+                                                          0.00       4.17 f
+  FloatingPointMultiplier1/U35/Z (BUF_X1)                 0.04       4.22 f
+  FloatingPointMultiplier1/U269/ZN (NOR2_X1)              0.04       4.26 r
+  FloatingPointMultiplier1/U268/ZN (NAND2_X1)             0.03       4.29 f
+  FloatingPointMultiplier1/U281/ZN (NAND2_X1)             0.03       4.32 r
+  FloatingPointMultiplier1/U308/ZN (OAI222_X1)            0.05       4.37 f
+  FloatingPointMultiplier1/U75/ZN (OR2_X2)                0.06       4.44 f
+  FloatingPointMultiplier1/U279/ZN (NAND2_X1)             0.03       4.47 r
+  FloatingPointMultiplier1/U336/ZN (OAI222_X1)            0.05       4.52 f
+  FloatingPointMultiplier1/U318/ZN (INV_X1)               0.03       4.55 r
+  FloatingPointMultiplier1/U80/ZN (NAND2_X1)              0.04       4.59 f
+  FloatingPointMultiplier1/U277/Z (BUF_X2)                0.06       4.65 f
+  FloatingPointMultiplier1/U409/ZN (OAI222_X1)            0.07       4.72 r
+  FloatingPointMultiplier1/U297/ZN (INV_X1)               0.03       4.75 f
+  FloatingPointMultiplier1/U404/ZN (OAI222_X1)            0.05       4.80 r
+  FloatingPointMultiplier1/U316/ZN (INV_X1)               0.03       4.84 f
+  FloatingPointMultiplier1/U273/ZN (NAND2_X1)             0.04       4.87 r
+  FloatingPointMultiplier1/U361/ZN (NAND2_X1)             0.03       4.90 f
+  FloatingPointMultiplier1/U358/ZN (OAI222_X1)            0.05       4.95 r
+  FloatingPointMultiplier1/U317/ZN (INV_X1)               0.03       4.98 f
+  FloatingPointMultiplier1/U276/ZN (NAND2_X1)             0.03       5.01 r
+  FloatingPointMultiplier1/U263/ZN (NAND2_X1)             0.03       5.04 f
+  FloatingPointMultiplier1/U382/ZN (OAI222_X1)            0.06       5.10 r
+  FloatingPointMultiplier1/U319/ZN (INV_X1)               0.03       5.13 f
+  FloatingPointMultiplier1/U265/ZN (NAND2_X1)             0.03       5.16 r
+  FloatingPointMultiplier1/U328/ZN (NAND2_X1)             0.04       5.20 f
+  FloatingPointMultiplier1/U327/ZN (OAI222_X1)            0.06       5.26 r
+  FloatingPointMultiplier1/U345/ZN (INV_X1)               0.03       5.29 f
+  FloatingPointMultiplier1/U77/ZN (NAND2_X1)              0.03       5.32 r
+  FloatingPointMultiplier1/U343/ZN (NAND2_X1)             0.03       5.35 f
+  FloatingPointMultiplier1/U342/ZN (OAI222_X1)            0.06       5.41 r
+  FloatingPointMultiplier1/U371/ZN (INV_X1)               0.04       5.44 f
+  FloatingPointMultiplier1/U304/ZN (NAND2_X1)             0.03       5.48 r
+  FloatingPointMultiplier1/U310/ZN (NAND2_X1)             0.03       5.51 f
+  FloatingPointMultiplier1/U111/ZN (OAI222_X1)            0.06       5.56 r
+  FloatingPointMultiplier1/U110/ZN (INV_X1)               0.03       5.60 f
+  FloatingPointMultiplier1/U369/ZN (NAND2_X1)             0.03       5.63 r
+  FloatingPointMultiplier1/result[21] (FloatingPointMultiplier)
+                                                          0.00       5.63 r
+  data arrival time                                                  5.63
+
+  clock clk (rise edge)                                   7.00       7.00
+  clock network delay (ideal)                             0.00       7.00
+  clock uncertainty                                      -0.20       6.80
+  output external delay                                  -0.35       6.45
+  data required time                                                 6.45
+  --------------------------------------------------------------------------
+  data required time                                                 6.45
+  data arrival time                                                 -5.63
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.82
+
+
+1

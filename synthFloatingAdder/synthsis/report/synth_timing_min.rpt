@@ -1,0 +1,395 @@
+Information: Updating design information... (UID-85)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay min
+        -max_paths 10
+Design : FloatingAdder_Integration
+Version: G-2012.06-SP2
+Date   : Fri Mar 10 00:39:41 2017
+****************************************
+
+Operating Conditions: worst_low   Library: NangateOpenCellLibrary_ss0p95vn40c
+Wire Load Model Mode: top
+
+  Startpoint: FloatingPointAdder1/B[31]
+              (internal path startpoint clocked by clk)
+  Endpoint: FloatingPointAdder1/result[31]
+            (internal path endpoint clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  FloatingAdder_Integration
+                     5K_hvratio_1_1        NangateOpenCellLibrary_ss0p95vn40c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    0.35       0.35 r
+  FloatingPointAdder1/B[31] (FloatingPointAdder)          0.00       0.35 r
+  FloatingPointAdder1/U360/ZN (AOI22_X1)                  0.01       0.36 f
+  FloatingPointAdder1/U327/ZN (INV_X1)                    0.02       0.38 r
+  FloatingPointAdder1/result[31] (FloatingPointAdder)     0.00       0.38 r
+  data arrival time                                                  0.38
+
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.20       0.20
+  output external delay                                  -0.35      -0.15
+  data required time                                                -0.15
+  --------------------------------------------------------------------------
+  data required time                                                -0.15
+  data arrival time                                                 -0.38
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.53
+
+
+  Startpoint: FloatingPointAdder1/B[30]
+              (internal path startpoint clocked by clk)
+  Endpoint: FloatingPointAdder1/result[30]
+            (internal path endpoint clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  FloatingAdder_Integration
+                     5K_hvratio_1_1        NangateOpenCellLibrary_ss0p95vn40c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    0.35       0.35 r
+  FloatingPointAdder1/B[30] (FloatingPointAdder)          0.00       0.35 r
+  FloatingPointAdder1/U335/Z (MUX2_X1)                    0.04       0.39 r
+  FloatingPointAdder1/U148/ZN (NAND2_X1)                  0.03       0.42 f
+  FloatingPointAdder1/U149/ZN (NAND2_X1)                  0.02       0.44 r
+  FloatingPointAdder1/result[30] (FloatingPointAdder)     0.00       0.44 r
+  data arrival time                                                  0.44
+
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.20       0.20
+  output external delay                                  -0.35      -0.15
+  data required time                                                -0.15
+  --------------------------------------------------------------------------
+  data required time                                                -0.15
+  data arrival time                                                 -0.44
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.59
+
+
+  Startpoint: FloatingPointAdder1/B[29]
+              (internal path startpoint clocked by clk)
+  Endpoint: FloatingPointAdder1/result[29]
+            (internal path endpoint clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  FloatingAdder_Integration
+                     5K_hvratio_1_1        NangateOpenCellLibrary_ss0p95vn40c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    0.35       0.35 r
+  FloatingPointAdder1/B[29] (FloatingPointAdder)          0.00       0.35 r
+  FloatingPointAdder1/U334/Z (MUX2_X1)                    0.04       0.39 r
+  FloatingPointAdder1/U151/ZN (NAND2_X1)                  0.03       0.42 f
+  FloatingPointAdder1/U152/ZN (NAND2_X1)                  0.03       0.45 r
+  FloatingPointAdder1/result[29] (FloatingPointAdder)     0.00       0.45 r
+  data arrival time                                                  0.45
+
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.20       0.20
+  output external delay                                  -0.35      -0.15
+  data required time                                                -0.15
+  --------------------------------------------------------------------------
+  data required time                                                -0.15
+  data arrival time                                                 -0.45
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.60
+
+
+  Startpoint: FloatingPointAdder1/B[26]
+              (internal path startpoint clocked by clk)
+  Endpoint: FloatingPointAdder1/result[26]
+            (internal path endpoint clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  FloatingAdder_Integration
+                     5K_hvratio_1_1        NangateOpenCellLibrary_ss0p95vn40c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    0.35       0.35 f
+  FloatingPointAdder1/B[26] (FloatingPointAdder)          0.00       0.35 f
+  FloatingPointAdder1/U677/ZN (INV_X1)                    0.01       0.36 r
+  FloatingPointAdder1/U678/Z (MUX2_X1)                    0.05       0.41 r
+  FloatingPointAdder1/U746/ZN (INV_X1)                    0.02       0.43 f
+  FloatingPointAdder1/U747/Z (MUX2_X1)                    0.05       0.48 f
+  FloatingPointAdder1/result[26] (FloatingPointAdder)     0.00       0.48 f
+  data arrival time                                                  0.48
+
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.20       0.20
+  output external delay                                  -0.35      -0.15
+  data required time                                                -0.15
+  --------------------------------------------------------------------------
+  data required time                                                -0.15
+  data arrival time                                                 -0.48
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.63
+
+
+  Startpoint: FloatingPointAdder1/B[27]
+              (internal path startpoint clocked by clk)
+  Endpoint: FloatingPointAdder1/result[27]
+            (internal path endpoint clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  FloatingAdder_Integration
+                     5K_hvratio_1_1        NangateOpenCellLibrary_ss0p95vn40c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    0.35       0.35 f
+  FloatingPointAdder1/B[27] (FloatingPointAdder)          0.00       0.35 f
+  FloatingPointAdder1/U682/ZN (INV_X1)                    0.01       0.36 r
+  FloatingPointAdder1/U683/Z (MUX2_X1)                    0.05       0.41 r
+  FloatingPointAdder1/U748/ZN (INV_X1)                    0.02       0.43 f
+  FloatingPointAdder1/U749/Z (MUX2_X1)                    0.05       0.48 f
+  FloatingPointAdder1/result[27] (FloatingPointAdder)     0.00       0.48 f
+  data arrival time                                                  0.48
+
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.20       0.20
+  output external delay                                  -0.35      -0.15
+  data required time                                                -0.15
+  --------------------------------------------------------------------------
+  data required time                                                -0.15
+  data arrival time                                                 -0.48
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.63
+
+
+  Startpoint: FloatingPointAdder1/B[28]
+              (internal path startpoint clocked by clk)
+  Endpoint: FloatingPointAdder1/result[28]
+            (internal path endpoint clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  FloatingAdder_Integration
+                     5K_hvratio_1_1        NangateOpenCellLibrary_ss0p95vn40c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    0.35       0.35 f
+  FloatingPointAdder1/B[28] (FloatingPointAdder)          0.00       0.35 f
+  FloatingPointAdder1/U687/ZN (INV_X1)                    0.01       0.36 r
+  FloatingPointAdder1/U688/Z (MUX2_X1)                    0.05       0.41 r
+  FloatingPointAdder1/U750/ZN (INV_X1)                    0.02       0.43 f
+  FloatingPointAdder1/U751/Z (MUX2_X1)                    0.05       0.48 f
+  FloatingPointAdder1/result[28] (FloatingPointAdder)     0.00       0.48 f
+  data arrival time                                                  0.48
+
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.20       0.20
+  output external delay                                  -0.35      -0.15
+  data required time                                                -0.15
+  --------------------------------------------------------------------------
+  data required time                                                -0.15
+  data arrival time                                                 -0.48
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.63
+
+
+  Startpoint: FloatingPointAdder1/B[24]
+              (internal path startpoint clocked by clk)
+  Endpoint: FloatingPointAdder1/result[24]
+            (internal path endpoint clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  FloatingAdder_Integration
+                     5K_hvratio_1_1        NangateOpenCellLibrary_ss0p95vn40c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    0.35       0.35 f
+  FloatingPointAdder1/B[24] (FloatingPointAdder)          0.00       0.35 f
+  FloatingPointAdder1/U666/ZN (INV_X1)                    0.01       0.36 r
+  FloatingPointAdder1/U667/Z (MUX2_X1)                    0.04       0.40 r
+  FloatingPointAdder1/U668/ZN (INV_X1)                    0.03       0.43 f
+  FloatingPointAdder1/U744/Z (MUX2_X1)                    0.06       0.49 f
+  FloatingPointAdder1/result[24] (FloatingPointAdder)     0.00       0.49 f
+  data arrival time                                                  0.49
+
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.20       0.20
+  output external delay                                  -0.35      -0.15
+  data required time                                                -0.15
+  --------------------------------------------------------------------------
+  data required time                                                -0.15
+  data arrival time                                                 -0.49
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.64
+
+
+  Startpoint: FloatingPointAdder1/B[25]
+              (internal path startpoint clocked by clk)
+  Endpoint: FloatingPointAdder1/result[25]
+            (internal path endpoint clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  FloatingAdder_Integration
+                     5K_hvratio_1_1        NangateOpenCellLibrary_ss0p95vn40c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    0.35       0.35 f
+  FloatingPointAdder1/B[25] (FloatingPointAdder)          0.00       0.35 f
+  FloatingPointAdder1/U674/ZN (INV_X1)                    0.01       0.36 r
+  FloatingPointAdder1/U675/Z (MUX2_X1)                    0.05       0.40 r
+  FloatingPointAdder1/U231/ZN (INV_X1)                    0.03       0.43 f
+  FloatingPointAdder1/U745/Z (MUX2_X1)                    0.06       0.49 f
+  FloatingPointAdder1/result[25] (FloatingPointAdder)     0.00       0.49 f
+  data arrival time                                                  0.49
+
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.20       0.20
+  output external delay                                  -0.35      -0.15
+  data required time                                                -0.15
+  --------------------------------------------------------------------------
+  data required time                                                -0.15
+  data arrival time                                                 -0.49
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.64
+
+
+  Startpoint: FloatingPointAdder1/B[23]
+              (internal path startpoint clocked by clk)
+  Endpoint: FloatingPointAdder1/result[23]
+            (internal path endpoint clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  FloatingAdder_Integration
+                     5K_hvratio_1_1        NangateOpenCellLibrary_ss0p95vn40c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    0.35       0.35 f
+  FloatingPointAdder1/B[23] (FloatingPointAdder)          0.00       0.35 f
+  FloatingPointAdder1/U670/ZN (INV_X1)                    0.01       0.36 r
+  FloatingPointAdder1/U671/Z (MUX2_X1)                    0.05       0.41 r
+  FloatingPointAdder1/U696/ZN (INV_X1)                    0.03       0.44 f
+  FloatingPointAdder1/U743/Z (MUX2_X1)                    0.06       0.49 f
+  FloatingPointAdder1/result[23] (FloatingPointAdder)     0.00       0.49 f
+  data arrival time                                                  0.49
+
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.20       0.20
+  output external delay                                  -0.35      -0.15
+  data required time                                                -0.15
+  --------------------------------------------------------------------------
+  data required time                                                -0.15
+  data arrival time                                                 -0.49
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.64
+
+
+  Startpoint: FloatingPointAdder1/B[0]
+              (internal path startpoint clocked by clk)
+  Endpoint: FloatingPointAdder1/result[1]
+            (internal path endpoint clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  FloatingAdder_Integration
+                     5K_hvratio_1_1        NangateOpenCellLibrary_ss0p95vn40c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    0.35       0.35 r
+  FloatingPointAdder1/B[0] (FloatingPointAdder)           0.00       0.35 r
+  FloatingPointAdder1/U181/Z (MUX2_X2)                    0.04       0.39 r
+  FloatingPointAdder1/fraction_sub21/B[0] (PlusOperatorAdder_1)
+                                                          0.00       0.39 r
+  FloatingPointAdder1/fraction_sub21/add_1_root_add_9_2/B[0] (PlusOperatorAdder_1_DW01_add_1)
+                                                          0.00       0.39 r
+  FloatingPointAdder1/fraction_sub21/add_1_root_add_9_2/U183/ZN (OR2_X1)
+                                                          0.04       0.43 r
+  FloatingPointAdder1/fraction_sub21/add_1_root_add_9_2/U100/ZN (NAND2_X1)
+                                                          0.03       0.46 f
+  FloatingPointAdder1/fraction_sub21/add_1_root_add_9_2/U147/ZN (XNOR2_X1)
+                                                          0.04       0.50 r
+  FloatingPointAdder1/fraction_sub21/add_1_root_add_9_2/SUM[0] (PlusOperatorAdder_1_DW01_add_1)
+                                                          0.00       0.50 r
+  FloatingPointAdder1/fraction_sub21/Sum[0] (PlusOperatorAdder_1)
+                                                          0.00       0.50 r
+  FloatingPointAdder1/U439/ZN (AOI222_X1)                 0.04       0.54 f
+  FloatingPointAdder1/U444/ZN (OAI22_X1)                  0.04       0.58 r
+  FloatingPointAdder1/result[1] (FloatingPointAdder)      0.00       0.58 r
+  data arrival time                                                  0.58
+
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.20       0.20
+  output external delay                                  -0.35      -0.15
+  data required time                                                -0.15
+  --------------------------------------------------------------------------
+  data required time                                                -0.15
+  data arrival time                                                 -0.58
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.73
+
+
+1

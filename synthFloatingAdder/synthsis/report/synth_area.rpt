@@ -1,0 +1,29 @@
+ 
+****************************************
+Report : area
+Design : FloatingAdder_Integration
+Version: G-2012.06-SP2
+Date   : Fri Mar 10 00:39:41 2017
+****************************************
+
+Library(s) Used:
+
+    NangateOpenCellLibrary_ss0p95vn40c (File: /home/ahesham/phase3/johnson/NangateOpenCellLibrary_PDKv1_3_v2010_12/lib/Front_End/Liberty/NLDM/NangateOpenCellLibrary_ss0p95vn40c.db)
+
+Number of ports:                           97
+Number of nets:                           193
+Number of cells:                           97
+Number of combinational cells:              0
+Number of sequential cells:                96
+Number of macros:                           0
+Number of buf/inv:                          0
+Number of references:                       2
+
+Combinational area:       2443.741989
+Buf/Inv area:              418.152002
+Noncombinational area:     604.351990
+Net Interconnect area:      undefined  (Wire load has zero net area)
+
+Total cell area:          3048.093979
+Total area:                 undefined
+1

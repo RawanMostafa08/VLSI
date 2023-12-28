@@ -1,0 +1,29 @@
+ 
+****************************************
+Report : area
+Design : FloatingMultiplier_Integration
+Version: G-2012.06-SP2
+Date   : Fri Mar 10 01:08:39 2017
+****************************************
+
+Library(s) Used:
+
+    NangateOpenCellLibrary_ss0p95vn40c (File: /home/ahesham/phase3/johnson/NangateOpenCellLibrary_PDKv1_3_v2010_12/lib/Front_End/Liberty/NLDM/NangateOpenCellLibrary_ss0p95vn40c.db)
+
+Number of ports:                           97
+Number of nets:                           193
+Number of cells:                           97
+Number of combinational cells:              0
+Number of sequential cells:                96
+Number of macros:                           0
+Number of buf/inv:                          0
+Number of references:                       2
+
+Combinational area:       6060.544010
+Buf/Inv area:              362.291997
+Noncombinational area:     434.111984
+Net Interconnect area:      undefined  (Wire load has zero net area)
+
+Total cell area:          6494.655995
+Total area:                 undefined
+1

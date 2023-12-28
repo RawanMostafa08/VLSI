@@ -4,12 +4,16 @@ module FloatingPointadder_tb;
     wire signed [31:0] result;
     integer success_cases = 0;
     integer i;
-
-    FloatingPointAdder u1 (
-        .A(A),
-        .B(B),
-        .result(result)
+    reg clk = 0;
+    FloatingAdder_Integration u1 (
+        .clk(clk),
+        .input1(A),
+        .input2(B),
+        .output1(result)
     );
+
+      always #1 clk = ~clk;
+
 
     initial begin
         // Test Case 1: Overflow of positive numbers

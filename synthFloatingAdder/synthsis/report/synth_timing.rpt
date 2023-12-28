@@ -1,0 +1,1602 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 10
+Design : FloatingAdder_Integration
+Version: G-2012.06-SP2
+Date   : Fri Mar 10 00:39:41 2017
+****************************************
+
+Operating Conditions: worst_low   Library: NangateOpenCellLibrary_ss0p95vn40c
+Wire Load Model Mode: top
+
+  Startpoint: FloatingPointAdder1/A[23]
+              (internal path startpoint clocked by clk)
+  Endpoint: FloatingPointAdder1/result[30]
+            (internal path endpoint clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  FloatingAdder_Integration
+                     5K_hvratio_1_1        NangateOpenCellLibrary_ss0p95vn40c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    0.35       0.35 f
+  FloatingPointAdder1/A[23] (FloatingPointAdder)          0.00       0.35 f
+  FloatingPointAdder1/sub_49/A[0] (FloatingPointAdder_DW01_sub_6)
+                                                          0.00       0.35 f
+  FloatingPointAdder1/sub_49/U24/ZN (INV_X1)              0.01       0.36 r
+  FloatingPointAdder1/sub_49/U17/ZN (AND2_X1)             0.04       0.40 r
+  FloatingPointAdder1/sub_49/U12/ZN (AND2_X2)             0.05       0.44 r
+  FloatingPointAdder1/sub_49/U53/ZN (OAI21_X1)            0.03       0.47 f
+  FloatingPointAdder1/sub_49/U67/ZN (INV_X1)              0.02       0.50 r
+  FloatingPointAdder1/sub_49/U52/ZN (OAI21_X1)            0.02       0.52 f
+  FloatingPointAdder1/sub_49/U65/ZN (INV_X1)              0.03       0.55 r
+  FloatingPointAdder1/sub_49/U4/Z (CLKBUF_X1)             0.04       0.58 r
+  FloatingPointAdder1/sub_49/U14/ZN (OAI21_X1)            0.03       0.61 f
+  FloatingPointAdder1/sub_49/U64/ZN (XNOR2_X1)            0.05       0.67 f
+  FloatingPointAdder1/sub_49/DIFF[4] (FloatingPointAdder_DW01_sub_6)
+                                                          0.00       0.67 f
+  FloatingPointAdder1/U154/ZN (OR2_X1)                    0.06       0.72 f
+  FloatingPointAdder1/U8/ZN (OR2_X1)                      0.05       0.78 f
+  FloatingPointAdder1/U379/Z (XOR2_X1)                    0.07       0.85 f
+  FloatingPointAdder1/sra_52/SH[6] (FloatingPointAdder_DW_rash_1)
+                                                          0.00       0.85 f
+  FloatingPointAdder1/sra_52/U24/ZN (OR2_X1)              0.06       0.91 f
+  FloatingPointAdder1/sra_52/U25/ZN (OR2_X2)              0.06       0.96 f
+  FloatingPointAdder1/sra_52/U185/ZN (NAND2_X1)           0.04       1.01 r
+  FloatingPointAdder1/sra_52/U129/ZN (OAI222_X1)          0.05       1.06 f
+  FloatingPointAdder1/sra_52/U128/Z (MUX2_X1)             0.06       1.12 f
+  FloatingPointAdder1/sra_52/U127/ZN (AOI21_X1)           0.04       1.16 r
+  FloatingPointAdder1/sra_52/U126/ZN (OAI21_X1)           0.03       1.19 f
+  FloatingPointAdder1/sra_52/B[1] (FloatingPointAdder_DW_rash_1)
+                                                          0.00       1.19 f
+  FloatingPointAdder1/U86/Z (MUX2_X1)                     0.07       1.27 f
+  FloatingPointAdder1/fraction_sub12/A[1] (PlusOperatorAdder_2)
+                                                          0.00       1.27 f
+  FloatingPointAdder1/fraction_sub12/add_1_root_add_9_2/A[1] (PlusOperatorAdder_2_DW01_add_1)
+                                                          0.00       1.27 f
+  FloatingPointAdder1/fraction_sub12/add_1_root_add_9_2/U175/ZN (OR2_X1)
+                                                          0.07       1.34 f
+  FloatingPointAdder1/fraction_sub12/add_1_root_add_9_2/U280/ZN (INV_X1)
+                                                          0.03       1.37 r
+  FloatingPointAdder1/fraction_sub12/add_1_root_add_9_2/U80/ZN (OAI21_X1)
+                                                          0.03       1.40 f
+  FloatingPointAdder1/fraction_sub12/add_1_root_add_9_2/U79/ZN (AOI21_X1)
+                                                          0.03       1.43 r
+  FloatingPointAdder1/fraction_sub12/add_1_root_add_9_2/U78/ZN (OAI21_X1)
+                                                          0.04       1.47 f
+  FloatingPointAdder1/fraction_sub12/add_1_root_add_9_2/U34/ZN (AOI21_X1)
+                                                          0.04       1.51 r
+  FloatingPointAdder1/fraction_sub12/add_1_root_add_9_2/U58/ZN (OAI211_X1)
+                                                          0.03       1.54 f
+  FloatingPointAdder1/fraction_sub12/add_1_root_add_9_2/U57/ZN (AOI21_X1)
+                                                          0.04       1.58 r
+  FloatingPointAdder1/fraction_sub12/add_1_root_add_9_2/U56/ZN (OAI21_X1)
+                                                          0.03       1.61 f
+  FloatingPointAdder1/fraction_sub12/add_1_root_add_9_2/U55/ZN (AOI21_X1)
+                                                          0.03       1.64 r
+  FloatingPointAdder1/fraction_sub12/add_1_root_add_9_2/U54/ZN (OAI21_X1)
+                                                          0.04       1.68 f
+  FloatingPointAdder1/fraction_sub12/add_1_root_add_9_2/U61/ZN (NAND2_X1)
+                                                          0.04       1.71 r
+  FloatingPointAdder1/fraction_sub12/add_1_root_add_9_2/U5/ZN (NAND2_X1)
+                                                          0.03       1.74 f
+  FloatingPointAdder1/fraction_sub12/add_1_root_add_9_2/U6/ZN (AND2_X1)
+                                                          0.03       1.78 f
+  FloatingPointAdder1/fraction_sub12/add_1_root_add_9_2/U59/ZN (XNOR2_X1)
+                                                          0.05       1.83 f
+  FloatingPointAdder1/fraction_sub12/add_1_root_add_9_2/SUM[21] (PlusOperatorAdder_2_DW01_add_1)
+                                                          0.00       1.83 f
+  FloatingPointAdder1/fraction_sub12/Sum[21] (PlusOperatorAdder_2)
+                                                          0.00       1.83 f
+  FloatingPointAdder1/U349/ZN (AOI222_X1)                 0.08       1.91 r
+  FloatingPointAdder1/U441/ZN (NAND2_X1)                  0.04       1.95 f
+  FloatingPointAdder1/U442/ZN (NAND2_X1)                  0.04       1.98 r
+  FloatingPointAdder1/U452/ZN (OAI222_X1)                 0.05       2.04 f
+  FloatingPointAdder1/U453/ZN (INV_X1)                    0.04       2.07 r
+  FloatingPointAdder1/U356/ZN (NAND2_X1)                  0.03       2.11 f
+  FloatingPointAdder1/U354/ZN (NAND2_X1)                  0.03       2.14 r
+  FloatingPointAdder1/U72/Z (BUF_X1)                      0.04       2.18 r
+  FloatingPointAdder1/U491/ZN (OAI222_X1)                 0.04       2.22 f
+  FloatingPointAdder1/U492/ZN (INV_X1)                    0.04       2.26 r
+  FloatingPointAdder1/U493/ZN (OAI222_X1)                 0.05       2.31 f
+  FloatingPointAdder1/U494/ZN (INV_X1)                    0.03       2.35 r
+  FloatingPointAdder1/U177/ZN (NAND2_X1)                  0.03       2.38 f
+  FloatingPointAdder1/U350/ZN (NAND2_X1)                  0.03       2.41 r
+  FloatingPointAdder1/U528/ZN (OAI222_X1)                 0.04       2.46 f
+  FloatingPointAdder1/U529/ZN (INV_X1)                    0.04       2.49 r
+  FloatingPointAdder1/U348/ZN (NAND2_X1)                  0.03       2.53 f
+  FloatingPointAdder1/U184/ZN (NAND2_X1)                  0.03       2.56 r
+  FloatingPointAdder1/U27/Z (BUF_X2)                      0.06       2.61 r
+  FloatingPointAdder1/U180/ZN (OAI222_X1)                 0.05       2.67 f
+  FloatingPointAdder1/U571/ZN (INV_X1)                    0.04       2.70 r
+  FloatingPointAdder1/U309/ZN (AND2_X1)                   0.05       2.75 r
+  FloatingPointAdder1/U341/Z (BUF_X1)                     0.04       2.79 r
+  FloatingPointAdder1/U344/ZN (NAND2_X1)                  0.04       2.82 f
+  FloatingPointAdder1/U597/ZN (NAND2_X1)                  0.04       2.86 r
+  FloatingPointAdder1/U40/ZN (OAI222_X1)                  0.04       2.91 f
+  FloatingPointAdder1/U623/ZN (INV_X1)                    0.04       2.94 r
+  FloatingPointAdder1/U190/ZN (NAND2_X1)                  0.03       2.98 f
+  FloatingPointAdder1/U238/ZN (INV_X1)                    0.03       3.00 r
+  FloatingPointAdder1/U304/ZN (AND2_X2)                   0.04       3.04 r
+  FloatingPointAdder1/U108/Z (BUF_X1)                     0.04       3.09 r
+  FloatingPointAdder1/U639/ZN (NAND2_X1)                  0.04       3.13 f
+  FloatingPointAdder1/U651/ZN (OAI222_X1)                 0.05       3.18 r
+  FloatingPointAdder1/U652/ZN (INV_X1)                    0.04       3.21 f
+  FloatingPointAdder1/U241/ZN (AND2_X1)                   0.04       3.25 f
+  FloatingPointAdder1/U658/ZN (NAND2_X1)                  0.02       3.28 r
+  FloatingPointAdder1/U77/ZN (NAND2_X1)                   0.03       3.31 f
+  FloatingPointAdder1/U713/ZN (INV_X1)                    0.03       3.33 r
+  FloatingPointAdder1/U15/ZN (AND2_X1)                    0.04       3.38 r
+  FloatingPointAdder1/U255/ZN (XNOR2_X1)                  0.06       3.43 r
+  FloatingPointAdder1/U727/Z (XOR2_X1)                    0.06       3.49 r
+  FloatingPointAdder1/U245/ZN (NAND2_X1)                  0.03       3.52 f
+  FloatingPointAdder1/sub_0_root_sub_8_root_sub_84_I22_aco/B[1] (FloatingPointAdder_DW01_sub_7)
+                                                          0.00       3.52 f
+  FloatingPointAdder1/sub_0_root_sub_8_root_sub_84_I22_aco/U40/ZN (INV_X1)
+                                                          0.03       3.55 r
+  FloatingPointAdder1/sub_0_root_sub_8_root_sub_84_I22_aco/U43/ZN (NAND2_X1)
+                                                          0.03       3.58 f
+  FloatingPointAdder1/sub_0_root_sub_8_root_sub_84_I22_aco/U42/ZN (OAI21_X1)
+                                                          0.03       3.61 r
+  FloatingPointAdder1/sub_0_root_sub_8_root_sub_84_I22_aco/U54/ZN (INV_X1)
+                                                          0.03       3.64 f
+  FloatingPointAdder1/sub_0_root_sub_8_root_sub_84_I22_aco/U36/ZN (OAI21_X1)
+                                                          0.03       3.67 r
+  FloatingPointAdder1/sub_0_root_sub_8_root_sub_84_I22_aco/U53/ZN (INV_X1)
+                                                          0.03       3.70 f
+  FloatingPointAdder1/sub_0_root_sub_8_root_sub_84_I22_aco/U45/ZN (OAI21_X1)
+                                                          0.04       3.74 r
+  FloatingPointAdder1/sub_0_root_sub_8_root_sub_84_I22_aco/U50/ZN (INV_X1)
+                                                          0.03       3.76 f
+  FloatingPointAdder1/sub_0_root_sub_8_root_sub_84_I22_aco/U9/ZN (OAI21_X1)
+                                                          0.03       3.80 r
+  FloatingPointAdder1/sub_0_root_sub_8_root_sub_84_I22_aco/U18/ZN (NOR2_X1)
+                                                          0.02       3.82 f
+  FloatingPointAdder1/sub_0_root_sub_8_root_sub_84_I22_aco/U17/ZN (NAND2_X1)
+                                                          0.03       3.85 r
+  FloatingPointAdder1/sub_0_root_sub_8_root_sub_84_I22_aco/U21/ZN (XNOR2_X1)
+                                                          0.05       3.90 r
+  FloatingPointAdder1/sub_0_root_sub_8_root_sub_84_I22_aco/DIFF[7] (FloatingPointAdder_DW01_sub_7)
+                                                          0.00       3.90 r
+  FloatingPointAdder1/U147/ZN (NAND2_X1)                  0.03       3.93 f
+  FloatingPointAdder1/U149/ZN (NAND2_X1)                  0.02       3.95 r
+  FloatingPointAdder1/result[30] (FloatingPointAdder)     0.00       3.95 r
+  data arrival time                                                  3.95
+
+  clock clk (rise edge)                                   4.50       4.50
+  clock network delay (ideal)                             0.00       4.50
+  clock uncertainty                                      -0.20       4.30
+  output external delay                                  -0.35       3.95
+  data required time                                                 3.95
+  --------------------------------------------------------------------------
+  data required time                                                 3.95
+  data arrival time                                                 -3.95
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.00
+
+
+  Startpoint: FloatingPointAdder1/A[23]
+              (internal path startpoint clocked by clk)
+  Endpoint: FloatingPointAdder1/result[29]
+            (internal path endpoint clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  FloatingAdder_Integration
+                     5K_hvratio_1_1        NangateOpenCellLibrary_ss0p95vn40c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    0.35       0.35 f
+  FloatingPointAdder1/A[23] (FloatingPointAdder)          0.00       0.35 f
+  FloatingPointAdder1/sub_49/A[0] (FloatingPointAdder_DW01_sub_6)
+                                                          0.00       0.35 f
+  FloatingPointAdder1/sub_49/U24/ZN (INV_X1)              0.01       0.36 r
+  FloatingPointAdder1/sub_49/U17/ZN (AND2_X1)             0.04       0.40 r
+  FloatingPointAdder1/sub_49/U12/ZN (AND2_X2)             0.05       0.44 r
+  FloatingPointAdder1/sub_49/U53/ZN (OAI21_X1)            0.03       0.47 f
+  FloatingPointAdder1/sub_49/U67/ZN (INV_X1)              0.02       0.50 r
+  FloatingPointAdder1/sub_49/U52/ZN (OAI21_X1)            0.02       0.52 f
+  FloatingPointAdder1/sub_49/U65/ZN (INV_X1)              0.03       0.55 r
+  FloatingPointAdder1/sub_49/U4/Z (CLKBUF_X1)             0.04       0.58 r
+  FloatingPointAdder1/sub_49/U14/ZN (OAI21_X1)            0.03       0.61 f
+  FloatingPointAdder1/sub_49/U64/ZN (XNOR2_X1)            0.05       0.67 f
+  FloatingPointAdder1/sub_49/DIFF[4] (FloatingPointAdder_DW01_sub_6)
+                                                          0.00       0.67 f
+  FloatingPointAdder1/U154/ZN (OR2_X1)                    0.06       0.72 f
+  FloatingPointAdder1/U8/ZN (OR2_X1)                      0.05       0.78 f
+  FloatingPointAdder1/U379/Z (XOR2_X1)                    0.07       0.85 f
+  FloatingPointAdder1/sra_52/SH[6] (FloatingPointAdder_DW_rash_1)
+                                                          0.00       0.85 f
+  FloatingPointAdder1/sra_52/U24/ZN (OR2_X1)              0.06       0.91 f
+  FloatingPointAdder1/sra_52/U25/ZN (OR2_X2)              0.06       0.96 f
+  FloatingPointAdder1/sra_52/U185/ZN (NAND2_X1)           0.04       1.01 r
+  FloatingPointAdder1/sra_52/U129/ZN (OAI222_X1)          0.05       1.06 f
+  FloatingPointAdder1/sra_52/U128/Z (MUX2_X1)             0.06       1.12 f
+  FloatingPointAdder1/sra_52/U127/ZN (AOI21_X1)           0.04       1.16 r
+  FloatingPointAdder1/sra_52/U126/ZN (OAI21_X1)           0.03       1.19 f
+  FloatingPointAdder1/sra_52/B[1] (FloatingPointAdder_DW_rash_1)
+                                                          0.00       1.19 f
+  FloatingPointAdder1/U86/Z (MUX2_X1)                     0.07       1.27 f
+  FloatingPointAdder1/fraction_sub12/A[1] (PlusOperatorAdder_2)
+                                                          0.00       1.27 f
+  FloatingPointAdder1/fraction_sub12/add_1_root_add_9_2/A[1] (PlusOperatorAdder_2_DW01_add_1)
+                                                          0.00       1.27 f
+  FloatingPointAdder1/fraction_sub12/add_1_root_add_9_2/U175/ZN (OR2_X1)
+                                                          0.07       1.34 f
+  FloatingPointAdder1/fraction_sub12/add_1_root_add_9_2/U280/ZN (INV_X1)
+                                                          0.03       1.37 r
+  FloatingPointAdder1/fraction_sub12/add_1_root_add_9_2/U80/ZN (OAI21_X1)
+                                                          0.03       1.40 f
+  FloatingPointAdder1/fraction_sub12/add_1_root_add_9_2/U79/ZN (AOI21_X1)
+                                                          0.03       1.43 r
+  FloatingPointAdder1/fraction_sub12/add_1_root_add_9_2/U78/ZN (OAI21_X1)
+                                                          0.04       1.47 f
+  FloatingPointAdder1/fraction_sub12/add_1_root_add_9_2/U34/ZN (AOI21_X1)
+                                                          0.04       1.51 r
+  FloatingPointAdder1/fraction_sub12/add_1_root_add_9_2/U58/ZN (OAI211_X1)
+                                                          0.03       1.54 f
+  FloatingPointAdder1/fraction_sub12/add_1_root_add_9_2/U57/ZN (AOI21_X1)
+                                                          0.04       1.58 r
+  FloatingPointAdder1/fraction_sub12/add_1_root_add_9_2/U56/ZN (OAI21_X1)
+                                                          0.03       1.61 f
+  FloatingPointAdder1/fraction_sub12/add_1_root_add_9_2/U55/ZN (AOI21_X1)
+                                                          0.03       1.64 r
+  FloatingPointAdder1/fraction_sub12/add_1_root_add_9_2/U54/ZN (OAI21_X1)
+                                                          0.04       1.68 f
+  FloatingPointAdder1/fraction_sub12/add_1_root_add_9_2/U61/ZN (NAND2_X1)
+                                                          0.04       1.71 r
+  FloatingPointAdder1/fraction_sub12/add_1_root_add_9_2/U5/ZN (NAND2_X1)
+                                                          0.03       1.74 f
+  FloatingPointAdder1/fraction_sub12/add_1_root_add_9_2/U6/ZN (AND2_X1)
+                                                          0.03       1.78 f
+  FloatingPointAdder1/fraction_sub12/add_1_root_add_9_2/U59/ZN (XNOR2_X1)
+                                                          0.05       1.83 f
+  FloatingPointAdder1/fraction_sub12/add_1_root_add_9_2/SUM[21] (PlusOperatorAdder_2_DW01_add_1)
+                                                          0.00       1.83 f
+  FloatingPointAdder1/fraction_sub12/Sum[21] (PlusOperatorAdder_2)
+                                                          0.00       1.83 f
+  FloatingPointAdder1/U349/ZN (AOI222_X1)                 0.08       1.91 r
+  FloatingPointAdder1/U441/ZN (NAND2_X1)                  0.04       1.95 f
+  FloatingPointAdder1/U442/ZN (NAND2_X1)                  0.04       1.98 r
+  FloatingPointAdder1/U452/ZN (OAI222_X1)                 0.05       2.04 f
+  FloatingPointAdder1/U453/ZN (INV_X1)                    0.04       2.07 r
+  FloatingPointAdder1/U356/ZN (NAND2_X1)                  0.03       2.11 f
+  FloatingPointAdder1/U354/ZN (NAND2_X1)                  0.03       2.14 r
+  FloatingPointAdder1/U72/Z (BUF_X1)                      0.04       2.18 r
+  FloatingPointAdder1/U491/ZN (OAI222_X1)                 0.04       2.22 f
+  FloatingPointAdder1/U492/ZN (INV_X1)                    0.04       2.26 r
+  FloatingPointAdder1/U493/ZN (OAI222_X1)                 0.05       2.31 f
+  FloatingPointAdder1/U494/ZN (INV_X1)                    0.03       2.35 r
+  FloatingPointAdder1/U177/ZN (NAND2_X1)                  0.03       2.38 f
+  FloatingPointAdder1/U350/ZN (NAND2_X1)                  0.03       2.41 r
+  FloatingPointAdder1/U528/ZN (OAI222_X1)                 0.04       2.46 f
+  FloatingPointAdder1/U529/ZN (INV_X1)                    0.04       2.49 r
+  FloatingPointAdder1/U348/ZN (NAND2_X1)                  0.03       2.53 f
+  FloatingPointAdder1/U184/ZN (NAND2_X1)                  0.03       2.56 r
+  FloatingPointAdder1/U27/Z (BUF_X2)                      0.06       2.61 r
+  FloatingPointAdder1/U180/ZN (OAI222_X1)                 0.05       2.67 f
+  FloatingPointAdder1/U571/ZN (INV_X1)                    0.04       2.70 r
+  FloatingPointAdder1/U309/ZN (AND2_X1)                   0.05       2.75 r
+  FloatingPointAdder1/U341/Z (BUF_X1)                     0.04       2.79 r
+  FloatingPointAdder1/U344/ZN (NAND2_X1)                  0.04       2.82 f
+  FloatingPointAdder1/U597/ZN (NAND2_X1)                  0.04       2.86 r
+  FloatingPointAdder1/U106/Z (BUF_X1)                     0.04       2.90 r
+  FloatingPointAdder1/U627/ZN (OAI222_X1)                 0.04       2.94 f
+  FloatingPointAdder1/U628/ZN (INV_X1)                    0.04       2.98 r
+  FloatingPointAdder1/U637/ZN (OAI222_X1)                 0.05       3.02 f
+  FloatingPointAdder1/U638/ZN (INV_X1)                    0.03       3.05 r
+  FloatingPointAdder1/U109/Z (BUF_X1)                     0.03       3.09 r
+  FloatingPointAdder1/U142/ZN (AND2_X1)                   0.04       3.12 r
+  FloatingPointAdder1/U645/ZN (NAND2_X1)                  0.03       3.16 f
+  FloatingPointAdder1/U646/ZN (INV_X1)                    0.03       3.19 r
+  FloatingPointAdder1/U254/Z (BUF_X1)                     0.04       3.23 r
+  FloatingPointAdder1/U653/ZN (NAND2_X1)                  0.03       3.26 f
+  FloatingPointAdder1/U654/ZN (NAND2_X1)                  0.03       3.29 r
+  FloatingPointAdder1/U659/ZN (OAI222_X1)                 0.05       3.34 f
+  FloatingPointAdder1/U660/ZN (INV_X1)                    0.04       3.38 r
+  FloatingPointAdder1/U213/ZN (NAND2_X1)                  0.03       3.41 f
+  FloatingPointAdder1/U212/ZN (XNOR2_X1)                  0.05       3.46 f
+  FloatingPointAdder1/sub_0_root_sub_8_root_sub_84_I22_aco/A[0] (FloatingPointAdder_DW01_sub_7)
+                                                          0.00       3.46 f
+  FloatingPointAdder1/sub_0_root_sub_8_root_sub_84_I22_aco/U49/ZN (INV_X1)
+                                                          0.03       3.49 r
+  FloatingPointAdder1/sub_0_root_sub_8_root_sub_84_I22_aco/U46/ZN (NAND2_X1)
+                                                          0.03       3.52 f
+  FloatingPointAdder1/sub_0_root_sub_8_root_sub_84_I22_aco/U56/ZN (INV_X1)
+                                                          0.03       3.55 r
+  FloatingPointAdder1/sub_0_root_sub_8_root_sub_84_I22_aco/U10/ZN (AND2_X1)
+                                                          0.04       3.59 r
+  FloatingPointAdder1/sub_0_root_sub_8_root_sub_84_I22_aco/U42/ZN (OAI21_X1)
+                                                          0.03       3.62 f
+  FloatingPointAdder1/sub_0_root_sub_8_root_sub_84_I22_aco/U54/ZN (INV_X1)
+                                                          0.03       3.64 r
+  FloatingPointAdder1/sub_0_root_sub_8_root_sub_84_I22_aco/U36/ZN (OAI21_X1)
+                                                          0.03       3.67 f
+  FloatingPointAdder1/sub_0_root_sub_8_root_sub_84_I22_aco/U53/ZN (INV_X1)
+                                                          0.03       3.70 r
+  FloatingPointAdder1/sub_0_root_sub_8_root_sub_84_I22_aco/U45/ZN (OAI21_X1)
+                                                          0.03       3.73 f
+  FloatingPointAdder1/sub_0_root_sub_8_root_sub_84_I22_aco/U50/ZN (INV_X1)
+                                                          0.03       3.76 r
+  FloatingPointAdder1/sub_0_root_sub_8_root_sub_84_I22_aco/U41/ZN (OAI21_X1)
+                                                          0.03       3.79 f
+  FloatingPointAdder1/sub_0_root_sub_8_root_sub_84_I22_aco/U19/ZN (OR2_X1)
+                                                          0.05       3.85 f
+  FloatingPointAdder1/sub_0_root_sub_8_root_sub_84_I22_aco/U5/ZN (XNOR2_X1)
+                                                          0.05       3.90 f
+  FloatingPointAdder1/sub_0_root_sub_8_root_sub_84_I22_aco/DIFF[6] (FloatingPointAdder_DW01_sub_7)
+                                                          0.00       3.90 f
+  FloatingPointAdder1/U150/ZN (NAND2_X1)                  0.03       3.92 r
+  FloatingPointAdder1/U152/ZN (NAND2_X1)                  0.02       3.95 f
+  FloatingPointAdder1/result[29] (FloatingPointAdder)     0.00       3.95 f
+  data arrival time                                                  3.95
+
+  clock clk (rise edge)                                   4.50       4.50
+  clock network delay (ideal)                             0.00       4.50
+  clock uncertainty                                      -0.20       4.30
+  output external delay                                  -0.35       3.95
+  data required time                                                 3.95
+  --------------------------------------------------------------------------
+  data required time                                                 3.95
+  data arrival time                                                 -3.95
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.00
+
+
+  Startpoint: FloatingPointAdder1/A[23]
+              (internal path startpoint clocked by clk)
+  Endpoint: FloatingPointAdder1/result[28]
+            (internal path endpoint clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  FloatingAdder_Integration
+                     5K_hvratio_1_1        NangateOpenCellLibrary_ss0p95vn40c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    0.35       0.35 f
+  FloatingPointAdder1/A[23] (FloatingPointAdder)          0.00       0.35 f
+  FloatingPointAdder1/sub_49/A[0] (FloatingPointAdder_DW01_sub_6)
+                                                          0.00       0.35 f
+  FloatingPointAdder1/sub_49/U24/ZN (INV_X1)              0.01       0.36 r
+  FloatingPointAdder1/sub_49/U17/ZN (AND2_X1)             0.04       0.40 r
+  FloatingPointAdder1/sub_49/U12/ZN (AND2_X2)             0.05       0.44 r
+  FloatingPointAdder1/sub_49/U53/ZN (OAI21_X1)            0.03       0.47 f
+  FloatingPointAdder1/sub_49/U67/ZN (INV_X1)              0.02       0.50 r
+  FloatingPointAdder1/sub_49/U52/ZN (OAI21_X1)            0.02       0.52 f
+  FloatingPointAdder1/sub_49/U65/ZN (INV_X1)              0.03       0.55 r
+  FloatingPointAdder1/sub_49/U4/Z (CLKBUF_X1)             0.04       0.58 r
+  FloatingPointAdder1/sub_49/U14/ZN (OAI21_X1)            0.03       0.61 f
+  FloatingPointAdder1/sub_49/U64/ZN (XNOR2_X1)            0.05       0.67 f
+  FloatingPointAdder1/sub_49/DIFF[4] (FloatingPointAdder_DW01_sub_6)
+                                                          0.00       0.67 f
+  FloatingPointAdder1/U154/ZN (OR2_X1)                    0.06       0.72 f
+  FloatingPointAdder1/U8/ZN (OR2_X1)                      0.05       0.78 f
+  FloatingPointAdder1/U379/Z (XOR2_X1)                    0.07       0.85 f
+  FloatingPointAdder1/sra_52/SH[6] (FloatingPointAdder_DW_rash_1)
+                                                          0.00       0.85 f
+  FloatingPointAdder1/sra_52/U24/ZN (OR2_X1)              0.06       0.91 f
+  FloatingPointAdder1/sra_52/U25/ZN (OR2_X2)              0.06       0.96 f
+  FloatingPointAdder1/sra_52/U185/ZN (NAND2_X1)           0.04       1.01 r
+  FloatingPointAdder1/sra_52/U129/ZN (OAI222_X1)          0.05       1.06 f
+  FloatingPointAdder1/sra_52/U128/Z (MUX2_X1)             0.06       1.12 f
+  FloatingPointAdder1/sra_52/U127/ZN (AOI21_X1)           0.04       1.16 r
+  FloatingPointAdder1/sra_52/U126/ZN (OAI21_X1)           0.03       1.19 f
+  FloatingPointAdder1/sra_52/B[1] (FloatingPointAdder_DW_rash_1)
+                                                          0.00       1.19 f
+  FloatingPointAdder1/U86/Z (MUX2_X1)                     0.07       1.27 f
+  FloatingPointAdder1/fraction_sub12/A[1] (PlusOperatorAdder_2)
+                                                          0.00       1.27 f
+  FloatingPointAdder1/fraction_sub12/add_1_root_add_9_2/A[1] (PlusOperatorAdder_2_DW01_add_1)
+                                                          0.00       1.27 f
+  FloatingPointAdder1/fraction_sub12/add_1_root_add_9_2/U175/ZN (OR2_X1)
+                                                          0.07       1.34 f
+  FloatingPointAdder1/fraction_sub12/add_1_root_add_9_2/U280/ZN (INV_X1)
+                                                          0.03       1.37 r
+  FloatingPointAdder1/fraction_sub12/add_1_root_add_9_2/U80/ZN (OAI21_X1)
+                                                          0.03       1.40 f
+  FloatingPointAdder1/fraction_sub12/add_1_root_add_9_2/U79/ZN (AOI21_X1)
+                                                          0.03       1.43 r
+  FloatingPointAdder1/fraction_sub12/add_1_root_add_9_2/U78/ZN (OAI21_X1)
+                                                          0.04       1.47 f
+  FloatingPointAdder1/fraction_sub12/add_1_root_add_9_2/U34/ZN (AOI21_X1)
+                                                          0.04       1.51 r
+  FloatingPointAdder1/fraction_sub12/add_1_root_add_9_2/U58/ZN (OAI211_X1)
+                                                          0.03       1.54 f
+  FloatingPointAdder1/fraction_sub12/add_1_root_add_9_2/U57/ZN (AOI21_X1)
+                                                          0.04       1.58 r
+  FloatingPointAdder1/fraction_sub12/add_1_root_add_9_2/U56/ZN (OAI21_X1)
+                                                          0.03       1.61 f
+  FloatingPointAdder1/fraction_sub12/add_1_root_add_9_2/U55/ZN (AOI21_X1)
+                                                          0.03       1.64 r
+  FloatingPointAdder1/fraction_sub12/add_1_root_add_9_2/U54/ZN (OAI21_X1)
+                                                          0.04       1.68 f
+  FloatingPointAdder1/fraction_sub12/add_1_root_add_9_2/U61/ZN (NAND2_X1)
+                                                          0.04       1.71 r
+  FloatingPointAdder1/fraction_sub12/add_1_root_add_9_2/U5/ZN (NAND2_X1)
+                                                          0.03       1.74 f
+  FloatingPointAdder1/fraction_sub12/add_1_root_add_9_2/U6/ZN (AND2_X1)
+                                                          0.03       1.78 f
+  FloatingPointAdder1/fraction_sub12/add_1_root_add_9_2/U59/ZN (XNOR2_X1)
+                                                          0.05       1.83 f
+  FloatingPointAdder1/fraction_sub12/add_1_root_add_9_2/SUM[21] (PlusOperatorAdder_2_DW01_add_1)
+                                                          0.00       1.83 f
+  FloatingPointAdder1/fraction_sub12/Sum[21] (PlusOperatorAdder_2)
+                                                          0.00       1.83 f
+  FloatingPointAdder1/U349/ZN (AOI222_X1)                 0.08       1.91 r
+  FloatingPointAdder1/U441/ZN (NAND2_X1)                  0.04       1.95 f
+  FloatingPointAdder1/U442/ZN (NAND2_X1)                  0.04       1.98 r
+  FloatingPointAdder1/U452/ZN (OAI222_X1)                 0.05       2.04 f
+  FloatingPointAdder1/U453/ZN (INV_X1)                    0.04       2.07 r
+  FloatingPointAdder1/U356/ZN (NAND2_X1)                  0.03       2.11 f
+  FloatingPointAdder1/U354/ZN (NAND2_X1)                  0.03       2.14 r
+  FloatingPointAdder1/U72/Z (BUF_X1)                      0.04       2.18 r
+  FloatingPointAdder1/U491/ZN (OAI222_X1)                 0.04       2.22 f
+  FloatingPointAdder1/U492/ZN (INV_X1)                    0.04       2.26 r
+  FloatingPointAdder1/U493/ZN (OAI222_X1)                 0.05       2.31 f
+  FloatingPointAdder1/U494/ZN (INV_X1)                    0.03       2.35 r
+  FloatingPointAdder1/U177/ZN (NAND2_X1)                  0.03       2.38 f
+  FloatingPointAdder1/U350/ZN (NAND2_X1)                  0.03       2.41 r
+  FloatingPointAdder1/U528/ZN (OAI222_X1)                 0.04       2.46 f
+  FloatingPointAdder1/U529/ZN (INV_X1)                    0.04       2.49 r
+  FloatingPointAdder1/U348/ZN (NAND2_X1)                  0.03       2.53 f
+  FloatingPointAdder1/U184/ZN (NAND2_X1)                  0.03       2.56 r
+  FloatingPointAdder1/U27/Z (BUF_X2)                      0.06       2.61 r
+  FloatingPointAdder1/U180/ZN (OAI222_X1)                 0.05       2.67 f
+  FloatingPointAdder1/U571/ZN (INV_X1)                    0.04       2.70 r
+  FloatingPointAdder1/U309/ZN (AND2_X1)                   0.05       2.75 r
+  FloatingPointAdder1/U341/Z (BUF_X1)                     0.04       2.79 r
+  FloatingPointAdder1/U344/ZN (NAND2_X1)                  0.04       2.82 f
+  FloatingPointAdder1/U597/ZN (NAND2_X1)                  0.04       2.86 r
+  FloatingPointAdder1/U106/Z (BUF_X1)                     0.04       2.90 r
+  FloatingPointAdder1/U627/ZN (OAI222_X1)                 0.04       2.94 f
+  FloatingPointAdder1/U628/ZN (INV_X1)                    0.04       2.98 r
+  FloatingPointAdder1/U637/ZN (OAI222_X1)                 0.05       3.02 f
+  FloatingPointAdder1/U638/ZN (INV_X1)                    0.03       3.05 r
+  FloatingPointAdder1/U109/Z (BUF_X1)                     0.03       3.09 r
+  FloatingPointAdder1/U142/ZN (AND2_X1)                   0.04       3.12 r
+  FloatingPointAdder1/U645/ZN (NAND2_X1)                  0.03       3.16 f
+  FloatingPointAdder1/U646/ZN (INV_X1)                    0.03       3.19 r
+  FloatingPointAdder1/U254/Z (BUF_X1)                     0.04       3.23 r
+  FloatingPointAdder1/U653/ZN (NAND2_X1)                  0.03       3.26 f
+  FloatingPointAdder1/U654/ZN (NAND2_X1)                  0.03       3.29 r
+  FloatingPointAdder1/U659/ZN (OAI222_X1)                 0.05       3.34 f
+  FloatingPointAdder1/U660/ZN (INV_X1)                    0.04       3.38 r
+  FloatingPointAdder1/U213/ZN (NAND2_X1)                  0.03       3.41 f
+  FloatingPointAdder1/U212/ZN (XNOR2_X1)                  0.05       3.46 f
+  FloatingPointAdder1/sub_0_root_sub_8_root_sub_84_I22_aco/A[0] (FloatingPointAdder_DW01_sub_7)
+                                                          0.00       3.46 f
+  FloatingPointAdder1/sub_0_root_sub_8_root_sub_84_I22_aco/U49/ZN (INV_X1)
+                                                          0.03       3.49 r
+  FloatingPointAdder1/sub_0_root_sub_8_root_sub_84_I22_aco/U46/ZN (NAND2_X1)
+                                                          0.03       3.52 f
+  FloatingPointAdder1/sub_0_root_sub_8_root_sub_84_I22_aco/U56/ZN (INV_X1)
+                                                          0.03       3.55 r
+  FloatingPointAdder1/sub_0_root_sub_8_root_sub_84_I22_aco/U10/ZN (AND2_X1)
+                                                          0.04       3.59 r
+  FloatingPointAdder1/sub_0_root_sub_8_root_sub_84_I22_aco/U42/ZN (OAI21_X1)
+                                                          0.03       3.62 f
+  FloatingPointAdder1/sub_0_root_sub_8_root_sub_84_I22_aco/U54/ZN (INV_X1)
+                                                          0.03       3.64 r
+  FloatingPointAdder1/sub_0_root_sub_8_root_sub_84_I22_aco/U36/ZN (OAI21_X1)
+                                                          0.03       3.67 f
+  FloatingPointAdder1/sub_0_root_sub_8_root_sub_84_I22_aco/U53/ZN (INV_X1)
+                                                          0.03       3.70 r
+  FloatingPointAdder1/sub_0_root_sub_8_root_sub_84_I22_aco/U45/ZN (OAI21_X1)
+                                                          0.03       3.73 f
+  FloatingPointAdder1/sub_0_root_sub_8_root_sub_84_I22_aco/U50/ZN (INV_X1)
+                                                          0.03       3.76 r
+  FloatingPointAdder1/sub_0_root_sub_8_root_sub_84_I22_aco/U41/ZN (OAI21_X1)
+                                                          0.03       3.79 f
+  FloatingPointAdder1/sub_0_root_sub_8_root_sub_84_I22_aco/U26/Z (XOR2_X1)
+                                                          0.06       3.86 f
+  FloatingPointAdder1/sub_0_root_sub_8_root_sub_84_I22_aco/DIFF[5] (FloatingPointAdder_DW01_sub_7)
+                                                          0.00       3.86 f
+  FloatingPointAdder1/U751/Z (MUX2_X1)                    0.06       3.91 f
+  FloatingPointAdder1/result[28] (FloatingPointAdder)     0.00       3.91 f
+  data arrival time                                                  3.91
+
+  clock clk (rise edge)                                   4.50       4.50
+  clock network delay (ideal)                             0.00       4.50
+  clock uncertainty                                      -0.20       4.30
+  output external delay                                  -0.35       3.95
+  data required time                                                 3.95
+  --------------------------------------------------------------------------
+  data required time                                                 3.95
+  data arrival time                                                 -3.91
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.04
+
+
+  Startpoint: FloatingPointAdder1/A[23]
+              (internal path startpoint clocked by clk)
+  Endpoint: FloatingPointAdder1/result[27]
+            (internal path endpoint clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  FloatingAdder_Integration
+                     5K_hvratio_1_1        NangateOpenCellLibrary_ss0p95vn40c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    0.35       0.35 f
+  FloatingPointAdder1/A[23] (FloatingPointAdder)          0.00       0.35 f
+  FloatingPointAdder1/sub_49/A[0] (FloatingPointAdder_DW01_sub_6)
+                                                          0.00       0.35 f
+  FloatingPointAdder1/sub_49/U24/ZN (INV_X1)              0.01       0.36 r
+  FloatingPointAdder1/sub_49/U17/ZN (AND2_X1)             0.04       0.40 r
+  FloatingPointAdder1/sub_49/U12/ZN (AND2_X2)             0.05       0.44 r
+  FloatingPointAdder1/sub_49/U53/ZN (OAI21_X1)            0.03       0.47 f
+  FloatingPointAdder1/sub_49/U67/ZN (INV_X1)              0.02       0.50 r
+  FloatingPointAdder1/sub_49/U52/ZN (OAI21_X1)            0.02       0.52 f
+  FloatingPointAdder1/sub_49/U65/ZN (INV_X1)              0.03       0.55 r
+  FloatingPointAdder1/sub_49/U4/Z (CLKBUF_X1)             0.04       0.58 r
+  FloatingPointAdder1/sub_49/U14/ZN (OAI21_X1)            0.03       0.61 f
+  FloatingPointAdder1/sub_49/U64/ZN (XNOR2_X1)            0.05       0.67 f
+  FloatingPointAdder1/sub_49/DIFF[4] (FloatingPointAdder_DW01_sub_6)
+                                                          0.00       0.67 f
+  FloatingPointAdder1/U154/ZN (OR2_X1)                    0.06       0.72 f
+  FloatingPointAdder1/U8/ZN (OR2_X1)                      0.05       0.78 f
+  FloatingPointAdder1/U379/Z (XOR2_X1)                    0.07       0.85 f
+  FloatingPointAdder1/sra_52/SH[6] (FloatingPointAdder_DW_rash_1)
+                                                          0.00       0.85 f
+  FloatingPointAdder1/sra_52/U24/ZN (OR2_X1)              0.06       0.91 f
+  FloatingPointAdder1/sra_52/U25/ZN (OR2_X2)              0.06       0.96 f
+  FloatingPointAdder1/sra_52/U185/ZN (NAND2_X1)           0.04       1.01 r
+  FloatingPointAdder1/sra_52/U129/ZN (OAI222_X1)          0.05       1.06 f
+  FloatingPointAdder1/sra_52/U128/Z (MUX2_X1)             0.06       1.12 f
+  FloatingPointAdder1/sra_52/U127/ZN (AOI21_X1)           0.04       1.16 r
+  FloatingPointAdder1/sra_52/U126/ZN (OAI21_X1)           0.03       1.19 f
+  FloatingPointAdder1/sra_52/B[1] (FloatingPointAdder_DW_rash_1)
+                                                          0.00       1.19 f
+  FloatingPointAdder1/U86/Z (MUX2_X1)                     0.07       1.27 f
+  FloatingPointAdder1/fraction_sub12/A[1] (PlusOperatorAdder_2)
+                                                          0.00       1.27 f
+  FloatingPointAdder1/fraction_sub12/add_1_root_add_9_2/A[1] (PlusOperatorAdder_2_DW01_add_1)
+                                                          0.00       1.27 f
+  FloatingPointAdder1/fraction_sub12/add_1_root_add_9_2/U175/ZN (OR2_X1)
+                                                          0.07       1.34 f
+  FloatingPointAdder1/fraction_sub12/add_1_root_add_9_2/U280/ZN (INV_X1)
+                                                          0.03       1.37 r
+  FloatingPointAdder1/fraction_sub12/add_1_root_add_9_2/U80/ZN (OAI21_X1)
+                                                          0.03       1.40 f
+  FloatingPointAdder1/fraction_sub12/add_1_root_add_9_2/U79/ZN (AOI21_X1)
+                                                          0.03       1.43 r
+  FloatingPointAdder1/fraction_sub12/add_1_root_add_9_2/U78/ZN (OAI21_X1)
+                                                          0.04       1.47 f
+  FloatingPointAdder1/fraction_sub12/add_1_root_add_9_2/U34/ZN (AOI21_X1)
+                                                          0.04       1.51 r
+  FloatingPointAdder1/fraction_sub12/add_1_root_add_9_2/U58/ZN (OAI211_X1)
+                                                          0.03       1.54 f
+  FloatingPointAdder1/fraction_sub12/add_1_root_add_9_2/U57/ZN (AOI21_X1)
+                                                          0.04       1.58 r
+  FloatingPointAdder1/fraction_sub12/add_1_root_add_9_2/U56/ZN (OAI21_X1)
+                                                          0.03       1.61 f
+  FloatingPointAdder1/fraction_sub12/add_1_root_add_9_2/U55/ZN (AOI21_X1)
+                                                          0.03       1.64 r
+  FloatingPointAdder1/fraction_sub12/add_1_root_add_9_2/U54/ZN (OAI21_X1)
+                                                          0.04       1.68 f
+  FloatingPointAdder1/fraction_sub12/add_1_root_add_9_2/U61/ZN (NAND2_X1)
+                                                          0.04       1.71 r
+  FloatingPointAdder1/fraction_sub12/add_1_root_add_9_2/U5/ZN (NAND2_X1)
+                                                          0.03       1.74 f
+  FloatingPointAdder1/fraction_sub12/add_1_root_add_9_2/U6/ZN (AND2_X1)
+                                                          0.03       1.78 f
+  FloatingPointAdder1/fraction_sub12/add_1_root_add_9_2/U59/ZN (XNOR2_X1)
+                                                          0.05       1.83 f
+  FloatingPointAdder1/fraction_sub12/add_1_root_add_9_2/SUM[21] (PlusOperatorAdder_2_DW01_add_1)
+                                                          0.00       1.83 f
+  FloatingPointAdder1/fraction_sub12/Sum[21] (PlusOperatorAdder_2)
+                                                          0.00       1.83 f
+  FloatingPointAdder1/U349/ZN (AOI222_X1)                 0.08       1.91 r
+  FloatingPointAdder1/U441/ZN (NAND2_X1)                  0.04       1.95 f
+  FloatingPointAdder1/U442/ZN (NAND2_X1)                  0.04       1.98 r
+  FloatingPointAdder1/U452/ZN (OAI222_X1)                 0.05       2.04 f
+  FloatingPointAdder1/U453/ZN (INV_X1)                    0.04       2.07 r
+  FloatingPointAdder1/U356/ZN (NAND2_X1)                  0.03       2.11 f
+  FloatingPointAdder1/U354/ZN (NAND2_X1)                  0.03       2.14 r
+  FloatingPointAdder1/U72/Z (BUF_X1)                      0.04       2.18 r
+  FloatingPointAdder1/U491/ZN (OAI222_X1)                 0.04       2.22 f
+  FloatingPointAdder1/U492/ZN (INV_X1)                    0.04       2.26 r
+  FloatingPointAdder1/U493/ZN (OAI222_X1)                 0.05       2.31 f
+  FloatingPointAdder1/U494/ZN (INV_X1)                    0.03       2.35 r
+  FloatingPointAdder1/U177/ZN (NAND2_X1)                  0.03       2.38 f
+  FloatingPointAdder1/U350/ZN (NAND2_X1)                  0.03       2.41 r
+  FloatingPointAdder1/U528/ZN (OAI222_X1)                 0.04       2.46 f
+  FloatingPointAdder1/U529/ZN (INV_X1)                    0.04       2.49 r
+  FloatingPointAdder1/U348/ZN (NAND2_X1)                  0.03       2.53 f
+  FloatingPointAdder1/U184/ZN (NAND2_X1)                  0.03       2.56 r
+  FloatingPointAdder1/U27/Z (BUF_X2)                      0.06       2.61 r
+  FloatingPointAdder1/U180/ZN (OAI222_X1)                 0.05       2.67 f
+  FloatingPointAdder1/U571/ZN (INV_X1)                    0.04       2.70 r
+  FloatingPointAdder1/U309/ZN (AND2_X1)                   0.05       2.75 r
+  FloatingPointAdder1/U341/Z (BUF_X1)                     0.04       2.79 r
+  FloatingPointAdder1/U344/ZN (NAND2_X1)                  0.04       2.82 f
+  FloatingPointAdder1/U597/ZN (NAND2_X1)                  0.04       2.86 r
+  FloatingPointAdder1/U106/Z (BUF_X1)                     0.04       2.90 r
+  FloatingPointAdder1/U627/ZN (OAI222_X1)                 0.04       2.94 f
+  FloatingPointAdder1/U628/ZN (INV_X1)                    0.04       2.98 r
+  FloatingPointAdder1/U637/ZN (OAI222_X1)                 0.05       3.02 f
+  FloatingPointAdder1/U638/ZN (INV_X1)                    0.03       3.05 r
+  FloatingPointAdder1/U109/Z (BUF_X1)                     0.03       3.09 r
+  FloatingPointAdder1/U142/ZN (AND2_X1)                   0.04       3.12 r
+  FloatingPointAdder1/U645/ZN (NAND2_X1)                  0.03       3.16 f
+  FloatingPointAdder1/U646/ZN (INV_X1)                    0.03       3.19 r
+  FloatingPointAdder1/U254/Z (BUF_X1)                     0.04       3.23 r
+  FloatingPointAdder1/U653/ZN (NAND2_X1)                  0.03       3.26 f
+  FloatingPointAdder1/U654/ZN (NAND2_X1)                  0.03       3.29 r
+  FloatingPointAdder1/U659/ZN (OAI222_X1)                 0.05       3.34 f
+  FloatingPointAdder1/U660/ZN (INV_X1)                    0.04       3.38 r
+  FloatingPointAdder1/U281/ZN (AND2_X1)                   0.05       3.43 r
+  FloatingPointAdder1/U183/ZN (OAI21_X1)                  0.03       3.45 f
+  FloatingPointAdder1/U173/ZN (NAND2_X1)                  0.03       3.49 r
+  FloatingPointAdder1/U170/ZN (AND2_X1)                   0.05       3.53 r
+  FloatingPointAdder1/U679/ZN (NAND2_X1)                  0.03       3.57 f
+  FloatingPointAdder1/U680/ZN (INV_X1)                    0.03       3.60 r
+  FloatingPointAdder1/U684/ZN (NAND2_X1)                  0.03       3.63 f
+  FloatingPointAdder1/U693/ZN (OAI21_X1)                  0.04       3.66 r
+  FloatingPointAdder1/sub_0_root_sub_8_root_sub_84_I22_aco/A[4] (FloatingPointAdder_DW01_sub_7)
+                                                          0.00       3.66 r
+  FloatingPointAdder1/sub_0_root_sub_8_root_sub_84_I22_aco/U35/ZN (INV_X1)
+                                                          0.03       3.69 f
+  FloatingPointAdder1/sub_0_root_sub_8_root_sub_84_I22_aco/U34/ZN (NAND2_X1)
+                                                          0.03       3.72 r
+  FloatingPointAdder1/sub_0_root_sub_8_root_sub_84_I22_aco/U24/ZN (NAND2_X1)
+                                                          0.03       3.75 f
+  FloatingPointAdder1/sub_0_root_sub_8_root_sub_84_I22_aco/U52/ZN (XNOR2_X1)
+                                                          0.05       3.80 f
+  FloatingPointAdder1/sub_0_root_sub_8_root_sub_84_I22_aco/DIFF[4] (FloatingPointAdder_DW01_sub_7)
+                                                          0.00       3.80 f
+  FloatingPointAdder1/U749/Z (MUX2_X1)                    0.06       3.86 f
+  FloatingPointAdder1/result[27] (FloatingPointAdder)     0.00       3.86 f
+  data arrival time                                                  3.86
+
+  clock clk (rise edge)                                   4.50       4.50
+  clock network delay (ideal)                             0.00       4.50
+  clock uncertainty                                      -0.20       4.30
+  output external delay                                  -0.35       3.95
+  data required time                                                 3.95
+  --------------------------------------------------------------------------
+  data required time                                                 3.95
+  data arrival time                                                 -3.86
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.09
+
+
+  Startpoint: FloatingPointAdder1/A[23]
+              (internal path startpoint clocked by clk)
+  Endpoint: FloatingPointAdder1/result[26]
+            (internal path endpoint clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  FloatingAdder_Integration
+                     5K_hvratio_1_1        NangateOpenCellLibrary_ss0p95vn40c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    0.35       0.35 f
+  FloatingPointAdder1/A[23] (FloatingPointAdder)          0.00       0.35 f
+  FloatingPointAdder1/sub_49/A[0] (FloatingPointAdder_DW01_sub_6)
+                                                          0.00       0.35 f
+  FloatingPointAdder1/sub_49/U24/ZN (INV_X1)              0.01       0.36 r
+  FloatingPointAdder1/sub_49/U17/ZN (AND2_X1)             0.04       0.40 r
+  FloatingPointAdder1/sub_49/U12/ZN (AND2_X2)             0.05       0.44 r
+  FloatingPointAdder1/sub_49/U53/ZN (OAI21_X1)            0.03       0.47 f
+  FloatingPointAdder1/sub_49/U67/ZN (INV_X1)              0.02       0.50 r
+  FloatingPointAdder1/sub_49/U52/ZN (OAI21_X1)            0.02       0.52 f
+  FloatingPointAdder1/sub_49/U65/ZN (INV_X1)              0.03       0.55 r
+  FloatingPointAdder1/sub_49/U4/Z (CLKBUF_X1)             0.04       0.58 r
+  FloatingPointAdder1/sub_49/U14/ZN (OAI21_X1)            0.03       0.61 f
+  FloatingPointAdder1/sub_49/U64/ZN (XNOR2_X1)            0.05       0.67 f
+  FloatingPointAdder1/sub_49/DIFF[4] (FloatingPointAdder_DW01_sub_6)
+                                                          0.00       0.67 f
+  FloatingPointAdder1/U154/ZN (OR2_X1)                    0.06       0.72 f
+  FloatingPointAdder1/U8/ZN (OR2_X1)                      0.05       0.78 f
+  FloatingPointAdder1/U379/Z (XOR2_X1)                    0.07       0.85 f
+  FloatingPointAdder1/sra_52/SH[6] (FloatingPointAdder_DW_rash_1)
+                                                          0.00       0.85 f
+  FloatingPointAdder1/sra_52/U24/ZN (OR2_X1)              0.06       0.91 f
+  FloatingPointAdder1/sra_52/U25/ZN (OR2_X2)              0.06       0.96 f
+  FloatingPointAdder1/sra_52/U185/ZN (NAND2_X1)           0.04       1.01 r
+  FloatingPointAdder1/sra_52/U129/ZN (OAI222_X1)          0.05       1.06 f
+  FloatingPointAdder1/sra_52/U128/Z (MUX2_X1)             0.06       1.12 f
+  FloatingPointAdder1/sra_52/U127/ZN (AOI21_X1)           0.04       1.16 r
+  FloatingPointAdder1/sra_52/U126/ZN (OAI21_X1)           0.03       1.19 f
+  FloatingPointAdder1/sra_52/B[1] (FloatingPointAdder_DW_rash_1)
+                                                          0.00       1.19 f
+  FloatingPointAdder1/U86/Z (MUX2_X1)                     0.07       1.27 f
+  FloatingPointAdder1/fraction_sub12/A[1] (PlusOperatorAdder_2)
+                                                          0.00       1.27 f
+  FloatingPointAdder1/fraction_sub12/add_1_root_add_9_2/A[1] (PlusOperatorAdder_2_DW01_add_1)
+                                                          0.00       1.27 f
+  FloatingPointAdder1/fraction_sub12/add_1_root_add_9_2/U175/ZN (OR2_X1)
+                                                          0.07       1.34 f
+  FloatingPointAdder1/fraction_sub12/add_1_root_add_9_2/U280/ZN (INV_X1)
+                                                          0.03       1.37 r
+  FloatingPointAdder1/fraction_sub12/add_1_root_add_9_2/U80/ZN (OAI21_X1)
+                                                          0.03       1.40 f
+  FloatingPointAdder1/fraction_sub12/add_1_root_add_9_2/U79/ZN (AOI21_X1)
+                                                          0.03       1.43 r
+  FloatingPointAdder1/fraction_sub12/add_1_root_add_9_2/U78/ZN (OAI21_X1)
+                                                          0.04       1.47 f
+  FloatingPointAdder1/fraction_sub12/add_1_root_add_9_2/U34/ZN (AOI21_X1)
+                                                          0.04       1.51 r
+  FloatingPointAdder1/fraction_sub12/add_1_root_add_9_2/U58/ZN (OAI211_X1)
+                                                          0.03       1.54 f
+  FloatingPointAdder1/fraction_sub12/add_1_root_add_9_2/U57/ZN (AOI21_X1)
+                                                          0.04       1.58 r
+  FloatingPointAdder1/fraction_sub12/add_1_root_add_9_2/U56/ZN (OAI21_X1)
+                                                          0.03       1.61 f
+  FloatingPointAdder1/fraction_sub12/add_1_root_add_9_2/U55/ZN (AOI21_X1)
+                                                          0.03       1.64 r
+  FloatingPointAdder1/fraction_sub12/add_1_root_add_9_2/U54/ZN (OAI21_X1)
+                                                          0.04       1.68 f
+  FloatingPointAdder1/fraction_sub12/add_1_root_add_9_2/U61/ZN (NAND2_X1)
+                                                          0.04       1.71 r
+  FloatingPointAdder1/fraction_sub12/add_1_root_add_9_2/U5/ZN (NAND2_X1)
+                                                          0.03       1.74 f
+  FloatingPointAdder1/fraction_sub12/add_1_root_add_9_2/U6/ZN (AND2_X1)
+                                                          0.03       1.78 f
+  FloatingPointAdder1/fraction_sub12/add_1_root_add_9_2/U59/ZN (XNOR2_X1)
+                                                          0.05       1.83 f
+  FloatingPointAdder1/fraction_sub12/add_1_root_add_9_2/SUM[21] (PlusOperatorAdder_2_DW01_add_1)
+                                                          0.00       1.83 f
+  FloatingPointAdder1/fraction_sub12/Sum[21] (PlusOperatorAdder_2)
+                                                          0.00       1.83 f
+  FloatingPointAdder1/U349/ZN (AOI222_X1)                 0.08       1.91 r
+  FloatingPointAdder1/U441/ZN (NAND2_X1)                  0.04       1.95 f
+  FloatingPointAdder1/U442/ZN (NAND2_X1)                  0.04       1.98 r
+  FloatingPointAdder1/U452/ZN (OAI222_X1)                 0.05       2.04 f
+  FloatingPointAdder1/U453/ZN (INV_X1)                    0.04       2.07 r
+  FloatingPointAdder1/U356/ZN (NAND2_X1)                  0.03       2.11 f
+  FloatingPointAdder1/U354/ZN (NAND2_X1)                  0.03       2.14 r
+  FloatingPointAdder1/U72/Z (BUF_X1)                      0.04       2.18 r
+  FloatingPointAdder1/U491/ZN (OAI222_X1)                 0.04       2.22 f
+  FloatingPointAdder1/U492/ZN (INV_X1)                    0.04       2.26 r
+  FloatingPointAdder1/U493/ZN (OAI222_X1)                 0.05       2.31 f
+  FloatingPointAdder1/U494/ZN (INV_X1)                    0.03       2.35 r
+  FloatingPointAdder1/U177/ZN (NAND2_X1)                  0.03       2.38 f
+  FloatingPointAdder1/U350/ZN (NAND2_X1)                  0.03       2.41 r
+  FloatingPointAdder1/U528/ZN (OAI222_X1)                 0.04       2.46 f
+  FloatingPointAdder1/U529/ZN (INV_X1)                    0.04       2.49 r
+  FloatingPointAdder1/U348/ZN (NAND2_X1)                  0.03       2.53 f
+  FloatingPointAdder1/U184/ZN (NAND2_X1)                  0.03       2.56 r
+  FloatingPointAdder1/U27/Z (BUF_X2)                      0.06       2.61 r
+  FloatingPointAdder1/U180/ZN (OAI222_X1)                 0.05       2.67 f
+  FloatingPointAdder1/U571/ZN (INV_X1)                    0.04       2.70 r
+  FloatingPointAdder1/U309/ZN (AND2_X1)                   0.05       2.75 r
+  FloatingPointAdder1/U341/Z (BUF_X1)                     0.04       2.79 r
+  FloatingPointAdder1/U344/ZN (NAND2_X1)                  0.04       2.82 f
+  FloatingPointAdder1/U597/ZN (NAND2_X1)                  0.04       2.86 r
+  FloatingPointAdder1/U40/ZN (OAI222_X1)                  0.04       2.91 f
+  FloatingPointAdder1/U623/ZN (INV_X1)                    0.04       2.94 r
+  FloatingPointAdder1/U190/ZN (NAND2_X1)                  0.03       2.98 f
+  FloatingPointAdder1/U238/ZN (INV_X1)                    0.03       3.00 r
+  FloatingPointAdder1/U304/ZN (AND2_X2)                   0.04       3.04 r
+  FloatingPointAdder1/U108/Z (BUF_X1)                     0.04       3.09 r
+  FloatingPointAdder1/U639/ZN (NAND2_X1)                  0.04       3.13 f
+  FloatingPointAdder1/U651/ZN (OAI222_X1)                 0.05       3.18 r
+  FloatingPointAdder1/U652/ZN (INV_X1)                    0.04       3.21 f
+  FloatingPointAdder1/U241/ZN (AND2_X1)                   0.04       3.25 f
+  FloatingPointAdder1/U658/ZN (NAND2_X1)                  0.02       3.28 r
+  FloatingPointAdder1/U77/ZN (NAND2_X1)                   0.03       3.31 f
+  FloatingPointAdder1/U713/ZN (INV_X1)                    0.03       3.33 r
+  FloatingPointAdder1/U15/ZN (AND2_X1)                    0.04       3.38 r
+  FloatingPointAdder1/U255/ZN (XNOR2_X1)                  0.06       3.43 r
+  FloatingPointAdder1/U727/Z (XOR2_X1)                    0.06       3.49 r
+  FloatingPointAdder1/U245/ZN (NAND2_X1)                  0.03       3.52 f
+  FloatingPointAdder1/sub_0_root_sub_8_root_sub_84_I22_aco/B[1] (FloatingPointAdder_DW01_sub_7)
+                                                          0.00       3.52 f
+  FloatingPointAdder1/sub_0_root_sub_8_root_sub_84_I22_aco/U40/ZN (INV_X1)
+                                                          0.03       3.55 r
+  FloatingPointAdder1/sub_0_root_sub_8_root_sub_84_I22_aco/U43/ZN (NAND2_X1)
+                                                          0.03       3.58 f
+  FloatingPointAdder1/sub_0_root_sub_8_root_sub_84_I22_aco/U42/ZN (OAI21_X1)
+                                                          0.03       3.61 r
+  FloatingPointAdder1/sub_0_root_sub_8_root_sub_84_I22_aco/U54/ZN (INV_X1)
+                                                          0.03       3.64 f
+  FloatingPointAdder1/sub_0_root_sub_8_root_sub_84_I22_aco/U36/ZN (OAI21_X1)
+                                                          0.03       3.67 r
+  FloatingPointAdder1/sub_0_root_sub_8_root_sub_84_I22_aco/U53/ZN (INV_X1)
+                                                          0.03       3.70 f
+  FloatingPointAdder1/sub_0_root_sub_8_root_sub_84_I22_aco/U20/Z (CLKBUF_X1)
+                                                          0.04       3.74 f
+  FloatingPointAdder1/sub_0_root_sub_8_root_sub_84_I22_aco/U25/Z (XOR2_X1)
+                                                          0.06       3.80 f
+  FloatingPointAdder1/sub_0_root_sub_8_root_sub_84_I22_aco/DIFF[3] (FloatingPointAdder_DW01_sub_7)
+                                                          0.00       3.80 f
+  FloatingPointAdder1/U747/Z (MUX2_X1)                    0.06       3.85 f
+  FloatingPointAdder1/result[26] (FloatingPointAdder)     0.00       3.85 f
+  data arrival time                                                  3.85
+
+  clock clk (rise edge)                                   4.50       4.50
+  clock network delay (ideal)                             0.00       4.50
+  clock uncertainty                                      -0.20       4.30
+  output external delay                                  -0.35       3.95
+  data required time                                                 3.95
+  --------------------------------------------------------------------------
+  data required time                                                 3.95
+  data arrival time                                                 -3.85
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.10
+
+
+  Startpoint: FloatingPointAdder1/A[23]
+              (internal path startpoint clocked by clk)
+  Endpoint: FloatingPointAdder1/result[25]
+            (internal path endpoint clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  FloatingAdder_Integration
+                     5K_hvratio_1_1        NangateOpenCellLibrary_ss0p95vn40c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    0.35       0.35 f
+  FloatingPointAdder1/A[23] (FloatingPointAdder)          0.00       0.35 f
+  FloatingPointAdder1/sub_49/A[0] (FloatingPointAdder_DW01_sub_6)
+                                                          0.00       0.35 f
+  FloatingPointAdder1/sub_49/U24/ZN (INV_X1)              0.01       0.36 r
+  FloatingPointAdder1/sub_49/U17/ZN (AND2_X1)             0.04       0.40 r
+  FloatingPointAdder1/sub_49/U12/ZN (AND2_X2)             0.05       0.44 r
+  FloatingPointAdder1/sub_49/U53/ZN (OAI21_X1)            0.03       0.47 f
+  FloatingPointAdder1/sub_49/U67/ZN (INV_X1)              0.02       0.50 r
+  FloatingPointAdder1/sub_49/U52/ZN (OAI21_X1)            0.02       0.52 f
+  FloatingPointAdder1/sub_49/U65/ZN (INV_X1)              0.03       0.55 r
+  FloatingPointAdder1/sub_49/U4/Z (CLKBUF_X1)             0.04       0.58 r
+  FloatingPointAdder1/sub_49/U14/ZN (OAI21_X1)            0.03       0.61 f
+  FloatingPointAdder1/sub_49/U64/ZN (XNOR2_X1)            0.05       0.67 f
+  FloatingPointAdder1/sub_49/DIFF[4] (FloatingPointAdder_DW01_sub_6)
+                                                          0.00       0.67 f
+  FloatingPointAdder1/U154/ZN (OR2_X1)                    0.06       0.72 f
+  FloatingPointAdder1/U8/ZN (OR2_X1)                      0.05       0.78 f
+  FloatingPointAdder1/U379/Z (XOR2_X1)                    0.07       0.85 f
+  FloatingPointAdder1/sra_52/SH[6] (FloatingPointAdder_DW_rash_1)
+                                                          0.00       0.85 f
+  FloatingPointAdder1/sra_52/U24/ZN (OR2_X1)              0.06       0.91 f
+  FloatingPointAdder1/sra_52/U25/ZN (OR2_X2)              0.06       0.96 f
+  FloatingPointAdder1/sra_52/U185/ZN (NAND2_X1)           0.04       1.01 r
+  FloatingPointAdder1/sra_52/U129/ZN (OAI222_X1)          0.05       1.06 f
+  FloatingPointAdder1/sra_52/U128/Z (MUX2_X1)             0.06       1.12 f
+  FloatingPointAdder1/sra_52/U127/ZN (AOI21_X1)           0.04       1.16 r
+  FloatingPointAdder1/sra_52/U126/ZN (OAI21_X1)           0.03       1.19 f
+  FloatingPointAdder1/sra_52/B[1] (FloatingPointAdder_DW_rash_1)
+                                                          0.00       1.19 f
+  FloatingPointAdder1/U86/Z (MUX2_X1)                     0.07       1.27 f
+  FloatingPointAdder1/fraction_sub12/A[1] (PlusOperatorAdder_2)
+                                                          0.00       1.27 f
+  FloatingPointAdder1/fraction_sub12/add_1_root_add_9_2/A[1] (PlusOperatorAdder_2_DW01_add_1)
+                                                          0.00       1.27 f
+  FloatingPointAdder1/fraction_sub12/add_1_root_add_9_2/U175/ZN (OR2_X1)
+                                                          0.07       1.34 f
+  FloatingPointAdder1/fraction_sub12/add_1_root_add_9_2/U280/ZN (INV_X1)
+                                                          0.03       1.37 r
+  FloatingPointAdder1/fraction_sub12/add_1_root_add_9_2/U80/ZN (OAI21_X1)
+                                                          0.03       1.40 f
+  FloatingPointAdder1/fraction_sub12/add_1_root_add_9_2/U79/ZN (AOI21_X1)
+                                                          0.03       1.43 r
+  FloatingPointAdder1/fraction_sub12/add_1_root_add_9_2/U78/ZN (OAI21_X1)
+                                                          0.04       1.47 f
+  FloatingPointAdder1/fraction_sub12/add_1_root_add_9_2/U34/ZN (AOI21_X1)
+                                                          0.04       1.51 r
+  FloatingPointAdder1/fraction_sub12/add_1_root_add_9_2/U58/ZN (OAI211_X1)
+                                                          0.03       1.54 f
+  FloatingPointAdder1/fraction_sub12/add_1_root_add_9_2/U57/ZN (AOI21_X1)
+                                                          0.04       1.58 r
+  FloatingPointAdder1/fraction_sub12/add_1_root_add_9_2/U56/ZN (OAI21_X1)
+                                                          0.03       1.61 f
+  FloatingPointAdder1/fraction_sub12/add_1_root_add_9_2/U55/ZN (AOI21_X1)
+                                                          0.03       1.64 r
+  FloatingPointAdder1/fraction_sub12/add_1_root_add_9_2/U54/ZN (OAI21_X1)
+                                                          0.04       1.68 f
+  FloatingPointAdder1/fraction_sub12/add_1_root_add_9_2/U61/ZN (NAND2_X1)
+                                                          0.04       1.71 r
+  FloatingPointAdder1/fraction_sub12/add_1_root_add_9_2/U5/ZN (NAND2_X1)
+                                                          0.03       1.74 f
+  FloatingPointAdder1/fraction_sub12/add_1_root_add_9_2/U6/ZN (AND2_X1)
+                                                          0.03       1.78 f
+  FloatingPointAdder1/fraction_sub12/add_1_root_add_9_2/U59/ZN (XNOR2_X1)
+                                                          0.05       1.83 f
+  FloatingPointAdder1/fraction_sub12/add_1_root_add_9_2/SUM[21] (PlusOperatorAdder_2_DW01_add_1)
+                                                          0.00       1.83 f
+  FloatingPointAdder1/fraction_sub12/Sum[21] (PlusOperatorAdder_2)
+                                                          0.00       1.83 f
+  FloatingPointAdder1/U349/ZN (AOI222_X1)                 0.08       1.91 r
+  FloatingPointAdder1/U441/ZN (NAND2_X1)                  0.04       1.95 f
+  FloatingPointAdder1/U442/ZN (NAND2_X1)                  0.04       1.98 r
+  FloatingPointAdder1/U452/ZN (OAI222_X1)                 0.05       2.04 f
+  FloatingPointAdder1/U453/ZN (INV_X1)                    0.04       2.07 r
+  FloatingPointAdder1/U356/ZN (NAND2_X1)                  0.03       2.11 f
+  FloatingPointAdder1/U354/ZN (NAND2_X1)                  0.03       2.14 r
+  FloatingPointAdder1/U72/Z (BUF_X1)                      0.04       2.18 r
+  FloatingPointAdder1/U491/ZN (OAI222_X1)                 0.04       2.22 f
+  FloatingPointAdder1/U492/ZN (INV_X1)                    0.04       2.26 r
+  FloatingPointAdder1/U493/ZN (OAI222_X1)                 0.05       2.31 f
+  FloatingPointAdder1/U494/ZN (INV_X1)                    0.03       2.35 r
+  FloatingPointAdder1/U177/ZN (NAND2_X1)                  0.03       2.38 f
+  FloatingPointAdder1/U350/ZN (NAND2_X1)                  0.03       2.41 r
+  FloatingPointAdder1/U528/ZN (OAI222_X1)                 0.04       2.46 f
+  FloatingPointAdder1/U529/ZN (INV_X1)                    0.04       2.49 r
+  FloatingPointAdder1/U348/ZN (NAND2_X1)                  0.03       2.53 f
+  FloatingPointAdder1/U184/ZN (NAND2_X1)                  0.03       2.56 r
+  FloatingPointAdder1/U27/Z (BUF_X2)                      0.06       2.61 r
+  FloatingPointAdder1/U180/ZN (OAI222_X1)                 0.05       2.67 f
+  FloatingPointAdder1/U571/ZN (INV_X1)                    0.04       2.70 r
+  FloatingPointAdder1/U309/ZN (AND2_X1)                   0.05       2.75 r
+  FloatingPointAdder1/U341/Z (BUF_X1)                     0.04       2.79 r
+  FloatingPointAdder1/U344/ZN (NAND2_X1)                  0.04       2.82 f
+  FloatingPointAdder1/U597/ZN (NAND2_X1)                  0.04       2.86 r
+  FloatingPointAdder1/U106/Z (BUF_X1)                     0.04       2.90 r
+  FloatingPointAdder1/U627/ZN (OAI222_X1)                 0.04       2.94 f
+  FloatingPointAdder1/U628/ZN (INV_X1)                    0.04       2.98 r
+  FloatingPointAdder1/U637/ZN (OAI222_X1)                 0.05       3.02 f
+  FloatingPointAdder1/U638/ZN (INV_X1)                    0.03       3.05 r
+  FloatingPointAdder1/U109/Z (BUF_X1)                     0.03       3.09 r
+  FloatingPointAdder1/U142/ZN (AND2_X1)                   0.04       3.12 r
+  FloatingPointAdder1/U645/ZN (NAND2_X1)                  0.03       3.16 f
+  FloatingPointAdder1/U646/ZN (INV_X1)                    0.03       3.19 r
+  FloatingPointAdder1/U254/Z (BUF_X1)                     0.04       3.23 r
+  FloatingPointAdder1/U241/ZN (AND2_X1)                   0.04       3.27 r
+  FloatingPointAdder1/U658/ZN (NAND2_X1)                  0.02       3.29 f
+  FloatingPointAdder1/U77/ZN (NAND2_X1)                   0.03       3.32 r
+  FloatingPointAdder1/U713/ZN (INV_X1)                    0.02       3.34 f
+  FloatingPointAdder1/U15/ZN (AND2_X1)                    0.04       3.38 f
+  FloatingPointAdder1/U31/ZN (XNOR2_X1)                   0.05       3.44 f
+  FloatingPointAdder1/U714/ZN (INV_X1)                    0.03       3.46 r
+  FloatingPointAdder1/U169/ZN (NAND2_X1)                  0.03       3.49 f
+  FloatingPointAdder1/U302/ZN (XNOR2_X1)                  0.05       3.54 f
+  FloatingPointAdder1/U720/ZN (NOR2_X1)                   0.04       3.58 r
+  FloatingPointAdder1/sub_0_root_sub_8_root_sub_84_I22_aco/B[2] (FloatingPointAdder_DW01_sub_7)
+                                                          0.00       3.58 r
+  FloatingPointAdder1/sub_0_root_sub_8_root_sub_84_I22_aco/U31/ZN (INV_X1)
+                                                          0.03       3.61 f
+  FloatingPointAdder1/sub_0_root_sub_8_root_sub_84_I22_aco/U38/ZN (NAND2_X1)
+                                                          0.03       3.64 r
+  FloatingPointAdder1/sub_0_root_sub_8_root_sub_84_I22_aco/U12/Z (CLKBUF_X1)
+                                                          0.04       3.67 r
+  FloatingPointAdder1/sub_0_root_sub_8_root_sub_84_I22_aco/U23/ZN (NAND2_X1)
+                                                          0.03       3.70 f
+  FloatingPointAdder1/sub_0_root_sub_8_root_sub_84_I22_aco/U55/ZN (XNOR2_X1)
+                                                          0.05       3.75 f
+  FloatingPointAdder1/sub_0_root_sub_8_root_sub_84_I22_aco/DIFF[2] (FloatingPointAdder_DW01_sub_7)
+                                                          0.00       3.75 f
+  FloatingPointAdder1/U745/Z (MUX2_X1)                    0.06       3.81 f
+  FloatingPointAdder1/result[25] (FloatingPointAdder)     0.00       3.81 f
+  data arrival time                                                  3.81
+
+  clock clk (rise edge)                                   4.50       4.50
+  clock network delay (ideal)                             0.00       4.50
+  clock uncertainty                                      -0.20       4.30
+  output external delay                                  -0.35       3.95
+  data required time                                                 3.95
+  --------------------------------------------------------------------------
+  data required time                                                 3.95
+  data arrival time                                                 -3.81
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.14
+
+
+  Startpoint: FloatingPointAdder1/A[23]
+              (internal path startpoint clocked by clk)
+  Endpoint: FloatingPointAdder1/result[24]
+            (internal path endpoint clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  FloatingAdder_Integration
+                     5K_hvratio_1_1        NangateOpenCellLibrary_ss0p95vn40c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    0.35       0.35 f
+  FloatingPointAdder1/A[23] (FloatingPointAdder)          0.00       0.35 f
+  FloatingPointAdder1/sub_49/A[0] (FloatingPointAdder_DW01_sub_6)
+                                                          0.00       0.35 f
+  FloatingPointAdder1/sub_49/U24/ZN (INV_X1)              0.01       0.36 r
+  FloatingPointAdder1/sub_49/U17/ZN (AND2_X1)             0.04       0.40 r
+  FloatingPointAdder1/sub_49/U12/ZN (AND2_X2)             0.05       0.44 r
+  FloatingPointAdder1/sub_49/U53/ZN (OAI21_X1)            0.03       0.47 f
+  FloatingPointAdder1/sub_49/U67/ZN (INV_X1)              0.02       0.50 r
+  FloatingPointAdder1/sub_49/U52/ZN (OAI21_X1)            0.02       0.52 f
+  FloatingPointAdder1/sub_49/U65/ZN (INV_X1)              0.03       0.55 r
+  FloatingPointAdder1/sub_49/U4/Z (CLKBUF_X1)             0.04       0.58 r
+  FloatingPointAdder1/sub_49/U14/ZN (OAI21_X1)            0.03       0.61 f
+  FloatingPointAdder1/sub_49/U64/ZN (XNOR2_X1)            0.05       0.67 f
+  FloatingPointAdder1/sub_49/DIFF[4] (FloatingPointAdder_DW01_sub_6)
+                                                          0.00       0.67 f
+  FloatingPointAdder1/U154/ZN (OR2_X1)                    0.06       0.72 f
+  FloatingPointAdder1/U8/ZN (OR2_X1)                      0.05       0.78 f
+  FloatingPointAdder1/U379/Z (XOR2_X1)                    0.07       0.85 f
+  FloatingPointAdder1/sra_52/SH[6] (FloatingPointAdder_DW_rash_1)
+                                                          0.00       0.85 f
+  FloatingPointAdder1/sra_52/U24/ZN (OR2_X1)              0.06       0.91 f
+  FloatingPointAdder1/sra_52/U25/ZN (OR2_X2)              0.06       0.96 f
+  FloatingPointAdder1/sra_52/U185/ZN (NAND2_X1)           0.04       1.01 r
+  FloatingPointAdder1/sra_52/U129/ZN (OAI222_X1)          0.05       1.06 f
+  FloatingPointAdder1/sra_52/U128/Z (MUX2_X1)             0.06       1.12 f
+  FloatingPointAdder1/sra_52/U127/ZN (AOI21_X1)           0.04       1.16 r
+  FloatingPointAdder1/sra_52/U126/ZN (OAI21_X1)           0.03       1.19 f
+  FloatingPointAdder1/sra_52/B[1] (FloatingPointAdder_DW_rash_1)
+                                                          0.00       1.19 f
+  FloatingPointAdder1/U86/Z (MUX2_X1)                     0.07       1.27 f
+  FloatingPointAdder1/fraction_sub12/A[1] (PlusOperatorAdder_2)
+                                                          0.00       1.27 f
+  FloatingPointAdder1/fraction_sub12/add_1_root_add_9_2/A[1] (PlusOperatorAdder_2_DW01_add_1)
+                                                          0.00       1.27 f
+  FloatingPointAdder1/fraction_sub12/add_1_root_add_9_2/U175/ZN (OR2_X1)
+                                                          0.07       1.34 f
+  FloatingPointAdder1/fraction_sub12/add_1_root_add_9_2/U280/ZN (INV_X1)
+                                                          0.03       1.37 r
+  FloatingPointAdder1/fraction_sub12/add_1_root_add_9_2/U80/ZN (OAI21_X1)
+                                                          0.03       1.40 f
+  FloatingPointAdder1/fraction_sub12/add_1_root_add_9_2/U79/ZN (AOI21_X1)
+                                                          0.03       1.43 r
+  FloatingPointAdder1/fraction_sub12/add_1_root_add_9_2/U78/ZN (OAI21_X1)
+                                                          0.04       1.47 f
+  FloatingPointAdder1/fraction_sub12/add_1_root_add_9_2/U34/ZN (AOI21_X1)
+                                                          0.04       1.51 r
+  FloatingPointAdder1/fraction_sub12/add_1_root_add_9_2/U58/ZN (OAI211_X1)
+                                                          0.03       1.54 f
+  FloatingPointAdder1/fraction_sub12/add_1_root_add_9_2/U57/ZN (AOI21_X1)
+                                                          0.04       1.58 r
+  FloatingPointAdder1/fraction_sub12/add_1_root_add_9_2/U56/ZN (OAI21_X1)
+                                                          0.03       1.61 f
+  FloatingPointAdder1/fraction_sub12/add_1_root_add_9_2/U55/ZN (AOI21_X1)
+                                                          0.03       1.64 r
+  FloatingPointAdder1/fraction_sub12/add_1_root_add_9_2/U54/ZN (OAI21_X1)
+                                                          0.04       1.68 f
+  FloatingPointAdder1/fraction_sub12/add_1_root_add_9_2/U61/ZN (NAND2_X1)
+                                                          0.04       1.71 r
+  FloatingPointAdder1/fraction_sub12/add_1_root_add_9_2/U5/ZN (NAND2_X1)
+                                                          0.03       1.74 f
+  FloatingPointAdder1/fraction_sub12/add_1_root_add_9_2/U6/ZN (AND2_X1)
+                                                          0.03       1.78 f
+  FloatingPointAdder1/fraction_sub12/add_1_root_add_9_2/U59/ZN (XNOR2_X1)
+                                                          0.05       1.83 f
+  FloatingPointAdder1/fraction_sub12/add_1_root_add_9_2/SUM[21] (PlusOperatorAdder_2_DW01_add_1)
+                                                          0.00       1.83 f
+  FloatingPointAdder1/fraction_sub12/Sum[21] (PlusOperatorAdder_2)
+                                                          0.00       1.83 f
+  FloatingPointAdder1/U349/ZN (AOI222_X1)                 0.08       1.91 r
+  FloatingPointAdder1/U441/ZN (NAND2_X1)                  0.04       1.95 f
+  FloatingPointAdder1/U442/ZN (NAND2_X1)                  0.04       1.98 r
+  FloatingPointAdder1/U452/ZN (OAI222_X1)                 0.05       2.04 f
+  FloatingPointAdder1/U453/ZN (INV_X1)                    0.04       2.07 r
+  FloatingPointAdder1/U356/ZN (NAND2_X1)                  0.03       2.11 f
+  FloatingPointAdder1/U354/ZN (NAND2_X1)                  0.03       2.14 r
+  FloatingPointAdder1/U72/Z (BUF_X1)                      0.04       2.18 r
+  FloatingPointAdder1/U491/ZN (OAI222_X1)                 0.04       2.22 f
+  FloatingPointAdder1/U492/ZN (INV_X1)                    0.04       2.26 r
+  FloatingPointAdder1/U493/ZN (OAI222_X1)                 0.05       2.31 f
+  FloatingPointAdder1/U494/ZN (INV_X1)                    0.03       2.35 r
+  FloatingPointAdder1/U177/ZN (NAND2_X1)                  0.03       2.38 f
+  FloatingPointAdder1/U350/ZN (NAND2_X1)                  0.03       2.41 r
+  FloatingPointAdder1/U528/ZN (OAI222_X1)                 0.04       2.46 f
+  FloatingPointAdder1/U529/ZN (INV_X1)                    0.04       2.49 r
+  FloatingPointAdder1/U348/ZN (NAND2_X1)                  0.03       2.53 f
+  FloatingPointAdder1/U184/ZN (NAND2_X1)                  0.03       2.56 r
+  FloatingPointAdder1/U27/Z (BUF_X2)                      0.06       2.61 r
+  FloatingPointAdder1/U180/ZN (OAI222_X1)                 0.05       2.67 f
+  FloatingPointAdder1/U571/ZN (INV_X1)                    0.04       2.70 r
+  FloatingPointAdder1/U309/ZN (AND2_X1)                   0.05       2.75 r
+  FloatingPointAdder1/U341/Z (BUF_X1)                     0.04       2.79 r
+  FloatingPointAdder1/U344/ZN (NAND2_X1)                  0.04       2.82 f
+  FloatingPointAdder1/U597/ZN (NAND2_X1)                  0.04       2.86 r
+  FloatingPointAdder1/U106/Z (BUF_X1)                     0.04       2.90 r
+  FloatingPointAdder1/U627/ZN (OAI222_X1)                 0.04       2.94 f
+  FloatingPointAdder1/U628/ZN (INV_X1)                    0.04       2.98 r
+  FloatingPointAdder1/U637/ZN (OAI222_X1)                 0.05       3.02 f
+  FloatingPointAdder1/U638/ZN (INV_X1)                    0.03       3.05 r
+  FloatingPointAdder1/U109/Z (BUF_X1)                     0.03       3.09 r
+  FloatingPointAdder1/U142/ZN (AND2_X1)                   0.04       3.12 r
+  FloatingPointAdder1/U645/ZN (NAND2_X1)                  0.03       3.16 f
+  FloatingPointAdder1/U646/ZN (INV_X1)                    0.03       3.19 r
+  FloatingPointAdder1/U254/Z (BUF_X1)                     0.04       3.23 r
+  FloatingPointAdder1/U653/ZN (NAND2_X1)                  0.03       3.26 f
+  FloatingPointAdder1/U654/ZN (NAND2_X1)                  0.03       3.29 r
+  FloatingPointAdder1/U659/ZN (OAI222_X1)                 0.05       3.34 f
+  FloatingPointAdder1/U660/ZN (INV_X1)                    0.04       3.38 r
+  FloatingPointAdder1/U281/ZN (AND2_X1)                   0.05       3.43 r
+  FloatingPointAdder1/U73/ZN (OAI21_X1)                   0.03       3.46 f
+  FloatingPointAdder1/U32/ZN (XNOR2_X1)                   0.06       3.51 f
+  FloatingPointAdder1/sub_0_root_sub_8_root_sub_84_I22_aco/A[1] (FloatingPointAdder_DW01_sub_7)
+                                                          0.00       3.51 f
+  FloatingPointAdder1/sub_0_root_sub_8_root_sub_84_I22_aco/U44/ZN (INV_X1)
+                                                          0.03       3.54 r
+  FloatingPointAdder1/sub_0_root_sub_8_root_sub_84_I22_aco/U16/ZN (AND2_X1)
+                                                          0.04       3.58 r
+  FloatingPointAdder1/sub_0_root_sub_8_root_sub_84_I22_aco/U14/ZN (INV_X1)
+                                                          0.02       3.60 f
+  FloatingPointAdder1/sub_0_root_sub_8_root_sub_84_I22_aco/U37/ZN (NAND2_X1)
+                                                          0.02       3.63 r
+  FloatingPointAdder1/sub_0_root_sub_8_root_sub_84_I22_aco/U48/ZN (XNOR2_X1)
+                                                          0.05       3.68 r
+  FloatingPointAdder1/sub_0_root_sub_8_root_sub_84_I22_aco/DIFF[1] (FloatingPointAdder_DW01_sub_7)
+                                                          0.00       3.68 r
+  FloatingPointAdder1/U744/Z (MUX2_X1)                    0.04       3.73 r
+  FloatingPointAdder1/result[24] (FloatingPointAdder)     0.00       3.73 r
+  data arrival time                                                  3.73
+
+  clock clk (rise edge)                                   4.50       4.50
+  clock network delay (ideal)                             0.00       4.50
+  clock uncertainty                                      -0.20       4.30
+  output external delay                                  -0.35       3.95
+  data required time                                                 3.95
+  --------------------------------------------------------------------------
+  data required time                                                 3.95
+  data arrival time                                                 -3.73
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.22
+
+
+  Startpoint: FloatingPointAdder1/A[23]
+              (internal path startpoint clocked by clk)
+  Endpoint: FloatingPointAdder1/result[23]
+            (internal path endpoint clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  FloatingAdder_Integration
+                     5K_hvratio_1_1        NangateOpenCellLibrary_ss0p95vn40c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    0.35       0.35 f
+  FloatingPointAdder1/A[23] (FloatingPointAdder)          0.00       0.35 f
+  FloatingPointAdder1/sub_49/A[0] (FloatingPointAdder_DW01_sub_6)
+                                                          0.00       0.35 f
+  FloatingPointAdder1/sub_49/U24/ZN (INV_X1)              0.01       0.36 r
+  FloatingPointAdder1/sub_49/U17/ZN (AND2_X1)             0.04       0.40 r
+  FloatingPointAdder1/sub_49/U12/ZN (AND2_X2)             0.05       0.44 r
+  FloatingPointAdder1/sub_49/U53/ZN (OAI21_X1)            0.03       0.47 f
+  FloatingPointAdder1/sub_49/U67/ZN (INV_X1)              0.02       0.50 r
+  FloatingPointAdder1/sub_49/U52/ZN (OAI21_X1)            0.02       0.52 f
+  FloatingPointAdder1/sub_49/U65/ZN (INV_X1)              0.03       0.55 r
+  FloatingPointAdder1/sub_49/U4/Z (CLKBUF_X1)             0.04       0.58 r
+  FloatingPointAdder1/sub_49/U14/ZN (OAI21_X1)            0.03       0.61 f
+  FloatingPointAdder1/sub_49/U64/ZN (XNOR2_X1)            0.05       0.67 f
+  FloatingPointAdder1/sub_49/DIFF[4] (FloatingPointAdder_DW01_sub_6)
+                                                          0.00       0.67 f
+  FloatingPointAdder1/U154/ZN (OR2_X1)                    0.06       0.72 f
+  FloatingPointAdder1/U8/ZN (OR2_X1)                      0.05       0.78 f
+  FloatingPointAdder1/U379/Z (XOR2_X1)                    0.07       0.85 f
+  FloatingPointAdder1/sra_52/SH[6] (FloatingPointAdder_DW_rash_1)
+                                                          0.00       0.85 f
+  FloatingPointAdder1/sra_52/U24/ZN (OR2_X1)              0.06       0.91 f
+  FloatingPointAdder1/sra_52/U25/ZN (OR2_X2)              0.06       0.96 f
+  FloatingPointAdder1/sra_52/U185/ZN (NAND2_X1)           0.04       1.01 r
+  FloatingPointAdder1/sra_52/U129/ZN (OAI222_X1)          0.05       1.06 f
+  FloatingPointAdder1/sra_52/U128/Z (MUX2_X1)             0.06       1.12 f
+  FloatingPointAdder1/sra_52/U127/ZN (AOI21_X1)           0.04       1.16 r
+  FloatingPointAdder1/sra_52/U126/ZN (OAI21_X1)           0.03       1.19 f
+  FloatingPointAdder1/sra_52/B[1] (FloatingPointAdder_DW_rash_1)
+                                                          0.00       1.19 f
+  FloatingPointAdder1/U86/Z (MUX2_X1)                     0.07       1.27 f
+  FloatingPointAdder1/fraction_sub12/A[1] (PlusOperatorAdder_2)
+                                                          0.00       1.27 f
+  FloatingPointAdder1/fraction_sub12/add_1_root_add_9_2/A[1] (PlusOperatorAdder_2_DW01_add_1)
+                                                          0.00       1.27 f
+  FloatingPointAdder1/fraction_sub12/add_1_root_add_9_2/U175/ZN (OR2_X1)
+                                                          0.07       1.34 f
+  FloatingPointAdder1/fraction_sub12/add_1_root_add_9_2/U280/ZN (INV_X1)
+                                                          0.03       1.37 r
+  FloatingPointAdder1/fraction_sub12/add_1_root_add_9_2/U80/ZN (OAI21_X1)
+                                                          0.03       1.40 f
+  FloatingPointAdder1/fraction_sub12/add_1_root_add_9_2/U79/ZN (AOI21_X1)
+                                                          0.03       1.43 r
+  FloatingPointAdder1/fraction_sub12/add_1_root_add_9_2/U78/ZN (OAI21_X1)
+                                                          0.04       1.47 f
+  FloatingPointAdder1/fraction_sub12/add_1_root_add_9_2/U34/ZN (AOI21_X1)
+                                                          0.04       1.51 r
+  FloatingPointAdder1/fraction_sub12/add_1_root_add_9_2/U58/ZN (OAI211_X1)
+                                                          0.03       1.54 f
+  FloatingPointAdder1/fraction_sub12/add_1_root_add_9_2/U57/ZN (AOI21_X1)
+                                                          0.04       1.58 r
+  FloatingPointAdder1/fraction_sub12/add_1_root_add_9_2/U56/ZN (OAI21_X1)
+                                                          0.03       1.61 f
+  FloatingPointAdder1/fraction_sub12/add_1_root_add_9_2/U55/ZN (AOI21_X1)
+                                                          0.03       1.64 r
+  FloatingPointAdder1/fraction_sub12/add_1_root_add_9_2/U54/ZN (OAI21_X1)
+                                                          0.04       1.68 f
+  FloatingPointAdder1/fraction_sub12/add_1_root_add_9_2/U61/ZN (NAND2_X1)
+                                                          0.04       1.71 r
+  FloatingPointAdder1/fraction_sub12/add_1_root_add_9_2/U5/ZN (NAND2_X1)
+                                                          0.03       1.74 f
+  FloatingPointAdder1/fraction_sub12/add_1_root_add_9_2/U6/ZN (AND2_X1)
+                                                          0.03       1.78 f
+  FloatingPointAdder1/fraction_sub12/add_1_root_add_9_2/U59/ZN (XNOR2_X1)
+                                                          0.05       1.83 f
+  FloatingPointAdder1/fraction_sub12/add_1_root_add_9_2/SUM[21] (PlusOperatorAdder_2_DW01_add_1)
+                                                          0.00       1.83 f
+  FloatingPointAdder1/fraction_sub12/Sum[21] (PlusOperatorAdder_2)
+                                                          0.00       1.83 f
+  FloatingPointAdder1/U349/ZN (AOI222_X1)                 0.08       1.91 r
+  FloatingPointAdder1/U441/ZN (NAND2_X1)                  0.04       1.95 f
+  FloatingPointAdder1/U442/ZN (NAND2_X1)                  0.04       1.98 r
+  FloatingPointAdder1/U452/ZN (OAI222_X1)                 0.05       2.04 f
+  FloatingPointAdder1/U453/ZN (INV_X1)                    0.04       2.07 r
+  FloatingPointAdder1/U356/ZN (NAND2_X1)                  0.03       2.11 f
+  FloatingPointAdder1/U354/ZN (NAND2_X1)                  0.03       2.14 r
+  FloatingPointAdder1/U72/Z (BUF_X1)                      0.04       2.18 r
+  FloatingPointAdder1/U491/ZN (OAI222_X1)                 0.04       2.22 f
+  FloatingPointAdder1/U492/ZN (INV_X1)                    0.04       2.26 r
+  FloatingPointAdder1/U493/ZN (OAI222_X1)                 0.05       2.31 f
+  FloatingPointAdder1/U494/ZN (INV_X1)                    0.03       2.35 r
+  FloatingPointAdder1/U177/ZN (NAND2_X1)                  0.03       2.38 f
+  FloatingPointAdder1/U350/ZN (NAND2_X1)                  0.03       2.41 r
+  FloatingPointAdder1/U528/ZN (OAI222_X1)                 0.04       2.46 f
+  FloatingPointAdder1/U529/ZN (INV_X1)                    0.04       2.49 r
+  FloatingPointAdder1/U348/ZN (NAND2_X1)                  0.03       2.53 f
+  FloatingPointAdder1/U184/ZN (NAND2_X1)                  0.03       2.56 r
+  FloatingPointAdder1/U27/Z (BUF_X2)                      0.06       2.61 r
+  FloatingPointAdder1/U180/ZN (OAI222_X1)                 0.05       2.67 f
+  FloatingPointAdder1/U571/ZN (INV_X1)                    0.04       2.70 r
+  FloatingPointAdder1/U309/ZN (AND2_X1)                   0.05       2.75 r
+  FloatingPointAdder1/U341/Z (BUF_X1)                     0.04       2.79 r
+  FloatingPointAdder1/U344/ZN (NAND2_X1)                  0.04       2.82 f
+  FloatingPointAdder1/U597/ZN (NAND2_X1)                  0.04       2.86 r
+  FloatingPointAdder1/U106/Z (BUF_X1)                     0.04       2.90 r
+  FloatingPointAdder1/U627/ZN (OAI222_X1)                 0.04       2.94 f
+  FloatingPointAdder1/U628/ZN (INV_X1)                    0.04       2.98 r
+  FloatingPointAdder1/U637/ZN (OAI222_X1)                 0.05       3.02 f
+  FloatingPointAdder1/U638/ZN (INV_X1)                    0.03       3.05 r
+  FloatingPointAdder1/U109/Z (BUF_X1)                     0.03       3.09 r
+  FloatingPointAdder1/U142/ZN (AND2_X1)                   0.04       3.12 r
+  FloatingPointAdder1/U645/ZN (NAND2_X1)                  0.03       3.16 f
+  FloatingPointAdder1/U646/ZN (INV_X1)                    0.03       3.19 r
+  FloatingPointAdder1/U254/Z (BUF_X1)                     0.04       3.23 r
+  FloatingPointAdder1/U653/ZN (NAND2_X1)                  0.03       3.26 f
+  FloatingPointAdder1/U654/ZN (NAND2_X1)                  0.03       3.29 r
+  FloatingPointAdder1/U659/ZN (OAI222_X1)                 0.05       3.34 f
+  FloatingPointAdder1/U660/ZN (INV_X1)                    0.04       3.38 r
+  FloatingPointAdder1/U213/ZN (NAND2_X1)                  0.03       3.41 f
+  FloatingPointAdder1/U212/ZN (XNOR2_X1)                  0.05       3.46 f
+  FloatingPointAdder1/sub_0_root_sub_8_root_sub_84_I22_aco/A[0] (FloatingPointAdder_DW01_sub_7)
+                                                          0.00       3.46 f
+  FloatingPointAdder1/sub_0_root_sub_8_root_sub_84_I22_aco/U49/ZN (INV_X1)
+                                                          0.03       3.49 r
+  FloatingPointAdder1/sub_0_root_sub_8_root_sub_84_I22_aco/U11/ZN (OR2_X1)
+                                                          0.04       3.53 r
+  FloatingPointAdder1/sub_0_root_sub_8_root_sub_84_I22_aco/U47/ZN (NAND2_X1)
+                                                          0.03       3.56 f
+  FloatingPointAdder1/sub_0_root_sub_8_root_sub_84_I22_aco/DIFF[0] (FloatingPointAdder_DW01_sub_7)
+                                                          0.00       3.56 f
+  FloatingPointAdder1/U743/Z (MUX2_X1)                    0.06       3.61 f
+  FloatingPointAdder1/result[23] (FloatingPointAdder)     0.00       3.61 f
+  data arrival time                                                  3.61
+
+  clock clk (rise edge)                                   4.50       4.50
+  clock network delay (ideal)                             0.00       4.50
+  clock uncertainty                                      -0.20       4.30
+  output external delay                                  -0.35       3.95
+  data required time                                                 3.95
+  --------------------------------------------------------------------------
+  data required time                                                 3.95
+  data arrival time                                                 -3.61
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.34
+
+
+  Startpoint: FloatingPointAdder1/A[23]
+              (internal path startpoint clocked by clk)
+  Endpoint: FloatingPointAdder1/result[21]
+            (internal path endpoint clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  FloatingAdder_Integration
+                     5K_hvratio_1_1        NangateOpenCellLibrary_ss0p95vn40c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    0.35       0.35 f
+  FloatingPointAdder1/A[23] (FloatingPointAdder)          0.00       0.35 f
+  FloatingPointAdder1/sub_49/A[0] (FloatingPointAdder_DW01_sub_6)
+                                                          0.00       0.35 f
+  FloatingPointAdder1/sub_49/U24/ZN (INV_X1)              0.01       0.36 r
+  FloatingPointAdder1/sub_49/U17/ZN (AND2_X1)             0.04       0.40 r
+  FloatingPointAdder1/sub_49/U12/ZN (AND2_X2)             0.05       0.44 r
+  FloatingPointAdder1/sub_49/U53/ZN (OAI21_X1)            0.03       0.47 f
+  FloatingPointAdder1/sub_49/U67/ZN (INV_X1)              0.02       0.50 r
+  FloatingPointAdder1/sub_49/U52/ZN (OAI21_X1)            0.02       0.52 f
+  FloatingPointAdder1/sub_49/U65/ZN (INV_X1)              0.03       0.55 r
+  FloatingPointAdder1/sub_49/U4/Z (CLKBUF_X1)             0.04       0.58 r
+  FloatingPointAdder1/sub_49/U14/ZN (OAI21_X1)            0.03       0.61 f
+  FloatingPointAdder1/sub_49/U64/ZN (XNOR2_X1)            0.05       0.67 f
+  FloatingPointAdder1/sub_49/DIFF[4] (FloatingPointAdder_DW01_sub_6)
+                                                          0.00       0.67 f
+  FloatingPointAdder1/U154/ZN (OR2_X1)                    0.06       0.72 f
+  FloatingPointAdder1/U8/ZN (OR2_X1)                      0.05       0.78 f
+  FloatingPointAdder1/U379/Z (XOR2_X1)                    0.07       0.85 f
+  FloatingPointAdder1/sra_52/SH[6] (FloatingPointAdder_DW_rash_1)
+                                                          0.00       0.85 f
+  FloatingPointAdder1/sra_52/U24/ZN (OR2_X1)              0.06       0.91 f
+  FloatingPointAdder1/sra_52/U25/ZN (OR2_X2)              0.06       0.96 f
+  FloatingPointAdder1/sra_52/U185/ZN (NAND2_X1)           0.04       1.01 r
+  FloatingPointAdder1/sra_52/U129/ZN (OAI222_X1)          0.05       1.06 f
+  FloatingPointAdder1/sra_52/U128/Z (MUX2_X1)             0.06       1.12 f
+  FloatingPointAdder1/sra_52/U127/ZN (AOI21_X1)           0.04       1.16 r
+  FloatingPointAdder1/sra_52/U126/ZN (OAI21_X1)           0.03       1.19 f
+  FloatingPointAdder1/sra_52/B[1] (FloatingPointAdder_DW_rash_1)
+                                                          0.00       1.19 f
+  FloatingPointAdder1/U86/Z (MUX2_X1)                     0.07       1.27 f
+  FloatingPointAdder1/fraction_sub12/A[1] (PlusOperatorAdder_2)
+                                                          0.00       1.27 f
+  FloatingPointAdder1/fraction_sub12/add_1_root_add_9_2/A[1] (PlusOperatorAdder_2_DW01_add_1)
+                                                          0.00       1.27 f
+  FloatingPointAdder1/fraction_sub12/add_1_root_add_9_2/U175/ZN (OR2_X1)
+                                                          0.07       1.34 f
+  FloatingPointAdder1/fraction_sub12/add_1_root_add_9_2/U280/ZN (INV_X1)
+                                                          0.03       1.37 r
+  FloatingPointAdder1/fraction_sub12/add_1_root_add_9_2/U80/ZN (OAI21_X1)
+                                                          0.03       1.40 f
+  FloatingPointAdder1/fraction_sub12/add_1_root_add_9_2/U79/ZN (AOI21_X1)
+                                                          0.03       1.43 r
+  FloatingPointAdder1/fraction_sub12/add_1_root_add_9_2/U78/ZN (OAI21_X1)
+                                                          0.04       1.47 f
+  FloatingPointAdder1/fraction_sub12/add_1_root_add_9_2/U34/ZN (AOI21_X1)
+                                                          0.04       1.51 r
+  FloatingPointAdder1/fraction_sub12/add_1_root_add_9_2/U58/ZN (OAI211_X1)
+                                                          0.03       1.54 f
+  FloatingPointAdder1/fraction_sub12/add_1_root_add_9_2/U57/ZN (AOI21_X1)
+                                                          0.04       1.58 r
+  FloatingPointAdder1/fraction_sub12/add_1_root_add_9_2/U56/ZN (OAI21_X1)
+                                                          0.03       1.61 f
+  FloatingPointAdder1/fraction_sub12/add_1_root_add_9_2/U55/ZN (AOI21_X1)
+                                                          0.03       1.64 r
+  FloatingPointAdder1/fraction_sub12/add_1_root_add_9_2/U54/ZN (OAI21_X1)
+                                                          0.04       1.68 f
+  FloatingPointAdder1/fraction_sub12/add_1_root_add_9_2/U61/ZN (NAND2_X1)
+                                                          0.04       1.71 r
+  FloatingPointAdder1/fraction_sub12/add_1_root_add_9_2/U5/ZN (NAND2_X1)
+                                                          0.03       1.74 f
+  FloatingPointAdder1/fraction_sub12/add_1_root_add_9_2/U6/ZN (AND2_X1)
+                                                          0.03       1.78 f
+  FloatingPointAdder1/fraction_sub12/add_1_root_add_9_2/U59/ZN (XNOR2_X1)
+                                                          0.05       1.83 f
+  FloatingPointAdder1/fraction_sub12/add_1_root_add_9_2/SUM[21] (PlusOperatorAdder_2_DW01_add_1)
+                                                          0.00       1.83 f
+  FloatingPointAdder1/fraction_sub12/Sum[21] (PlusOperatorAdder_2)
+                                                          0.00       1.83 f
+  FloatingPointAdder1/U349/ZN (AOI222_X1)                 0.08       1.91 r
+  FloatingPointAdder1/U441/ZN (NAND2_X1)                  0.04       1.95 f
+  FloatingPointAdder1/U442/ZN (NAND2_X1)                  0.04       1.98 r
+  FloatingPointAdder1/U452/ZN (OAI222_X1)                 0.05       2.04 f
+  FloatingPointAdder1/U453/ZN (INV_X1)                    0.04       2.07 r
+  FloatingPointAdder1/U356/ZN (NAND2_X1)                  0.03       2.11 f
+  FloatingPointAdder1/U354/ZN (NAND2_X1)                  0.03       2.14 r
+  FloatingPointAdder1/U72/Z (BUF_X1)                      0.04       2.18 r
+  FloatingPointAdder1/U491/ZN (OAI222_X1)                 0.04       2.22 f
+  FloatingPointAdder1/U492/ZN (INV_X1)                    0.04       2.26 r
+  FloatingPointAdder1/U493/ZN (OAI222_X1)                 0.05       2.31 f
+  FloatingPointAdder1/U494/ZN (INV_X1)                    0.03       2.35 r
+  FloatingPointAdder1/U177/ZN (NAND2_X1)                  0.03       2.38 f
+  FloatingPointAdder1/U350/ZN (NAND2_X1)                  0.03       2.41 r
+  FloatingPointAdder1/U528/ZN (OAI222_X1)                 0.04       2.46 f
+  FloatingPointAdder1/U529/ZN (INV_X1)                    0.04       2.49 r
+  FloatingPointAdder1/U348/ZN (NAND2_X1)                  0.03       2.53 f
+  FloatingPointAdder1/U184/ZN (NAND2_X1)                  0.03       2.56 r
+  FloatingPointAdder1/U27/Z (BUF_X2)                      0.06       2.61 r
+  FloatingPointAdder1/U180/ZN (OAI222_X1)                 0.05       2.67 f
+  FloatingPointAdder1/U571/ZN (INV_X1)                    0.04       2.70 r
+  FloatingPointAdder1/U309/ZN (AND2_X1)                   0.05       2.75 r
+  FloatingPointAdder1/U341/Z (BUF_X1)                     0.04       2.79 r
+  FloatingPointAdder1/U344/ZN (NAND2_X1)                  0.04       2.82 f
+  FloatingPointAdder1/U597/ZN (NAND2_X1)                  0.04       2.86 r
+  FloatingPointAdder1/U106/Z (BUF_X1)                     0.04       2.90 r
+  FloatingPointAdder1/U627/ZN (OAI222_X1)                 0.04       2.94 f
+  FloatingPointAdder1/U628/ZN (INV_X1)                    0.04       2.98 r
+  FloatingPointAdder1/U637/ZN (OAI222_X1)                 0.05       3.02 f
+  FloatingPointAdder1/U638/ZN (INV_X1)                    0.03       3.05 r
+  FloatingPointAdder1/U109/Z (BUF_X1)                     0.03       3.09 r
+  FloatingPointAdder1/U142/ZN (AND2_X1)                   0.04       3.12 r
+  FloatingPointAdder1/U645/ZN (NAND2_X1)                  0.03       3.16 f
+  FloatingPointAdder1/U646/ZN (INV_X1)                    0.03       3.19 r
+  FloatingPointAdder1/U254/Z (BUF_X1)                     0.04       3.23 r
+  FloatingPointAdder1/U653/ZN (NAND2_X1)                  0.03       3.26 f
+  FloatingPointAdder1/U654/ZN (NAND2_X1)                  0.03       3.29 r
+  FloatingPointAdder1/U659/ZN (OAI222_X1)                 0.05       3.34 f
+  FloatingPointAdder1/U660/ZN (INV_X1)                    0.04       3.38 r
+  FloatingPointAdder1/U662/ZN (NAND2_X1)                  0.03       3.41 f
+  FloatingPointAdder1/result[21] (FloatingPointAdder)     0.00       3.41 f
+  data arrival time                                                  3.41
+
+  clock clk (rise edge)                                   4.50       4.50
+  clock network delay (ideal)                             0.00       4.50
+  clock uncertainty                                      -0.20       4.30
+  output external delay                                  -0.35       3.95
+  data required time                                                 3.95
+  --------------------------------------------------------------------------
+  data required time                                                 3.95
+  data arrival time                                                 -3.41
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.54
+
+
+  Startpoint: FloatingPointAdder1/A[23]
+              (internal path startpoint clocked by clk)
+  Endpoint: FloatingPointAdder1/result[20]
+            (internal path endpoint clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  FloatingAdder_Integration
+                     5K_hvratio_1_1        NangateOpenCellLibrary_ss0p95vn40c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    0.35       0.35 f
+  FloatingPointAdder1/A[23] (FloatingPointAdder)          0.00       0.35 f
+  FloatingPointAdder1/sub_49/A[0] (FloatingPointAdder_DW01_sub_6)
+                                                          0.00       0.35 f
+  FloatingPointAdder1/sub_49/U24/ZN (INV_X1)              0.01       0.36 r
+  FloatingPointAdder1/sub_49/U17/ZN (AND2_X1)             0.04       0.40 r
+  FloatingPointAdder1/sub_49/U12/ZN (AND2_X2)             0.05       0.44 r
+  FloatingPointAdder1/sub_49/U53/ZN (OAI21_X1)            0.03       0.47 f
+  FloatingPointAdder1/sub_49/U67/ZN (INV_X1)              0.02       0.50 r
+  FloatingPointAdder1/sub_49/U52/ZN (OAI21_X1)            0.02       0.52 f
+  FloatingPointAdder1/sub_49/U65/ZN (INV_X1)              0.03       0.55 r
+  FloatingPointAdder1/sub_49/U4/Z (CLKBUF_X1)             0.04       0.58 r
+  FloatingPointAdder1/sub_49/U14/ZN (OAI21_X1)            0.03       0.61 f
+  FloatingPointAdder1/sub_49/U64/ZN (XNOR2_X1)            0.05       0.67 f
+  FloatingPointAdder1/sub_49/DIFF[4] (FloatingPointAdder_DW01_sub_6)
+                                                          0.00       0.67 f
+  FloatingPointAdder1/U154/ZN (OR2_X1)                    0.06       0.72 f
+  FloatingPointAdder1/U8/ZN (OR2_X1)                      0.05       0.78 f
+  FloatingPointAdder1/U379/Z (XOR2_X1)                    0.07       0.85 f
+  FloatingPointAdder1/sra_52/SH[6] (FloatingPointAdder_DW_rash_1)
+                                                          0.00       0.85 f
+  FloatingPointAdder1/sra_52/U24/ZN (OR2_X1)              0.06       0.91 f
+  FloatingPointAdder1/sra_52/U25/ZN (OR2_X2)              0.06       0.96 f
+  FloatingPointAdder1/sra_52/U185/ZN (NAND2_X1)           0.04       1.01 r
+  FloatingPointAdder1/sra_52/U129/ZN (OAI222_X1)          0.05       1.06 f
+  FloatingPointAdder1/sra_52/U128/Z (MUX2_X1)             0.06       1.12 f
+  FloatingPointAdder1/sra_52/U127/ZN (AOI21_X1)           0.04       1.16 r
+  FloatingPointAdder1/sra_52/U126/ZN (OAI21_X1)           0.03       1.19 f
+  FloatingPointAdder1/sra_52/B[1] (FloatingPointAdder_DW_rash_1)
+                                                          0.00       1.19 f
+  FloatingPointAdder1/U86/Z (MUX2_X1)                     0.07       1.27 f
+  FloatingPointAdder1/fraction_sub12/A[1] (PlusOperatorAdder_2)
+                                                          0.00       1.27 f
+  FloatingPointAdder1/fraction_sub12/add_1_root_add_9_2/A[1] (PlusOperatorAdder_2_DW01_add_1)
+                                                          0.00       1.27 f
+  FloatingPointAdder1/fraction_sub12/add_1_root_add_9_2/U175/ZN (OR2_X1)
+                                                          0.07       1.34 f
+  FloatingPointAdder1/fraction_sub12/add_1_root_add_9_2/U280/ZN (INV_X1)
+                                                          0.03       1.37 r
+  FloatingPointAdder1/fraction_sub12/add_1_root_add_9_2/U80/ZN (OAI21_X1)
+                                                          0.03       1.40 f
+  FloatingPointAdder1/fraction_sub12/add_1_root_add_9_2/U79/ZN (AOI21_X1)
+                                                          0.03       1.43 r
+  FloatingPointAdder1/fraction_sub12/add_1_root_add_9_2/U78/ZN (OAI21_X1)
+                                                          0.04       1.47 f
+  FloatingPointAdder1/fraction_sub12/add_1_root_add_9_2/U34/ZN (AOI21_X1)
+                                                          0.04       1.51 r
+  FloatingPointAdder1/fraction_sub12/add_1_root_add_9_2/U58/ZN (OAI211_X1)
+                                                          0.03       1.54 f
+  FloatingPointAdder1/fraction_sub12/add_1_root_add_9_2/U57/ZN (AOI21_X1)
+                                                          0.04       1.58 r
+  FloatingPointAdder1/fraction_sub12/add_1_root_add_9_2/U56/ZN (OAI21_X1)
+                                                          0.03       1.61 f
+  FloatingPointAdder1/fraction_sub12/add_1_root_add_9_2/U55/ZN (AOI21_X1)
+                                                          0.03       1.64 r
+  FloatingPointAdder1/fraction_sub12/add_1_root_add_9_2/U54/ZN (OAI21_X1)
+                                                          0.04       1.68 f
+  FloatingPointAdder1/fraction_sub12/add_1_root_add_9_2/U61/ZN (NAND2_X1)
+                                                          0.04       1.71 r
+  FloatingPointAdder1/fraction_sub12/add_1_root_add_9_2/U5/ZN (NAND2_X1)
+                                                          0.03       1.74 f
+  FloatingPointAdder1/fraction_sub12/add_1_root_add_9_2/U6/ZN (AND2_X1)
+                                                          0.03       1.78 f
+  FloatingPointAdder1/fraction_sub12/add_1_root_add_9_2/U59/ZN (XNOR2_X1)
+                                                          0.05       1.83 f
+  FloatingPointAdder1/fraction_sub12/add_1_root_add_9_2/SUM[21] (PlusOperatorAdder_2_DW01_add_1)
+                                                          0.00       1.83 f
+  FloatingPointAdder1/fraction_sub12/Sum[21] (PlusOperatorAdder_2)
+                                                          0.00       1.83 f
+  FloatingPointAdder1/U349/ZN (AOI222_X1)                 0.08       1.91 r
+  FloatingPointAdder1/U441/ZN (NAND2_X1)                  0.04       1.95 f
+  FloatingPointAdder1/U442/ZN (NAND2_X1)                  0.04       1.98 r
+  FloatingPointAdder1/U452/ZN (OAI222_X1)                 0.05       2.04 f
+  FloatingPointAdder1/U453/ZN (INV_X1)                    0.04       2.07 r
+  FloatingPointAdder1/U356/ZN (NAND2_X1)                  0.03       2.11 f
+  FloatingPointAdder1/U354/ZN (NAND2_X1)                  0.03       2.14 r
+  FloatingPointAdder1/U72/Z (BUF_X1)                      0.04       2.18 r
+  FloatingPointAdder1/U491/ZN (OAI222_X1)                 0.04       2.22 f
+  FloatingPointAdder1/U492/ZN (INV_X1)                    0.04       2.26 r
+  FloatingPointAdder1/U493/ZN (OAI222_X1)                 0.05       2.31 f
+  FloatingPointAdder1/U494/ZN (INV_X1)                    0.03       2.35 r
+  FloatingPointAdder1/U177/ZN (NAND2_X1)                  0.03       2.38 f
+  FloatingPointAdder1/U350/ZN (NAND2_X1)                  0.03       2.41 r
+  FloatingPointAdder1/U528/ZN (OAI222_X1)                 0.04       2.46 f
+  FloatingPointAdder1/U529/ZN (INV_X1)                    0.04       2.49 r
+  FloatingPointAdder1/U348/ZN (NAND2_X1)                  0.03       2.53 f
+  FloatingPointAdder1/U184/ZN (NAND2_X1)                  0.03       2.56 r
+  FloatingPointAdder1/U27/Z (BUF_X2)                      0.06       2.61 r
+  FloatingPointAdder1/U180/ZN (OAI222_X1)                 0.05       2.67 f
+  FloatingPointAdder1/U571/ZN (INV_X1)                    0.04       2.70 r
+  FloatingPointAdder1/U309/ZN (AND2_X1)                   0.05       2.75 r
+  FloatingPointAdder1/U341/Z (BUF_X1)                     0.04       2.79 r
+  FloatingPointAdder1/U344/ZN (NAND2_X1)                  0.04       2.82 f
+  FloatingPointAdder1/U597/ZN (NAND2_X1)                  0.04       2.86 r
+  FloatingPointAdder1/U106/Z (BUF_X1)                     0.04       2.90 r
+  FloatingPointAdder1/U627/ZN (OAI222_X1)                 0.04       2.94 f
+  FloatingPointAdder1/U628/ZN (INV_X1)                    0.04       2.98 r
+  FloatingPointAdder1/U637/ZN (OAI222_X1)                 0.05       3.02 f
+  FloatingPointAdder1/U638/ZN (INV_X1)                    0.03       3.05 r
+  FloatingPointAdder1/U109/Z (BUF_X1)                     0.03       3.09 r
+  FloatingPointAdder1/U142/ZN (AND2_X1)                   0.04       3.12 r
+  FloatingPointAdder1/U645/ZN (NAND2_X1)                  0.03       3.16 f
+  FloatingPointAdder1/U646/ZN (INV_X1)                    0.03       3.19 r
+  FloatingPointAdder1/U254/Z (BUF_X1)                     0.04       3.23 r
+  FloatingPointAdder1/U653/ZN (NAND2_X1)                  0.03       3.26 f
+  FloatingPointAdder1/U654/ZN (NAND2_X1)                  0.03       3.29 r
+  FloatingPointAdder1/U659/ZN (OAI222_X1)                 0.05       3.34 f
+  FloatingPointAdder1/U660/ZN (INV_X1)                    0.04       3.38 r
+  FloatingPointAdder1/U661/ZN (NOR2_X1)                   0.03       3.41 f
+  FloatingPointAdder1/result[20] (FloatingPointAdder)     0.00       3.41 f
+  data arrival time                                                  3.41
+
+  clock clk (rise edge)                                   4.50       4.50
+  clock network delay (ideal)                             0.00       4.50
+  clock uncertainty                                      -0.20       4.30
+  output external delay                                  -0.35       3.95
+  data required time                                                 3.95
+  --------------------------------------------------------------------------
+  data required time                                                 3.95
+  data arrival time                                                 -3.41
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.54
+
+
+1
