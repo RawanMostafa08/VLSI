@@ -2,7 +2,7 @@
 
 ## Project Overview
 
-This GitHub repository contains the Verilog implementation, testing, synthesis, and place-and-route processes for the design of a 32-bit floating-point arithmetic unit. The project is divided into three main parts, each focusing on different aspects of the design:
+The Verilog implementation, testing, synthesis, and place-and-route processes for the design of a 32-bit floating-point arithmetic unit. The project is divided into three main parts, each focusing on different aspects of the design:
 
 ### Part 1: 32-bit Signed Integer Adders
 - Design and implementation of various 32-bit signed integer adders in Verilog, including Ripple Carry Adder, Carry Look-Ahead Adder, Carry Bypass Adder, and Carry Select Adder.
